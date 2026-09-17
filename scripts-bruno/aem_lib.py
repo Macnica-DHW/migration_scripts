@@ -413,6 +413,131 @@ def delete_node(session, base_url, path, auth_tracker, timeout=None, allow_extra
 
 
 # ============================================================
+# Cópia de assets do DAM
+# ============================================================
+# Portado em 17/09/2026 do scripts-luiza/aem_create_and_migrate_semiconductors.py,
+# que era a única implementação disto no projeto. Três mudanças no caminho:
+#
+#   1. TRAVA DE SEGURANÇA. O original escrevia com session.post() direto, sem
+#      passar pelo assert_target_is_safe() — dava para subir asset em qualquer
+#      lugar, inclusive no DAM do GWI. Aqui toda escrita passa pela trava.
+#   2. sling:Folder nas pastas aninhadas. O original criava tudo como
+#      sling:OrderedFolder; conferido no DAM real em 17/09/2026: a RAIZ é
+#      OrderedFolder, mas as pastas de dentro são sling:Folder.
+#   3. dry_run, para conferir antes de subir nada.
+#
+# O endpoint '.createasset.html' vinha marcado como "experimental" no original.
+# Confirmado funcionando nesta instância — ver o teste no final deste arquivo.
+
+
+def map_asset_path(source_path, source_prefix, target_prefix):
+    """Caminho equivalente do asset no DAM de destino (troca só o prefixo)."""
+    if not source_path or not source_path.startswith(source_prefix):
+        return None
+    return target_prefix + source_path[len(source_prefix):]
+
+
+def ensure_dam_folder(session, base_url, folder_path, auth_tracker,
+                      cache=None, timeout=None, allow_extra=(), dry_run=False):
+    """Cria a pasta do DAM nível a nível, o que faltar. Devolve True/False.
+
+    A raiz do DAM é sling:OrderedFolder e as pastas de dentro são
+    sling:Folder — conferido nas pastas reais, não é convenção inventada.
+    """
+    cache = cache if cache is not None else set()
+    if folder_path in cache:
+        return True
+    timeout = timeout or CONFIG["timeout"]
+    atual = ""
+    for seg in [s for s in folder_path.strip("/").split("/") if s]:
+        atual += "/" + seg
+        if atual in cache:
+            continue
+        data, _ = get_json(session, urljoin(base_url, f"{atual}.json"), auth_tracker)
+        if data is None:
+            if dry_run:
+                print(f"    [simulado] criaria pasta {atual}")
+                cache.add(atual)
+                continue
+            assert_target_is_safe(atual, allow_extra=allow_extra)
+            try:
+                resp = session.post(urljoin(base_url, atual),
+                                    data={"jcr:primaryType": "sling:Folder"},
+                                    timeout=timeout)
+            except requests.RequestException as e:
+                print(f"    [erro de rede criando {atual}] {e}", file=sys.stderr)
+                return False
+            if resp.status_code not in (200, 201):
+                print(f"    [erro] não criou a pasta {atual} (HTTP {resp.status_code})",
+                      file=sys.stderr)
+                return False
+        cache.add(atual)
+    return True
+
+
+def copy_asset(session, base_url, source_path, source_prefix, target_prefix,
+               auth_tracker, cache=None, timeout=None, allow_extra=(),
+               dry_run=False):
+    """Copia um asset do DAM de origem para o de destino.
+
+    Baixa o binário e sobe em '<pasta>.createasset.html', preservando a
+    estrutura de pastas. Devolve o caminho novo, ou None se falhar — quem
+    chama decide se mantém a referência antiga como fallback.
+
+    É o que faltava no aem_lib: sem isto, página migrada cujo asset só
+    existe no DAM do GWI fica sem imagem, ou obriga a caçar um arquivo de
+    nome parecido no DAM de destino (e o nodename do QueryBuilder é
+    sensível a maiúscula enquanto o DAM está todo em minúscula, então a
+    busca falha em silêncio).
+    """
+    destino = map_asset_path(source_path, source_prefix, target_prefix)
+    if destino is None:
+        return None
+    timeout = timeout or CONFIG["timeout"]
+
+    ja, _ = get_json(session, urljoin(base_url, f"{destino}.json"), auth_tracker)
+    if ja is not None:
+        return destino                      # idempotente: já está lá
+
+    try:
+        resp = session.get(urljoin(base_url, source_path), timeout=max(timeout, 60))
+    except requests.RequestException as e:
+        print(f"    [erro de rede baixando {source_path}] {e}", file=sys.stderr)
+        return None
+    if resp.status_code != 200:
+        print(f"    [erro] não baixou {source_path} (HTTP {resp.status_code})",
+              file=sys.stderr)
+        return None
+    binario = resp.content
+    tipo = resp.headers.get("Content-Type", "application/octet-stream")
+
+    pasta, arquivo = destino.rsplit("/", 1)
+    if not ensure_dam_folder(session, base_url, pasta, auth_tracker, cache,
+                             timeout, allow_extra, dry_run):
+        return None
+
+    if dry_run:
+        print(f"    [simulado] subiria {arquivo} ({len(binario)} bytes) em {pasta}")
+        return destino
+
+    assert_target_is_safe(destino, allow_extra=allow_extra)
+    try:
+        resp = session.post(urljoin(base_url, f"{pasta}.createasset.html"),
+                            files={"file": (arquivo, binario, tipo)},
+                            timeout=max(timeout, 60))
+    except requests.RequestException as e:
+        print(f"    [erro de rede subindo {arquivo}] {e}", file=sys.stderr)
+        return None
+    if resp.status_code in (200, 201):
+        if auth_tracker is not None:
+            auth_tracker["fails"] = 0
+        return destino
+    print(f"    [erro] upload de {arquivo} falhou (HTTP {resp.status_code}): "
+          f"{resp.text[:160]}", file=sys.stderr)
+    return None
+
+
+# ============================================================
 # Navegação de nós
 # ============================================================
 
