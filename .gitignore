@@ -1,0 +1,21 @@
+# Segredo de sessão — NUNCA versionar
+.env
+.env.local
+*.cookies
+
+# Relatórios gerados pelos scripts
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Config local do Claude Code (específica de máquina)
+.claude/
+
+# Material de referência pessoal / não destinado ao repositório
+migration-tracking/
+checklist-revisao-tqsystems.txt
+instruções_tq_systems.docx
