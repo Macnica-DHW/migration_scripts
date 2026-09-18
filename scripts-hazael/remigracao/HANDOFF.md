@@ -1,4 +1,4 @@
-# Remigração `semiconductors` — handoff (18/09/2026, 2ª sessão)
+# Remigração `semiconductors` — handoff (18/09/2026, 3ª sessão)
 
 Ponto de entrada da próxima sessão. Os outros arquivos desta pasta são
 referência; este diz onde parou e o que fazer a seguir.
@@ -26,75 +26,71 @@ GWI, uma anotação viva — continuam onde estão.
 
 ---
 
-## Estado (18/09/2026, fim da segunda sessão)
+## Estado (18/09/2026, fim da 3ª sessão — conferência visual)
 
 ```
-136/136 páginas gravadas, 0 falhas            (lote 2, motor com R6–R12)
-27 pendências (nenhuma bloqueia o lote)       eram 35
+servidor = lote 3 (136/136, R1–R14, sem margem; conferido: 0 styleIds de margem)
+         + lote 4 (72 páginas: R15, R17–R24)                  72/72 sem falha
+         + lote 5 (3 páginas /analog-devices*: R16 sem moldura, R25)   3/3 sem falha
+motor    = HEAD do branch migration/semiconductors-remigration
+Tudo o que está no motor está no servidor.
 
-conferência de conteúdo, varredura completa sobre o que ESTÁ no servidor:
-                       antes    agora
-   páginas limpas         53      132
-   unidades faltando     165       27
-   unidades sobrando     744        2
-   titulo_lista            -        6   (item presente, rótulo diferente — R12)
+conferência de CONTEÚDO (medida sobre o lote 2): 132 limpas, 27 faltando em 3
+páginas conhecidas. NÃO foi refeita depois dos lotes 3 e 4 — refazer (25 min):
+o lote 4 mexe em estrutura (textwithimage, flexcontainer), não em texto, e o
+cmp_motor offline não acusa perda de bloco, mas a tela é quem manda.
 ```
 
-As 27 unidades que faltam estão em 3 páginas e são todas conhecidas:
-landing `/semiconductors` 16 (`supplierlist`, sem componente alvo),
-`/ambarella` 6 (artefato da origem, R10), `macnica-and-adi` 5 (formulário,
-precisa de backend).
+**Conferência VISUAL: 16 de 136 páginas, todas sem margem**, uma por
+arquétipo/família (`/ambarella`, `/analog-devices`, `/renesas`, `/altera`,
+`/namuga…`, `/canon`, `/altera/agilex`, `i-chips-scaler-lsi`, `agilex-5`,
+`canon-li8030sa`, `udp10g` (×26), `sitime-oscillators` (×6), `/toppan`,
+`macnica-and-adi`, `ambarella-n1-soc`, a landing). Dez regras novas
+(R15–R25), todas em `REGRAS-disposicao.md`. A revisão manual do Hazael
+(`multimodal-sensor-front-ends`, `macnica-and-adi`) entrou como R25, R16 e R19 —
+conferidas no print depois de gravar. Os dois exemplos do Hazael:
 
-As 2 que sobram estão na página de teste `test-autogenerate-list-…`: defeito
-do motor que gravou o lote 2 (lia `fixedListItems` em modo `automatic`), já
-corrigido no código (R10) e que entra no servidor junto com o próximo lote.
-
-**O diagnóstico do handoff anterior estava errado num ponto que importa:** as
-~660 unidades "sobrando" NÃO eram a tabela de download repetida. Eram ~22 por
-página do `relatedsuggestions` ignorando `maxItems=3` (R8); a tabela respondia
-por 4 a 8. E boa parte do resto era ruído do próprio comparador. Ver a memória
-`medir-antes-de-atribuir-causa`.
+1. "Image Quality" da `/ambarella`: **confirmado lado a lado** no print.
+2. Card "CV72S": **corrigido (R15)** — vão título→texto 50px → 20px (GWI 0);
+   o `style="margin-top:0"` sobrevive ao filtro do AEM.
 
 ---
 
-## DECISÃO PENDENTE — há um patch no motor que NÃO foi gravado
+## PRÓXIMO PASSO
 
-A conferência visual de 12 páginas achou 10 defeitos de disposição que nenhuma
-conferência de conteúdo acusa (R13). Seis viraram código em `aem_layout.py`:
+1. **Print novo das páginas do lote 4** e conferir que cada regra fez na tela
+   o que fez no JCR (o método abaixo). Prioridade: `canon-li8030sa` (R21),
+   `i-chips-scaler-lsi` e `/toppan` (R19), `/canon` (R18), `udp10g` (R24),
+   `sitime-oscillators` (R22 — CLICAR no índice, o print não mostra).
+2. **Abertos F–K** do REGRAS. Os dois que mais pesam: **F** vídeo sozinho de
+   1350×759 e **G** somatório de paddings entre seções (o botão que agrupa
+   com a série seguinte na `/altera/agilex`; a série da `/renesas` partida).
+3. Seguir a amostra: faltam folhas de produto simples (arquétipo E, 73
+   páginas — só `agilex-5` foi vista) e as outras `design-gateway`.
+4. Refazer a conferência de conteúdo (`aem_fidelidade_render.py`).
 
-| | o quê | tipo | alcance |
-|---|---|---|---|
-| 13a | `imagetext` de topo pulava `assetPosition` e as flags `isText`/`isButton`/`isHeading` | **bug de conteúdo** (fura a R1) | 19 nós, 8 páginas |
-| 13b | link de download com espaço no nome vira texto morto (filtro XSS) | **bug de conteúdo** | 2 páginas |
-| 13c | `hr` colado no bloco de cima | disposição | 15 páginas |
-| 13d | título órfão do bloco que introduz | disposição | a maior parte das 64 (não contado à parte) |
-| 13e | botões lado a lado que não cabem na largura útil da seção quebram em linhas (com margem: 3→2+1; sem margem: só 4+) | disposição | `/renesas` |
-| 13f | heading centralizado no GWI saía à esquerda | disposição | 10 páginas |
-
-O patch muda o payload de **64 das 136 páginas**, inclusive `/altera` e
-`/ambarella`, que já tinham sido conferidas na tela. Foi verificado offline
-contra o JCR das 136 (nenhum texto some), mas **o lote não foi executado**:
-vai além do que foi pedido e mexe no ritmo vertical de páginas aprovadas. O
-que está no servidor é o motor SEM o patch.
-
-Branch `migration/semiconductors-remigration`. O motor que gravou o lote 2 é
-o commit `137790a`; o patch 3 é o commit `0760e39`, logo acima dele.
+**Método que funcionou** (um revisor por página, em paralelo, SOMENTE LEITURA;
+o brief que eles recebem está descrito em REGRAS, R18–R24):
 
 ```bash
-# ver exatamente o que muda
-git show 0760e39 -- scripts-bruno/aem_layout.py
-#   (o mesmo diff, fora do git: remigracao/patch3-disposicao.diff)
-
-# aceitar: gravar e re-varrer
-cd scripts-hazael && python3 aem_remigrar.py --executar
-
-# recusar: voltar o motor ao estado que está no servidor
-git checkout 137790a -- scripts-bruno/aem_layout.py
+cd scripts-hazael
+remigracao/ferramentas/prints.sh /tmp/prints /ambarella /canon …   # GWI x destino, --publicado, rola a página (lazy-load)
+python3 remigracao/ferramentas/lado.py /tmp/prints <nome> 0.5     # GWI | destino lado a lado, para o olho
+python3 remigracao/ferramentas/fatiar.py /tmp/prints              # fatias em resolução cheia, para ler
+python3 remigracao/ferramentas/measure.py <caminho> "?wcmmode=disabled"
+python3 remigracao/ferramentas/vao.py <caminho> "Texto do título"  # vão título->texto e as margens que o explicam
+# antes de gravar: o que muda nas 136, offline, e o dry-run real
+git show HEAD:scripts-bruno/aem_layout.py > /tmp/antes.py
+python3 remigracao/ferramentas/cmp_motor.py --antes /tmp/antes.py --ver /canon
+python3 remigracao/ferramentas/diff_payload.py /canon /altera
+python3 aem_remigrar.py --paginas /canon /altera --executar        # só as que mudam
 ```
 
-Recomendação: aceitar 13a e 13b de qualquer forma (são perda/ressurreição de
-conteúdo); 13c–13f são melhoria visível e de baixo risco, mas merecem um print
-de `/altera` e `/ambarella` depois de gravar.
+Três coisas que esta sessão ensinou: (1) **print de 1000px de altura com
+"Loading…" é 404**, não página quebrada — o destino normaliza o nome do nó
+(R17); (2) **não gravar enquanto os revisores medem** — o driver apaga
+`jcr:content/root` antes de escrever; (3) **defeito funcional não aparece em
+print** (âncora morta, banner sem link): peça ao revisor para clicar.
 
 ---
 
@@ -120,10 +116,6 @@ uma vez. Detalhe em `REGRAS-disposicao.md`.
 
 | o quê | tamanho | nota |
 |---|---|---|
-| **tabela de layout com ícone** | 9 tabelas, 5 páginas | gravidade ALTA: `/analog-devices` mostra grade com borda e ícone de 3px. Aberto A em REGRAS |
-| imagem colada no texto de cima | 65 ocorrências, 46 páginas | todo "Why Macnica?" de design-gateway. Aberto B |
-| card órfão vira faixa cheia | `/canon` ×3 | Aberto C |
-| `<p>` por linha vira parágrafo | sistêmico em rich text | Aberto D |
 | `supplierlist` na landing | 16 unidades | sem componente alvo mapeado |
 | descrição dos cards de lista | toda página com `list` | perdida por construção no `list` (R12); decisão do time |
 | `relatedsuggestions` modo `search` | 9 páginas | a policy do `list` tem `disableSearch=true` |
@@ -139,7 +131,8 @@ uma vez. Detalhe em `REGRAS-disposicao.md`.
 ```
 HANDOFF.md              este arquivo
 REGRAS-disposicao.md    R1–R13 + o que ficou aberto + os pontos cegos do comparador  <-- LER
-patch3-disposicao.diff  o patch do motor que está no código e NÃO foi gravado
+patch3-disposicao.diff  o patch 3 (R13a–f) fora do git; já gravado no lote 3
+PROMPT-conferencia-visual.md  o prompt para abrir a próxima sessão
 ESPEC-motor-layout.md   a especificação do motor (50k, do levantamento de 17 agentes)
 ONDE-PAREI.md           comandos de reexecução e retomada
 achados_template_policy.md   policy do template: allow-list, layoutDisabled, swatches
@@ -159,6 +152,8 @@ ferramentas/
   diff_payload.py          dry-run REAL: payload novo x JCR gravado, chave a chave
   cmp_motor.py             duas versões do motor sobre as 136 páginas, offline
   prints.sh + fatiar.py    prints GWI x destino (--publicado) em fatias legíveis
+  lado.py                  GWI | destino lado a lado, reduzido — o que o revisor olha primeiro
+  vao.py                   vão entre um título e o texto seguinte, com as margens que o explicam
 
 recon-dossie.md         o levantamento bruto das 7 lentes (200k)
 recon-lacunas.md        as investigações que fecharam as lacunas do crítico (115k)

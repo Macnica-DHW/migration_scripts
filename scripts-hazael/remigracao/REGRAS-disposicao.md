@@ -387,15 +387,11 @@ revisor por página e um cético por página com defeito. Dez defeitos
 confirmados que NENHUMA conferência de conteúdo acusava. Seis viraram regra
 no motor; quatro ficam abertos (seção seguinte).
 
-> **ESTADO: no código, NÃO gravado no AEM.** As seis regras 13a–13f estão em
-> `aem_layout.py` e foram conferidas offline contra o JCR das 136 páginas
-> (64 mudam; nenhum texto some), mas o lote que as aplicaria **não foi
-> executado**. Elas vão além do que foi pedido nesta rodada e mexem no ritmo
-> vertical de páginas já conferidas na tela (`/altera`, `/ambarella`), então a
-> gravação espera um OK. O que está no servidor é o resultado das R6–R12.
-> O patch inteiro está em `patch3-disposicao.diff` (reverte com `patch -R`).
-> 13a e 13b são bug de conteúdo (flags do `imagetext` ignoradas; link de
-> download morto em 2 páginas); 13c–13f são escolha de disposição.
+> **ESTADO: gravado no lote 3 (18/09/2026)**, junto com a retirada da margem
+> (R14). As seis regras foram conferidas offline contra o JCR das 136 páginas
+> (64 mudam; nenhum texto some). `/altera` e `/ambarella`, que já tinham sido
+> vistas na tela, mudaram de ritmo vertical e merecem print novo. O patch está
+> em `patch3-disposicao.diff` e no commit `0760e39`.
 
 ### 13a — `imagetext` filho direto do corpo não passava pelo ramo do `imagetext`
 
@@ -484,15 +480,276 @@ aninhado. Corrigir lá acerta ~106 páginas de uma vez.
 
 ---
 
-## Aberto para decisão do time (achado na conferência visual, NÃO corrigido)
+## R14 — páginas SEM MARGEM: a largura útil é a da janela
+
+**Diretriz (18/09/2026):** não colocar margem nas páginas. As da Anion (sony,
+deepx) vão mudar igual depois — não são nossas e não são tocadas.
+
+**O que era a margem:** o style `fitcontainer` (max-width 1000px,
+centralizado) mais o padding lateral "large" (50px) em toda seção, no painel
+de cada aba e na camada interna das faixas coloridas — 900px úteis.
+
+**Regra:** `COM_MARGEM = False`. Seção sem `fitcontainer`, com o padding
+padrão do container (25px no desktop, 15px abaixo de 1050px). Painel de aba e
+camada interna da faixa não somam padding lateral.
+
+**O que muda na conferência:** a migrada fica mais larga que o GWI (que tem
+~976px de coluna), e isso é esperado. O que tem de bater é a DISPOSIÇÃO — o
+que está ao lado, em cima e embaixo de quê, a ordem, e os vãos verticais
+entre título e texto. Largura diferente não é defeito.
+
+**Consequências medidas** (margem removida por CSS no navegador, antes de
+gravar): parágrafo chega a 1820px numa janela de 1920; vídeo
+`layout=responsive` sozinho numa seção chega a 1820×1024; imagem NÃO estica
+além do tamanho natural; 3 botões lado a lado cabem de ~1140px de janela
+para cima (13e virou função da largura útil).
+
+**Como detectar regressão:** `cq:styleIds` com `1717410661180`
+(fitcontainer) ou `1717498053499` (LR large) em qualquer container de
+`semiconductors-remigration`.
+
+---
+
+## R15 — `<p>` que o GWI desenha colado no bloco de cima ganha `margin-top:0`
+
+**Onde apareceu:** `/ambarella`. (1) Card "CV72S": vão grande entre o título e
+o texto — o exemplo que o Hazael mostrou. (2) Os 7 blocos de "Why Choose
+Ambarella Products?" ("Image Quality" etc.): o mesmo vão entre o `h3` e o
+parágrafo. (3) O FAQ do topo: no GWI pergunta e resposta andam coladas e há
+uma linha em branco entre os pares; no destino TODAS as linhas ficavam
+equidistantes e o agrupamento pergunta→resposta sumia. Era o "Aberto D".
+
+**Causa:** uma só. No GWI `p{margin:unset}`: dentro de um rich text o vão
+entre dois blocos é 0, e a linha em branco é um `<p>&nbsp;</p>` que o autor
+digita. No destino `.cmp-text p`, `.cmp-table p` e `.cmp-textwithimage
+.paragraph p` têm `margin-top:30px` (menos o `:first-child`), o `h3` tem
+`padding-bottom:20px`, e o `<p>&nbsp;</p>` é apagado por
+`strip_empty_blocks`. Medido (1400px, `?wcmmode=disabled`):
+
+```
+                         GWI    destino antes   destino depois
+h3 "CV72S" -> <p>         0         50              20
+h3 "Image Quality" -> <p> 0         50              20
+<p><b>pergunta</b> -> <p> 0         30               0
+```
+
+**Regra:** `colar_paragrafos` — `<p>` com texto cujo vizinho IMEDIATO de cima
+(só espaço em branco entre os dois) é um `<p>`/`<h1-6>` com conteúdo recebe
+`style="margin-top:0"`. Depois de um espaçador fica como está: os 30px do
+destino fazem o papel da linha em branco (28px) do GWI. Roda sobre o HTML cru
+de cada `text`/`table` da origem, ANTES de `strip_empty_blocks` (que apaga a
+evidência) e antes de `_fundir_textos` — a emenda entre dois `text` nunca é
+colada, porque o espaçador entre eles pode ter sido um nó à parte, já
+descartado. Estilo inline sobrevive ao filtro XSS do AEM (conferido na tela).
+
+**Alcance:** 146 `<p>` em 24 páginas — 62 depois de heading, 57 depois de
+`<p>`, 27 dentro de célula de tabela (`altera-soc-courses`, `arria-10`,
+`agilex-7`…).
+
+**Como detectar:** `ferramentas/vao.py <caminho> "Texto do título"` dos dois
+lados — campo `vao`. No JCR: rich text com `</h3>\s*<p>` ou `</p>\s*<p>` sem
+`<p>&nbsp;</p>` no meio e sem `margin-top:0` no destino.
+
+---
+
+## R16 — tabela de LAYOUT (ícone centrado) perde a moldura, e continua `table`
+
+**Onde apareceu:** `/analog-devices` e `/analog-devices/macnica-and-adi`, os
+três cards "Streamlined Inventory Management" / "Flexible Financing" /
+"Quality Assurance". Era o "Aberto A"; o Hazael apontou de novo na revisão
+manual ("ugly table borders around the icons"). Sem a margem o ícone deixou
+de ter 3px, mas a grade continuava: seis células vazias com borda roxa em
+volta do ícone e a legenda numa caixa, em roxo.
+
+**Causa:** o GWI usa `<table border="0">` de 7 células só para centrar o
+ícone, mais uma linha `colspan=7` com a legenda. No destino
+`.cmp-table td{border:2px solid #7f1080;color:#7f1080}` desenha tudo.
+
+**Regra:** tabela com `border="0"`, com `<img>` e sem `<th>` é `de_layout`:
+sai com os styles da policy **Black** (texto #4d4d4d), **No Background**,
+**No Rounded Corner** e **No Frame** (`border:none`).
+
+**Por que NÃO virou `image` + `text`** (a primeira versão desta regra): os
+ícones são PNGs de **1042×1042** — é a célula da tabela que os segura em
+~100px. Como `image` sairiam com ~430px, a largura da coluna. E exigiria
+copiar os 3 arquivos para `/content/dam/copia-teste`, fora da árvore. Medir o
+asset antes de trocar de componente.
+
+**Alcance:** 6 tabelas em 2 páginas. As 3 tabelas `border="0"` SEM imagem da
+`agilex-5` são tabelas de dados (zebradas no GWI) e ficam com moldura. As
+outras 3 tabelas com `<img>` têm `border="1"` no GWI: grade de verdade.
+
+**Como detectar:** `table` do destino cujo HTML tem `border="0"` e `<img`, sem
+o styleId `1722858697098`.
+
+---
+
+## R17 — href para página do escopo leva o nome NORMALIZADO
+
+**Onde apareceu:** o print do destino de
+`/canon/canon-li8030SA-410mp-…` saiu com "Loading…" e 1000px de altura. Não
+era a página: era o 404. O driver normaliza o nome do nó (`li8030SA` →
+`li8030sa`) e `prints.sh` usava o nome do GWI.
+
+**O defeito de verdade por trás:** 5 páginas do escopo mudam de nome no
+destino (`sulfur-som---carrier-board`, `toe200G-…`, `canon-li8030SA-…` e as
+duas `TEST-…`). A `list` já grava o nome novo. O `href` dentro de rich text só
+troca o prefixo (`rewrite_links_in_html`) e continuava com o nome antigo —
+404 no go-live. Dois links reais: o card e a linha da tabela da `/canon`, e o
+item da `/design-gateway`.
+
+**Regra:** `normalizar_links_do_escopo` no driver (e no `diff_payload.py`,
+para o dry-run continuar real): todo caminho sob a raiz de destino dos links
+que esteja NO ESCOPO tem cada segmento passado por `normalize_name`.
+sony/deepx ficam como estão — os nomes lá são os que a Anion deu.
+
+**Como detectar:** na origem, href interno cujo caminho muda sob
+`normalize_name`. Na tela: print de 1000px de altura com "Loading…" = 404.
+
+---
+
+## R18–R24 — conferência visual por arquétipo (18/09/2026, 3ª sessão)
+
+Quatorze páginas, uma por arquétipo/família, um revisor por página com print
+GWI | destino lado a lado (`ferramentas/lado.py`), medição e JCR dos dois
+lados. Todas já SEM margem. Gravado no lote 4 (72 páginas, 72 sem falha) e
+no lote 5 (as 3 `/analog-devices*`: R16 e R25).
+
+### R18 — a última linha da grade e o card órfão mantêm a largura da coluna
+
+**Onde:** `/ambarella`, H32AQ/A12AQ: última linha com 2 cards numa grade de 3
+— no GWI sob as duas primeiras colunas, no destino 50% cada. `/canon`,
+LI8030SA/LI7030SA/LI5030SA: card sozinho (`width=5`) virava faixa de 1350px,
+a foto centrada na PÁGINA e o título na borda esquerda. Era o "Aberto C".
+**Causa:** `flexcontaineritem` é `flex:1`; e "coluna sozinha não é coluna"
+descartava a largura.
+**Regra:** `_completar_grades` — linha IMEDIATAMENTE abaixo de uma linha de
+colunas uniformes da mesma largura, com menos colunas, ganha
+`flexcontaineritem` VAZIOS até igualar. Vale entre seções consecutivas (cada
+linha da grade da `/ambarella` é um `resizablecontainer` de topo) e para o
+invólucro cujo único filho é uma coluna.
+**Detectar:** `flexcontainer` com menos itens que o `flexcontainer` irmão de
+cima; `image`+`text` soltos num container logo abaixo de uma grade.
+
+### R19 — a grade de 12 do AEM QUEBRA a linha
+
+**Onde:** `/i-chips/i-chips-scaler-lsi` (6 cards `width=4`: GWI 3+3, destino
+6 numa linha, 40% menores numa página mais larga); `/toppan` (4×`width=6`:
+2×2 → 1×4); `macnica-and-adi` "Who We Serve" (`width=3` com `offset` 0,1,1:
+3×2 → 1×6, textos de 175px); 6 `design-gateway/*nvme*`, `/i-chips`.
+**Causa:** `_linha_de` punha todos os filhos numa Row; ninguém somava larguras.
+**Regra:** `_quebrar_por_largura` — fecha a Row quando `offset + width`
+acumulado passa de 12. O `offset` passou a ser lido (`offset_of`).
+**Detectar:** soma de `width`+`offset` dos filhos de um invólucro > 12.
+
+### R20 — título logo depois de título é subtítulo
+
+**Onde:** `ambarella-n1-soc` (h2 "Leading the Family…" + h3, 3×), aba 4 da
+`/altera`, `/altera/agilex`, a landing (dois h1). GWI 16px, destino 60px — o
+h2 boiava a meio caminho do bloco de cima.
+**Regra:** em `_quebrar_em_subsecoes`, `title` não abre subseção quando o
+grupo atual só tem `title`.
+
+### R21 — `imagetext` left/right COM heading é `textwithimage`
+
+**Onde:** `canon-li8030sa` (3 blocos), `altera-arria-10` (3),
+`altera-holoscan`, `agilextm-5-…-premium`. No GWI título+parágrafo à esquerda
+e foto de 415×277 à direita; no destino título, FOTO de 1280×967 e texto
+empilhados — num deles a foto ENTRE o título e o texto. Respondia por 52%
+dos +2.849px de altura da página.
+**Causa:** o ramo do `imagetext` só emitia `textwithimage` quando os filhos
+eram só imagem+texto; o `heading` (isHeading=true) virava `title`, a condição
+falhava e caía em `return filhos`.
+**Regra:** o título entra no rich text do `textwithimage`, como `<hN>` em
+cima do parágrafo (com o `id`, se tiver), e o `<p>` seguinte é colado (R15).
+**Detectar:** `imagetext` com `assetPositionLargeScreen=left|right`, filho
+`heading` com texto e `isHeading≠false`.
+
+### R22 — `id` de âncora em `text` ESPAÇADOR passa para o título seguinte
+
+**Onde:** as 3 `/sitime/*` com índice. Os 4–5 botões do índice existem e não
+rolam a página. **Nenhum print mostra isso** — o revisor clicou.
+**Causa:** o alvo não é o heading: é o `text` vazio antes dele,
+`{id:"xos", text:"<p>&nbsp;</p>"}` ou `{id:"tcxos", text:"…<hr>…"}`. O motor
+descarta o espaçador e emite o `hr` sem `id`.
+**Regra:** `_ids_de_espacador_para_titulo` (pré-passo numa cópia do JCR): o
+`id` de um `text` sem texto visível vai para o próximo irmão renderizável, se
+for heading/title sem `id` — ou o primeiro renderizável dele, quando o irmão
+é um invólucro (`#whysitimebuffers`). Os 14 links das 3 páginas voltam.
+Censo: todo `anchorlink` do escopo tem alvo, menos as duas páginas de teste
+`test-277-*` (`label1..3`, sem alvo também no GWI).
+**Detectar:** `href="#x"` do `anchorlink` sem `id="x"` no HTML renderizado.
+
+### R23 — o título acompanha a linha de COLUNAS que ele introduz
+
+**Onde:** `/altera` "Leading Altera FPGAs…" (59px contra 25), `macnica-and-adi`
+"Why Engage…" (79 contra 31), h3 de "Focus Markets" da `agilex-5`
+(equidistantes do bloco de cima e das colunas), `/canon`.
+**Causa:** a 13d cobria tabela/carousel/invólucro; para linha de colunas o
+título ficava num sub-container e o `flexcontainer` no seguinte (30+30).
+**Regra:** `_titulo_com_colunas` — Row só de títulos seguida de Row de colunas
+vira `cabecalho` dela: mesmo container, título em cima do `flexcontainer`.
+
+### R24 — respiro texto↔mídia só onde o GWI tinha o espaçador (era o "Aberto B")
+
+**Onde:** "Why Macnica?" das 26 `design-gateway` (último bullet → imagem: GWI
+44px, destino 0), `/toppan` ×2, aba 4 da `/altera`, `/namuga` (em cima E
+embaixo da imagem), `ambarella-n1-soc` (texto → índice de âncoras).
+**Causa:** o respiro era `<p>&nbsp;</p>` no FIM do texto (ou no começo do
+texto que vem depois da imagem); `strip_empty_blocks` apaga; gap entre irmãos
+é 0.
+**Regra:** o `text` guarda `respiro_antes`/`respiro_depois` lidos do HTML
+cru; na transição texto→(image|embed|carousel|anchorlink) com
+`respiro_depois`, ou mídia→texto com `respiro_antes`, abre subseção (60px).
+Sem o espaçador na origem o GWI também cola — e continua colado.
+**Limite:** dentro de coluna (`flexcontaineritem`) não há subseção; o caso
+"título colado no texto de cima dentro da coluna" da `/toppan` fica.
+
+---
+
+### R25 — dois filhos de imagem com o mesmo arquivo num `imagetext` são UMA imagem
+
+**Onde:** `/analog-devices/analog-devices-multimodal-sensor-front-ends`
+(revisão manual do Hazael): a foto do ADPD4100 aparecia DUAS vezes, e o texto
+em cima e embaixo dela em vez de à esquerda.
+**Causa:** o `imagetext` guarda `resizableimage` E um `image` residual, os
+dois com o mesmo `fileReference`. O GWI desenha um asset só. O motor emitia
+os dois e, com `len(img)==2`, desistia do `textwithimage` (caía em
+`return filhos`, empilhado). Único nó assim no escopo.
+**Regra:** dentro de um `imagetext`, `image` com `fileReference` repetido é
+descartado antes de decidir a disposição. E `textwithimage` passou a contar
+como mídia na R24 (o texto de baixo começa com `<p>&nbsp;</p>`).
+**Detectar:** `imagetext` com 2+ filhos com `fileReference`.
+
+---
+
+## Aberto (achado na conferência visual, NÃO corrigido)
 
 | # | padrão | onde / quanto | causa | proposta |
 |---|---|---|---|---|
-| A | **tabela de layout** com ícone vira grade com borda e ícone de 3px (gravidade alta) | `/analog-devices` ×3, `macnica-and-adi` ×3, +3 — 9 tabelas em 5 páginas | o GWI usa `table border=0` de 7 células para centrar um ícone; no destino `.cmp-table td{padding:15px 17px;border:2px}` e `img{width:100%}` deixam 3px para a imagem | converter tabela com `<img>` e sem `<th>` em `image` + `text`; ou, no mínimo, aplicar os styles "No Frame"/"No Background" da policy do table |
-| B | **imagem colada no texto de cima** | 65 ocorrências em 46 páginas (todo "Why Macnica?" de design-gateway) | o respiro do GWI era um `<p>&nbsp;</p>` no fim do texto, que `strip_empty_blocks` apaga; entre irmãos o gap é 0 | abrir subseção na transição texto→imagem (como já se faz para título), ou embrulhar a imagem num container `pad_tb=small` |
-| C | **card órfão** vira faixa de largura cheia | `/canon` ×3 | "coluna sozinha não é coluna": `width=5` de uma coluna única é descartado | coluna única com `width<12` depois de uma linha de colunas → `flexcontainer` com um item vazio |
-| D | **`<p>` por linha** vira parágrafo com linha em branco | `altera-soc-courses` (tabela de cursos); sistêmico em rich text do GWI | no GWI `p{margin:unset}`, o autor usa `<p>` como quebra de linha; no destino `.cmp-table p{margin-top:30px}` | fundir `<p>` adjacentes não separados por `<p>&nbsp;</p>` num `<p>` com `<br>` |
-| E | cabeçalho de tabela quebra a palavra ("Resoluti/on") | `/canon` | `word-break:break-word` no reset do clientlib do global2 | correção no CSS do site; fora do motor |
+| F | **vídeo sozinho vira 1350×759** (MÉDIA) | `i-chips-scaler-lsi` ×2 (GWI 569×390, `width=7 offset=3`), `/altera/agilex` (651×390, `width=8 offset=2`) | "coluna sozinha não é coluna" + `layout=responsive` sem teto; a origem é `layout=fixed` | coluna única `width<12` com `embed` → `flexcontainer` com item vazio (≈50%); ou `layout=fixed` só para embed fora de coluna. Testar numa página antes |
+| G | **somatório de paddings entre seções** (MÉDIA, sistêmico) | `/renesas` (fronteira de seção no MEIO da série de 5 `textwithimage`: 179px contra ~99), `/altera/agilex` (texto→tabela 130 contra 16; tabela→botão 170 contra 13: o botão agrupa com a série SEGUINTE), `/canon` (linhas da grade a 110/80/60), título da página→1º bloco 90 contra 17–49, barra de abas→painel 103 contra 25 | seção 50 + sub-container 30 + margin do componente (`.cmp-table` 20, `.cmp-textwithimage` 30, `.link-button` 40); `_marcar_papeis` alterna small/default por ÍNDICE; em página PLANA `table` é MAJOR e ganha seção própria | seção que continua uma série homogênea (mesmos kinds) herda `pad_tb=small`/none; botão logo depois de tabela fica na seção dela. Em `_secoes`, `so_pageproperties(ch)` vem ANTES do ramo do spacer e o torna código morto |
+| H | **título longe das abas** | `/namuga` 152px contra 80 | a 13d exclui `tabs` de propósito (seção com faixa cinza) | título dentro da seção das abas, acima do `tabs` |
+| I | **botão sempre centralizado** | `/altera` ×2 | `S_BTN_CENTER` fixo; o GWI tem `width=3 offset=0` (à esquerda) | decisão de dialeto |
+| J | imagem do `textwithimage` no tamanho natural | `/renesas` "Reality AI" 401×226 contra 200×113 | `width`/`height` do `resizableimage` não é levado | sem campo alvo no `textwithimage`; redimensionar o asset ou aceitar |
+| K | título órfão do formulário + 3 botões `#contact-form` | `macnica-and-adi` | `form/container` não migra (sem backend); o título que o introduz e os links ficam | decisão do time: tirar o título / apontar para a página de contato |
+| E | cabeçalho de tabela quebrando palavra | — | — | **FECHADO sem mexer:** sem a margem a quebra sumiu (`/canon` conferida) |
+| — | CSS do site: `td` alinha no topo (GWI no meio); índice de âncoras quebra 3+1; fio sob os h3 do GWI não existe | várias | clientlib do global2 | fora do motor |
+
+Fechados nesta sessão: A (R16 — sem moldura, continua `table`), B (R24),
+C (R18), D (R15), E (sumiu sem a margem).
+
+### `supplierlist` da landing — o que o GWI realmente mostra
+
+O nó só tem configuração (`listFrom=children`, `orderBy=productManufacturerRanking`,
+`maxItems=20`). Cada item vem do `jcr:content` da página-FILHA: nome =
+`navTitle`, logo = nó `manufacturerlogo`, blurb = `jcr:description`. Na tela é
+uma grade 4×4 de cards (logo 120px + nome), o card inteiro é link. **O blurb é
+`display:none` e só aparece no hover** — as "16 unidades faltando" são
+hover-only. As filhas do destino não têm `productManufacturerRanking`, e
+sony/deepx não estão na árvore: um `list` em `children` erraria a ordem, traria
+as 2 helio-view e perderia 2 fabricantes. Alvo que reproduz a tela: grade
+estática de 16 imagens-com-link + `navTitle`, 4 por linha, na ordem do ranking.
 
 
 ## Achado fora do nosso escopo de escrita: os dois XFs da copia-teste aninham um documento inteiro

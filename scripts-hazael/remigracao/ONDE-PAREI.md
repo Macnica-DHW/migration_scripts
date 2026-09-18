@@ -3,27 +3,19 @@
 ## Estado
 
 ```
-136 de 136 páginas gravadas, 0 falhas        (lote 2 desta sessão)
-/content/copia-teste/americas/mai/en/products/semiconductors-remigration
+136 páginas em /content/copia-teste/americas/mai/en/products/semiconductors-remigration
+lote 3 de 18/09/2026: R1–R13 + páginas SEM MARGEM (R14) — 136/136, conferido no servidor
+lote 4 de 18/09/2026: R15, R17–R24 — as 72 páginas que mudam   72/72 sem falha
+lote 5 de 18/09/2026: R16 (tabela de layout sem moldura) e R25 — 3/3
 
-pendências: 27 (nenhuma bloqueia o lote)
-conferência de conteúdo: 132 limpas, 27 faltando (3 páginas, todas
-conhecidas), 2 sobrando (1 página de teste; corrigido no código, R10)
+conferência de conteúdo (sobre o lote 2): 132 limpas, 27 faltando em 3
+páginas conhecidas. NÃO foi refeita depois dos lotes 3 e 4.
+conferência visual: 16 de 136, uma por arquétipo — ver HANDOFF.md.
 ```
 
-**O motor no disco está UM PATCH À FRENTE do que está no servidor.** O
-patch 3 (regras 13a–13f, da conferência visual; commit `0760e39`) está
-aplicado em `scripts-bruno/aem_layout.py` e muda 64 páginas, mas o lote não foi
-rodado — espera decisão. Ver "DECISÃO PENDENTE" no `HANDOFF.md`. Rodar
-`aem_remigrar.py --executar` agora GRAVA esse patch. Para rodar com o motor
-que está no servidor: `git checkout 137790a -- scripts-bruno/aem_layout.py`.
-
-Trabalho versionado no branch `migration/semiconductors-remigration`.
-
-Doze regras de disposição (R1–R13) em `REGRAS-disposicao.md`, cada uma com a
-causa, a regra e como detectar. Nenhuma foi pega por conferência de conteúdo
-sozinha: metade veio de abrir UMA página e comparar o HTML dos dois lados, a
-outra metade de olhar o print.
+O motor no disco é o que está no servidor (HEAD do branch
+`migration/semiconductors-remigration`). Próximo passo em
+`HANDOFF.md`.
 
 ## Para reexecutar
 
@@ -32,6 +24,7 @@ cd scripts-hazael
 python3 aem_remigrar.py --executar                  # as 136
 python3 aem_remigrar.py --so /altera --executar     # uma subárvore
 python3 aem_remigrar.py --inicio 82 --executar      # retomar de onde parou
+python3 aem_remigrar.py --paginas /canon /altera --executar   # só estas (o que o cmp_motor lista)
 ```
 
 É seguro reexecutar por cima: o driver apaga `jcr:content/root` antes de
@@ -69,11 +62,12 @@ Saíram da lista nesta sessão: `pagesectionlisting` (12) — agora vira
 
 ## Decisões ainda abertas
 
-- **Gravar ou não o patch 3** (13a–13f) — ver `HANDOFF.md`.
 - **Os dois XFs da copia-teste** (`page` em vez de `xfpage`; botões empilhados):
   fora do nosso escopo de escrita, atinge ~110 páginas.
-- **Tabela de layout com ícone, imagem colada no texto, card órfão, `<p>` por
-  linha** — abertos A–D em `REGRAS-disposicao.md`, com censo e proposta.
+- **Abertos F–K** em `REGRAS-disposicao.md` (vídeo sozinho gigante, somatório
+  de paddings entre seções, título longe das abas, botão sempre centralizado…).
+- **`supplierlist`**: o blurb é hover-only; o que se VÊ é uma grade 4×4 de
+  logo+nome com link (descrição em REGRAS).
 - **Centralizar título que abre seção** (dialeto da Anion) — hoje só se
   centraliza o que o próprio GWI centraliza.
 - **`relatedsuggestions` modo `search` (9)**: a policy do `list` tem

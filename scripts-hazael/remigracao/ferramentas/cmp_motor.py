@@ -29,6 +29,7 @@ ap.add_argument('--antes', required=True, help='arquivo .py com a versão ANTIGA
 ap.add_argument('--depois', default=str(_RAIZ / 'scripts-bruno' / 'aem_layout.py'))
 ap.add_argument('--cache', default='jcr_cache.pkl')
 ap.add_argument('--ver', nargs='*', default=[], help='sufixos de página para mostrar o diff do esboço')
+ap.add_argument('--lista', default=None, help='grava aqui os caminhos relativos COMPLETOS das páginas que mudam (a tela trunca em 70) — entrada do `aem_remigrar.py --paginas`')
 args = ap.parse_args()
 OLD = carregar('al_old', args.antes)
 NEW = carregar('al_new', args.depois)
@@ -83,6 +84,8 @@ for o, j in jcrs.items():
     _, po, co = montar(OLD, j, o); _, pn, cn = montar(NEW, j, o)
     if po != pn: mudou.append((o, co, cn, po, pn))
 print(f'páginas cujo payload muda: {len(mudou)} de {len(jcrs)}')
+if args.lista:
+    open(args.lista, 'w').write(''.join((m[0].split('semiconductors', 1)[1] or '/') + '\n' for m in mudou))
 for o, co, cn, po, pn in mudou:
     d = {k: cn.get(k, 0) - co.get(k, 0) for k in set(co) | set(cn) if cn.get(k, 0) != co.get(k, 0)}
     print('  ', (o.split('semiconductors', 1)[1] or '/')[:70].ljust(70), 'nós', sum(1 for k in po if k.endswith('resourceType')), '->', sum(1 for k in pn if k.endswith('resourceType')), d or '')

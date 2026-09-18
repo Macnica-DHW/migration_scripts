@@ -77,7 +77,7 @@ completa e a proveniência de cada regra.
 import copy
 import re
 from html import escape
-from urllib.parse import quote, unquote
+from urllib.parse import quote
 
 from aem_lib import (BUTTON_TYPES, CAROUSEL_TYPES, CONTAINER_RT, DOWNLOAD_TYPES,
                      DOWNLOADLIST_TYPES, HEADING_TYPES, IMAGE_TYPES,
@@ -125,6 +125,9 @@ S_TITLE_H3SIZE = "1718280237031"   # [3] Tamanho -> classe heading3
 S_FLEX_SP_1COL = "1719484596357"   # [1] Design SP: empilha abaixo de 1050px
 S_TWI_LEFT = "1718154328384"       # [0] imagem à esquerda
 S_TABLE_NOROUND = "1722939215525"  # [2] No Rounded Corner
+S_TABLE_BLACK = "1722937999485"    # [0] Color Scheme: Black (texto #4d4d4d)
+S_TABLE_NOBG = "1722858778108"     # [1] Header: No Background
+S_TABLE_NOFRAME = "1722858697098"  # [3] Frame: No Frame (border:none)
 S_BTN_FIXEDMIN = "1722936853890"   # [1] Fixed Minimum Width
 S_BTN_CENTER = "1717669229626"     # [2] Center
 
@@ -624,8 +627,17 @@ def bloco_de(node, caminho, page):
                      linkURL=node.get("linkURL", ""))
 
     if rt in TABLE_TYPES:
-        return Block("table", caminho,
-                     html=colar_paragrafos(node.get("text", "")))
+        bruto = node.get("text", "") or ""
+        # Tabela de LAYOUT: `border="0"`, com `<img>` e sem `<th>` — o GWI a usa
+        # só para centrar um ícone sobre a legenda e não desenha borda nenhuma
+        # (`/analog-devices`, R16). Continua `table` (é a célula que segura o
+        # ícone de 1042px em ~100px), mas sem moldura.
+        abre = re.search(r"<table\b[^>]*>", bruto, re.I)
+        sem_borda = bool(abre and re.search(r"""\bborder\s*=\s*["']?0\b""",
+                                            abre.group(0), re.I))
+        return Block("table", caminho, html=colar_paragrafos(bruto),
+                     de_layout=(sem_borda and "<img" in bruto.lower()
+                                and "<th" not in bruto.lower()))
 
     if rt in VIDEO_TYPES:
         vid = node.get("youtubeVideoId")
@@ -805,10 +817,7 @@ def _coletar_blocos(node, caminho, page):
     rt = rt_of(node)
     if rt and rt not in WRAPPER_TYPES:
         b = bloco_de(node, caminho, page)
-        if b is None:
-            return []
-        return [x for d in _desmontar_tabela_de_layout(b)
-                for x in _destacar_hr(d)]
+        return _destacar_hr(b) if b else []
     if rt == IMAGETEXT_RT:
         # O `imagetext` do GWI não é só invólucro: ele tem INTERRUPTORES DE
         # VISIBILIDADE. `isText=false` esconde o texto, `isButton=false`
@@ -841,6 +850,21 @@ def _coletar_blocos(node, caminho, page):
         # Left/Wrap/VCenter/VBottom). Tratar `top` como side-by-side espremia
         # o texto numa coluna estreita ao lado da imagem — foi o que
         # aconteceu com os cards CV28AQ/CV28M/H22AQ da `/ambarella`.
+        # O `imagetext` desenha UM asset. Na `analog-devices-multimodal-sensor-
+        # front-ends` o nó guarda dois filhos de imagem — o `resizableimage` e
+        # um `image` residual — com o MESMO arquivo: o GWI mostra um, o motor
+        # emitia os dois, e com `len(img)==2` ainda desistia do lado a lado
+        # (R25). Mesmo `fileReference` dentro do mesmo imagetext = uma imagem.
+        vistos, unicos = set(), []
+        for b in filhos:
+            ref = b.props.get("fileReference") if b.kind == "image" else None
+            if ref and ref in vistos:
+                continue
+            if ref:
+                vistos.add(ref)
+            unicos.append(b)
+        filhos = unicos
+
         pos = str(node.get("assetPositionLargeScreen", "")).lower()
         img = [b for b in filhos if b.kind == "image"]
         txt = [b for b in filhos if b.kind == "text"]
@@ -881,73 +905,6 @@ _HR_INICIO = re.compile(r"^" + _VAZIO + r"<hr\s*/?>" + _VAZIO, re.I)
 _HR_FIM = re.compile(_VAZIO + r"<hr\s*/?>" + _VAZIO + r"$", re.I)
 
 
-# R16 DESLIGADA até o time autorizar: os 3 ícones da `/analog-devices` viram
-# `fileReference`, e o driver copia todo `fileReference` para
-# /content/dam/copia-teste — escrita FORA de semiconductors-remigration.
-TABELA_DE_LAYOUT_VIRA_IMAGEM = False
-
-_TR = re.compile(r"<tr\b[^>]*>(.*?)</tr\s*>", re.I | re.S)
-_TD = re.compile(r"<td\b([^>]*)>(.*?)</td\s*>", re.I | re.S)
-_IMG = re.compile(r"<img\b[^>]*>", re.I)
-
-
-def _desmontar_tabela_de_layout(b):
-    """`table` que o GWI usa só para CENTRAR um ícone vira `image` + `text` (R16).
-
-    Na `/analog-devices` cada card "Streamlined Inventory Management" é uma
-    `<table border=0>` de 7 células — seis vazias e o ícone na do meio — mais
-    uma linha `colspan=7` com a legenda. No GWI a tabela não tem borda e o
-    visitante vê ícone em cima, legenda embaixo. No destino
-    `.cmp-table td{border:2px solid;padding:15px 17px}` desenha a grade
-    inteira, com as seis células vazias em volta do ícone.
-
-    É tabela de LAYOUT, e só então é desmontada, quando: tem `<img>`, não tem
-    `<th>`, não tem tabela aninhada e NENHUMA linha tem mais de uma célula com
-    conteúdo — empilhar na ordem do documento reproduz exatamente o que o GWI
-    mostra. Linha com duas células cheias é grade de verdade: fica `table`.
-    O alinhamento da célula (`text-align` no `<td>`) desce para o texto; a
-    imagem do destino já é centrada por padrão.
-    """
-    if b.kind != "table" or not TABELA_DE_LAYOUT_VIRA_IMAGEM:
-        return [b]
-    h = b.props.get("html", "") or ""
-    hl = h.lower()
-    if "<img" not in hl or "<th" in hl or hl.count("<table") != 1:
-        return [b]
-    blocos = []
-    for tr in _TR.findall(h):
-        cheias = [(a, m) for a, m in _TD.findall(tr)
-                  if _texto_visivel(m) or "<img" in m.lower()]
-        if len(cheias) > 1:
-            return [b]
-        for attrs, miolo in cheias:
-            alinh = re.search(r"text-align\s*:\s*(\w+)", attrs, re.I)
-            pos = 0
-            pedacos = []
-            for m in _IMG.finditer(miolo):
-                pedacos.append(("text", miolo[pos:m.start()]))
-                pedacos.append(("img", m.group(0)))
-                pos = m.end()
-            pedacos.append(("text", miolo[pos:]))
-            for tipo, val in pedacos:
-                if tipo == "img":
-                    src = re.search(r"""\bsrc\s*=\s*["']([^"']+)""", val, re.I)
-                    ref = unquote(src.group(1)) if src else ""
-                    if not ref.startswith("/content/dam/"):
-                        return [b]
-                    alt = re.search(r"""\balt\s*=\s*["']([^"']*)""", val, re.I)
-                    blocos.append(Block("image", b.origin_path, fileReference=ref,
-                                        alt=alt.group(1) if alt else ""))
-                elif _texto_visivel(val):
-                    if alinh and "text-align" not in val.lower():
-                        est = f' style="text-align: {alinh.group(1)};"'
-                        val = (re.sub(r"<p>", f"<p{est}>", val, flags=re.I)
-                               if re.search(r"<p\b", val, re.I)
-                               else f"<p{est}>{val}</p>")
-                    blocos.append(Block("text", b.origin_path, html=val))
-    return blocos or [b]
-
-
 def _destacar_hr(b):
     """`<hr>` no começo ou no fim de um `text` com conteúdo vira Block('hr').
 
@@ -976,7 +933,7 @@ def _destacar_hr(b):
     return antes + ([b] if _texto_visivel(h) else []) + depois
 
 
-_MIDIA = ("image", "embed", "carousel", "anchorlink")
+_MIDIA = ("image", "embed", "carousel", "anchorlink", "textwithimage")
 
 
 def _quebrar_em_subsecoes(blocos, caminho):
@@ -1495,6 +1452,14 @@ def _ids_de_espacador_para_titulo(jcr_content):
                 for _m, prox in filhos[i + 1:]:
                     if not tem_conteudo_renderizavel(prox):
                         continue
+                    # o título pode estar um nível abaixo: o primeiro
+                    # renderizável de um invólucro (`sitime-clock-buffers`)
+                    while rt_of(prox) in WRAPPER_TYPES:
+                        vivos = [c for _k, c in list_child_nodes(prox)
+                                 if tem_conteudo_renderizavel(c)]
+                        if not vivos:
+                            break
+                        prox = vivos[0]
                     if ((rt_of(prox) in HEADING_TYPES or rt_of(prox) in TITLE_TYPES)
                             and not prox.get("id")):
                         prox["id"] = ch.pop("id")
@@ -1760,7 +1725,11 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         # num `text` perde a formatação inteira.
         payload[f"{base}/text"] = html(b.props.get("html", ""))
         payload[f"{base}/textIsRich"] = "true"
-        _styles(payload, base, ["", "", S_TABLE_NOROUND])
+        if b.props.get("de_layout"):
+            _styles(payload, base, [S_TABLE_BLACK, S_TABLE_NOBG,
+                                    S_TABLE_NOROUND, S_TABLE_NOFRAME])
+        else:
+            _styles(payload, base, ["", "", S_TABLE_NOROUND])
         return True
 
     if k == "embed":
