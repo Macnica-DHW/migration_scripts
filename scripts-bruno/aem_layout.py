@@ -212,6 +212,15 @@ class Panel:
         self.rows = []
 
 
+# Diretriz de 18/09/2026: as páginas NÃO têm margem. Sai o `fitcontainer`
+# (max-width 1000px, centralizado) e o padding lateral "large" (50px); fica o
+# padding padrão do container do design system (25px no desktop, 15px abaixo
+# de 1050px). A largura útil passa a ser a da janela. As páginas da Anion
+# (sony, deepx) vão mudar igual depois — não são nossas, não são tocadas.
+# `True` volta ao dialeto antigo (coluna de 900px) sem mexer em mais nada.
+COM_MARGEM = False
+
+
 class Section:
     def __init__(self, origin_path, origin_index, role="body"):
         self.origin_path = origin_path
@@ -219,9 +228,9 @@ class Section:
         self.role = role
         self.background = None
         self.full_bleed = False
-        self.max_width_1000 = True
+        self.max_width_1000 = COM_MARGEM
         self.pad_tb = "small"      # none|small|default|large
-        self.pad_lr = "large"
+        self.pad_lr = "large" if COM_MARGEM else "default"
         self.rows = []
 
     @property
@@ -1514,7 +1523,8 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
             # que os nós existam no JCR. As abas da `deepx` têm os três:
             # jcr:title, cq:panelTitle e layout.
             payload[f"{item}/layout"] = "responsiveGrid"
-            _styles(payload, item, [S_CONT_1000])
+            _styles(payload, item, [S_CONT_1000] if COM_MARGEM
+                    else ["", "", S_CONT_LR_NONE])
             if len(p.rows) > 1:
                 for r in p.rows:
                     sub = f"{item}/{nomes(item, 'container')}"
@@ -1773,8 +1783,8 @@ def _emitir_secao(payload, slot, nomes, s, page, link_de, link_para):
         _container(payload, base, max_width=False, pad_tb="none",
                    pad_lr="default", background=s.background)
         interno = f"{base}/container"
-        _container(payload, interno, max_width=True, pad_tb=s.pad_tb,
-                   pad_lr="large")
+        _container(payload, interno, max_width=COM_MARGEM, pad_tb=s.pad_tb,
+                   pad_lr="large" if COM_MARGEM else "none")
         alvo = interno
     else:
         _container(payload, base, max_width=s.max_width_1000, pad_tb=s.pad_tb,
