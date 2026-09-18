@@ -444,8 +444,17 @@ cuja seção tem papel próprio que depende de o bloco estar sozinho.
 horizontal entre 1050 e 1337px de janela.
 **Causa:** o menor `min-width` de botão da policy é 345px; 3×345 + 2×26 =
 1087px numa coluna útil de 900px.
-**Regra:** linha de 3+ colunas que são SÓ botão quebra em linhas de 2.
-**Detectar:** `flexcontainer` com 3+ itens cujo conteúdo é só `button`.
+**Regra:** linha de colunas que são SÓ botão quebra quando não cabe na
+LARGURA ÚTIL da seção: `cabem = (útil + 26) // (345 + 26)`, em linhas
+equilibradas (4 → 2+2). Com margem (fitcontainer 1000 − 2×50 = 900px) cabem 2.
+**Sem margem** (diretriz de 18/09/2026: a largura útil passa a ser a da
+janela; referência 1366px) cabem 3 — a `/renesas` volta a ter os 3 lado a
+lado, como o GWI, e a regra só age de 4 botões para cima (nenhum no escopo).
+Medido no navegador com a margem removida: a 1400 e 1920px os 3 cabem; só
+estouram na faixa de 1050 a ~1187px de janela (37px a 1100px), porque o flex
+só empilha abaixo de 1050px.
+**Detectar:** `flexcontainer` cujos itens são só `button` e
+`n×345 + (n−1)×26` maior que a largura útil da seção.
 
 ### 13f — heading centralizado no GWI saía à esquerda
 

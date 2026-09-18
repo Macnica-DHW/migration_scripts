@@ -64,7 +64,7 @@ conferência de conteúdo acusa (R13). Seis viraram código em `aem_layout.py`:
 | 13b | link de download com espaço no nome vira texto morto (filtro XSS) | **bug de conteúdo** | 2 páginas |
 | 13c | `hr` colado no bloco de cima | disposição | 15 páginas |
 | 13d | título órfão do bloco que introduz | disposição | a maior parte das 64 (não contado à parte) |
-| 13e | 3 botões lado a lado estouram a coluna | disposição | `/renesas` |
+| 13e | botões lado a lado que não cabem na largura útil da seção quebram em linhas (com margem: 3→2+1; sem margem: só 4+) | disposição | `/renesas` |
 | 13f | heading centralizado no GWI saía à esquerda | disposição | 10 páginas |
 
 O patch muda o payload de **64 das 136 páginas**, inclusive `/altera` e

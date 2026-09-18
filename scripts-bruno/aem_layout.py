@@ -1659,19 +1659,28 @@ def _emitir_linha(payload, pai, nomes, row, page, link_de, link_para):
                 _emitir_bloco(payload, pai, nomes, b, page, link_de, link_para)
         return
 
-    # 3+ colunas que são SÓ botão não cabem: o botão tem min-width 345px
-    # ("Fixed Minimum Width" é o menor que a policy oferece) e a coluna útil
-    # tem 900px — 3 x 345 + 2 x 26 = 1087px. Na `/renesas` o terceiro botão
-    # passava 187px da margem e virava rolagem horizontal entre 1050 e
-    # 1337px de janela. Quebra em linhas de 2 (R13).
-    if len(row.columns) >= 3 and all(
-            c.blocks and all(b.kind == "button" for b in c.blocks)
-            for c in row.columns):
-        for i in range(0, len(row.columns), 2):
-            sub = Row("columns")
-            sub.columns = row.columns[i:i + 2]
-            _emitir_linha(payload, pai, nomes, sub, page, link_de, link_para)
-        return
+    # Colunas que são SÓ botão têm de caber: o botão tem min-width 345px
+    # ("Fixed Minimum Width" é o menor que a policy oferece) e o gap do flex
+    # é 26px. Quantos cabem depende da LARGURA ÚTIL da seção, que
+    # `_emitir_secao` deixa em `page._util_px`:
+    #   com margem (fitcontainer 1000 - 2x50)  -> 900px  -> cabem 2
+    #   sem margem (janela de referência)      -> ~1266px -> cabem 3
+    # Na `/renesas` (3 botões) com 900px o terceiro passava 187px da margem.
+    # Sem margem os 3 cabem lado a lado, como no GWI, e a regra só age de 4
+    # botões para cima. Quebra em linhas EQUILIBRADAS (4 -> 2+2, não 3+1).
+    if all(c.blocks and all(b.kind == "button" for b in c.blocks)
+           for c in row.columns):
+        util = getattr(page, "_util_px", LARGURA_UTIL_COM_MARGEM)
+        cabem = max(1, (util + FLEX_GAP_PX) // (BTN_MIN_PX + FLEX_GAP_PX))
+        n = len(row.columns)
+        if n > cabem:
+            linhas_n = -(-n // cabem)
+            por_linha = -(-n // linhas_n)
+            for i in range(0, n, por_linha):
+                sub = Row("columns")
+                sub.columns = row.columns[i:i + por_linha]
+                _emitir_linha(payload, pai, nomes, sub, page, link_de, link_para)
+            return
 
     # Linha 6/6 {uma imagem} + {texto} vira UM textwithimage — é a técnica da
     # folha de produto: 165 das 196 páginas autorais usam só textwithimage.
@@ -1733,7 +1742,22 @@ def _tentar_textwithimage(row):
     return None
 
 
+# Largura útil de uma seção, para decidir o que cabe lado a lado.
+BTN_MIN_PX = 345                  # .fixed-min-width .link-button__anchor
+FLEX_GAP_PX = 26                  # .flex_container > .cmp-container {--gap}
+LARGURA_UTIL_COM_MARGEM = 900     # fitcontainer (1000px) - 2 x 50px (LR large)
+JANELA_REF_PX = 1366              # notebook comum; abaixo de 1050 o flex empilha
+PAD_LR_PX = {"none": 0, "default": 25, "large": 50}
+
+
+def _largura_util(s):
+    if s.max_width_1000:
+        return 1000 - 2 * PAD_LR_PX.get(s.pad_lr, 25)
+    return JANELA_REF_PX - 2 * PAD_LR_PX.get(s.pad_lr, 25)
+
+
 def _emitir_secao(payload, slot, nomes, s, page, link_de, link_para):
+    page._util_px = _largura_util(s)
     nome = nomes(slot, "container")
     base = f"{slot}/{nome}"
     if s.background and s.full_bleed:
