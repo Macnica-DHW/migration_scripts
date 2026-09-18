@@ -74,7 +74,9 @@ Ver `scripts-hazael/remigracao/ESPEC-motor-layout.md` para a especificação
 completa e a proveniência de cada regra.
 """
 
+import copy
 import re
+from html import escape
 from urllib.parse import quote, unquote
 
 from aem_lib import (BUTTON_TYPES, CAROUSEL_TYPES, CONTAINER_RT, DOWNLOAD_TYPES,
@@ -202,10 +204,11 @@ class Row:
         self.columns = []
         self.vazias = 0            # itens vazios no fim, para fechar a grade (R18)
         self.largura_orfa = None   # coluna única rebaixada: a largura que tinha
+        self.cabecalho = []        # títulos que introduzem a linha de colunas (R23)
 
     @property
     def blocks(self):
-        return [b for c in self.columns for b in c.blocks]
+        return self.cabecalho + [b for c in self.columns for b in c.blocks]
 
 
 class Panel:
@@ -303,6 +306,9 @@ def _texto_visivel(html):
     return re.sub(r"\s+", " ", s).strip()
 
 
+_P_VAZIO = r"<p\b[^>]*>(?:\s|&nbsp;|\u00a0|<br\s*/?>)*</p\s*>"
+_ESPACADOR_INICIO = re.compile(r"^\s*(?:" + _P_VAZIO + r"\s*)+", re.I)
+_ESPACADOR_FIM = re.compile(r"(?:" + _P_VAZIO + r"\s*)+$", re.I)
 _BLOCO_RICO = re.compile(r"<(p|h[1-6])\b([^>]*)>(.*?)</\1\s*>", re.I | re.S)
 
 
@@ -563,8 +569,10 @@ def bloco_de(node, caminho, page):
             m = re.search(r"<a\s[^>]*\b(?:name|id)\s*=\s*[\"']([^\"']+)",
                           node.get("text", ""), re.I)
             return Block("anchor", caminho, nome=m.group(1) if m else "")
-        return Block("text", caminho,
-                     html=colar_paragrafos(node.get("text", "")))
+        bruto = node.get("text", "") or ""
+        return Block("text", caminho, html=colar_paragrafos(bruto),
+                     respiro_antes=bool(_ESPACADOR_INICIO.match(bruto)),
+                     respiro_depois=bool(_ESPACADOR_FIM.search(bruto)))
 
     if rt in DESCARTAVEIS:
         return None
@@ -608,7 +616,8 @@ def bloco_de(node, caminho, page):
             page.pendencias.append(Pendencia(
                 caminho, rt, "imagem_quebrada", "sem fileReference"))
             return None
-        return Block("image", caminho, fileReference=ref, alt=node.get("alt", ""))
+        return Block("image", caminho, fileReference=ref, alt=node.get("alt", ""),
+                     linkURL=node.get("linkURL") or "")
 
     if rt in BUTTON_TYPES:
         return Block("button", caminho, titulo=node.get("jcr:title", ""),
@@ -835,12 +844,26 @@ def _coletar_blocos(node, caminho, page):
         pos = str(node.get("assetPositionLargeScreen", "")).lower()
         img = [b for b in filhos if b.kind == "image"]
         txt = [b for b in filhos if b.kind == "text"]
+        tit = [b for b in filhos if b.kind == "title"]
         if (pos in ("left", "right") and len(img) == 1 and len(txt) >= 1
-                and len(filhos) == len(img) + len(txt)):
+                and len(filhos) == len(img) + len(txt) + len(tit)):
+            # O `heading` do imagetext (isHeading=true) entra no rich text do
+            # `textwithimage`, em cima do parágrafo — como o GWI o desenha, na
+            # coluna do texto. Antes o título quebrava a condição e o bloco
+            # caía em `return filhos`: título, FOTO de 1280px e texto
+            # empilhados em largura cheia (`canon-li8030sa`, R21).
+            cab = "".join(
+                "<{0}{1}>{2}</{0}>".format(
+                    t.props.get("tipo") or "h2",
+                    ' id="%s"' % escape(t.props["id"], quote=True)
+                    if t.props.get("id") else "",
+                    escape(t.props.get("titulo", ""), quote=False))
+                for t in tit)
+            corpo = "".join(t.props.get("html", "") for t in txt)
             return [Block("textwithimage", caminho,
                           fileReference=img[0].props.get("fileReference"),
                           alt=img[0].props.get("alt", ""),
-                          html="".join(t.props.get("html", "") for t in txt),
+                          html=colar_paragrafos(cab + corpo) if cab else corpo,
                           imagem_esquerda=(pos == "left"))]
         if pos == "top" and img:
             # imagem primeiro, depois o resto, na ordem do documento
@@ -857,6 +880,11 @@ _VAZIO = r"(?:\s|&nbsp;|\u00a0|<br\s*/?>|<p>(?:\s|&nbsp;|\u00a0|<br\s*/?>)*</p>)
 _HR_INICIO = re.compile(r"^" + _VAZIO + r"<hr\s*/?>" + _VAZIO, re.I)
 _HR_FIM = re.compile(_VAZIO + r"<hr\s*/?>" + _VAZIO + r"$", re.I)
 
+
+# R16 DESLIGADA até o time autorizar: os 3 ícones da `/analog-devices` viram
+# `fileReference`, e o driver copia todo `fileReference` para
+# /content/dam/copia-teste — escrita FORA de semiconductors-remigration.
+TABELA_DE_LAYOUT_VIRA_IMAGEM = False
 
 _TR = re.compile(r"<tr\b[^>]*>(.*?)</tr\s*>", re.I | re.S)
 _TD = re.compile(r"<td\b([^>]*)>(.*?)</td\s*>", re.I | re.S)
@@ -880,7 +908,7 @@ def _desmontar_tabela_de_layout(b):
     O alinhamento da célula (`text-align` no `<td>`) desce para o texto; a
     imagem do destino já é centrada por padrão.
     """
-    if b.kind != "table":
+    if b.kind != "table" or not TABELA_DE_LAYOUT_VIRA_IMAGEM:
         return [b]
     h = b.props.get("html", "") or ""
     hl = h.lower()
@@ -948,6 +976,9 @@ def _destacar_hr(b):
     return antes + ([b] if _texto_visivel(h) else []) + depois
 
 
+_MIDIA = ("image", "embed", "carousel", "anchorlink")
+
+
 def _quebrar_em_subsecoes(blocos, caminho):
     """Uma Row por SUBSEÇÃO — um título abre subseção.
 
@@ -969,6 +1000,19 @@ def _quebrar_em_subsecoes(blocos, caminho):
         # 60px, o h2 boiando a meio caminho do bloco de cima (R20).
         if b.kind == "title" and atual and all(x.kind == "title" for x in atual):
             abre = False
+        # Texto que o autor do GWI fechou com `<p>&nbsp;</p>` antes de uma
+        # imagem (ou abriu com ele depois dela): o respiro era essa linha em
+        # branco, que `strip_empty_blocks` apaga — e entre irmãos o gap é 0. A
+        # imagem do "Why Macnica?" nascia COLADA no último bullet nas 26
+        # `design-gateway` (GWI 44px, destino 0). Só com a evidência do
+        # espaçador na origem: sem ele o GWI também cola (R24).
+        if atual and not abre:
+            ant = atual[-1]
+            if ((ant.kind == "text" and ant.props.get("respiro_depois")
+                 and b.kind in _MIDIA)
+                    or (ant.kind in _MIDIA and b.kind == "text"
+                        and b.props.get("respiro_antes"))):
+                abre = True
         if abre and atual:
             grupos.append(atual)
             atual = []
@@ -999,6 +1043,7 @@ def _fundir_textos(blocos):
         if b.kind == "text" and out and out[-1].kind == "text":
             out[-1].props["html"] = (out[-1].props.get("html", "")
                                      + b.props.get("html", ""))
+            out[-1].props["respiro_depois"] = b.props.get("respiro_depois", False)
             continue
         out.append(b)
     return _fundir_downloads(out)
@@ -1099,6 +1144,29 @@ def _quebrar_por_largura(r):
     return out
 
 
+def _titulo_com_colunas(linhas):
+    """Título que introduz uma linha de COLUNAS vai para o container dela (R23).
+
+    A 13d já faz o título acompanhar tabela, carousel e invólucro. Para linha
+    de colunas não fazia: o título ficava sozinho num sub-container e o
+    `flexcontainer` no seguinte, 60px abaixo (30+30) — contra 25–32px no GWI
+    (`/altera` "Leading Altera FPGAs…", `macnica-and-adi` "Why Engage…", os
+    h3 de "Focus Markets" da `agilex-5`, equidistantes do bloco de cima e das
+    colunas que introduzem).
+    """
+    out = []
+    for r in linhas:
+        ant = out[-1] if out else None
+        if (ant is not None and r.kind == "columns" and ant.kind == "single"
+                and not ant.cabecalho and ant.blocks
+                and all(b.kind == "title" for b in ant.blocks)):
+            r.cabecalho = ant.blocks
+            out[-1] = r
+        else:
+            out.append(r)
+    return out
+
+
 def _e_card_orfao(node):
     """Invólucro cujo único filho renderizável é UMA coluna (`0 < width < 12`)."""
     if rt_of(node) not in WRAPPER_TYPES or rt_of(node) == IMAGETEXT_RT:
@@ -1171,6 +1239,7 @@ def extrair_linhas(node, caminho, page):
     linhas = []
     corrida = []          # folhas consecutivas de largura cheia
     colunas = []          # colunas consecutivas -> uma linha
+    vivos = [c for _n, c in list_child_nodes(node) if tem_conteudo_renderizavel(c)]
 
     def fechar_corrida():
         """Fecha a corrida, quebrando numa Row por SUBSEÇÃO.
@@ -1194,8 +1263,13 @@ def extrair_linhas(node, caminho, page):
             return
         if len(colunas) == 1:
             g = _grade_uniforme(linhas[-1]) if (linhas and not corrida) else None
-            if g and g[1] == colunas[0].width:
-                # card órfão de uma grade: continua coluna (R18)
+            so_ele = (not linhas and not corrida and len(vivos) == 1
+                      and not any(b.kind == "title" for b in colunas[0].blocks))
+            if so_ele or (g and g[1] == colunas[0].width):
+                # card órfão de uma grade: continua coluna (R18). `so_ele`: o
+                # invólucro inteiro é UMA coluna — se a seção de cima for a
+                # grade, `_completar_grades` de `extract_tree` o completa; se
+                # não for, sai como antes (largura cheia).
                 r = Row("single")
                 r.largura_orfa = colunas[0].width
                 r.columns = colunas[:]
@@ -1247,7 +1321,7 @@ def extrair_linhas(node, caminho, page):
 
     fechar_colunas()
     fechar_corrida()
-    return _completar_grades(linhas)
+    return _titulo_com_colunas(_completar_grades(linhas))
 
 
 # ---------------------------------------------------------------------------
@@ -1400,12 +1474,44 @@ def _secoes(corpo, caminho, page):
     return secoes
 
 
+def _ids_de_espacador_para_titulo(jcr_content):
+    """`id` de âncora gravado num `text` ESPAÇADOR passa para o título seguinte (R22).
+
+    Nas `/sitime/*` o alvo do índice de âncoras não é o heading: é o `text`
+    vazio logo antes dele — `{id: "xos", text: "<p>&nbsp;</p>"}` ou
+    `{id: "tcxos", text: "<p>&nbsp;</p><hr><p>&nbsp;</p>"}`. O motor descarta
+    o espaçador e emite o `hr` sem `id`: os 14 links do índice de 3 páginas
+    não rolavam para lugar nenhum, e nenhum print mostra isso. O `title` do
+    destino aceita `id` (é o que as outras âncoras já usam).
+    Trabalha numa cópia: o JCR de entrada pode estar em cache.
+    """
+    jcr_content = copy.deepcopy(jcr_content)
+
+    def visita(node):
+        filhos = list_child_nodes(node)
+        for i, (_n, ch) in enumerate(filhos):
+            if (rt_of(ch) in TEXT_TYPES and ch.get("id")
+                    and not _texto_visivel(ch.get("text", "") or "")):
+                for _m, prox in filhos[i + 1:]:
+                    if not tem_conteudo_renderizavel(prox):
+                        continue
+                    if ((rt_of(prox) in HEADING_TYPES or rt_of(prox) in TITLE_TYPES)
+                            and not prox.get("id")):
+                        prox["id"] = ch.pop("id")
+                    break
+            visita(ch)
+
+    visita(jcr_content)
+    return jcr_content
+
+
 def extract_tree(jcr_content, source_path, archetype=None):
     """Ponto de entrada. Devolve Page (com .pendencias e .page_props)."""
     page = Page(source_path, archetype)
     page.template = jcr_content.get("cq:template") or None
     page.page_props = _page_props(jcr_content)
     jcr_content = podar_nos_mortos(jcr_content, page)
+    jcr_content = _ids_de_espacador_para_titulo(jcr_content)
     corpo, caminho = achar_corpo(jcr_content)
     if corpo is None:
         page.pendencias.append(Pendencia(
@@ -1417,6 +1523,10 @@ def extract_tree(jcr_content, source_path, archetype=None):
     # a grade pode continuar na SEÇÃO seguinte: na `/ambarella` cada linha de
     # cards é um `resizablecontainer` de topo, logo uma seção (R18)
     _completar_grades([r for sec in page.sections for r in sec.rows])
+    # depois da grade (que olha a Row anterior): o título que a 13d trouxe
+    # para a seção junta-se à linha de colunas que ele introduz (R23)
+    for sec in page.sections:
+        sec.rows = _titulo_com_colunas(sec.rows)
 
     _resolver_anchorlinks(page)
     _marcar_papeis(page)
@@ -1595,6 +1705,13 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         payload[f"{base}/alt"] = b.props.get("alt", "") or ""
         payload[f"{base}/altValueFromDAM"] = "false"
         payload[f"{base}/isDecorative"] = "false"
+        # banner clicável (`macnica-and-adi`: a imagem TEM um botão desenhado
+        # e o `resizableimage` aponta para #contact-form)
+        url = b.props.get("linkURL") or ""
+        if url:
+            if link_de and link_para and url.startswith(link_de):
+                url = link_para + url[len(link_de):]
+            payload[f"{base}/linkURL"] = url
         # SEM spImage: experimento A/B na mesma imagem deu 0px de diferença em
         # 32 de 32 medições (390px e 1400px). Não é art direction (209 de 220
         # apontam o mesmo asset) e a policy tem disableLazyLoading=true, então
@@ -1903,6 +2020,8 @@ def _emitir_related(payload, pai, nomes, b, page, link_de, link_para):
 
 def _emitir_linha(payload, pai, nomes, row, page, link_de, link_para):
     """Row -> irmãos diretos (single) ou flexcontainer (columns)."""
+    for b in row.cabecalho:
+        _emitir_bloco(payload, pai, nomes, b, page, link_de, link_para)
     if not row.vazias and (row.kind == "single" or len(row.columns) < 2):
         for c in row.columns:
             for b in c.blocks:
