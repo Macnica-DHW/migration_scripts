@@ -29,70 +29,57 @@ GWI, uma anotação viva — continuam onde estão.
 ## Estado (18/09/2026, fim da 4ª sessão)
 
 ```
-servidor = lotes 3–7 (R1–R27), como no fim da 3ª sessão. NADA foi gravado na 4ª.
-motor    = HEAD do branch migration/semiconductors-remigration = R1–R36
-           >>> O CÓDIGO ESTÁ À FRENTE DO SERVIDOR: R28–R36 NÃO gravadas <<<
-           (o login-token expirou às 19h, no meio da rodada de revisores)
-ponto de retorno do que está no servidor: commit ad63475
+servidor = lotes 3–7 (R1–R27)
+         + lote 8 (134 páginas: R28–R36)                    134/134 sem falha
+         + lote 9 (108 páginas: R37–R41 + ajustes da R28/R35/R36)   ver ONDE-PAREI
+motor    = HEAD do branch migration/semiconductors-remigration
+Tudo o que está no motor está no servidor.
+
+conferência de CONTEÚDO depois do lote 8 (136 páginas): 133 limpas + 1 que era
+   ponto cego do comparador (corrigido) = 134; faltando 22 nas 2 conhecidas
+   (landing 16 hover-only, /ambarella 6 do índice automático); sobrando 0.
+   REFAZER depois do lote 9 (o lote mexe em HTML de tabela e de text).
 ```
 
-**Conferência VISUAL: 26 de 136 páginas** (16 da 3ª sessão + 10 desta: as 6
-prioritárias do lote 4 e 4 famílias novas — `i-chips-ip00c787` ×12,
-`toe10g` ×11, `altera-stratix-10-dx` ×8, `nvme-ip` ×7). Um revisor e um
-cético por página.
+**Conferência VISUAL: 40 de 136 páginas** — 16 (3ª sessão) + 10 (rodada 1) +
+14 (rodada 2, já sobre o lote 8). Um revisor por página, somente leitura; na
+rodada 1, um cético por página com defeito; o patch R28–R36 passou por revisão
+adversarial offline antes de gravar (10 achados reais, todos corrigidos).
 
-- **Todas as regras do lote 4 passaram NA TELA**: R15, R17, R18, R19, R21,
-  R22 (com clique: 4 de 4 âncoras rolam), R23, R24, R26, e R7/R8/R11/13a/13c/13f.
-- Nenhum defeito grave de disposição. O que dominou foi o **aberto G**
-  (9 de 10 páginas) — fechado no código pela **R28**; o **H** pela R30; o **J**
-  pela **R36** (`imageRatio` — o campo alvo EXISTE).
-- Regras novas, todas em `REGRAS-disposicao.md`: R28 (respiro de um container
-  só), R29 (coluna solitária reentra na corrida), R30 (títulos consecutivos;
-  título entra na faixa das abas), R31 (`linkTarget`), R32 (`<br>` em célula),
-  R33 (inline na raiz), R34 (centro vertical), R24b (respiro em coluna), R35
-  (foto de card à esquerda), R36 (`imageRatio`).
-- Conferido OFFLINE nas 136 (`conf_texto.py`): nenhum texto some nem muda de
-  ordem; 134 payloads mudam (a R28 mexe no ritmo de quase todas).
-  `vaos_estruturais.py`: transições com 130px+ caem de 83 para 8.
+- **Nenhum defeito grave de disposição nas 24 páginas desta sessão.** Todas as
+  regras do lote 4 e do lote 8 conferidas NA TELA (com clique onde é função).
+- Fechados: **G** (R28, respiro pago uma vez), **H** (R30), **J** (R36,
+  `imageRatio` — o campo existia), **E** (R41 — não tinha sumido: célula de
+  tabela quebrando número, 8.319px de tabela no celular).
+- Regras novas em `REGRAS-disposicao.md`: R28–R36 (lote 8) e R37–R41 (lote 9).
+- Abertos que ficam, todos de gravidade baixa: **I** (botão centralizado), **K**
+  (recalibrado: sobram 12 fronteiras em 4 páginas), **L** (imagem de largura
+  cheia `alignment=left`), **M** (carousel de 2+ slides), **N** (título depois
+  de `textwithimage` a 90px).
 
 ---
 
 ## PRÓXIMO PASSO
 
-0. **Renovar o cookie** (`AEM_COOKIES` no `.env` da raiz) e conferir:
-   `python3 remigracao/ferramentas/jcr.py /infineon dest | head -1` → `HTTP 200`.
-1. **Conferir os dois styleIds lidos por revisor** na policy (GET):
-   `1726800547211` (image, Display Position Left — R35) em
-   `/conf/macnicaglobal2/settings/wcm/policies/macnicaglobal2/components/content/image/policy_589419553064100`;
-   `1783061491236` (textwithimage, Vertical Center — R34) já bate com o README.
-2. **Validar a R36 em UMA página antes do lote** (`canon-li8030sa` e/ou
-   `i-chips-ip00c787`): gravar só ela, medir a 1400px (imagem ~415/345px,
-   sem buraco sob o texto) **e a 375px** (a imagem NÃO pode ficar com 30% da
-   tela). Se o celular quebrar: tirar a R36 do lote (uma linha em
-   `_emitir_bloco`, o `imageRatio`) e devolver o J à lista de abertos.
-3. **Dry-run real e lote 8** — as 134 páginas:
-   ```bash
-   cd scripts-hazael
-   git show ad63475:scripts-bruno/aem_layout.py > /tmp/antes.py
-   python3 remigracao/ferramentas/cmp_motor.py --antes /tmp/antes.py --lista /tmp/lote8.txt
-   python3 remigracao/ferramentas/diff_payload.py /altera/agilex /canon /design-gateway/udp10g-ip-10g-udp-offload
-   python3 aem_remigrar.py --paginas $(cat /tmp/lote8.txt) --executar
-   ```
-   Depois: `aem_fidelidade_render.py` nas 136 (conteúdo) e print novo de
-   `/altera/agilex`, `/renesas`, `/canon`, `/design-gateway` (abas),
-   `nvme-ip`, `canon-li3030sa`, `canon-li8030sa`, `/toppan`, `/ambarella`
-   (o `espaco_antes` age no índice de âncoras dela) — é onde cada regra nova
-   tem de aparecer.
-4. **Rodada 2 da conferência visual** — os prints GWI × destino de 13 páginas
-   já estavam tirados quando o cookie caiu, mas são de ANTES do lote 8:
-   refazer o lado destino. Páginas: `/4-helio-view-hardware`, `ip00c241`,
-   `/altera/altera-arria-10` (+`-gt`), `/altera/altera-stratix-10`,
-   `/altera/altera-max-10`, `/altera/altera-holoscan`, `/sitime`,
-   `sitime-clock-buffers`, `/design-gateway`, `/i-chips`, `canon-li5030sa`,
-   `canon-120mxs`, `analog-devices-radar-development-kit`.
-5. **Abertos I e K** do REGRAS (botão centralizado — 10 páginas de evidência a
-   favor de "esquerda quando `width<12 offset=0`"; série de itens título+texto
-   a 60px contra 28).
+1. **Conferência de conteúdo depois do lote 9** (`aem_fidelidade_render.py`
+   nas 136) e print de 4–5 páginas onde as regras novas têm de aparecer:
+   `altera-arria-10` (R41, tabela rola no celular), `canon-120mxs` (R40 fio do
+   título; foto do Eval Kit ~250px), `sitime-clock-buffers` (R38 e índice),
+   `altera-holoscan` (R37), `/design-gateway` (clicar em "See the full … lineup
+   here"), `/i-chips` (herói à esquerda).
+2. **Seguir a amostra.** Faltam 96 páginas sem olho. Famílias ainda sem
+   NENHUMA página vista: `/microchip`, `/genesys-logic`, `/on-semiconductor`,
+   `/infineon` (abas), `/altera/altera-cyclone-10-fpga`, `altera-quartus-prime`,
+   `altera-questa`, `opencl`, `development-kits/*` (só `agilex-7-i-series` na 2ª
+   sessão, antes da margem sair), `namuga-vicon-lite` (54 blocos),
+   `i-chips-fpga-evaluation-board`, as 6 folhas de curso `altera/[1-6]-*`,
+   `sulfur-som`, `analog-devices-3d-tof`/`lidar`/`smartmesh`.
+3. **Abertos I, K–N** do REGRAS — I e L são decisão de dialeto (seguir o GWI?).
+4. **Melhoria de ferramenta:** `ancoras.py` só olha o índice; ampliar para
+   `main a[href^="#"]` (foi assim que a âncora morta da R39 escapou).
+   `measure.py`/`probe.js` não listam `textwithimage`, `list` nem `hr`, e não
+   rolam a página (imagem lazy do GWI desloca os y) — 6 revisores tiveram de
+   escrever sonda própria.
 
 **Método que funcionou** (um revisor por página, em paralelo, SOMENTE LEITURA,
 e um cético por página com defeito; o roteiro que eles recebem está no script
@@ -116,14 +103,16 @@ python3 remigracao/ferramentas/diff_payload.py /canon /altera
 python3 aem_remigrar.py --paginas /canon /altera --executar        # só as que mudam
 ```
 
-Cinco coisas que as sessões ensinaram: (1) **print de 1000px de altura com
+Sete coisas que as sessões ensinaram: (1) **print de 1000px de altura com
 "Loading…" é 404**, não página quebrada (R17); (2) **não gravar enquanto os
 revisores medem** — o driver apaga `jcr:content/root` antes de escrever;
 (3) **defeito funcional não aparece em print** (âncora morta, link 404,
 `target`): peça ao revisor para clicar; (4) **o cookie dura ~8h** — olhar a
 idade do `.env` antes de rodada longa, e deixar o trabalho offline para quando
 ele cair; (5) **respiro se paga UMA vez**: padding de container é simétrico e
-acumula — medir o vão estrutural nas 136 antes de mexer.
+acumula — medir o vão estrutural nas 136 antes de mexer. (6) **"sem campo alvo" só depois de ler o `_cq_dialog` e o HTL** do componente
+(o `imageRatio` existia; policy ≠ diálogo). (7) **Conferir a 375px o que
+mexe em largura**: a tabela que só incomodava no desktop tinha 8.319px no celular.
 
 ---
 

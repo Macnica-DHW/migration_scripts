@@ -974,18 +974,120 @@ alta que 1,5× o `.paragraph` ao lado.
 
 ---
 
+## R37–R41 — rodada 2 da conferência visual (18/09/2026, depois do lote 8): 14 páginas
+
+Treze revisores, somente leitura, sobre 14 páginas nunca vistas (landings
+`/sitime`, `/i-chips`, `/design-gateway`; linhas `altera-arria-10`,
+`altera-stratix-10`, `altera-max-10`; folhas `helio-view`, `arria-10-gt`,
+`ip00c241`, `holoscan`, `clock-buffers`, `li5030sa`, `120mxs`, `radar-kit`).
+**Nenhum defeito grave de disposição; todas as regras do lote 8 conferidas na
+tela** (R28a–e, R28c texto↔tabela 50px contra 44, R30 título na faixa das abas,
+R35, R36 em 9 páginas — imagem a ±8px do GWI —, R22 com clique em
+`#whysitimebuffers`). O que saiu:
+
+> **ESTADO: GRAVADO no lote 9 (18/09/2026)** — 108 páginas (dry-run real,
+> `diff_payload.py` nas 136). R39 e R41 validadas na tela em 2 páginas ANTES do
+> lote: `id="productlineup"` sai no `<div class="cmp-text">`; o
+> `white-space:nowrap` sobrevive ao filtro do AEM.
+>
+> **Conferido NA TELA depois do lote 9** (1400px, `?wcmmode=disabled`):
+> R40 `canon-120mxs` título→texto **46px** (era 166; GWI 50) e foto do Eval Kit
+> **249×273** (era 327×359; GWI 252×277) · R38 `clock-buffers` h2→h3 **60**
+> (era 22; GWI 65) e índice→"Key Features" **90** (era 119; GWI 55) · R37
+> `holoscan` frase→1º item **30** (era 90; GWI 28) · R39 `/design-gateway`: o
+> clique em "See the full … lineup here" rola 2.197px e o alvo para a 104px do
+> topo, sob o cabeçalho fixo · R35 `/i-chips`: herói em x=25, a borda do h1 ·
+> R41 `altera-arria-10`: 0 de 209 células quebradas a 1400 e a 375px.
+
+### R37 — `<p><b>&nbsp;</b></p>` é linha em branco
+
+**Onde:** `altera-holoscan`, "Target Applications": 90px entre a frase de
+introdução e o 1º item (GWI 28). E `i-chips-fpga-evaluation-board`.
+**Causa:** o autor deixou o negrito ligado na linha vazia; `strip_empty_blocks`
+e `_P_VAZIO` só aceitam espaço/`&nbsp;`/`<br>` dentro do bloco.
+**Regra:** `normalizar_espacadores` — bloco `p|hN` cujo miolo, tiradas as tags
+inline, é só espaço vira `<p>&nbsp;</p>` e segue o caminho de todo espaçador.
+
+### R38 — título, NÓ espaçador, título de nível MENOR: abre subseção
+
+**Onde:** 5 `/sitime/*` e `/namuga`: h2 "SiTime Buffer Product Lineup" → h3 do
+1º produto a 22px; os outros h3 da série a 71 (GWI 65/64/64/64/64).
+**Causa:** a R20 cola título em título sempre; a extensão da R24 não corta
+depois de título. As duas ignoravam o espaçador quando o bloco seguinte TAMBÉM
+é título. Sem espaçador na origem continua colado (`ambarella-n1-soc`, `/canon`).
+
+### R39 — `id` de âncora em `text` COM conteúdo
+
+**Onde:** `/design-gateway`: o link "See the full Design Gateway product lineup
+here" (`#productlineup`) não rolava — **funcional, print nenhum mostra**. E os 3
+alvos do índice das duas `test-277-*` (a R22 os dava como "sem alvo também no
+GWI": o alvo existe, é um `text`).
+**Regra:** `Block("text")` leva o `id`; o emissor grava `./id` (core text v2
+renderiza como `id` do `<div>`); `text` com `id` não se funde no de cima.
+**Detectar:** `main a[href^="#"]` sem `getElementById` — o `ancoras.py` só olha
+o índice; ampliar o seletor é melhoria pendente da ferramenta.
+
+### R40 — `hr` logo depois de título é o FIO do título
+
+**Onde:** `canon-120mxs`: h1 "120MXS Eval Kits" → `hr` → texto em TRÊS
+containers: 166px do título ao texto (GWI 50), o fio boiando num branco de
+175px, o título mais perto da tabela de cima. 1 caso nas 136 (de 41 `hr`).
+**Regra:** `hr` imediatamente depois de título, sem espaçador, não abre nem
+fecha subseção (exceção à 13c).
+
+### R41 — célula de tabela com UM token não quebra no meio (reabre e fecha o aberto E)
+
+**Onde:** `altera-arria-10` (13 colunas): 31 de 209 células quebravam número no
+desktop ("101,62/0") e **189 no celular, um caractere por linha — tabela de
+8.319px contra 2.258 no GWI**; `/i-chips` ("IP00C33/5"), `helio-view` e
+`6-altera-soc…` ("Prerequisite/s"), `stratix-10-ax`. 5 páginas a 1400px; o GWI,
+0. O aberto E estava "FECHADO: sem a margem a quebra sumiu" — não tinha sumido.
+**Causa:** reset do clientlib do global2: `td,th{word-break:break-word}` — a
+célula encolhe até 1 caractere e o wrapper `overflow-x:auto` nunca rola.
+**Regra:** `nao_quebrar_tokens` — `td`/`th` cujo texto é um token único de 2–16
+caracteres ganha `style="white-space:nowrap"`. A tabela cresce e ROLA dentro do
+`.cmp-table.scroll-hint`, como no GWI.
+**Conferido na tela:** `altera-arria-10`: 0 de 209 quebradas a 1400 e a 375px;
+a 375 a tabela tem 1316px e rola dentro dos 345 do wrapper; altura 3.279px.
+**Melhor saída, fora do motor:** uma linha no clientlib —
+`.cmp-table th,.cmp-table td{word-break:normal;overflow-wrap:normal}`.
+
+### Ajustes de regras anteriores (mesmo lote)
+
+- **R36:** a largura-alvo do imagetext respeita a largura NATURAL do asset
+  (`altera-max-10`: foto de 256px numa coluna de 36%, encostada num canto) e o
+  piso caiu de 25 para **15%** (`canon-120mxs`: foto em retrato pedia 19%, saía
+  1,3× com 239px de buraco; `/renesas`: `width=200` autoral → 15%).
+- **R35:** vale também para a foto SOZINHA na coluna (herói foto | título+texto
+  da `/i-chips`: 58px para dentro da borda do h1; 188px a 1920). +5 nós.
+- **R28:** seção que é só o XF de contato → `pad_tb=none` (o XF traz 100px+
+  próprios; pedido por 3 revisores: lista→botão 245 → 195); subseção que é só
+  `textwithimage` → `none` (a R28e por LINHA: vãos em volta dos `hr` da
+  `arria-10` 97 → 67, GWI 52); subseção que é só o índice de âncoras → `none`
+  (`.anchor-link__list` tem 60px de margem embaixo: índice→título 119 → 90, GWI 55).
+- Container de seção VAZIO (o `related` que não resolve) é podado — 9 páginas.
+- Comparador (`aem_fidelidade_render.py`): passou a ver texto solto na raiz do
+  rich text (a R33 fazia a `canon-li8030sa` acusar `sobra=1`).
+
+---
+
 ## Aberto (achado na conferência visual, NÃO corrigido)
 
 | # | padrão | onde / quanto | causa | proposta |
 |---|---|---|---|---|
 | I | **botão sempre centralizado** | `/altera` ×2; **+ as 7 `design-gateway/*nvme*`** (`width=4 offset=0`: GWI na borda esquerda, destino no centro da página — único elemento centrado do corpo); `/toppan` (botão em coluna: GWI ocupa a coluna, destino centrado nela) | `S_BTN_CENTER` fixo. No GWI: sem `cq:responsive` o botão é centrado na linha (`/altera/agilex`); com `width<12 offset=0` fica à esquerda | decisão de dialeto. Proposta com 10 páginas de evidência: sem `S_BTN_CENTER` quando `width<12` e `offset=0`, ou dentro de coluna |
 | J | imagem do `textwithimage` no tamanho natural | — | — | **virou R36** (`imageRatio`), validada na tela e gravada no lote 8 |
-| K | **série de itens título+texto: 60px entre itens contra 28** | `canon-li8030sa` (h4×6 e h3×8: +384px), `ip00c241` (h2×12), `namuga-vicon-lite` (4 séries)… 26 séries em 18 páginas; das 99 fronteiras, 66 têm UMA linha em branco no GWI (28px → 60), 28 têm zero, 5 têm duas | todo título abre subseção (30+30) | por evidência, como a R24: título NÃO abre subseção quando o `text` anterior termina com exatamente UMA linha em branco E o grupo foi aberto por título do mesmo nível E com a mesma marca de fio (style `1690913810338`); o último `<p>` ganha `margin-bottom:30px`. Sem a 3ª condição funde "Why Macnica"/"Next Step" (h3 de seção) com os h3 de item. Abrir a `ip00c241` antes de decidir o caso de zero linhas |
-| E | cabeçalho de tabela quebrando palavra | — | — | **FECHADO sem mexer:** sem a margem a quebra sumiu (`/canon` conferida) |
+| K | série de itens título+texto: 60px entre itens | **recalibrado na rodada 2** — o alvo do GWI não é 28: são 16px fixos entre componentes + 16 de margem do `ul` + a linha em branco = **44 (parágrafo) a 60 (lista)**; na `ip00c241` GWI e destino dão 60/60 (a linha em branco está ANINHADA no último `<li>` e o censo a contava como "zero"). Sobram 12 fronteiras com zero de verdade em 4 páginas (`agilex-9` ×2, `holoscan` ×6, `multimodal` ×3, `fpga-evaluation-board` ×1): 16–32 contra 60 | todo título abre subseção (30+30) | baixa prioridade. Se for mexer: só no zero REAL, e o detector de linha em branco final tem de olhar através de `</li></ul>` |
+| L | **imagem de largura cheia com `alignment=left` sai centrada no tamanho natural** | banner da `altera-holoscan` (1280px centrado em 1350: 35px de recuo, cresce com a janela), diagramas "Why Macnica" das `design-gateway` | o `image` do global2 centra por padrão e não amplia; no GWI a imagem ENCHE a coluna e esquerda/centro não se distinguem | decisão de dialeto: Display Position Left para todo `alignment=left` muda ~85 imagens em 50 páginas que ninguém viu assim. A R35 só cobre foto de card e foto sozinha em coluna |
+| M | **carousel de 2+ slides ao lado de texto ocupa a coluna inteira** | 4 folhas `/canon` (`li5030sa`, `li5040`, `li5070sa`, `li7070sa`): slide de imagem 662×543 contra 379×311, cortado embaixo pelo `max-height:36vw` do carousel do site; irmãs de 1 slide têm hero de 380px (R36) | só o carousel de 1 slide vira `textwithimage` | antes de dizer "sem campo alvo": ler dialog/policy do `carousel`, `flexcontainer` e `flexcontaineritem` |
+| N | título logo depois de `textwithimage`: 90px contra 20–47 | 48 lugares em 46 páginas (todos abaixo de 100px; o agrupamento não engana) | margem 30 do twi + 30 + 30 da subseção que todo título abre | título depois de twi SEM espaçador na origem não abriria subseção (41px). Falta cruzar com a evidência de espaçador |
+| E | célula de tabela quebrando palavra/número | 5 páginas a 1400px, muito pior no celular | `word-break:break-word` do clientlib | **virou R41** (`white-space:nowrap` em célula de token único). A correção de raiz é 1 linha de CSS no clientlib |
+| — | policy do site: o `embed` do global2 tem `youtubeRelatedVideosEnabled=false` (e mute/loop/autoplay) — o `rel=0` dos 37 vídeos do GWI não tem como migrar; `/altera` e `/analog-devices` têm `youtubeMute=true` | 33 páginas | policy `…/components/content/embed/policy_1719541566086` | fora do motor |
+| — | `rewrite_link` deixa a `/` final quando converte URL pública (`…/boards-modules/terasic/`) | `altera-holoscan` (não contado) | `aem_lib.rewrite_link`, lib compartilhada | `rstrip('/')` — entra no censo de links do go-live |
 | — | CSS do site: `td` alinha no topo (GWI no meio); índice de âncoras quebra 3+1; fio sob os h3 do GWI não existe | várias | clientlib do global2 | fora do motor |
 
 Fechados na 3ª sessão: F (R26), A (R16 — sem moldura, continua `table`), B (R24),
-C (R18), D (R15), E (sumiu sem a margem). **Na 4ª: G (R28) e H (R30).**
+C (R18), D (R15). **Na 4ª: G (R28), H (R30), J (R36) e E (R41 — não tinha sumido).**
 
 ### `supplierlist` da landing — o que o GWI realmente mostra
 

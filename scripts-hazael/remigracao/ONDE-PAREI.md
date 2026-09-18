@@ -4,17 +4,17 @@
 
 ```
 136 páginas em /content/copia-teste/americas/mai/en/products/semiconductors-remigration
-servidor: lotes 3–7 (R1–R27) — commit ad63475 é o motor que está gravado
-motor   : HEAD = R1–R36.  R28–R36 NÃO gravadas (o cookie expirou às 19h de 18/09)
-          134 de 136 payloads mudam; offline: 0 texto perdido, 0 mudança de ordem
+lotes 3–7: R1–R27
+lote 8 de 18/09/2026: R28–R36 — 134/134 sem falha
+lote 9 de 18/09/2026: R37–R41 + ajustes — 108 páginas (as que o diff_payload acusou)
 
-conferência de conteúdo (depois do lote 7): 134 de 136 limpas, 22 faltando em 2
-páginas conhecidas (landing 16, /ambarella 6), 0 sobrando.
-conferência visual: 26 de 136 — ver HANDOFF.md.
+conferência de conteúdo depois do lote 8: 134 de 136 limpas (22 faltando nas 2
+páginas conhecidas, 0 sobrando). REFAZER depois do lote 9.
+conferência visual: 40 de 136 — ver HANDOFF.md.
 ```
 
-Próximo passo em `HANDOFF.md`: cookie → conferir 2 styleIds → validar a R36
-(`imageRatio`) numa página, desktop e 375px → dry-run → lote 8 → rodada 2.
+O motor no disco é o que está no servidor (HEAD do branch
+`migration/semiconductors-remigration`). Próximo passo em `HANDOFF.md`.
 
 ## Para reexecutar
 
@@ -65,8 +65,8 @@ Saíram da lista nesta sessão: `pagesectionlisting` (12) — agora vira
   fora do nosso escopo de escrita, atinge ~110 páginas.
 - **Formulário da `macnica-and-adi`** — migrado (R27). NÃO testar o envio sem
   combinar: manda e-mail real. reCAPTCHA só na árvore final.
-- **Abertos I e K** em `REGRAS-disposicao.md` (botão sempre centralizado; série de
-  itens título+texto a 60px contra 28). G, H e J viraram R28, R30 e R36.
+- **Abertos I, K, L, M, N** em `REGRAS-disposicao.md` (todos de gravidade baixa).
+  G, H, J e E viraram R28, R30, R36 e R41.
 - **`supplierlist`**: o blurb é hover-only; o que se VÊ é uma grade 4×4 de
   logo+nome com link (descrição em REGRAS).
 - **Centralizar título que abre seção** (dialeto da Anion) — hoje só se
