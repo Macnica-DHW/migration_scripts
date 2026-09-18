@@ -193,12 +193,15 @@ class Column:
         self.width = width
         self.phone_width = phone_width
         self.blocks = []
+        self.offset = 0            # doze avos vazios à esquerda (grade do GWI)
 
 
 class Row:
     def __init__(self, kind="single"):
         self.kind = kind
         self.columns = []
+        self.vazias = 0            # itens vazios no fim, para fechar a grade (R18)
+        self.largura_orfa = None   # coluna única rebaixada: a largura que tinha
 
     @property
     def blocks(self):
@@ -273,6 +276,14 @@ def width_of(node, bp="default"):
                 if 0 < n <= 12:
                     return n
     return None
+
+
+def offset_of(node, bp="default"):
+    """Deslocamento da coluna em doze avos (0 quando não há)."""
+    resp = node.get("cq:responsive")
+    cfg = resp.get(bp) if isinstance(resp, dict) else None
+    o = cfg.get("offset") if isinstance(cfg, dict) else None
+    return int(str(o)) if o is not None and str(o).isdigit() else 0
 
 
 def col_width_of(node):
@@ -952,6 +963,12 @@ def _quebrar_em_subsecoes(blocos, caminho):
         # anterior ele nascia colado no texto (gap 0 entre irmãos) e lia como
         # sublinhado do último bullet, não como divisor de seção (R13).
         abre = b.kind in ("title", "hr") or (atual and atual[-1].kind == "hr")
+        # Título logo depois de título é SUBTÍTULO: fica no mesmo container.
+        # Na `ambarella-n1-soc` o par h2 "Leading the Family…" + h3
+        # "High-Performance Edge GenAI…" anda colado no GWI (16px) e saía com
+        # 60px, o h2 boiando a meio caminho do bloco de cima (R20).
+        if b.kind == "title" and atual and all(x.kind == "title" for x in atual):
+            abre = False
         if abre and atual:
             grupos.append(atual)
             atual = []
@@ -1037,14 +1054,95 @@ def _linha_de(node, caminho, page):
         if w is None or not tem_conteudo_renderizavel(col):
             continue
         c = Column(f"{caminho}/{cn}", width=w, phone_width=width_of(col, "phone"))
+        c.offset = offset_of(col)
         c.blocks = _fundir_textos(_coletar_blocos(col, c.origin_path, page))
         if c.blocks:
             r.columns.append(c)
     if len(r.columns) < 2:
         r.kind = "single"
         for c in r.columns:
+            r.largura_orfa = c.width
             c.width = 12
     return r
+
+
+def _quebrar_por_largura(r):
+    """Uma Row de colunas -> tantas Rows quantas a grade de 12 do GWI desenha (R19).
+
+    A grade responsiva do AEM QUEBRA a linha quando a soma (offset + width)
+    passa de 12. Na `/i-chips/i-chips-scaler-lsi` o `resizablecontainer` tem
+    seis cards `width=4`: o GWI mostra 3 + 3, e o motor emitia um
+    `flexcontainer` de seis itens `flex:1` — seis cards espremidos numa linha,
+    40% menores numa página mais larga.
+    """
+    if r.kind != "columns" or len(r.columns) < 2:
+        return [r]
+    grupos, atual, soma = [], [], 0
+    for c in r.columns:
+        ocupa = (c.width or 12) + (c.offset or 0)
+        if atual and soma + ocupa > 12:
+            grupos.append(atual)
+            atual, soma = [], 0
+        atual.append(c)
+        soma += ocupa
+    grupos.append(atual)
+    if len(grupos) == 1:
+        return [r]
+    out = []
+    for g in grupos:
+        nova = Row("columns" if len(g) > 1 else "single")
+        nova.columns = g
+        if len(g) == 1:
+            nova.largura_orfa = g[0].width
+            g[0].width = 12
+        out.append(nova)
+    return out
+
+
+def _e_card_orfao(node):
+    """Invólucro cujo único filho renderizável é UMA coluna (`0 < width < 12`)."""
+    if rt_of(node) not in WRAPPER_TYPES or rt_of(node) == IMAGETEXT_RT:
+        return False
+    vivos = [c for _n, c in list_child_nodes(node) if tem_conteudo_renderizavel(c)]
+    return len(vivos) == 1 and col_width_of(vivos[0]) is not None
+
+
+def _grade_uniforme(r):
+    """(n, largura) se a Row é uma linha de 2+ colunas de MESMA largura."""
+    if r.kind != "columns" or len(r.columns) < 2:
+        return None
+    ws = {c.width for c in r.columns}
+    return (len(r.columns), ws.pop()) if len(ws) == 1 else None
+
+
+def _completar_grades(linhas):
+    """Última linha de uma grade, com menos cards, é completada com vazios (R18).
+
+    No GWI a grade é de largura fixa: três cards `width=3` numa linha e, na
+    linha seguinte, dois cards `width=3` — que ficam sob as duas primeiras
+    colunas. No destino o `flexcontaineritem` é `flex:1`: os dois cards
+    esticavam para 50% cada (`/ambarella`, H32AQ/A12AQ) e o card sozinho
+    virava faixa de largura cheia (`/canon`, o "Aberto C"). Completar a linha
+    com itens VAZIOS devolve a largura da coluna.
+
+    Só vale para linha IMEDIATAMENTE abaixo de uma linha de colunas uniformes
+    da mesma largura: é a evidência de que as duas são a mesma grade.
+    """
+    ref = None
+    for r in linhas:
+        g = _grade_uniforme(r)
+        if g:
+            if ref and g[1] == ref[1] and g[0] < ref[0]:
+                r.vazias = ref[0] - g[0]
+            else:
+                ref = g
+        elif (ref and r.kind == "single" and r.largura_orfa == ref[1]
+              and len(r.columns) == 1):
+            r.kind = "columns"
+            r.vazias = ref[0] - 1
+        else:
+            ref = None
+    return linhas
 
 
 def extrair_linhas(node, caminho, page):
@@ -1068,7 +1166,7 @@ def extrair_linhas(node, caminho, page):
 
     if _is_linha(node):
         r = _linha_de(node, caminho, page)
-        return [r] if r.columns else []
+        return _completar_grades(_quebrar_por_largura(r)) if r.columns else []
 
     linhas = []
     corrida = []          # folhas consecutivas de largura cheia
@@ -1095,12 +1193,20 @@ def extrair_linhas(node, caminho, page):
         if not colunas:
             return
         if len(colunas) == 1:
-            # coluna sozinha não é coluna: vira conteúdo de largura cheia
-            corrida.extend(colunas[0].blocks)
+            g = _grade_uniforme(linhas[-1]) if (linhas and not corrida) else None
+            if g and g[1] == colunas[0].width:
+                # card órfão de uma grade: continua coluna (R18)
+                r = Row("single")
+                r.largura_orfa = colunas[0].width
+                r.columns = colunas[:]
+                linhas.append(r)
+            else:
+                # coluna sozinha não é coluna: vira conteúdo de largura cheia
+                corrida.extend(colunas[0].blocks)
         else:
             r = Row("columns")
             r.columns = colunas[:]
-            linhas.append(r)
+            linhas.extend(_quebrar_por_largura(r))
         colunas.clear()
 
     for nome, ch in list_child_nodes(node):
@@ -1116,23 +1222,32 @@ def extrair_linhas(node, caminho, page):
             # título + 3 colunas + título, em vez de perder os títulos.
             fechar_corrida()
             c = Column(p, width=w, phone_width=width_of(ch, "phone"))
+            c.offset = offset_of(ch)
             c.blocks = _fundir_textos(_coletar_blocos(ch, p, page))
             if c.blocks:
                 colunas.append(c)
             continue
 
         fechar_colunas()
+        if _e_card_orfao(ch) and linhas and not corrida:
+            g = _grade_uniforme(linhas[-1])
+            r = _linha_de(ch, p, page)
+            if g and r.columns and r.largura_orfa == g[1]:
+                # invólucro com UMA coluna logo abaixo de uma grade da mesma
+                # largura: é o card que sobrou da grade (`/canon`, R18)
+                linhas.append(r)
+                continue
         if _is_linha(ch) and rt_of(ch) != IMAGETEXT_RT:
             fechar_corrida()
             r = _linha_de(ch, p, page)
             if r.columns:
-                linhas.append(r)
+                linhas.extend(_quebrar_por_largura(r))
             continue
         corrida.extend(_coletar_blocos(ch, p, page))
 
     fechar_colunas()
     fechar_corrida()
-    return linhas
+    return _completar_grades(linhas)
 
 
 # ---------------------------------------------------------------------------
@@ -1299,6 +1414,9 @@ def extract_tree(jcr_content, source_path, archetype=None):
 
     page.topology = _classificar_topologia(corpo)
     page.sections = _secoes(corpo, caminho, page)
+    # a grade pode continuar na SEÇÃO seguinte: na `/ambarella` cada linha de
+    # cards é um `resizablecontainer` de topo, logo uma seção (R18)
+    _completar_grades([r for sec in page.sections for r in sec.rows])
 
     _resolver_anchorlinks(page)
     _marcar_papeis(page)
@@ -1785,7 +1903,7 @@ def _emitir_related(payload, pai, nomes, b, page, link_de, link_para):
 
 def _emitir_linha(payload, pai, nomes, row, page, link_de, link_para):
     """Row -> irmãos diretos (single) ou flexcontainer (columns)."""
-    if row.kind == "single" or len(row.columns) < 2:
+    if not row.vazias and (row.kind == "single" or len(row.columns) < 2):
         for c in row.columns:
             for b in c.blocks:
                 _emitir_bloco(payload, pai, nomes, b, page, link_de, link_para)
@@ -1816,7 +1934,7 @@ def _emitir_linha(payload, pai, nomes, row, page, link_de, link_para):
 
     # Linha 6/6 {uma imagem} + {texto} vira UM textwithimage — é a técnica da
     # folha de produto: 165 das 196 páginas autorais usam só textwithimage.
-    fundido = _tentar_textwithimage(row)
+    fundido = None if row.vazias else _tentar_textwithimage(row)
     if fundido:
         _emitir_bloco(payload, pai, nomes, fundido, page, link_de, link_para)
         return
@@ -1841,6 +1959,11 @@ def _emitir_linha(payload, pai, nomes, row, page, link_de, link_para):
         # Coluna desigual do GWI (8/4, 5/7) é normalizada de propósito.
         for b in c.blocks:
             _emitir_bloco(payload, item, nomes, b, page, link_de, link_para)
+    # itens vazios fecham a grade: `flex:1` dá a cada card a largura da coluna
+    for _ in range(row.vazias):
+        item = f"{base}/{itn(base, 'flexcontaineritem')}"
+        payload[f"{item}/jcr:primaryType"] = "nt:unstructured"
+        payload[f"{item}/sling:resourceType"] = RT["flexcontaineritem"]
 
 
 def _tentar_textwithimage(row):
