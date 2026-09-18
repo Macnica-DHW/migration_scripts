@@ -227,6 +227,11 @@ def main():
     ap.add_argument("--destino", default=DEST_ROOT)
     ap.add_argument("--so", default=None,
                     help="só o que estiver sob este caminho relativo (ex: /altera)")
+    ap.add_argument("--paginas", nargs="+", default=None, metavar="REL",
+                    help="só ESTAS páginas (caminho relativo exato, ex: /altera "
+                         "/canon/canon-li7050). É o que o dry-run de "
+                         "cmp_motor.py lista como 'muda': grava o que muda, sem "
+                         "regravar a subárvore inteira. '/' é a landing.")
     ap.add_argument("--limite", type=int, default=None)
     ap.add_argument("--inicio", type=int, default=0)
     ap.add_argument("--executar", action="store_true")
@@ -258,6 +263,13 @@ def main():
     if args.so:
         alvo = args.origem.rstrip("/") + "/" + args.so.strip("/")
         paginas = [p for p in paginas if p == alvo or p.startswith(alvo + "/")]
+    if args.paginas:
+        alvos = {args.origem.rstrip("/") + ("/" + r.strip("/") if r.strip("/") else "")
+                 for r in args.paginas}
+        fora = alvos - set(paginas)
+        if fora:
+            sys.exit(f"[erro] --paginas fora do escopo ou inexistentes: {sorted(fora)}")
+        paginas = [p for p in paginas if p in alvos]
     paginas = paginas[args.inicio:]
     if args.limite:
         paginas = paginas[:args.limite]
@@ -266,7 +278,7 @@ def main():
 
     taxonomia = None if args.sem_tags else load_tag_taxonomy(
         session, args.base_url, auth)
-    cache_asset, cache_dc = {}, {}
+    cache_asset, cache_dc = set(), {}   # set: ensure_dam_folder faz cache.add()
     linhas, pend_rows = [], []
 
     for i, origem in enumerate(paginas, 1):

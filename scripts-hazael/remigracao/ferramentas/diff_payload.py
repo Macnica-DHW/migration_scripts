@@ -76,7 +76,7 @@ def main():
     rels = sys.argv[1:]
     session, auth = build_session(verbose=False)
     base_url = CONFIG["base_url"]
-    cache_dc, cache_asset = {}, {}
+    cache_dc, cache_asset = {}, set()   # set: ensure_dam_folder faz cache.add()
     for rel in rels:
         origem = R.GWI_ROOT + ("" if rel in ("", "/") else "/" + rel.strip("/"))
         destino = R.destino_de(origem)

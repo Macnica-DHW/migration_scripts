@@ -75,7 +75,7 @@ completa e a proveniência de cada regra.
 """
 
 import re
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 from aem_lib import (BUTTON_TYPES, CAROUSEL_TYPES, CONTAINER_RT, DOWNLOAD_TYPES,
                      DOWNLOADLIST_TYPES, HEADING_TYPES, IMAGE_TYPES,
@@ -288,8 +288,56 @@ def col_width_of(node):
 
 def _texto_visivel(html):
     s = re.sub(r"<[^>]+>", " ", html or "")
-    s = s.replace("&nbsp;", " ").replace(" ", " ")
+    s = s.replace("&nbsp;", " ").replace("\u00a0", " ")
     return re.sub(r"\s+", " ", s).strip()
+
+
+_BLOCO_RICO = re.compile(r"<(p|h[1-6])\b([^>]*)>(.*?)</\1\s*>", re.I | re.S)
+
+
+def colar_paragrafos(html):
+    """`<p>` que o GWI desenha COLADO no bloco de cima ganha `margin-top:0` (R15).
+
+    No GWI `p{margin:unset}`: entre dois blocos de um rich text o vão é 0, e a
+    linha em branco é um `<p>&nbsp;</p>` que o autor digita. No destino todo
+    `<p>` que não é o primeiro filho tem `margin-top:30px` (`.cmp-text`,
+    `.cmp-table` e `.cmp-textwithimage .paragraph`, a mesma regra), e o
+    `<p>&nbsp;</p>` é apagado por `strip_empty_blocks`. Resultado: o título do
+    card "CV72S" ficava a 50px do texto (20 do `h3` + 30 do `<p>`) contra 0 no
+    GWI, e pergunta/resposta do FAQ da `/ambarella` perdiam o agrupamento.
+
+    Regra: `<p>` com texto cujo vizinho IMEDIATO de cima (só espaço em branco
+    entre os dois) é um `<p>`/`<h1-6>` com conteúdo recebe `margin-top:0`.
+    Depois de um espaçador fica como está: os 30px do destino fazem o papel da
+    linha em branco (28px) do GWI. Estilo inline sobrevive ao filtro do AEM.
+
+    Roda sobre o HTML CRU de cada `text`/`table` da origem — antes de
+    `strip_empty_blocks`, que apagaria a evidência, e antes de
+    `_fundir_textos`: a emenda entre dois `text` nunca é colada, porque o
+    espaçador que havia entre eles pode ter sido um nó à parte, já descartado.
+    """
+    if not html or "<p" not in html.lower():
+        return html
+    out, pos, ant = [], 0, None
+    for m in _BLOCO_RICO.finditer(html):
+        tag, attrs, miolo = m.group(1).lower(), m.group(2), m.group(3)
+        cheio = bool(_texto_visivel(miolo)) or "<img" in miolo.lower()
+        colado = (ant is not None and ant[1]
+                  and not html[ant[0]:m.start()].strip())
+        if (tag == "p" and colado and _texto_visivel(miolo)
+                and "margin-top" not in attrs.lower()
+                and not re.search(r"\bmargin\s*:", attrs, re.I)):
+            ms = re.search(r"""\bstyle\s*=\s*(["'])""", attrs, re.I)
+            if ms:
+                attrs = attrs[:ms.end()] + "margin-top:0;" + attrs[ms.end():]
+            else:
+                attrs += ' style="margin-top:0"'
+            out.append(html[pos:m.start()])
+            out.append(f"<{m.group(1)}{attrs}>{miolo}</{m.group(1)}>")
+            pos = m.end()
+        ant = (m.end(), cheio)
+    out.append(html[pos:])
+    return "".join(out)
 
 
 def spacer_kind(node):
@@ -504,7 +552,8 @@ def bloco_de(node, caminho, page):
             m = re.search(r"<a\s[^>]*\b(?:name|id)\s*=\s*[\"']([^\"']+)",
                           node.get("text", ""), re.I)
             return Block("anchor", caminho, nome=m.group(1) if m else "")
-        return Block("text", caminho, html=node.get("text", ""))
+        return Block("text", caminho,
+                     html=colar_paragrafos(node.get("text", "")))
 
     if rt in DESCARTAVEIS:
         return None
@@ -555,7 +604,8 @@ def bloco_de(node, caminho, page):
                      linkURL=node.get("linkURL", ""))
 
     if rt in TABLE_TYPES:
-        return Block("table", caminho, html=node.get("text", ""))
+        return Block("table", caminho,
+                     html=colar_paragrafos(node.get("text", "")))
 
     if rt in VIDEO_TYPES:
         vid = node.get("youtubeVideoId")
@@ -735,7 +785,10 @@ def _coletar_blocos(node, caminho, page):
     rt = rt_of(node)
     if rt and rt not in WRAPPER_TYPES:
         b = bloco_de(node, caminho, page)
-        return _destacar_hr(b) if b else []
+        if b is None:
+            return []
+        return [x for d in _desmontar_tabela_de_layout(b)
+                for x in _destacar_hr(d)]
     if rt == IMAGETEXT_RT:
         # O `imagetext` do GWI não é só invólucro: ele tem INTERRUPTORES DE
         # VISIBILIDADE. `isText=false` esconde o texto, `isButton=false`
@@ -792,6 +845,68 @@ def _coletar_blocos(node, caminho, page):
 _VAZIO = r"(?:\s|&nbsp;|\u00a0|<br\s*/?>|<p>(?:\s|&nbsp;|\u00a0|<br\s*/?>)*</p>)*"
 _HR_INICIO = re.compile(r"^" + _VAZIO + r"<hr\s*/?>" + _VAZIO, re.I)
 _HR_FIM = re.compile(_VAZIO + r"<hr\s*/?>" + _VAZIO + r"$", re.I)
+
+
+_TR = re.compile(r"<tr\b[^>]*>(.*?)</tr\s*>", re.I | re.S)
+_TD = re.compile(r"<td\b([^>]*)>(.*?)</td\s*>", re.I | re.S)
+_IMG = re.compile(r"<img\b[^>]*>", re.I)
+
+
+def _desmontar_tabela_de_layout(b):
+    """`table` que o GWI usa só para CENTRAR um ícone vira `image` + `text` (R16).
+
+    Na `/analog-devices` cada card "Streamlined Inventory Management" é uma
+    `<table border=0>` de 7 células — seis vazias e o ícone na do meio — mais
+    uma linha `colspan=7` com a legenda. No GWI a tabela não tem borda e o
+    visitante vê ícone em cima, legenda embaixo. No destino
+    `.cmp-table td{border:2px solid;padding:15px 17px}` desenha a grade
+    inteira, com as seis células vazias em volta do ícone.
+
+    É tabela de LAYOUT, e só então é desmontada, quando: tem `<img>`, não tem
+    `<th>`, não tem tabela aninhada e NENHUMA linha tem mais de uma célula com
+    conteúdo — empilhar na ordem do documento reproduz exatamente o que o GWI
+    mostra. Linha com duas células cheias é grade de verdade: fica `table`.
+    O alinhamento da célula (`text-align` no `<td>`) desce para o texto; a
+    imagem do destino já é centrada por padrão.
+    """
+    if b.kind != "table":
+        return [b]
+    h = b.props.get("html", "") or ""
+    hl = h.lower()
+    if "<img" not in hl or "<th" in hl or hl.count("<table") != 1:
+        return [b]
+    blocos = []
+    for tr in _TR.findall(h):
+        cheias = [(a, m) for a, m in _TD.findall(tr)
+                  if _texto_visivel(m) or "<img" in m.lower()]
+        if len(cheias) > 1:
+            return [b]
+        for attrs, miolo in cheias:
+            alinh = re.search(r"text-align\s*:\s*(\w+)", attrs, re.I)
+            pos = 0
+            pedacos = []
+            for m in _IMG.finditer(miolo):
+                pedacos.append(("text", miolo[pos:m.start()]))
+                pedacos.append(("img", m.group(0)))
+                pos = m.end()
+            pedacos.append(("text", miolo[pos:]))
+            for tipo, val in pedacos:
+                if tipo == "img":
+                    src = re.search(r"""\bsrc\s*=\s*["']([^"']+)""", val, re.I)
+                    ref = unquote(src.group(1)) if src else ""
+                    if not ref.startswith("/content/dam/"):
+                        return [b]
+                    alt = re.search(r"""\balt\s*=\s*["']([^"']*)""", val, re.I)
+                    blocos.append(Block("image", b.origin_path, fileReference=ref,
+                                        alt=alt.group(1) if alt else ""))
+                elif _texto_visivel(val):
+                    if alinh and "text-align" not in val.lower():
+                        est = f' style="text-align: {alinh.group(1)};"'
+                        val = (re.sub(r"<p>", f"<p{est}>", val, flags=re.I)
+                               if re.search(r"<p\b", val, re.I)
+                               else f"<p{est}>{val}</p>")
+                    blocos.append(Block("text", b.origin_path, html=val))
+    return blocos or [b]
 
 
 def _destacar_hr(b):

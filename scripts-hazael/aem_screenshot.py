@@ -110,6 +110,19 @@ def main():
                 navegador.close()
                 sys.exit(1)
         pagina.wait_for_timeout(args.espera)
+        if args.full:
+            # O GWI carrega imagem sob demanda (loading=lazy): sem rolar, o
+            # print de página inteira sai com os cards SEM foto e o revisor
+            # compara um buraco com uma imagem (visto na /ambarella).
+            pagina.evaluate("""async () => {
+                const passo = window.innerHeight;
+                for (let y = 0; y < document.documentElement.scrollHeight; y += passo) {
+                    window.scrollTo(0, y);
+                    await new Promise(r => setTimeout(r, 150));
+                }
+                window.scrollTo(0, 0);
+            }""")
+            pagina.wait_for_timeout(1000)
         titulo = pagina.title()
         pagina.screenshot(path=saida, full_page=args.full)
         navegador.close()
