@@ -126,7 +126,9 @@ S_TITLE_CENTER = "1717668113714"   # [2] Posição
 S_TITLE_H3SIZE = "1718280237031"   # [3] Tamanho -> classe heading3
 
 S_FLEX_SP_1COL = "1719484596357"   # [1] Design SP: empilha abaixo de 1050px
+S_IMG_LEFT = "1726800547211"       # image [1] Display Position: Left (o padrão é Center)
 S_TWI_LEFT = "1718154328384"       # [0] imagem à esquerda
+S_TWI_VCENTER = "1783061491236"    # [Vertical Alignment] Center (`vert-center`)
 S_TABLE_NOROUND = "1722939215525"  # [2] No Rounded Corner
 S_TABLE_BLACK = "1722937999485"    # [0] Color Scheme: Black (texto #4d4d4d)
 S_TABLE_NOBG = "1722858778108"     # [1] Header: No Background
@@ -326,6 +328,64 @@ _P_VAZIO = r"<p\b[^>]*>(?:\s|&nbsp;|\u00a0|<br\s*/?>)*</p\s*>"
 _ESPACADOR_INICIO = re.compile(r"^\s*(?:" + _P_VAZIO + r"\s*)+", re.I)
 _ESPACADOR_FIM = re.compile(r"(?:" + _P_VAZIO + r"\s*)+$", re.I)
 _BLOCO_RICO = re.compile(r"<(p|h[1-6])\b([^>]*)>(.*?)</\1\s*>", re.I | re.S)
+
+
+_BR_FIM_DE_CELULA = re.compile(r"(?:\s*<br\s*/?>)+\s*(?=(?:</p>\s*)?</t[dh]\s*>)", re.I)
+
+_TAG_HTML = re.compile(r"<(/?)([a-zA-Z][a-zA-Z0-9]*)\b[^>]*?(/?)>")
+_TAGS_DE_BLOCO = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "ul", "ol", "dl",
+                  "table", "div", "blockquote", "hr", "pre", "figure", "section"}
+_TAGS_VAZIAS = {"br", "hr", "img", "input", "wbr", "col", "source"}
+
+
+def embrulhar_inline_da_raiz(html):
+    """Texto/inline SOLTO na raiz do rich text vai para dentro de um `<p>` (R33).
+
+    O RTE do GWI às vezes deixa o parágrafo como `<span>` (ou texto puro)
+    filho direto do componente. No GWI não faz diferença; no global2 o estilo
+    de parágrafo é `.cmp-text p`, e o que está fora de `<p>` herda a
+    tipografia base (14px, letter-spacing 1.4px) e não tem margem: na
+    `canon-li8030sa` "Macnica pairs Canon's sensor roadmap…" saía menor, com
+    as letras espaçadas e colado no h4 (1px contra 27). HTML que não fecha
+    direito volta como veio.
+    """
+    if not html or not _texto_visivel(html):
+        return html
+    out, pos, prof, mudou = [], 0, 0, False
+
+    def solta(trecho):
+        nonlocal mudou
+        if _texto_visivel(trecho):
+            mudou = True
+            return "<p>" + trecho.strip() + "</p>"
+        return trecho
+
+    for m in _TAG_HTML.finditer(html):
+        tag = m.group(2).lower()
+        fecha, auto = bool(m.group(1)), bool(m.group(3)) or tag in _TAGS_VAZIAS
+        if prof == 0:
+            if fecha and tag in _TAGS_DE_BLOCO:
+                return html                      # fecha sem abrir: não mexe
+            if not fecha and tag in _TAGS_DE_BLOCO:
+                out.append(solta(html[pos:m.start()]))
+                pos = m.start()
+                if auto:
+                    out.append(html[pos:m.end()])
+                    pos = m.end()
+                else:
+                    prof, raiz = 1, tag
+            continue                             # inline na raiz: segue acumulando
+        if auto:
+            continue
+        if tag == raiz:
+            prof += -1 if fecha else 1
+            if prof == 0:
+                out.append(html[pos:m.end()])
+                pos = m.end()
+    if prof != 0:
+        return html
+    out.append(solta(html[pos:]))
+    return "".join(out) if mudou else html
 
 
 def colar_paragrafos(html):
@@ -585,7 +645,7 @@ def bloco_de(node, caminho, page):
             m = re.search(r"<a\s[^>]*\b(?:name|id)\s*=\s*[\"']([^\"']+)",
                           node.get("text", ""), re.I)
             return Block("anchor", caminho, nome=m.group(1) if m else "")
-        bruto = node.get("text", "") or ""
+        bruto = embrulhar_inline_da_raiz(node.get("text", "") or "")
         return Block("text", caminho, html=colar_paragrafos(bruto),
                      respiro_antes=bool(_ESPACADOR_INICIO.match(bruto)),
                      respiro_depois=bool(_ESPACADOR_FIM.search(bruto)))
@@ -633,11 +693,15 @@ def bloco_de(node, caminho, page):
                 caminho, rt, "imagem_quebrada", "sem fileReference"))
             return None
         return Block("image", caminho, fileReference=ref, alt=node.get("alt", ""),
-                     linkURL=node.get("linkURL") or "")
+                     linkURL=node.get("linkURL") or "",
+                     alinhamento=str(node.get("alignment") or "").lower())
 
     if rt in BUTTON_TYPES:
+        # `linkTarget` vem da origem: gravado fixo como `_self`, o datasheet
+        # externo que o GWI abre em aba nova tirava o visitante do site (R31).
         return Block("button", caminho, titulo=node.get("jcr:title", ""),
-                     linkURL=node.get("linkURL", ""))
+                     linkURL=node.get("linkURL", ""),
+                     linkTarget=node.get("linkTarget") or "_self")
 
     if rt in TABLE_TYPES:
         bruto = node.get("text", "") or ""
@@ -648,6 +712,12 @@ def bloco_de(node, caminho, page):
         abre = re.search(r"<table\b[^>]*>", bruto, re.I)
         sem_borda = bool(abre and re.search(r"""\bborder\s*=\s*["']?0\b""",
                                             abre.group(0), re.I))
+        # `<br>` pendurado no fim da célula é espaçador do autor, da família
+        # do `<p>&nbsp;</p>` que `strip_empty_blocks` apaga — só que dentro do
+        # bloco, então passava: a linha ficava 15px mais alta que as vizinhas
+        # (`altera-stratix-10-dx`; 24 células em 12 páginas). `<br>` ENTRE
+        # textos fica (R32).
+        bruto = _BR_FIM_DE_CELULA.sub("", bruto)
         return Block("table", caminho, html=colar_paragrafos(bruto),
                      de_layout=(sem_borda and "<img" in bruto.lower()
                                 and "<th" not in bruto.lower()))
@@ -939,15 +1009,27 @@ def _coletar_blocos(node, caminho, page):
                           fileReference=img[0].props.get("fileReference"),
                           alt=img[0].props.get("alt", ""),
                           html=colar_paragrafos(cab + corpo) if cab else corpo,
-                          imagem_esquerda=(pos == "left"))]
+                          imagem_esquerda=(pos == "left"),
+                          centro_vertical=str(node.get(
+                              "elementsPositionVerticalAlignCenter", ""
+                          )).lower() == "true")]
         if pos == "top" and img:
             # imagem primeiro, depois o resto, na ordem do documento
             return img + [b for b in filhos if b.kind != "image"]
         if pos == "bottom" and img:
             return [b for b in filhos if b.kind != "image"] + img
         return filhos
+    espaco = False
     for nome, ch in list_child_nodes(node):
-        out.extend(_coletar_blocos(ch, f"{caminho}/{nome}", page))
+        if rt_of(ch) in TEXT_TYPES and spacer_kind(ch) == "spacer":
+            espaco = True
+            continue
+        bs = _coletar_blocos(ch, f"{caminho}/{nome}", page)
+        if bs:
+            if espaco:
+                bs[0].props["espaco_antes"] = True
+            espaco = False
+        out.extend(bs)
     return out
 
 
@@ -985,6 +1067,10 @@ def _destacar_hr(b):
 
 
 _MIDIA = ("image", "embed", "carousel", "anchorlink", "textwithimage")
+# margem vertical (em cima, embaixo) que o CSS do global2 dá ao componente:
+# .cmp-table 20/20, .cmp-textwithimage 30/30, .link-button 40/0, ul.cmp-list 55/55
+_MARGEM_PROPRIA = {"table": (20, 20), "textwithimage": (30, 30),
+                   "button": (40, 0), "related": (55, 55), "productlist": (55, 55)}
 
 
 def _quebrar_em_subsecoes(blocos, caminho):
@@ -1020,6 +1106,21 @@ def _quebrar_em_subsecoes(blocos, caminho):
                  and b.kind in _MIDIA)
                     or (ant.kind in _MIDIA and b.kind == "text"
                         and b.props.get("respiro_antes"))):
+                abre = True
+            # O espaçador também vem como NÓ à parte (`text` só com &nbsp;)
+            # entre dois blocos: tabela, ESPAÇADOR, vídeo na
+            # `canon-li3030sa`. É a mesma evidência da R24, e sem ela a R29
+            # colava o vídeo na tabela. Menos depois de título (que anda com o
+            # bloco que introduz) e entre dois textos (o `<p>` já traz 30px).
+            # Nem antes do XF (o bloco de contato já traz 100px+ de padding
+            # interno), nem onde as margens próprias dos dois componentes já
+            # dão o respiro (tabela→botão 20+40, imagem→botão 40…): somar 60px
+            # de subseção a isso recriaria o aberto G.
+            elif (b.props.get("espaco_antes") and ant.kind != "title"
+                  and b.kind != "xf"
+                  and not (ant.kind == "text" and b.kind == "text")
+                  and (_MARGEM_PROPRIA.get(ant.kind, (0, 0))[1]
+                       + _MARGEM_PROPRIA.get(b.kind, (0, 0))[0]) < 40):
                 abre = True
         if abre and atual:
             grupos.append(atual)
@@ -1247,6 +1348,7 @@ def extrair_linhas(node, caminho, page):
     linhas = []
     corrida = []          # folhas consecutivas de largura cheia
     colunas = []          # colunas consecutivas -> uma linha
+    antes = []            # a corrida que a 1ª coluna interrompeu (R29)
     vivos = [c for _n, c in list_child_nodes(node) if tem_conteudo_renderizavel(c)]
 
     def fechar_corrida():
@@ -1269,6 +1371,13 @@ def extrair_linhas(node, caminho, page):
     def fechar_colunas():
         if not colunas:
             return
+        # A corrida que a 1ª coluna interrompeu só é fechada AQUI, quando já se
+        # sabe se era coluna de verdade. Fechá-la na chegada da coluna deixava
+        # o título "Resources" das 7 `design-gateway/*nvme*` numa Row e o botão
+        # que ele introduz (`width=4`, coluna SOLITÁRIA, logo largura cheia) na
+        # seguinte: 89px do título, 90px do título de baixo — boiando (R29).
+        corrida[:0] = antes
+        antes.clear()
         if len(colunas) == 1:
             g = _grade_uniforme(linhas[-1]) if (linhas and not corrida) else None
             so_ele = (not linhas and not corrida and len(vivos) == 1
@@ -1283,17 +1392,31 @@ def extrair_linhas(node, caminho, page):
                 r.columns = colunas[:]
                 linhas.append(r)
             else:
-                # coluna sozinha não é coluna: vira conteúdo de largura cheia
+                # coluna sozinha não é coluna: vira conteúdo de largura cheia,
+                # na MESMA corrida que ela interrompeu
                 corrida.extend(colunas[0].blocks)
         else:
+            fechar_corrida()
             r = Row("columns")
             r.columns = colunas[:]
             linhas.extend(_quebrar_por_largura(r))
         colunas.clear()
 
+    espaco = False        # passou um `text` espaçador desde o último bloco (R24)
+
+    def marcar(blocos):
+        nonlocal espaco
+        if blocos:
+            if espaco:
+                blocos[0].props["espaco_antes"] = True
+            espaco = False
+        return blocos
+
     for nome, ch in list_child_nodes(node):
         p = f"{caminho}/{nome}"
         if not tem_conteudo_renderizavel(ch):
+            if rt_of(ch) in TEXT_TYPES:
+                espaco = True
             continue
 
         w = col_width_of(ch)
@@ -1302,11 +1425,13 @@ def extrair_linhas(node, caminho, page):
             # vier no meio (título de largura cheia, por exemplo) fecha a linha
             # e começa outra — é assim que o item de aba da `/altera` produz
             # título + 3 colunas + título, em vez de perder os títulos.
-            fechar_corrida()
             c = Column(p, width=w, phone_width=width_of(ch, "phone"))
             c.offset = offset_of(ch)
-            c.blocks = _fundir_textos(_coletar_blocos(ch, p, page))
+            c.blocks = _fundir_textos(marcar(_coletar_blocos(ch, p, page)))
             if c.blocks:
+                if not colunas:
+                    antes[:] = corrida
+                    corrida.clear()
                 colunas.append(c)
             continue
 
@@ -1325,7 +1450,7 @@ def extrair_linhas(node, caminho, page):
             if r.columns:
                 linhas.extend(_quebrar_por_largura(r))
             continue
-        corrida.extend(_coletar_blocos(ch, p, page))
+        corrida.extend(marcar(_coletar_blocos(ch, p, page)))
 
     fechar_colunas()
     fechar_corrida()
@@ -1361,7 +1486,13 @@ def _classificar_topologia(corpo):
 # Blocos que sempre abrem seção própria: são peças grandes, com identidade
 # visual própria, e é imediatamente antes deles que caem 17 dos 19 spacers de
 # topo das páginas PLANAS.
-MAJOR = {"tabs", "xf", "related", "productlist", "carousel", "table", "anchorlink"}
+#
+# `table` e `productlist` SAÍRAM daqui (R28): onde o GWI tem o espaçador antes
+# deles, o espaçador já corta a corrida; onde não tem, o GWI os desenha
+# colados no texto que os apresenta (texto→tabela 16px, tabela→botão 13px na
+# `/altera/agilex`) e a seção própria punha 130 e 170px — o botão "Product
+# Overview" agrupava com a série SEGUINTE.
+MAJOR = {"tabs", "xf", "related", "carousel", "anchorlink"}
 
 
 def _secoes(corpo, caminho, page):
@@ -1396,7 +1527,7 @@ def _secoes(corpo, caminho, page):
         secoes.append(s)
 
     def titulo_que_introduz():
-        """O título imediatamente anterior acompanha o bloco grande que ele abre.
+        """Os títulos imediatamente anteriores acompanham o bloco grande que abrem.
 
         Em página MISTA/PLANA o heading é folha solta e o bloco que ele
         introduz (table, carousel, imagetext, invólucro) abre seção própria.
@@ -1405,32 +1536,43 @@ def _secoes(corpo, caminho, page):
         do bloco de cima (90px) que do conteúdo que anunciam (170px), porque
         entre os dois se somavam três paddings de container (R13). Vale
         também com espaçador no meio, que já tinha fechado a corrida.
+
+        TODOS os títulos consecutivos do fim, não só o último: na `/canon` o
+        h2 "Canon Image Sensors" e o h3 "Ultra-High Resolution Industrial
+        Sensors" andam colados no GWI (16px) e introduzem a mesma grade; só o
+        h3 vinha, e o h2 ficava sozinho numa seção, a 80px dele — boiando
+        entre o bloco de cima e o subtítulo (R30, a R20 na fronteira de seção).
+        Devolve a lista (vazia se não há título).
         """
+        ts = []
         if corrida:
-            ch_t, p_t = corrida[-1]
-            if rt_of(ch_t) in HEADING_TYPES or rt_of(ch_t) in TITLE_TYPES:
-                corrida.pop()
-                return bloco_de(ch_t, p_t, page)
-            return None
+            while corrida and (rt_of(corrida[-1][0]) in HEADING_TYPES
+                               or rt_of(corrida[-1][0]) in TITLE_TYPES):
+                ch_t, p_t = corrida.pop()
+                b_t = bloco_de(ch_t, p_t, page)
+                if b_t:
+                    ts.insert(0, b_t)
+            return ts
         if secoes and getattr(secoes[-1], "_de_corrida", False):
             ult = secoes[-1]
-            if (ult.rows and len(ult.rows[-1].blocks) == 1
-                    and ult.rows[-1].blocks[0].kind == "title"):
-                t = ult.rows.pop().blocks[0]
+            if ult.rows and all(b.kind == "title" for b in ult.rows[-1].blocks):
+                ts = ult.rows.pop().blocks
                 if not ult.rows:
                     secoes.pop()
-                return t
-        return None
+        return ts
 
     for i, (nome, ch) in enumerate(list_child_nodes(corpo)):
         p = f"{caminho}/{nome}"
 
-        if so_pageproperties(ch):
-            continue
         if not tem_conteudo_renderizavel(ch):
-            # spacer de topo: não é conteúdo, mas CORTA a corrida de folhas
+            # spacer de topo: não é conteúdo, mas CORTA a corrida de folhas.
+            # Tem de vir ANTES de `so_pageproperties`, que devolve True para
+            # todo nó sem conteúdo: com a ordem trocada este ramo era código
+            # morto e o espaçador nunca cortava nada (R28).
             if rt_of(ch) in TEXT_TYPES:
                 fechar()
+            continue
+        if so_pageproperties(ch):
             continue
 
         rt = rt_of(ch)
@@ -1441,17 +1583,21 @@ def _secoes(corpo, caminho, page):
             if not b:
                 continue
             if b.kind in MAJOR:
-                # tabs/related/xf ficam de fora: a seção deles tem papel
-                # próprio em `_marcar_papeis` (faixa colorida, sem padding)
-                # que depende de o bloco estar SOZINHO na seção.
-                t = (titulo_que_introduz()
-                     if b.kind not in ("tabs", "related", "xf") else None)
+                # related/xf ficam de fora: a seção deles tem papel próprio
+                # em `_marcar_papeis` (sem padding; CTA) que depende de o
+                # bloco estar SOZINHO na seção. `tabs` ficava também (era o
+                # aberto H): o título numa seção e a faixa das abas na
+                # seguinte — 152px contra 80 na `/namuga`, 150 na
+                # `/design-gateway`. Agora entra na faixa, em cima da barra de
+                # abas; `_marcar_papeis` aceita {title, tabs}.
+                ts = (titulo_que_introduz()
+                      if b.kind not in ("related", "xf") else [])
                 fechar()
                 s = Section(p, len(secoes),
                             role="related" if b.kind == "related" else "body")
                 r = Row("single")
                 c = Column(p, width=12)
-                c.blocks = [t, b] if t else [b]
+                c.blocks = ts + [b]
                 r.columns = [c]
                 s.rows = [r]
                 secoes.append(s)
@@ -1460,17 +1606,17 @@ def _secoes(corpo, caminho, page):
             continue
 
         # invólucro: seção própria, com suas linhas e colunas
-        t = titulo_que_introduz()
+        ts = titulo_que_introduz()
         fechar()
         s = Section(p, len(secoes))
         s.rows = extrair_linhas(ch, p, page)
-        if t is not None:
+        if ts:
             if s.rows and s.rows[0].kind == "single" and s.rows[0].columns:
-                s.rows[0].columns[0].blocks.insert(0, t)
+                s.rows[0].columns[0].blocks[:0] = ts
             else:
                 r0 = Row("single")
                 c0 = Column(p, width=12)
-                c0.blocks = [t]
+                c0.blocks = ts
                 r0.columns = [c0]
                 s.rows.insert(0, r0)
         if s.rows:
@@ -1579,10 +1725,10 @@ def _marcar_papeis(page):
     """
     for s in page.sections:
         kinds = {b.kind for b in s.blocks}
-        if s.role == "related":
+        if s.role == "related" or kinds == {"productlist"}:
             s.pad_tb = "none"          # o <ul> já traz margin 55px
             s.background = None
-        elif kinds == {"tabs"}:
+        elif "tabs" in kinds and kinds <= {"tabs", "title"}:
             # só a seção que é O bloco de abas ganha faixa — pintar uma seção
             # que apenas CONTÉM abas pintaria a página inteira
             s.role = "tabs"
@@ -1593,9 +1739,18 @@ def _marcar_papeis(page):
             s.background = None
     # alterna o respiro para dar 80px no desktop entre seções (Small+Default)
     for i, s in enumerate(page.sections):
-        if s.role in ("related",):
+        if s.role in ("related",) or {b.kind for b in s.blocks} == {"productlist"}:
             continue
         s.pad_tb = "small" if i % 2 == 0 else "default"
+        # Seção que é SÓ um `textwithimage`: o componente já traz 30px de
+        # margem em cima e embaixo. Somada ao padding das duas seções dava
+        # 110–140px em volta de cada bloco (hero das 36 páginas
+        # design-gateway/sitime/canon; a série "Why Choose" da `/ambarella`;
+        # a série da `/renesas` partida no meio) (R28).
+        if (len(s.rows) == 1 and not s.rows[0].cabecalho and s.blocks
+                and (all(b.kind == "textwithimage" for b in s.blocks)
+                     or _tentar_textwithimage(s.rows[0]) is not None)):
+            s.pad_tb = "none"
 
 
 def _page_props(jcr_content):
@@ -1681,7 +1836,12 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         base = f"{pai}/{n}"
         payload[f"{base}/jcr:primaryType"] = "nt:unstructured"
         payload[f"{base}/sling:resourceType"] = RT["text"]
-        payload[f"{base}/text"] = html(b.props.get("html", ""))
+        # linha em branco que `_respiro_na_coluna` mandou manter (R24b): entra
+        # DEPOIS de `strip_empty_blocks`, que a apagaria
+        payload[f"{base}/text"] = (
+            (_LINHA_EM_BRANCO if b.props.get("linha_antes") else "")
+            + html(b.props.get("html", ""))
+            + (_LINHA_EM_BRANCO if b.props.get("linha_depois") else ""))
         payload[f"{base}/textIsRich"] = "true"
         return True
 
@@ -1728,6 +1888,9 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
             if link_de and link_para and url.startswith(link_de):
                 url = link_para + url[len(link_de):]
             payload[f"{base}/linkURL"] = url
+        # foto de card alinhada com a legenda (R35): ver `_emitir_linha`
+        if b.props.get("a_esquerda"):
+            _styles(payload, base, ["", S_IMG_LEFT])
         # SEM spImage: experimento A/B na mesma imagem deu 0px de diferença em
         # 32 de 32 medições (390px e 1400px). Não é art direction (209 de 220
         # apontam o mesmo asset) e a policy tem disableLazyLoading=true, então
@@ -1745,8 +1908,12 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         payload[f"{base}/textIsRich"] = "true"
         # padrão do componente é imagem à DIREITA (row-reverse); só carimba
         # quando a origem põe a imagem primeiro (174 de 179 casos autorais)
-        if b.props.get("imagem_esquerda"):
-            _styles(payload, base, [S_TWI_LEFT])
+        # `elementsPositionVerticalAlignCenter` do imagetext: o GWI centra o
+        # texto na altura da foto; sem o style ele sobe para o topo e sobra um
+        # buraco embaixo (`canon-li8030sa`: 0 em cima, 231px embaixo) (R34).
+        _styles(payload, base, [x for x in (
+            S_TWI_LEFT if b.props.get("imagem_esquerda") else "",
+            S_TWI_VCENTER if b.props.get("centro_vertical") else "") if x])
         return True
 
     if k == "button":
@@ -1759,7 +1926,7 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         payload[f"{base}/sling:resourceType"] = RT["button"]
         payload[f"{base}/jcr:title"] = b.props.get("titulo", "")
         payload[f"{base}/linkURL"] = url
-        payload[f"{base}/linkTarget"] = "_self"
+        payload[f"{base}/linkTarget"] = b.props.get("linkTarget") or "_self"
         # "Fit to Text" NÃO encolhe (só declara width:fit-content e o
         # min-width:550px do desktop continua valendo); quem encolhe é
         # "Fixed Minimum Width" (345px).
@@ -1908,8 +2075,11 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
             # que os nós existam no JCR. As abas da `deepx` têm os três:
             # jcr:title, cq:panelTitle e layout.
             payload[f"{item}/layout"] = "responsiveGrid"
+            # painel com subseções: mesmo princípio da seção (R28) — barra de
+            # abas→painel media 103px contra 25 no GWI
             _styles(payload, item, [S_CONT_1000] if COM_MARGEM
-                    else ["", "", S_CONT_LR_NONE])
+                    else ["", S_CONT_TB_NONE if len(p.rows) > 1 else "",
+                          S_CONT_LR_NONE])
             if len(p.rows) > 1:
                 for r in p.rows:
                     sub = f"{item}/{nomes(item, 'container')}"
@@ -2080,6 +2250,38 @@ def _emitir_related(payload, pai, nomes, b, page, link_de, link_para):
     return True
 
 
+_LINHA_EM_BRANCO = "<p>&nbsp;</p>"
+
+
+def _respiro_na_coluna(blocos):
+    """Dentro de COLUNA não há subseção: o respiro volta como linha em branco (R24b).
+
+    A R24 abre um sub-container (60px) onde o GWI tinha o espaçador. Dentro de
+    `flexcontaineritem` não dá: os blocos da coluna são irmãos diretos, gap 0,
+    e `strip_empty_blocks` já apagou o `<p>&nbsp;</p>`. Na `/toppan`, coluna do
+    C11U, o h3 "Key Features…" ficava COLADO no parágrafo de cima (0px contra
+    28 no GWI) e a 24px da lista que introduz — lia como legenda do parágrafo.
+    Com a evidência do espaçador na origem (fim/começo do `text`, ou nó
+    espaçador entre os dois), UM `<p>&nbsp;</p>` é mantido no `text` vizinho:
+    30px no destino, 28 no GWI. Nunca depois de título, nem onde a margem
+    própria dos componentes já separa.
+    """
+    for ant, b in zip(blocos, blocos[1:]):
+        if ant.kind == "title":
+            continue
+        if not (b.props.get("espaco_antes")
+                or (ant.kind == "text" and ant.props.get("respiro_depois"))
+                or (b.kind == "text" and b.props.get("respiro_antes"))):
+            continue
+        if (_MARGEM_PROPRIA.get(ant.kind, (0, 0))[1]
+                + _MARGEM_PROPRIA.get(b.kind, (0, 0))[0]) >= 40:
+            continue
+        if ant.kind == "text":
+            ant.props["linha_depois"] = True
+        elif b.kind == "text":
+            b.props["linha_antes"] = True
+
+
 def _emitir_linha(payload, pai, nomes, row, page, link_de, link_para):
     """Row -> irmãos diretos (single) ou flexcontainer (columns)."""
     for b in row.cabecalho:
@@ -2138,6 +2340,17 @@ def _emitir_linha(payload, pai, nomes, row, page, link_de, link_para):
         # flexcontaineritem não recebe style e não tem largura:
         # .flex_container>.cmp-container>div{flex:1} — itens SEMPRE iguais.
         # Coluna desigual do GWI (8/4, 5/7) é normalizada de propósito.
+        _respiro_na_coluna(c.blocks)
+        # Foto de card com legenda na mesma coluna: o `image` do global2
+        # centra por padrão e o `title`/`text` encosta à esquerda — na
+        # `/toppan` a foto (512px numa coluna de 662) ficava 75px para dentro
+        # da legenda, nos 4 cards. Só quando o GWI NÃO centra (`alignment`
+        # diferente de center); os cards da `/ambarella`, `/canon` e
+        # `/renesas` são centrados na origem e continuam (R35).
+        if any(b.kind in ("title", "text") for b in c.blocks):
+            for b in c.blocks:
+                if b.kind == "image" and b.props.get("alinhamento") != "center":
+                    b.props["a_esquerda"] = True
         for b in c.blocks:
             _emitir_bloco(payload, item, nomes, b, page, link_de, link_para)
     # itens vazios fecham a grade: `flex:1` dá a cada card a largura da coluna
@@ -2206,7 +2419,11 @@ def _emitir_secao(payload, slot, nomes, s, page, link_de, link_para):
                    pad_lr="large" if COM_MARGEM else "none")
         alvo = interno
     else:
-        _container(payload, base, max_width=s.max_width_1000, pad_tb=s.pad_tb,
+        # Seção com subseções não tem padding T/B próprio: o respiro é o dos
+        # sub-containers (30+30). Somados davam 110–140px em toda fronteira de
+        # seção, contra 56–84px do espaçador do GWI (R28).
+        _container(payload, base, max_width=s.max_width_1000,
+                   pad_tb="none" if len(s.rows) > 1 else s.pad_tb,
                    pad_lr=s.pad_lr, background=s.background)
         alvo = base
     # Várias subseções na mesma seção: cada uma ganha o seu container, com
@@ -2276,6 +2493,41 @@ def precisa_title_vazio(page):
     """
     tpl = (page.template or "").rstrip("/")
     return tpl.rsplit("/", 1)[-1] not in TEMPLATES_GWI_SEM_TITULO
+
+
+def inserir_titulo_da_pagina(page, origem):
+    """Põe o cabeçalho da página (`title` vazio -> pageTitle, R6) na árvore.
+
+    O título é de LARGURA CHEIA e vem antes de tudo (R3) — mas NÃO é seção
+    própria: como seção, entre ele e o 1º bloco somavam-se o padding de baixo
+    da seção dele, o de cima da seção seguinte e o do sub-container (60–90px,
+    medido em 9 de 10 páginas), contra 16–33px no GWI, onde o título e o corpo
+    andam juntos. Ele entra como `cabecalho` da 1ª linha da 1ª seção: o mesmo
+    mecanismo da R23, que emite o título em cima do `flexcontainer` (ou do
+    bloco), no mesmo container. Continua fora de qualquer coluna (R28).
+
+    Seção própria só quando a 1ª seção tem papel próprio (faixa de abas, CTA,
+    related) ou a página não tem seção nenhuma. Devolve True se inseriu.
+    """
+    if not precisa_title_vazio(page):
+        return False
+    t = Block("title_vazio", origem)
+    prim = page.sections[0] if page.sections else None
+    if (prim is not None and prim.role == "body" and not prim.background
+            and prim.rows):
+        prim.rows[0].cabecalho = [t] + list(prim.rows[0].cabecalho)
+        if prim.pad_tb == "none" and len(prim.rows) == 1:
+            prim.pad_tb = "small"      # o título precisa do respiro de cima
+        return True
+    cab = Section(origem, -1, role="header")
+    cab.pad_tb = "small"
+    linha = Row("single")
+    col = Column(origem, width=12)
+    col.blocks = [t]
+    linha.columns = [col]
+    cab.rows = [linha]
+    page.sections.insert(0, cab)
+    return True
 
 
 # Templates do GWI cuja structure não desenha o pageTitle. Levantado lendo

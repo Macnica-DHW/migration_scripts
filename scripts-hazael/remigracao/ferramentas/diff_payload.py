@@ -53,11 +53,7 @@ def payload_novo(session, base_url, auth, origem, cache_dc, cache_asset):
             res = [R.destino_de(x) if x.startswith(R.GWI_ROOT) else x for x in res]
             b.props["pages"] = res; b.props["listFrom"] = "static"
     R.copiar_assets(page, session, base_url, auth, cache_asset, dry_run=True)
-    if AL.precisa_title_vazio(page):
-        cab = AL.Section(origem, -1, role="header"); cab.pad_tb = "small"
-        linha = AL.Row("single"); col = AL.Column(origem, width=12)
-        col.blocks = [AL.Block("title_vazio", origem)]; linha.columns = [col]
-        cab.rows = [linha]; page.sections.insert(0, cab)
+    AL.inserir_titulo_da_pagina(page, origem)
     payload, contagens = AL.build_layout_payload(
         page, template_path=R.TEMPLATE, link_de=CONFIG["gwi_prefix"],
         link_para=CONFIG["global2_prefix"], reescrever_listas=False)

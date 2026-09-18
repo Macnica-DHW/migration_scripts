@@ -359,15 +359,10 @@ def main():
         # na `/ambarella` o resultado foi título+vídeo empilhados à esquerda e
         # o texto sozinho à direita, quando o GWI tem o título em cima de tudo
         # e vídeo|texto lado a lado embaixo.
-        if AL.precisa_title_vazio(page):
-            cab = AL.Section(origem, -1, role="header")
-            cab.pad_tb = "small"
-            linha = AL.Row("single")
-            col = AL.Column(origem, width=12)
-            col.blocks = [AL.Block("title_vazio", origem)]
-            linha.columns = [col]
-            cab.rows = [linha]
-            page.sections.insert(0, cab)
+        #
+        # Largura cheia e antes de tudo — mas como `cabecalho` da 1ª linha, não
+        # como seção própria (R28): ver `AL.inserir_titulo_da_pagina`.
+        AL.inserir_titulo_da_pagina(page, origem)
 
         payload, contagens = AL.build_layout_payload(
             page, template_path=TEMPLATE,

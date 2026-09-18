@@ -56,7 +56,9 @@ def carregar_jcrs(cache):
 jcrs = carregar_jcrs(args.cache)
 def montar(AL, j, o):
     page = AL.extract_tree(copy.deepcopy(j), o)
-    if AL.precisa_title_vazio(page):
+    if hasattr(AL, 'inserir_titulo_da_pagina'):      # R28 em diante: o motor decide onde o título entra
+        AL.inserir_titulo_da_pagina(page, o)
+    elif AL.precisa_title_vazio(page):
         cab = AL.Section(o, -1, role="header"); cab.pad_tb = "small"
         l = AL.Row("single"); c = AL.Column(o, width=12); c.blocks = [AL.Block("title_vazio", o)]; l.columns = [c]; cab.rows = [l]; page.sections.insert(0, cab)
     for b in page.blocks:

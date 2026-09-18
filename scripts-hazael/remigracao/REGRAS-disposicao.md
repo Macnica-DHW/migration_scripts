@@ -775,19 +775,160 @@ de margem do `.cmp-form`) é do componente.
 
 ---
 
+## R28–R35 — conferência visual, 4ª sessão (18/09/2026): 10 páginas, 6 do lote 4 + 4 famílias novas
+
+Um revisor por página (print lado a lado, `measure.py`, `vao.py`, `jcr.py` dos
+dois lados) e um cético por página com defeito, que mediu de novo por conta
+própria. **Todas as regras do lote 4 conferidas NA TELA passaram** (R15, R17,
+R18, R19, R21, R22 — com clique —, R23, R24, R26, R7, R8, R11, 13a, 13c, 13f).
+Nenhum defeito de gravidade alta de DISPOSIÇÃO; o que dominou foi o aberto G,
+medido em 9 de 10 páginas. Antes de mexer no motor nasceu
+`ferramentas/vaos_estruturais.py`, que calcula o vão entre componentes
+consecutivos direto do payload, OFFLINE, nas 136 — o "medir em lote
+antes/depois" que o G pedia.
+
+> **ESTADO: no código, NÃO gravado no AEM** (o cookie expirou às 19h). 134 de
+> 136 payloads mudam (a R28 mexe no ritmo vertical de quase todas). Conferido
+> offline: nenhum texto some nem muda de ordem nas 136 (`conf_texto`: só o
+> `linkTarget` de 13 páginas, que é a R31).
+
+### R28 — o respiro é de UM container só (era o aberto G)
+
+**Onde:** sistêmico. Título da página→1º bloco 60–90px contra 16–33 no GWI
+(9 de 10 páginas); hero→seção seguinte 140 contra 16–127 (36 páginas:
+design-gateway, sitime, canon); `/altera/agilex` texto→tabela 130 contra 16 e
+tabela→botão 170 contra 13 (o botão "Product Overview" agrupava com a série
+SEGUINTE); `/renesas` série de 5 `textwithimage` partida no meio (170 contra
+90); `/canon` texto→product listing 135 contra 47; barra de abas→painel 103
+contra 25.
+
+**Causa:** o padding T/B dos styles do container é simétrico e ACUMULA: seção
+(30|50) + sub-container (30) + margem própria do componente (`.cmp-table` 20,
+`.cmp-textwithimage` 30, `.link-button` 40, `ul.cmp-list` 55). Toda fronteira
+de seção custava 110–140px onde o espaçador do GWI dá 56–84. E três decisões
+antigas fabricavam fronteira onde o GWI não tem nenhuma.
+
+**Regra (cinco partes, um princípio — paga-se o respiro uma vez):**
+
+| | regra | alcance |
+|---|---|---|
+| a | **Título da página** (`title` vazio, R3/R6) entra como `cabecalho` da 1ª linha da 1ª seção — mesmo container, largura cheia, fora de qualquer coluna (o mecanismo da R23). Seção própria só quando a 1ª seção é faixa de abas/CTA/related. `AL.inserir_titulo_da_pagina`, usado pelo driver, `diff_payload` e `cmp_motor` | 134 |
+| b | **Container com sub-containers não tem padding T/B próprio**: seção com 2+ linhas e painel de aba com 2+ linhas saem `Pad T/B None`; o respiro é o dos sub-containers (30+30) | 99 |
+| c | **O espaçador de topo corta a corrida** — em `_secoes` o ramo era CÓDIGO MORTO (`so_pageproperties` devolve True para nó sem conteúdo e vinha antes). E **`table` e `productlist` saem de `MAJOR`**: com espaçador antes, o espaçador já corta; sem ele o GWI os desenha colados no texto que os apresenta | 14 |
+| d | Seção só de `productlist` → `pad_tb=none`, como `related` (o `<ul>` traz 55px) | 4 |
+| e | Seção que é SÓ um `textwithimage` → `pad_tb=none` (o componente traz 30/30) | 39 |
+
+**Medido offline (vão estrutural, 136 páginas, antes → depois):** transições
+com 130px ou mais: 83 → 8 (com 110 ou mais: 153 → 27, de 1.797); `texto→tabela` mediana 100 → 20; `tabela→botão`
+140 → 60; `título→título` 60 → 0; `textwithimage→título` 140 → 90. A `/canon`
+fica uniforme em 60–80 (era 60/80/110) e a `/renesas` em 90 (era 90/170) —
+por isso NÃO se criou a regra "série homogênea herda small" que o G propunha
+(o cético mediu: o GWI tem 44–100px entre linhas da grade).
+
+**Como detectar:** `vaos_estruturais.py --cache <pkl> --antes <motor antigo>`
+— histograma e mediana por transição; `--ver /pagina` lista componente a
+componente. Na tela: `measure.py`, coluna `gap`.
+
+### R29 — coluna SOLITÁRIA reentra na corrida que interrompeu
+
+**Onde:** as 7 `design-gateway/*nvme*`, `quic10gc`, `sata`: título "Resources"
+num sub-container e o botão que ele introduz (`width=4`) no seguinte — 89px do
+título, 90 do título de baixo: boiando. Mais 4 folhas `/i-chips` (título
+"Technical Demo" → vídeo) e 3 `/canon`.
+**Causa:** `extrair_linhas` fechava a corrida na CHEGADA da 1ª coluna, antes
+de saber se haveria 2ª. Coluna sozinha "não é coluna" e voltava à corrida —
+mas já na Row seguinte.
+**Regra:** a corrida interrompida fica guardada e só fecha em
+`fechar_colunas`, se forem 2+ colunas (ou card órfão da R18). Coluna solitária
+entra na MESMA corrida. 15 páginas.
+**Efeito colateral tratado:** na `canon-li3030sa` o GWI tem tabela, NÓ
+ESPAÇADOR, vídeo — e a corrida única colava o vídeo na tabela. Daí a extensão
+da R24: espaçador como nó à parte (`espaco_antes`) também abre subseção —
+menos depois de título, entre dois textos, antes do XF, e onde as margens
+próprias dos dois componentes já somam 40px. 3 transições em 3 páginas (uma é
+o "infográfico→índice de âncoras 56→0" que o revisor da `canon-li8030sa`
+achou).
+
+### R30 — TODOS os títulos do fim da corrida acompanham o bloco (R20 na fronteira de seção)
+
+**Onde:** `/canon`: h2 "Canon Image Sensors" sozinho numa seção, a 80px do h3
+"Ultra-High Resolution Industrial Sensors" que ele encabeça (GWI 16px).
+**Causa:** `titulo_que_introduz()` tirava UM título da corrida.
+**Regra:** devolve a lista de títulos consecutivos do fim. E `tabs` deixou de
+ser exceção: o título entra na faixa das abas, em cima da barra —
+`_marcar_papeis` aceita `{title, tabs}` (era o **aberto H**: `/namuga` 152
+contra 80, `/design-gateway` 150).
+**Detectar:** container de topo cujo único filho é `title`, seguido de
+container cujo 1º filho é `title`.
+
+### R31 — `linkTarget` do botão vem da origem
+
+17 botões em 13 páginas abrem em aba nova no GWI (datasheet externo, PDF) e
+saíam `_self`. Função, não disposição: print nenhum mostra.
+
+### R32 — `<br>` pendurado no fim de célula de tabela
+
+12 tabelas em 12 páginas (`altera-stratix-10-dx`: linha 15px mais alta que as
+vizinhas). É espaçador do autor, da família do `<p>&nbsp;</p>`, só que DENTRO
+do bloco — `strip_empty_blocks` não vê. `<br>` entre textos fica.
+
+### R33 — inline solto na raiz do rich text vai para um `<p>`
+
+`canon-li8030sa`: `<h4>…</h4><h4>&nbsp;</h4><span>Macnica pairs…</span>`. Fora
+de `<p>` o texto não pega `.cmp-text p`: sai 14px com letter-spacing 1,4px e
+colado no h4 (1px contra 27). `embrulhar_inline_da_raiz`; HTML que não fecha
+direito volta como veio. 1 nó no escopo — a regra é barata e o próximo lote de
+páginas pode ter mais.
+
+### R34 — `elementsPositionVerticalAlignCenter` → style Vertical Center do `textwithimage`
+
+4 `imagetext` em 2 páginas. Sem ele o texto sobe para o topo da foto e sobra
+o buraco embaixo (0 em cima / 231 embaixo). styleId `1783061491236`, lido da
+policy pelo revisor — **conferir no dry-run**.
+
+### R24b — respiro DENTRO de coluna volta como linha em branco
+
+**Onde:** `/toppan`, coluna do C11U: h3 "Key Features…" colado no parágrafo de
+cima (0 contra 28) e a 24px da lista que introduz; 2 abas da `/infineon`.
+**Causa:** dentro de `flexcontaineritem` não há subseção (R24, "Limite").
+**Regra:** com a evidência do espaçador na origem, UM `<p>&nbsp;</p>` é
+mantido no `text` vizinho (entra depois de `strip_empty_blocks`). 3 nós.
+
+### R35 — foto de card alinhada com a legenda
+
+**Onde:** `/toppan`, 4 cards: foto de 512px centrada numa coluna de 662,
+legenda na borda — 75px de desalinhamento. `/i-chips` e `i-chips-scaler-lsi`
+fazem o mesmo de 1920px para cima.
+**Regra:** `image` em coluna que tem `title`/`text`, com `alignment` da origem
+diferente de `center`, ganha Display Position **Left** (`1726800547211`,
+policy do `image` — **conferir no dry-run**). Os cards centrados na origem
+(`/ambarella`, `/canon`, `/renesas`) continuam. 16 nós em 3 páginas.
+
+### Achados que NÃO são de motor
+
+- **FUNCIONAL, gravidade alta — links para página que não existe no global2.**
+  `canon-li8030sa`: o botão "Contact Us" e 3 CTAs apontam para
+  `/content/macnicaglobal2/americas/mai/en/contact/form` → **404** (o global2
+  tem `contact-us` e `request-a-quote`, vazias). `rewrite_links` só troca o
+  prefixo. A Anion apontou para `https://www.macnica.com/americas/mai/en/contact/form/`.
+  Decisão do time + tabela de redirecionamento; falta o censo nas 136
+  (href interno do HTML renderizado → GET → lista de 404).
+- **Os dois XFs da copia-teste**: além de `page` em vez de `xfpage` e dos
+  botões empilhados, os `href` deles apontam para `/content/macnicagwi/…`.
+
+---
+
 ## Aberto (achado na conferência visual, NÃO corrigido)
 
 | # | padrão | onde / quanto | causa | proposta |
 |---|---|---|---|---|
-| G | **somatório de paddings entre seções** (MÉDIA, sistêmico) | `/renesas` (fronteira de seção no MEIO da série de 5 `textwithimage`: 179px contra ~99), `/altera/agilex` (texto→tabela 130 contra 16; tabela→botão 170 contra 13: o botão agrupa com a série SEGUINTE), `/canon` (linhas da grade a 110/80/60), título da página→1º bloco 90 contra 17–49, barra de abas→painel 103 contra 25 | seção 50 + sub-container 30 + margin do componente (`.cmp-table` 20, `.cmp-textwithimage` 30, `.link-button` 40); `_marcar_papeis` alterna small/default por ÍNDICE; em página PLANA `table` é MAJOR e ganha seção própria | seção que continua uma série homogênea (mesmos kinds) herda `pad_tb=small`/none; botão logo depois de tabela fica na seção dela. Em `_secoes`, `so_pageproperties(ch)` vem ANTES do ramo do spacer e o torna código morto |
-| H | **título longe das abas** | `/namuga` 152px contra 80 | a 13d exclui `tabs` de propósito (seção com faixa cinza) | título dentro da seção das abas, acima do `tabs` |
-| I | **botão sempre centralizado** | `/altera` ×2 | `S_BTN_CENTER` fixo; o GWI tem `width=3 offset=0` (à esquerda) | decisão de dialeto |
-| J | imagem do `textwithimage` no tamanho natural | `/renesas` "Reality AI" 401×226 contra 200×113 | `width`/`height` do `resizableimage` não é levado | sem campo alvo no `textwithimage`; redimensionar o asset ou aceitar |
+| I | **botão sempre centralizado** | `/altera` ×2; **+ as 7 `design-gateway/*nvme*`** (`width=4 offset=0`: GWI na borda esquerda, destino no centro da página — único elemento centrado do corpo); `/toppan` (botão em coluna: GWI ocupa a coluna, destino centrado nela) | `S_BTN_CENTER` fixo. No GWI: sem `cq:responsive` o botão é centrado na linha (`/altera/agilex`); com `width<12 offset=0` fica à esquerda | decisão de dialeto. Proposta com 10 páginas de evidência: sem `S_BTN_CENTER` quando `width<12` e `offset=0`, ou dentro de coluna |
+| J | **imagem do `textwithimage` no tamanho natural** (agora o defeito mais visível) | `/renesas` 401×226 contra 200×113; **7 folhas `i-chips-ip00c*`** (600×600 contra ~345×277: buraco de 397px entre o parágrafo e o título seguinte); **as 26 `design-gateway` e as 6 `/sitime`** (hero 1,7×: empurra o índice de âncoras para fora da 1ª dobra); `canon-li8030sa` (+527px de página) | `width`/`height` do `resizableimage` não tem campo alvo; o `textwithimage` dá 50% da linha à imagem, limitada só pelo tamanho natural | NÃO é do motor (o cético confirmou: `flexcontainer`+`image` não encolhe e quebra a R21). Saídas: CSS no clientlib (`max-height`/`max-width` na imagem do `textwithimage`) ou cópia REDIMENSIONADA do asset no DAM. Censo pelo JCR: `resizableimage.width` × `tiff:ImageWidth` do asset, marcar natural > 1,3× |
 | E | cabeçalho de tabela quebrando palavra | — | — | **FECHADO sem mexer:** sem a margem a quebra sumiu (`/canon` conferida) |
 | — | CSS do site: `td` alinha no topo (GWI no meio); índice de âncoras quebra 3+1; fio sob os h3 do GWI não existe | várias | clientlib do global2 | fora do motor |
 
-Fechados nesta sessão: F (R26), A (R16 — sem moldura, continua `table`), B (R24),
-C (R18), D (R15), E (sumiu sem a margem).
+Fechados na 3ª sessão: F (R26), A (R16 — sem moldura, continua `table`), B (R24),
+C (R18), D (R15), E (sumiu sem a margem). **Na 4ª: G (R28) e H (R30).**
 
 ### `supplierlist` da landing — o que o GWI realmente mostra
 
