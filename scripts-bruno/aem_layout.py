@@ -645,7 +645,7 @@ def bloco_de(node, caminho, page):
             page.pendencias.append(Pendencia(
                 caminho, rt, "video_sem_id", "video sem youtubeVideoId"))
             return None
-        return Block("embed", caminho, youtubeVideoId=vid)
+        return Block("embed", caminho, youtubeVideoId=vid, largura=width_of(node))
 
     if rt in CAROUSEL_TYPES:
         slides = _carousel_slides(node)
@@ -1733,6 +1733,21 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         return True
 
     if k == "embed":
+        # Vídeo SOZINHO que no GWI ocupa 7 ou 8 doze avos (569-651px): fora de
+        # coluna o `layout=responsive` o esticava para a largura da página —
+        # 1350x759 numa janela de 1400, três quartos da tela
+        # (`i-chips-scaler-lsi`, `/altera/agilex`). Ganha um `flexcontainer`
+        # com um item vazio ao lado: metade da linha, 662x372 (R26).
+        larg = b.props.get("largura")
+        if larg and larg <= 8 and "flexcontaineritem" not in pai:
+            fc = f"{pai}/{nomes(pai, 'flexcontainer')}"
+            payload[f"{fc}/jcr:primaryType"] = "nt:unstructured"
+            payload[f"{fc}/sling:resourceType"] = RT["flexcontainer"]
+            _styles(payload, fc, ["", S_FLEX_SP_1COL])
+            for i in (1, 2):
+                payload[f"{fc}/flexcontaineritem_{i}/jcr:primaryType"] = "nt:unstructured"
+                payload[f"{fc}/flexcontaineritem_{i}/sling:resourceType"] = RT["flexcontaineritem"]
+            pai = f"{fc}/flexcontaineritem_1"
         n = nomes(pai, "embed")
         base = f"{pai}/{n}"
         payload[f"{base}/jcr:primaryType"] = "nt:unstructured"

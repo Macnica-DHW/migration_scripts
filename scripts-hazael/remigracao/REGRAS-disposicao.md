@@ -613,7 +613,7 @@ sony/deepx ficam como estão — os nomes lá são os que a Anion deu.
 Quatorze páginas, uma por arquétipo/família, um revisor por página com print
 GWI | destino lado a lado (`ferramentas/lado.py`), medição e JCR dos dois
 lados. Todas já SEM margem. Gravado no lote 4 (72 páginas, 72 sem falha) e
-no lote 5 (as 3 `/analog-devices*`: R16 e R25).
+no lote 5 (as 3 `/analog-devices*`: R16 e R25) e no lote 6 (20 páginas: R26).
 
 ### R18 — a última linha da grade e o card órfão mantêm a largura da coluna
 
@@ -723,11 +723,29 @@ como mídia na R24 (o texto de baixo começa com `<p>&nbsp;</p>`).
 
 ---
 
+### R26 — vídeo sozinho ocupa metade da linha, não a página
+
+**Onde:** `i-chips-scaler-lsi` ×2 (GWI 569×390, `width=7 offset=3`),
+`/altera/agilex` (651×390, `width=8 offset=2`) — e, no censo, **20 páginas**
+(todas as folhas `/i-chips/*/i-chips-ip00c*`, `/infineon`, 2 da `/canon`).
+No destino: 1350×759 numa janela de 1400, três quartos da tela, dois buracos
+brancos de uma tela cada no print. Era o "Aberto F".
+**Causa:** "coluna sozinha não é coluna" + `layout=responsive` sem teto.
+**Regra:** `embed` cujo nó de origem tem `width ≤ 8` e que NÃO está dentro de
+um `flexcontaineritem` é emitido dentro de um `flexcontainer` de dois itens,
+o segundo vazio: 662×372. Fica à ESQUERDA (o GWI centra com `offset`; item
+`flex:1` não centra sem encolher para 1/3).
+**Conferido na tela** (`measure.py`): `cmp-embed` colw=662 h=372. O item
+vazio segura a largura — o que também valida a R18 (`/ambarella` H32AQ/A12AQ
+433px; órfãos da `/canon` 662px).
+**Detectar:** `measure.py` com `cmp-embed` de `colw` > 700.
+
+---
+
 ## Aberto (achado na conferência visual, NÃO corrigido)
 
 | # | padrão | onde / quanto | causa | proposta |
 |---|---|---|---|---|
-| F | **vídeo sozinho vira 1350×759** (MÉDIA) | `i-chips-scaler-lsi` ×2 (GWI 569×390, `width=7 offset=3`), `/altera/agilex` (651×390, `width=8 offset=2`) | "coluna sozinha não é coluna" + `layout=responsive` sem teto; a origem é `layout=fixed` | coluna única `width<12` com `embed` → `flexcontainer` com item vazio (≈50%); ou `layout=fixed` só para embed fora de coluna. Testar numa página antes |
 | G | **somatório de paddings entre seções** (MÉDIA, sistêmico) | `/renesas` (fronteira de seção no MEIO da série de 5 `textwithimage`: 179px contra ~99), `/altera/agilex` (texto→tabela 130 contra 16; tabela→botão 170 contra 13: o botão agrupa com a série SEGUINTE), `/canon` (linhas da grade a 110/80/60), título da página→1º bloco 90 contra 17–49, barra de abas→painel 103 contra 25 | seção 50 + sub-container 30 + margin do componente (`.cmp-table` 20, `.cmp-textwithimage` 30, `.link-button` 40); `_marcar_papeis` alterna small/default por ÍNDICE; em página PLANA `table` é MAJOR e ganha seção própria | seção que continua uma série homogênea (mesmos kinds) herda `pad_tb=small`/none; botão logo depois de tabela fica na seção dela. Em `_secoes`, `so_pageproperties(ch)` vem ANTES do ramo do spacer e o torna código morto |
 | H | **título longe das abas** | `/namuga` 152px contra 80 | a 13d exclui `tabs` de propósito (seção com faixa cinza) | título dentro da seção das abas, acima do `tabs` |
 | I | **botão sempre centralizado** | `/altera` ×2 | `S_BTN_CENTER` fixo; o GWI tem `width=3 offset=0` (à esquerda) | decisão de dialeto |
@@ -736,7 +754,7 @@ como mídia na R24 (o texto de baixo começa com `<p>&nbsp;</p>`).
 | E | cabeçalho de tabela quebrando palavra | — | — | **FECHADO sem mexer:** sem a margem a quebra sumiu (`/canon` conferida) |
 | — | CSS do site: `td` alinha no topo (GWI no meio); índice de âncoras quebra 3+1; fio sob os h3 do GWI não existe | várias | clientlib do global2 | fora do motor |
 
-Fechados nesta sessão: A (R16 — sem moldura, continua `table`), B (R24),
+Fechados nesta sessão: F (R26), A (R16 — sem moldura, continua `table`), B (R24),
 C (R18), D (R15), E (sumiu sem a margem).
 
 ### `supplierlist` da landing — o que o GWI realmente mostra
@@ -798,8 +816,10 @@ páginas, desconfiar da medição antes do motor. Uma página conferida à mão
 - **`relatedsuggestions` modo `search` (9 pendências)** — a policy do `list`
   tem `disableSearch='true'`; as consultas apontam para `sony-image-sensors`,
   fora do escopo. Resolver exige renderizar a página do GWI e ler os cards.
-- **`form/container`** na `macnica-and-adi` (5 unidades: "Send message",
-  "Success"…) — precisa de backend; sem alvo.
+- **`form/container`** na `macnica-and-adi` — o global2 TEM os componentes e a
+  action (`macnicadefault`) e a policy do template permite; exige 2 XFs de
+  popup e decisão do time (form × CTA; e-mail real). Ver
+  `PESQUISA-formulario.md`.
 - **Descrição dos cards de lista** (R12) — perdida por construção no `list`;
   decisão do time.
 - **XFs da copia-teste com `page` em vez de `xfpage`** — fora do nosso escopo

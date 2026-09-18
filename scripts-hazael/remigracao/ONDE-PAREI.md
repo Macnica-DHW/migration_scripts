@@ -7,6 +7,7 @@
 lote 3 de 18/09/2026: R1–R13 + páginas SEM MARGEM (R14) — 136/136, conferido no servidor
 lote 4 de 18/09/2026: R15, R17–R24 — as 72 páginas que mudam   72/72 sem falha
 lote 5 de 18/09/2026: R16 (tabela de layout sem moldura) e R25 — 3/3
+lote 6 de 18/09/2026: R26 (vídeo sozinho) — 20 páginas          20/20 sem falha
 
 conferência de conteúdo (sobre o lote 2): 132 limpas, 27 faltando em 3
 páginas conhecidas. NÃO foi refeita depois dos lotes 3 e 4.
@@ -64,7 +65,9 @@ Saíram da lista nesta sessão: `pagesectionlisting` (12) — agora vira
 
 - **Os dois XFs da copia-teste** (`page` em vez de `xfpage`; botões empilhados):
   fora do nosso escopo de escrita, atinge ~110 páginas.
-- **Abertos F–K** em `REGRAS-disposicao.md` (vídeo sozinho gigante, somatório
+- **Formulário da `macnica-and-adi`** — viável com os componentes do global2;
+  decisão e riscos em `PESQUISA-formulario.md`.
+- **Abertos G–K** em `REGRAS-disposicao.md` (somatório
   de paddings entre seções, título longe das abas, botão sempre centralizado…).
 - **`supplierlist`**: o blurb é hover-only; o que se VÊ é uma grade 4×4 de
   logo+nome com link (descrição em REGRAS).

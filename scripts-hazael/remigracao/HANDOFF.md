@@ -32,6 +32,7 @@ GWI, uma anotação viva — continuam onde estão.
 servidor = lote 3 (136/136, R1–R14, sem margem; conferido: 0 styleIds de margem)
          + lote 4 (72 páginas: R15, R17–R24)                  72/72 sem falha
          + lote 5 (3 páginas /analog-devices*: R16 sem moldura, R25)   3/3 sem falha
+         + lote 6 (20 páginas com vídeo sozinho: R26)                  20/20 sem falha
 motor    = HEAD do branch migration/semiconductors-remigration
 Tudo o que está no motor está no servidor.
 
@@ -46,7 +47,7 @@ arquétipo/família (`/ambarella`, `/analog-devices`, `/renesas`, `/altera`,
 `/namuga…`, `/canon`, `/altera/agilex`, `i-chips-scaler-lsi`, `agilex-5`,
 `canon-li8030sa`, `udp10g` (×26), `sitime-oscillators` (×6), `/toppan`,
 `macnica-and-adi`, `ambarella-n1-soc`, a landing). Dez regras novas
-(R15–R25), todas em `REGRAS-disposicao.md`. A revisão manual do Hazael
+(R15–R26), todas em `REGRAS-disposicao.md`. A revisão manual do Hazael
 (`multimodal-sensor-front-ends`, `macnica-and-adi`) entrou como R25, R16 e R19 —
 conferidas no print depois de gravar. Os dois exemplos do Hazael:
 
@@ -62,8 +63,7 @@ conferidas no print depois de gravar. Os dois exemplos do Hazael:
    o que fez no JCR (o método abaixo). Prioridade: `canon-li8030sa` (R21),
    `i-chips-scaler-lsi` e `/toppan` (R19), `/canon` (R18), `udp10g` (R24),
    `sitime-oscillators` (R22 — CLICAR no índice, o print não mostra).
-2. **Abertos F–K** do REGRAS. Os dois que mais pesam: **F** vídeo sozinho de
-   1350×759 e **G** somatório de paddings entre seções (o botão que agrupa
+2. **Abertos G–K** do REGRAS. O que mais pesa: **G** somatório de paddings entre seções (o botão que agrupa
    com a série seguinte na `/altera/agilex`; a série da `/renesas` partida).
 3. Seguir a amostra: faltam folhas de produto simples (arquétipo E, 73
    páginas — só `agilex-5` foi vista) e as outras `design-gateway`.
@@ -130,7 +130,8 @@ uma vez. Detalhe em `REGRAS-disposicao.md`.
 
 ```
 HANDOFF.md              este arquivo
-REGRAS-disposicao.md    R1–R13 + o que ficou aberto + os pontos cegos do comparador  <-- LER
+PESQUISA-formulario.md  o form da macnica-and-adi: o que o global2 tem, o que falta, riscos  <-- decisão pendente
+REGRAS-disposicao.md    R1–R26 + o que ficou aberto + os pontos cegos do comparador  <-- LER
 patch3-disposicao.diff  o patch 3 (R13a–f) fora do git; já gravado no lote 3
 PROMPT-conferencia-visual.md  o prompt para abrir a próxima sessão
 ESPEC-motor-layout.md   a especificação do motor (50k, do levantamento de 17 agentes)
