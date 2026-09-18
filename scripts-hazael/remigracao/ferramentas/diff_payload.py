@@ -46,6 +46,7 @@ def payload_novo(session, base_url, auth, origem, cache_dc, cache_asset):
     if st != 200: return None, None, f"GET {st}"
     page = AL.extract_tree(jcr, origem)
     R.aplicar_titulos_download(page, session, base_url, auth, cache_dc)
+    R.aplicar_dimensoes_de_imagem(page, session, base_url, auth, cache_dc)
     for b in page.blocks:
         if b.kind in ("related", "productlist"):
             res = R.resolver_related(session, base_url, auth, b, origem)

@@ -281,6 +281,12 @@ class Page:
 # Utilidades de leitura da origem
 # ---------------------------------------------------------------------------
 
+def _px(v):
+    """'345', '345px', 345 -> 345; o resto -> None."""
+    m = re.match(r"\s*(\d{2,4})", str(v or ""))
+    return int(m.group(1)) if m else None
+
+
 def rt_of(node):
     return node.get("sling:resourceType", "") or ""
 
@@ -694,7 +700,8 @@ def bloco_de(node, caminho, page):
             return None
         return Block("image", caminho, fileReference=ref, alt=node.get("alt", ""),
                      linkURL=node.get("linkURL") or "",
-                     alinhamento=str(node.get("alignment") or "").lower())
+                     alinhamento=str(node.get("alignment") or "").lower(),
+                     largura_px=_px(node.get("width")))
 
     if rt in BUTTON_TYPES:
         # `linkTarget` vem da origem: gravado fixo como `_self`, o datasheet
@@ -1010,6 +1017,9 @@ def _coletar_blocos(node, caminho, page):
                           alt=img[0].props.get("alt", ""),
                           html=colar_paragrafos(cab + corpo) if cab else corpo,
                           imagem_esquerda=(pos == "left"),
+                          origem_midia="imagetext",
+                          largura_px=img[0].props.get("largura_px"),
+                          dims=img[0].props.get("dims"),
                           centro_vertical=str(node.get(
                               "elementsPositionVerticalAlignCenter", ""
                           )).lower() == "true")]
@@ -1906,6 +1916,9 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         payload[f"{base}/alt"] = b.props.get("alt", "") or ""
         payload[f"{base}/text"] = html(b.props.get("html", ""))
         payload[f"{base}/textIsRich"] = "true"
+        ratio = _image_ratio(b, getattr(page, "_util_px", JANELA_REF_PX - 50))
+        if ratio and ratio != 50:
+            payload[f"{base}/imageRatio"] = str(ratio)
         # padrão do componente é imagem à DIREITA (row-reverse); só carimba
         # quando a origem põe a imagem primeiro (174 de 179 casos autorais)
         # `elementsPositionVerticalAlignCenter` do imagetext: o GWI centra o
@@ -2252,6 +2265,50 @@ def _emitir_related(payload, pai, nomes, b, page, link_de, link_para):
 
 _LINHA_EM_BRANCO = "<p>&nbsp;</p>"
 
+GWI_COLUNA_PX = 976               # coluna de conteúdo do GWI a 1400px
+GWI_IMAGETEXT_MAX_H = 277         # .cmp-image-text img{max-height:277px}
+GWI_IMAGETEXT_COL = 480           # coluna do asset no imagetext left/right
+GWI_CAROUSEL_PX = 380             # carousel numa coluna de 6: 480 - 2x50 das setas
+
+
+def _image_ratio(b, util_px):
+    """`imageRatio` (Image Width %) do `textwithimage`: a imagem no tamanho que o GWI mostra (R36).
+
+    Sem ele a coluna da imagem vale 50% da linha e a foto sai no tamanho
+    natural: 655x436 numa página de 1350px contra 415x277 no GWI. O texto ao
+    lado não cresce junto (fica até mais baixo, a linha é mais larga), e o
+    que sobra é BURACO embaixo dele: 231–317px na `canon-li8030sa`, 397px
+    entre o parágrafo e "Application Uses" nas 7 folhas `i-chips-ip00c*`; no
+    hero das 26 `design-gateway` e das 6 `/sitime` a imagem 1,7x empurra o
+    índice de âncoras para fora da 1ª dobra. Era o aberto J ("sem campo
+    alvo") — o campo existe: `./imageRatio` no diálogo, que o HTL passa ao CSS
+    como `--textwithimage-image-ratio`.
+
+    A largura-alvo é a que o GWI DESENHA, em px:
+      largura autoral do `resizableimage`                       (345 na ip00c787)
+      imagetext left/right: min(480, 277 x L/A)  -- o teto de 277px de altura
+      carousel de 1 slide numa coluna de 6: 380
+      coluna de imagem: a largura da coluna, ou a natural se for menor
+    `dims` (L, A do asset) é preenchido pelo driver a partir do DAM; sem ele
+    assume-se foto 3:2. Entre 25 e 50%; 50 é o padrão do componente e não é
+    gravado.
+    """
+    px = b.props.get("largura_px")
+    dims = b.props.get("dims")
+    origem = b.props.get("origem_midia")
+    if not px:
+        if origem == "imagetext":
+            px = (min(GWI_IMAGETEXT_COL, round(GWI_IMAGETEXT_MAX_H * dims[0] / dims[1]))
+                  if dims else round(GWI_IMAGETEXT_MAX_H * 1.5))
+        elif origem == "carousel":
+            px = min(GWI_CAROUSEL_PX, dims[0]) if dims else GWI_CAROUSEL_PX
+        elif origem == "coluna":
+            col = round(GWI_COLUNA_PX * (b.props.get("coluna_w") or 6) / 12) - 16
+            px = min(col, dims[0]) if dims else col
+        else:
+            return None
+    return max(25, min(50, round(100 * px / max(util_px, 1))))
+
 
 def _respiro_na_coluna(blocos):
     """Dentro de COLUNA não há subseção: o respiro volta como linha em branco (R24b).
@@ -2376,18 +2433,22 @@ def _tentar_textwithimage(row):
         m = midia.blocks[0]
         if m.kind == "image":
             ref, alt = m.props.get("fileReference"), m.props.get("alt", "")
+            origem, dims = "coluna", m.props.get("dims")
         elif m.kind == "carousel" and len(m.props.get("slides") or []) == 1:
             s = m.props["slides"][0]
             if s.get("kind") != "image":
                 continue
             ref, alt = s.get("fileReference"), s.get("alt", "")
+            origem, dims = "carousel", s.get("dims")
         else:
             continue
         if not all(t.kind == "text" for t in texto.blocks):
             continue
         return Block("textwithimage", m.origin_path, fileReference=ref, alt=alt,
                      html="".join(t.props.get("html", "") for t in texto.blocks),
-                     imagem_esquerda=esquerda)
+                     imagem_esquerda=esquerda, origem_midia=origem, dims=dims,
+                     largura_px=m.props.get("largura_px"),
+                     coluna_w=midia.width)
     return None
 
 

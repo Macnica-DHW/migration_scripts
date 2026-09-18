@@ -904,6 +904,38 @@ diferente de `center`, ganha Display Position **Left** (`1726800547211`,
 policy do `image` — **conferir no dry-run**). Os cards centrados na origem
 (`/ambarella`, `/canon`, `/renesas`) continuam. 16 nós em 3 páginas.
 
+### R36 — `imageRatio`: a imagem do `textwithimage` no tamanho que o GWI desenha (era o aberto J)
+
+**Onde:** o defeito mais visível que sobrou. `canon-li8030sa`: 3 fotos de
+640–655px de largura contra 415×277 no GWI, texto de 178–199px de altura ao
+lado: **231–317px de buraco** embaixo do texto, +527px de página. As 7 folhas
+`i-chips-ip00c*` com largura autoral (600×600 contra 345×277): 397px entre o
+parágrafo e "Application Uses" (GWI 16). Hero das 26 `design-gateway` e das 6
+`/sitime` 1,7× maior: o índice de âncoras sai da 1ª dobra (y=840 → 1172).
+**Causa:** o `textwithimage` dá 50% da linha à imagem e só o tamanho natural a
+limita; no GWI `.cmp-image-text img{max-height:277px}`, o `resizableimage` tem
+`width` autoral e o carousel de coluna 6 tem 380px úteis. O REGRAS dizia "sem
+campo alvo" — **o campo existe**: `./imageRatio` ("Image Width (%)") no diálogo,
+que o HTL passa ao CSS como `--textwithimage-image-ratio`. Há precedente no
+projeto (`aem_padronizar_textwithimage.py`, `imageRatio=40`; 187 nós na
+copia-teste).
+**Regra:** `_image_ratio` — largura-alvo em px = a que o GWI DESENHA (largura
+autoral; ou `min(480, 277 × L/A)` no imagetext; 380 no carousel de 1 slide;
+a coluna, ou a natural se menor, na linha 6/6), dividida pela largura útil
+(1316), entre 25 e 50; 50 é o padrão e não é gravado. `L/A` vem do DAM
+(`tiff:ImageWidth/Length`), lido pelo driver em `aplicar_dimensoes_de_imagem`
+ANTES de `copiar_assets`; sem metadado assume 3:2.
+**Alcance:** 100 `textwithimage` em 75 páginas (offline, sem o DAM: 40 com 32,
+36 com 29, 12 com 25).
+**ANTES DO LOTE — validar em UMA página** (`canon-li8030sa` ou
+`i-chips-ip00c787`): (1) a 1400px a imagem sai com ~415/345px e o buraco sob o
+texto some; (2) **a 375px a imagem NÃO fica com 30% da tela** — o cético viu a
+regra `width:var(--ratio)` também fora do `@media` e não conseguiu conferir
+(401). Se o celular quebrar, a R36 sai do lote e volta a ser aberto J (saída:
+CSS no clientlib).
+**Detectar:** `textwithimage` sem `imageRatio` cuja imagem renderizada é mais
+alta que 1,5× o `.paragraph` ao lado.
+
 ### Achados que NÃO são de motor
 
 - **FUNCIONAL, gravidade alta — links para página que não existe no global2.**
@@ -923,7 +955,8 @@ policy do `image` — **conferir no dry-run**). Os cards centrados na origem
 | # | padrão | onde / quanto | causa | proposta |
 |---|---|---|---|---|
 | I | **botão sempre centralizado** | `/altera` ×2; **+ as 7 `design-gateway/*nvme*`** (`width=4 offset=0`: GWI na borda esquerda, destino no centro da página — único elemento centrado do corpo); `/toppan` (botão em coluna: GWI ocupa a coluna, destino centrado nela) | `S_BTN_CENTER` fixo. No GWI: sem `cq:responsive` o botão é centrado na linha (`/altera/agilex`); com `width<12 offset=0` fica à esquerda | decisão de dialeto. Proposta com 10 páginas de evidência: sem `S_BTN_CENTER` quando `width<12` e `offset=0`, ou dentro de coluna |
-| J | **imagem do `textwithimage` no tamanho natural** (agora o defeito mais visível) | `/renesas` 401×226 contra 200×113; **7 folhas `i-chips-ip00c*`** (600×600 contra ~345×277: buraco de 397px entre o parágrafo e o título seguinte); **as 26 `design-gateway` e as 6 `/sitime`** (hero 1,7×: empurra o índice de âncoras para fora da 1ª dobra); `canon-li8030sa` (+527px de página) | `width`/`height` do `resizableimage` não tem campo alvo; o `textwithimage` dá 50% da linha à imagem, limitada só pelo tamanho natural | NÃO é do motor (o cético confirmou: `flexcontainer`+`image` não encolhe e quebra a R21). Saídas: CSS no clientlib (`max-height`/`max-width` na imagem do `textwithimage`) ou cópia REDIMENSIONADA do asset no DAM. Censo pelo JCR: `resizableimage.width` × `tiff:ImageWidth` do asset, marcar natural > 1,3× |
+| J | imagem do `textwithimage` no tamanho natural | — | — | **virou R36** (`imageRatio`) — pendente de validação na tela, desktop e 375px |
+| K | **série de itens título+texto: 60px entre itens contra 28** | `canon-li8030sa` (h4×6 e h3×8: +384px), `ip00c241` (h2×12), `namuga-vicon-lite` (4 séries)… 26 séries em 18 páginas; das 99 fronteiras, 66 têm UMA linha em branco no GWI (28px → 60), 28 têm zero, 5 têm duas | todo título abre subseção (30+30) | por evidência, como a R24: título NÃO abre subseção quando o `text` anterior termina com exatamente UMA linha em branco E o grupo foi aberto por título do mesmo nível E com a mesma marca de fio (style `1690913810338`); o último `<p>` ganha `margin-bottom:30px`. Sem a 3ª condição funde "Why Macnica"/"Next Step" (h3 de seção) com os h3 de item. Abrir a `ip00c241` antes de decidir o caso de zero linhas |
 | E | cabeçalho de tabela quebrando palavra | — | — | **FECHADO sem mexer:** sem a margem a quebra sumiu (`/canon` conferida) |
 | — | CSS do site: `td` alinha no topo (GWI no meio); índice de âncoras quebra 3+1; fio sob os h3 do GWI não existe | várias | clientlib do global2 | fora do motor |
 

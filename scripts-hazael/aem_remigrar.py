@@ -218,6 +218,52 @@ def aplicar_titulos_download(page, session, base_url, auth, cache):
                         session, base_url, auth, it.get("fileReference", ""), cache)
 
 
+def dims_do_asset(session, base_url, auth, ref, cache):
+    """(largura, altura) em px do asset no DAM, ou None."""
+    chave = ("dims", ref)
+    if chave in cache:
+        return cache[chave]
+    dims = None
+    d, st = get_json(session, f"{base_url}{ref}/jcr:content/metadata.json", auth)
+    if st == 200 and isinstance(d, dict):
+        try:
+            w, h = int(d.get("tiff:ImageWidth") or 0), int(d.get("tiff:ImageLength") or 0)
+            if w > 0 and h > 0:
+                dims = (w, h)
+        except (TypeError, ValueError):
+            pass
+    cache[chave] = dims
+    return dims
+
+
+def aplicar_dimensoes_de_imagem(page, session, base_url, auth, cache):
+    """Largura x altura de cada imagem que pode virar `textwithimage` (R36).
+
+    O motor calcula o `imageRatio` a partir do tamanho que o GWI DESENHA, e
+    para isso precisa da proporção do asset. Roda ANTES de `copiar_assets`
+    (o `fileReference` ainda é o do GWI). Os `textwithimage` de linha 6/6 só
+    nascem na emissão (`_tentar_textwithimage`), por isso as dimensões vão
+    nos blocos de imagem e nos slides de carousel, não só no que já é twi.
+    """
+    def todos(blocos):
+        for b in blocos:
+            yield b
+            for p in b.panels:
+                for r in p.rows:
+                    yield from todos(r.blocks)
+
+    for b in todos(page.blocks):
+        if b.kind in ("image", "textwithimage") and not b.props.get("largura_px"):
+            ref = b.props.get("fileReference")
+            if isinstance(ref, str) and ref.startswith("/content/dam/"):
+                b.props["dims"] = dims_do_asset(session, base_url, auth, ref, cache)
+        elif b.kind == "carousel":
+            for sl in b.props.get("slides") or []:
+                ref = sl.get("fileReference")
+                if isinstance(ref, str) and ref.startswith("/content/dam/"):
+                    sl["dims"] = dims_do_asset(session, base_url, auth, ref, cache)
+
+
 def copiar_assets(page, session, base_url, auth, cache, dry_run):
     """Todo fileReference do GWI vira o equivalente em copia-teste."""
     src, dst = CONFIG["dam_source_prefix"], CONFIG["dam_target_prefix"]
@@ -328,6 +374,7 @@ def main():
 
         # depende de rede: rótulo de download e related children/search
         aplicar_titulos_download(page, session, args.base_url, auth, cache_dc)
+        aplicar_dimensoes_de_imagem(page, session, args.base_url, auth, cache_dc)
         for b in page.blocks:
             if b.kind in ("related", "productlist"):
                 resolvidas = resolver_related(session, args.base_url, auth, b, origem)
