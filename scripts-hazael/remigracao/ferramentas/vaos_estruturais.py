@@ -10,7 +10,7 @@ portanto, comparar duas versões do motor sobre as 136 páginas antes de gravar
 
   padding T/B do container (desktop):  padrão 50 | Small 30 | Large 70 | None 0
   margem própria:  .cmp-table 20/20   .cmp-textwithimage 30/30
-                   .link-button 40/0  ul.cmp-list__list 55/55
+                   .link-button 40/0  ul.cmp-list__list 55/55  .anchor-link__list 0/60
 
 Não é pixel de tela (ignora padding interno de título, line-height, imagem):
 serve para COMPARAR versões e achar fronteira cara, não para substituir o
@@ -28,7 +28,7 @@ sys.path.insert(0, str(_RAIZ / "scripts-hazael"))
 sys.path.insert(0, str(_RAIZ / "scripts-bruno"))
 
 PAD = {"1717498052331": 30, "1717498056876": 0, "1717498050826": 70}
-MARGEM = {"table": (20, 20), "textwithimage": (30, 30), "button": (40, 0), "list": (55, 55)}
+MARGEM = {"table": (20, 20), "textwithimage": (30, 30), "button": (40, 0), "list": (55, 55), "anchorlink": (0, 60)}
 CONTAINERS = ("container", "flexcontainer", "flexcontaineritem", "responsivegrid", "tabs")
 
 

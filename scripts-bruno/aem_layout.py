@@ -336,6 +336,57 @@ _ESPACADOR_FIM = re.compile(r"(?:" + _P_VAZIO + r"\s*)+$", re.I)
 _BLOCO_RICO = re.compile(r"<(p|h[1-6])\b([^>]*)>(.*?)</\1\s*>", re.I | re.S)
 
 
+_ESPACADOR_COM_INLINE = re.compile(
+    r"<(p|h[1-6])\b[^>]*>(?:\s|&nbsp;|\u00a0|<br\s*/?>"
+    r"|</?(?:b|strong|i|em|u|span|font)\b[^>]*>)*</\1\s*>", re.I)
+
+
+_CELULA = re.compile(r"<(t[dh])\b([^>]*)>((?:(?!</?t[dh]\b).)*?)</\1\s*>", re.I | re.S)
+
+
+def nao_quebrar_tokens(html):
+    """Célula de tabela com UM token curto não quebra no meio (R41).
+
+    O CSS do global2 põe `word-break:break-word` em `td`/`th`: a célula pode
+    encolher até 1 caractere, e o navegador reparte a largura pelas colunas
+    de frase longa. Na `altera-arria-10` (13 colunas) 31 de 209 células
+    quebravam número no desktop ("101,62/0") e 189 no celular, um caractere
+    por linha — tabela de 8.319px de altura contra 2.258 no GWI; na `/i-chips`
+    a 1ª coluna saía "IP00C33/5". No GWI a tabela cresce e ROLA dentro do
+    `.cmp-table{overflow-x:auto}`; com `white-space:nowrap` nas células de
+    token único o destino faz o mesmo (o wrapper `scroll-hint` já rola).
+    """
+    def troca(m):
+        tag, attrs, miolo = m.group(1), m.group(2), m.group(3)
+        txt = re.sub(r"<[^>]+>", "", miolo).replace("&nbsp;", " ").replace("\u00a0", " ").strip()
+        if not (2 <= len(txt) <= 16) or re.search(r"\s", txt) or "white-space" in attrs.lower():
+            return m.group(0)
+        ms = re.search(r"""\bstyle\s*=\s*(["'])""", attrs, re.I)
+        if ms:
+            attrs = attrs[:ms.end()] + "white-space:nowrap;" + attrs[ms.end():]
+        else:
+            attrs += ' style="white-space:nowrap"'
+        return f"<{tag}{attrs}>{miolo}</{tag}>"
+    return _CELULA.sub(troca, html or "")
+
+
+def normalizar_espacadores(html):
+    """`<p><b>&nbsp;</b></p>` é linha em branco — vira `<p>&nbsp;</p>` (R37).
+
+    O autor deixou o negrito ligado na linha vazia. `strip_empty_blocks` e
+    `_P_VAZIO` só aceitam espaço/&nbsp;/<br> dentro do bloco, então este
+    sobrevivia como parágrafo de verdade: 30 de margem + 30 de altura + 30 da
+    margem do seguinte = 90px entre "Common deployments include:" e o 1º item
+    na `altera-holoscan` (GWI 28). Normalizado, segue o caminho de todo
+    espaçador: evidência para a R15/R24 e depois apagado.
+    """
+    if not html or "&nbsp;" not in html and "\u00a0" not in html:
+        return html
+    return _ESPACADOR_COM_INLINE.sub(
+        lambda m: "<p>&nbsp;</p>" if "<" in m.group(0)[1:-1].replace("<br", "")
+        .replace("</" + m.group(1), "") else m.group(0), html)
+
+
 _BR_FIM_DE_CELULA = re.compile(
     r"(?:\s*<br\s*/?>)+\s*"
     r"(?=(?:</(?:b|strong|i|em|span|a|u|font)\s*>\s*)*(?:</p>\s*)?</t[dh]\s*>)", re.I)
@@ -664,8 +715,14 @@ def bloco_de(node, caminho, page):
             m = re.search(r"<a\s[^>]*\b(?:name|id)\s*=\s*[\"']([^\"']+)",
                           node.get("text", ""), re.I)
             return Block("anchor", caminho, nome=m.group(1) if m else "")
-        bruto = embrulhar_inline_da_raiz(node.get("text", "") or "")
+        bruto = embrulhar_inline_da_raiz(
+            normalizar_espacadores(node.get("text", "") or ""))
+        # `id` de âncora num `text` COM conteúdo (a R22 só cobre o espaçador):
+        # na `/design-gateway` o link "See the full … product lineup here"
+        # (`#productlineup`) aponta para um parágrafo, e o clique não fazia
+        # nada; nas duas `test-277-*` os 3 alvos do índice são `text` (R39).
         return Block("text", caminho, html=colar_paragrafos(bruto),
+                     id=(node.get("id") or "").strip() or None,
                      respiro_antes=bool(_ESPACADOR_INICIO.match(bruto)),
                      respiro_depois=bool(_ESPACADOR_FIM.search(bruto)))
 
@@ -737,7 +794,8 @@ def bloco_de(node, caminho, page):
         # bloco, então passava: a linha ficava 15px mais alta que as vizinhas
         # (`altera-stratix-10-dx`; 24 células em 12 páginas). `<br>` ENTRE
         # textos fica (R32).
-        bruto = _BR_FIM_DE_CELULA.sub("", bruto)
+        bruto = nao_quebrar_tokens(
+            _BR_FIM_DE_CELULA.sub("", normalizar_espacadores(bruto)))
         return Block("table", caminho, html=colar_paragrafos(bruto),
                      de_layout=(sem_borda and "<img" in bruto.lower()
                                 and "<th" not in bruto.lower()))
@@ -1093,7 +1151,14 @@ _MIDIA = ("image", "embed", "carousel", "anchorlink", "textwithimage")
 # margem vertical (em cima, embaixo) que o CSS do global2 dá ao componente:
 # .cmp-table 20/20, .cmp-textwithimage 30/30, .link-button 40/0, ul.cmp-list 55/55
 _MARGEM_PROPRIA = {"table": (20, 20), "textwithimage": (30, 30),
-                   "button": (40, 0), "related": (55, 55), "productlist": (55, 55)}
+                   "button": (40, 0), "related": (55, 55), "productlist": (55, 55),
+                   "anchorlink": (0, 60)}
+
+
+def _nivel(b):
+    """2 para h2, 3 para h3… (título sem tipo conta como h2)."""
+    m = re.search(r"(\d)", str(b.props.get("tipo") or "h2"))
+    return int(m.group(1)) if m else 2
 
 
 def _quebrar_em_subsecoes(blocos, caminho):
@@ -1111,12 +1176,31 @@ def _quebrar_em_subsecoes(blocos, caminho):
         # anterior ele nascia colado no texto (gap 0 entre irmãos) e lia como
         # sublinhado do último bullet, não como divisor de seção (R13).
         abre = b.kind in ("title", "hr") or (atual and atual[-1].kind == "hr")
+        # …menos o `hr` que vem LOGO depois de um título, sem espaçador: é o
+        # FIO do título (24px acima, 24 abaixo no GWI), e título + fio + bloco
+        # ficam no mesmo container. Em três containers o fio boiava num branco
+        # de 175px e o título "120MXS Eval Kits" ficava mais perto da tabela
+        # de cima que do texto que introduz (`canon-120mxs`, R40).
+        if (b.kind == "hr" and atual and atual[-1].kind == "title"
+                and not b.props.get("espaco_antes")):
+            b.props["fio_de_titulo"] = True
+            abre = False
+        elif (atual and atual[-1].kind == "hr"
+              and atual[-1].props.get("fio_de_titulo") and b.kind != "title"
+              and not b.props.get("espaco_antes")):
+            abre = False
         # Título logo depois de título é SUBTÍTULO: fica no mesmo container.
         # Na `ambarella-n1-soc` o par h2 "Leading the Family…" + h3
         # "High-Performance Edge GenAI…" anda colado no GWI (16px) e saía com
         # 60px, o h2 boiando a meio caminho do bloco de cima (R20).
         if b.kind == "title" and atual and all(x.kind == "title" for x in atual):
             abre = False
+            # …menos quando o GWI tem um NÓ espaçador entre os dois e o de
+            # baixo é de nível MENOR: h2 "SiTime Buffer Product Lineup",
+            # espaçador, h3 do 1º produto — 65px no GWI, igual aos outros h3
+            # da série; colado, a série saía 22/71/71/71/71 (R38, 6 páginas).
+            if b.props.get("espaco_antes") and _nivel(b) > _nivel(atual[-1]):
+                abre = True
         # Texto que o autor do GWI fechou com `<p>&nbsp;</p>` antes de uma
         # imagem (ou abriu com ele depois dela): o respiro era essa linha em
         # branco, que `strip_empty_blocks` apaga — e entre irmãos o gap é 0. A
@@ -1185,7 +1269,10 @@ def _fundir_textos(blocos):
     """
     out = []
     for b in blocos:
-        if b.kind == "text" and out and out[-1].kind == "text":
+        # `text` com `id` é alvo de âncora: não se funde no de cima, senão o
+        # clique pararia no começo do bloco errado (R39)
+        if (b.kind == "text" and out and out[-1].kind == "text"
+                and not b.props.get("id")):
             out[-1].props["html"] = (out[-1].props.get("html", "")
                                      + b.props.get("html", ""))
             out[-1].props["respiro_depois"] = b.props.get("respiro_depois", False)
@@ -1828,6 +1915,13 @@ def _marcar_papeis(page):
     for ant, s in zip(page.sections, page.sections[1:]):
         if s.role == "related" and not (ant.blocks and ant.blocks[-1].kind == "xf"):
             s.pad_tb = "small"
+    # Seção que é SÓ o XF de contato: o fragmento já traz 100px+ de padding
+    # próprio (dois containers de 50). Os 30|50 do nosso container em cima e
+    # embaixo só aumentavam o buraco antes dos botões (lista→botão 245px
+    # contra 104 na `altera-max-10`; pedido por 2 revisores independentes).
+    for s in page.sections:
+        if s.role == "cta":
+            s.pad_tb = "none"
 
 
 def _page_props(jcr_content):
@@ -1924,6 +2018,8 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         if b.props.get("linha_depois"):
             corpo += _LINHA_EM_BRANCO
         payload[f"{base}/text"] = corpo
+        if b.props.get("id"):
+            payload[f"{base}/id"] = b.props["id"]      # core text v2: vira o id do <div>
         payload[f"{base}/textIsRich"] = "true"
         return True
 
@@ -2366,7 +2462,7 @@ def _image_ratio(b, util_px):
       carousel de 1 slide numa coluna de 6: 380
       coluna de imagem: a largura da coluna, ou a natural se for menor
     `dims` (L, A do asset) é preenchido pelo driver a partir do DAM; sem ele
-    assume-se foto 3:2. Entre 25 e 50%; 50 é o padrão do componente e não é
+    assume-se foto 3:2. Entre 15 e 50%; 50 é o padrão do componente e não é
     gravado.
     """
     px = b.props.get("largura_px")
@@ -2374,7 +2470,11 @@ def _image_ratio(b, util_px):
     origem = b.props.get("origem_midia")
     if not px:
         if origem == "imagetext":
-            px = (min(GWI_IMAGETEXT_COL, round(GWI_IMAGETEXT_MAX_H * dims[0] / dims[1]))
+            # `dims[0]`: foto menor que isso sai no tamanho natural (256px
+            # na `altera-max-10`) — sem ele a coluna da imagem ficava com 36%
+            # e a foto encostada num canto dela
+            px = (min(GWI_IMAGETEXT_COL, dims[0],
+                      round(GWI_IMAGETEXT_MAX_H * dims[0] / dims[1]))
                   if dims else round(GWI_IMAGETEXT_MAX_H * 1.5))
         elif origem == "carousel":
             px = min(GWI_CAROUSEL_PX, dims[0]) if dims else GWI_CAROUSEL_PX
@@ -2383,7 +2483,10 @@ def _image_ratio(b, util_px):
             px = min(col, dims[0]) if dims else col
         else:
             return None
-    return max(25, min(50, round(100 * px / max(util_px, 1))))
+    # piso de 15 (era 25): a foto em retrato do Eval Kit da `canon-120mxs`
+    # pede 19% (252px) e com 25 saía 1,3x, com 239px de buraco sob o texto. O
+    # diálogo aceita 0–100 e o CSS funciona abaixo de 25 (simulado no navegador).
+    return max(15, min(50, round(100 * px / max(util_px, 1))))
 
 
 def _respiro_na_coluna(blocos):
@@ -2484,7 +2587,12 @@ def _emitir_linha(payload, pai, nomes, row, page, link_de, link_para):
         centrada = any(
             re.search(r"text-align\s*:\s*center", b.props.get("html", ""), re.I)
             or S_TITLE_CENTER in (b.props.get("styles") or []) for b in legenda)
-        if legenda and not centrada:
+        # …e a imagem SOZINHA na coluna (herói foto | título+texto da
+        # `/i-chips`: foto de 546px centrada numa coluna de 662, 58px para
+        # dentro da borda do h1; 188px a 1920): sem legenda não há o risco da
+        # legenda centrada.
+        so_imagem = all(b.kind == "image" for b in c.blocks)
+        if (legenda and not centrada) or so_imagem:
             for b in c.blocks:
                 if b.kind == "image" and b.props.get("alinhamento") == "left":
                     b.props["a_esquerda"] = True
@@ -2574,11 +2682,32 @@ def _emitir_secao(payload, slot, nomes, s, page, link_de, link_para):
     if len(s.rows) > 1:
         for r in s.rows:
             sub = f"{alvo}/{nomes(alvo, 'container')}"
-            _container(payload, sub, pad_tb="small", pad_lr="none")
+            # subseção que é SÓ o índice de âncoras: `.anchor-link__list` já
+            # traz 60px de margem embaixo — com o 30+30 do sub-container o
+            # índice ficava a 119px do título seguinte (GWI 55) e "boiava para
+            # cima" (`sitime-clock-buffers`)
+            so_indice = r.blocks and all(b.kind == "anchorlink" for b in r.blocks)
+            # …e a que é SÓ um `textwithimage` (30/30 de margem própria): a
+            # R28e por LINHA. Na `altera-arria-10` os vãos em volta dos `hr`
+            # mediam 97/97 contra 52/52 no GWI.
+            so_twi = (not r.cabecalho and r.blocks
+                      and (all(b.kind == "textwithimage" for b in r.blocks)
+                           or _tentar_textwithimage(r) is not None))
+            _container(payload, sub,
+                       pad_tb="none" if (so_indice or so_twi) else "small",
+                       pad_lr="none")
             _emitir_linha(payload, sub, nomes, r, page, link_de, link_para)
     else:
         for r in s.rows:
             _emitir_linha(payload, alvo, nomes, r, page, link_de, link_para)
+    # Seção cujo bloco não emitiu nada (o `related` que não resolve vira
+    # pendência e devolve False): o container ficava vazio no JCR — 9 páginas.
+    # Invisível na tela (h=0), mas é lixo para quem abrir a página no editor.
+    tipos = {v.rsplit("/", 1)[-1] for k, v in payload.items()
+             if k.startswith(base + "/") and k.endswith("/sling:resourceType")}
+    if not tipos - {"container"}:
+        for k in [k for k in payload if k == base or k.startswith(base + "/")]:
+            del payload[k]
 
 
 def build_layout_payload(page, template_path=None, link_de=None, link_para=None,
