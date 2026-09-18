@@ -61,6 +61,7 @@ def payload_novo(session, base_url, auth, origem, cache_dc, cache_asset):
     payload, contagens = AL.build_layout_payload(
         page, template_path=R.TEMPLATE, link_de=CONFIG["gwi_prefix"],
         link_para=CONFIG["global2_prefix"], reescrever_listas=False)
+    R.normalizar_links_do_escopo(payload, CONFIG["gwi_prefix"], CONFIG["global2_prefix"])
     return payload, contagens, page
 
 def resumo(flat):

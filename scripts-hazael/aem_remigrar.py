@@ -44,6 +44,7 @@ COMO RODAR
 """
 
 import argparse
+import re
 import sys
 import time
 from pathlib import Path
@@ -94,6 +95,28 @@ def em_escopo(origem):
         return True
     return not rel.split("/")[0].startswith(FORA_DE_ESCOPO)
 
+
+def normalizar_links_do_escopo(payload, link_de, link_para):
+    """href para página do ESCOPO leva o nome de nó NORMALIZADO.
+
+    `destino_de` normaliza o nome (`canon-li8030SA-…` -> `canon-li8030sa-…`,
+    5 páginas). A `list` já grava o nome novo, mas o href de rich text só
+    troca o prefixo (`rewrite_links_in_html`) e seguia apontando para o nome
+    antigo: 404 no go-live. Só dentro do escopo — sony/deepx são da Anion e
+    têm os nomes que ela deu.
+    """
+    raiz = link_para + GWI_ROOT[len(link_de):]
+    padrao = re.compile(re.escape(raiz) + r"((?:/[A-Za-z0-9_-]+)+)")
+
+    def troca(m):
+        if not em_escopo(GWI_ROOT + m.group(1)):
+            return m.group(0)
+        return raiz + "/".join(normalize_name(x) if x else x
+                               for x in m.group(1).split("/"))
+
+    for k, v in payload.items():
+        if isinstance(v, str) and raiz in v:
+            payload[k] = padrao.sub(troca, v)
 
 def titulo_do_asset(session, base_url, auth, ref, cache):
     """`dc:title` do asset no DAM. Sem inventar nada a partir do nome."""
@@ -344,6 +367,8 @@ def main():
             page, template_path=TEMPLATE,
             link_de=args.link_de, link_para=args.link_para,
             reescrever_listas=(args.links_de_lista != "destino"))
+
+        normalizar_links_do_escopo(payload, args.link_de, args.link_para)
 
         destino = destino_de(origem)
         seo = build_seo_props(jcr)
