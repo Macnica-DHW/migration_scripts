@@ -39,10 +39,13 @@ fora da árvore, AUTORIZADO: 2 XFs de popup em
 motor    = HEAD do branch migration/semiconductors-remigration
 Tudo o que está no motor está no servidor.
 
-conferência de CONTEÚDO (medida sobre o lote 2): 132 limpas, 27 faltando em 3
-páginas conhecidas. NÃO foi refeita depois dos lotes 3 e 4 — refazer (25 min):
-o lote 4 mexe em estrutura (textwithimage, flexcontainer), não em texto, e o
-cmp_motor offline não acusa perda de bloco, mas a tela é quem manda.
+conferência de CONTEÚDO refeita DEPOIS do lote 7 (18/09/2026, 136 páginas):
+   páginas limpas     134 de 136   (início da 2ª sessão: 53; lote 2: 132)
+   faltando            22          landing 16 (supplierlist — hover-only, ver REGRAS)
+                                   /ambarella 6 (artefato do índice automático do GWI, R10)
+   sobrando             0
+Nenhuma regressão dos lotes 3–7. `dados/fidelidade_atual.csv` é desta rodada
+(a linha da macnica-and-adi é de antes do form: refeita à parte, deu OK).
 ```
 
 **Conferência VISUAL: 16 de 136 páginas, todas sem margem**, uma por
@@ -70,7 +73,6 @@ conferidas no print depois de gravar. Os dois exemplos do Hazael:
    com a série seguinte na `/altera/agilex`; a série da `/renesas` partida).
 3. Seguir a amostra: faltam folhas de produto simples (arquétipo E, 73
    páginas — só `agilex-5` foi vista) e as outras `design-gateway`.
-4. Refazer a conferência de conteúdo (`aem_fidelidade_render.py`).
 
 **Método que funcionou** (um revisor por página, em paralelo, SOMENTE LEITURA;
 o brief que eles recebem está descrito em REGRAS, R18–R24):

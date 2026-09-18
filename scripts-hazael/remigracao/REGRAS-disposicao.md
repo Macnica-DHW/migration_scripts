@@ -835,6 +835,7 @@ Nenhum destes é defeito de migração; eram erros de MEDIÇÃO que inflavam
 | "Features" em dobro (falta=1) | botão mobile do índice de âncoras, criado por JS e oculto acima de 1025px | `.cmp-pagesectionlisting__button` excluído |
 | "Have a question for the Macnica Team?" / "Get in touch" faltando | coluna do XF com `cq:responsive/default/behavior=hide` — o visitante não vê | `.aem-GridColumn--default--hide` excluído (por classe, não por display:none) |
 | título de item de lista faltando + versão curta sobrando | pageTitle no teaser do GWI × navTitle no `list` do destino (R12) | casados pelo alvo do link; coluna `titulo_lista` |
+| "Success"/"Error" do form faltando (4) com o form migrado | popups do form container: no destino saem `aria-hidden`, no GWI ficam em `.cmp-form-success/.cmp-form-error` sem marca | excluídos dos dois lados (R27) |
 
 Regra geral: quando `falta`/`sobra` se repete com o MESMO texto em dezenas de
 páginas, desconfiar da medição antes do motor. Uma página conferida à mão

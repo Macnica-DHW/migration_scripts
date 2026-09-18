@@ -11,8 +11,8 @@ lote 6 de 18/09/2026: R26 (vídeo sozinho) — 20 páginas          20/20 sem fa
 lote 7 de 18/09/2026: R27 (formulário da macnica-and-adi) + 2 XFs de popup no
                       espelho de XFs da copia-teste (ferramentas/criar_xf_popups.py)
 
-conferência de conteúdo (sobre o lote 2): 132 limpas, 27 faltando em 3
-páginas conhecidas. NÃO foi refeita depois dos lotes 3 e 4.
+conferência de conteúdo REFEITA depois do lote 7: 134 de 136 limpas, 22
+faltando em 2 páginas conhecidas (landing 16, /ambarella 6), 0 sobrando.
 conferência visual: 16 de 136, uma por arquétipo — ver HANDOFF.md.
 ```
 

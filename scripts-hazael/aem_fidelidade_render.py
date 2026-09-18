@@ -116,6 +116,11 @@ JS_EXTRAI = """
     // para as abas 2..N continuarem contando. Caso real: metade do XF
     // signup-and-contact do GWI ("Have a question for the Macnica Team?")
     '.aem-GridColumn--default--hide',
+    // popups de sucesso/erro do form container (XFs embutidos): só abrem
+    // depois do submit. No destino saem com aria-hidden (já excluído); no GWI
+    // ficam em .cmp-form-success/.cmp-form-error sem marca nenhuma — contavam
+    // como 4 unidades "faltando" na macnica-and-adi com o form já migrado (R27)
+    '.cmp-form-success', '.cmp-form-error', '[data-cmp-hook-form$="-popup"]',
     // o rodapé do GWI é um experience fragment sem <footer> e sem classe
     // footer__ — só o id do bloco de copyright o identifica
     '[id*="copyright"]', '[class*="socialmedia"]', '[class*="social-media"]'
