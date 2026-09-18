@@ -336,12 +336,16 @@ _ESPACADOR_FIM = re.compile(r"(?:" + _P_VAZIO + r"\s*)+$", re.I)
 _BLOCO_RICO = re.compile(r"<(p|h[1-6])\b([^>]*)>(.*?)</\1\s*>", re.I | re.S)
 
 
-_BR_FIM_DE_CELULA = re.compile(r"(?:\s*<br\s*/?>)+\s*(?=(?:</p>\s*)?</t[dh]\s*>)", re.I)
+_BR_FIM_DE_CELULA = re.compile(
+    r"(?:\s*<br\s*/?>)+\s*"
+    r"(?=(?:</(?:b|strong|i|em|span|a|u|font)\s*>\s*)*(?:</p>\s*)?</t[dh]\s*>)", re.I)
 
 _TAG_HTML = re.compile(r"<(/?)([a-zA-Z][a-zA-Z0-9]*)\b[^>]*?(/?)>")
 _TAGS_DE_BLOCO = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "ul", "ol", "dl",
                   "table", "div", "blockquote", "hr", "pre", "figure", "section"}
 _TAGS_VAZIAS = {"br", "hr", "img", "input", "wbr", "col", "source"}
+_TAGS_INLINE = {"a", "b", "strong", "i", "em", "u", "span", "sup", "sub", "br",
+                "img", "font", "small"}
 
 
 def embrulhar_inline_da_raiz(html):
@@ -365,6 +369,15 @@ def embrulhar_inline_da_raiz(html):
             mudou = True
             return "<p>" + trecho.strip() + "</p>"
         return trecho
+
+    # Só embrulha o que é comprovadamente inline: `<li>`, `<center>`,
+    # `<form>`, comentário… soltos na raiz dariam `<p>` com bloco dentro (o
+    # navegador fecha o `<p>` sozinho e sobra um parágrafo vazio de 30px).
+    # Qualquer tag fora das duas listas: o HTML volta como veio.
+    if "<!--" in html or any(
+            m.group(2).lower() not in _TAGS_DE_BLOCO | _TAGS_INLINE | {"li", "tr", "td", "th", "tbody", "thead", "dt", "dd", "caption", "colgroup", "col"}
+            for m in _TAG_HTML.finditer(html)):
+        return html
 
     for m in _TAG_HTML.finditer(html):
         tag = m.group(2).lower()
@@ -1112,7 +1125,20 @@ def _quebrar_em_subsecoes(blocos, caminho):
         # espaçador na origem: sem ele o GWI também cola (R24).
         if atual and not abre:
             ant = atual[-1]
-            if ((ant.kind == "text" and ant.props.get("respiro_depois")
+            # texto<->tabela com o espaçador na origem (no fim/começo do
+            # `text`, ou como nó à parte): UMA linha em branco no `text`
+            # (30 + 20 da `.cmp-table` = 50px; GWI 16 + a linha de 28). Sem
+            # isto saía 20px ou 80px conforme o autor digitou a linha dentro
+            # ou fora do `text` — o mesmo desenho no GWI.
+            if ({ant.kind, b.kind} == {"text", "table"}
+                    and (b.props.get("espaco_antes")
+                         or (ant.kind == "text" and ant.props.get("respiro_depois"))
+                         or (b.kind == "text" and b.props.get("respiro_antes")))):
+                if ant.kind == "text":
+                    ant.props["linha_depois"] = True
+                else:
+                    b.props["linha_antes"] = True
+            elif ((ant.kind == "text" and ant.props.get("respiro_depois")
                  and b.kind in _MIDIA)
                     or (ant.kind in _MIDIA and b.kind == "text"
                         and b.props.get("respiro_antes"))):
@@ -1571,6 +1597,29 @@ def _secoes(corpo, caminho, page):
                     secoes.pop()
         return ts
 
+    corte = False         # passou espaçador de topo desde o último bloco
+
+    def cortar(b=None):
+        """Aplica o corte pendente do espaçador — com as exceções da R24 estendida.
+
+        Não corta DEPOIS de título (o título anda com o bloco que introduz:
+        na `namuga-vicon-lite`, heading, ESPAÇADOR, imagem deixava "Ready to
+        Evaluate Vicon Lite?" sozinho numa seção, a 60px da imagem) nem ANTES
+        de botão (a margem própria dele já separa: na `/toppan` tabela,
+        ESPAÇADOR, botão ficava a 140px, o botão do datasheet mais perto da
+        série seguinte). `b` é o bloco-folha que chega; invólucro passa None.
+        """
+        nonlocal corte
+        if not corte:
+            return
+        corte = False
+        if corrida and (rt_of(corrida[-1][0]) in HEADING_TYPES
+                        or rt_of(corrida[-1][0]) in TITLE_TYPES):
+            return
+        if b is not None and b.kind == "button":
+            return
+        fechar()
+
     for i, (nome, ch) in enumerate(list_child_nodes(corpo)):
         p = f"{caminho}/{nome}"
 
@@ -1578,9 +1627,10 @@ def _secoes(corpo, caminho, page):
             # spacer de topo: não é conteúdo, mas CORTA a corrida de folhas.
             # Tem de vir ANTES de `so_pageproperties`, que devolve True para
             # todo nó sem conteúdo: com a ordem trocada este ramo era código
-            # morto e o espaçador nunca cortava nada (R28).
+            # morto e o espaçador nunca cortava nada (R28). O corte fica
+            # PENDENTE até se conhecer o próximo bloco — ver `cortar()`.
             if rt_of(ch) in TEXT_TYPES:
-                fechar()
+                corte = True
             continue
         if so_pageproperties(ch):
             continue
@@ -1592,6 +1642,7 @@ def _secoes(corpo, caminho, page):
             b = bloco_de(ch, p, page)
             if not b:
                 continue
+            cortar(b)
             if b.kind in MAJOR:
                 # related/xf ficam de fora: a seção deles tem papel próprio
                 # em `_marcar_papeis` (sem padding; CTA) que depende de o
@@ -1616,6 +1667,7 @@ def _secoes(corpo, caminho, page):
             continue
 
         # invólucro: seção própria, com suas linhas e colunas
+        cortar()
         ts = titulo_que_introduz()
         fechar()
         s = Section(p, len(secoes))
@@ -1761,6 +1813,21 @@ def _marcar_papeis(page):
                 and (all(b.kind == "textwithimage" for b in s.blocks)
                      or _tentar_textwithimage(s.rows[0]) is not None)):
             s.pad_tb = "none"
+        # {título(s) + textwithimage}: o título precisa do respiro de cima,
+        # então `small` — o 1º item da série "Why Choose" da `/ambarella`
+        # ficava a 110 do divisor e os outros 12 a 60.
+        elif (len(s.rows) == 1 and len(s.blocks) > 1
+              and s.blocks[-1].kind == "textwithimage"
+              and all(b.kind == "title" for b in s.blocks[:-1])):
+            s.pad_tb = "small"
+    # `related` sem padding (o `<ul>` traz 55px) supõe que a seção de CIMA
+    # pague o respiro. Seção com subseções deixou de pagar (R28b): o título
+    # "Similar Products" ficava a 30px do texto de cima e a 55 da própria lista
+    # (4 `/sitime`, `canon-li8030sa`). Só fica `none` depois do XF, que traz
+    # 100px+ de padding interno.
+    for ant, s in zip(page.sections, page.sections[1:]):
+        if s.role == "related" and not (ant.blocks and ant.blocks[-1].kind == "xf"):
+            s.pad_tb = "small"
 
 
 def _page_props(jcr_content):
@@ -1848,10 +1915,15 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         payload[f"{base}/sling:resourceType"] = RT["text"]
         # linha em branco que `_respiro_na_coluna` mandou manter (R24b): entra
         # DEPOIS de `strip_empty_blocks`, que a apagaria
-        payload[f"{base}/text"] = (
-            (_LINHA_EM_BRANCO if b.props.get("linha_antes") else "")
-            + html(b.props.get("html", ""))
-            + (_LINHA_EM_BRANCO if b.props.get("linha_depois") else ""))
+        corpo = html(b.props.get("html", ""))
+        if b.props.get("linha_antes"):
+            # a linha vira o 1º filho; o `<p>` que ERA o 1º passaria a ganhar
+            # os 30px de margem — e o respiro seria pago duas vezes
+            corpo = _LINHA_EM_BRANCO + re.sub(r"^\s*<p>", '<p style="margin-top:0">',
+                                              corpo, count=1)
+        if b.props.get("linha_depois"):
+            corpo += _LINHA_EM_BRANCO
+        payload[f"{base}/text"] = corpo
         payload[f"{base}/textIsRich"] = "true"
         return True
 
@@ -1924,9 +1996,10 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         # `elementsPositionVerticalAlignCenter` do imagetext: o GWI centra o
         # texto na altura da foto; sem o style ele sobe para o topo e sobra um
         # buraco embaixo (`canon-li8030sa`: 0 em cima, 231px embaixo) (R34).
-        _styles(payload, base, [x for x in (
-            S_TWI_LEFT if b.props.get("imagem_esquerda") else "",
-            S_TWI_VCENTER if b.props.get("centro_vertical") else "") if x])
+        # forma posicional: [Image Position, Text Wrapping, Vertical Alignment]
+        _styles(payload, base, [
+            S_TWI_LEFT if b.props.get("imagem_esquerda") else "", "",
+            S_TWI_VCENTER if b.props.get("centro_vertical") else ""])
         return True
 
     if k == "button":
@@ -2263,7 +2336,10 @@ def _emitir_related(payload, pai, nomes, b, page, link_de, link_para):
     return True
 
 
-_LINHA_EM_BRANCO = "<p>&nbsp;</p>"
+# `margin-top:0`: todo `<p>` que não é o primeiro filho tem 30px de margem no
+# global2, e a linha vazia já mede 30px de altura — sem isto a "linha em
+# branco" rendia 60px (medido em render local), contra 28 no GWI.
+_LINHA_EM_BRANCO = '<p style="margin-top:0">&nbsp;</p>'
 
 GWI_COLUNA_PX = 976               # coluna de conteúdo do GWI a 1400px
 GWI_IMAGETEXT_MAX_H = 277         # .cmp-image-text img{max-height:277px}
@@ -2404,9 +2480,13 @@ def _emitir_linha(payload, pai, nomes, row, page, link_de, link_para):
         # da legenda, nos 4 cards. Só quando o GWI NÃO centra (`alignment`
         # diferente de center); os cards da `/ambarella`, `/canon` e
         # `/renesas` são centrados na origem e continuam (R35).
-        if any(b.kind in ("title", "text") for b in c.blocks):
+        legenda = [b for b in c.blocks if b.kind in ("title", "text")]
+        centrada = any(
+            re.search(r"text-align\s*:\s*center", b.props.get("html", ""), re.I)
+            or S_TITLE_CENTER in (b.props.get("styles") or []) for b in legenda)
+        if legenda and not centrada:
             for b in c.blocks:
-                if b.kind == "image" and b.props.get("alinhamento") != "center":
+                if b.kind == "image" and b.props.get("alinhamento") == "left":
                     b.props["a_esquerda"] = True
         for b in c.blocks:
             _emitir_bloco(payload, item, nomes, b, page, link_de, link_para)

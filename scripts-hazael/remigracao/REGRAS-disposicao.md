@@ -791,6 +791,10 @@ antes/depois" que o G pedia.
 > 136 payloads mudam (a R28 mexe no ritmo vertical de quase todas). Conferido
 > offline: nenhum texto some nem muda de ordem nas 136 (`conf_texto`: só o
 > `linkTarget` de 13 páginas, que é a R31).
+> O patch passou por revisão adversarial offline (3 lentes + verificador por
+> achado): 10 achados reais, nenhum grave, todos corrigidos — estão marcados
+> nas regras abaixo (R24b 60px→30, R35 legenda centrada, R28c depois de título
+> e antes de botão, `related` a 30px…).
 
 ### R28 — o respiro é de UM container só (era o aberto G)
 
@@ -814,9 +818,9 @@ antigas fabricavam fronteira onde o GWI não tem nenhuma.
 |---|---|---|
 | a | **Título da página** (`title` vazio, R3/R6) entra como `cabecalho` da 1ª linha da 1ª seção — mesmo container, largura cheia, fora de qualquer coluna (o mecanismo da R23). Seção própria só quando a 1ª seção é faixa de abas/CTA/related. `AL.inserir_titulo_da_pagina`, usado pelo driver, `diff_payload` e `cmp_motor` | 134 |
 | b | **Container com sub-containers não tem padding T/B próprio**: seção com 2+ linhas e painel de aba com 2+ linhas saem `Pad T/B None`; o respiro é o dos sub-containers (30+30) | 99 |
-| c | **O espaçador de topo corta a corrida** — em `_secoes` o ramo era CÓDIGO MORTO (`so_pageproperties` devolve True para nó sem conteúdo e vinha antes). E **`table` e `productlist` saem de `MAJOR`**: com espaçador antes, o espaçador já corta; sem ele o GWI os desenha colados no texto que os apresenta | 14 |
-| d | Seção só de `productlist` → `pad_tb=none`, como `related` (o `<ul>` traz 55px) | 4 |
-| e | Seção que é SÓ um `textwithimage` → `pad_tb=none` (o componente traz 30/30) | 39 |
+| c | **O espaçador de topo corta a corrida** — em `_secoes` o ramo era CÓDIGO MORTO (`so_pageproperties` devolve True para nó sem conteúdo e vinha antes). O corte fica PENDENTE até o próximo bloco e tem as exceções da R24 estendida: não corta DEPOIS de título (`namuga-vicon-lite`: heading, espaçador, imagem) nem ANTES de botão (`/toppan`: tabela, espaçador, botão do datasheet — 140 → 60). E **`table` e `productlist` saem de `MAJOR`**: com espaçador de topo antes, ele já corta; sem ele ficam na corrida do texto que os apresenta. Texto↔tabela com a linha em branco na origem (no fim do `text` ou como nó): UMA linha em branco mantida no `text` (30+20 = 50px; GWI 16+28) — 24 lugares | 14 |
+| d | Seção só de `productlist` → `pad_tb=none`, como `related` (o `<ul>` traz 55px). E `related` só fica `none` depois do XF; senão `small` — com a (b), "Similar Products" ficava a 30px do texto de cima e a 55 da própria lista (4 `/sitime`, `canon-li8030sa`) | 4 + 6 |
+| e | Seção que é SÓ um `textwithimage` → `pad_tb=none` (o componente traz 30/30); {título + `textwithimage`} → `small` (o título precisa do respiro de cima) | 39 |
 
 **Medido offline (vão estrutural, 136 páginas, antes → depois):** transições
 com 130px ou mais: 83 → 8 (com 110 ou mais: 153 → 27, de 1.797); `texto→tabela` mediana 100 → 20; `tabela→botão`
@@ -870,39 +874,49 @@ saíam `_self`. Função, não disposição: print nenhum mostra.
 
 12 tabelas em 12 páginas (`altera-stratix-10-dx`: linha 15px mais alta que as
 vizinhas). É espaçador do autor, da família do `<p>&nbsp;</p>`, só que DENTRO
-do bloco — `strip_empty_blocks` não vê. `<br>` entre textos fica.
+do bloco — `strip_empty_blocks` não vê. Pega também o `<br>` dentro de
+`<b>`/`<span>` (`…Count'<br> <br></b></td>` na `cyclone-10-lp`). `<br>` entre
+textos fica.
 
 ### R33 — inline solto na raiz do rich text vai para um `<p>`
 
 `canon-li8030sa`: `<h4>…</h4><h4>&nbsp;</h4><span>Macnica pairs…</span>`. Fora
 de `<p>` o texto não pega `.cmp-text p`: sai 14px com letter-spacing 1,4px e
-colado no h4 (1px contra 27). `embrulhar_inline_da_raiz`; HTML que não fecha
-direito volta como veio. 1 nó no escopo — a regra é barata e o próximo lote de
+colado no h4 (1px contra 27). `embrulhar_inline_da_raiz`, por lista BRANCA de
+inline: HTML que não fecha direito, comentário ou qualquer tag fora das listas
+(`<center>`, `<form>`…) volta como veio. 1 nó no escopo — a regra é barata e o próximo lote de
 páginas pode ter mais.
 
 ### R34 — `elementsPositionVerticalAlignCenter` → style Vertical Center do `textwithimage`
 
 4 `imagetext` em 2 páginas. Sem ele o texto sobe para o topo da foto e sobra
-o buraco embaixo (0 em cima / 231 embaixo). styleId `1783061491236`, lido da
-policy pelo revisor — **conferir no dry-run**.
+o buraco embaixo (0 em cima / 231 embaixo). styleId `1783061491236` (confere
+com o README, `aem_padronizar_textwithimage`), gravado na forma posicional
+`['', '', id]` — [Image Position, Text Wrapping, Vertical Alignment].
 
 ### R24b — respiro DENTRO de coluna volta como linha em branco
 
 **Onde:** `/toppan`, coluna do C11U: h3 "Key Features…" colado no parágrafo de
 cima (0 contra 28) e a 24px da lista que introduz; 2 abas da `/infineon`.
 **Causa:** dentro de `flexcontaineritem` não há subseção (R24, "Limite").
-**Regra:** com a evidência do espaçador na origem, UM `<p>&nbsp;</p>` é
-mantido no `text` vizinho (entra depois de `strip_empty_blocks`). 3 nós.
+**Regra:** com a evidência do espaçador na origem, UMA linha em branco é
+mantida no `text` vizinho (entra depois de `strip_empty_blocks`). 3 nós em
+coluna, mais os 24 de texto↔tabela da R28c. A linha é
+`<p style="margin-top:0">&nbsp;</p>`: sem o `margin-top:0` ela rende **60px**
+(30 de margem de todo `<p>` que não é o 1º + 30 de altura), não 30 — medido
+em render local pelo revisor do patch.
 
 ### R35 — foto de card alinhada com a legenda
 
 **Onde:** `/toppan`, 4 cards: foto de 512px centrada numa coluna de 662,
 legenda na borda — 75px de desalinhamento. `/i-chips` e `i-chips-scaler-lsi`
 fazem o mesmo de 1920px para cima.
-**Regra:** `image` em coluna que tem `title`/`text`, com `alignment` da origem
-diferente de `center`, ganha Display Position **Left** (`1726800547211`,
-policy do `image` — **conferir no dry-run**). Os cards centrados na origem
-(`/ambarella`, `/canon`, `/renesas`) continuam. 16 nós em 3 páginas.
+**Regra:** `image` em coluna que tem `title`/`text`, com `alignment=left`
+EXPLÍCITO na origem e legenda NÃO centrada, ganha Display Position **Left**
+(`1726800547211`, policy do `image` — **conferir no dry-run**). Os cards
+centrados na origem (`/ambarella`, `/canon`, `/renesas`) e os 6 da
+`i-chips-scaler-lsi` (sem `alignment`, legenda `text-align:center`: alinhar a
+foto CRIARIA o defeito acima de ~1950px) continuam. 10 nós em 2 páginas.
 
 ### R36 — `imageRatio`: a imagem do `textwithimage` no tamanho que o GWI desenha (era o aberto J)
 
