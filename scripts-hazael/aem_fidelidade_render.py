@@ -152,6 +152,28 @@ JS_EXTRAI = """
     const href = a ? (a.getAttribute('href') || '') : '';
     if (t) out.push({ tag: el.tagName.toLowerCase(), txt: t, href: href });
   });
+  // Texto/inline SOLTO na raiz do rich text (`<span>` ou texto puro filho
+  // direto de .cmp-text): o seletor acima só vê blocos. O GWI tem parágrafo
+  // assim na `canon-li8030sa`; o destino o embrulha em <p> (R33) e a unidade
+  // saía como "sobrando" sem existir diferença de conteúdo.
+  alvo.querySelectorAll('.cmp-text').forEach(c => {
+    if (c.closest(FORA)) return;
+    let buf = '';
+    const flush = () => {
+      const t = buf.replace(/\s+/g, ' ').trim();
+      if (t) out.push({ tag: 'solto', txt: t, href: '' });
+      buf = '';
+    };
+    c.childNodes.forEach(n => {
+      if (n.nodeType === 3) buf += n.textContent;
+      else if (n.nodeType === 1) {
+        if (n.matches(bloco) || n.querySelector(bloco)
+            || /^(UL|OL|DL|TABLE|DIV|HR|BLOCKQUOTE)$/.test(n.tagName)) flush();
+        else buf += n.textContent;
+      }
+    });
+    flush();
+  });
   return out;
 }
 """

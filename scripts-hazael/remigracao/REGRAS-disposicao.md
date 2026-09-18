@@ -787,14 +787,24 @@ medido em 9 de 10 páginas. Antes de mexer no motor nasceu
 consecutivos direto do payload, OFFLINE, nas 136 — o "medir em lote
 antes/depois" que o G pedia.
 
-> **ESTADO: no código, NÃO gravado no AEM** (o cookie expirou às 19h). 134 de
-> 136 payloads mudam (a R28 mexe no ritmo vertical de quase todas). Conferido
-> offline: nenhum texto some nem muda de ordem nas 136 (`conf_texto`: só o
-> `linkTarget` de 13 páginas, que é a R31).
-> O patch passou por revisão adversarial offline (3 lentes + verificador por
-> achado): 10 achados reais, nenhum grave, todos corrigidos — estão marcados
-> nas regras abaixo (R24b 60px→30, R35 legenda centrada, R28c depois de título
-> e antes de botão, `related` a 30px…).
+> **ESTADO: GRAVADO no lote 8 (18/09/2026, 134 de 134 sem falha).** Antes do
+> lote: conferido offline que nenhum texto some nem muda de ordem nas 136
+> (`conf_texto`: só o `linkTarget` de 13 páginas, a R31); os dois styleIds
+> novos conferidos na policy por GET; a R36 validada em 2 páginas, a 1400 e a
+> 375px. O patch passou por revisão adversarial offline (3 lentes + verificador
+> por achado): 10 achados reais, nenhum grave, todos corrigidos ANTES de gravar
+> — estão marcados nas regras abaixo (R24b 60px→30, R35 legenda centrada, R28c
+> depois de título e antes de botão, `related` a 30px…).
+>
+> **Conferido NA TELA depois do lote:** `/altera/agilex` (`measure.py`):
+> título da página→h2 0, texto→tabela 20 (+ a linha em branco mantida),
+> tabela→botão 60 (era 170), botão→série seguinte 80 (era 60 — o botão voltou
+> a pertencer à tabela dele). Altura da página a 1400px, destino × GWI:
+> `/altera/agilex` 5120 × 5036 (era 5730), `ip00c787` 5514 × 5516 (era 5894),
+> `canon-li8030sa` 8010 × 7254 (era 8504), `udp10g` 3342 × 3852. Print:
+> "Product Lineup" dentro da faixa das abas da `/design-gateway`; "Complete The
+> System" da `canon-li8030sa` com a foto do tamanho do GWI e o texto centrado
+> nela.
 
 ### R28 — o respiro é de UM container só (era o aberto G)
 
@@ -941,12 +951,12 @@ a coluna, ou a natural se menor, na linha 6/6), dividida pela largura útil
 ANTES de `copiar_assets`; sem metadado assume 3:2.
 **Alcance:** 100 `textwithimage` em 75 páginas (offline, sem o DAM: 40 com 32,
 36 com 29, 12 com 25).
-**ANTES DO LOTE — validar em UMA página** (`canon-li8030sa` ou
-`i-chips-ip00c787`): (1) a 1400px a imagem sai com ~415/345px e o buraco sob o
-texto some; (2) **a 375px a imagem NÃO fica com 30% da tela** — o cético viu a
-regra `width:var(--ratio)` também fora do `@media` e não conseguiu conferir
-(401). Se o celular quebrar, a R36 sai do lote e volta a ser aberto J (saída:
-CSS no clientlib).
+**Validado na tela antes do lote** (`canon-li8030sa`, `i-chips-ip00c787`): a
+1400px as fotos saem com 419×280, 419×279 e 367×277 (GWI 415×277, 416×277,
+366×277) e 341×341 na ip00c787 (GWI 345×277 — lá o GWI CORTA a foto quadrada
+com `pixelation=cover`; o destino mostra inteira, e sobra ~200px sob o texto,
+contra ~400 antes). **A 375px a imagem ocupa a largura toda** (345px): a
+variável só vale no desktop, o celular não quebra.
 **Detectar:** `textwithimage` sem `imageRatio` cuja imagem renderizada é mais
 alta que 1,5× o `.paragraph` ao lado.
 
@@ -969,7 +979,7 @@ alta que 1,5× o `.paragraph` ao lado.
 | # | padrão | onde / quanto | causa | proposta |
 |---|---|---|---|---|
 | I | **botão sempre centralizado** | `/altera` ×2; **+ as 7 `design-gateway/*nvme*`** (`width=4 offset=0`: GWI na borda esquerda, destino no centro da página — único elemento centrado do corpo); `/toppan` (botão em coluna: GWI ocupa a coluna, destino centrado nela) | `S_BTN_CENTER` fixo. No GWI: sem `cq:responsive` o botão é centrado na linha (`/altera/agilex`); com `width<12 offset=0` fica à esquerda | decisão de dialeto. Proposta com 10 páginas de evidência: sem `S_BTN_CENTER` quando `width<12` e `offset=0`, ou dentro de coluna |
-| J | imagem do `textwithimage` no tamanho natural | — | — | **virou R36** (`imageRatio`) — pendente de validação na tela, desktop e 375px |
+| J | imagem do `textwithimage` no tamanho natural | — | — | **virou R36** (`imageRatio`), validada na tela e gravada no lote 8 |
 | K | **série de itens título+texto: 60px entre itens contra 28** | `canon-li8030sa` (h4×6 e h3×8: +384px), `ip00c241` (h2×12), `namuga-vicon-lite` (4 séries)… 26 séries em 18 páginas; das 99 fronteiras, 66 têm UMA linha em branco no GWI (28px → 60), 28 têm zero, 5 têm duas | todo título abre subseção (30+30) | por evidência, como a R24: título NÃO abre subseção quando o `text` anterior termina com exatamente UMA linha em branco E o grupo foi aberto por título do mesmo nível E com a mesma marca de fio (style `1690913810338`); o último `<p>` ganha `margin-bottom:30px`. Sem a 3ª condição funde "Why Macnica"/"Next Step" (h3 de seção) com os h3 de item. Abrir a `ip00c241` antes de decidir o caso de zero linhas |
 | E | cabeçalho de tabela quebrando palavra | — | — | **FECHADO sem mexer:** sem a margem a quebra sumiu (`/canon` conferida) |
 | — | CSS do site: `td` alinha no topo (GWI no meio); índice de âncoras quebra 3+1; fio sob os h3 do GWI não existe | várias | clientlib do global2 | fora do motor |
