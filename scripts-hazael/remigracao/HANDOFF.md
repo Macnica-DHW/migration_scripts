@@ -1,4 +1,4 @@
-# Remigração `semiconductors` — handoff (18/09/2026, 3ª sessão)
+# Remigração `semiconductors` — handoff (18/09/2026, 4ª sessão)
 
 Ponto de entrada da próxima sessão. Os outros arquivos desta pasta são
 referência; este diz onde parou e o que fazer a seguir.
@@ -26,56 +26,77 @@ GWI, uma anotação viva — continuam onde estão.
 
 ---
 
-## Estado (18/09/2026, fim da 3ª sessão — conferência visual)
+## Estado (18/09/2026, fim da 4ª sessão)
 
 ```
-servidor = lote 3 (136/136, R1–R14, sem margem; conferido: 0 styleIds de margem)
-         + lote 4 (72 páginas: R15, R17–R24)                  72/72 sem falha
-         + lote 5 (3 páginas /analog-devices*: R16 sem moldura, R25)   3/3 sem falha
-         + lote 6 (20 páginas com vídeo sozinho: R26)                  20/20 sem falha
-         + lote 7 (macnica-and-adi: o formulário, R27)                 1/1, 0 pendências
-fora da árvore, AUTORIZADO: 2 XFs de popup em
-         /content/experience-fragments/copia-teste/americas/mai/en/site/popups
-motor    = HEAD do branch migration/semiconductors-remigration
-Tudo o que está no motor está no servidor.
-
-conferência de CONTEÚDO refeita DEPOIS do lote 7 (18/09/2026, 136 páginas):
-   páginas limpas     134 de 136   (início da 2ª sessão: 53; lote 2: 132)
-   faltando            22          landing 16 (supplierlist — hover-only, ver REGRAS)
-                                   /ambarella 6 (artefato do índice automático do GWI, R10)
-   sobrando             0
-Nenhuma regressão dos lotes 3–7. `dados/fidelidade_atual.csv` é desta rodada
-(a linha da macnica-and-adi é de antes do form: refeita à parte, deu OK).
+servidor = lotes 3–7 (R1–R27), como no fim da 3ª sessão. NADA foi gravado na 4ª.
+motor    = HEAD do branch migration/semiconductors-remigration = R1–R36
+           >>> O CÓDIGO ESTÁ À FRENTE DO SERVIDOR: R28–R36 NÃO gravadas <<<
+           (o login-token expirou às 19h, no meio da rodada de revisores)
+ponto de retorno do que está no servidor: commit ad63475
 ```
 
-**Conferência VISUAL: 16 de 136 páginas, todas sem margem**, uma por
-arquétipo/família (`/ambarella`, `/analog-devices`, `/renesas`, `/altera`,
-`/namuga…`, `/canon`, `/altera/agilex`, `i-chips-scaler-lsi`, `agilex-5`,
-`canon-li8030sa`, `udp10g` (×26), `sitime-oscillators` (×6), `/toppan`,
-`macnica-and-adi`, `ambarella-n1-soc`, a landing). Dez regras novas
-(R15–R27), todas em `REGRAS-disposicao.md`. A revisão manual do Hazael
-(`multimodal-sensor-front-ends`, `macnica-and-adi`) entrou como R25, R16 e R19 —
-conferidas no print depois de gravar. Os dois exemplos do Hazael:
+**Conferência VISUAL: 26 de 136 páginas** (16 da 3ª sessão + 10 desta: as 6
+prioritárias do lote 4 e 4 famílias novas — `i-chips-ip00c787` ×12,
+`toe10g` ×11, `altera-stratix-10-dx` ×8, `nvme-ip` ×7). Um revisor e um
+cético por página.
 
-1. "Image Quality" da `/ambarella`: **confirmado lado a lado** no print.
-2. Card "CV72S": **corrigido (R15)** — vão título→texto 50px → 20px (GWI 0);
-   o `style="margin-top:0"` sobrevive ao filtro do AEM.
+- **Todas as regras do lote 4 passaram NA TELA**: R15, R17, R18, R19, R21,
+  R22 (com clique: 4 de 4 âncoras rolam), R23, R24, R26, e R7/R8/R11/13a/13c/13f.
+- Nenhum defeito grave de disposição. O que dominou foi o **aberto G**
+  (9 de 10 páginas) — fechado no código pela **R28**; o **H** pela R30; o **J**
+  pela **R36** (`imageRatio` — o campo alvo EXISTE).
+- Regras novas, todas em `REGRAS-disposicao.md`: R28 (respiro de um container
+  só), R29 (coluna solitária reentra na corrida), R30 (títulos consecutivos;
+  título entra na faixa das abas), R31 (`linkTarget`), R32 (`<br>` em célula),
+  R33 (inline na raiz), R34 (centro vertical), R24b (respiro em coluna), R35
+  (foto de card à esquerda), R36 (`imageRatio`).
+- Conferido OFFLINE nas 136 (`conf_texto.py`): nenhum texto some nem muda de
+  ordem; 134 payloads mudam (a R28 mexe no ritmo de quase todas).
+  `vaos_estruturais.py`: transições com 130px+ caem de 83 para 8.
 
 ---
 
 ## PRÓXIMO PASSO
 
-1. **Print novo das páginas do lote 4** e conferir que cada regra fez na tela
-   o que fez no JCR (o método abaixo). Prioridade: `canon-li8030sa` (R21),
-   `i-chips-scaler-lsi` e `/toppan` (R19), `/canon` (R18), `udp10g` (R24),
-   `sitime-oscillators` (R22 — CLICAR no índice, o print não mostra).
-2. **Abertos G–K** do REGRAS. O que mais pesa: **G** somatório de paddings entre seções (o botão que agrupa
-   com a série seguinte na `/altera/agilex`; a série da `/renesas` partida).
-3. Seguir a amostra: faltam folhas de produto simples (arquétipo E, 73
-   páginas — só `agilex-5` foi vista) e as outras `design-gateway`.
+0. **Renovar o cookie** (`AEM_COOKIES` no `.env` da raiz) e conferir:
+   `python3 remigracao/ferramentas/jcr.py /infineon dest | head -1` → `HTTP 200`.
+1. **Conferir os dois styleIds lidos por revisor** na policy (GET):
+   `1726800547211` (image, Display Position Left — R35) em
+   `/conf/macnicaglobal2/settings/wcm/policies/macnicaglobal2/components/content/image/policy_589419553064100`;
+   `1783061491236` (textwithimage, Vertical Center — R34) já bate com o README.
+2. **Validar a R36 em UMA página antes do lote** (`canon-li8030sa` e/ou
+   `i-chips-ip00c787`): gravar só ela, medir a 1400px (imagem ~415/345px,
+   sem buraco sob o texto) **e a 375px** (a imagem NÃO pode ficar com 30% da
+   tela). Se o celular quebrar: tirar a R36 do lote (uma linha em
+   `_emitir_bloco`, o `imageRatio`) e devolver o J à lista de abertos.
+3. **Dry-run real e lote 8** — as 134 páginas:
+   ```bash
+   cd scripts-hazael
+   git show ad63475:scripts-bruno/aem_layout.py > /tmp/antes.py
+   python3 remigracao/ferramentas/cmp_motor.py --antes /tmp/antes.py --lista /tmp/lote8.txt
+   python3 remigracao/ferramentas/diff_payload.py /altera/agilex /canon /design-gateway/udp10g-ip-10g-udp-offload
+   python3 aem_remigrar.py --paginas $(cat /tmp/lote8.txt) --executar
+   ```
+   Depois: `aem_fidelidade_render.py` nas 136 (conteúdo) e print novo de
+   `/altera/agilex`, `/renesas`, `/canon`, `/design-gateway` (abas),
+   `nvme-ip`, `canon-li3030sa`, `canon-li8030sa`, `/toppan`, `/ambarella`
+   (o `espaco_antes` age no índice de âncoras dela) — é onde cada regra nova
+   tem de aparecer.
+4. **Rodada 2 da conferência visual** — os prints GWI × destino de 13 páginas
+   já estavam tirados quando o cookie caiu, mas são de ANTES do lote 8:
+   refazer o lado destino. Páginas: `/4-helio-view-hardware`, `ip00c241`,
+   `/altera/altera-arria-10` (+`-gt`), `/altera/altera-stratix-10`,
+   `/altera/altera-max-10`, `/altera/altera-holoscan`, `/sitime`,
+   `sitime-clock-buffers`, `/design-gateway`, `/i-chips`, `canon-li5030sa`,
+   `canon-120mxs`, `analog-devices-radar-development-kit`.
+5. **Abertos I e K** do REGRAS (botão centralizado — 10 páginas de evidência a
+   favor de "esquerda quando `width<12 offset=0`"; série de itens título+texto
+   a 60px contra 28).
 
-**Método que funcionou** (um revisor por página, em paralelo, SOMENTE LEITURA;
-o brief que eles recebem está descrito em REGRAS, R18–R24):
+**Método que funcionou** (um revisor por página, em paralelo, SOMENTE LEITURA,
+e um cético por página com defeito; o roteiro que eles recebem está no script
+do workflow `conferencia-visual-r1`, resumido em REGRAS R28–R35):
 
 ```bash
 cd scripts-hazael
@@ -84,18 +105,25 @@ python3 remigracao/ferramentas/lado.py /tmp/prints <nome> 0.5     # GWI | destin
 python3 remigracao/ferramentas/fatiar.py /tmp/prints              # fatias em resolução cheia, para ler
 python3 remigracao/ferramentas/measure.py <caminho> "?wcmmode=disabled"
 python3 remigracao/ferramentas/vao.py <caminho> "Texto do título"  # vão título->texto e as margens que o explicam
-# antes de gravar: o que muda nas 136, offline, e o dry-run real
-git show HEAD:scripts-bruno/aem_layout.py > /tmp/antes.py
-python3 remigracao/ferramentas/cmp_motor.py --antes /tmp/antes.py --ver /canon
+python3 remigracao/ferramentas/jcr.py <rel> gwi|dest|ambos [--filtro "texto"]   # árvore enxuta do JCR, para achar a causa
+python3 remigracao/ferramentas/ancoras.py <caminho-destino>       # todo link do índice tem alvo?
+# antes de gravar, OFFLINE (cache de JCR das 136; o cmp_motor cria na 1ª vez):
+python3 remigracao/ferramentas/cmp_motor.py --antes /tmp/antes.py --ver /canon        # que páginas mudam, e como
+python3 remigracao/ferramentas/vaos_estruturais.py --cache jcr_cache.pkl --antes /tmp/antes.py   # vãos antes x depois
+python3 remigracao/ferramentas/conf_texto.py /tmp/antes.py ../scripts-bruno/aem_layout.py jcr_cache.pkl   # nada some, nada troca de ordem
+# e o dry-run real (online):
 python3 remigracao/ferramentas/diff_payload.py /canon /altera
 python3 aem_remigrar.py --paginas /canon /altera --executar        # só as que mudam
 ```
 
-Três coisas que esta sessão ensinou: (1) **print de 1000px de altura com
-"Loading…" é 404**, não página quebrada — o destino normaliza o nome do nó
-(R17); (2) **não gravar enquanto os revisores medem** — o driver apaga
-`jcr:content/root` antes de escrever; (3) **defeito funcional não aparece em
-print** (âncora morta, banner sem link): peça ao revisor para clicar.
+Cinco coisas que as sessões ensinaram: (1) **print de 1000px de altura com
+"Loading…" é 404**, não página quebrada (R17); (2) **não gravar enquanto os
+revisores medem** — o driver apaga `jcr:content/root` antes de escrever;
+(3) **defeito funcional não aparece em print** (âncora morta, link 404,
+`target`): peça ao revisor para clicar; (4) **o cookie dura ~8h** — olhar a
+idade do `.env` antes de rodada longa, e deixar o trabalho offline para quando
+ele cair; (5) **respiro se paga UMA vez**: padding de container é simétrico e
+acumula — medir o vão estrutural nas 136 antes de mexer.
 
 ---
 
@@ -131,6 +159,24 @@ uma vez. Detalhe em `REGRAS-disposicao.md`.
 XFs de popup em `…/macnicaglobal2/americas/mai/en/site/popups` e apontar
 `AL.XF_FORM_POPUPS` para lá (R27); testar o envio do form com a Macnica avisada.
 
+**Links do corpo para página que NÃO existe no global2** (censo offline dos 104
+alvos internos distintos das 136 páginas; só 5 ficam fora de `/semiconductors`).
+Decisão do time para cada um — criar a página, mapear para `/en/contact-us`, ou
+apontar para a URL viva como a Anion fez (aí precisa de lista de exceção ANTES
+do passo 2 do `rewrite_link`):
+
+| alvo | links | páginas |
+|---|---|---|
+| `/contact/form` (**404** no global2) | 10 | `altera-holoscan`, `canon-35mmfhdxs-a`, `canon-li8030sa`, `/genesys-logic`, `/microchip`, `/on-semiconductor` |
+| `/request-a-quote` (existe, VAZIA) | 4 | `/altera`, `/ambarella`, `/renesas` |
+| `/products/ip-software/v-by-oner-hs-ip` | 5 | 5 folhas `/i-chips` |
+| `/products/ip-software/munvme-ip-core` | 1 | `/design-gateway` |
+| `/content/macnicagwi/europe/atd-europe/en` (outra região) | 1 | `ip00c814` |
+
+E o censo de 404 (GET de cada alvo distinto no global2) entra como passo da
+passada de go-live. Os dois XFs da copia-teste também têm `href` para
+`/content/macnicagwi/…`.
+
 ---
 
 ## Arquivos
@@ -138,7 +184,7 @@ XFs de popup em `…/macnicaglobal2/americas/mai/en/site/popups` e apontar
 ```
 HANDOFF.md              este arquivo
 PESQUISA-formulario.md  o form da macnica-and-adi: levantamento, decisão e o que falta testar
-REGRAS-disposicao.md    R1–R26 + o que ficou aberto + os pontos cegos do comparador  <-- LER
+REGRAS-disposicao.md    R1–R36 + o que ficou aberto + os pontos cegos do comparador  <-- LER
 patch3-disposicao.diff  o patch 3 (R13a–f) fora do git; já gravado no lote 3
 PROMPT-conferencia-visual.md  o prompt para abrir a próxima sessão
 ESPEC-motor-layout.md   a especificação do motor (50k, do levantamento de 17 agentes)
@@ -162,6 +208,10 @@ ferramentas/
   prints.sh + fatiar.py    prints GWI x destino (--publicado) em fatias legíveis
   lado.py                  GWI | destino lado a lado, reduzido — o que o revisor olha primeiro
   vao.py                   vão entre um título e o texto seguinte, com as margens que o explicam
+  jcr.py                   árvore enxuta do jcr:content (GWI e destino) — o que o revisor usa para achar a causa
+  ancoras.py               todo link do índice de âncoras tem alvo na página renderizada?
+  vaos_estruturais.py      OFFLINE: vão entre componentes calculado do payload, antes x depois, nas 136
+  conf_texto.py            OFFLINE: nenhum texto some nem muda de ordem entre duas versões do motor
 
 recon-dossie.md         o levantamento bruto das 7 lentes (200k)
 recon-lacunas.md        as investigações que fecharam as lacunas do crítico (115k)
@@ -169,7 +219,7 @@ recon-lacunas.md        as investigações que fecharam as lacunas do crítico (
 
 Código:
 ```
-scripts-bruno/aem_layout.py    o motor (IR + emissor).  ~1800 linhas
+scripts-bruno/aem_layout.py    o motor (IR + emissor).  ~2600 linhas
 scripts-hazael/aem_remigrar.py o driver
 scripts-hazael/aem_fidelidade_render.py  conferência de conteúdo na TELA
 scripts-hazael/aem_screenshot.py         --publicado para medir layout

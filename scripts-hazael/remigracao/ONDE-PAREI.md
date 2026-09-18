@@ -1,24 +1,20 @@
-# Remigração — onde parei (18/09/2026)
+# Remigração — onde parei (18/09/2026, 4ª sessão)
 
 ## Estado
 
 ```
 136 páginas em /content/copia-teste/americas/mai/en/products/semiconductors-remigration
-lote 3 de 18/09/2026: R1–R13 + páginas SEM MARGEM (R14) — 136/136, conferido no servidor
-lote 4 de 18/09/2026: R15, R17–R24 — as 72 páginas que mudam   72/72 sem falha
-lote 5 de 18/09/2026: R16 (tabela de layout sem moldura) e R25 — 3/3
-lote 6 de 18/09/2026: R26 (vídeo sozinho) — 20 páginas          20/20 sem falha
-lote 7 de 18/09/2026: R27 (formulário da macnica-and-adi) + 2 XFs de popup no
-                      espelho de XFs da copia-teste (ferramentas/criar_xf_popups.py)
+servidor: lotes 3–7 (R1–R27) — commit ad63475 é o motor que está gravado
+motor   : HEAD = R1–R36.  R28–R36 NÃO gravadas (o cookie expirou às 19h de 18/09)
+          134 de 136 payloads mudam; offline: 0 texto perdido, 0 mudança de ordem
 
-conferência de conteúdo REFEITA depois do lote 7: 134 de 136 limpas, 22
-faltando em 2 páginas conhecidas (landing 16, /ambarella 6), 0 sobrando.
-conferência visual: 16 de 136, uma por arquétipo — ver HANDOFF.md.
+conferência de conteúdo (depois do lote 7): 134 de 136 limpas, 22 faltando em 2
+páginas conhecidas (landing 16, /ambarella 6), 0 sobrando.
+conferência visual: 26 de 136 — ver HANDOFF.md.
 ```
 
-O motor no disco é o que está no servidor (HEAD do branch
-`migration/semiconductors-remigration`). Próximo passo em
-`HANDOFF.md`.
+Próximo passo em `HANDOFF.md`: cookie → conferir 2 styleIds → validar a R36
+(`imageRatio`) numa página, desktop e 375px → dry-run → lote 8 → rodada 2.
 
 ## Para reexecutar
 
@@ -69,8 +65,8 @@ Saíram da lista nesta sessão: `pagesectionlisting` (12) — agora vira
   fora do nosso escopo de escrita, atinge ~110 páginas.
 - **Formulário da `macnica-and-adi`** — migrado (R27). NÃO testar o envio sem
   combinar: manda e-mail real. reCAPTCHA só na árvore final.
-- **Abertos G–K** em `REGRAS-disposicao.md` (somatório
-  de paddings entre seções, título longe das abas, botão sempre centralizado…).
+- **Abertos I e K** em `REGRAS-disposicao.md` (botão sempre centralizado; série de
+  itens título+texto a 60px contra 28). G, H e J viraram R28, R30 e R36.
 - **`supplierlist`**: o blurb é hover-only; o que se VÊ é uma grade 4×4 de
   logo+nome com link (descrição em REGRAS).
 - **Centralizar título que abre seção** (dialeto da Anion) — hoje só se
