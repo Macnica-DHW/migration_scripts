@@ -14,6 +14,7 @@ DIAGNOSTICAR (só leitura)
   aem_workflow_audit.py         workflows por payload
   aem_screenshot.py             RENDERIZA a página e salva imagem
   aem_conteudo_sobrando.py      texto que o destino mostra e o GWI não tem
+  aem_fidelidade_render.py      texto RENDERIZADO: o que falta e o que sobra
 
 CONSERTAR (padrão: diagnóstico; escreve só com --executar)
   aem_soft_delete.py            páginas invisíveis (deleted/deletedBy)
@@ -26,9 +27,14 @@ CONSERTAR (padrão: diagnóstico; escreve só com --executar)
   aem_largura_ordering.py       largura da 1ª coluna do Ordering
   aem_padronizar_textwithimage.py  Text with Image pelo design de referência
   aem_deduplicar_containers.py  conteúdo gravado 2x ou 3x na mesma página
+  aem_corrigir_layout_blocos.py coluna achatada, aba colada, logo no corpo
 
 COPIAR
   aem_clone_subtree.py          substitui o conteúdo de uma subárvore
+
+REMIGRAR (árvore nova, dialeto Anion)
+  aem_remigrar.py               GWI -> semiconductors-remigration
+  ../scripts-bruno/aem_layout.py   o motor de layout (IR + emissor)
 ```
 
 ## Convenções (as mesmas do scripts-bruno)
@@ -110,7 +116,81 @@ são 131 páginas assim. Cuidado ao concluir: em `copia-teste` a trilha também
 `macnicaglobal2` existem, com navTitle "Products" e "Semiconductors". Essa
 metade se resolve sozinha no destino real; o `hideInNav`, não.
 
+### `aem_fidelidade_render.py` — o que o visitante vê, dos dois lados
+O `aem_diff_conteudo.py` compara o JCR. Este compara a TELA: renderiza origem e
+destino com `?wcmmode=disabled`, extrai o texto visível em ordem de documento e
+diz o que **falta**, o que **sobra** e o que está **fora de ordem**.
+
+Existe porque o JCR tem dois pontos cegos que a remigração não pode ter:
+conteúdo que está no JCR e não renderiza (o `containerpy` de 111 páginas), e
+blocos trocados de lugar, que um comparador de conjunto dá como idênticos.
+
+Casa por **contenção**, não por igualdade — o destino funde e quebra blocos de
+propósito, e exigir igualdade exata acusaria diferença em página correta.
+
+Duas armadilhas já resolvidas, que valem para qualquer comparador de tela:
+
+1. **Excluir o chrome do site pela ESTRUTURA, não por palavra.** O mega-menu do
+   GWI sozinho tem centenas de `<li>`: a primeira versão comparou 1698 unidades
+   na origem contra 315 no destino, quase tudo navegação. Agora descarta por
+   `closest()` em `header/footer/nav` + classes de navegação. O rodapé do GWI
+   não tem `<footer>` nem classe `footer__` — é um experience fragment, e só o
+   `id*="copyright"` o identifica.
+2. **O botão tem markup diferente nos dois mundos.** GWI é
+   `a.cmp-button > span.cmp-button__text`; global2 é `a.link-button__anchor`.
+   Sem os dois seletores o botão da origem não é capturado e o do destino
+   aparece como conteúdo INVENTADO — falso positivo caro.
+
+Usa `textContent` e não `innerText`: aba inativa tem `display:none` e o
+`innerText` volta vazio, o que acusaria as abas 2..N como conteúdo perdido.
+
+Mais seis pontos cegos fechados em 18/09/2026 (detalhe e prova em
+`remigracao/REGRAS-disposicao.md`, seção "O comparador também tinha pontos
+cegos"). A lição de todos: **quando o MESMO texto falta ou sobra em dezenas de
+páginas, desconfie da medição antes do motor.**
+
+3. Botões de carousel ("Previous"/"Next") e o botão mobile do índice de
+   âncoras (`.cmp-pagesectionlisting__button`, criado por JS) são chrome —
+   excluídos por classe.
+4. O rótulo do `download` do GWI é `a.cmp-download__property--filename`,
+   fora do seletor original: a origem não contava o arquivo e a célula do
+   destino saía como "sobrando". Entrou no seletor.
+5. "opens in a new tab" é um span oculto que o destino injeta em todo
+   `target=_blank` — removido na normalização.
+6. Cabeçalho `Title`/`Download` e a célula "Download" da tabela de download
+   são formato, não conteúdo — filtrados só por tag + texto exato.
+7. Coluna de grid com `cq:responsive/default/behavior=hide`
+   (`.aem-GridColumn--default--hide`) é invisível ao visitante — excluída
+   por classe, nunca por `display:none` genérico (isso esconderia as abas).
+8. Item de lista com o mesmo alvo e rótulo diferente (teaser do GWI imprime
+   `pageTitle`; `list` do destino imprime `navTitle`) é casado pelo `href` e
+   contado na coluna `titulo_lista`, em vez de virar "faltando".
+
+O que ele **continua não vendo**: ordem de cards numa lista (só `fora_de_ordem`
+grosseiro), nível de heading (h1 × h2), descrição de card perdida no `list`, e
+qualquer coisa de disposição. Print da tela é insubstituível.
+
+Resultado na `/altera` em 18/09/2026 (49 unidades na origem, 46 no destino):
+
+```
+FALTA  <span> Contact Us for More Information   <- experiencefragment não traduzido
+SOBRA  <h1>   Buy Altera Semiconductor, ...     <- jcr:title promovido a h1 de conteúdo
+```
+
+Ou seja: confirma por medição independente que o `experiencefragment` (124
+ocorrências na família) é **perda de conteúdo real**, e que o h1 injetado é
+**conteúdo inventado**.
+
+**Limite honesto:** página com muita imagem carrega significado que nenhum
+comparador de texto vê. Reduz o trabalho do olho humano, não substitui.
+
 ### `aem_screenshot.py` — ver a página de verdade
+**Use `--publicado`** para medir layout: sem ele a página abre em modo de
+autoria, que injeta um placeholder de 29px por bloco e infla o espaçamento —
+em 18/09/2026 isso fez "seções coladas" parecer menos grave do que era. E o
+`networkidle` não assenta no author (o editor mantém polling aberto): o
+script cai para `load` + espera fixa.
+
 Todo o resto aqui lê o JCR, e JCR não mostra como a página FICA. Os problemas
 de 17/09/2026 que só apareceram quando um humano olhou a tela: coluna do
 Ordering espremida quebrando o part number no meio, Specifications
@@ -291,6 +371,121 @@ caminho, então toda execução grava antes o JSON inteiro dos nós em
 de rodar lote e blindar com `--pular-contendo` a subárvore de quem está
 trabalhando nela.
 
+### `aem_corrigir_layout_blocos.py` — os três defeitos de layout do BlockBuilder
+Neste design system **o respiro vertical vem do componente `container`**:
+`.container > .cmp-container { padding: 50px 25px }`. Os styles de
+【Padding - Top/Bottom】 só MUDAM esse valor. Onde o migrador não cria
+container, não existe separação nenhuma — e é daí que saem os três casos.
+
+Medido na `/altera` em 18/09/2026, sempre com `?wcmmode=disabled`: o modo de
+autoria injeta placeholders de 29px que inflam tudo e enganam a medição.
+
+`--colunas-gwi` — no GWI uma coluna é um `resizablecontainer` com width<12 que
+pode ter **vários componentes dentro**. O migrador lê a largura da coluna e
+carimba em cada folha separadamente: a coluna de 6 com "intro + botão" virou
+dois blocos de 6 lado a lado e empurrou o vídeo para a linha de baixo. Relê o
+agrupamento na origem e refaz. Casa por texto normalizado e, se algum membro
+não casar de forma inequívoca, **pula e reporta** — remontar coluna no chute
+troca conteúdo de lugar.
+
+`--espaco-abas` — dentro de `tabs/item_N` os componentes são filhos diretos,
+sem `_wrap`, logo sem padding: as seções ficam coladas (gap 0px, medido).
+Embrulha cada filho num container. Usa 【Padding L/R】 = No Padding de
+propósito, senão os 25px do padrão empurram o texto da aba para dentro.
+
+`--logo` — o logo do fabricante no GWI não é conteúdo, é a propriedade de
+página `manufacturerlogo` (o template do GWI rende no cabeçalho). O migrador
+pendurou como imagem no fim do corpo, em largura cheia: 405px de logo na
+`/altera`. As duas páginas autorais de referência (`deepx`, `sony`) têm a
+propriedade preenchida e **zero** logo no corpo.
+
+> **O template `mai-mae-product-page` NÃO rende `manufacturerlogo`** —
+> conferido no HTML servido do `deepx`, que tem a propriedade: zero
+> ocorrência. Depois deste flag o logo some da página e não volta no
+> cabeçalho. Logo visível é decisão de layout e pede bloco próprio.
+
+**Ponto cego conhecido:** `--colunas-gwi` e `--logo` olham só
+`root/container/*`. As 58 páginas que guardam os blocos em
+`root/container/content_area/*` passam sem ser avaliadas (7 logos no corpo
+ficaram de fora por isso). `--espaco-abas` percorre a árvore toda e não tem o
+problema. Corrigir antes de rodar em lote.
+
+Ver `ACHADOS-layout-semiconductors.md` para os números da família e as
+decisões tomadas em 18/09/2026.
+
+### `aem_remigrar.py` + `aem_layout.py` — a remigração
+O migrador antigo faz conversão **1-para-1 de componente** e achata a
+estrutura. O motor novo (`scripts-bruno/aem_layout.py`) devolve uma ÁRVORE
+(Page → Section → Row → Column → Block → Panel) e emite no dialeto das páginas
+autorais da Anion. O `aem_remigrar.py` é só o driver.
+
+**Destino:** `/products/semiconductors-remigration` — árvore de rascunho,
+criada do zero. `/semiconductors` NÃO é tocada, então as edições manuais do
+Bruno no `/canon` ficam onde estão.
+
+**Escopo:** 135 páginas — tudo que a Anion ainda não autorou. Fora:
+`sony-image-sensors` (216) e `deepx` (3). Conferido contra o global2: não há
+página autoral fora desses dois ramos.
+
+#### A regra que sustenta o motor
+> Cada filho de topo do corpo do GWI que carrega conteúdo renderizável vira
+> UM container de seção no destino, na mesma ordem.
+
+Testada por falsificação sobre 212 pares origem↔autoral: **precisão 99,3%,
+recall 96,3%**. É ela que resolve a contradição que travou o diagnóstico por
+horas — a `deepx` tem 1 container e a `sony` tem 4 porque as origens delas têm
+1 e 4 blocos de topo. Não há duas gramáticas Anion; há uma regra e duas
+origens. **Fronteira de seção é dado da origem, não julgamento estético.**
+
+Os dois preditores "óbvios" foram falsificados e NÃO são caminho principal:
+spacer `&nbsp;` (precisão 16,2%) e heading de nível mais alto (16,4%).
+
+#### Quatro bugs que só o piloto revelou
+1. **A descida parava cedo demais.** O bloco de `pageproperties` é irmão do
+   corpo real em 266 páginas; contá-lo fazia a página inteira virar UMA seção.
+2. **`width=12` lido como coluna.** Largura 12 é largura CHEIA; confundir os
+   dois fez um item de aba com vários textos virar uma linha de 6 colunas.
+3. **Nó com títulos E colunas** era tratado como uma linha só, descartando em
+   silêncio tudo que não fosse coluna — a aba renderizava as 3 colunas e
+   perdia "Overview", "Portfolio At-a-Glance" e "Why Macnica?".
+4. **Aba precisa de `layout=responsiveGrid`** além de `jcr:title` e
+   `cq:panelTitle` — e o `cq:panelTitle` do GWI às vezes é `String[]`, o que
+   duplicava o rótulo da aba.
+
+#### Onde o respiro vertical nasce
+Não existe margem entre irmãos neste design system (gap medido 0px nas duas
+referências, em todos os níveis). Tudo vem do `container`
+(`padding: 50px 25px` no desktop, 30/15 abaixo de 1050px). Por isso:
+- `root/container` nunca recebe style (a policy já carimba padding zero);
+- um título abre **subseção**, e cada subseção ganha container com padding só
+  no eixo vertical (`Pad L/R = No Padding`, para não deslocar o texto). Sem
+  isso os títulos nascem colados — o título tem `padding-bottom` e nenhum
+  `padding-top`.
+
+#### Decisões codificadas (time, 18/09/2026)
+- **fundo é propriedade de SEÇÃO**, nunca de bloco: a zebra `#fff`/`#f7f7f7`
+  por bloco morreu. Seção de apoio usa `rgb(247,247,247)`, como a `sony`;
+- **`download` vira tabela** Title/Download, como a Anion fez;
+- **`cq:responsive` é proibido**: coluna é `flexcontainer`, sempre com
+  `1719484596357` (sem ele as colunas não empilham abaixo de 1050px — medido
+  a 390px na própria `deepx`, com botões estourando a viewport);
+- **sem `spImage`**: experimento A/B deu 0px de diferença em 32 medições;
+- **`sling:resourceType = maeproductpage`**, não `page` — sem isso o diálogo
+  das propriedades `pd_*` nem aparece.
+
+#### Resultado no piloto (`/altera`)
+```
+faltando = 0    sobrando = 0    pendências = 0
+```
+O `experiencefragment` (109 das 135 páginas) voltou — era a maior perda de
+conteúdo — e o `h1` duplicado sumiu.
+
+Varredura nas 135: **0 falhas, 421 seções (3,1/página), 44 pendências**, todas
+de origem ou de escopo — `pagesectionlisting`/`productlisting` sem componente
+alvo (22), tag inválida no GWI (10), `relatedsuggestions` com
+`listFrom=static` mas sem `pages` apontando para `sony-image-sensors` (9),
+imagem sem `fileReference` (2), formulário (1).
+
 ### `aem_clone_subtree.py` — substituir conteúdo de destino que já existe
 O Sling POST faz **merge**: gravar por cima sem limpar deixa o container velho
 e o novo na mesma página, renderizando os dois. Por isso cada página passa por
@@ -320,6 +515,10 @@ python3 aem_corrigir_lixo_markup.py  --raiz <alvo> --executar
 python3 aem_corrigir_alinhamento.py  --raiz <alvo> --executar
 python3 aem_padronizar_textwithimage.py --raiz <alvo> --executar
 python3 aem_largura_ordering.py      --raiz <alvo> --executar
+
+# layout dos blocos (depende da origem para reagrupar coluna)
+python3 aem_corrigir_layout_blocos.py --raiz <alvo> --todos          # diagnóstico
+python3 aem_corrigir_layout_blocos.py --raiz <alvo> --todos --executar
 ```
 
 A largura vem por último de propósito: consertar os part numbers corrompidos
