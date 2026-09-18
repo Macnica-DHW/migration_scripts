@@ -34,9 +34,9 @@ GWI, uma anotação viva — continuam onde estão.
 
 conferência de conteúdo, varredura completa sobre o que ESTÁ no servidor:
                        antes    agora
-   páginas limpas         53      133
+   páginas limpas         53      132
    unidades faltando     165       27
-   unidades sobrando     744        0
+   unidades sobrando     744        2
    titulo_lista            -        6   (item presente, rótulo diferente — R12)
 ```
 
@@ -44,6 +44,10 @@ As 27 unidades que faltam estão em 3 páginas e são todas conhecidas:
 landing `/semiconductors` 16 (`supplierlist`, sem componente alvo),
 `/ambarella` 6 (artefato da origem, R10), `macnica-and-adi` 5 (formulário,
 precisa de backend).
+
+As 2 que sobram estão na página de teste `test-autogenerate-list-…`: defeito
+do motor que gravou o lote 2 (lia `fixedListItems` em modo `automatic`), já
+corrigido no código (R10) e que entra no servidor junto com o próximo lote.
 
 **O diagnóstico do handoff anterior estava errado num ponto que importa:** as
 ~660 unidades "sobrando" NÃO eram a tabela de download repetida. Eram ~22 por

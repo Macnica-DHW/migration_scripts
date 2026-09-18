@@ -296,6 +296,15 @@ vazia e `useHeadings` ausente (default `true`), o motor caía no fallback
 `anchorlink_sem_itens` — nunca fallback. O fallback por headings é só do
 modo `automatic`.
 
+**E o inverso também:** `fixedListItems` só vale em `static`. A primeira
+versão desta regra lia os fixos em qualquer modo, e a página de teste
+`TEST-AUTOGENERATE-LIST-…` (modo `automatic`, com 6 fixos RESIDUAIS copiados
+da `n1-soc`) ganhou "Features"/"N1-655 GenAI" num índice em que o GWI mostra
+os 6 headings da própria página (`#1`…`#6`). A varredura final pegou
+(`sobra=2`). É o mesmo padrão do `pages` na R11: propriedade residual de um
+modo que o componente ignora no outro. Única página do escopo com a
+combinação; corrigido no código, entra no servidor com o próximo lote.
+
 **Artefato de origem aceito:** na `/ambarella` (modo `automatic`), o GWI lista
 9 âncoras: as 3 da própria página e 6 headings com `id` numérico da
 página-filha de teste `TEST-AUTOGENERATE-LIST-ambarella-n1-soc-html`

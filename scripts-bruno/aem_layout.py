@@ -638,7 +638,14 @@ def bloco_de(node, caminho, page):
         # vira o alvo da âncora. Modo manual traz os itens em `fixedListItems`.
         itens = []
         fixos = node.get("fixedListItems")
-        if isinstance(fixos, dict):
+        # `fixedListItems` só vale em `listingMode=static` — é o mesmo padrão
+        # do `pages` na R11. A página de teste TEST-AUTOGENERATE está em
+        # `automatic` e guarda 6 itens fixos RESIDUAIS (cópia da n1-soc): o
+        # GWI os ignora e lista os headings da própria página. Ler os fixos
+        # em qualquer modo punha "Features"/"N1-655 GenAI" num índice que a
+        # origem não mostra.
+        estatico = str(node.get("listingMode") or "automatic").lower() == "static"
+        if estatico and isinstance(fixos, dict):
             for _n, it in list_child_nodes(fixos):
                 # O diálogo do GWI grava `./label` e `./id` (60 de 60 itens
                 # do corpus); `text`/`linkId` são os nomes do DESTINO. Ler os

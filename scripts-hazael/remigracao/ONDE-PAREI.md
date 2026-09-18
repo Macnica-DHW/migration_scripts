@@ -7,8 +7,8 @@
 /content/copia-teste/americas/mai/en/products/semiconductors-remigration
 
 pendências: 27 (nenhuma bloqueia o lote)
-conferência de conteúdo: 133 limpas, 27 faltando (3 páginas, todas
-conhecidas), 0 sobrando
+conferência de conteúdo: 132 limpas, 27 faltando (3 páginas, todas
+conhecidas), 2 sobrando (1 página de teste; corrigido no código, R10)
 ```
 
 **O motor no disco está UM PATCH À FRENTE do que está no servidor.** O
