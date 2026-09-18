@@ -58,6 +58,12 @@ from aem_lib import (CONFIG, build_page_payload, build_pd_props, build_seo_props
                      write_csv)
 import aem_layout as AL
 
+# Os popups de sucesso/erro do form (R27) vivem no espelho de XFs do rascunho
+# (AEM_EF_ROOT), criados por remigracao/ferramentas/criar_xf_popups.py. No
+# go-live o caminho vira /content/experience-fragments/macnicaglobal2/americas/
+# mai/en/site/popups — a convenção que a APAC já usa.
+AL.XF_FORM_POPUPS = CONFIG["ef_root"].rstrip("/") + "/popups"
+
 GWI_ROOT = "/content/macnicagwi/americas/mai/en/products/semiconductors"
 DEST_ROOT = "/content/copia-teste/americas/mai/en/products/semiconductors-remigration"
 TEMPLATE = "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page"

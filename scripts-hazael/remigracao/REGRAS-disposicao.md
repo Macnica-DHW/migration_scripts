@@ -742,6 +742,39 @@ vazio segura a largura — o que também valida a R18 (`/ambarella` H32AQ/A12AQ
 
 ---
 
+### R27 — o Core Form Container migra (action `macnicadefault`)
+
+**Onde:** `/analog-devices/macnica-and-adi`, "Request a Quote or Get in Touch"
+(revisão manual do Hazael). O form virava pendência `tipo_nao_reconhecido`,
+o título ficava órfão no rodapé e os 3 botões `#contact-form` rolavam até ele.
+**O que é:** proxy do Core (`form/container/v2`) com a action customizada
+`macnicadefault` (reCAPTCHA + e-mail) e DOIS Experience Fragments de popup
+(`successFragmentPath`, `errorFragmentPath`). O global2 tem os mesmos proxies
+e a mesma action, e a policy do template permite `form/container` no corpo
+(não dentro de `flexcontaineritem`). Levantamento completo em
+`PESQUISA-formulario.md`.
+**Regra:** `_bloco_form` → `Block("form")` → `macnicaglobal2/components/form/
+container` com `macnicadefault_subject`, `macnicadefault_mailto[]`, os campos
+(`jcr:title/name/type/required/usePlaceholder/helpMessage/constraintMessage/
+rows`) e o botão. Campos SEM `cq:responsive`: uma coluna, como todo form do
+global2 (o GWI tinha duas). `from`, `redirect` e `action` do GWI não têm campo
+no destino. Outra `actionType` vira pendência `form_action_sem_alvo`.
+**Os XFs:** criados por `ferramentas/criar_xf_popups.py` em
+`<AEM_EF_ROOT>/popups/form-success|form-error` (espelho da copia-teste,
+autorizado em 18/09/2026), com a estrutura dos da APAC e `xfpage` — conferido:
+`master.content.html` NÃO começa com `<!DOCTYPE`. **No go-live** o caminho vira
+`/content/experience-fragments/macnicaglobal2/americas/mai/en/site/popups`
+(`AL.XF_FORM_POPUPS`, definido no driver).
+**Conferido na tela:** 9 campos + "Send message"; `:formstart` aponta para o
+nó; o POST vai para a própria página. **NÃO testado: o envio** — dispara
+e-mail real para 4 endereços. Na copia-teste o `<form>` sai sem
+`data-is-recaptcha-enabled`/site key (a config context-aware só existe sob
+`/conf/macnicaglobal2/americas/mai`): o comportamento fiel só aparece na
+árvore final. O vão abaixo do botão (2×100px dos contêineres de popup + 120px
+de margem do `.cmp-form`) é do componente.
+
+---
+
 ## Aberto (achado na conferência visual, NÃO corrigido)
 
 | # | padrão | onde / quanto | causa | proposta |
@@ -750,7 +783,6 @@ vazio segura a largura — o que também valida a R18 (`/ambarella` H32AQ/A12AQ
 | H | **título longe das abas** | `/namuga` 152px contra 80 | a 13d exclui `tabs` de propósito (seção com faixa cinza) | título dentro da seção das abas, acima do `tabs` |
 | I | **botão sempre centralizado** | `/altera` ×2 | `S_BTN_CENTER` fixo; o GWI tem `width=3 offset=0` (à esquerda) | decisão de dialeto |
 | J | imagem do `textwithimage` no tamanho natural | `/renesas` "Reality AI" 401×226 contra 200×113 | `width`/`height` do `resizableimage` não é levado | sem campo alvo no `textwithimage`; redimensionar o asset ou aceitar |
-| K | título órfão do formulário + 3 botões `#contact-form` | `macnica-and-adi` | `form/container` não migra (sem backend); o título que o introduz e os links ficam | decisão do time: tirar o título / apontar para a página de contato |
 | E | cabeçalho de tabela quebrando palavra | — | — | **FECHADO sem mexer:** sem a margem a quebra sumiu (`/canon` conferida) |
 | — | CSS do site: `td` alinha no topo (GWI no meio); índice de âncoras quebra 3+1; fio sob os h3 do GWI não existe | várias | clientlib do global2 | fora do motor |
 
@@ -816,10 +848,9 @@ páginas, desconfiar da medição antes do motor. Uma página conferida à mão
 - **`relatedsuggestions` modo `search` (9 pendências)** — a policy do `list`
   tem `disableSearch='true'`; as consultas apontam para `sony-image-sensors`,
   fora do escopo. Resolver exige renderizar a página do GWI e ler os cards.
-- **`form/container`** na `macnica-and-adi` — o global2 TEM os componentes e a
-  action (`macnicadefault`) e a policy do template permite; exige 2 XFs de
-  popup e decisão do time (form × CTA; e-mail real). Ver
-  `PESQUISA-formulario.md`.
+- **`form/container`** na `macnica-and-adi` — MIGRADO (R27). Falta testar o
+  envio (e-mail real; combinar antes) e o reCAPTCHA, que só existe na árvore
+  final. Ver `PESQUISA-formulario.md`.
 - **Descrição dos cards de lista** (R12) — perdida por construção no `list`;
   decisão do time.
 - **XFs da copia-teste com `page` em vez de `xfpage`** — fora do nosso escopo

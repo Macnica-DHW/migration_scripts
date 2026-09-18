@@ -1,5 +1,13 @@
 # Formulário "Request a Quote or Get in Touch" — o que é preciso para migrar
 
+> **DECISÃO (Hazael, 18/09/2026): caminho (a) com XFs novos, no ESPELHO da
+> copia-teste** — `/content/experience-fragments/copia-teste/americas/mai/en/
+> site/popups/form-success|form-error`. Feito: XFs criados
+> (`ferramentas/criar_xf_popups.py`), regra R27 no motor, página gravada e
+> conferida no print. **Falta:** testar o envio (e-mail real — combinar com a
+> Macnica) e o reCAPTCHA, só verificável na árvore final; no go-live trocar o
+> caminho dos XFs para `…/macnicaglobal2/americas/mai/en/site/popups`.
+
 Pesquisa SOMENTE LEITURA de 18/09/2026 (só GETs). Página:
 `/analog-devices/macnica-and-adi`. É o único formulário do nosso escopo (no
 GWI há 3 em `semiconductors`: adi, sony e deepx, com o mesmo subject/mailto;
@@ -96,6 +104,6 @@ ser lido (HTTP 403 do filtro de reCAPTCHA).
 5. Para o time AEM: `/conf/macnicaglobal2/sling:configs/…CaptchaConfig` expõe
    `recaptchaSecretKey` em claro a qualquer usuário do author.
 
-Hoje, na página migrada: o form vira pendência `tipo_nao_reconhecido`, o
-título "Request a Quote or Get in Touch" fica órfão no rodapé e os 3 botões
-`#contact-form` rolam até ele.
+Antes da R27, na página migrada: o form virava pendência
+`tipo_nao_reconhecido`, o título ficava órfão no rodapé e os 3 botões
+`#contact-form` rolavam até ele.

@@ -33,6 +33,9 @@ servidor = lote 3 (136/136, R1–R14, sem margem; conferido: 0 styleIds de marge
          + lote 4 (72 páginas: R15, R17–R24)                  72/72 sem falha
          + lote 5 (3 páginas /analog-devices*: R16 sem moldura, R25)   3/3 sem falha
          + lote 6 (20 páginas com vídeo sozinho: R26)                  20/20 sem falha
+         + lote 7 (macnica-and-adi: o formulário, R27)                 1/1, 0 pendências
+fora da árvore, AUTORIZADO: 2 XFs de popup em
+         /content/experience-fragments/copia-teste/americas/mai/en/site/popups
 motor    = HEAD do branch migration/semiconductors-remigration
 Tudo o que está no motor está no servidor.
 
@@ -47,7 +50,7 @@ arquétipo/família (`/ambarella`, `/analog-devices`, `/renesas`, `/altera`,
 `/namuga…`, `/canon`, `/altera/agilex`, `i-chips-scaler-lsi`, `agilex-5`,
 `canon-li8030sa`, `udp10g` (×26), `sitime-oscillators` (×6), `/toppan`,
 `macnica-and-adi`, `ambarella-n1-soc`, a landing). Dez regras novas
-(R15–R26), todas em `REGRAS-disposicao.md`. A revisão manual do Hazael
+(R15–R27), todas em `REGRAS-disposicao.md`. A revisão manual do Hazael
 (`multimodal-sensor-front-ends`, `macnica-and-adi`) entrou como R25, R16 e R19 —
 conferidas no print depois de gravar. Os dois exemplos do Hazael:
 
@@ -122,7 +125,9 @@ uma vez. Detalhe em `REGRAS-disposicao.md`.
 | tag inválida na origem | 10 | erro do GWI — não é nosso |
 | centralizar título que abre seção | dialeto | a Anion centraliza; o GWI não. Hoje só se centraliza o que o GWI centraliza |
 
-**Antes do go-live:** regravar com `--links-de-lista global2` (R5).
+**Antes do go-live:** regravar com `--links-de-lista global2` (R5); recriar os
+XFs de popup em `…/macnicaglobal2/americas/mai/en/site/popups` e apontar
+`AL.XF_FORM_POPUPS` para lá (R27); testar o envio do form com a Macnica avisada.
 
 ---
 
@@ -130,7 +135,7 @@ uma vez. Detalhe em `REGRAS-disposicao.md`.
 
 ```
 HANDOFF.md              este arquivo
-PESQUISA-formulario.md  o form da macnica-and-adi: o que o global2 tem, o que falta, riscos  <-- decisão pendente
+PESQUISA-formulario.md  o form da macnica-and-adi: levantamento, decisão e o que falta testar
 REGRAS-disposicao.md    R1–R26 + o que ficou aberto + os pontos cegos do comparador  <-- LER
 patch3-disposicao.diff  o patch 3 (R13a–f) fora do git; já gravado no lote 3
 PROMPT-conferencia-visual.md  o prompt para abrir a próxima sessão

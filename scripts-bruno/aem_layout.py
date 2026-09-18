@@ -105,6 +105,9 @@ RT = {
     "flexcontainer": "macnicaglobal2/components/content/flexcontainer",
     "flexcontaineritem": "macnicaglobal2/components/content/flexcontaineritem",
     "experiencefragment": "macnicaglobal2/components/content/experiencefragment",
+    "form_container": "macnicaglobal2/components/form/container",
+    "form_text": "macnicaglobal2/components/form/text",
+    "form_button": "macnicaglobal2/components/form/button",
     "downloadlist": "macnicaglobal2/components/content/downloadlist",
     "anchorlink": "macnicaglobal2/components/content/anchorlink",
 }
@@ -156,6 +159,16 @@ SECTIONLIST_TYPES = {"macnicagwi/components/content/pagesectionlisting"}
 # O GWI tem DOIS componentes de título: `heading` (o comum) e `title`. Só o
 # primeiro estava mapeado, e o segundo caía em "tipo não reconhecido".
 TITLE_TYPES = {"macnicagwi/components/content/title"}
+FORM_CONTAINER_RT = "macnicagwi/components/content/form/container"
+FORM_TEXT_RT = "macnicagwi/components/content/form/text"
+FORM_BUTTON_RT = "macnicagwi/components/content/form/button"
+_FORM_CAMPO_PROPS = ("jcr:title", "name", "type", "required", "usePlaceholder",
+                     "helpMessage", "constraintMessage", "requiredMessage",
+                     "rows", "value", "readOnly")
+# Os dois popups que o form container do global2 EXIGE (successFragmentPath /
+# errorFragmentPath). Convenção do global2 (APAC): <região>/site/popups/
+# form-success|form-error/master. O driver pode trocar a raiz.
+XF_FORM_POPUPS = "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/popups"
 IMAGETEXT_RT = "macnicagwi/components/content/imagetext"
 # O breadcrumb do destino vem do próprio template (`root/container_1885913789`),
 # então o da origem é descartável — mas em silêncio, e não como pendência.
@@ -771,10 +784,48 @@ def bloco_de(node, caminho, page):
             caminho, rt, "sem_destino_mapeado", f"{rt} sem componente alvo"))
         return None
 
+    if rt == FORM_CONTAINER_RT:
+        return _bloco_form(node, caminho, page)
+
     if rt:
         page.pendencias.append(Pendencia(
             caminho, rt, "tipo_nao_reconhecido", "nenhum emissor conhece este tipo"))
     return None
+
+
+def _bloco_form(node, caminho, page):
+    """Core Form Container do GWI -> Block('form') (R27).
+
+    O form do GWI é proxy do Core (`form/container/v2`) com a action
+    customizada `macnicadefault` (valida o reCAPTCHA e manda os valores por
+    e-mail). O global2 tem os MESMOS proxies e a MESMA action, e a policy do
+    template permite `form/container` no corpo (não dentro de
+    `flexcontaineritem`). Só essa action é migrada: `mail`/`rpc` não existem
+    no destino e viram pendência. Levantamento em `PESQUISA-formulario.md`.
+    """
+    acao = str(node.get("actionType", ""))
+    if not acao.endswith("/actions/macnicadefault"):
+        page.pendencias.append(Pendencia(
+            caminho, rt_of(node), "form_action_sem_alvo",
+            f"actionType '{acao}' não existe no global2"))
+        return None
+    campos, botoes = [], []
+    for _n, ch in list_child_nodes(node):
+        crt = rt_of(ch)
+        if crt == FORM_TEXT_RT:
+            campos.append({k: ch[k] for k in _FORM_CAMPO_PROPS if k in ch})
+        elif crt == FORM_BUTTON_RT:
+            botoes.append({"jcr:title": ch.get("jcr:title", ""),
+                           "type": ch.get("type") or "submit"})
+        else:
+            page.pendencias.append(Pendencia(
+                caminho, crt, "campo_de_form_sem_alvo",
+                "filho do form sem componente alvo mapeado"))
+    mailto = node.get("mailto") or []
+    if isinstance(mailto, str):
+        mailto = [mailto]
+    return Block("form", caminho, subject=node.get("subject", ""),
+                 mailto=list(mailto), campos=campos, botoes=botoes)
 
 
 # ---------------------------------------------------------------------------
@@ -1898,6 +1949,33 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         payload[f"{base}/sling:resourceType"] = RT["text"]
         payload[f"{base}/text"] = "<hr />"
         payload[f"{base}/textIsRich"] = "true"
+        return True
+
+    if k == "form":
+        n = nomes(pai, "container_form")
+        base = f"{pai}/{n}"
+        payload[f"{base}/jcr:primaryType"] = "nt:unstructured"
+        payload[f"{base}/sling:resourceType"] = RT["form_container"]
+        payload[f"{base}/actionType"] = "macnicaglobal2/components/form/actions/macnicadefault"
+        payload[f"{base}/macnicadefault_subject"] = b.props.get("subject", "")
+        payload[f"{base}/macnicadefault_mailto"] = list(b.props.get("mailto") or [])
+        payload[f"{base}/macnicadefault_mailto@TypeHint"] = "String[]"
+        payload[f"{base}/macnicadefault_includePageTitle"] = "false"
+        payload[f"{base}/successFragmentPath"] = f"{XF_FORM_POPUPS}/form-success/master"
+        payload[f"{base}/errorFragmentPath"] = f"{XF_FORM_POPUPS}/form-error/master"
+        # campos SEM cq:responsive: uma coluna, como todo form do global2
+        for i, campo in enumerate(b.props.get("campos") or [], 1):
+            c = f"{base}/text_{i}"
+            payload[f"{c}/jcr:primaryType"] = "nt:unstructured"
+            payload[f"{c}/sling:resourceType"] = RT["form_text"]
+            for kk, vv in campo.items():
+                payload[f"{c}/{kk}"] = vv
+        for i, bt in enumerate(b.props.get("botoes") or [], 1):
+            c = f"{base}/button_{i}"
+            payload[f"{c}/jcr:primaryType"] = "nt:unstructured"
+            payload[f"{c}/sling:resourceType"] = RT["form_button"]
+            payload[f"{c}/jcr:title"] = bt.get("jcr:title", "")
+            payload[f"{c}/type"] = bt.get("type", "submit")
         return True
 
     if k == "anchor":
