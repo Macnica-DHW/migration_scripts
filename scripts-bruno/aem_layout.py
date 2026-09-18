@@ -75,6 +75,7 @@ completa e a proveniência de cada regra.
 """
 
 import re
+from urllib.parse import quote
 
 from aem_lib import (BUTTON_TYPES, CAROUSEL_TYPES, CONTAINER_RT, DOWNLOAD_TYPES,
                      DOWNLOADLIST_TYPES, HEADING_TYPES, IMAGE_TYPES,
@@ -150,6 +151,7 @@ SECTIONLIST_TYPES = {"macnicagwi/components/content/pagesectionlisting"}
 # O GWI tem DOIS componentes de título: `heading` (o comum) e `title`. Só o
 # primeiro estava mapeado, e o segundo caía em "tipo não reconhecido".
 TITLE_TYPES = {"macnicagwi/components/content/title"}
+IMAGETEXT_RT = "macnicagwi/components/content/imagetext"
 # O breadcrumb do destino vem do próprio template (`root/container_1885913789`),
 # então o da origem é descartável — mas em silêncio, e não como pendência.
 DESCARTAVEIS = {"macnicagwi/components/content/breadcrumb"}
@@ -517,8 +519,17 @@ def bloco_de(node, caminho, page):
             return None
         # `jcr:title` e `type` andam SEMPRE juntos no corpus autoral
         # (413 com os dois, 67 com nenhum, nunca um sem o outro).
+        #
+        # `alignment=center` no GWI rende `cmp-heading--center`: 14 headings
+        # em 10 páginas (família canon, sulfur-som). O style Center existe na
+        # policy do title e estava definido aqui sem uso — o título da tabela
+        # "Canon CMOS Sensors" saía à esquerda (R13). `left` é o padrão dos
+        # dois lados; `right` não ocorre no escopo.
+        estilos = (["", "", S_TITLE_CENTER]
+                   if str(node.get("alignment") or "").lower() == "center" else [])
         return Block("title", caminho, titulo=_texto_visivel(txt),
-                     tipo=node.get("type") or "h2", id=node.get("id"))
+                     tipo=node.get("type") or "h2", id=node.get("id"),
+                     styles=estilos)
 
     if rt in IMAGE_TYPES:
         ref = node.get("fileReference")
@@ -708,8 +719,8 @@ def _coletar_blocos(node, caminho, page):
     rt = rt_of(node)
     if rt and rt not in WRAPPER_TYPES:
         b = bloco_de(node, caminho, page)
-        return [b] if b else []
-    if rt == "macnicagwi/components/content/imagetext":
+        return _destacar_hr(b) if b else []
+    if rt == IMAGETEXT_RT:
         # O `imagetext` do GWI não é só invólucro: ele tem INTERRUPTORES DE
         # VISIBILIDADE. `isText=false` esconde o texto, `isButton=false`
         # esconde o botão, `isHeading=false` esconde o título — e o GWI
@@ -762,6 +773,39 @@ def _coletar_blocos(node, caminho, page):
     return out
 
 
+_VAZIO = r"(?:\s|&nbsp;|\u00a0|<br\s*/?>|<p>(?:\s|&nbsp;|\u00a0|<br\s*/?>)*</p>)*"
+_HR_INICIO = re.compile(r"^" + _VAZIO + r"<hr\s*/?>" + _VAZIO, re.I)
+_HR_FIM = re.compile(_VAZIO + r"<hr\s*/?>" + _VAZIO + r"$", re.I)
+
+
+def _destacar_hr(b):
+    """`<hr>` no começo ou no fim de um `text` com conteúdo vira Block('hr').
+
+    O GWI escreve o separador de duas formas: num `text` só dele (que
+    `spacer_kind` já reconhece) e EMBUTIDO no fim do parágrafo anterior —
+    `...</p><p>&nbsp;</p><hr><p>&nbsp;</p>`. Embutido, o hr ficava dentro do
+    `text`, e como `strip_empty_blocks` apaga os `&nbsp;` que davam o respiro,
+    a régua nascia colada na última linha, lendo como sublinhado (R13).
+    `<hr>` no MEIO do texto fica onde está.
+    """
+    if b.kind != "text":
+        return [b]
+    h = b.props.get("html", "") or ""
+    antes, depois = [], []
+    m = _HR_INICIO.match(h)
+    if m:
+        antes = [Block("hr", b.origin_path)]
+        h = h[m.end():]
+    m = _HR_FIM.search(h)
+    if m and "<hr" in m.group(0).lower():
+        depois = [Block("hr", b.origin_path)]
+        h = h[:m.start()]
+    if not antes and not depois:
+        return [b]
+    b.props["html"] = h
+    return antes + ([b] if _texto_visivel(h) else []) + depois
+
+
 def _quebrar_em_subsecoes(blocos, caminho):
     """Uma Row por SUBSEÇÃO — um título abre subseção.
 
@@ -773,7 +817,11 @@ def _quebrar_em_subsecoes(blocos, caminho):
     """
     grupos, atual = [], []
     for b in blocos:
-        if b.kind == "title" and atual:
+        # O `hr` fica SOZINHO no seu container: como último bloco do grupo
+        # anterior ele nascia colado no texto (gap 0 entre irmãos) e lia como
+        # sublinhado do último bullet, não como divisor de seção (R13).
+        abre = b.kind in ("title", "hr") or (atual and atual[-1].kind == "hr")
+        if abre and atual:
             grupos.append(atual)
             atual = []
         atual.append(b)
@@ -877,6 +925,16 @@ def extrair_linhas(node, caminho, page):
     resultado era [text+button+embed] empilhado: exatamente o defeito
     original (botão no lugar errado, vídeo fora da linha).
     """
+    # `imagetext` filho DIRETO do corpo chega aqui como invólucro. Iterar os
+    # filhos pulava o único ramo que lê `assetPositionLargeScreen` e os
+    # interruptores isText/isButton/isHeading (`_coletar_blocos`): o bloco
+    # "Features" da `agilex-7-i-series` (lista | foto, lado a lado) saía
+    # empilhado com a foto em cima, e a R1 ficava sem efeito para todo
+    # imagetext de topo — 19 nós em 8 páginas (R13).
+    if rt_of(node) == IMAGETEXT_RT:
+        blocos = _fundir_textos(_coletar_blocos(node, caminho, page))
+        return _quebrar_em_subsecoes(blocos, caminho)
+
     if _is_linha(node):
         r = _linha_de(node, caminho, page)
         return [r] if r.columns else []
@@ -933,7 +991,7 @@ def extrair_linhas(node, caminho, page):
             continue
 
         fechar_colunas()
-        if _is_linha(ch):
+        if _is_linha(ch) and rt_of(ch) != IMAGETEXT_RT:
             fechar_corrida()
             r = _linha_de(ch, p, page)
             if r.columns:
@@ -1006,7 +1064,35 @@ def _secoes(corpo, caminho, page):
         if not blocos:
             return
         s.rows = _quebrar_em_subsecoes(blocos, s.origin_path)
+        s._de_corrida = True
         secoes.append(s)
+
+    def titulo_que_introduz():
+        """O título imediatamente anterior acompanha o bloco grande que ele abre.
+
+        Em página MISTA/PLANA o heading é folha solta e o bloco que ele
+        introduz (table, carousel, imagetext, invólucro) abre seção própria.
+        O título ficava para trás, como último item da seção anterior: na
+        `agilex-7-i-series`, "Features" e "Specifications" nasciam MAIS PERTO
+        do bloco de cima (90px) que do conteúdo que anunciam (170px), porque
+        entre os dois se somavam três paddings de container (R13). Vale
+        também com espaçador no meio, que já tinha fechado a corrida.
+        """
+        if corrida:
+            ch_t, p_t = corrida[-1]
+            if rt_of(ch_t) in HEADING_TYPES or rt_of(ch_t) in TITLE_TYPES:
+                corrida.pop()
+                return bloco_de(ch_t, p_t, page)
+            return None
+        if secoes and getattr(secoes[-1], "_de_corrida", False):
+            ult = secoes[-1]
+            if (ult.rows and len(ult.rows[-1].blocks) == 1
+                    and ult.rows[-1].blocks[0].kind == "title"):
+                t = ult.rows.pop().blocks[0]
+                if not ult.rows:
+                    secoes.pop()
+                return t
+        return None
 
     for i, (nome, ch) in enumerate(list_child_nodes(corpo)):
         p = f"{caminho}/{nome}"
@@ -1027,12 +1113,17 @@ def _secoes(corpo, caminho, page):
             if not b:
                 continue
             if b.kind in MAJOR:
+                # tabs/related/xf ficam de fora: a seção deles tem papel
+                # próprio em `_marcar_papeis` (faixa colorida, sem padding)
+                # que depende de o bloco estar SOZINHO na seção.
+                t = (titulo_que_introduz()
+                     if b.kind not in ("tabs", "related", "xf") else None)
                 fechar()
                 s = Section(p, len(secoes),
                             role="related" if b.kind == "related" else "body")
                 r = Row("single")
                 c = Column(p, width=12)
-                c.blocks = [b]
+                c.blocks = [t, b] if t else [b]
                 r.columns = [c]
                 s.rows = [r]
                 secoes.append(s)
@@ -1041,9 +1132,19 @@ def _secoes(corpo, caminho, page):
             continue
 
         # invólucro: seção própria, com suas linhas e colunas
+        t = titulo_que_introduz()
         fechar()
         s = Section(p, len(secoes))
         s.rows = extrair_linhas(ch, p, page)
+        if t is not None:
+            if s.rows and s.rows[0].kind == "single" and s.rows[0].columns:
+                s.rows[0].columns[0].blocks.insert(0, t)
+            else:
+                r0 = Row("single")
+                c0 = Column(p, width=12)
+                c0.blocks = [t]
+                r0.columns = [c0]
+                s.rows.insert(0, r0)
         if s.rows:
             secoes.append(s)
 
@@ -1474,9 +1575,15 @@ def _emitir_tabela_download(payload, pai, nomes, itens, link_de, link_para):
             # sem dc:title resolvido, usa o nome do arquivo SEM inventar
             # rótulo bonito — o driver preenche `titulo` a partir do DAM
             titulo = ref.rsplit("/", 1)[-1]
+        # href CODIFICADO: o HTML rico do `table` passa pelo filtro XSS do
+        # AEM, que descarta o <a> inteiro quando o href tem espaço cru e
+        # deixa só o texto. "WP-14033 - Altera SoC Design Advantages .pdf"
+        # virava a palavra "Download" sem link — invisível para qualquer
+        # conferência de JCR ou de texto (R13).
+        href = quote(ref, safe="/")
         linhas.append(
             f"<tr><td>{titulo}</td>"
-            f'<td><a href="{ref}" target="_blank">Download</a></td></tr>')
+            f'<td><a href="{href}" target="_blank">Download</a></td></tr>')
     if not linhas:
         return False
     n = nomes(pai, "table")
@@ -1550,6 +1657,20 @@ def _emitir_linha(payload, pai, nomes, row, page, link_de, link_para):
         for c in row.columns:
             for b in c.blocks:
                 _emitir_bloco(payload, pai, nomes, b, page, link_de, link_para)
+        return
+
+    # 3+ colunas que são SÓ botão não cabem: o botão tem min-width 345px
+    # ("Fixed Minimum Width" é o menor que a policy oferece) e a coluna útil
+    # tem 900px — 3 x 345 + 2 x 26 = 1087px. Na `/renesas` o terceiro botão
+    # passava 187px da margem e virava rolagem horizontal entre 1050 e
+    # 1337px de janela. Quebra em linhas de 2 (R13).
+    if len(row.columns) >= 3 and all(
+            c.blocks and all(b.kind == "button" for b in c.blocks)
+            for c in row.columns):
+        for i in range(0, len(row.columns), 2):
+            sub = Row("columns")
+            sub.columns = row.columns[i:i + 2]
+            _emitir_linha(payload, pai, nomes, sub, page, link_de, link_para)
         return
 
     # Linha 6/6 {uma imagem} + {texto} vira UM textwithimage — é a técnica da
