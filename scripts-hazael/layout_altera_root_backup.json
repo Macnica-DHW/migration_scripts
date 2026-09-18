@@ -1,0 +1,1183 @@
+{
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "Buy Altera Semiconductor, SoC, FPGA & Power Products",
+  "manufacturer": "mai:manufacturers/altera",
+  "businessCategories": "mai:business-categories/semiconductors",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "ALTERA",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Thu Sep 10 2026 18:47:59 GMT+0000",
+  "cq:lastModified": "Fri Sep 18 2026 02:24:28 GMT+0000",
+  "jcr:description": "We offer a diverse selection of Altera SoC, semiconductors, FPGA, and power products you can buy. Unleash your design with Altera solutions tailored to you.",
+  "keywords": "Agilex, Stratix FPGA, Altera, Cyclone, Max, field programmable gate array, FPGA engineering, Quartus Prime software, FPGA development, FPGA products, optimized performance, flexibility, FPGA engineer, Intel PSG, Intel FPGA",
+  "hideInNav": "true",
+  "pageTitle": "Buy Altera Products",
+  "sling:resourceType": "macnicaglobal2/components/page",
+  "pd_description": "We offer a diverse selection of Altera SoC, semiconductors, FPGA, and power products you can buy. Unleash your design with Altera solutions tailored to you.",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Altera",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "containerpy": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Buy Altera Semiconductor, SoC, FPGA & Power Products",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_intro_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_intro": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>We offer a diverse selection of Altera SoC, semiconductors, FPGA, and power products you can buy. Unleash your design with Altera solutions tailored to you.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Leading Altera FPGAs, SoCs, and CPLDs, supported by Macnica",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Altera products stand as a prominent force in the semiconductor industry, specializing in cutting-edge field-programmable gate arrays (FPGAs) and programmable logic devices. Renowned for its commitment to innovation, Altera's FPGA solutions offer unparalleled flexibility for customizing digital circuits to meet specific application needs. With a focus on diverse markets such as cloud computing, network infrastructure, edge computing, and artificial intelligence, Altera's products cater to the evolving demands of these industries. Explore the transformative possibilities of Altera's programmable technology, delivering adaptability and performance in a rapidly changing digital landscape.</p>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "button_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "button_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Request a Quote",
+      "linkURL": "/content/macnicagwi/americas/mai/en/request-a-quote",
+      "linkTarget": "_self",
+      "sling:resourceType": "macnicaglobal2/components/content/button"
+     }
+    },
+    "heading_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "What Macnica Delivers for Altera Designs",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "From prototype to production, with the right hardware and toolchain",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Macnica supports Altera programs across device selection, development software, evaluation kits, and design-in enablement. Whether you are building a SmartNIC, a vision pipeline, an industrial controller, or a secure edge gateway, we help you stand up a working platform quickly and reduce risk on the path to production.</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_4_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica support highlights",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<ul>\r\n<li>Toolchain guidance across FPGA design, simulation, embedded, and high-speed I/O workflows</li>\r\n<li>Recommended development kits and accessories aligned to your I/O, memory, and performance targets</li>\r\n<li>Architecture support for storage, networking, and security stacks built on Altera platforms</li>\r\n<li>Supply and fulfillment planning from evaluation units to pilot builds and production ramps</li>\r\n</ul>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_5_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Edge AI Sensor Bridging, Powered by Altera",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_4_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Altera FPGAs connect high speed sensors to NVIDIA GPU compute for real time edge AI. See our Holoscan Sensor Bridge reference designs and available dev kits. <b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-holoscan.html\" target=\"_self\">Learn more</a></b></p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_6_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Overview",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_5_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<p>Altera offers a broad portfolio of programmable logic solutions spanning high-performance data center acceleration, mid-range embedded platforms, and power and cost optimized control designs.</p>\r\n<p><br>\r\nMacnica helps you select the right device family, map your I/O and memory requirements, and accelerate bring-up from evaluation through production.</p>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_7_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Portfolio At-a-Glance",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_6_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>High-Performance</b></p>\r\n<p>For maximum bandwidth, transceiver density, and compute scaling.</p>\r\n<ul>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview.html\" target=\"_self\">Agilex 9</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview.html\" target=\"_self\">Agilex 7</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-stratix-10.html\" target=\"_self\">Stratix 10</a></li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "text_7_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>Mid-Range</b></p>\r\n<p>For balanced performance, power, and cost across embedded and edge workloads.</p>\r\n<ul>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview.html\" target=\"_self\">Agilex 5</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-gt-soc-fpga.html\" target=\"_self\">Arria 10 GT</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-sx-soc-fpga.html\" target=\"_self\">Arria 10 SX</a></li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "text_8_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>Power and Cost-Optimized</b><br>\r\nFor control, interface bridging, and cost-sensitive embedded systems.</p>\r\n<ul>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/agilex/agilex-3-fpga-and-soc-overview.html\" target=\"_self\">Agilex 3</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-max-10.html\" target=\"_self\">MAX 10</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga.html\" target=\"_self\">Cyclone 10</a></li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_8_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Where these devices fit",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_9_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<ul>\r\n<li><b>Networking and infrastructure:</b> Ethernet, PCIe-based data movers, packet processing, timing, and gateways</li>\r\n</ul>\r\n<ul>\r\n<li><b>Industrial and robotics:</b>&nbsp;Deterministic control, sensor fusion, connectivity, safety and security design patterns</li>\r\n</ul>\r\n<ul>\r\n<li><b>ProAV and broadcast:</b>&nbsp;Video transport, processing, and interface bridging</li>\r\n</ul>\r\n<ul>\r\n<li><b>Edge AI and vision:</b>&nbsp;Inference pipelines, sensor ingest, compression, and storage</li>\r\n</ul>\r\n<ul>\r\n<li><b>Secure embedded:</b>&nbsp;Root-of-trust patterns, authenticated updates, and encrypted data paths</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_9_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Why Macnica?",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_10_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<ul>\r\n<li>Device selection guidance aligned to bandwidth, interfaces, lifecycle, and BOM targets</li>\r\n<li>Architecture support across compute, networking, storage, and security stacks</li>\r\n<li>Fulfillment support for evaluation, pilot builds, and production ramps</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_10_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Overview",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_11_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<p>Altera provides a complete suite of development tools for every stage of an FPGA, SoC, or CPLD design. This includes core FPGA design software, simulation, embedded development tools, utilities for power and high-speed links, plus higher-level flows for acceleration and AI.</p>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_11_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "1. Core FPGA design environment",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_12_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-quartus-prime.html\" target=\"_self\" rel=\"noopener noreferrer\"><b>Quartus Prime Design Software</b></a> is the primary environment for designing FPGAs, SoC FPGAs, and CPLDs, including IP integration, compile, timing closure, and programming.<br>\r\n<br>\r\n</p>\r\n<p>Platform Designer inside Quartus Prime is used for system integration, automatically generating interconnect logic to connect IP functions and subsystems.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Best for:</b></p>\r\n<ul>\r\n<li>RTL and IP-based design flows</li>\r\n<li>System integration using Platform Designer</li>\r\n<li>Build, timing analysis, and device programming</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_12_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "2. Simulation and verification",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_13_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_13": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<p>Questa Altera FPGA Edition supports behavioral simulation, HDL testbenches, Tcl scripting, and works with Quartus Prime editions.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Best for:</b></p>\r\n<ul>\r\n<li>Pre-hardware verification and regression</li>\r\n<li>Faster debug of complex designs before board bring-up</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_13_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_13": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "3. Utilities for power, thermal, and high-speed links",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_14_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_14": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<p>Altera’s development tool ecosystem includes utilities such as <b>Power and Thermal Analyzer</b>, <b>Advanced Link Analyzer</b>, and <b>Transceiver Toolkit</b>.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Best for:</b></p>\r\n<ul>\r\n<li>Early power budgeting, thermal planning</li>\r\n<li>SERDES and link analysis workflows during bring-up and validation</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_14_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_14": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "4. Embedded development tools and software",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_15_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_15": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<p>For embedded and SoC workflows, Altera lists tools such as Nios V, Ashling RISCFree IDE, and Visual Designer Studio.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Best for:</b></p>\r\n<ul>\r\n<li>Embedded control planes and management functions using Nios V</li>\r\n<li>Debug workflows and embedded bring-up aligned to Altera platforms</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_15_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_15": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "5. Higher-level development options",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_16_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_16": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<p>Depending on your application, Altera provides additional development tools including:</p>\r\n<ul>\r\n<li><b>Open FPGA Stack (OFS)</b> for platform-level acceleration stacks</li>\r\n<li><b>P4 Suite for FPGAs</b> for programmable packet processing workflows</li>\r\n<li><b>FPGA AI Suite</b> for AI development workflows on FPGA platforms</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_16_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_16": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Why Macnica?",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_17_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_17": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<ul>\r\n<li>Toolchain mapping across hardware, simulation, embedded, and high-speed I/O workflows</li>\r\n<li>Guidance selecting Quartus edition and planning installs, device support, and licenses</li>\r\n<li>Bring-up support for transceivers and link analysis workflows using Altera utilities</li>\r\n<li>Platform guidance when moving from dev kits to a production hardware design</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_17_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_17": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Overview",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_18_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_18": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<p>Altera and its partners offer a broad selection of FPGA development kits and boards to accelerate prototyping and evaluation. Macnica helps you pick the right kit for your I/O, memory, and performance goals, then supports evaluation through pilot and production planning.</p>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "text_19_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_19": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>High-Performance Kits</b></p>\r\n<ul>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview.html\" target=\"_self\">Agilex 9</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview.html\" target=\"_self\">Agilex 7</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-stratix-10.html\" target=\"_self\">Stratix 10</a></li>\r\n</ul>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "text_20_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_20": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>Mid-Range Kits</b></p>\r\n<ul>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview.html\" target=\"_self\">Agilex 5</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-gt-soc-fpga.html\" target=\"_self\">Arria GT</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-sx-soc-fpga.html\" target=\"_self\">Arria SX</a></li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "text_21_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_21": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>Power and Cost-Optimized Kits</b></p>\r\n<ul>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/agilex/agilex-3-fpga-and-soc-overview.html\" target=\"_self\">Agilex 3</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-max-10.html\" target=\"_self\">MAX 10, MAX V</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga.html\" target=\"_self\">Cyclone 10, Cyclone V, Cyclone IV</a></li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_18_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_18": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "What teams use development kits for",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_22_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_22": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<ul>\r\n<li><b>Bring-up and validation:</b>&nbsp;Confirm transceivers, PCIe, Ethernet, memory, and board-level behavior</li>\r\n<li><b>Rapid proof-of-concept:</b>&nbsp;Demonstrate performance, latency, or interface compatibility</li>\r\n<li><b>Software and firmware enablement:</b>&nbsp;Embedded tooling workflows and integration paths</li>\r\n<li><b>Production planning:</b>&nbsp;De-risk the path from kit to production hardware</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_19_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_19": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Why Macnica?",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_23_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_23": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<ul>\r\n<li>Kit selection guidance based on required I/O, memory, expansion, and performance tier</li>\r\n<li>Recommendation of accessories and setup practices to speed lab bring-up</li>\r\n<li>Path planning from evaluation platform to production hardware, including supply continuity</li>\r\n<li>Engineering guidance to integrate third-party IP and reference designs with your kit</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_20_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_20": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Accelerate SoC bring-up and system integration",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_24_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_24": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<p>Macnica offers hands-on enablement options and workshops that help teams build confidence in SoC and system workflows, especially when integrating custom peripherals and power considerations.</p>\r\n<ul>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/1-vworkshop-altera-soc-introduction.html\" target=\"_self\">Altera SoC Introduction vWorkshop</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/5-altera-soc-power-considerations.html\" target=\"_self\">Altera SoC Power Considerations Workshop</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/3-adding-and-simulating-custom-soc-peripherals.html\" target=\"_self\">Custom SoC Peripherals vWorkshop</a></li>\r\n<li><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-soc-courses.html\" target=\"_self\">Altera SoC Training Courses Online</a></li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_21_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_21": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Featured Resources and Next Steps",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_22_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_22": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Let’s align the device, tools, and kit to your application",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_25_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_25": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<p>If you share your performance targets, key interfaces, and deployment environment, Macnica can recommend an Altera device family, the right development software stack, and a development kit that matches your bring-up plan.</p>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "button_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "button_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Request a Quote",
+      "linkURL": "/content/macnicagwi/americas/mai/en/request-a-quote",
+      "linkTarget": "_self",
+      "sling:resourceType": "macnicaglobal2/components/content/button"
+     }
+    },
+    "heading_23_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "heading_23": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "From Components to Complete Solutions",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_26_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_26": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;</p>\r\n<p>Macnica Americas delivers more than distribution. We help robotics innovators integrate complex technologies into practical, production-ready systems. Our global engineering teams provide architecture guidance, reference designs, and evaluation kits that accelerate design cycles and reduce risk.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "image_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "image_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/macnica-workflow-diagram.jpg",
+      "alt": "Macnica workflow diagram",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    },
+    "image_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "image_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/altera/altera-logo-tm-alterablue-3000.png",
+      "alt": "Altera",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    }
+   },
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#fff",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Buy Altera Semiconductor, SoC, FPGA & Power Products",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Leading Altera FPGAs, SoCs, and CPLDs, supported by Macnica",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#fff",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "6"
+      },
+      "phone": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Altera products stand as a prominent force in the semiconductor industry, specializing in cutting-edge field-programmable gate arrays (FPGAs) and programmable logic devices. Renowned for its commitment to innovation, Altera's FPGA solutions offer unparalleled flexibility for customizing digital circuits to meet specific application needs. With a focus on diverse markets such as cloud computing, network infrastructure, edge computing, and artificial intelligence, Altera's products cater to the evolving demands of these industries. Explore the transformative possibilities of Altera's programmable technology, delivering adaptability and performance in a rapidly changing digital landscape.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "button_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "6"
+      },
+      "phone": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     },
+     "button_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Request a Quote",
+      "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote",
+      "linkTarget": "_self",
+      "sling:resourceType": "macnicaglobal2/components/content/button"
+     }
+    },
+    "embed_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#fff",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "6"
+      },
+      "phone": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     },
+     "embed_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "layout": "responsive",
+      "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+      "youtubeLoop": "false",
+      "youtubeMute": "true",
+      "youtubeRel": "false",
+      "type": "embeddable",
+      "youtubeVideoId": "tAOd3x_Aygk",
+      "sling:resourceType": "macnicaglobal2/components/content/embed",
+      "youtubeAutoPlay": "false",
+      "youtubePlaysInline": "true"
+     }
+    },
+    "heading_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "heading_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "What Macnica Delivers for Altera Designs",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#fff",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "heading_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "From prototype to production, with the right hardware and toolchain",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "text_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Macnica supports Altera programs across device selection, development software, evaluation kits, and design-in enablement. Whether you are building a SmartNIC, a vision pipeline, an industrial controller, or a secure edge gateway, we help you stand up a working platform quickly and reduce risk on the path to production.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_4_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#fff",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "heading_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica support highlights",
+      "type": "h4",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "text_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<ul>\n<li>Toolchain guidance across FPGA design, simulation, embedded, and high-speed I/O workflows</li>\n<li>Recommended development kits and accessories aligned to your I/O, memory, and performance targets</li>\n<li>Architecture support for storage, networking, and security stacks built on Altera platforms</li>\n<li>Supply and fulfillment planning from evaluation units to pilot builds and production ramps</li>\n</ul>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_5_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#fff",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "heading_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Edge AI Sensor Bridging, Powered by Altera",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_4_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "text_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Altera FPGAs connect high speed sensors to NVIDIA GPU compute for real time edge AI. See our Holoscan Sensor Bridge reference designs and available dev kits. <b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-holoscan\" target=\"_self\">Learn more</a></b></p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "tabs_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#fff",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "tabs_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/tabs",
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "FPGAs, SoCs, CPLDs",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Overview",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>Altera offers a broad portfolio of programmable logic solutions spanning high-performance data center acceleration, mid-range embedded platforms, and power and cost optimized control designs.</p>\n<p><br>\nMacnica helps you select the right device family, map your I/O and memory requirements, and accelerate bring-up from evaluation through production.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "heading_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Portfolio At-a-Glance",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><b>High-Performance</b></p>\n<p>For maximum bandwidth, transceiver density, and compute scaling.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview\" target=\"_self\">Agilex 9</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview\" target=\"_self\">Agilex 7</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-stratix-10\" target=\"_self\">Stratix 10</a></li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "4"
+         },
+         "phone": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "12"
+         }
+        }
+       },
+       "text_16": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><b>Mid-Range</b></p>\n<p>For balanced performance, power, and cost across embedded and edge workloads.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview\" target=\"_self\">Agilex 5</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-gt-soc-fpga\" target=\"_self\">Arria 10 GT</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-sx-soc-fpga\" target=\"_self\">Arria 10 SX</a></li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "4"
+         },
+         "phone": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "12"
+         }
+        }
+       },
+       "text_27": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><b>Power and Cost-Optimized</b><br>\nFor control, interface bridging, and cost-sensitive embedded systems.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/agilex-3-fpga-and-soc-overview\" target=\"_self\">Agilex 3</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-max-10\" target=\"_self\">MAX 10</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga\" target=\"_self\">Cyclone 10</a></li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "4"
+         },
+         "phone": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "12"
+         }
+        }
+       },
+       "heading_9": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Where these devices fit",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_38": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\n<li><b>Networking and infrastructure:</b> Ethernet, PCIe-based data movers, packet processing, timing, and gateways</li>\n</ul>\n<ul>\n<li><b>Industrial and robotics:</b>&nbsp;Deterministic control, sensor fusion, connectivity, safety and security design patterns</li>\n</ul>\n<ul>\n<li><b>ProAV and broadcast:</b>&nbsp;Video transport, processing, and interface bridging</li>\n</ul>\n<ul>\n<li><b>Edge AI and vision:</b>&nbsp;Inference pipelines, sensor ingest, compression, and storage</li>\n</ul>\n<ul>\n<li><b>Secure embedded:</b>&nbsp;Root-of-trust patterns, authenticated updates, and encrypted data paths</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "heading_13": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Why Macnica?",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_42": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\n<li>Device selection guidance aligned to bandwidth, interfaces, lifecycle, and BOM targets</li>\n<li>Architecture support across compute, networking, storage, and security stacks</li>\n<li>Fulfillment support for evaluation, pilot builds, and production ramps</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "Development SW and Tools",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Overview",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>Altera provides a complete suite of development tools for every stage of an FPGA, SoC, or CPLD design. This includes core FPGA design software, simulation, embedded development tools, utilities for power and high-speed links, plus higher-level flows for acceleration and AI.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "heading_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "1. Core FPGA design environment",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-quartus-prime\" target=\"_self\" rel=\"noopener noreferrer\"><b>Quartus Prime Design Software</b></a> is the primary environment for designing FPGAs, SoC FPGAs, and CPLDs, including IP integration, compile, timing closure, and programming.<br>\n<br>\n</p>\n<p>Platform Designer inside Quartus Prime is used for system integration, automatically generating interconnect logic to connect IP functions and subsystems.</p>\n<p><b>Best for:</b></p>\n<ul>\n<li>RTL and IP-based design flows</li>\n<li>System integration using Platform Designer</li>\n<li>Build, timing analysis, and device programming</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "heading_9": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "2. Simulation and verification",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_9": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>Questa Altera FPGA Edition supports behavioral simulation, HDL testbenches, Tcl scripting, and works with Quartus Prime editions.</p>\n<p><b>Best for:</b></p>\n<ul>\n<li>Pre-hardware verification and regression</li>\n<li>Faster debug of complex designs before board bring-up</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "heading_13": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "3. Utilities for power, thermal, and high-speed links",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_13": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>Altera’s development tool ecosystem includes utilities such as <b>Power and Thermal Analyzer</b>, <b>Advanced Link Analyzer</b>, and <b>Transceiver Toolkit</b>.</p>\n<p><b>Best for:</b></p>\n<ul>\n<li>Early power budgeting, thermal planning</li>\n<li>SERDES and link analysis workflows during bring-up and validation</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "heading_17": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "4. Embedded development tools and software",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_17": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>For embedded and SoC workflows, Altera lists tools such as Nios V, Ashling RISCFree IDE, and Visual Designer Studio.</p>\n<p><b>Best for:</b></p>\n<ul>\n<li>Embedded control planes and management functions using Nios V</li>\n<li>Debug workflows and embedded bring-up aligned to Altera platforms</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "heading_21": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "5. Higher-level development options",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_21": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>Depending on your application, Altera provides additional development tools including:</p>\n<ul>\n<li><b>Open FPGA Stack (OFS)</b> for platform-level acceleration stacks</li>\n<li><b>P4 Suite for FPGAs</b> for programmable packet processing workflows</li>\n<li><b>FPGA AI Suite</b> for AI development workflows on FPGA platforms</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "heading_25": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Why Macnica?",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_25": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\n<li>Toolchain mapping across hardware, simulation, embedded, and high-speed I/O workflows</li>\n<li>Guidance selecting Quartus edition and planning installs, device support, and licenses</li>\n<li>Bring-up support for transceivers and link analysis workflows using Altera utilities</li>\n<li>Platform guidance when moving from dev kits to a production hardware design</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "item_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "Development Kits",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Overview",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>Altera and its partners offer a broad selection of FPGA development kits and boards to accelerate prototyping and evaluation. Macnica helps you pick the right kit for your I/O, memory, and performance goals, then supports evaluation through pilot and production planning.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "text_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><b>High-Performance Kits</b></p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview\" target=\"_self\">Agilex 9</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview\" target=\"_self\">Agilex 7</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-stratix-10\" target=\"_self\">Stratix 10</a></li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "4"
+         },
+         "phone": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "12"
+         }
+        }
+       },
+       "text_16": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><b>Mid-Range Kits</b></p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview\" target=\"_self\">Agilex 5</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-gt-soc-fpga\" target=\"_self\">Arria GT</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-sx-soc-fpga\" target=\"_self\">Arria SX</a></li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "4"
+         },
+         "phone": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "12"
+         }
+        }
+       },
+       "text_27": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><b>Power and Cost-Optimized Kits</b></p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/agilex-3-fpga-and-soc-overview\" target=\"_self\">Agilex 3</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-max-10\" target=\"_self\">MAX 10, MAX V</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga\" target=\"_self\">Cyclone 10, Cyclone V, Cyclone IV</a></li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "4"
+         },
+         "phone": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "12"
+         }
+        }
+       },
+       "heading_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "What teams use development kits for",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_38": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\n<li><b>Bring-up and validation:</b>&nbsp;Confirm transceivers, PCIe, Ethernet, memory, and board-level behavior</li>\n<li><b>Rapid proof-of-concept:</b>&nbsp;Demonstrate performance, latency, or interface compatibility</li>\n<li><b>Software and firmware enablement:</b>&nbsp;Embedded tooling workflows and integration paths</li>\n<li><b>Production planning:</b>&nbsp;De-risk the path from kit to production hardware</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "heading_9": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Why Macnica?",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_42": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\n<li>Kit selection guidance based on required I/O, memory, expansion, and performance tier</li>\n<li>Recommendation of accessories and setup practices to speed lab bring-up</li>\n<li>Path planning from evaluation platform to production hardware, including supply continuity</li>\n<li>Engineering guidance to integrate third-party IP and reference designs with your kit</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "item_4": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "Enablement and Training",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Accelerate SoC bring-up and system integration",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>Macnica offers hands-on enablement options and workshops that help teams build confidence in SoC and system workflows, especially when integrating custom peripherals and power considerations.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/1-vworkshop-altera-soc-introduction\" target=\"_self\">Altera SoC Introduction vWorkshop</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/5-altera-soc-power-considerations\" target=\"_self\">Altera SoC Power Considerations Workshop</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/3-adding-and-simulating-custom-soc-peripherals\" target=\"_self\">Custom SoC Peripherals vWorkshop</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-soc-courses\" target=\"_self\">Altera SoC Training Courses Online</a></li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "heading_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Featured Resources and Next Steps",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "heading_9": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Let’s align the device, tools, and kit to your application",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>If you share your performance targets, key interfaces, and deployment environment, Macnica can recommend an Altera device family, the right development software stack, and a development kit that matches your bring-up plan.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "button_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Request a Quote",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button"
+       },
+       "heading_13": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "From Components to Complete Solutions",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_9": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>Macnica Americas delivers more than distribution. We help robotics innovators integrate complex technologies into practical, production-ready systems. Our global engineering teams provide architecture guidance, reference designs, and evaluation kits that accelerate design cycles and reduce risk.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/macnica-workflow-diagram.jpg",
+        "alt": "Macnica workflow diagram",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      }
+     }
+    },
+    "image_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "image_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/logos/altera/altera-logo-tm-alterablue-3000.png",
+      "alt": "Altera",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    }
+   }
+  }
+ }
+}

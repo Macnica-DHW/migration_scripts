@@ -299,7 +299,26 @@ def main():
                 payload = build_clone_payload(source_data, template_path)
                 contagens, skipped = {}, []
             else:
-                jcr_content = source_data.get("jcr:content", {}) or {}
+                # Buscar o jcr:content DIRETO, não de dentro da página.
+                #
+                # `<pagina>.50.json` numa página COM FILHOS é recusado com
+                # HTTP 300, e as profundidades oferecidas chegam a 3 — o
+                # fallback aceita a maior e o jcr:content volta cortado na
+                # profundidade 2. Como o conteúdo real mora em
+                # `root/container/container/...`, sobrava só o que estava
+                # raso: a raiz `/semiconductors` migrou com o título e mais
+                # nada, perdendo a manchete, a introdução e o supplierlist
+                # com os 16 fabricantes.
+                #
+                # `<pagina>/jcr:content.50.json` não tem página-filha
+                # pendurada, então a profundidade alta passa. É a mesma
+                # razão pela qual as páginas-folha migraram inteiras e só as
+                # de categoria ficaram vazias (17/09/2026).
+                jcr_content, st_jc = fetch_with_depth_fallback(
+                    session, base_url, f"{m['source_path']}/jcr:content",
+                    args.source_depth, auth_tracker)
+                if jcr_content is None:
+                    jcr_content = source_data.get("jcr:content", {}) or {}
                 titulo = jcr_content.get("jcr:title") or m["title"]
                 descricao = jcr_content.get("jcr:description", "")
                 componentes, skipped = extract_content(jcr_content)

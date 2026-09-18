@@ -1,0 +1,462 @@
+{
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/toe200g-ip-200g-tcp-offload-engine/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "title_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499",
+    "1717498052331"
+   ],
+   "title": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "TOE200G-IP, 200G TCP Offload Engine",
+    "type": "h1",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_intro_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "text_intro": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>200G TCP in hardware for multi-stream, line rate transport without a CPU or external DDR. TOE200G-IP implements the full TCP stack in logic and connects directly to 200 GbE MAC and PHY on supported FPGA platforms. The core is built for sustained multi-session throughput with predictable latency and a simple streaming interface to user logic.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "carousel_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "carousel_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/carousel",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/products/design-gateway/images/dg-toe200-block.jpg",
+     "alt": "TOE200 block diagram",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   }
+  },
+  "text_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "text_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h4>200G TCP in hardware for multi-stream, line rate transport without a CPU or external DDR.</h4>\n<p>TOE200G-IP implements the full TCP stack in logic and connects directly to 200 GbE MAC and PHY on supported FPGA platforms. The core is built for sustained multi-session throughput with predictable latency and a simple streaming interface to user logic.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "heading_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Highlights",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "text_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<ul>\n<li>Hardware TCP server and client with multi-session scheduling and scalable queues</li>\n</ul>\n<ul>\n<li>AXI4-Stream payload interfaces and register control for configuration and status</li>\n</ul>\n<ul>\n<li>Works with 200 GbE MAC and PCS blocks including RS-FEC where required</li>\n</ul>\n<ul>\n<li>Reference projects for half duplex and full duplex tests, ping reply, parameter setting, and integrated throughput apps</li>\n</ul>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "heading_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Why Macnica?",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_3_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "text_3": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<ul>\n<li>Queue sizing and connection planning for 200G targets, including jumbo MTU recommendations</li>\n</ul>\n<ul>\n<li>Transceiver and RS-FEC configuration on Agilex F-Tile, plus validated MAC selections for 200G links</li>\n</ul>\n<ul>\n<li>Lab validation plans for soak tests and packet integrity at line rate</li>\n</ul>\n<ul>\n<li>Integration with NVMe or NVMe over TCP storage paths for capture and replay</li>\n</ul>\n<ul>\n<li>Supply and evaluation hardware coordination so you can move from demo to pilot without stalls</li>\n</ul>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "image_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/macnica-workflow-diagram.jpg",
+    "alt": "Macnica + Toppan",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  },
+  "heading_3_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "heading_3": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Key Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_4_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "text_4": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<ul>\n<li><b>Ethernet:</b> 200 GbE</li>\n</ul>\n<ul>\n<li><b>User interfaces:</b> AXI4-Stream for Tx and Rx, register interface for control and stats</li>\n</ul>\n<ul>\n<li><b>Resources:</b> Pure RTL, no external DDR, no embedded CPU in the data path</li>\n</ul>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_4_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "heading_4": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Typical Applications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_5_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "text_5": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<ul>\n<li>200G packet brokers, recorders, and telemetry pumps</li>\n</ul>\n<ul>\n<li>Remote capture to storage nodes and NVMe over TCP front ends</li>\n</ul>\n<ul>\n<li>Market data and analytics gateways that require stateful transport</li>\n</ul>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_5_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "heading_5": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Resources",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "download_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "download_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "dg ipcore brochure",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/downloads/dg-ipcore-brochure.pdf",
+    "sling:resourceType": "macnicaglobal2/components/content/download"
+   }
+  },
+  "download_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "download_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "dg toe200gadvip data sheet intel",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_toe200gadvip_data_sheet_intel.pdf",
+    "sling:resourceType": "macnicaglobal2/components/content/download"
+   }
+  },
+  "heading_6_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "heading_6": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Get Started",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_6_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "text_6": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>Share target sessions, MTU, and throughput budget. We will size queues, recommend a 200G MAC configuration, and map a demo on your Agilex board.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "image_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "image_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-Logo-TOE200G-IP_225.jpg",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  },
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   },
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "TOE200G-IP, 200G TCP Offload Engine",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_intro_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_intro": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>200G TCP in hardware for multi-stream, line rate transport without a CPU or external DDR. TOE200G-IP implements the full TCP stack in logic and connects directly to 200 GbE MAC and PHY on supported FPGA platforms. The core is built for sustained multi-session throughput with predictable latency and a simple streaming interface to user logic.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "carousel_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "carousel_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/carousel",
+     "image_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/design-gateway/DG-TOE200-Block.jpg",
+      "alt": "TOE200 block diagram",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h4>200G TCP in hardware for multi-stream, line rate transport without a CPU or external DDR.</h4>\r\n<p>&nbsp;</p>\r\n<p>TOE200G-IP implements the full TCP stack in logic and connects directly to 200 GbE MAC and PHY on supported FPGA platforms. The core is built for sustained multi-session throughput with predictable latency and a simple streaming interface to user logic.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Highlights",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Hardware TCP server and client with multi-session scheduling and scalable queues</li>\r\n</ul>\r\n<ul>\r\n<li>AXI4-Stream payload interfaces and register control for configuration and status</li>\r\n</ul>\r\n<ul>\r\n<li>Works with 200 GbE MAC and PCS blocks including RS-FEC where required</li>\r\n</ul>\r\n<ul>\r\n<li>Reference projects for half duplex and full duplex tests, ping reply, parameter setting, and integrated throughput apps</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Why Macnica?",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Queue sizing and connection planning for 200G targets, including jumbo MTU recommendations</li>\r\n</ul>\r\n<ul>\r\n<li>Transceiver and RS-FEC configuration on Agilex F-Tile, plus validated MAC selections for 200G links</li>\r\n</ul>\r\n<ul>\r\n<li>Lab validation plans for soak tests and packet integrity at line rate</li>\r\n</ul>\r\n<ul>\r\n<li>Integration with NVMe or NVMe over TCP storage paths for capture and replay</li>\r\n</ul>\r\n<ul>\r\n<li>Supply and evaluation hardware coordination so you can move from demo to pilot without stalls</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/macnica-workflow-diagram.jpg",
+     "alt": "Macnica + Toppan",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Key Specifications",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li><b>Ethernet:</b> 200 GbE</li>\r\n</ul>\r\n<ul>\r\n<li><b>User interfaces:</b> AXI4-Stream for Tx and Rx, register interface for control and stats</li>\r\n</ul>\r\n<ul>\r\n<li><b>Resources:</b> Pure RTL, no external DDR, no embedded CPU in the data path</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Typical Applications",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>200G packet brokers, recorders, and telemetry pumps</li>\r\n</ul>\r\n<ul>\r\n<li>Remote capture to storage nodes and NVMe over TCP front ends</li>\r\n</ul>\r\n<ul>\r\n<li>Market data and analytics gateways that require stateful transport</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Resources",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "download_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "download_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "dg ipcore brochure",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/downloads/dg-ipcore-brochure.pdf",
+     "sling:resourceType": "macnicaglobal2/components/content/download"
+    }
+   },
+   "download_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "download_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "dg toe200gadvip data sheet intel",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_toe200gadvip_data_sheet_intel.pdf",
+     "sling:resourceType": "macnicaglobal2/components/content/download"
+    }
+   },
+   "heading_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Get Started",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>Share target sessions, MTU, and throughput budget. We will size queues, recommend a 200G MAC configuration, and map a demo on your Agilex board.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-Logo-TOE200G-IP_225.jpg",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   }
+  }
+ }
+}

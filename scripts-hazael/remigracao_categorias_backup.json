@@ -1,0 +1,2890 @@
+{
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   },
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Design Gateway FPGA IP Solutions & ASIC IP Solutions",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Why Macnica for Design Gateway FPGA IP Solutions?",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Faster path to working silicon with Macnica engineering and supply chain support</li>\r\n</ul>\r\n<ul>\r\n<li>Boards, kits, and adapters to bring up NVMe, TCP, and UDP quickly</li>\r\n</ul>\r\n<ul>\r\n<li>Application guidance for Agilex based on proven demos and training material</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Core IP & Solutions",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>NVMe-IP Host Controller, standalone NVMe host with integrated PCIe bridge and internal buffering, no CPU and no external DDR required. Multi-SSD capable.</li>\r\n</ul>\r\n<ul>\r\n<li>TOE IP, 1G to 200G, TCP Offload in pure logic to avoid high-end CPUs, with Altera reference designs to reduce bring-up time.</li>\r\n</ul>\r\n<ul>\r\n<li>UDP 10G and 25G IP, CPU-less, deterministic transport that pairs with Agilex EMAC hard IP.</li>\r\n</ul>\r\n<ul>\r\n<li>High-Speed Ethernet Connectivity, 100G to 400G paths for node-to-node links in AI and data center networks.</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Platform Focus",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Agilex 7, NVMe as external memory for high performance computing, with demo setups using MCIO SSD adapters</li>\r\n</ul>\r\n<ul>\r\n<li>Agilex 5 E-Series, improved TOE10G and UDP10G performance through 10G and 25G EMAC hard IP and Intel 7 efficiency</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Design Gateway Industries and Use Cases",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Product Lineup",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "tabs_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "tabs_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/tabs",
+     "item_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Storage IP",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellspacing=\"0\" cellpadding=\"1\" border=\"1\" width=\"100%\">\r\n<tbody><tr><th>Product</th>\r\n<th>Variant</th>\r\n<th>Interface/ Speed</th>\r\n<th>CPU Required</th>\r\n<th>Key Features</th>\r\n<th>Notable Performance/ Capacity</th>\r\n<th>Altera Support</th>\r\n</tr><tr><td width=\"12%\"><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/nvme-ip-standalone-nvme-host-for-fpgas.html\" target=\"_self\" rel=\"noopener noreferrer\">NVMe-IP (Gen5/ Gen4/ Gen3)</a></td>\r\n<td width=\"12%\">Base host controller</td>\r\n<td width=\"12%\">PCIe Gen5, Gen4, Gen3 to NVMe SSD</td>\r\n<td width=\"12%\">No</td>\r\n<td width=\"12%\">Standalone NVMe host, built-in PCIe bridge, 256 KB internal buffer, IDENTIFY/ READ/ WRITE/ SMART/ SECURE ERASE/ FLUSH; optional WRITE ZERO, SANITIZE</td>\r\n<td width=\"12%\">Sustained &gt; 11 GB/s with PCIe Gen5 SSD (platform dependent)</td>\r\n<td width=\"12%\">Agilex 7, Agilex 5 (via networked flows where applicable), Arria 10; see DG docs for board specifics</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/nvmeg4-ip-nvme-host-with-pcie-gen4-soft-ip.html\" target=\"_self\" rel=\"noopener noreferrer\">NVMeG4-IP</a></td>\r\n<td>Soft PCIe Gen4 inside</td>\r\n<td>PCIe Gen4 soft IP + NVMe</td>\r\n<td>No</td>\r\n<td>Enables NVMe on devices without Gen4 hard IP, supports multi-SSD RAID topologies</td>\r\n<td>High throughput with low FPGA resource usage</td>\r\n<td>Where Gen4 soft PCIe is applicable</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/ranvme-ip-random-access-nvme-host.html\" target=\"_self\" rel=\"noopener noreferrer\">raNVMe-IP</a></td>\r\n<td>Random access optimized</td>\r\n<td>PCIe Gen4/Gen3 to NVMe SSD</td>\r\n<td>No</td>\r\n<td>Optimized for random I/O, simple FIFO and register interfaces</td>\r\n<td>&gt; 500 K IOPS random write on high-performance NVMe SSDs</td>\r\n<td>Agilex 7, Arria 10 (per DG docs)</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/ip-software/munvme-ip-core.html\" target=\"_self\" rel=\"noopener noreferrer\">muNVMe-IP</a></td>\r\n<td>Multi-user streaming</td>\r\n<td>PCIe Gen4/Gen3 to NVMe SSD</td>\r\n<td>No</td>\r\n<td>Simultaneous multi-user access in hardware</td>\r\n<td>High-throughput concurrent streaming to single NVMe SSD</td>\r\n<td>Agilex family and others per DG docs</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/rmnvme-ip-random-access-plus-multi-user-nvme-host.html\" target=\"_self\" rel=\"noopener noreferrer\">rmNVMe-IP</a></td>\r\n<td>Random + multi-user</td>\r\n<td>PCIe Gen4/Gen3 to NVMe SSD</td>\r\n<td>No</td>\r\n<td>Combines random access and multi-user features</td>\r\n<td>Parallel read and write by multiple interfaces to one SSD</td>\r\n<td>Agilex family and others per DG docs</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/sata-ip-sata-iii-storage-for-fpgas.html\" target=\"_self\" rel=\"noopener noreferrer\">SATA-IP</a></td>\r\n<td>Link layer core</td>\r\n<td>SATA III 6 Gbps</td>\r\n<td>No for link, application layer often uses CPU in reference design</td>\r\n<td>Implements SATA link (and part of transport), connects to SSD/HDD without external PHY on supported devices</td>\r\n<td>6 Gbps link layer</td>\r\n<td>Arria 10, Cyclone 10 GX, Arria V, Cyclone V E</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/nvmetcp-ip-nvme-over-tcp-host-for-fpgas.html\" target=\"_self\" rel=\"noopener noreferrer\">NVMeTCP-IP</a></td>\r\n<td>NVMe over TCP host</td>\r\n<td>Up to 100G network path to NVMe-oF storage</td>\r\n<td>No</td>\r\n<td>Host-side NVMe/TCP controller in hardware for remote NVMe-oF access</td>\r\n<td>High-performance remote storage access; platform dependent</td>\r\n<td>Agilex and others per DG docs</td>\r\n</tr></tbody></table>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     },
+     "item_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Networking IP",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellspacing=\"0\" cellpadding=\"1\" border=\"1\" width=\"100%\">\r\n<tbody><tr><th>Product</th>\r\n<th>Category</th>\r\n<th>Interface/ Speed</th>\r\n<th>Key Features</th>\r\n<th>Latency/ Throughput</th>\r\n<th>Altera Support</th>\r\n</tr><tr><td width=\"15%\"><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/toe200G-ip-200g-tcp-offload-engine.html\">TOE200G-IP</a></td>\r\n<td>TCP Offload</td>\r\n<td>200 GbE</td>\r\n<td>Hardware TCP stack, multi-session (ADV), server and client modes, AXI4-Stream interface</td>\r\n<td>Line rate when paired with appropriate MAC/PHY</td>\r\n<td>Agilex family support via AXI and EMAC integration</td>\r\n</tr><tr><td width=\"10%\"><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/toe100g-ip-100g-tcp-offload-engine.html\">TOE100G-IP</a></td>\r\n<td width=\"10%\">TCP Offload</td>\r\n<td width=\"10%\">100 GbE</td>\r\n<td>Hardware TCP stack, server and client modes, jumbo frame support</td>\r\n<td width=\"20%\">Line rate with DG reference designs</td>\r\n<td width=\"20%\">Agilex family support via AXI and EMAC integration</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/toe25g-ip-25g-tcp-offload-engine.html\">TOE25G-IP</a></td>\r\n<td>TCP Offload</td>\r\n<td>25 GbE</td>\r\n<td>Hardware TCP, works with DG 10G25G EMAC or 25G EMAC/PCS+RS-FEC</td>\r\n<td>Low-latency with DG EMAC</td>\r\n<td>Agilex and prior Altera families per DG docs</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/toe10g-ip-10g-tcp-offload-engine.html\">TOE10G-IP</a></td>\r\n<td>TCP Offload</td>\r\n<td>10 GbE</td>\r\n<td>Hardware TCP, simple data and control interfaces, optional DG low-latency EMAC</td>\r\n<td>Low-latency, full duplex</td>\r\n<td>Agilex 5 and 7 through EMAC integration</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/udp100g-ip-100g-udp-offload.html\">UDP100G-IP</a></td>\r\n<td>UDP Offload</td>\r\n<td>100 GbE</td>\r\n<td>Hardware UDP/IP stack, FIFO data interface, programmable buffers</td>\r\n<td>High throughput at line rate, platform dependent</td>\r\n<td>Agilex 7 F-Series</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/udp25g-ip-25g-udp-offload.html\">UDP25G-IP</a></td>\r\n<td>UDP Offload</td>\r\n<td>25 GbE</td>\r\n<td>Hardware UDP/IP stack, pairs with DG 10G25G EMAC or 25G EMAC/PCS + RS-FEC</td>\r\n<td>Low-latency when used with DG EMAC</td>\r\n<td>Agilex F-Series</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/udp10g-ip-10g-udp-offload.html\">UDP10G-IP</a></td>\r\n<td>UDP Offload</td>\r\n<td>10 GbE</td>\r\n<td>Hardware UDP/IP stack, FIFO data interface, optional DG low latency EMAC</td>\r\n<td>Tx 19.2 ns, Rx 44.8 ns through DG 10G EMAC (MAC latency)</td>\r\n<td>Agilex 7 I-Series, Agilex 5 Sulfur, Arria 10</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/low-latency-emac-10g-and-25g.html\">Low-Latency EMAC 10G/25G</a></td>\r\n<td>MAC / PCS</td>\r\n<td>10 GbE, 25 GbE</td>\r\n<td>Low resource MAC; 10G Tx 19.2 ns, Rx 44.8 ns; 25G EMAC/PCS + RS-FEC option</td>\r\n<td>Very-low MAC latency; 25G loopback round-trip ~471 ns</td>\r\n<td>Pairs with UDP/TOE on Agilex</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/quic10gc-ip-cpu-less-quic-offload-for-10g.html\" target=\"_self\">QUIC10GC-IP</a></td>\r\n<td>QUIC Offload</td>\r\n<td>10 GbE</td>\r\n<td>Hardware QUIC client with TLS 1.3, integrated UDP/IP and ARP, multi-stream support, TLS_AES_128_GCM_SHA256, X25519 and HKDF-SHA256, RSA-PSS or ECDSA P-256 certificates, Avalon ST payload and register control</td>\r\n<td>Line rate at 10G when paired with the appropriate MAC and PHY, resilient under loss and jitter with QUIC congestion control</td>\r\n<td>Agilex family support via 10G EMAC and Avalon ST integration, reference designs available</td>\r\n</tr></tbody></table>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     },
+     "item_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Security IP",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellspacing=\"0\" cellpadding=\"1\" border=\"1\" width=\"100%\">\r\n<tbody><tr><th>Product</th>\r\n<th>Function</th>\r\n<th>Interface/ Speed</th>\r\n<th>Key Features</th>\r\n<th>Typical Use</th>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload.html\" target=\"_self\" rel=\"noopener noreferrer\">TLS1.3-IP</a></td>\r\n<td>Transport layer security offload</td>\r\n<td>1G to 100G</td>\r\n<td>TLS 1.3 handshake and bulk crypto in hardware, integrates with DG networking IP</td>\r\n<td>Industrial IoT, aerospace and defense, secure data in motion</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/aes256-xts-ip-data-at-rest-protection-for-nvme-and-sata.html\" target=\"_self\" rel=\"noopener noreferrer\">AES256-XTS-IP</a></td>\r\n<td>Block cipher for storage data at rest</td>\r\n<td>Core-specific</td>\r\n<td>AES-256 XTS engine in hardware</td>\r\n<td>Disk and NVMe data at rest encryption</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/aes256-gcm-ip-authenticated-encryption-for-10g-and-25g.html\" target=\"_self\" rel=\"noopener noreferrer\">AES256-GCM-IP</a></td>\r\n<td>Authenticated encryption</td>\r\n<td>Core-specific</td>\r\n<td>AES-256 GCM with authentication tag</td>\r\n<td>High speed network payload encryption</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/aes128-256-ip-compact-aes-building-block.html\" target=\"_self\" rel=\"noopener noreferrer\">AES128/256-IP</a></td>\r\n<td>Block cipher engine</td>\r\n<td>Core-specific</td>\r\n<td>AES-128 and AES-256 modes</td>\r\n<td>Embedded crypto primitives</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/sha256-ip-hardware-sha-2-hash.html\" target=\"_self\" rel=\"noopener noreferrer\">SHA256-IP</a></td>\r\n<td>Hash function</td>\r\n<td>Core-specific</td>\r\n<td>SHA2/SHA256 hardware hashing</td>\r\n<td>Integrity and authentication</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/tcam-ip-deterministic-packet-match-and-filter.html\" target=\"_self\" rel=\"noopener noreferrer\">tCAM-IP</a></td>\r\n<td>Ternary CAM</td>\r\n<td>Core-specific</td>\r\n<td>Ternary match for ACLs and filtering</td>\r\n<td>Packet classification, security filtering</td>\r\n</tr></tbody></table>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     },
+     "item_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Eval Hardware",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellspacing=\"0\" cellpadding=\"1\" border=\"1\" width=\"100%\">\r\n<tbody><tr><th>Product</th>\r\n<th>Category</th>\r\n<th>Interface/ Speed</th>\r\n<th>Capacity/ Ports</th>\r\n<th>Use Case</th>\r\n<th>Other</th>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci.html\" target=\"_self\">AB20-U2PCI</a></td>\r\n<td>Adapter Board</td>\r\n<td>PCIe x16 to 4x U.2/U.3 NVMe</td>\r\n<td>Up to 4 U.2/U.3 SSDs</td>\r\n<td>NVMe-IP evaluation and prototyping</td>\r\n<td>PCIe Gen5 capable; works with AMD and Altera dev kits</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci.html\" target=\"_self\" rel=\"noopener noreferrer\">AB19-M2PCI</a></td>\r\n<td>Adapter Board</td>\r\n<td>PCIe to 4x M.2 NVMe</td>\r\n<td>Up to 4 M.2 SSDs</td>\r\n<td>NVMe-IP evaluation and prototyping</td>\r\n<td>PCIe Gen5 capable</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc.html\" target=\"_self\" rel=\"noopener noreferrer\">AB17-M2FMC</a></td>\r\n<td>Adapter Board</td>\r\n<td>FMC to 2x M.2 NVMe</td>\r\n<td>Up to 2 M.2 SSDs</td>\r\n<td>NVMe-IP bring up on FMC carrier boards</td>\r\n<td>Works with supported FPGA dev kits</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/ab18-pciex16.html\" target=\"_self\" rel=\"noopener noreferrer\">AB18-PCIeX16</a></td>\r\n<td>Adapter Board</td>\r\n<td>PCIe x16 crossover</td>\r\n<td>x16 lane</td>\r\n<td>PCIe crossover for NVMe-IP demos</td>\r\n<td>Used in DG reference designs</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/design-gateway/ab07-usb3fmc-1-8vif.html\" target=\"_self\" rel=\"noopener noreferrer\">AB07-USB3FMC-1.8VIF</a></td>\r\n<td>Adapter Board</td>\r\n<td>USB 3.0 to FMC (1.8V I/O)</td>\r\n<td>Single FMC</td>\r\n<td>General-purpose FMC USB 3.0 interface</td>\r\n<td>I/O voltage 1.8V only</td>\r\n</tr></tbody></table>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     }
+    }
+   },
+   "heading_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Get Started",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Share your target link speed, packet rate, and SSD count. We will recommend IP cores, a resource estimate, and a demo path on your Agilex platform.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/design-gateway/design-gateway-logo.jpg",
+     "alt": "Design Gateway logo",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-stratix-10/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera® Stratix® 10 FPGA and SoC Solutions",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Altera Stratix 10 FPGAs and SoCs offer unparalleled breakthroughs in performance, power efficiency, density, and system integration. The innovative Altera Hyperflex FPGA Architecture, combined with the Altera14 nm Tri-Gate process, powers the Altera Stratix 10 devices to deliver an impressive 2X core performance increase compared to previous-generation high-performance FPGAs, all while consuming up to 70% less power†. These advancements make Altera FPGAs and SoCs a game-changer in the industry, providing unparalleled benefits for users who require top-of-the-line performance and power efficiency.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera® Stratix® 10 Applications",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Communications",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>400G/500G/1T optical transmission</li>\r\n<li>200G/400G bridging and aggregation</li>\r\n<li>982 MHz remote radio head</li>\r\n<li>Mobile backhaul</li>\r\n<li>5G wireless communications</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/communications.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Computing and Storage",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Data center server acceleration</li>\r\n<li>High-performance computing (HPC)</li>\r\n<li>Oil and gas exploration</li>\r\n<li>Bioscience</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/pictures of computer server rooms.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Defense",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Next-generation radar</li>\r\n<li>Secure communications</li>\r\n<li>Avionics and guidance systems</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/defense.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Broadcast",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>High-end broadcast studio</li>\r\n<li>High-end broadcast distribution</li>\r\n<li>Headend encoder or EdgeQAM</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/broadcast.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "table_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p><br>\r\n<br>\r\n</p>\r\n<p>&nbsp;</p>\r\n<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th>Altera® Stratix® 10 GX FPGA</th>\r\n<th>Altera® Stratix® 10 SX FPGA</th>\r\n<th>Altera® Stratix® 10 TX FPGA</th>\r\n<th>Altera® Stratix® 10 MX FPGA</th>\r\n</tr><tr><td>Designed to meet the high-performance demands of high-throughput systems.</td>\r\n<td>Features hard processor system with 64-bit quad-core ARM* Cortex-A53 processor.</td>\r\n<td>Delivers the most advanced transceiver capabilities in the industry by combining H- and E- transceiver tiles.</td>\r\n<td>Essential multi-function accelerator for high-performance computing (HPC).</td>\r\n</tr><tr><td><b style=\"font-family: adobe-clean, &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, &quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, sans-serif;\"><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-gx-soc-fpga.html\">Product Overview</a></b></td>\r\n<td><b style=\"font-family: adobe-clean, &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, &quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, sans-serif;\"><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-sx-soc-fpga.html\">Product Overview</a></b></td>\r\n<td><b style=\"font-family: adobe-clean, &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, &quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, sans-serif;\"><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-tx-soc-fpga.html\">Product Overview</a></b></td>\r\n<td><b style=\"font-family: adobe-clean, &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, &quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, sans-serif;\"><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-mx-soc-fpga.html\">Product Overview</a></b></td>\r\n</tr></tbody></table>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "table_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p><br>\r\n<br>\r\n</p>\r\n<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th>Altera® Stratix® 10 DX FPGA</th>\r\n<th>Altera® Stratix® 10 NX FPGA</th>\r\n<th>Altera® Stratix® 10 AX FPGA</th>\r\n</tr><tr><td width=\"33%\">Supports Altera® Ultra Path Interconnect for direct coherent connection to future select Xeon® Scalable processors.</td>\r\n<td width=\"33%\">Designed to meet the high-performance demands of high-throughput systems.</td>\r\n<td width=\"34%\">Delivers direct RF capabilities by integrating high-performance data converters.</td>\r\n</tr><tr><td><p><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-dx-soc-fpga.html\">Product Overview</a></b></p>\r\n</td>\r\n<td><p><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-nx-soc-fpga.html\">Product Overview</a></b></p>\r\n</td>\r\n<td><p><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-mx-soc-fpga.html\">Product Overview</a></b></p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "i-Chips Scaler LSI (Large Scale Integration) Circuits",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Large Scale Integration Devices",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>i-Chips Scaler LSI (Large-Scale Integration), revolutionizes electronic devices by integrating numerous electronic components and functions onto a single chip. This advanced technology enables significant miniaturization and improved performance. In the context of video processing, the term &quot;scaler&quot; refers to the integrated circuit's capability to perform scaling or resizing functions. Found in TVs, monitors, projectors, and video processors, i-Chips Scaler LSIs convert incoming video signals to different resolutions, ensuring compatibility with various display formats. By leveraging sophisticated algorithms and signal processing techniques, i-Chips Scaler LSI large scale integration circuits analyze and modify video signals, upscaling or downscaling them to match the desired resolution or aspect ratio of the display device. Additionally, these chips may undertake additional tasks like deinterlacing, color space conversion, and noise reduction. i-Chips Scaler LSIs help in achieving optimal picture quality and seamless compatibility across different video sources and displays. They empower users to enjoy diverse video formats and resolutions on devices with varying display capabilities, providing an immersive visual experience.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Key Features of i-Chips Scaler LSI:",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li><b>High-Quality Image Scaling:</b>&nbsp;State-of-the-art algorithms that deliver superior image scaling capabilities, ensuring remarkable visual fidelity and accuracy</li>\r\n<li><b>Flexible Resolution Support:</b> With support for a wide range of input and output resolutions, integrates with diverse display systems and devices</li>\r\n<li><b>Comprehensive Format Conversion:</b> Equipped with advanced format conversion functionalities, handles conversions between various color spaces, pixel formats, and video standards</li>\r\n<li><b>Image Enhancement and Correction: </b>Edge-blending, color management, uniformity correction, and noise reduction, to optimize image quality and ensure stunning visuals</li>\r\n<li><b>Flexible Image Manipulation:</b>&nbsp;Including rotation, mirroring, flipping, warping, and overlay blending, enabling creative and dynamic visual presentations</li>\r\n<li><b>Embedded CPU and Peripherals: </b>Features an embedded CPU with cache and work RAM, allowing for efficient and flexible system integration. It also includes various peripherals such as Ethernet, USB2.0, and SD Card interfaces, expanding connectivity options</li>\r\n<li><b>Powerful Control and Configuration:</b>&nbsp;User-friendly interface to enabling precise customization and adjustment of image processing parameters</li>\r\n<li><b>Reliable and Efficient Operation: </b>Built with industry-leading reliability and efficiency in mind, i-Chips Scaler LSIs deliver exceptional performance while minimizing power consumption and heat generation.</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Applications of i-Chips Scaler LSI:",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>The versatile i-Chips Scaler LSI finds applications in various industries and domains, including:</p>\r\n<p>&nbsp;</p>\r\n<ul>\r\n<li><b>Display Systems:</b>&nbsp;Extensively used in high-resolution displays, monitors, televisions, digital signage, video walls, and projection systems to ensure optimal image quality and seamless scaling</li>\r\n<li><b>Video Processing:</b>&nbsp;Video processing systems, enabling format conversion, image enhancement, and manipulation in applications such as video broadcasting, video conferencing, surveillance, and professional video editing</li>\r\n<li><b>Medical Imaging:</b> Medical imaging devices, such as ultrasound machines, X-ray systems, and surgical displays, benefit from the advanced image scaling and manipulation capabilities while enabling precise and accurate visualization of medical data</li>\r\n<li><b>Gaming and Multimedia:</b>&nbsp;Immersive gaming industry and multimedia applications rely on i-Chips Scaler LSIs to deliver high-quality graphics, seamless image scaling, and dynamic visual effects, enhancing the overall gaming and multimedia experience.</li>\r\n<li><b>Industrial Automation:</b>&nbsp;Industrial automation systems, human-machine interfaces, and control panels to enable efficient visualization of data and enhance the user interface for improved usability and productivity</li>\r\n</ul>\r\n<p>With their exceptional performance, advanced features, and diverse applications, i-Chips Scaler LSIs are the go-to solution for companies and industries seeking top-notch image scaling and manipulation capabilities. Experience the future of visual technology with i-Chips Scaler LSI products.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "i-Chips Scaler Devices",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ichips IP00C331.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p style=\"text-align: center;\"><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c331.html\" target=\"_self\">IP00C331</a></b></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ichips ip00c733.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p style=\"text-align: center;\"><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c733a.html\" target=\"_self\">IP00C733A</a></b></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/banners/ip00c734.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p style=\"text-align: center;\"><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c734.html\" target=\"_self\">IP00C734</a></b></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/banners/IP00C755.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_7_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p style=\"text-align: center;\"><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c755.html\" target=\"_self\">IP00C755</a></b></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/banners/IP00C811_0.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_8_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_8": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p style=\"text-align: center;\"><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c811.html\" target=\"_self\">IP00C811</a></b></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/banners/IP00C812B_0.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_9_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_9": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p style=\"text-align: center;\"><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c812b.html\" target=\"_self\">IP00C812B</a></b></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "IP00C331 8k60 Picture in Picture Demo Video",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_10_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_10": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>This is a demo video that highlights the 8k60 PinP function using six units of IP00C331. The 8k60 input signal is generated by 4k30 → 8k60 conversion (x 2 sets) using two IP00C331 separately.</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "embed_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "embed_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "layout": "responsive",
+     "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+     "youtubeLoop": "false",
+     "youtubeMute": "false",
+     "youtubeRel": "false",
+     "type": "embeddable",
+     "youtubeVideoId": "LgcGWXNo_ew",
+     "sling:resourceType": "macnicaglobal2/components/content/embed",
+     "youtubeAutoPlay": "false",
+     "youtubePlaysInline": "false"
+    }
+   },
+   "heading_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Image Transition Demo Video",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_11_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_11": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>This demo video shows the image transition function using the image blending algorithm.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Applicable products:</b></p>\r\n<p>IP00C733A / IP00C734 / IP00C755 / IP00C821 / IP00C331 / IP00C814</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "embed_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "embed_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "layout": "responsive",
+     "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+     "youtubeLoop": "false",
+     "youtubeMute": "false",
+     "youtubeRel": "false",
+     "type": "embeddable",
+     "youtubeVideoId": "ieSxGKHdH08",
+     "sling:resourceType": "macnicaglobal2/components/content/embed",
+     "youtubeAutoPlay": "false",
+     "youtubePlaysInline": "false"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/agilex/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera Agilex FPGA & SoC Portfolio | Agilex 3, 5 & 9 Series",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera® Agilex 3, 5, & 9 FPGAs and SoCs",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Agilex™ 3 FPGAs and SoCs",
+     "type": "h4",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>The Agilex® 3 FPGA is designed to deliver a blend of low power consumption, high performance, and small form factors, catering to various applications. This series stands out for its ease of use, making it an attractive option for designers familiar with Cyclone and MAX FPGAs. The Agilex 3 family includes B-Series and C-Series devices, each tailored for specific use cases. B-Series FPGAs are ideal for board-, platform-, and system-level management applications, such as power sequencing and system monitoring, whereas C-Series devices are designed to meet the broader and more demanding needs of industrial, medical, data center, and telecommunication applications. This range allows for versatile deployment in environments that require the latest in FPGA architecture, with a focus on AI capabilities in compact and power-efficient packages.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "embed_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "embed_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "layout": "responsive",
+     "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+     "youtubeLoop": "false",
+     "youtubeMute": "false",
+     "youtubeRel": "false",
+     "type": "embeddable",
+     "youtubeVideoId": "uXQ275gqFOI",
+     "sling:resourceType": "macnicaglobal2/components/content/embed",
+     "youtubeAutoPlay": "false",
+     "youtubePlaysInline": "false"
+    }
+   },
+   "button_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "button_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Product Overview",
+     "linkURL": "https://www2.macnica.com/americas/web/products/semiconductors/altera/agilex/agilex-3-fpga-and-soc-overview",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Agilex™ 5 FPGAs and SoCs",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Altera Agilex 5 FPGAs offer enhanced performance and power efficiency, featuring industry-first AI Tensor Blocks, Arm Cortex-A76/A55 cores, and second-gen Hyperflex FPGA Architecture. They provide up to 2.5X performance and 50% lower power compared to Cyclone V FPGAs. With transceivers up to 28.1 Gbps, PCIe 4.0 x8, and DDR5 support, they cater to midrange FPGA applications in various markets like communication, video, industry, medical, data centers, and defense.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "table_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th>E-Series</th>\r\n<th>D-Series</th>\r\n</tr><tr><td>Optimized for power and size for intelligent applications at the edge, embedded, and more</td>\r\n<td>Optimized for performance and power efficiency - ideal for various applications across multiple markets</td>\r\n</tr><tr><td>50K - 656K LEs</td>\r\n<td>103K - 644K LEs</td>\r\n</tr><tr><td>Package size as small as 15 mm x 15 mm</td>\r\n<td>Package size as small as 23 mm x 23 mm</td>\r\n</tr><tr><td>Up to 24 x 28G transceivers</td>\r\n<td>Up to 32 x 28G transceivers</td>\r\n</tr><tr><td>Up to PCIe 4.0 x4 and 10/25GbE x6 Hard IP</td>\r\n<td>Up to PCIe 4.0 x8 and 25GbE x16 Hard IP</td>\r\n</tr><tr><td>DDR4 @ 2,667 Mbps, DDR5 @ 3,600 Mbps, LPDDR4/5 @ 3,733 Mbps</td>\r\n<td>DDR4 @ 3,200 Mbps, DDR5 @ 4,000 Mbps, LPDDR4/4x/5 @ 4,267 Mbps, QDR IV @ 2,132 Mbps</td>\r\n</tr><tr><td>Peak TOPS INT8 up to 26</td>\r\n<td>Peak TOPS INT8 up to 56</td>\r\n</tr><tr><td>18x19 Multipliers up to 1,692</td>\r\n<td>18x19 Multipliers up to3,680</td>\r\n</tr><tr><td colspan=\"2\">Multi-core Arm processors of Dual-core A55 @ 1.5 GHz and Dual-core A76 @ 1.8GHz</td>\r\n</tr><tr><td colspan=\"2\">MIPI D-PHY v2.5 at up to 3.5 Gbps per lane</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "button_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "button_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Product Overview",
+     "linkURL": "/content/macnicagwi/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button"
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Agilex™ 7 FPGAs and SoCs",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Altera Agilex 7 Series FPGAs combine 10 nm and 20 nm technologies, offering flexibility for tailored designs. Featuring Hyperflex Architecture, they provide PCIe 5.0 and Compute Express Link support ideal for data centers and networking, Agilex 7 FPGAs balance performance and power efficiency for practical applications.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "table_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\">\r\n<tbody><tr><th>&nbsp;</th>\r\n<th>F-Series</th>\r\n<th>I-Series</th>\r\n<th>M-Series</th>\r\n</tr><tr><td><b>Logic Elements</b></td>\r\n<td>573K-2.7M LE</td>\r\n<td>up to 4.0M LE</td>\r\n<td>up to 3.9M LE</td>\r\n</tr><tr><td><b>PCIe</b></td>\r\n<td>PCIe 4.0</td>\r\n<td>PCIe 5.0</td>\r\n<td>PCIe 5.0</td>\r\n</tr><tr><td><b>Memory Support</b></td>\r\n<td>DDR4</td>\r\n<td>DDR4</td>\r\n<td>LPDDR5 / DDR5/ DDR4</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "button_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "button_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Product Overview",
+     "linkURL": "/content/macnicagwi/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button"
+    }
+   },
+   "heading_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Agilex™ 9 FPGAs and SoCs",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Altera Agilex Series 9 FPGAs embody a significant advancement in FPGA technology, combining cutting-edge 7nm process technology with a wealth of integrated features. With their versatile architecture, these FPGAs are engineered to excel across diverse applications, from data centers to networking and beyond. The fusion of high-performance processors, adaptable transceivers, and sophisticated processing capabilities results in a potent platform for addressing the challenges of modern computing and communication systems. This series empowers engineers with a tool to create highly optimized, power-efficient solutions, enabling innovation across a spectrum of industries.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "table_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th>&nbsp;</th>\r\n<th>Direct RF-Series SoC FPGA<br>\r\nAGRW014</th>\r\n<th>Direct RF-Series SoC FPGA<br>\r\nAGRW027</th>\r\n<th>Direct RF-Series SoC FPGA<br>\r\nAGRM027</th>\r\n</tr><tr><td><b>Logic Elements (kLE)</b></td>\r\n<td>1437</td>\r\n<td>2693</td>\r\n<td>2693</td>\r\n</tr><tr><td><b>18x19 Multipliers</b></td>\r\n<td>9020</td>\r\n<td>17056</td>\r\n<td>17056</td>\r\n</tr><tr><td><b># of ADC/DAC</b></td>\r\n<td>4/4</td>\r\n<td>8/8</td>\r\n<td>20/16</td>\r\n</tr><tr><td><b>Sample Rate (Gsps)</b></td>\r\n<td>64/64</td>\r\n<td>64/64</td>\r\n<td>4/12</td>\r\n</tr><tr><td><b># of Bits Resolution</b></td>\r\n<td>10/10</td>\r\n<td>10/10</td>\r\n<td>14/14</td>\r\n</tr><tr><td><b>Embedded Memory (Mb)</b></td>\r\n<td>190</td>\r\n<td>2878</td>\r\n<td>287</td>\r\n</tr><tr><td><b>Quad Core ARM</b></td>\r\n<td>Yes</td>\r\n<td>Yes</td>\r\n<td>Yes</td>\r\n</tr><tr><td><b>XCVR's</b></td>\r\n<td>58G PAM-4, 32G NRZ</td>\r\n<td>58G PAM-4, 32G NRZ</td>\r\n<td>58G PAM-4, 32G NRZ</td>\r\n</tr><tr><td><b>PCIe</b></td>\r\n<td>4.0</td>\r\n<td>4.0</td>\r\n<td>4.0</td>\r\n</tr><tr><td><b>Package</b></td>\r\n<td>45x32</td>\r\n<td>52.5x42.5</td>\r\n<td>56.45</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "button_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "button_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Product Overview",
+     "linkURL": "/content/macnicagwi/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/altera/altera-agilex-badge.jpg",
+     "alt": "Altera Agilex badge",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/development-kits/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera® Agilex FPGA Development Kits",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera® Agilex FPGA Development Kits",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Agilex™ 7 Development Kit",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>The Agilex 7 FPGA Development Kit is a comprehensive platform designed to accelerate the prototyping and development of high-speed and complex applications. It is centered around the Altera Agilex 7 FPGA I-Series, offering up to 2700K logic elements for robust computational capabilities. This development kit supports advanced connectivity options, including PCIe 5.0 x16, CXL, and 400G Ethernet, making it ideal for next-generation computing, networking, and storage solutions. With features like DDR4 memory sockets for enhanced data throughput and QSFP-DD cages for high-speed networking, the kit facilitates the development of applications requiring substantial bandwidth and processing power. Additionally, it includes an array of connectors and adapters, such as MCIO x8 connectors and an active fan for cooling, ensuring reliable operation during development. Embedded software support, including a one-year license for Altera's Quartus Prime Pro Edition, rounds out this development kit, providing engineers with a robust set of tools for design, simulation, and debugging.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "table_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\">\r\n<tbody><tr><th>M-Series</th>\r\n<th>I-Series</th>\r\n</tr><tr><td width=\"50%\">Optimized for power and size for intelligent applications at the edge, embedded, and more</td>\r\n<td width=\"50%\">Optimized for performance and power efficiency - ideal for various applications across multiple markets</td>\r\n</tr><tr><td>HPS Enabled (HW &amp; SW)</td>\r\n<td>2x DDR4 DIMMs sockets</td>\r\n</tr><tr><td>2 x40 DIMM sockets supporting DDR5-5600</td>\r\n<td>2x 8GB SR DDR4 Component</td>\r\n</tr><tr><td>1 x40 DDR5-5600 component each for HPS processor memory and for fabric I/O memory</td>\r\n<td>Form Factor: PCIe, ¾ length, full height, dual width</td>\r\n</tr><tr><td>Up to PCIe 4.0 x4 and 10/25GbE x6 Hard IP</td>\r\n<td>Interfaces: R-Tile: PCIe 5.0 x16, edge fingers &amp; MCIO; F-Tile: 2x QSFPDD, 2x 28/56G</td>\r\n</tr><tr><td>DDR4 @ 2,667 Mbps, DDR5 @ 3,600 Mbps, LPDDR4/5 @ 3,733 Mbps</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>2x 16 LPDDR5 component</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>Form Factor: Tabletop</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>Interfaces: F-Tile:&nbsp;2x QSFPDD optical module, 1x QSFPDD 800 optical module,&nbsp;FMC+ connector; R-Tile: PCIe 5.0 x16 through MCIO connector</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilexr-7-fpga-m-series.html\">Product Overview</a></b></td>\r\n<td><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilex-7-i-series.html\">Product Overview</a></b></td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": " Agilex™ 5 Development Kit",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>The Agilex 5 Development Kits are tailored to provide engineers with a powerful and flexible environment for designing cutting-edge embedded and high-performance computing applications. Built around the Altera Agilex 5 FPGA, these kits offer a rich set of features to accommodate a wide range of development needs, including advanced signal processing, data analytics, and machine learning algorithms. They support high-speed data interfaces such as PCIe Gen4, enabling fast data transfer rates essential for real-time processing applications. The development kits also feature versatile memory configurations with DDR4 support, ensuring ample bandwidth and storage for complex computations. Furthermore, they include comprehensive connectivity options with multiple high-speed transceiver links and I/O expansion capabilities, facilitating the integration of custom and third-party modules. Embedded developers can leverage the included software tools and intellectual property cores to streamline the development process, from initial design to prototype testing, enhancing productivity and accelerating time to market.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "table_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th><u>E-Series Premium</u></th>\r\n<th>E-Series</th>\r\n</tr><tr><td width=\"50%\">HPS Enabled (HW &amp; SW)</td>\r\n<td width=\"50%\">HPS Enabled (HW &amp; SW)</td>\r\n</tr><tr><td>LPDDR4, DDR4, HPS DDR4 up to 2667 Mbps (component soldered) DDR Memory.</td>\r\n<td>DDR4, HPS DDR4 up to 2667 Mbps (component soldered) DDR Memory.</td>\r\n</tr><tr><td>2Gb CFG QSPI FLASH Memory</td>\r\n<td>2Gb CFG QSPI FLASH Memory</td>\r\n</tr><tr><td>Form Factor: Tabletop</td>\r\n<td>Form Factor: PCIe</td>\r\n</tr><tr><td>Interfaces: FMC+ x 1; QSFP x 2; SFP+ x 2 ; SGMII x 2; RGMII x 1; TX/RX SMA x2; IO48; USB type C and&nbsp; USB2.0; PCIe 4.0 x8 through FMC+ connector</td>\r\n<td>Interfaces: FMC+ x 1; SFP+ x 1; RJ45 x 2; HDMI 2.1; DP 2.0; USB 2/3.1; TX/RX SMA x2 (TSN); IO48, MIPI; PCIe 4.0 x8 edge connector</td>\r\n</tr><tr><td><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilextm-5-fpga-e-series-premium.html\">Product Overview</a></b></td>\r\n<td><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilex-5-e-series-065b-development-kit.html\">Product Overview</a></b></td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/altera/altera-agilex-badge.jpg",
+     "alt": "Altera Agilex badge",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/ambarella/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Ambarella Products: SoCs, CPUs, Chipsets, and More",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "embed_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "embed_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "layout": "responsive",
+     "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+     "youtubeLoop": "false",
+     "youtubeMute": "false",
+     "youtubeRel": "false",
+     "type": "embeddable",
+     "youtubeVideoId": "rCRyoARrcJ4",
+     "sling:resourceType": "macnicaglobal2/components/content/embed",
+     "youtubeAutoPlay": "false",
+     "youtubePlaysInline": "false"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Ambarella’s technologies make cameras smarter - enabling features like person detection, object classification, analytics, and more - performing complex data analysis in real time, delivering breathtaking imagery, and preserving vital system resources such as power and network bandwidth. Ambarella specializes in the development of deployable, scalable designs for intelligent cameras, offering a proven path to mass production.&nbsp;Check out our Ambarella products, SoCs, CPUs, chipsets, and more.</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p><b>What is Ambarella CVflow architecture?</b></p>\r\n<p>CVflow is Ambarella’s computer vision chip architecture. Unlike a general-purpose CPU or GPU, it uses a dedicated vision processing engine programmed with a high-level algorithm description. That design scales performance to trillions of operations per second at very low power.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Which neural network frameworks do Ambarella SoCs support?</b></p>\r\n<p>Customers map CNNs trained with industry-standard tools such as Caffe, TensorFlow, and PyTorch onto Ambarella processors. The CNN toolkit also covers ONNX. Detection, classification, and related CNN/DNN tasks run on-chip.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Which Ambarella SoCs are used for ADAS?</b></p>\r\n<p>CV2FS is for front-facing stereovision ADAS cameras and computer-vision ECUs at L2+ and higher, with CVflow AI and ASIL C compliance. CV22FS targets forward-facing monocular ADAS cameras and similar ECUs, also with ASIL C. Ambarella uses ISO 26262 processes for functional safety–certified products used in ADAS and autonomous driving.</p>\r\n<p>&nbsp;</p>\r\n<p><b>What makes Ambarella a low-power edge AI SoC choice?</b></p>\r\n<p>The SoCs and CPUs are built for embedded edge platforms such as battery-powered cameras. They can outperform competing solutions on power efficiency, sometimes by 5× or more, while matching or beating results. Compression also cuts bandwidth and storage.</p>\r\n<p>&nbsp;</p>\r\n<p><b>What does stereovision add for robotics?</b></p>\r\n<p>Stereo processing turns a 2D view into a 3D scene and can detect generic obstacles the system was not trained to recognize. CV2 is positioned for accurate 3D environmental modeling, real-time neural network performance, advanced robotics, and industrial autonomous robots.</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Ambarella N1 Family - Edge GenAI Is Here",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Ambarella’s N1 family of Edge GenAI SoCs delivers the processing power needed to run multimodal large language models (LLMs), vision-language models (VLMs), and traditional CNN networks locally, without cloud dependency. Designed for autonomous mobile robots, on-premise AI boxes, smart city security, industrial automation, and intelligent healthcare, the N1 series sets a new benchmark for AI performance per watt at the edge.</p>\r\n<p>&nbsp;</p>\r\n<p>As an authorized Ambarella distributor and value-added engineering partner, Macnica Americas provides component supply, design-in support, and technical consulting to help you bring your next N1-based design to production.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "button_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "button_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Explore the Ambarella N1 Family",
+     "linkURL": "/content/macnicagwi/americas/mai/en/products/semiconductors/ambarella/ambarella-n1-soc",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Why Choose Ambarella Products?",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>CVflow® Chip Architecture</h3>\r\n<p>Ambarella CVflow®&nbsp;chip architecture is based on a deep understanding of core computer vision algorithms. Unlike general-purpose CPUs and GPUs, CVflow includes a dedicated vision processing engine programmed with a high-level algorithm description, allowing Ambarella architecture to scale performance to trillions of operations per second with extremely low power consumption.</p>\r\n<p>&nbsp;</p>\r\n<p>With CVflow, customers can efficiently map their own CNN networks trained with industry-standard tools (e.g., Caffe, TensorFlow, PyTorch)&nbsp;to run on Ambarella processors.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/Ambarella cvflow_0.png",
+     "alt": "Ambarella CV Flow",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>Stereovision</h3>\r\n<p>Stereo processing transforms the world from a flat 2D plane into a full 3D environment. This not only provides a richer, denser representation of the target scene, but also allows the detection of generic obstacles that the system hasn’t been trained to recognize, making navigation safer and more effective for warehouse robots, autonomous vehicles, and more.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-stereovision-lidar.png",
+     "alt": "Stereovision vs. LIDAR",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>Low Power</h3>\r\n<p>Ambarella technology products are designed to be deployed in embedded platforms on the edge (e.g., battery-powered cameras), where power consumption is a critical concern. Ambarella SoCs and CPUs consistently outperform competitive solutions in power efficiency - sometimes by 5x or more - while delivering equal or superior results.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/apac/anstek/public/zh_tw/images/technical-articles/2025h1/571236-fig-01.jpg",
+     "alt": "Low Power",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_7_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>Reduce Bandwidth &amp; Storage Costs</h3>\r\n<p>Ambarella compression technologies dramatically reduce data transmission size, slashing storage costs and bandwidth usage with Ambarella products.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/stock/bandwidth-storage.jpg",
+     "alt": "Reduce Bandwidth & Storage Costs",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_8_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_8": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>Image Quality</h3>\r\n<p>One of the hallmarks of Ambarella processors is our image processing pipeline. Encompassing everything from HDR to EIS to dewarping, our state-of-the-art ISP ensures that every frame of every video is exquisite, improving safety and enhancing the viewing experience.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/service/lens blue background.jpg",
+     "alt": "Image Quality",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_9_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_9": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>Autonomy</h3>\r\n<p>From drones to robots, from taxis to long-haul semi trucks, Ambarella’s vision processors were designed to revolutionize the way we work and travel. Our hardware platforms deliver the flexibility required to implement all levels of automation, including partial, conditional, high, and full autonomy.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/mactechproducts/Robotics-1280x720.jpeg",
+     "alt": "Autonomy",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_10_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_10": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>Functional Safety</h3>\r\n<p>As an AI silicon company offering SoCs for applications such as ADAS and autonomous driving, Ambarella has implemented an array of internal processes and procedures to ensure that their functional safety-certified products comply with ISO 26262. These strict processes and procedures touch every aspect of the work Ambarella does - from technical documentation to software engineering to VLSI - and have become an inextricable part of Ambarella culture, from top to bottom.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_7_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/dhw/public/pt/images/automotive-1024x683.png",
+     "alt": "Functional Safety",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Ambarella SoCs",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "image_8_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_8": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv72s.jpg",
+     "alt": "Ambarella CV72S",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_11_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_11": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">CV72S</h3>\r\n<p style=\"margin-left: 40.0px;\">The Ambarella CV72S SoC's combination of high performance and low power consumption makes it an ideal solution for various applications, including automotive, security cameras, drones, and other intelligent vision systems.</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "text_12_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_12": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">CV2</h3>\r\n<p style=\"margin-left: 40.0px;\">Designed for accurate 3D environmental modeling and real-time neural network performance, the CV2 chip enables advanced robotics and industrial applications, including autonomous robots.</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_9_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_9": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv2.jpg",
+     "alt": "Ambarella CV2",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_10_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_10": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv2fs.jpg",
+     "alt": "Ambarella CV2FS",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_13_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_13": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">CV2FS</h3>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">Designed for front-facing stereovision ADAS cameras, as well as computer vision ECUs for L2+ and higher levels of autonomy, the CV2FS chip features CVflow® AI processing and ASIL C compliance to enable safety-critical applications.</p>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_11_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_11": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv20aq.jpg",
+     "alt": "Ambarella CV20AQ",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_14_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_14": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">CV20AQ</h3>\r\n<p style=\"margin-left: 40.0px;\">Featuring CVflow® AI processing, the CV20AQ chip targets stereo-camera advanced driver assistance systems (ADAS), multi-camera L2+ systems, multi-camera driver monitoring systems (DMS) and occupancy monitoring solutions (OMS), multi-channel electronic mirrors with blind spot detection, and intelligent parking assistance systems.</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "text_15_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_15": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">CV22</h3>\r\n<p style=\"margin-left: 40.0px;\">Ambarella’s CV22 SoC combines advanced image processing with our powerful CVflow® computer vision architecture to deliver the next generation of intelligent robotics and industrial applications.</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_12_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_12": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv22.jpg",
+     "alt": "Ambarella CV22",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_13_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_13": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv22aq.jpg",
+     "alt": "Ambarella CV22AQ",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_16_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_16": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">CV22AQ</h3>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">The CV22AQ delivers next-generation image processing, 12MP30 video encoding, and CVflow® computer vision performance in an optimized, low-power design.</p>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_14_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_14": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv22fs.jpg",
+     "alt": "Ambarella CV22FS",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_17_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_17": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">CV22FS</h3>\r\n<p style=\"margin-left: 40.0px;\">Featuring CVflow®&nbsp;AI processing and ASIL C compliance to enable safety-critical applications, the CV22FS chip targets forward-facing monocular ADAS cameras, as well as computer vision ECUs for L2+ and higher levels of autonomy.</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "text_18_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_18": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">CV25</h3>\r\n<p style=\"margin-left: 40.0px;\">The CV25 chip combines advanced image processing and real-time CVflow®&nbsp;computer vision performance for intelligent industrial/robotics applications.</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_15_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_15": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv25.jpg",
+     "alt": "Ambarella CV25",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_16_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_16": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv25aq.jpg",
+     "alt": "Ambarella CV25AQ",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_19_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_19": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">CV25AQ</h3>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">With the lowest power consumption in the CVflow®&nbsp;family, the CV25AQ combines advanced image processing, 6MP30 video encoding, and CVflow computer vision performance.</p>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_17_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_17": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv28aq.jpg",
+     "alt": "Ambarella CV28AQ",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_20_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_20": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">CV28AQ</h3>\r\n<p style=\"margin-left: 40.0px;\">Ambarella’s AEC-Q100 qualified CV28AQ SoC combines image processing, 6MP30 video encoding/decoding, and CVflow®&nbsp;computer vision processing in a single, low-power design, making it an ideal choice to power the next generation of intelligent automotive.</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "text_21_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_21": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">CV28M</h3>\r\n<p style=\"margin-left: 40.0px;\">Our CV28M SoC is designed for intelligent applications at the edge, including smart home security, retail monitoring, consumer robotics, and occupancy monitoring. The chip’s high-performance CVflow®&nbsp;architecture provides deep neural network (DNN) computer vision processing and 4KP30 video encoding, enabling an array of computer vision-based devices.</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_18_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_18": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv28m.jpg",
+     "alt": "Ambarella CV28M",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_19_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_19": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-h22aq.jpg",
+     "alt": "Ambarella H22AQ",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_22_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_22": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">H22AQ</h3>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">An industry-leading combination of low power and high performance, the H22AQ SoC delivers image/video processing and 8MP30 video encoding/decoding in a single design.</p>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px; text-align: left;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_20_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_20": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-h32aq.jpg",
+     "alt": "Ambarella H32AQ",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_23_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_23": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">H32AQ</h3>\r\n<p style=\"margin-left: 40.0px;\">The H32AQ SoC combines 6MP30 video encoding, image/video processing, and a quad-core processor in a single, low-power design.</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "text_24_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_24": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">A12AQ</h3>\r\n<p style=\"margin-left: 40.0px;\">Engineered for electronic mirrors and automotive video recording systems, the A12AQ processor provides superior visibility even in low-light or high-contrast environments, delivering a combination of advanced image processing, high dynamic range (HDR), 3D noise filtering, smart auto exposure, and high-resolution encode performance.</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n<p style=\"margin-left: 40.0px;\">&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_21_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_21": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-a12aq.jpg",
+     "alt": "Ambarella A12AQ",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Key Features of Ambarella SoC Products",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_25_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_25": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>CNN / DNN-based processing: detection, classification, and more</li>\r\n<li>CNN toolkit for easy porting of neural networks implemented in Caffe, TensorFlow, PyTorch, or ONNX frameworks</li>\r\n<li>8KP30 video performance</li>\r\n<li>Enhanced secure boot with TrustZone® and secure memory, TRNG, OTP, Arm TBSA compliance, DRAM scrambling, and virtualization</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "text_26_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_26": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">Automotive MCU RL78/F Series</h3>\r\n<p style=\"margin-left: 40.0px;\">The RL78/Fx series microcontrollers are a family of 16-bit microcontrollers for automotive applications that combine low power consumption with high performance.</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "button_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "button_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Supplier Website",
+     "linkURL": "https://www.ambarella.com/",
+     "linkTarget": "_blank",
+     "sling:resourceType": "macnicaglobal2/components/content/button"
+    }
+   },
+   "text_27_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_27": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3 style=\"margin-left: 40.0px;\">Automotive MCU RH850 Series</h3>\r\n<p style=\"margin-left: 40.0px;\">The RH850 family is a high-performance, low-power, high-quality 32-bit microcontroller for automotive use.</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "button_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "button_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Request a Quote",
+     "linkURL": "/content/macnicagwi/americas/mai/en/request-a-quote",
+     "linkTarget": "_blank",
+     "sling:resourceType": "macnicaglobal2/components/content/button"
+    }
+   },
+   "image_22_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_22": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/ambarella/Ambarella logo transparent (300).png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-max-10/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera MAX 10 FPGA Development Kit",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>The cost-effective and compact Altera MAX 10 FPGA development kits represent a breakthrough in non-volatile integration, delivering cutting-edge processing power in a programmable logic device. These FPGAs employ TSMC's 55 nm flash technology, enabling rapid configuration and the ability to control other system components during power-up or initialization. They boast a comprehensive suite of FPGA capabilities, including analog functionality, DSP, support for Nios II Gen2 embedded soft processors, and memory controllers. These features make the Altera MAX 10 FPGA development kit an excellent option for high-volume, cost-sensitive applications requiring robust FPGA capabilities.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera® MAX® 10 Applications",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Automotive",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Built on TSMC’s 55 nm high-volume flash process tailored for the automotive industry’s rigorous safety and quality requirements</li>\r\n<li>Integrated flash provides instant-on behavior for applications requiring fast boot times such as rear-view cameras in advanced driver assistance systems (ADAS) and infotainment displays</li>\r\n<li>FPGA-class signal processing acceleration for electric vehicle (EV) applications, such as motor control, battery management, and power conversion</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/car driving on the road at night.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Industrial",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Reduced footprint, increased design security and reliability, and lower system cost</li>\r\n<li>Accurate environmental condition sensing and efficient real-time controls for motor control, I/O modules, and Internet of Things (IoT) applications</li>\r\n<li>Single-chip support for multiple industrial Ethernet protocols and machine-to-machine (M2M) communication</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/Picture9_0.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Communications",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Analog functionality for sensing board environment allows integration of power-up sequencing and system-monitoring circuitry in a single device</li>\r\n<li>High I/O count and software-based system management using the Nios II soft processor enable board management integration in an advanced, reliable, single-chip system controller</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/Picture10.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "i-Chips Scaler/Warper LSI Semiconductor Devices for Images",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Scaling and Warping Image Processing Semiconductor Products",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Warping and Scaler Large-Scale Integration (LSI) combines advanced image manipulation and scaling capabilities onto a single chip, revolutionizing electronic devices and video processing. These semiconductor devices for images with cutting-edge integration technology enable significant miniaturization, improved performance, and immersive visual experiences.</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Key Features of Warping and Scaler LSI:",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Real-time Image Transformation: Advanced algorithms and high-speed processing enable dynamic image warping, perspective correction, and distortion effects.</li>\r\n<li>Precise Scaling Functions: Capable of upscaling and downscaling video signals to match desired resolutions and aspect ratios.</li>\r\n<li>Seamless Integration: Compatible with various display systems, video processors, and applications for effortless integration and customization.</li>\r\n<li>Multi-Channel Support: Handles multiple video channels simultaneously, ideal for multi-projector setups and large-scale displays.</li>\r\n<li>Distortion Correction: Corrects geometric distortions caused by irregular surfaces or projection angles, ensuring accurate and realistic visuals.</li>\r\n<li>Customizable Parameters: User-friendly interfaces for adjusting warping and scaling parameters to achieve desired visual effects.</li>\r\n<li>High-Quality Image Processing: Delivers superior image quality with state-of-the-art algorithms and sophisticated signal processing techniques.</li>\r\n<li>Versatile Applications: Suitable for projection systems, video walls, virtual reality, augmented reality, and interactive installations.</li>\r\n<li>Enhanced Visual Experiences: Transforms ordinary images into extraordinary visual displays, providing captivating and immersive user experiences.</li>\r\n<li>Compact Form Factor: Integration of multiple functionalities into a single chip enables efficient and space-saving designs.</li>\r\n</ul>\r\n<p>With the combined power of Warping and Scaler LSIs, electronic devices can deliver exceptional image manipulation, precise scaling, and immersive visual presentations. Experience the future of video processing and visual technology with Warping and Scaler Large-Scale Integration products.</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Warping & Scaler Devices",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "table_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><td width=\"25%\"><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c341.html\" target=\"_self\">IP00C341</a><img src=\"/content/dam/macnicagwi/americas/mai/public/en/images/products/ichip/ichipip00c341silicon.png\" alt=\"\"></td>\r\n<td width=\"25%\"><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c813a.html\" target=\"_self\">IP00C813A</a><img src=\"/content/dam/macnicagwi/americas/mai/public/en/images/products/ichip/IP00C813A.jpg\" alt=\"\"></td>\r\n<td width=\"25%\"><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c814.html\" target=\"_self\">IP00C814</a><img src=\"/content/dam/macnicagwi/americas/mai/public/en/images/products/ichip/IP00C814ichips.png\" alt=\"\"></td>\r\n<td width=\"25%\"><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c821.html\" target=\"_self\">IP00C821</a><img src=\"/content/dam/macnicagwi/americas/mai/public/en/images/products/ichip/IP00C821.jpg\" alt=\"\"></td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "25 TOPS at 5W. Fanless AI Inference for Any Enclosure",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/deepx-hero-banner.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p><b>From embedded modules to high-density PCIe cards and complete systems, DEEPX delivers production AI inference where cloud and GPU solutions cannot operate. Exclusively available from Macnica.</b></p>\r\n<p>&nbsp;</p>\r\n<p>The DEEPX product line spans from a 42mm M.2 module for drones and embedded devices to high-density PCIe inference cards for multi-channel surveillance servers. The DX-M and DX-H families are deployed today in security systems, smart factories, robotics platforms, and transportation infrastructure worldwide. All products share the same SDK and model framework support.</p>\r\n<p>&nbsp;</p>\r\n<p>Macnica is the exclusive authorized distributor for North America, providing design-in support, evaluation hardware, and supply chain planning for production volumes, covering the full engagement from concept through volume ramp. Contact Macnica to request an evaluation kit or discuss your application with a field application engineer.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "DEEPX NPU Architecture Built Around Power, Thermal, and Precision",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>GPUs overheat in sealed enclosures, low-power NPUs cannot sustain production frame rates on real detection models, and cloud inference introduces round-trip latency and data egress that industrial and safety-critical systems cannot tolerate. DEEPX NPU architecture is designed specifically around these failure modes, with power envelope, thermal characteristics, and quantization fidelity treated as primary design constraints rather than secondary considerations. All performance claims are independently benchmarked against production workloads.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/deepx-npu-infographic.png",
+     "alt": "Deepx NPU Infographic",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>The DEEPX IQ8 quantization engine addresses the precision trade-off that limits most edge NPU deployments. Standard INT8 quantization reduces memory bandwidth and compute requirements but introduces accuracy degradation that requires per-layer calibration to recover. IQ8 performs INT8-width computation while preserving the numerical range of FP32 inference, delivering full-speed throughput without model accuracy loss and without manual calibration. For teams deploying YOLO-family or custom detection models, this removes a significant pre-production engineering step.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "embed_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "embed_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "layout": "responsive",
+     "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+     "youtubeLoop": "false",
+     "youtubeMute": "false",
+     "youtubeRel": "false",
+     "type": "embeddable",
+     "youtubeVideoId": "AHjXnjYb4hE",
+     "sling:resourceType": "macnicaglobal2/components/content/embed",
+     "youtubeAutoPlay": "false",
+     "youtubePlaysInline": "false"
+    }
+   },
+   "text_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>Thermal performance is validated in direct hardware comparison. Running identical workloads, the DX-M1 board surface measured 35.5 degrees C versus 60.7 degrees C for a competing chip. In sealed enclosures without active cooling, that 25-degree delta is the margin between a qualified fanless design and one that requires thermal redesign or derating at operating temperature.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "DEEPX Products: Chips, modules, PCIe cards, and Complete Systems",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>The DEEPX portfolio covers two distinct deployment scenarios. The DX-M Series are bare chips and M.2 modules for embedding directly into host systems: robots, cameras, vehicles, and edge devices. The DX-H Series are low-profile PCIe cards for servers and workstations running multi-channel video analytics and AI inference at scale. All products share the same DXNN SDK and support the same model frameworks.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/deepx-products-chips-modules.png",
+     "alt": "DEEPX Products - Chips & modules",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "tabs_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "tabs_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/tabs",
+     "item_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "DX-M1 SoCs & M.2",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><i>Embedded chip with external memory, industrial and automotive grades</i></p>\r\n<p>&nbsp;</p>\r\n<p>The DX-M1 is the flagship embedded NPU. Its external memory architecture lets designers size LPDDR4x or LPDDR5 independently of the chip, supporting up to 8GB for workloads running multiple simultaneous models. Available as a bare chip or as an M.2 2280 module with 4GB LPDDR5 onboard. AEC-Q100 Grade 3 qualified, with Grade 2 available on request. This is the only DEEPX chip with automotive-grade certification.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Best for:</b> Designs requiring memory flexibility, automotive-grade certification, or multi-model inference. Robotics platforms, industrial inspection systems, and smart city nodes.</p>\r\n<p>&nbsp;</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/dx-m1-socs-m2.png",
+       "alt": "DX-M1 SoCs and M2 Modules",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "DX-M1 SoCs and M2 Modules",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\">\r\n<tbody><tr><td width=\"120\" valign=\"top\"><p><b>AI performance</b></p>\r\n</td>\r\n<td width=\"252\" valign=\"top\"><p>25 TOPS (INT8)</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Power</b></p>\r\n</td>\r\n<td width=\"252\" valign=\"top\"><p>1 to 5W</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Memory</b></p>\r\n</td>\r\n<td width=\"252\" valign=\"top\"><p>Up to 8GB external LPDDR5</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Chip package</b></p>\r\n</td>\r\n<td width=\"252\" valign=\"top\"><p>17 x 17mm FCBGA</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Module</b></p>\r\n</td>\r\n<td width=\"252\" valign=\"top\"><p>M.2 2280, M-Key</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Host interface</b></p>\r\n</td>\r\n<td width=\"252\" valign=\"top\"><p>PCIe Gen3 x4</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Temp range</b></p>\r\n</td>\r\n<td width=\"400\" valign=\"top\"><p>-40 to 85 degrees C / AEC-Q100 Grade 3</p>\r\n</td>\r\n</tr><tr><td><b>Status</b></td>\r\n<td width=\"252\" valign=\"top\"><p>Mass production</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Get the DX-M1 datasheet",
+       "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1-Chip-AI-Accelerator-E-Brochure.pdf",
+       "linkTarget": "_blank",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "button_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Get the DX-M1 M.2 datasheet",
+       "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1-M.2-Module-AI-Accelerator-E-Brochure.pdf",
+       "linkTarget": "_blank",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     },
+     "item_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "DX-M1M SoCs & M.2",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "DX-M1M SoCs and M.2 Modules",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><i>Compact all-in-one chip and module with integrated memory, half the footprint of DX-M1</i></p>\r\n<p>&nbsp;</p>\r\n<p>The DX-M1M integrates 2GB LPDDR4x directly into the chip package, eliminating the external DRAM device and reducing module length to 42mm. The result is a complete AI accelerator in a form factor that fits where the M1 cannot: drones, dashcams, and handheld devices. Hardware-based security includes a Root of Trust and True Random Number Generator.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Best for:</b> Drones, ADAS systems, dashcams, autonomous mobile robots, and AIoT devices where size, weight, and power budget are the binding constraints.</p>\r\n<p>&nbsp;</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/dx-m1m-socs-m2.png",
+       "alt": "DX-M1M SoCs and M.2 Modules",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\">\r\n<tbody><tr><td width=\"120\" valign=\"top\"><p><b>AI performance</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"198\"><p>25 TOPS (INT8)</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Power</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"198\"><p>3W typical</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Memory</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"400\"><p>2GB integrated LPDDR4x</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Chip package</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"198\"><p>21 x 21mm FCL-BGA</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Module</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"198\"><p>M.2 2242, M+B Key</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Host interface</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"198\"><p>PCIe Gen3 x2 (module)</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Temp range</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"198\"><p>-40 to 85 degrees C industrial</p>\r\n</td>\r\n</tr><tr><td><b>Status</b></td>\r\n<td valign=\"top\" width=\"198\"><p>Mass production Q4 2025</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Get the DX-M1M datasheet",
+       "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1M-Chip-AI-Accelerator-E-Brochure.pdf",
+       "linkTarget": "_blank",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "button_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Get the DX-M1M M.2 datasheet",
+       "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1M-M.2-AI-Accelerator-E-Brochure.pdf",
+       "linkTarget": "_blank",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     },
+     "item_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "DX-H1 Quattro PCIe",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><i>100 TOPS inference card, four DX-M1 chips on one low-profile PCIe slot</i></p>\r\n<p>&nbsp;</p>\r\n<p>The DX-H1 Quattro installs into a standard PCIe x16 slot and delivers 100 TOPS at 20W TDP, enough to process up to 128 AI video channels from a single workstation, or 768 channels from a 2U server with six cards. It works alongside existing NVR or decoder infrastructure; no onboard video codec is included. The host motherboard must support PCIe bifurcation x4x4x4x4, splitting the x16 slot into four independent x4 lanes. Verify BIOS support before specifying. Compatible with Dell, HPE, Lenovo, Supermicro, and KAYTUS servers.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Best for:</b> Adding AI inference to existing camera and NVR infrastructure. Confirm BIOS bifurcation x4x4x4x4 support before selecting. Compatible with Dell, HPE, Lenovo, Supermicro, and KAYTUS servers.</p>\r\n<p>&nbsp;</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/dx- h1-quattro-pcie.png",
+       "alt": "DX-H1 Quattro PCIe Card",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "DX-H1 Quattro PCIe Card",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><td width=\"114\" valign=\"top\"><p><b>AI performance</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p>100 TOPS (INT8)</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p><b>Power</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p>20W TDP</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Memory</b></p>\r\n</td>\r\n<td width=\"400\" valign=\"top\"><p>16GB LPDDR5</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Video codec</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p>Not included</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Form factor</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p>Low-profile PCIe card</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Interface</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p>PCIe x16 (bifurcation x4x4x4x4 required)</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Dimensions</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p>68.1 x 165.9 x 16mm with heatsink</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Max channels</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p>128 channels per workstation (YOLOv5s at 25fps)</p>\r\n</td>\r\n</tr><tr><td><b>Status</b></td>\r\n<td width=\"228\" valign=\"top\"><p>Mass production</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Get the DX-H1 Quatro datasheet",
+       "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-H1-Quattro-AI-Accelerator-E-Brochure.pdf",
+       "linkTarget": "_blank",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     },
+     "item_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "DX-H1 V-NPU PCIe",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "DX-H1 V-NPU PCIe Card",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><i>Decode and infer on one card, full H.264/H.265 video pipeline with onboard codec</i></p>\r\n<p>&nbsp;</p>\r\n<p>The DX-H1 V-NPU adds hardware H.264/H.265 codec blocks alongside its dual NPUs, enabling the card to ingest, decode, and analyze live camera streams without involving the host CPU. One card handles 64 channels of 1080p decode and 50 TOPS of AI inference simultaneously, making it the right choice for new-build AI surveillance systems where eliminating separate video servers is a design goal. The PCIe interface uses x8 electrical lanes in a physical x16 slot, compatible with a broader range of server motherboards than the Quattro. DEEPX reports 82% lower hardware cost and 85% electricity savings versus GPU setups in 1,000-channel deployments over five years.<br>\r\n<br>\r\n<b>Best for:</b> New-build AI CCTV infrastructure where the goal is to consolidate decode and inference onto one card. DEEPX reports 82% lower hardware cost and 85% electricity savings versus GPU setups in 1,000-channel deployments over five years.</p>\r\n<p>&nbsp;</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/dx-h1v-npu-pcie.png",
+       "alt": "DX-H1 V-NPU PCIe Card",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><td width=\"200\" valign=\"top\"><p><b>AI performance</b></p>\r\n</td>\r\n<td width=\"400\" valign=\"top\"><p>50 TOPS (INT8)</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p><b>Power</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p>30W TDP</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Memory</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p>24GB LPDDR5</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Video codec</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p>H.264/H.265: 64CH decode, 32CH encode at 1080p 30fps</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Form factor</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p>Low-profile PCIe card</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Interface</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p>PCIe x16 physical, x8 electrical</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Dimensions</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p>68.1 x 164.3 x 18mm with heatsink</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Max channels</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p>64 channels per workstation (YOLOv5s at 30fps)</p>\r\n</td>\r\n</tr><tr><td><b>Status</b></td>\r\n<td width=\"246\" valign=\"top\"><p>Available</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Get the DX-H1 V-NPU datasheet",
+       "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-H1-V-NPU-AI-Accelerator-Codec-PCIe-Card-E-Brochure.pdf",
+       "linkTarget": "_blank",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     }
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "From Chips to Complete Systems: AI Systems with DEEPX NPUs",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>For teams that need a validated AI system without a custom hardware design cycle, the DX-AIPlayer series integrates DX-M1 NPU acceleration with onboard compute, storage, and I/O in a production-ready enclosure. Compact and expanded configurations are available to match application I/O and compute requirements.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/DX-AIBOX-M1-N97.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/DX-AIBOX-M1-i5.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "table_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><td valign=\"top\" width=\"150\"><p><b>Part Number</b></p>\r\n</td>\r\n<td width=\"266\" valign=\"top\"><p>DX-AIBOX-M1-N97-08064-A</p>\r\n</td>\r\n<td width=\"249\" valign=\"top\"><p>DX-AIBOX-M1-i5-08128-i</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"150\"><p><b>Dimensions (mm)</b></p>\r\n</td>\r\n<td width=\"266\"><p>95 x 95 x 55 mm</p>\r\n</td>\r\n<td width=\"249\"><p>81 x 150 x190 mm</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p><b>CPU</b></p>\r\n</td>\r\n<td width=\"266\"><p>Intel® Processor N97</p>\r\n</td>\r\n<td width=\"249\"><p>13th Gen Intel® Core™ i5-1340PE</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p><b>Storage</b></p>\r\n</td>\r\n<td width=\"266\"><p>eMMC Onboard 64GB</p>\r\n</td>\r\n<td width=\"249\"><p>2.5'' SATA 128GB</p>\r\n</td>\r\n</tr><tr><td><b>Memory</b></td>\r\n<td width=\"266\"><p>RAM: 8GB LPDDR5</p>\r\n</td>\r\n<td width=\"150\"><p>RAM: 8GB DDR4</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>I/O Interfaces</b></p>\r\n</td>\r\n<td><p>HDMI 2.0b x 1/DP 1.2 x 1</p>\r\n<p>Gb Ethernet (full speed) RJ-45 x 2</p>\r\n<p>RS-232/422/485 x 2</p>\r\n<p>USB 2.0 x 2 (via 10 Pin Header x 1) USB 3.2 Gen 2 x 3 (Type-A)</p>\r\n</td>\r\n<td><p>HDMI/DP,</p>\r\n<p>3 x2.5GbE LAN</p>\r\n<p>4 x COM</p>\r\n<p>6 x USB</p>\r\n<p>1 x 12-bit DIO</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Certification </b></p>\r\n</td>\r\n<td width=\"516\" colspan=\"2\"><p>KC, CE, and FCC</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Power</b></p>\r\n</td>\r\n<td width=\"266\"><p>12V DC-in, 5A</p>\r\n</td>\r\n<td width=\"249\"><p>12~28V DC, RoHS</p>\r\n</td>\r\n</tr><tr><td><b>Weight</b></td>\r\n<td width=\"266\"><p>450g</p>\r\n</td>\r\n<td width=\"249\"><p>1.88kg</p>\r\n</td>\r\n</tr><tr><td width=\"200\" valign=\"top\"><p><b>Operating Temperature</b></p>\r\n</td>\r\n<td width=\"266\"><p>0°C ~ 60° C</p>\r\n</td>\r\n<td width=\"249\"><p>-20°C ~ 60°C</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "button_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "button_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Request a quote",
+     "linkURL": "/content/macnicagwi/americas/mai/en/contact/form",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button"
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Applications Where DEEPX Is Deployed",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_7_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>DEEPX hardware is deployed across industries where real-time inference, low power consumption, and fanless operation are hard requirements.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/deepx-applications.png",
+     "alt": "Deepx Applications",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "DXNN® SDK: One Toolchain for Every DEEPX Product",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_8_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_8": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>The DXNN® SDK is the unified software stack for all DEEPX hardware. It provides a compiler that takes models from standard training frameworks and produces optimized binaries for DEEPX NPUs, applying IQ8 quantization automatically without manual per-layer tuning. The runtime supports concurrent multi-model execution and manages memory across chips.</p>\r\n<p>&nbsp;</p>\r\n<p>The SDK supports x86 and ARM aarch-64 host architectures, runs on Windows and major Linux distributions, and is compatible with containerized deployments via Docker. Software partners including Edge Impulse, CVEDIA, NetworkOptix, Nota AI, and others have pre-integrated DEEPX hardware into their platforms using the DXNN SDK.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_7_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/dxnn-sdk.png",
+     "alt": "DXNN® SDK: One Toolchain for Every DEEPX Product",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Contact Macnica Americas",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_9_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_9": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>Macnica provides evaluation hardware, design-in support, and production supply for all DEEPX products in America and Canada. Whether you are evaluating a chip for a new design or planning a production order, the team handles the full engagement from first sample through volume ramp.</p>\r\n<p>&nbsp;</p>\r\n<p>Contact Macnica to request evaluation hardware, speak to an expert, or get a quote</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "text_10_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_10": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Would you like to be added to our mailing list to receive the Macnica Americas Newsletter?</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_8_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_8": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/deepx/deepx-logo.jpg",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-arria-10/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera® Arria® 10 FPGAs and SoCs",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>The Altera Arria 10 FPGAs and SoCs offer exceptional performance at 20 nm, surpassing competing products by a full-speed grade. They also consume up to 40% less power than previous-gen FPGAs and SoCs, and feature the industry's unique hard floating-point DSP blocks that can reach speeds of 1,500 giga floating-point operations per second (GFLOPS). These advanced Altera Arria 10 devices are well-suited for a broad spectrum of end-market applications.</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera® Arria® 10 Product Table",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "table_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><td colspan=\"2\"><h5>PRODUCT LINE</h5>\r\n</td>\r\n<td><p>GX 160</p>\r\n<p>SX 160</p>\r\n</td>\r\n<td><p>GX 220</p>\r\n<p>SX 220</p>\r\n</td>\r\n<td><p>GX 220</p>\r\n<p>SX 220</p>\r\n</td>\r\n<td><p>GX 320</p>\r\n<p>SX 320</p>\r\n</td>\r\n<td><p>GX 480</p>\r\n<p>SX 480</p>\r\n</td>\r\n<td><p>GX 570</p>\r\n<p>SX 570</p>\r\n</td>\r\n<td><p>GX 660</p>\r\n<p>SX 660</p>\r\n</td>\r\n<td>GX 900</td>\r\n<td>GX 1150</td>\r\n<td>GT 900</td>\r\n<td>GT 1150</td>\r\n</tr><tr><td rowspan=\"14\">Resources</td>\r\n<td>LEs (K)</td>\r\n<td>160</td>\r\n<td>220</td>\r\n<td>270</td>\r\n<td>320</td>\r\n<td>480</td>\r\n<td>570</td>\r\n<td>660</td>\r\n<td>900</td>\r\n<td>1,150</td>\r\n<td>900</td>\r\n<td>1,150</td>\r\n</tr><tr><td>System logic elements (K)</td>\r\n<td>210</td>\r\n<td>288</td>\r\n<td>354</td>\r\n<td>419</td>\r\n<td>629</td>\r\n<td>747</td>\r\n<td>865</td>\r\n<td>1,180</td>\r\n<td>1,506</td>\r\n<td>1,180</td>\r\n<td>1,506</td>\r\n</tr><tr><td>Adaptive logic modules (ALMs)</td>\r\n<td>61,510</td>\r\n<td>83,730</td>\r\n<td>101,620</td>\r\n<td>118,730</td>\r\n<td>181,790</td>\r\n<td>217,080</td>\r\n<td>250,540</td>\r\n<td>339,620</td>\r\n<td>427,200</td>\r\n<td>339,620</td>\r\n<td>427,200</td>\r\n</tr><tr><td>Registers</td>\r\n<td>246,040</td>\r\n<td>334,920</td>\r\n<td>406,480</td>\r\n<td>474,920</td>\r\n<td>727,160</td>\r\n<td>868,320</td>\r\n<td>1,002,160</td>\r\n<td>1,358,480</td>\r\n<td>1,708,800</td>\r\n<td>1,358,480</td>\r\n<td>1,708,800</td>\r\n</tr><tr><td>M20K memory blocks</td>\r\n<td>440</td>\r\n<td>588</td>\r\n<td>750</td>\r\n<td>891</td>\r\n<td>1,438</td>\r\n<td>1,800</td>\r\n<td>2,133</td>\r\n<td>2,423</td>\r\n<td>2,713</td>\r\n<td>2,423</td>\r\n<td>2,713</td>\r\n</tr><tr><td>M20K memory (Mb)</td>\r\n<td>9</td>\r\n<td>11</td>\r\n<td>15</td>\r\n<td>17</td>\r\n<td>28</td>\r\n<td>35</td>\r\n<td>42</td>\r\n<td>47</td>\r\n<td>53</td>\r\n<td>47</td>\r\n<td>53</td>\r\n</tr><tr><td>MLAB memory (Mb)</td>\r\n<td>1.0</td>\r\n<td>1.8</td>\r\n<td>2.4</td>\r\n<td>2.8</td>\r\n<td>4.3</td>\r\n<td>5.0</td>\r\n<td>5.7</td>\r\n<td>9.2</td>\r\n<td>12.7</td>\r\n<td>9.2</td>\r\n<td>12.7</td>\r\n</tr><tr><td>Hardened single-precision floating-point multiplers/adders</td>\r\n<td>156/156</td>\r\n<td>191/191</td>\r\n<td>830/830</td>\r\n<td>985/985</td>\r\n<td>1,368/1,368</td>\r\n<td>1,523/1,523</td>\r\n<td>1,688/1,688</td>\r\n<td>1,518/1,518</td>\r\n<td>1,518/1,518</td>\r\n<td>1,518/1,518</td>\r\n<td>1,518/1,518</td>\r\n</tr><tr><td>18 x 19 multipliers</td>\r\n<td>312</td>\r\n<td>382</td>\r\n<td>1,660</td>\r\n<td>1,970</td>\r\n<td>2,736</td>\r\n<td>3,046</td>\r\n<td>3,376</td>\r\n<td>3,036</td>\r\n<td>3,036</td>\r\n<td>3,036</td>\r\n<td>3,036</td>\r\n</tr><tr><td>Peak fixed-point performance (GMACS)1</td>\r\n<td>343</td>\r\n<td>420</td>\r\n<td>1,826</td>\r\n<td>2,167</td>\r\n<td>3,010</td>\r\n<td>3,351</td>\r\n<td>3,714</td>\r\n<td>3,340</td>\r\n<td>3,340</td>\r\n<td>3,340</td>\r\n<td>3,340</td>\r\n</tr><tr><td>Peak floating-point performance (GFLOPS)</td>\r\n<td>140</td>\r\n<td>172</td>\r\n<td>747</td>\r\n<td>887</td>\r\n<td>1,231</td>\r\n<td>1,371</td>\r\n<td>1,519</td>\r\n<td>1,366</td>\r\n<td>1,366</td>\r\n<td>1,366</td>\r\n<td>1,366</td>\r\n</tr><tr><td>Global clock networks</td>\r\n<td>32</td>\r\n<td>32</td>\r\n<td>32</td>\r\n<td>32</td>\r\n<td>32</td>\r\n<td>32</td>\r\n<td>32</td>\r\n<td>32</td>\r\n<td>32</td>\r\n<td>32</td>\r\n<td>32</td>\r\n</tr><tr><td>Regional clocks</td>\r\n<td>8</td>\r\n<td>8</td>\r\n<td>8</td>\r\n<td>8</td>\r\n<td>8</td>\r\n<td>8</td>\r\n<td>16</td>\r\n<td>16</td>\r\n<td>16</td>\r\n<td>16</td>\r\n<td>16</td>\r\n</tr><tr><td>Maximum LVDS channels (1.6 G)</td>\r\n<td>120</td>\r\n<td>120</td>\r\n<td>168</td>\r\n<td>168</td>\r\n<td>222</td>\r\n<td>324</td>\r\n<td>270</td>\r\n<td>384</td>\r\n<td>384</td>\r\n<td>312</td>\r\n<td>312</td>\r\n</tr><tr><td rowspan=\"5\">Clocks, Maximum I/O Pins, and Architectural Features</td>\r\n<td>Maximum user I/O pins</td>\r\n<td>288</td>\r\n<td>288</td>\r\n<td>384</td>\r\n<td>384</td>\r\n<td>492</td>\r\n<td>696</td>\r\n<td>696</td>\r\n<td>768</td>\r\n<td>768</td>\r\n<td>624</td>\r\n<td>624</td>\r\n</tr><tr><td>Transceiver count (17.4 Gbps)</td>\r\n<td>12</td>\r\n<td>12</td>\r\n<td>24</td>\r\n<td>24</td>\r\n<td>36</td>\r\n<td>48</td>\r\n<td>48</td>\r\n<td>96</td>\r\n<td>96</td>\r\n<td>72</td>\r\n<td>72</td>\r\n</tr><tr><td>Transceiver count (25.78 Gbps)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>6</td>\r\n<td>6</td>\r\n</tr><tr><td>PCIe* hardened IP blocks (Gen3 x8)2</td>\r\n<td>1</td>\r\n<td>1</td>\r\n<td>2</td>\r\n<td>2</td>\r\n<td>2</td>\r\n<td>2</td>\r\n<td>2</td>\r\n<td>4</td>\r\n<td>4</td>\r\n<td>4</td>\r\n<td>4</td>\r\n</tr><tr><td>Maximum 3 V I/O pins</td>\r\n<td>48</td>\r\n<td>48</td>\r\n<td>48</td>\r\n<td>48</td>\r\n<td>48</td>\r\n<td>96</td>\r\n<td>96</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td colspan=\"13\">Package Options3 and I/O Pins4: General-Purpose I/O (GPIO) Count, High-Voltage I/O Count, LVDS Pairs5, and Transceiver Count</td>\r\n</tr><tr><td>U19</td>\r\n<td>U484 pin (19 mm)</td>\r\n<td>192, 48, 72, 6</td>\r\n<td>192, 48, 72, 6</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>F27</td>\r\n<td>F672 pin (27 mm)</td>\r\n<td>240, 48, 96, 12</td>\r\n<td>240, 48, 96, 12</td>\r\n<td>240, 48, 96, 12</td>\r\n<td>240, 48, 96, 12</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>F29</td>\r\n<td>F780 pin (29 mm)</td>\r\n<td>288, 48, 120, 12</td>\r\n<td>288, 48, 120, 12</td>\r\n<td>360, 48, 156, 12</td>\r\n<td>360, 48, 156, 12</td>\r\n<td>360, 48, 156, 12</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>F34</td>\r\n<td>F1152 pin (35 mm)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>384, 48, 168, 24</td>\r\n<td>384, 48, 168, 24</td>\r\n<td>492, 48, 222, 24</td>\r\n<td>492, 48, 222, 24</td>\r\n<td>492, 48, 222, 24</td>\r\n<td>504, 0, 252, 24</td>\r\n<td>504, 0, 252, 24</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>F35</td>\r\n<td>F1152 pin (35 mm)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>384, 48, 168, 24</td>\r\n<td>384, 48, 168, 24</td>\r\n<td>396, 48, 174, 36</td>\r\n<td>396, 48, 174, 36</td>\r\n<td>396, 48, 174, 36</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>KF40</td>\r\n<td>F1517 pin (40 mm)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>696, 96, 324, 36</td>\r\n<td>696, 96, 324, 36</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>NF40</td>\r\n<td>F1517 pin (40 mm)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>588, 48, 270, 48</td>\r\n<td>588, 48, 270, 48</td>\r\n<td>600, 0, 300, 48</td>\r\n<td>600, 0, 300, 48</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>RF40</td>\r\n<td>F1517 pin (40 mm)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>342, 0, 154, 66</td>\r\n<td>342, 0, 154, 66</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>NF45</td>\r\n<td>F1932 pin (45 mm)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>768, 0, 384, 48</td>\r\n<td>768, 0, 384, 48</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td>SF45</td>\r\n<td>F1932 pin (45 mm)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>624, 0, 312, 72</td>\r\n<td>624, 0, 312, 72</td>\r\n<td>624, 0, 312, 72</td>\r\n<td>624, 0, 312, 72</td>\r\n</tr><tr><td>UF45</td>\r\n<td>F1932 pin (45 mm)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>480, 0, 240, 96</td>\r\n<td>480, 0, 240, 96</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera Arria 10 Applications",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Wireless",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Remote radio head</li>\r\n<li>Mobile backhaul</li>\r\n<li>Active antenna</li>\r\n<li>Base station</li>\r\n<li>4G/Long Term Evolution (LTE) macro eNB</li>\r\n<li>Wideband Code Division Multiple Access</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/stock/wireless-antenna-544581870.jpg",
+     "alt": "Satellite antenna",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Cloud Service and Storage",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Flash cache</li>\r\n<li>Cloud</li>\r\n<li>Server</li>\r\n<li>Financial</li>\r\n<li>Bioscience</li>\r\n<li>Oil and gas</li>\r\n<li>Data center server acceleration</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/mactechproducts/iStock-943065362.jpg",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Broadcast",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Switcher</li>\r\n<li>Server</li>\r\n<li>Encoder/decoder</li>\r\n<li>Capture cards</li>\r\n<li>Editing</li>\r\n<li>Monitors</li>\r\n<li>Multiviewers</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/mactechproducts/Broadcast-ProAV_1280x720.jpg",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "table_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th>Altera® Arria® 10 GT FPGA</th>\r\n<th>Altera® Arria® 10 SX Soc FPGA</th>\r\n</tr><tr><td width=\"50%\"><p>With up to 78 full-duplex transceivers that can handle data rates up to 25.78 Gbps, the Altera® Arria® 10 GT FPGA facilitates high-speed chip-to-chip communication.</p>\r\n</td>\r\n<td width=\"50%\"><p>Equipped with up to 48 full-duplex transceivers and a dual-core ARM Cortex-A9 HPS, the Altera® Arria® 10 SX FPGA provides enhanced capabilities.</p>\r\n</td>\r\n</tr><tr><td><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-gt-soc-fpga.html\">Product Overview</a></b></td>\r\n<td><b><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-sx-soc-fpga.html\">Product Overview</a></b></td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "image_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/altera/altera-arria-badge.jpg",
+     "alt": "Altera Arria badge",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera® Cyclone® 10 FPGAs | Intel Cyclone 10 Solutions",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Altera Cyclone 10 is a family of field-programmable gate arrays (FPGAs) offering a low-power, cost-effective solution for various applications. The Cyclone 10 family includes two device families, Cyclone 10 LP, and Cyclone 10 GX, each optimized for different use cases.</p>\r\n<p>&nbsp;</p>\r\n<p>The Cyclone 10 LP family is designed for low-power, cost-sensitive applications that require a balance of power and bandwidth. It features up to 220K logic elements, 6.4 Gbps transceivers, and 1,600 Mbps DDR3 memory support. It also offers integrated intellectual property (IP) such as ARM Cortex-M1 processor, analog-to-digital converter (ADC), and digital signal processing (DSP) blocks.</p>\r\n<p>&nbsp;</p>\r\n<p>The Cyclone 10 GX family is optimized for high-performance applications that require higher bandwidth. It features up to 220K logic elements, 12.5 Gbps transceivers, and 2,666 Mbps DDR4 memory support. Altera Cyclone 10 also offers advanced processing capabilities with up to two ARM Cortex-A9 processors, hard floating-point DSP blocks, and a range of configurable I/O standards.</p>\r\n<p>&nbsp;</p>\r\n<p>Overall, Altera Cyclone 10 FPGAs offer a versatile and flexible solution for various applications such as industrial automation, smart vision, and automotive. They provide low-power, cost-effective, and high-performance options that can be customized to meet specific requirements.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "table_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th>Altera® Cyclone® 10 GX FPGA</th>\r\n<th>Altera® Cyclone® 10 LP FPGA</th>\r\n</tr><tr><td width=\"50%\"><p>Altera Cyclone 10 GX FPGAs are designed to deliver high-bandwidth performance for applications such as machine vision, video connectivity, and smart vision cameras.</p>\r\n</td>\r\n<td width=\"50%\"><p>Altera Cyclone 10 LP FPGAs are optimized for low power consumption and cost-sensitive applications.</p>\r\n</td>\r\n</tr><tr><td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-gx-fpga.html\"><b>Product Overview</b></a></td>\r\n<td><a href=\"/content/macnicagwi/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-lp-fpga.html\"><b>Product Overview</b></a></td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Altera® Cyclone® 10 LP FPGAs Product Table",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "table_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><td colspan=\"7\">PRODUCT LINE</td>\r\n<td>10CL006</td>\r\n<td>10CL010</td>\r\n<td>10CL016</td>\r\n<td>10CL025</td>\r\n<td>10CL040</td>\r\n<td>10CL055</td>\r\n<td>10CL080</td>\r\n<td>10CL120</td>\r\n</tr><tr><td rowspan=\"5\"> Resources</td>\r\n<td colspan=\"6\">Logic elements (LEs)1</td>\r\n<td>6,000</td>\r\n<td>10,000</td>\r\n<td>16,000</td>\r\n<td>25,000</td>\r\n<td>40,000</td>\r\n<td>55,000</td>\r\n<td>80,000</td>\r\n<td>120,000</td>\r\n</tr><tr><td colspan=\"6\">M9K memory blocks</td>\r\n<td>30</td>\r\n<td>46</td>\r\n<td>56</td>\r\n<td>66</td>\r\n<td>126</td>\r\n<td>260</td>\r\n<td>305</td>\r\n<td>432</td>\r\n</tr><tr><td colspan=\"6\">M9K memory size (Kb)</td>\r\n<td>270</td>\r\n<td>414</td>\r\n<td>504</td>\r\n<td>594</td>\r\n<td>1,134</td>\r\n<td>2,340</td>\r\n<td>2,745</td>\r\n<td>3,888</td>\r\n</tr><tr><td colspan=\"6\">DSP Blocks (18 x 18 multipliers)</td>\r\n<td>15</td>\r\n<td>23</td>\r\n<td>56</td>\r\n<td>66</td>\r\n<td>126</td>\r\n<td>156</td>\r\n<td>244</td>\r\n<td>288</td>\r\n</tr><tr><td colspan=\"6\">Phase-locked loops (PLL)</td>\r\n<td>2</td>\r\n<td>2</td>\r\n<td>4</td>\r\n<td>4</td>\r\n<td>4</td>\r\n<td>4</td>\r\n<td>4</td>\r\n<td>4</td>\r\n</tr><tr><td rowspan=\"3\"> I/O and Architectural Features</td>\r\n<td colspan=\"6\">Global clock networks</td>\r\n<td>10</td>\r\n<td>10</td>\r\n<td>20</td>\r\n<td>20</td>\r\n<td>20</td>\r\n<td>20</td>\r\n<td>20</td>\r\n<td>20</td>\r\n</tr><tr><td colspan=\"6\">Maximum user I/O pins</td>\r\n<td>176</td>\r\n<td>176</td>\r\n<td>340</td>\r\n<td>150</td>\r\n<td>325</td>\r\n<td>321</td>\r\n<td>423</td>\r\n<td>525</td>\r\n</tr><tr><td colspan=\"6\">Maximum LVDS channels</td>\r\n<td>65</td>\r\n<td>65</td>\r\n<td>137</td>\r\n<td>52</td>\r\n<td>124</td>\r\n<td>132</td>\r\n<td>178</td>\r\n<td>230</td>\r\n</tr><tr><td colspan=\"15\">Package Options and I/O Pins: General-Purpose I/O (GPIO) Count, LVDS Pairs</td>\r\n</tr><tr><td colspan=\"7\">M164 pin (8 mm x 8 mm, 0.5 mm pitch)</td>\r\n<td>&nbsp;</td>\r\n<td>101,26</td>\r\n<td>87, 22</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td colspan=\"7\">U256 pin (14 mm x 14 mm, 0.8 mm pitch)</td>\r\n<td>176, 65&nbsp;</td>\r\n<td>176, 65</td>\r\n<td>162, 53</td>\r\n<td>150, 52</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td colspan=\"7\">U484 pin (19 mm x 19 mm, 0.8 mm pitch)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>340, 137</td>\r\n<td>&nbsp;</td>\r\n<td>325, 124</td>\r\n<td>321, 132</td>\r\n<td>289, 110</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td colspan=\"7\">E144 pin (22 mm x 22mm, 0.5 mm pitch)</td>\r\n<td>88, 22</td>\r\n<td>88, 22</td>\r\n<td>78, 19</td>\r\n<td>76, 18</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr><tr><td colspan=\"7\">F484 pin (23 mm x 23 mm, 1.0 mm pitch)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>340, 137</td>\r\n<td>&nbsp;</td>\r\n<td>325, 124</td>\r\n<td>321, 132</td>\r\n<td>289, 110</td>\r\n<td>277, 103</td>\r\n</tr><tr><td colspan=\"7\">F780 pin (29 mm x 29 mm, 1.0 mm pitch)</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>423, 178</td>\r\n<td>525, 230</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>Numbers indicate GPIO count, LVDS pairs</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/analog-devices/jcr:content/root/container": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "content_area": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "cq:styleIds": [
+    "1717498053499"
+   ],
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Analog Devices Products, Components & Semiconductors Suppliers",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Leader in mixed signal and analog IC",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Analog Devices, Inc. (NASDAQ:&nbsp;<a href=\"https://apc01.safelinks.protection.outlook.com/?url=http%3A%2F%2Ffinance.yahoo.com%2Fq%3Fs%3DADI&amp;data=05%7C02%7CCarl.Dahlberg%40macnica.com%7C81edca398ac649b849d908dce6e103b0%7C88dda3740f00471ea2ad1727d0c0ffb6%7C0%7C0%7C638639101398311039%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=GnCxUzJ4G%2BSQBks%2F9gnJntnkOYbDlHj%2BCg4Xe7VGCiI%3D&amp;reserved=0\">ADI</a>) is a global semiconductor leader that bridges the physical and digital worlds to enable breakthroughs at the Intelligent Edge. ADI combines analog, digital, and software technologies into solutions that help drive advancements in digitized factories, mobility, and digital healthcare, combat climate change, and reliably connect humans and the world. With revenue of more than $12 billion in FY23 and approximately 26,000 people globally working alongside 125,000 global customers, ADI ensures today’s innovators stay Ahead of What’s Possible. Learn more&nbsp;&nbsp;Analog Devices products, componenents, and semiconductors at&nbsp;<a href=\"https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.analog.com%2Fen%2Findex.html&amp;data=05%7C02%7CCarl.Dahlberg%40macnica.com%7C81edca398ac649b849d908dce6e103b0%7C88dda3740f00471ea2ad1727d0c0ffb6%7C0%7C0%7C638639101398327836%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9TBQk25vyTQlz2MmpOinl961AAUhOmvEWjFZB4vxQbc%3D&amp;reserved=0\">www.analog.com</a>&nbsp;and on&nbsp;<a href=\"https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fanalog-devices&amp;data=05%7C02%7CCarl.Dahlberg%40macnica.com%7C81edca398ac649b849d908dce6e103b0%7C88dda3740f00471ea2ad1727d0c0ffb6%7C0%7C0%7C638639101398337718%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3wLjJoJ%2BaCH4Y6ERK6upgmqSrjy6XFbHmxYtiJk5F1M%3D&amp;reserved=0\">LinkedIn</a> and&nbsp;<a href=\"https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftwitter.com%2FADI_News&amp;data=05%7C02%7CCarl.Dahlberg%40macnica.com%7C81edca398ac649b849d908dce6e103b0%7C88dda3740f00471ea2ad1727d0c0ffb6%7C0%7C0%7C638639101398347909%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9G5uAk%2Ffi8alFf0kDUQHeWyD36%2FCbOd09YetAX90Z%2FA%3D&amp;reserved=0\">Twitter (X)</a>.</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "embed_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "embed_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "layout": "responsive",
+     "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+     "youtubeLoop": "false",
+     "youtubeMute": "true",
+     "youtubeRel": "false",
+     "type": "embeddable",
+     "youtubeVideoId": "UuOo3hgFLtg",
+     "sling:resourceType": "macnicaglobal2/components/content/embed",
+     "youtubeAutoPlay": "false",
+     "youtubePlaysInline": "true"
+    }
+   },
+   "table_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td style=\"text-align: center;\"><p><img src=\"/content/dam/macnicagwi/americas/mai/public/en/images/products/adi/Streamlined%20Inventory%20Management_Black.png\" alt=\"\"></p>\r\n</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n</tr><tr><td colspan=\"7\"><p style=\"text-align: center;\"><b>Streamlined Inventory Management​</b><br>\r\nOur tailored programs, like just-in-time delivery, align with your schedules and ensure 99.9% on-time delivery while reducing costs.</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "table_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td style=\"text-align: center;\"><p><img src=\"/content/dam/macnicagwi/americas/mai/public/en/images/products/adi/Flexible%20Financing_Black.png\" alt=\"\"></p>\r\n</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n</tr><tr><td colspan=\"7\"><p style=\"text-align: center;\"><b>Flexible Financing​<br>\r\n</b>Customized payment options for improved cash flow.</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "table_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "table_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td style=\"text-align: center;\"><p><img src=\"/content/dam/macnicagwi/americas/mai/public/en/images/products/adi/Quality%20Assurance_Black.png\" alt=\"\"></p>\r\n</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n</tr><tr><td colspan=\"7\"><p style=\"text-align: center;\"><b>Quality Assurance​</b><br>\r\nCertified to ISO9001:2015 and TS14949, we guarantee precision in fulfillment of authentic components that meet the highest industry quality standards.​</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Macnica and Analog Devices",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "text_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p style=\"text-align: justify;\">Our strong collaboration with Analog Devices allows us to deliver customized supply chain and technology support tailored to various industry needs.</p>\r\n<ul>\r\n<li style=\"text-align: justify;\"><b style=\"color: rgb(122,33,128);\">Authorized ADI Distributor</b>: As one of ADI's primary volume distributors, Macnica offers a wide range of ADI products, including those from Maxim Integrated and Linear Technology.​</li>\r\n<li style=\"text-align: justify;\"><b style=\"color: rgb(122,33,128);\">Supply Chain Excellence</b>: We utilize advanced warehouse management systems and logistics expertise to ensure effective inventory management, quality assurance, and supply chain optimization.​</li>\r\n<li style=\"text-align: justify;\"><b style=\"color: rgb(122,33,128);\">Technical Expertise</b>: Macnica provides comprehensive technical support, assisting customers with product integration, application development, and specialized topics such as LTspice®&nbsp;and power supply circuit design.</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/analog-devices/ADI-Logo-CMYK-FullColor-140x1001.png",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "2",
+     "width": "8"
+    }
+   }
+  }
+ }
+}

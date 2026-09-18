@@ -907,13 +907,33 @@ def extract_content(jcr_content):
     components = []
     skipped = []
 
-    def walk(node):
+    def emitir(col_width, comp):
+        """Guarda o bloco, anotando em que coluna ele nasceu."""
+        if col_width:
+            comp["colWidth"] = col_width
+        components.append(comp)
+
+    def largura_coluna(node):
+        """Largura em doze avos, quando o invólucro é uma coluna.
+
+        No GWI a coluna não tem propriedade própria: é o container que
+        carrega `cq:responsive/default/width`. width=12 (ou ausente) é
+        largura cheia, então não é coluna.
+        """
+        larg = ((node.get("cq:responsive") or {}).get("default") or {}).get("width")
+        if larg and str(larg).isdigit() and 0 < int(larg) < 12:
+            return str(larg)
+        return None
+
+    def walk(node, col_width=None):
         for name, child in list_child_nodes(node):
             rt = child.get("sling:resourceType", "")
 
-            # Invólucro puro: o conteúdo real está dentro.
+            # Invólucro puro: o conteúdo real está dentro. Se ele for uma
+            # coluna, a largura desce junto — quem produz o bloco lá no
+            # fundo precisa saber que nasce dentro de uma.
             if not rt or rt in KNOWN_CONTAINER_TYPES:
-                walk(child)
+                walk(child, largura_coluna(child) or col_width)
                 continue
 
             if rt in IGNORE_NO_CONTENT_TYPES:
@@ -922,13 +942,13 @@ def extract_content(jcr_content):
             if rt in TEXT_TYPES:
                 html = child.get("text", "")
                 if is_meaningful_text(html):
-                    components.append({"kind": "text", "html": html})
+                    emitir(col_width, {"kind": "text", "html": html})
                 continue
 
             if rt in IMAGE_TYPES:
                 ref = child.get("fileReference")
                 if ref:
-                    components.append({"kind": "image", "fileReference": ref,
+                    emitir(col_width, {"kind": "image", "fileReference": ref,
                                        "alt": child.get("alt", "")})
                 else:
                     skipped.append({"path": name, "resourceType": rt,
@@ -939,7 +959,7 @@ def extract_content(jcr_content):
             if rt in HEADING_TYPES:
                 texto = child.get("text", "")
                 if texto.strip():
-                    components.append({"kind": "heading", "text": texto,
+                    emitir(col_width, {"kind": "heading", "text": texto,
                                        "type": child.get("type", "h2")})
                 continue
 
@@ -948,14 +968,14 @@ def extract_content(jcr_content):
                 # 'text'). Vira o mesmo componente title do GLOBAL2.
                 texto = str(child.get("jcr:title", "") or "")
                 if texto.strip():
-                    components.append({"kind": "heading", "text": texto,
+                    emitir(col_width, {"kind": "heading", "text": texto,
                                        "type": child.get("type", "h2")})
                 continue
 
             if rt in BUTTON_TYPES:
                 titulo = child.get("jcr:title", "")
                 if titulo.strip():
-                    components.append({"kind": "button", "title": titulo,
+                    emitir(col_width, {"kind": "button", "title": titulo,
                                        "linkURL": child.get("linkURL", ""),
                                        "linkTarget": child.get("linkTarget", "_self")})
                 continue
@@ -968,7 +988,7 @@ def extract_content(jcr_content):
                     label = re.sub(r"\.[a-zA-Z0-9]+$", "", nome)
                     label = re.sub(r"[-_]+", " ", label)
                     label = re.sub(r"\s+", " ", label).strip() or "Download"
-                    components.append({"kind": "download", "fileReference": ref,
+                    emitir(col_width, {"kind": "download", "fileReference": ref,
                                        "label": label})
                 else:
                     skipped.append({"path": name, "resourceType": rt,
@@ -979,7 +999,7 @@ def extract_content(jcr_content):
             if rt in TABLE_TYPES:
                 html = child.get("text", "")
                 if is_meaningful_text(html):
-                    components.append({"kind": "table", "html": html})
+                    emitir(col_width, {"kind": "table", "html": html})
                 continue
 
             if rt in TABS_TYPES:
@@ -1003,7 +1023,7 @@ def extract_content(jcr_content):
                         abas.append({"title": str(titulo_aba),
                                      "components": conteudo_aba})
                 if abas:
-                    components.append({"kind": "tabs", "abas": abas})
+                    emitir(col_width, {"kind": "tabs", "abas": abas})
                 continue
 
             if rt in PRODUCTLISTING_TYPES or rt in SUPPLIERLIST_TYPES:
@@ -1019,7 +1039,7 @@ def extract_content(jcr_content):
                     # supplierlist usa 'rootPath' onde o productlisting usa
                     # 'parentPage' — normalizar para o nome que o list espera.
                     pai = child.get("parentPage") or child.get("rootPath", "")
-                    components.append({
+                    emitir(col_width, {
                         "kind": "list",
                         "listFrom": modo,
                         "pages": child.get("pages", []) if modo == "static" else [],
@@ -1046,7 +1066,7 @@ def extract_content(jcr_content):
                 # tarefa à parte, decisão já tomada para fileReference.
                 diretorio = child.get("directory", "")
                 if diretorio:
-                    components.append({
+                    emitir(col_width, {
                         "kind": "downloadlist",
                         "directory": diretorio,
                         "orderBy": child.get("orderBy", ""),
@@ -1099,7 +1119,7 @@ def extract_content(jcr_content):
                                         "categoria": "tipo_nao_reconhecido",
                                         "motivo": f"SLIDE DE CAROUSEL não reconhecido: {item_rt}"})
                 if slides:
-                    components.append({"kind": "carousel", "slides": slides})
+                    emitir(col_width, {"kind": "carousel", "slides": slides})
                 continue
 
             if rt in IMAGEPACK_TYPES:
@@ -1108,14 +1128,14 @@ def extract_content(jcr_content):
                 conteudo, skipped_pack = extract_content(child)
                 skipped.extend(skipped_pack)
                 if conteudo:
-                    components.append({"kind": "flexcontainer",
+                    emitir(col_width, {"kind": "flexcontainer",
                                        "components": conteudo})
                 continue
 
             if rt in VIDEO_TYPES:
                 vid = child.get("youtubeVideoId", "")
                 if vid:
-                    components.append({
+                    emitir(col_width, {
                         "kind": "embed",
                         "embeddableResourceType": child.get(
                             "embeddableResourceType",
@@ -1135,13 +1155,35 @@ def extract_content(jcr_content):
                     if modo == "static":
                         pages = child.get("pages", [])
                         if isinstance(pages, list) and pages:
-                            components.append({"kind": "related_static_links",
+                            emitir(col_width, {"kind": "related_static_links",
                                                "pages": pages})
                         continue  # resolvido, não é pendência
                     if modo == "children":
-                        detalhe = child.get("parentPage", "?")
-                        motivo = (f"RELATED SUGGESTIONS (modo filhos): listagem de {detalhe} "
-                                  f"— sem componente equivalente confirmado no GLOBAL2")
+                        # Mesmo destino do productlisting: o 'list' do
+                        # GLOBAL2 usa as MESMAS propriedades (listFrom,
+                        # parentPage, orderBy, sortOrder, maxItems,
+                        # childDepth) — é o caminho que o README já apontava
+                        # nas pendências 3 e 4.
+                        #
+                        # Sem isto o componente não gerava NADA no destino, e
+                        # a página perdia a lista inteira: em
+                        # `sitime-clock-buffers` sumiam as 3 irmãs (SiTime
+                        # Oscillators, Clock Generators, Jitter Cleaners) com
+                        # título e descrição. Virar pendência escondia perda
+                        # de conteúdo, não só de semântica.
+                        emitir(col_width, {
+                            "kind": "list",
+                            "listFrom": "children",
+                            "pages": [],
+                            "parentPage": child.get("parentPage", ""),
+                            "sortOrder": child.get("sortOrder", "asc"),
+                            "orderBy": child.get("orderBy", ""),
+                            "linkItems": child.get("linkItems", "true"),
+                            "childDepth": child.get("childDepth", "1"),
+                            "tagsMatch": child.get("tagsMatch", "any"),
+                            "maxItems": child.get("maxItems", ""),
+                        })
+                        continue
                     else:
                         detalhe = child.get("query") or "(sem query nem listFrom)"
                         motivo = f"RELATED SUGGESTIONS (modo tag): {detalhe}"
@@ -1158,7 +1200,7 @@ def extract_content(jcr_content):
             skipped.append({"path": name, "resourceType": rt,
                             "categoria": "tipo_nao_reconhecido",
                             "motivo": f"TIPO NÃO RECONHECIDO: {rt}"})
-            walk(child)
+            walk(child, col_width)
 
     walk(jcr_content)
     return components, skipped
@@ -1730,6 +1772,10 @@ class BlockBuilder:
         self.base = slot
         self.counters = {}
         self._bloco_n = 0
+        # Largura de coluna do PRÓXIMO bloco, em doze avos. None = largura
+        # cheia. Quem monta o payload seta isto antes de cada add(); ver
+        # o comentário em add().
+        self.col_width = None
         self._init_root()
 
     def _init_root(self):
@@ -1771,6 +1817,26 @@ class BlockBuilder:
         # simples pelo Sling — e as páginas autorais reais têm cq:styleIds
         # sempre como String[]. Confirmado comparando com test-gigadevice.
         self.payload[f"{wrap}/cq:styleIds@TypeHint"] = "String[]"
+
+        # Coluna. No GWI a largura não é propriedade do componente: fica em
+        # `cq:responsive/default/width`, em doze avos, no container que
+        # embrulha o bloco — três colunas são três `resizablecontainer`
+        # irmãos com width=4. Sem copiar isso, o destino recebe os mesmos
+        # textos empilhados em largura cheia, que foi o que aconteceu com o
+        # "Portfolio At-a-Glance" da altera.
+        #
+        # `phone` fica em 12 de propósito, como no GWI: em tela estreita as
+        # colunas voltam a empilhar.
+        if self.col_width:
+            resp = f"{wrap}/cq:responsive"
+            self.payload[f"{resp}/jcr:primaryType"] = "nt:unstructured"
+            self.payload[f"{resp}/default/jcr:primaryType"] = "nt:unstructured"
+            self.payload[f"{resp}/default/width"] = str(self.col_width)
+            self.payload[f"{resp}/default/offset"] = "0"
+            self.payload[f"{resp}/phone/jcr:primaryType"] = "nt:unstructured"
+            self.payload[f"{resp}/phone/width"] = "12"
+            self.payload[f"{resp}/phone/offset"] = "0"
+
         comp = f"{wrap}/{block_name}"
         self.payload[f"{comp}/jcr:primaryType"] = "nt:unstructured"
         self.payload[f"{comp}/sling:resourceType"] = resource_type
@@ -1819,13 +1885,25 @@ def build_content_payload(title, components, template_path, description=None,
               {"jcr:title": title, "type": "h1"})
         conta("title")
 
-    if description:
-        b.add("text_intro", "macnicaglobal2/components/content/text",
-              {"text": f"<p>{description}</p>", "textIsRich": "true"})
-        conta("text")
+    # A description NÃO vira bloco de texto. Ela é a META DESCRIPTION da
+    # origem — o build_page_payload acima já a grava em jcr:description, que
+    # é o lugar dela. Gravar também no corpo fazia a página abrir com um
+    # parágrafo que não existe em lugar nenhum da página do GWI: em
+    # `4-helio-view-hardware` era "Transform your approach to FPGA with our
+    # Helio View hardware vWorkshop...". Em `semiconductors` (17/09/2026)
+    # eram 155 páginas assim.
+    #
+    # Quando o GWI de fato MOSTRA esse texto no corpo — description bem
+    # escrita costuma repetir a primeira frase da página —, ele chega aqui
+    # pelo componente `text` da origem, via extract_content. Não se perde
+    # nada tirando o bloco daqui; ver aem_restaurar_description.py, que
+    # limpou as páginas já migradas com a mesma distinção.
 
     for comp in components:
         kind = comp["kind"]
+        # Largura da coluna em que este bloco nasceu no GWI (extract_content
+        # anota em colWidth). O BlockBuilder grava no _wrap do bloco.
+        b.col_width = comp.get("colWidth")
 
         if kind == "text":
             b.add(b.next_name("text"), "macnicaglobal2/components/content/text",
@@ -2024,6 +2102,20 @@ def add_simple_block(payload, base, comp, link, html):
     payload[f"{node}/sling:resourceType"] = resource_type
     for k, v in props_fn(comp).items():
         payload[f"{node}/{k}"] = v
+
+    # Coluna dentro de aba. Aqui não há '_wrap' — o container da aba é
+    # `layout=responsiveGrid`, então a largura vai no próprio nó do
+    # componente. É o caso do "Portfolio At-a-Glance" da altera, onde as
+    # três colunas vivem dentro da primeira aba.
+    if comp.get("colWidth"):
+        resp = f"{node}/cq:responsive"
+        payload[f"{resp}/jcr:primaryType"] = "nt:unstructured"
+        payload[f"{resp}/default/jcr:primaryType"] = "nt:unstructured"
+        payload[f"{resp}/default/width"] = str(comp["colWidth"])
+        payload[f"{resp}/default/offset"] = "0"
+        payload[f"{resp}/phone/jcr:primaryType"] = "nt:unstructured"
+        payload[f"{resp}/phone/width"] = "12"
+        payload[f"{resp}/phone/offset"] = "0"
     return True
 
 

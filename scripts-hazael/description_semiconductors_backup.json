@@ -1,0 +1,828 @@
+{
+ "/content/copia-teste/americas/mai/en/products/semiconductors/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Explore industrial semiconductors and semiconductor solutions from Macnica Americas. Find trusted components for AI, imaging, FPGAs, sensing, and more.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/4-helio-view-hardware/jcr:content/root/container/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Transform your approach to FPGA with our Helio View hardware vWorkshop. This training course guides you through setting up LCD controllers and more.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/8-helio-view-software/jcr:content/root/container/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Advance your career with the Helio View software vWorkshop. This course offers practical training in implementing graphics engines on SoC systems.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>We offer a diverse selection of Altera SoC, semiconductors, FPGA, and power products you can buy. Unleash your design with Altera solutions tailored to you.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/1-vworkshop-altera-soc-introduction/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Ready to dive into SoC development? Enroll in our vWorkshop for a detailed introduction to Altera SoC. Get hands-on experience with real hardware and more.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/2-basic-altera-soc-hps-usage/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Enhance your FPGA designs with the Altera HPS through our specialized training. Discover essential techniques for integrating HPS into your projects.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/3-adding-and-simulating-custom-soc-peripherals/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Develop your skills in creating custom SoC peripherals in our vWorkshop. Understand integration with Linux and debugging processes to refine your projects.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/5-altera-soc-power-considerations/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>See essential power considerations for SoC devices in our vWorkshop. Gain insights into Linear Technology's power solutions and board-level design strategies.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/6-altera-soc-embedded-design-suite/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Master the Altera SoC Embedded Design Suite (EDS) with our vWorkshop. Learn to develop firmware and applications on the Mpression Helio board today.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/agilex/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Explore the Altera Agilex SoC & FPGA family, including Agilex 3, 5, and 9 series: offering advanced performance. Find Altera development kits and support tools.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/agilex/agilex-3-fpga-and-soc-overview/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Discover the Agilex® 3 FPGA series, including the versatile B-Series and power-efficient C-Series, designed to enhance performance across applications.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Altera Agilex 5 FPGA and SoC with AI Tensor Block for edge AI and mid-range performance. Compare E-Series and D-Series FPGA options at Macnica Americas.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Macnica Americas provides an in-depth overview of the Altera Agilex 7 FPGA & SoC capabilities. Discover the possibilities that this solution brings to your designs.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Discover the advanced features of Altera Agilex 9 FPGAs and SoCs. Learn how Agilex 9 offers next-generation performance for data-centric applications.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-arria-10/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Explore Altera® Arria® 10 FPGAs & SoCs, delivering high performance & low power consumption for advanced applications. Learn more at Macnica Americas.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-gt-soc-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Learn about the Altera Arria 10 GT SoC FPGA, with up to 78 full-duplex transceivers for high-speed chip-to-chip and backplane communications up to 25 Gpbs.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-sx-soc-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Explore the Arria 10 SX featuring Dual ARM Cortex-A9, a versatile solution for demanding applications with exceptional performance in a streamlined package.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Explore the power of Altera Cyclone 10 FPGAs with cutting-edge technology. Elevate your projects with groundbreaking innovation. Contact us for more info!</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-gx-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Harness Altera Cyclone 10 GX FPGA for superior integration in smart vision and automotive sectors, ensuring high-speed interfacing and efficient power use.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-lp-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Discover the powerful Cyclone 10 LP FPGA with advanced architecture including embedded memory blocks and interconnects for seamless connectivity.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-holoscan/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Altera FPGAs connect high speed sensors to NVIDIA GPU compute for real time edge AI. See our Holoscan Sensor Bridge reference designs and available dev kits.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-max-10/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>The Altera MAX 10 FPGA Development Kit provides robust processing power with integrated flash, real-time controls, and more. Request a quote today.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-max-10/altera-max-10-soc-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>View the Altera® MAX® 10 datasheet at Macnica Americas. Learn about the specifications of the MAX® 10 development kit with this extensive overview.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-max-10/multi-rail-power-sequencer-monitor-reference-design-for-intel-maxr10-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Explore the versatile Multi-Rail Power Sequencer &amp; Monitor designed for MAX 10 FPGA. Customize your sequencing needs with advanced features.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-quartus-prime/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Unlock the power of Altera Quartus Prime Design Software for creating, verifying, and programming FPGAs. This tool offers advanced debugging features.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-soc-courses/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Unlock your SoC design potential with Macnica Americas' Altera courses. Explore our SoC training courses online and start mastering the Cyclone V SoC FPGA.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-stratix-10/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Experience unparalleled performance with Altera Stratix 10 FPGA and SoC. Our products offer top-tier performance, power efficiency, density, and more.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-ax-soc-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Unleash unparalleled performance and flexibility with Macnica's Altera Stratix 10 AX SoC FPGA data converter. Elevate your projects to new heights now!</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-dx-soc-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>The main objective of the Altera Stratix 10 DX FPGA and SoC FPGA devices is to meet the demands of high-bandwidth applications such as cache-coherent accelerators, custom servers for Cloud Service Providers (CSPs), and high-performance SmartNICs. These devices are the pioneers in their field as they are the first to support Altera® Ultra Path Interconnect (Altera® UPI) that enables direct coherent connection to specific future Altera® Xeon® Scalable processors.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-gx-soc-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Discover the cutting-edge Altera Stratix 10 GX SoC FPGA at Macnica Americas, ideal for high-performance applications requiring speed, flexibility & efficiency.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-mx-soc-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Experience the Altera® Stratix 10 MX FPGA, a versatile accelerator critical for high-performance computing, data centers, NFV, and broadcast applications.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-nx-soc-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Macnica Americas offers the Altera Stratix 10 NX SoC FPGA, a solution for AI acceleration and advanced processing needs. Experience unparalleled performance.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-sx-soc-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Explore the capabilities of the Altera Stratix 10 SX SoC FPGA at Macnica Americas, ideal for advanced applications requiring exceptional processing power.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-tx-soc-fpga/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Learn about the Altera® Stratix® 10 TX FPGA, specifically engineered for high-speed 5G communication, cloud computing, NFV, and optical transport networks.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/development-kits/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Browse semiconductor development kits from the Agilex™ series at Macnica Americas. From hardware to software, we've got you covered in computer tools.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilex-5-e-series-065b-development-kit/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Explore the Altera Agilex 5 E-Series 065B Development Kit - ideal for evaluating Agilex 5 FPGAs. Accelerate development with this versatile Agilex 5 platform.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilex-7-i-series/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>The Altera Agilex 7 I-Series development kit is ideal for high-speed design prototyping & testing in high-performance computing. Contact us for more info.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilexr-7-fpga-m-series/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Improve your technological performance with the Agilex® M-Series development kits by Altera®. Unleash your potential with hardware and software solutions.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilextm-5-fpga-e-series-premium/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Maximize your project's potential with the Altera Agilex 5 FPGA development board kit. This product is ideal for embedded, edge, and communications markets.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/altera/opencl-software-technology/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Enhance your FPGA development with the FPGA SDK for OpenCL from Macnica Americas. Optimize your FPGA with OpenCL software technology.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/ambarella/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Ambarella SoCs and CVflow AI processors for edge AI, ADAS, robotics, and security cameras. Explore low-power computer vision solutions from Macnica today.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/ambarella/ambarella-cv72s-soc/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Macnica Americas presents the Ambarella CV72S SoC. Dive into a new era of advanced computer vision solutions, tailored for cutting-edge visual applications.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/analog-devices/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Find Analog Devices (ADI) products & components for sale at Macnica Americas. Semiconductor supplies for healthcare, automotive, & communications industries.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/analog-devices/analog-devices-3d-time-of-flight-development-platform/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>This Industrial 3D Camera ToF Development Kit offers the ability to be very small & low power while measuring the depth at up to 6m distances. Contact us today.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/analog-devices/analog-devices-lidar-development-kit/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>The AD-FMCLIDAR1-EBZ is a proven modular hardware platform for 1D non-Scanning LIDAR development. Contact Macnica Americas & request a quote now.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/analog-devices/analog-devices-multimodal-sensor-front-ends/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>The ADPD4100 & ADPD4101 multimodal sensors are designed for advanced biometric sensing applications. Contact our sales team today & request a quote.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/analog-devices/analog-devices-radar-development-kit/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Trust in the capabilities of the Analog Devices Radar Development Kit. Macnica Americas offers advanced radar solutions powered by the EV-TINYRAD24G.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/analog-devices/analog-devices-smartmesh-ip-starter-kit/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>The DC9021B SmartMesh IP™ Starter Kit provides all the tools for evaluating SmartMesh® network performance. Request a quote today at Macnica Americas.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/analog-devices/macnica-and-adi/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Macnica Americas, an authorized volume distributor of ADI components, provides reliable solutions for cash flow and quality assurance. Contact us now.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>DEEPX, Macnica Americas, DEEPX NPU, edge AI inference, AI accelerator, fanless AI inference, embedded AI module, M.2 AI module, DX-M1, DX-M1M, DX-H1 Quattro, DX-H1 V-NPU, PCIe AI card, low power AI accelerator, industrial AI, robotics AI, smart factory AI, surveillance AI, smart city AI, AI inference hardware, DXNN SDK</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Design Gateway delivers hardwired FPGA IP and ASIC IP solutions. Visit Macnica Americas for our broad selection of Design Gateway technology products.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/nvmeg4-ip-nvme-host-with-pcie-gen4-soft-ip/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Discover NVMe Gen4 hardware solutions with MACNICA's NVMeG4-IP, a PCIe Gen4 soft IP for hosting NVMe devices efficiently. Learn more here at Macnica Americas!</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/genesys-logic/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Genesys Logic USB hub, storage, and interface ICs for USB 2.0/3.0, SATA, and PCIe. Reliable controllers for hubs, bridges, scanners, and connectivity.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>i-Chips Technology designs and offers unique semiconductor products for display applications. Contact us for details on scalar and warping LSI chips processors.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Enhance your multimedia devices with i-Chips Scaler LSI - state-of-the-art Large Scale Integration Circuits tailored for superior video quality today.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c241/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Experience seamless scaling with the i-Chips IP00C241 Memory Less Scaler LSI. An innovative semiconductor solution for enhancing visual processing.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c251/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Enhance your video processing with the i-Chips IP00C251, a 3 X 3 cross point switch LSI for 4k60Hz. Designed for seamless switching and superior video quality.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c331/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Upgrade your video applications with i-Chips IP00C331, the 4K Quad Input LSI, delivering unmatched image processing. Contact us today for more information.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c733a/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Unlock superior video scaling with the i-Chips IP00C733A quad input/output 4K scaler. Experience video processing in high-definition like never before.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c734/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Experience superior video scaling with the i-Chips IP00C734 4k60Hz up/down scaler. A cutting-edge solution for smooth upscaling and downscaling of 4K videos.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c755/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Experience superior video quality with i-Chips IP00C755, the Dual Input De-interlacer/Scaler LSI, designed to optimize multimedia applications. Contact us now.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c811/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Experience leading video technology with the i-Chips IP00C811 Dual De-interlacer/Scaler w/ Video Decoder. Elevate your video quality with advanced processing.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c812b/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Enhance your videos with the IP00C812B Dual De-interlacer/Scaler. Engineered for optimal scaling and de-interlacing, it's ideal for high-end video applications.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Discover the power of i-Chips scaler/warper LSI semiconductor devices for images at Macnica Americas. Enhance image quality with state-of-the-art technology!</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c341/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Check out the i-Chips IP00C341, equipped with 4K quad input capabilities. This video processing chip delivers impressive visuals in many professional settings.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c813a/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Enhance your AV projects with the i-Chips IP00C813A, a versatile video device that integrates advanced de-interlacing and scaling capabilities. Get a quote.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c814/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Upgrade to the i-Chips IP00C814, a 4K video processor featuring dual input & PiP support, integrated scalers, & warping. It is ideal for multi-screen setups.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c821/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>The i-Chips IP00C821 is an advanced picture-in-picture (PiP) processor with dual input capability. Contact Macnica Americas for more details on this product.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Explore the details of i-Chips Warping LSI, the cutting-edge Large Scale System Integration (LSI) device, that enables advanced warping & distortion correction.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c381/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Enhance your projects with the i-Chips IP00C381 HD video processor. With 4K input and output, it ensures superior image quality and flexible performance.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c382/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>The i-Chips IP00C382 is an advanced image processing chip designed for warping and edge-blending applications. Contact us for more info about this product.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c787/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Upgrade to the i-Chips IP00C787 for advanced video solutions in warping and edge-blending. It offers features like gamma correction and image rotation.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c788/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Optimize your display systems with the i-Chips IP00C788 image signal processor chip. It offers advanced edge-blending and image correction capabilities.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c790/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Enhance your 4K applications with the i-Chips IP00C790 image chip. Designed for edge blending, this chip offers advanced image processing features.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/infineon/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Explore Infineon semiconductors, microcontrollers, SoCs, & more for sale at Macnica Americas. These Infineon products are suitable for various applications.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/microchip/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Explore Microchip's automotive microcontrollers, semiconductors and automotive products for reliable embedded control solutions. Contact us today for details!</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems/namuga-vicon-lite/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Vicon Lite is a vision-powered access control terminal developed by Namuga, drawing on more than 20 years of camera and sensing module expertise. Vicon Lite uses multi-modal 3D facial recognition, on-device AI processing, and post-quantum encryption to deliver fast, accurate, and privacy-respecting authentication at the door. Macnica Americas is an authorized distributor of Namuga and Vicon Lite in North America, providing customers with local technical support, system integration guidance, and access to Namuga's engineering resources.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/on-semiconductor/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>We offer a wide range of ON semiconductor products, including integrated circuits, transistors & more. Find what you need for industrial automation solutions.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/renesas/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Providing leading-edge semiconductor solutions. Visit Macnica Americas to shop for leading edge Renesas products including Renesas automotive microcontrollers.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Discover SiTime’s range of MEMS timing products including oscillators, TCXOs, and synchronizers. Get SiTime products at Macnica with full technical support.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-mems-resonator-technology/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Visit us to learn about SiTime's MEMS resonator technology, a leading innovation in the semiconductor industry. We are a trusted SiTime MEMS supplier.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/toppan-3d-tof-sensing-solutions/jcr:content/root/container/content_area/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Toppan brings advanced 3D time-of-flight (ToF) sensing solutions to robotics, automation and more. Shop industrial ToF 3D image sensors at Macnica Americas!</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ }
+}

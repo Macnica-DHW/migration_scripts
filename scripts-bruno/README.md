@@ -211,9 +211,12 @@ Herdadas dos scripts antigos, ainda sem solução:
    (`sony-imx174llj-c` no GLOBAL2, migrada pelo time). Agora é copiado
    da origem, que o tem curado.
 2. **`download`** — a propriedade `fileReference` é inferida por padrão.
-3. **`relatedsuggestions` modo `children`** — vira pendência. O
-   `productlisting` (que usa as mesmas props) já foi mapeado para `list`
-   em 13/09/2026; vale aplicar o mesmo aqui.
+3. ~~**`relatedsuggestions` modo `children`**~~ — mapeado para `list`
+   em 17/09/2026, reusando o caminho do `productlisting` (as props são as
+   mesmas: `listFrom`, `parentPage`, `orderBy`, `sortOrder`, `maxItems`,
+   `childDepth`). Não era só perda de semântica: o componente não gerava
+   NADA no destino. Em `sitime-clock-buffers` sumiam as 3 páginas irmãs
+   com título e descrição. Eram 44 páginas em `semiconductors`.
 4. **`relatedsuggestions` modo static** — vira botões soltos, perdendo a
    semântica de lista. Mesma observação do item 3.
 8. **`separator`** — existe nos dois lados com o mesmo nome e sem
@@ -251,6 +254,32 @@ Herdadas dos scripts antigos, ainda sem solução:
       hífens no próprio modelo).
     - `pd_isModelNameLinkToPage`: sempre `'true'`, confirmado nos 3
       exemplos.
+14. ~~**Layout de coluna achatado**~~ — corrigido em 17/09/2026. A largura
+    da coluna não é propriedade do componente: vive em
+    `cq:responsive/default/width` (em doze avos) no container que embrulha o
+    bloco — três colunas são três `resizablecontainer` irmãos com `width=4`.
+    O extrator agora anota `colWidth` ao descer num container que é coluna, e
+    a escrita grava o `cq:responsive` no destino, com `phone=12` para empilhar
+    em tela estreita, como no GWI.
+
+    **Dois lugares de escrita, não um:** bloco de página recebe a largura no
+    `_wrap` que o `BlockBuilder` cria; bloco **dentro de aba** recebe no
+    próprio nó, porque o container da aba já é `layout=responsiveGrid` e ali
+    não existe `_wrap`. Tratar só o primeiro caso dá a impressão de resolvido
+    — as colunas do topo voltam e as das abas continuam empilhadas. Em
+    `altera` havia os dois. Eram 53 páginas em `semiconductors`.
+
+    Conferência rápida sem ler JCR: contar `aem-GridColumn--default--N` (N<12)
+    no HTML servido; zero = página inteira em largura cheia.
+
+15. **`aem_migrate.py` não normaliza a caixa do nome de destino** — ele
+    espelha a origem. Numa página cujo nome tem maiúscula no GWI
+    (`toe200G-ip-...`), rodar o migrate CRIA página nova e deixa a antiga
+    órfã: é a mesma armadilha das 29 órfãs de tq-systems, agora pelo lado do
+    migrador. Até ter decisão, quem roda em página assim precisa mover o
+    conteúdo e apagar a duplicata (ver o driver em
+    `scripts-hazael/`, que faz isso).
+
 13. **Ainda sem equivalente** (nenhum causa perda de conteúdo — o
     extrator desce dentro deles e captura texto/imagem aninhados):
 

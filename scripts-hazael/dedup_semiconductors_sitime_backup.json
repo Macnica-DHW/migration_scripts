@@ -1,0 +1,254 @@
+{
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/title_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499",
+   "1717498052331"
+  ],
+  "title": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "SiTime Network Synchronizers",
+   "type": "h1",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>SiTime’s network synchronizers support nanosecond-level synchronization in distributed systems, enabling accurate timing across communications infrastructure - even under harsh environments and variable conditions.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/carousel_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "carousel_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/carousel",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/products/sitime/images/sitime-jitter-cleaners.png",
+    "alt": "SiTime Network Synchronizers",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/text_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<h3><b>Precision Network Synchronization for IEEE 1588/PTP</b></h3>\n<p>SiTime’s network synchronizers support nanosecond-level synchronization in distributed systems, enabling accurate timing across communications infrastructure - even under harsh environments and variable conditions.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/heading_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "TimeSync™ Platform - Precision Network Synchronization",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/heading_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Nanosecond Accuracy, MEMS Reliability, Network-Wide Timing Confidence",
+   "type": "h3",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/text_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>As next-gen networks demand tighter timing across distributed architectures, the TimeSync™ Platform from SiTime delivers industry-leading precision and robustness for IEEE 1588 Precision Time Protocol (PTP), Synchronous Ethernet (SyncE), and Global Navigation Satellite System (GNSS) holdover.&nbsp;Unlike traditional quartz-based synchronizers, TimeSync™ integrates MEMS oscillators, DPLLs, and hitless switching logic in a compact, programmable device - resulting in superior resilience, smaller footprint, and longer holdover performance, even in harsh or mobile environments.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/heading_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Key Capabilities",
+   "type": "h3",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/text_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li><b>Integrated DPLL + MEMS Oscillator:&nbsp;</b>Combines digital phase-locked loop with rugged MEMS timing for sub-microsecond alignment under variable network conditions</li>\n</ul>\n<ul>\n<li><b>Hitless Reference Switching:&nbsp;</b>Maintains continuous, undisturbed operation during timing source transitions or failures</li>\n</ul>\n<ul>\n<li><b>Precision Holdover:&nbsp;</b>Maintains network sync with nanosecond-level accuracy even during GNSS loss, ideal for edge and indoor deployments</li>\n</ul>\n<ul>\n<li><b>Multi-Protocol Support:&nbsp;</b>Supports full Synchronous Ethernet and IEEE 1588 PTP timing stacks for a variety of telecom and datacom standards</li>\n</ul>\n<ul>\n<li><b>Compact Footprint:&nbsp;</b>Designed for space-constrained systems including small cells, fronthaul gateways, microwave backhaul, and C-RAN infrastructure</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/heading_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Featured Products",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/heading_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Based on SiTime Cascade II + Synchronizer devices",
+   "type": "h3",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/heading_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "SiT95147 / SiT95148",
+   "type": "h4",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/text_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>10-output network synchronizer with programmable DPLL</li>\n<li>Supports redundant inputs and reference monitoring</li>\n<li>Compatible with high-speed SerDes (up to 112 Gbps)</li>\n<li>Ideal for timing-sensitive FPGAs and SoCs in 5G basebands</li>\n</ul>\n<hr>\n&nbsp;",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/heading_7_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_7": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "SiT95145",
+   "type": "h4",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/text_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>Focused jitter cleaner with holdover capability, suitable for SyncE deployments and PTP gateways</li>\n</ul>\n<p><i>Note: These devices are often paired with Cascade™-class clock generators for complete clock tree implementations across edge routers, radio units, and backhaul systems.</i></p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/heading_8_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_8": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Applications",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/text_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>Centralized 5G Units (CU/DU split architecture)</li>\n<li>Small Cells and Macro Base Stations</li>\n<li>Fronthaul and Midhaul Gateways</li>\n<li>Microwave Backhaul and O-RAN Systems</li>\n<li>Synchronized Data Centers and Edge Cloud Deployments</li>\n<li>Automotive V2X and GNSS-denied environments</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/heading_9_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_9": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Why SiTime TimeSync™?",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers/jcr:content/root/container/table_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "table_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n<tbody><tr><th>Feature</th>\n<th>Traditional Quartz Solutions</th>\n<th>SiTime TimeSync™</th>\n</tr><tr><td width=\"33%\">Holdover Stability</td>\n<td width=\"33%\">Minutes</td>\n<td width=\"33%\">Hours+</td>\n</tr><tr><td>Vibration / Shock Resistance</td>\n<td>Low</td>\n<td>100,000 g</td>\n</tr><tr><td>Size and Integration</td>\n<td>Discrete, bulky</td>\n<td>Compact, integrated</td>\n</tr><tr><td>Hitless Switching</td>\n<td>External logic required</td>\n<td>Built-in</td>\n</tr><tr><td>Supply Chain Resilience</td>\n<td>Fragile, geographically-limited</td>\n<td>Fabless MEMS-based</td>\n</tr></tbody></table>",
+   "sling:resourceType": "macnicaglobal2/components/content/table",
+   "textIsRich": "true"
+  }
+ }
+}

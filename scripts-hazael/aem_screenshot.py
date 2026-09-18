@@ -57,6 +57,12 @@ def main():
     ap.add_argument("--altura", type=int, default=1000)
     ap.add_argument("--chrome", default="/usr/bin/google-chrome")
     ap.add_argument("--timeout", type=int, default=60000)
+    ap.add_argument("--espera", type=int, default=3000,
+                    help="ms de espera depois do load, para o site assentar")
+    ap.add_argument("--publicado", action="store_true",
+                    help="renderiza com ?wcmmode=disabled — sem os placeholders "
+                         "de 29px do modo de autoria, que inflam o espaçamento "
+                         "e enganam qualquer medição de layout")
     ap.add_argument("--base-url", default=CONFIG["base_url"])
     args = ap.parse_args()
 
@@ -77,6 +83,8 @@ def main():
     saida = args.output or (caminho.rsplit("/", 1)[-1] + ".png")
     host = args.base_url.split("//", 1)[1].rstrip("/")
     url = f"{args.base_url.rstrip('/')}{caminho}.html"
+    if args.publicado:
+        url += "?wcmmode=disabled"
 
     with sync_playwright() as pw:
         navegador = pw.chromium.launch(
@@ -87,12 +95,21 @@ def main():
         ctx.add_cookies([{"name": k, "value": v, "domain": host, "path": "/"}
                          for k, v in cookies.items()])
         pagina = ctx.new_page()
+        # 'networkidle' não assenta em parte das páginas do author: o
+        # editor mantém conexão de polling aberta e o wait estoura sempre,
+        # mesmo com a página já pintada (visto na /altera em 18/09/2026).
+        # Cai para 'load' e espera um tempo fixo para o CSS/JS do site
+        # terminar — o que interessa é o conteúdo, não o chrome do editor.
         try:
             pagina.goto(url, wait_until="networkidle", timeout=args.timeout)
-        except Exception as e:
-            print(f"[erro] não renderizou: {e}", file=sys.stderr)
-            navegador.close()
-            sys.exit(1)
+        except Exception:
+            try:
+                pagina.goto(url, wait_until="load", timeout=args.timeout)
+            except Exception as e:
+                print(f"[erro] não renderizou: {e}", file=sys.stderr)
+                navegador.close()
+                sys.exit(1)
+        pagina.wait_for_timeout(args.espera)
         titulo = pagina.title()
         pagina.screenshot(path=saida, full_page=args.full)
         navegador.close()

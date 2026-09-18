@@ -1,0 +1,150 @@
+{
+ "/content/copia-teste/americas/mai/en/products/semiconductors/canon/canon-li8020sa-250mp-cmos-sensor-0/jcr:content/root/container/content_area": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:responsive": {
+   "jcr:primaryType": "nt:unstructured",
+   "default": {
+    "jcr:primaryType": "nt:unstructured",
+    "offset": "2",
+    "width": "8"
+   }
+  },
+  "title_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Canon LI8020SA 250 MP CMOS Sensor",
+    "type": "h1",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_intro_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_intro": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>Explore more possibilities in 250 MP unprecedented resolution in a compact Canon CMOS Sensor. Capturing detail 125 times greater than in full HD resolution.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Explore More Possibilities in 250MP Resolution ",
+    "type": "h1",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "heading_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Unprecedented Resolution in a Compact CMOS Sensor",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "image_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/Canon 250Mp Color_slant_0.jpg",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  },
+  "text_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>Capturing detail 125 times greater than in full HD resolution, the LI8020SA CMOS sensor from Canon offers remarkably high 250 MP resolution to uncover more detail than ever before. This innovative, APS-H format sensor leverages a square pixel arrangement of 1.5µm x 1.5µm pixels, achieving ultra-high resolution in a compact design for use in a wide range of applications. Discover new possibilities in unparalleled resolutions with the LI8020SA CMOS Sensor from Canon.</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_3_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_3": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Unique Pixel Design Allows for Fast, Flexible Imaging at Ultra-High Resolutions",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>The Canon LI8020SA 250 MP CMOS sensor minimizes noise without sacrificing speed by sharing floating diffusion capacitance between multiple pixels, resulting in shrunken readout circuitry and larger photodiode sizes. Progressive reading of small 1.5µm pixels occurs across 16 digital output channels to handle the enormous amount of image data created by roughly 250 million effective pixels. At full resolution, the LI8020SA CMOS sensor achieves a fast frame rate of 5 FPS. With single Region of Interest (ROI) windowing, faster frame rates can be achieved through reduced resolution, creating flexibility in performance.</p>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_4_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_4": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Canon LI8020SAC CMOS Sensor Expands Possibilities in Many Applications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_3_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_3": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>For inspection, aeronautics, general manufacturing, scientific research, and transportation, the Canon LI8020SA CMOS sensor is ideal for:</p>\r\n<ul>\r\n<li>3D metrology</li>\r\n<li>Aerial mapping</li>\r\n<li>Aeronautic imaging</li>\r\n<li>Digital Archiving</li>\r\n<li>Document scanning</li>\r\n<li>Flat panel display inspection</li>\r\n<li>Intelligent traffic systems (ITS)</li>\r\n<li>Machine vision</li>\r\n<li>Medical imaging</li>\r\n<li>Packaging &amp; inspection</li>\r\n<li>Scientific research</li>\r\n<li>Security</li>\r\n<li>Wide area surveillance</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_5_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_5": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "table_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "table_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th>&nbsp;</th>\r\n<th>LI8020SAC</th>\r\n<th>LI8020SAM</th>\r\n</tr><tr><td>Filter Type</td>\r\n<td>RGB</td>\r\n<td>Monochrome</td>\r\n</tr><tr><td>Sensitivity (e/lx/sec @gain x1)</td>\r\n<td>4,600 (Green)</td>\r\n<td>11,000</td>\r\n</tr><tr><td>Resolution</td>\r\n<td colspan=\"2\">250 megapixels</td>\r\n</tr><tr><td>Effective Pixels</td>\r\n<td colspan=\"2\">19568h x 12588v</td>\r\n</tr><tr><td>Sensor Size</td>\r\n<td colspan=\"2\">29.35mm x 18.88mm</td>\r\n</tr><tr><td>Pixel Size</td>\r\n<td colspan=\"2\">1.5µm x 1.5µm</td>\r\n</tr><tr><td>Maximum Frame Rate (All Pixels)</td>\r\n<td colspan=\"2\">5 fps (Full Frame readout)</td>\r\n</tr><tr><td>Shutter Type</td>\r\n<td colspan=\"2\">Rolling</td>\r\n</tr><tr><td>Dark Random Noise</td>\r\n<td colspan=\"2\">3.8 e-rms @12 dB</td>\r\n</tr></tbody></table>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/table",
+    "textIsRich": "true"
+   }
+  },
+  "embed_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "embed_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "layout": "responsive",
+    "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+    "youtubeLoop": "false",
+    "youtubeMute": "false",
+    "youtubeRel": "false",
+    "type": "embeddable",
+    "youtubeVideoId": "Tph6TWXbBh0",
+    "sling:resourceType": "macnicaglobal2/components/content/embed",
+    "youtubeAutoPlay": "false",
+    "youtubePlaysInline": "false"
+   }
+  }
+ }
+}

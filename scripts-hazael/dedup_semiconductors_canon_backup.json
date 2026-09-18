@@ -1,0 +1,848 @@
+{
+ "/content/copia-teste/americas/mai/en/products/semiconductors/canon/canon-li5030sa-35mm-full-size-19mp-global-shutter-cmos-sensor/jcr:content/root/container/content_area": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:responsive": {
+   "jcr:primaryType": "nt:unstructured",
+   "default": {
+    "jcr:primaryType": "nt:unstructured",
+    "offset": "2",
+    "width": "8"
+   }
+  },
+  "title_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Canon LI5030SA 35mm Full Size 19MP Global Shutter CMOS Sensor",
+    "type": "h1",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_intro_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_intro": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>LI5030SA is a CMOS type of solid-state image sensor with a 35mm full frame effective pixel array of 19 Megapixels. It uses a global shutter function instead of conventional rolling shutter. It enables simultaneous exposure timing for all 19 Mega pixels. It can output an effective 5688 x 3334 pixels of video at 57.99 fps and 12bit via 24 channels of digital signal output. LI5030SA series consists of LI5030SAC (color), LI5030SAI (RGBIR), LI5030SAM (monochrome) and LI5030SAN (Naked). LI5030SAN does not have a micro lens or color filter.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "carousel_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "carousel_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/carousel",
+    "embed_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "layout": "responsive",
+     "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+     "youtubeLoop": "false",
+     "youtubeMute": "false",
+     "youtubeRel": "false",
+     "type": "embeddable",
+     "youtubeVideoId": "GBsu0cg6iAw",
+     "sling:resourceType": "macnicaglobal2/components/content/embed",
+     "youtubeAutoPlay": "false",
+     "youtubePlaysInline": "false"
+    },
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/canon_li5030sam.jpg",
+     "alt": "Canon LI5030SAM Front",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   }
+  },
+  "text_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>Full Size 19MP Global Shutter CMOS Sensor</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>LI5030SA is a CMOS type of solid-state image sensor with a 35mm full frame effective pixel array of 19 Megapixels. It uses a global shutter function instead of conventional rolling shutter. It enables simultaneous exposure timing for all 19 Mega pixels. It can output an effective 5688 x 3334 pixels of video at 57.99 fps and 12bit via 24 channels of digital signal output. LI5030SA series consists of LI5030SAC (color), LI5030SAI (RGBIR), LI5030SAM (monochrome) and LI5030SAN (Naked). LI5030SAN does not have a micro lens or color filter.</p>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "table_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "table_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"0\">\r\n<tbody><tr><th>&nbsp;</th>\r\n<th>LI5030SAC</th>\r\n<th>LI5030SAI</th>\r\n<th>LI5030SAM</th>\r\n<th>LI5030SAN</th>\r\n</tr><tr><td>Filter Type</td>\r\n<td>Color</td>\r\n<td>RGBIR</td>\r\n<td>Monochrome</td>\r\n<td>Naked</td>\r\n</tr><tr><td>Recording screen size:</td>\r\n<td colspan=\"4\">Full frame 35mm equivalent (42.12 mm x 32.64 mm)</td>\r\n</tr><tr><td>Number of effective pixels:</td>\r\n<td colspan=\"4\">5688 x 3334 (Horizontal x Vertical)</td>\r\n</tr><tr><td>Pixel size:</td>\r\n<td colspan=\"4\">6.4 μm x 6.4 μm</td>\r\n</tr><tr><td>Output format:</td>\r\n<td colspan=\"4\">LVDS output, 720Mbps@12bit</td>\r\n</tr><tr><td>Main clock frequency:</td>\r\n<td colspan=\"4\">60 MHz (recommended)</td>\r\n</tr><tr><td>Analog gain:</td>\r\n<td colspan=\"4\">0dB, 6dB, 12dB, 18dB</td>\r\n</tr><tr><td>Saturation (Typ.):</td>\r\n<td colspan=\"4\">20,000e (Typ.)</td>\r\n</tr><tr><td>Sensitivity (Typ.):</td>\r\n<td>(Green) 81,000 e/lx/sec</td>\r\n<td>(Green) 80,000 e/lx/sec</td>\r\n<td>170,000 e/lx/sec</td>\r\n<td>30,000 e/lx/sec</td>\r\n</tr><tr><td>Dark random noise (Typ.):</td>\r\n<td colspan=\"4\">1.8 erms @Analog gain 18dB</td>\r\n</tr><tr><td>Dark current (Typ.):</td>\r\n<td colspan=\"4\">28 e/sec @Analog gain 18dB, 60°C</td>\r\n</tr><tr><td>Power consumption (Typ.):</td>\r\n<td colspan=\"4\">2400 mW @57.99 fps full area</td>\r\n</tr></tbody></table>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/table",
+    "textIsRich": "true"
+   }
+  },
+  "image_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/canon/CanonLogo_Red_Web.jpg",
+    "alt": "Canon logo",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/canon/canon-li5040-5m-cmos-sensor/jcr:content/root/container/content_area": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:responsive": {
+   "jcr:primaryType": "nt:unstructured",
+   "default": {
+    "jcr:primaryType": "nt:unstructured",
+    "offset": "2",
+    "width": "8"
+   }
+  },
+  "title_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Canon LI5040 5.33M Global Shutter CMOS Sensor",
+    "type": "h1",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_intro_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_intro": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>The Canon LI5040 CMOS Sensor offers 5.33M pixels. It’s square 3.4µm x 3.4µm pixel arrangement and 2/3” frame achieves high resolution, allowing you to capture everything you need in a compact design. Find out how you can make your machine vision project a success with the LI5040 from Canon.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "carousel_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "carousel_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/carousel",
+    "embed_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "layout": "responsive",
+     "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+     "youtubeLoop": "false",
+     "youtubeMute": "false",
+     "youtubeRel": "false",
+     "type": "embeddable",
+     "youtubeVideoId": "08RPNBsq7fw",
+     "sling:resourceType": "macnicaglobal2/components/content/embed",
+     "youtubeAutoPlay": "false",
+     "youtubePlaysInline": "false"
+    },
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/canon-LI5040.jpg",
+     "alt": "Canon LI5040",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   }
+  },
+  "text_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>Capture Everything with The Compact LI5040</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>The Canon LI5040 CMOS Sensor offers 5.33M pixels. It’s square 3.4µm x 3.4µm pixel arrangement and 2/3” frame achieves high resolution, allowing you to capture everything you need in a compact design. Find out how you can make your machine vision project a success with the LI5040 from Canon.</p>\r\n<p>&nbsp;</p>\r\n<h4><b>An Industry-Leading CMOS Sensor</b></h4>\r\n<p>&nbsp;</p>\r\n<p>The 5040 is equipped with global shutter and a sensor size of 8.8 x 7.0 mm. It offers enhanced NIR sensitivity. It also provides lightning-fast frame rates of 120 fps and is available in three color options: RGB, Mono, and RGB-NIR.</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "text_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>Specialized RGB-NIR Pixel Filter Array</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>By replacing one of the green filters on a standard color CMOS sensor with a Near Infra-Red (NIR) filter, image processing from this sensor allows for the separation of visible and NIR spectrums. Discrete analysis of these bands from a single image simplifies dual sensor systems by reducing size, weight, and power (SWaP) requirements, provides added capabilities to systems that can benefit from the additional band, and enhances current solutions already detecting in both the NIR and visible wavelengths such as precision agriculture with the benefit of 120 MP resolution.</p>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "image_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-li5040-rgb-nir.jpg",
+    "alt": "Canon LI5040 RGB-NIR",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  },
+  "heading_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "heading_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "table_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "table_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"0\">\r\n<tbody><tr><th>&nbsp;</th>\r\n<th>LI5040SAC</th>\r\n<th>LI5040SAM</th>\r\n<th>LI5040SAI</th>\r\n</tr><tr><td>Filter Type</td>\r\n<td>RGB</td>\r\n<td>Monochrome</td>\r\n<td>RGB-NIR</td>\r\n</tr><tr><td>Sensitivity [e/lx/sec]</td>\r\n<td>30,000</td>\r\n<td>54,000</td>\r\n<td>30,000</td>\r\n</tr><tr><td>Resolution</td>\r\n<td colspan=\"3\">5.33 MP</td>\r\n</tr><tr><td>Pixel count</td>\r\n<td colspan=\"3\">2592 x 2056</td>\r\n</tr><tr><td>Pixel pitch</td>\r\n<td colspan=\"3\">3.4 μm</td>\r\n</tr><tr><td>Sensor Size</td>\r\n<td colspan=\"3\">2/3 inch (8.8 x 7.0 mm)</td>\r\n</tr><tr><td>Shutter Type</td>\r\n<td colspan=\"3\">Global</td>\r\n</tr><tr><td>Enhanced NIR sensitivity</td>\r\n<td colspan=\"3\">Yes</td>\r\n</tr><tr><td>Frame rate</td>\r\n<td colspan=\"3\">120 fps</td>\r\n</tr></tbody></table>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/table",
+    "textIsRich": "true"
+   }
+  },
+  "image_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "image_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/canon/CanonLogo_Red_Web.jpg",
+    "alt": "Canon logo",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/canon/canon-li5070sa-cmos-sensor/jcr:content/root/container/content_area": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:responsive": {
+   "jcr:primaryType": "nt:unstructured",
+   "default": {
+    "jcr:primaryType": "nt:unstructured",
+    "offset": "2",
+    "width": "8"
+   }
+  },
+  "title_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Canon LI5070SA CMOS Sensor",
+    "type": "h1",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_intro_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_intro": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>The Canon LI5070SA CMOS Sensor, available in RGB, offers 10M pixels in a Super35 format. It’s global shutter, square 6.4μm x 6.4μm pixel arrangement and professional-grade imaging delivers performance suitable for high-end security and cinema cameras.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "carousel_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "carousel_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/carousel",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/canon-5070-front.jpg",
+     "alt": "Canon LI5070SA Front",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    },
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/canon-5070-slant.jpg",
+     "alt": "Canon LI5070SA Side",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   }
+  },
+  "text_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>LI5070SA’s 4K 10 MP global shutter sensor is designed for high-end security and cinema cameras.</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>The Canon LI5070SA CMOS Sensor, available in RGB, offers 10M pixels in a Super35 format. It’s global shutter, square 6.4μm x 6.4μm pixel arrangement and professional-grade imaging delivers performance suitable for high-end security and cinema cameras.</p>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "table_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "table_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"0\">\r\n<tbody><tr><th>Resolution</th>\r\n<td>10 MP</td>\r\n</tr><tr><th>Pixel count</th>\r\n<td>4,288×2,398</td>\r\n</tr><tr><th>Pixel pitch</th>\r\n<td>6.4μm</td>\r\n</tr><tr><th>Sensor Size</th>\r\n<td>27.4 x 15.3 mm</td>\r\n</tr><tr><th>Shutter Type</th>\r\n<td>Global</td>\r\n</tr><tr><th>Dark Random Noise</th>\r\n<td>2.0 e-rms @ 18 dB</td>\r\n</tr><tr><th>Frame rate</th>\r\n<td>60 fps</td>\r\n</tr><tr><th>Color filter options</th>\r\n<td>RGB</td>\r\n</tr><tr><th>Sensitivity</th>\r\n<td>90,000 e/lx/sec</td>\r\n</tr></tbody></table>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/table",
+    "textIsRich": "true"
+   }
+  },
+  "image_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/canon/CanonLogo_Red_Web.jpg",
+    "alt": "Canon logo",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/canon/canon-li7030sa-cmos-sensor/jcr:content/root/container/content_area": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:responsive": {
+   "jcr:primaryType": "nt:unstructured",
+   "default": {
+    "jcr:primaryType": "nt:unstructured",
+    "offset": "2",
+    "width": "8"
+   }
+  },
+  "title_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Canon LI7030SA CMOS Sensor",
+    "type": "h1",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_intro_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_intro": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>The Canon LI7030SA is a CMOS type solid-state imaging sensor having a size equivalent to 1 inch, and 3.2 μm square pixel arrangement with 12 mega effective pixels. Video of 4K3K at 24 fps (12bit), 4K2K at 60 fps (10bit) and HD720p at 120 fps (10bit) can be achieved. Based on Canon’s low-noise technology, LI7030SA has a high dynamic range and achieved excellent imaging characteristics at low illuminance.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "carousel_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "carousel_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/carousel",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/Canon_LI7030SA.png",
+     "alt": "Canon LI7030SA Front",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   }
+  },
+  "text_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>Canon LI7030SA Wide-Dynamic Range/Low Noise 4K3K 1inch CMOS Sensor</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>The Canon LI7030SA is a CMOS type solid-state imaging sensor having a size equivalent to 1 inch, and 3.2 μm square pixel arrangement with 12 mega effective pixels. Video of 4K3K at 24 fps (12bit), 4K2K at 60 fps (10bit) and HD720p at 120 fps (10bit) can be achieved. Based on Canon’s low-noise technology, LI7030SA has a high dynamic range and achieved excellent imaging characteristics at low illuminance.</p>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "table_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "table_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"1\">\r\n<tbody><tr><th>Filter Type</th>\r\n<td>RGB (RGB on-chip color filter)</td>\r\n</tr><tr><th>Recording screen size:</th>\r\n<td>1 inch or equivalent (12.8 mm x 9.6 mm)</td>\r\n</tr><tr><th>Number of effective pixels:</th>\r\n<td>4004 x 3000 (Horizontal x Vertical)</td>\r\n</tr><tr><th>Pixel size:</th>\r\n<td>3.2 μm x 3.2 μm</td>\r\n</tr><tr><th>Output format:</th>\r\n<td>LVDS output, 648 Mbps (max.)</td>\r\n</tr><tr><th>Analog gain:</th>\r\n<td>0dB, 6dB, 12dB, 18dB and 24dB</td>\r\n</tr><tr><th>Saturation:</th>\r\n<td>25,000 e</td>\r\n</tr><tr><th>Dark Random Noise:</th>\r\n<td>2.6 erms @4K3K readout, 24 fps (12bit)</td>\r\n</tr><tr><th>Dark Current:</th>\r\n<td>17 e/sec @60°C (package reverse side), 4K3K readout, 24 fps (12bit)</td>\r\n</tr><tr><th>Power consumption:</th>\r\n<td>540 mW @4K2K readout, 60fps (10bit)</td>\r\n</tr><tr><th>Power supply voltage:</th>\r\n<td>3.3 V, 1.8V</td>\r\n</tr></tbody></table>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/table",
+    "textIsRich": "true"
+   }
+  },
+  "image_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/canon/CanonLogo_Red_Web.jpg",
+    "alt": "Canon logo",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/canon/canon-li7050-2m-cmos-sensor/jcr:content/root/container/content_area": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:responsive": {
+   "jcr:primaryType": "nt:unstructured",
+   "default": {
+    "jcr:primaryType": "nt:unstructured",
+    "offset": "2",
+    "width": "8"
+   }
+  },
+  "title_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Canon LI7050SA 2M CMOS Sensor ",
+    "type": "h1",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_intro_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_intro": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>The Canon LI7050SA CMOS Sensor offers 2M pixel HDR with high sensitivity at an affordable price. It’s square 4.1μm x 4.1μm pixel arrangement and 1/1.8″ frame achieves very high and low light capability in a compact design. Discover how you can take your surveillance project to new heights with the LI7050SA from Canon.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "carousel_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "carousel_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/carousel",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/canon-LI7050SA.jpg",
+     "alt": "Canon LI7050SA Side",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   }
+  },
+  "text_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>Take Your High-End Surveillance Project To New Heights with the LI7050SA</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>The Canon LI7050SA CMOS Sensor offers 2M pixel HDR with high sensitivity at an affordable price. It’s square 4.1μm x 4.1μm pixel arrangement and 1/1.8″ frame achieves very high and low light capability in a compact design. Discover how you can take your surveillance project to new heights with the LI7050SA from Canon.</p>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "text_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>A Top-of-the-Line CMOS Sensor</b></h3>\r\n<h4>&nbsp;</h4>\r\n<p>With rolling shutter and a sensor size of 7.9 x 4.5 mm, the Canon LI7050SA is a top-of-the-line CMOS Sensor. It offers a dynamic range of 120 dB and a maximum frame rate of 60 fps, creating flexibility and performance. It is available with an RGB filter type and has a sensitivity of 54,000 e/lx/sec, making it ideal for a number of applications.</p>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "table_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "table_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"0\">\r\n<tbody><tr><th>Resolution</th>\r\n<td>2.12 MP</td>\r\n</tr><tr><th>Pixel count</th>\r\n<td>1,936 x 1,096</td>\r\n</tr><tr><th>Pixel pitch</th>\r\n<td>4.1 μm</td>\r\n</tr><tr><th>Sensor Size</th>\r\n<td>7.9 x 4.5 mm</td>\r\n</tr><tr><th>Shutter Type</th>\r\n<td>Rolling</td>\r\n</tr><tr><th>Dark Random Noise</th>\r\n<td>1.1 e-rms @room temperature</td>\r\n</tr><tr><th>Frame rate</th>\r\n<td>60 fps, 30fps (HDR)</td>\r\n</tr><tr><th>Color filter options</th>\r\n<td>RGB</td>\r\n</tr><tr><th>Sensitivity</th>\r\n<td>54,000 [e/lx/sec] (Green)</td>\r\n</tr></tbody></table>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/table",
+    "textIsRich": "true"
+   }
+  },
+  "image_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/canon/CanonLogo_Red_Web.jpg",
+    "alt": "Canon logo",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/canon/canon-li7060-hdr-cmos-sensor/jcr:content/root/container/content_area": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:responsive": {
+   "jcr:primaryType": "nt:unstructured",
+   "default": {
+    "jcr:primaryType": "nt:unstructured",
+    "offset": "2",
+    "width": "8"
+   }
+  },
+  "title_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Canon LI7060 HDR CMOS Sensor",
+    "type": "h1",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_intro_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_intro": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>Canon’s newly developed 2.8 MP LI7060 CMOS sensor is equipped with an HDR drive function that achieves a wide 120 dB range at low noise levels. This wide range results in a greater ability to extract usable information even where there is a substantial difference between the lightest and darkest areas of an image. Even when using the sensor during normal drive operation, the sensor can achieve a dynamic range of 75 dB.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "carousel_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "carousel_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/carousel",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/Canon_LI7060.jpg",
+     "alt": "Canon LI7060SA Front",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   }
+  },
+  "text_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>High-Dynamic Range For More Usable Data</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>Canon’s newly developed 2.8 MP LI7060 CMOS sensor is equipped with an HDR drive function that achieves a wide 120 dB range at low noise levels. This wide range results in a greater ability to extract usable information even where there is a substantial difference between the lightest and darkest areas of an image. Even when using the sensor during normal drive operation, the sensor can achieve a dynamic range of 75 dB.</p>\r\n<p>&nbsp;</p>\r\n<p>With a diagonal size of 1/2.32 inches (7.75 mm), the LI7060 features approximately 2.8 million effective pixels (1936 x 1456), a pixel size of 3.2 μm x 3.2 μm and a frame rate of 60 fps (30 fps during HDR drive operation). The sensor will be compatible with the MIPI CSI-2 interface used by consumer-oriented cameras for a wide variety of purposes.</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "text_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>Achieving High Image Quality in Extreme Temperatures</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>In high temperature conditions, the increase in dark current noise adversely affects the quality of the image. The Canon LI7060 sensor is equipped with functionality that mitigates dark current due to increased temperatures, Canon’s sensor is able to maintain high image quality while operating in environments with extreme temperatures ranging from -40°C to 105°C, or -40°F to 221°F.</p>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "text_3_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_3": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>Canon LI7060 CMOS Sensor Expands Possibilities Across Industries</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>For high-dynamic range imaging and extreme temperature applications, the Canon LI7060 CMOS Sensor is appropriate for:</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "text_4_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_4": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<ul>\r\n<li>Automotive</li>\r\n<li>Camera OEM’s</li>\r\n<li>Defense</li>\r\n<li>General Mfg</li>\r\n<li>Intelligent Traffic Systems</li>\r\n</ul>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "text_5_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_5": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<ul>\r\n<li>Machine Vision</li>\r\n<li>R&amp;D, Scientific</li>\r\n<li>Robotic Vision</li>\r\n<li>Security &amp; Surveillance</li>\r\n</ul>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "heading_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "table_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "table_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"0\">\r\n<tbody><tr><th>Filter Type</th>\r\n<td>RGB</td>\r\n</tr><tr><th>Sensor Size (diagonal)</th>\r\n<td>1/2.32” (7.75mm)</td>\r\n</tr><tr><th>Number of Effective Pixels</th>\r\n<td>1936h x 1456v</td>\r\n</tr><tr><th>Pixel Size</th>\r\n<td>3.2μm x 3.2μm</td>\r\n</tr><tr><th>Shutter</th>\r\n<td>Rolling Shutter</td>\r\n</tr><tr><th>Dynamic Range – HDR</th>\r\n<td>120 dB</td>\r\n</tr><tr><th>Dynamic Range – Normal</th>\r\n<td>75 dB</td>\r\n</tr><tr><th>Maximum Frame Rate – HDR</th>\r\n<td>30 fps</td>\r\n</tr><tr><th>Maximum Frame Rate – Normal</th>\r\n<td>60 fps</td>\r\n</tr><tr><th>Operating Temperature</th>\r\n<td>-40°C to 105°C (-40°F to 221°F )</td>\r\n</tr><tr><th>Output Format</th>\r\n<td>MIPI CSI-2</td>\r\n</tr></tbody></table>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/table",
+    "textIsRich": "true"
+   }
+  },
+  "image_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/canon/CanonLogo_Red_Web.jpg",
+    "alt": "Canon logo",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/canon/canon-li7070sa-cmos-sensor/jcr:content/root/container/content_area": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:responsive": {
+   "jcr:primaryType": "nt:unstructured",
+   "default": {
+    "jcr:primaryType": "nt:unstructured",
+    "offset": "2",
+    "width": "8"
+   }
+  },
+  "title_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Canon LI7070SA CMOS Sensor",
+    "type": "h1",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_intro_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_intro": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>The Canon LI7070SA CMOS Sensor, available in RGB and Mono, offers 2M pixels with increased sensitivity in the NIR range in addition to HDR functions. Its’ compact 1/1.8″ design with square 4.1μm x 4.1μm pixel arrangement makes it particularly suitable for nighttime surveillance of public spaces, roads, and transportation facilities in addition to use in cameras equipped to drones or used in microscopes, which both require compact image sensors with a high sensitivity.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "carousel_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "carousel_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/carousel",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/canon-li7070sa-front.jpg",
+     "alt": "Canon LI7070SA Front",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    },
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/canon-li7070sa-slant.jpg",
+     "alt": "Canon LI7070SA Side",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   }
+  },
+  "text_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>LI7070SA’s Improved NIR Sensitivity is Ideal for Security, Industrial and Medical Applications.</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>The Canon LI7070SA CMOS Sensor, available in RGB and Mono, offers 2M pixels with increased sensitivity in the NIR range in addition to HDR functions. Its compact 1/1.8″ design with square 4.1μm x 4.1μm pixel arrangement makes it particularly suitable for nighttime surveillance of public spaces, roads, and transportation facilities in addition to use in cameras equipped to drones or used in microscopes, which both require compact image sensors with a high sensitivity.</p>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "text_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>High-Sensitivity NIR Shooting</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>This enables monitoring in dark environments which cannot be seen by the naked eye. The sensors can also be used in industrial applications such as inspection in dark areas and medical uses such as fluorescein angiography. The LI7070SAC has improved near-infrared sensitivity by approximately 2.4 times compared to the LI7050SAC. The LI7070SAC can capture full-HD video even in low-illumination environments measuring 0.08 lux, whereas the LI7070SAM operates at a minimum of 0.04 lux. The outstanding low illumination and NIR sensitivity of these sensors further expands their applicability.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "image_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-li7070sa-nir.jpg",
+    "alt": "Canon LI7070SA NIR",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  },
+  "heading_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "heading_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "table_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "table_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"0\">\r\n<tbody><tr><th>&nbsp;</th>\r\n<th>LI7070SAC</th>\r\n<th>LI7070SAM</th>\r\n</tr><tr><td>Filter Type</td>\r\n<td>&nbsp;RGB</td>\r\n<td>&nbsp;Mono</td>\r\n</tr><tr><td>Sensitivity</td>\r\n<td>&nbsp;(Green) 54,000 e/lx/sec</td>\r\n<td>&nbsp;104,000 e/lx/sec</td>\r\n</tr><tr><td>Resolution</td>\r\n<td colspan=\"2\">&nbsp;2.12 MP</td>\r\n</tr><tr><td>Pixel count</td>\r\n<td colspan=\"2\">&nbsp;1,936 x 1,096</td>\r\n</tr><tr><td>Pixel pitch</td>\r\n<td colspan=\"2\">&nbsp;4.1 μm</td>\r\n</tr><tr><td>Sensor Size</td>\r\n<td colspan=\"2\">&nbsp;7.9 x 4.5 mm</td>\r\n</tr><tr><td>Shutter Type</td>\r\n<td colspan=\"2\">&nbsp;Rolling</td>\r\n</tr><tr><td>Dark Random Noise</td>\r\n<td colspan=\"2\">&nbsp;1.1 e-rms @room temperature</td>\r\n</tr><tr><td>Frame rate</td>\r\n<td colspan=\"2\">&nbsp;60 fps, 30fps (HDR)</td>\r\n</tr></tbody></table>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/table",
+    "textIsRich": "true"
+   }
+  },
+  "image_2_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "image_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/canon/CanonLogo_Red_Web.jpg",
+    "alt": "Canon logo",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/canon/canon-li7080sa-cmos-sensor/jcr:content/root/container/content_area": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:responsive": {
+   "jcr:primaryType": "nt:unstructured",
+   "default": {
+    "jcr:primaryType": "nt:unstructured",
+    "offset": "2",
+    "width": "8"
+   }
+  },
+  "title_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Canon LI7080SA Super 35mm 4K Sensor",
+    "type": "h1",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "text_intro_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_intro": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<p>Utilizing high-speed signal readout technology, the super 35mm format Canon LI7080SA CMOS sensor boasts 4.5K resolution at 120 frames per second. With a 6.4 μm x 6.4 μm pixel size and rolling shutter technology, the LI7080SA provides professional-grade imaging that delivers performance suitable for high-end security and cinema cameras.</p>",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "carousel_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "carousel_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/carousel",
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/Canon_LI7080SA.jpg",
+     "alt": "Canon LI7080SA Front",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   }
+  },
+  "text_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<h3><b>Canon LI7080SA CMOS Sensor</b></h3>\r\n<h3>&nbsp;</h3>\r\n<p>Utilizing high-speed signal readout technology, the super 35mm format Canon LI7080SA CMOS sensor boasts 4.5K resolution at 120 frames per second. With a 6.4 μm x 6.4 μm pixel size and rolling shutter technology, the LI7080SA provides professional-grade imaging that delivers performance suitable for high-end security and cinema cameras.</p>\r\n<p>&nbsp;</p>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  },
+  "heading_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Technical Specifications",
+    "type": "h2",
+    "sling:resourceType": "macnicaglobal2/components/content/title"
+   }
+  },
+  "table_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "table_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "<table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"1\">\r\n<tbody><tr><th>Filter Type</th>\r\n<td>RGB (RGB on-chip color filter)</td>\r\n</tr><tr><th>Recording screen size:</th>\r\n<td>Greater than Super 35mm (29.0 mm x 15.4 mm)</td>\r\n</tr><tr><th>Number of effective pixels:</th>\r\n<td>4536 x 2400 (Horizontal x Vertical)</td>\r\n</tr><tr><th>Pixel size:</th>\r\n<td>6.4 μm x 6.4 μm</td>\r\n</tr><tr><th>Number of output channels:</th>\r\n<td>Data 30 lanes, Clock 2 lanes</td>\r\n</tr><tr><th>Output format:</th>\r\n<td>LVDS output, 840 Mbps @14bit</td>\r\n</tr><tr><th>Main clock frequency:</th>\r\n<td>60 MHz (recommended)</td>\r\n</tr><tr><th>All pixel readout:</th>\r\n<td>120 fps</td>\r\n</tr><tr><th>Analog gain:</th>\r\n<td>-6dB, 0dB, 6dB, 12dB, 18dB and 24dB</td>\r\n</tr><tr><th>Saturation:</th>\r\n<td>82,000 e (Typ.) @120fps</td>\r\n</tr><tr><th>Sensitivity:</th>\r\n<td>85,000 e/lx/sec (Typ.)</td>\r\n</tr><tr><th>Dark Random Noise:</th>\r\n<td>2.2 e-rms @18dB</td>\r\n</tr><tr><th>Dark Current:</th>\r\n<td>33 e/sec (Typ.) @60°C (package reverse side), 18dB</td>\r\n</tr><tr><th>Power consumption:</th>\r\n<td>2.3 W (Typ.) @120fps</td>\r\n</tr><tr><th>Power supply voltage:</th>\r\n<td>3.5V, 3.3 V, 1.8V, -1.2V, 2.62V, 2.5V, 1.6V</td>\r\n</tr></tbody></table>\r\n",
+    "sling:resourceType": "macnicaglobal2/components/content/table",
+    "textIsRich": "true"
+   }
+  },
+  "image_1_wrap": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/canon/CanonLogo_Red_Web.jpg",
+    "alt": "Canon logo",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ }
+}

@@ -1,0 +1,1649 @@
+{
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/title_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499",
+   "1717498052331"
+  ],
+  "title": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "25 TOPS at 5W. Fanless AI Inference for Any Enclosure",
+   "type": "h1",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>DEEPX, Macnica Americas, DEEPX NPU, edge AI inference, AI accelerator, fanless AI inference, embedded AI module, M.2 AI module, DX-M1, DX-M1M, DX-H1 Quattro, DX-H1 V-NPU, PCIe AI card, low power AI accelerator, industrial AI, robotics AI, smart factory AI, surveillance AI, smart city AI, AI inference hardware, DXNN SDK</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/image_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/deepx-hero-banner.png",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/text_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p><b>From embedded modules to high-density PCIe cards and complete systems, DEEPX delivers production AI inference where cloud and GPU solutions cannot operate. Exclusively available from Macnica.</b></p>\n<p>The DEEPX product line spans from a 42mm M.2 module for drones and embedded devices to high-density PCIe inference cards for multi-channel surveillance servers. The DX-M and DX-H families are deployed today in security systems, smart factories, robotics platforms, and transportation infrastructure worldwide. All products share the same SDK and model framework support.</p>\n<p>Macnica is the exclusive authorized distributor for North America, providing design-in support, evaluation hardware, and supply chain planning for production volumes, covering the full engagement from concept through volume ramp. Contact Macnica to request an evaluation kit or discuss your application with a field application engineer.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/heading_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "DEEPX NPU Architecture Built Around Power, Thermal, and Precision",
+   "type": "h3",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/text_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>GPUs overheat in sealed enclosures, low-power NPUs cannot sustain production frame rates on real detection models, and cloud inference introduces round-trip latency and data egress that industrial and safety-critical systems cannot tolerate. DEEPX NPU architecture is designed specifically around these failure modes, with power envelope, thermal characteristics, and quantization fidelity treated as primary design constraints rather than secondary considerations. All performance claims are independently benchmarked against production workloads.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/image_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/deepx-npu-infographic.png",
+   "alt": "Deepx NPU Infographic",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/text_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>The DEEPX IQ8 quantization engine addresses the precision trade-off that limits most edge NPU deployments. Standard INT8 quantization reduces memory bandwidth and compute requirements but introduces accuracy degradation that requires per-layer calibration to recover. IQ8 performs INT8-width computation while preserving the numerical range of FP32 inference, delivering full-speed throughput without model accuracy loss and without manual calibration. For teams deploying YOLO-family or custom detection models, this removes a significant pre-production engineering step.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/embed_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "embed_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "layout": "responsive",
+   "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+   "youtubeLoop": "false",
+   "youtubeMute": "false",
+   "youtubeRel": "false",
+   "type": "embeddable",
+   "youtubeVideoId": "AHjXnjYb4hE",
+   "sling:resourceType": "macnicaglobal2/components/content/embed",
+   "youtubeAutoPlay": "false",
+   "youtubePlaysInline": "false"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/text_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Thermal performance is validated in direct hardware comparison. Running identical workloads, the DX-M1 board surface measured 35.5 degrees C versus 60.7 degrees C for a competing chip. In sealed enclosures without active cooling, that 25-degree delta is the margin between a qualified fanless design and one that requires thermal redesign or derating at operating temperature.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/heading_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "DEEPX Products: Chips, modules, PCIe cards, and Complete Systems",
+   "type": "h3",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/text_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>The DEEPX portfolio covers two distinct deployment scenarios. The DX-M Series are bare chips and M.2 modules for embedding directly into host systems: robots, cameras, vehicles, and edge devices. The DX-H Series are low-profile PCIe cards for servers and workstations running multi-channel video analytics and AI inference at scale. All products share the same DXNN SDK and support the same model frameworks.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/image_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/deepx-products-chips-modules.png",
+   "alt": "DEEPX Products - Chips & modules",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/tabs_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "tabs_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/tabs",
+   "item_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "DX-M1 SoCs & M.2",
+    "layout": "responsiveGrid",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p><i>Embedded chip with external memory, industrial and automotive grades</i></p>\n<p>The DX-M1 is the flagship embedded NPU. Its external memory architecture lets designers size LPDDR4x or LPDDR5 independently of the chip, supporting up to 8GB for workloads running multiple simultaneous models. Available as a bare chip or as an M.2 2280 module with 4GB LPDDR5 onboard. AEC-Q100 Grade 3 qualified, with Grade 2 available on request. This is the only DEEPX chip with automotive-grade certification.</p>\n<p><b>Best for:</b> Designs requiring memory flexibility, automotive-grade certification, or multi-model inference. Robotics platforms, industrial inspection systems, and smart city nodes.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/products/deepx/images/dx-m1-socs-m2.png",
+     "alt": "DX-M1 SoCs and M2 Modules",
+     "sling:resourceType": "macnicaglobal2/components/content/image",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "DX-M1 SoCs and M2 Modules",
+     "type": "h4",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\">\n<tbody><tr><td width=\"120\" valign=\"top\"><p><b>AI performance</b></p>\n</td>\n<td width=\"252\" valign=\"top\"><p>25 TOPS (INT8)</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Power</b></p>\n</td>\n<td width=\"252\" valign=\"top\"><p>1 to 5W</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Memory</b></p>\n</td>\n<td width=\"252\" valign=\"top\"><p>Up to 8GB external LPDDR5</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Chip package</b></p>\n</td>\n<td width=\"252\" valign=\"top\"><p>17 x 17mm FCBGA</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Module</b></p>\n</td>\n<td width=\"252\" valign=\"top\"><p>M.2 2280, M-Key</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Host interface</b></p>\n</td>\n<td width=\"252\" valign=\"top\"><p>PCIe Gen3 x4</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Temp range</b></p>\n</td>\n<td width=\"400\" valign=\"top\"><p>-40 to 85 degrees C / AEC-Q100 Grade 3</p>\n</td>\n</tr><tr><td><b>Status</b></td>\n<td width=\"252\" valign=\"top\"><p>Mass production</p>\n</td>\n</tr></tbody></table>",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "button_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Get the DX-M1 datasheet",
+     "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1-Chip-AI-Accelerator-E-Brochure.pdf",
+     "linkTarget": "_blank",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "button_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Get the DX-M1 M.2 datasheet",
+     "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1-M.2-Module-AI-Accelerator-E-Brochure.pdf",
+     "linkTarget": "_blank",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    }
+   },
+   "item_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "DX-M1M SoCs & M.2",
+    "layout": "responsiveGrid",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "DX-M1M SoCs and M.2 Modules",
+     "type": "h4",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p><i>Compact all-in-one chip and module with integrated memory, half the footprint of DX-M1</i></p>\n<p>The DX-M1M integrates 2GB LPDDR4x directly into the chip package, eliminating the external DRAM device and reducing module length to 42mm. The result is a complete AI accelerator in a form factor that fits where the M1 cannot: drones, dashcams, and handheld devices. Hardware-based security includes a Root of Trust and True Random Number Generator.</p>\n<p><b>Best for:</b> Drones, ADAS systems, dashcams, autonomous mobile robots, and AIoT devices where size, weight, and power budget are the binding constraints.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/products/deepx/images/dx-m1m-socs-m2.png",
+     "alt": "DX-M1M SoCs and M.2 Modules",
+     "sling:resourceType": "macnicaglobal2/components/content/image",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\">\n<tbody><tr><td width=\"120\" valign=\"top\"><p><b>AI performance</b></p>\n</td>\n<td valign=\"top\" width=\"198\"><p>25 TOPS (INT8)</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Power</b></p>\n</td>\n<td valign=\"top\" width=\"198\"><p>3W typical</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Memory</b></p>\n</td>\n<td valign=\"top\" width=\"400\"><p>2GB integrated LPDDR4x</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Chip package</b></p>\n</td>\n<td valign=\"top\" width=\"198\"><p>21 x 21mm FCL-BGA</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Module</b></p>\n</td>\n<td valign=\"top\" width=\"198\"><p>M.2 2242, M+B Key</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Host interface</b></p>\n</td>\n<td valign=\"top\" width=\"198\"><p>PCIe Gen3 x2 (module)</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Temp range</b></p>\n</td>\n<td valign=\"top\" width=\"198\"><p>-40 to 85 degrees C industrial</p>\n</td>\n</tr><tr><td><b>Status</b></td>\n<td valign=\"top\" width=\"198\"><p>Mass production Q4 2025</p>\n</td>\n</tr></tbody></table>",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "button_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Get the DX-M1M datasheet",
+     "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1M-Chip-AI-Accelerator-E-Brochure.pdf",
+     "linkTarget": "_blank",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "button_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Get the DX-M1M M.2 datasheet",
+     "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1M-M.2-AI-Accelerator-E-Brochure.pdf",
+     "linkTarget": "_blank",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    }
+   },
+   "item_3": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "DX-H1 Quattro PCIe",
+    "layout": "responsiveGrid",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p><i>100 TOPS inference card, four DX-M1 chips on one low-profile PCIe slot</i></p>\n<p>The DX-H1 Quattro installs into a standard PCIe x16 slot and delivers 100 TOPS at 20W TDP, enough to process up to 128 AI video channels from a single workstation, or 768 channels from a 2U server with six cards. It works alongside existing NVR or decoder infrastructure; no onboard video codec is included. The host motherboard must support PCIe bifurcation x4x4x4x4, splitting the x16 slot into four independent x4 lanes. Verify BIOS support before specifying. Compatible with Dell, HPE, Lenovo, Supermicro, and KAYTUS servers.</p>\n<p><b>Best for:</b> Adding AI inference to existing camera and NVR infrastructure. Confirm BIOS bifurcation x4x4x4x4 support before selecting. Compatible with Dell, HPE, Lenovo, Supermicro, and KAYTUS servers.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/products/deepx/images/dx-h1-quattro-pcie.png",
+     "alt": "DX-H1 Quattro PCIe Card",
+     "sling:resourceType": "macnicaglobal2/components/content/image",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "DX-H1 Quattro PCIe Card",
+     "type": "h4",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\n<tbody><tr><td width=\"114\" valign=\"top\"><p><b>AI performance</b></p>\n</td>\n<td width=\"228\" valign=\"top\"><p>100 TOPS (INT8)</p>\n</td>\n</tr><tr><td valign=\"top\" width=\"120\"><p><b>Power</b></p>\n</td>\n<td width=\"228\" valign=\"top\"><p>20W TDP</p>\n</td>\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Memory</b></p>\n</td>\n<td width=\"400\" valign=\"top\"><p>16GB LPDDR5</p>\n</td>\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Video codec</b></p>\n</td>\n<td width=\"228\" valign=\"top\"><p>Not included</p>\n</td>\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Form factor</b></p>\n</td>\n<td width=\"228\" valign=\"top\"><p>Low-profile PCIe card</p>\n</td>\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Interface</b></p>\n</td>\n<td width=\"228\" valign=\"top\"><p>PCIe x16 (bifurcation x4x4x4x4 required)</p>\n</td>\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Dimensions</b></p>\n</td>\n<td width=\"228\" valign=\"top\"><p>68.1 x 165.9 x 16mm with heatsink</p>\n</td>\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Max channels</b></p>\n</td>\n<td width=\"228\" valign=\"top\"><p>128 channels per workstation (YOLOv5s at 25fps)</p>\n</td>\n</tr><tr><td><b>Status</b></td>\n<td width=\"228\" valign=\"top\"><p>Mass production</p>\n</td>\n</tr></tbody></table>",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "button_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Get the DX-H1 Quatro datasheet",
+     "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-H1-Quattro-AI-Accelerator-E-Brochure.pdf",
+     "linkTarget": "_blank",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    }
+   },
+   "item_4": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "DX-H1 V-NPU PCIe",
+    "layout": "responsiveGrid",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "DX-H1 V-NPU PCIe Card",
+     "type": "h4",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p><i>Decode and infer on one card, full H.264/H.265 video pipeline with onboard codec</i></p>\n<p>The DX-H1 V-NPU adds hardware H.264/H.265 codec blocks alongside its dual NPUs, enabling the card to ingest, decode, and analyze live camera streams without involving the host CPU. One card handles 64 channels of 1080p decode and 50 TOPS of AI inference simultaneously, making it the right choice for new-build AI surveillance systems where eliminating separate video servers is a design goal. The PCIe interface uses x8 electrical lanes in a physical x16 slot, compatible with a broader range of server motherboards than the Quattro. DEEPX reports 82% lower hardware cost and 85% electricity savings versus GPU setups in 1,000-channel deployments over five years.<br>\n<br>\n<b>Best for:</b> New-build AI CCTV infrastructure where the goal is to consolidate decode and inference onto one card. DEEPX reports 82% lower hardware cost and 85% electricity savings versus GPU setups in 1,000-channel deployments over five years.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/copia-teste/products/deepx/images/dx-h1v-npu-pcie.png",
+     "alt": "DX-H1 V-NPU PCIe Card",
+     "sling:resourceType": "macnicaglobal2/components/content/image",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\n<tbody><tr><td width=\"200\" valign=\"top\"><p><b>AI performance</b></p>\n</td>\n<td width=\"400\" valign=\"top\"><p>50 TOPS (INT8)</p>\n</td>\n</tr><tr><td valign=\"top\" width=\"120\"><p><b>Power</b></p>\n</td>\n<td width=\"246\" valign=\"top\"><p>30W TDP</p>\n</td>\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Memory</b></p>\n</td>\n<td width=\"246\" valign=\"top\"><p>24GB LPDDR5</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Video codec</b></p>\n</td>\n<td width=\"246\" valign=\"top\"><p>H.264/H.265: 64CH decode, 32CH encode at 1080p 30fps</p>\n</td>\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Form factor</b></p>\n</td>\n<td width=\"246\" valign=\"top\"><p>Low-profile PCIe card</p>\n</td>\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Interface</b></p>\n</td>\n<td width=\"246\" valign=\"top\"><p>PCIe x16 physical, x8 electrical</p>\n</td>\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Dimensions</b></p>\n</td>\n<td width=\"246\" valign=\"top\"><p>68.1 x 164.3 x 18mm with heatsink</p>\n</td>\n</tr><tr><td width=\"114\" valign=\"top\"><p><b>Max channels</b></p>\n</td>\n<td width=\"246\" valign=\"top\"><p>64 channels per workstation (YOLOv5s at 30fps)</p>\n</td>\n</tr><tr><td><b>Status</b></td>\n<td width=\"246\" valign=\"top\"><p>Available</p>\n</td>\n</tr></tbody></table>",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "button_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Get the DX-H1 V-NPU datasheet",
+     "linkURL": "/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-H1-V-NPU-AI-Accelerator-Codec-PCIe-Card-E-Brochure.pdf",
+     "linkTarget": "_blank",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    }
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/heading_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "From Chips to Complete Systems: AI Systems with DEEPX NPUs",
+   "type": "h3",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/text_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>For teams that need a validated AI system without a custom hardware design cycle, the DX-AIPlayer series integrates DX-M1 NPU acceleration with onboard compute, storage, and I/O in a production-ready enclosure. Compact and expanded configurations are available to match application I/O and compute requirements.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/image_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/DX-AIBOX-M1-N97.png",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/image_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/DX-AIBOX-M1-i5.png",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/table_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "table_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\n<tbody><tr><td valign=\"top\" width=\"150\"><p><b>Part Number</b></p>\n</td>\n<td width=\"266\" valign=\"top\"><p>DX-AIBOX-M1-N97-08064-A</p>\n</td>\n<td width=\"249\" valign=\"top\"><p>DX-AIBOX-M1-i5-08128-i</p>\n</td>\n</tr><tr><td valign=\"top\" width=\"150\"><p><b>Dimensions (mm)</b></p>\n</td>\n<td width=\"266\"><p>95 x 95 x 55 mm</p>\n</td>\n<td width=\"249\"><p>81 x 150 x190 mm</p>\n</td>\n</tr><tr><td valign=\"top\" width=\"120\"><p><b>CPU</b></p>\n</td>\n<td width=\"266\"><p>Intel® Processor N97</p>\n</td>\n<td width=\"249\"><p>13th Gen Intel® Core™ i5-1340PE</p>\n</td>\n</tr><tr><td valign=\"top\" width=\"120\"><p><b>Storage</b></p>\n</td>\n<td width=\"266\"><p>eMMC Onboard 64GB</p>\n</td>\n<td width=\"249\"><p>2.5'' SATA 128GB</p>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td width=\"266\"><p>RAM: 8GB LPDDR5</p>\n</td>\n<td width=\"150\"><p>RAM: 8GB DDR4</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>I/O Interfaces</b></p>\n</td>\n<td><p>HDMI 2.0b x 1/DP 1.2 x 1</p>\n<p>Gb Ethernet (full speed) RJ-45 x 2</p>\n<p>RS-232/422/485 x 2</p>\n<p>USB 2.0 x 2 (via 10 Pin Header x 1) USB 3.2 Gen 2 x 3 (Type-A)</p>\n</td>\n<td><p>HDMI/DP,</p>\n<p>3 x2.5GbE LAN</p>\n<p>4 x COM</p>\n<p>6 x USB</p>\n<p>1 x 12-bit DIO</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Certification </b></p>\n</td>\n<td width=\"516\" colspan=\"2\"><p>KC, CE, and FCC</p>\n</td>\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Power</b></p>\n</td>\n<td width=\"266\"><p>12V DC-in, 5A</p>\n</td>\n<td width=\"249\"><p>12~28V DC, RoHS</p>\n</td>\n</tr><tr><td><b>Weight</b></td>\n<td width=\"266\"><p>450g</p>\n</td>\n<td width=\"249\"><p>1.88kg</p>\n</td>\n</tr><tr><td width=\"200\" valign=\"top\"><p><b>Operating Temperature</b></p>\n</td>\n<td width=\"266\"><p>0°C ~ 60° C</p>\n</td>\n<td width=\"249\"><p>-20°C ~ 60°C</p>\n</td>\n</tr></tbody></table>",
+   "sling:resourceType": "macnicaglobal2/components/content/table",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/button_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "button_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Request a quote",
+   "linkURL": "/content/macnicagwi/americas/mai/en/contact/form",
+   "linkTarget": "_self",
+   "sling:resourceType": "macnicaglobal2/components/content/button"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/heading_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Applications Where DEEPX Is Deployed",
+   "type": "h3",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/text_7_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_7": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>DEEPX hardware is deployed across industries where real-time inference, low power consumption, and fanless operation are hard requirements.&nbsp;</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/image_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/deepx-applications.png",
+   "alt": "Deepx Applications",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/heading_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "DXNN® SDK: One Toolchain for Every DEEPX Product",
+   "type": "h3",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/text_8_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_8": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>The DXNN® SDK is the unified software stack for all DEEPX hardware. It provides a compiler that takes models from standard training frameworks and produces optimized binaries for DEEPX NPUs, applying IQ8 quantization automatically without manual per-layer tuning. The runtime supports concurrent multi-model execution and manages memory across chips.</p>\n<p>The SDK supports x86 and ARM aarch-64 host architectures, runs on Windows and major Linux distributions, and is compatible with containerized deployments via Docker. Software partners including Edge Impulse, CVEDIA, NetworkOptix, Nota AI, and others have pre-integrated DEEPX hardware into their platforms using the DXNN SDK.&nbsp;</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/image_7_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_7": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/dxnn-sdk.png",
+   "alt": "DXNN® SDK: One Toolchain for Every DEEPX Product",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/heading_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Contact Macnica Americas",
+   "type": "h3",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/text_9_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_9": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Macnica provides evaluation hardware, design-in support, and production supply for all DEEPX products in America and Canada. Whether you are evaluating a chip for a new design or planning a production order, the team handles the full engagement from first sample through volume ramp.</p>\n<p>Contact Macnica to request evaluation hardware, speak to an expert, or get a quote</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/text_10_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_10": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Would you like to be added to our mailing list to receive the Macnica Americas Newsletter?</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/deepx/jcr:content/root/container/image_8_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_8": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/deepx/deepx-logo.jpg",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/title_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499",
+   "1717498052331"
+  ],
+  "title": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "AB17-M2FMC",
+   "type": "h1",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Connect up to two M.2 NVMe SSDs through an FMC connector for NVMe evaluation on FMC-equipped FPGA boards. AB17-M2FMC brings NVMe storage to FMC carriers by hosting two M.2 SSDs on a compact adapter. Flexible power options and a low jitter reference clock support reliable evaluation on a wide range of development boards.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/carousel_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "carousel_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/carousel",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/products/design-gateway/images/dg-ab17-m2fmc-320.jpg",
+    "alt": "AB17-M2FMC",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/text_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<h4>Connect up to two M.2 NVMe SSDs through an FMC connector for NVMe evaluation on FMC-equipped FPGA boards.</h4>\n<p>AB17-M2FMC brings NVMe storage to FMC carriers by hosting two M.2 SSDs on a compact adapter. Flexible power options and a low-jitter reference clock support reliable evaluation on a wide range of development boards.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/heading_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Highlights",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/text_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>Two M.2 NVMe sockets for 2280 class drives</li>\n</ul>\n<ul>\n<li>FMC interface for straightforward attachment to supported carriers</li>\n</ul>\n<ul>\n<li>Selectable power sources, including FMC 12 V or auxiliary ATX input</li>\n</ul>\n<ul>\n<li>Low-jitter clocking on the adapter for stable link operation</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/heading_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Why Macnica?",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/text_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>We identify FMC capable boards and clocking options that match your design</li>\n</ul>\n<ul>\n<li>Reference builds for NVMe-IP and SATA-IP side by side on FMC carriers</li>\n</ul>\n<ul>\n<li>Thermal and airflow guidance for dual M.2 operation in small enclosures</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/image_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/macnica-workflow-diagram.jpg",
+   "alt": "Macnica workflow diagram",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/heading_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Key Specifications",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/text_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li><b>Drives:</b> Up to two M.2 NVMe SSDs</li>\n</ul>\n<ul>\n<li><b>Interface:</b> FMC to host FPGA</li>\n</ul>\n<ul>\n<li><b>Clocking:</b> Onboard reference for PCIe link stability</li>\n</ul>\n<ul>\n<li><b>Power:</b> FMC 12 V or external ATX, per setup</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/heading_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Typical Applications",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/text_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>Dual NVMe recorders on FMC carriers</li>\n</ul>\n<ul>\n<li>RAID-style experiments with compact mechanics</li>\n</ul>\n<ul>\n<li>Burst capture buffers for edge analytics</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/heading_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Resources",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/download_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "download_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "DG AB17 M2FMC MAN E",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AB17-M2FMC-MAN-E.pdf",
+   "sling:resourceType": "macnicaglobal2/components/content/download"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/heading_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Get Started",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc/jcr:content/root/container/text_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Tell us your FMC carrier and power plan. We will supply validated constraints, cabling, and the matching NVMe demo.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/title_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499",
+   "1717498052331"
+  ],
+  "title": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "AB19-M2PCI",
+   "type": "h1",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Attach up to four M.2 NVMe SSDs to an FPGA board via a single PCIe x16 slot with power and cooling provisions built in. AB19-M2PCI converts a PCIe x16 edge connector into four M.2 NVMe sockets for compact, high-bandwidth storage evaluation. The board includes an auxiliary 6 pin PCIe power input and a 12 V fan header so multi-drive tests run reliably.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/carousel_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "carousel_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/carousel",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/products/design-gateway/images/dg-ab19-m2pci-320.jpg",
+    "alt": "AB19-M2PCI",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/text_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<h4>Attach up to four M.2 NVMe SSDs to an FPGA board via a single PCIe x16 slot with power and cooling provisions built in.</h4>\n<p>AB19-M2PCI converts a PCIe x16 edge connector into four M.2 NVMe sockets for compact, high-bandwidth storage evaluation. The board includes an auxiliary 6 pin PCIe power input and a 12 V fan header so multi-drive tests run reliably.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/heading_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Highlights",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/text_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>Four M.2 sockets for NVMe SSDs, sized for common 2280 modules</li>\n</ul>\n<ul>\n<li>PCIe x16 host connector with robust mechanical support accessory to keep the board level</li>\n</ul>\n<ul>\n<li>6 pin auxiliary power input for the adapter and SSDs</li>\n</ul>\n<ul>\n<li>12 V fan header for directed cooling of M.2 devices</li>\n</ul>\n<ul>\n<li>Stable operation at PCIe Gen5 speeds with appropriate platforms</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/heading_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Why Macnica?",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/text_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>SSD selection and thermal guidance for long duration soak tests</li>\n</ul>\n<ul>\n<li>Repeatable Agilex lab scripts and wiring maps for fast bring up</li>\n</ul>\n<ul>\n<li>Pairing recommendations with NVMe-IP and muNVMe-IP for multi-pipeline workloads</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/image_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/macnica-workflow-diagram.jpg",
+   "alt": "Macnica workflow diagram",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/heading_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Key Specifications",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/text_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li><b>PCIe lanes:</b> x16 host connector, four x4 device links</li>\n</ul>\n<ul>\n<li><b>Drive support:</b> Up to four M.2 NVMe SSDs</li>\n</ul>\n<ul>\n<li><b>Power:</b> 6 pin auxiliary input, on board 12 V fan header</li>\n</ul>\n<ul>\n<li><b>Mechanical:</b> Adjustable anti-tilt support to protect the host connector</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/heading_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Typical Applications",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/text_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>Compact quad drive NVMe capture rigs</li>\n</ul>\n<ul>\n<li>Random I/O and concurrency tests with raNVMe-IP and rmNVMe-IP</li>\n</ul>\n<ul>\n<li>Edge storage appliances with strict size and airflow limits</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/heading_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Resources",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/download_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "download_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "DG AB19 M2PCI MAN E",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AB19-M2PCI-MAN-E.pdf",
+   "sling:resourceType": "macnicaglobal2/components/content/download"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/heading_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Get Started",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci/jcr:content/root/container/text_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Share your module list, airflow constraints, and throughput targets. We will provide cable and cooling recommendations plus a tested NVMe demo.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/title_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499",
+   "1717498052331"
+  ],
+  "title": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "AB20-U2PCI",
+   "type": "h1",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Convert a PCIe x16 edge connector into four U.2 or U.3 NVMe ports to evaluate multi-drive NVMe designs on FPGA platforms. AB20-U2PCI lets you attach up to four 2.5 inch U.2 or U.3 NVMe SSDs to an FPGA board through a single x16 PCIe slot. The board integrates a low-jitter reference clock and reset circuitry so NVMe evaluation is stable at high PCIe rates.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/carousel_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "carousel_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/carousel",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/products/design-gateway/images/dg-ab20-u2pci-260.png",
+    "alt": "AB20-U2PCI",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/text_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<h4>Convert a PCIe x16 edge connector into four U.2 or U.3 NVMe ports to evaluate multi-drive NVMe designs on FPGA platforms.</h4>\n<p>AB20-U2PCI lets you attach up to four 2.5 inch U.2 or U.3 NVMe SSDs to an FPGA board through a single x16 PCIe slot. The board integrates a low-jitter reference clock and reset circuitry so NVMe evaluation is stable at high PCIe rates.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/heading_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Highlights",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/text_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>Four U.2 or U.3 ports on the component side, one PCIe x16 connector on the solder side</li>\n</ul>\n<ul>\n<li>Internal lane mapping splits x16 into four x4 links for four independent SSDs</li>\n</ul>\n<ul>\n<li>Onboard low-jitter clock generation and reset distribution for reliable bring up</li>\n</ul>\n<ul>\n<li>Designed for multi-drive NVMe IP evaluation and prototype development</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/heading_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Why Macnica?",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/text_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>We map SSD topologies and lane splits to your target throughput and endurance goals</li>\n</ul>\n<ul>\n<li>Proven Agilex evaluation flows and adapter cabling so lab bring up is repeatable</li>\n</ul>\n<ul>\n<li>Guidance on thermals, power budget, and fan choices for sustained runs</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/image_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/macnica-workflow-diagram.jpg",
+   "alt": "Macnica workflow diagram",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/heading_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Key Specifications",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/text_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li><b>PCIe lanes:</b> x16 host connector, four x4 ports to SSDs</li>\n</ul>\n<ul>\n<li><b>Drive support:</b> U.2 or U.3 NVMe SSDs, up to four</li>\n</ul>\n<ul>\n<li><b>Clocking:</b> Onboard reference clock for PCIe and SSDs</li>\n</ul>\n<ul>\n<li><b>Use with:</b> NVMe-IP family, NVMeTCP-IP, and related storage flows</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/heading_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Typical Applications",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/text_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>Multi-SSD NVMe capture and replay testbeds</li>\n</ul>\n<ul>\n<li>NVMe RAID-style experiments on FPGA platforms</li>\n</ul>\n<ul>\n<li>Storage front ends for high-rate data movers</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/heading_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Resources",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/download_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "download_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "DG AB20 U2PCI MAN E",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AB20-U2PCI-MAN-E.pdf",
+   "sling:resourceType": "macnicaglobal2/components/content/download"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/heading_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Get Started",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci/jcr:content/root/container/text_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Tell us your SSD count, form factor, and sustained write target. We will propose a lane plan, cables, and a validated demo flow.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/title_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499",
+   "1717498052331"
+  ],
+  "title": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "TLS1.3-IP, CPU-less TLS 1.3 Offload",
+   "type": "h1",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/text_intro_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_intro": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Hardware TLS 1.3 offload that handles handshake and bulk crypto on the FPGA without a CPU or external DDR. TLS1.3-IP implements the TLS 1.3 protocol in logic and sustains secure Ethernet links at 1G, 10G, 25G, and up to 100G. The core manages handshake, key exchange, session keys, and authenticated encryption so your application sees a clean plaintext interface with predictable latency.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/carousel_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "carousel_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/carousel",
+   "image_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/products/design-gateway/images/dg-tls1-3-block.jpg",
+    "alt": "TLS1.3 block diagram",
+    "sling:resourceType": "macnicaglobal2/components/content/image"
+   }
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/text_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<h4>Hardware TLS 1.3 offload that handles handshake and bulk crypto on the FPGA without a CPU or external DDR.</h4>\n<p>TLS1.3-IP implements the TLS 1.3 protocol in logic and sustains secure Ethernet links at 1G, 10G, 25G, and up to 100G. The core manages handshake, key exchange, session keys, and authenticated encryption so your application sees a clean plaintext interface with predictable latency.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/heading_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Highlights",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/text_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>CPU-less operation with no external memory</li>\n</ul>\n<ul>\n<li>Handshake and key exchange in hardware</li>\n</ul>\n<ul>\n<li>X25519 key exchange with HKDF based on SHA-384</li>\n</ul>\n<ul>\n<li>Certificate support for RSA-2048 and ECDSA-P256</li>\n</ul>\n<ul>\n<li>AES-GCM for record encryption and authentication</li>\n</ul>\n<ul>\n<li>Client and server variants with reference designs for bring up</li>\n</ul>\n<ul>\n<li>Integrates with Design Gateway TOE and UDP IP, and low-latency EMAC</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/heading_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Why Macnica?",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/text_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>Cipher suite planning and certificate strategy for your environment</li>\n</ul>\n<ul>\n<li>Proven EMAC and TOE pairings plus clocking and transceiver setup on Agilex</li>\n</ul>\n<ul>\n<li>Repeatable lab procedures for handshake, bulk transfer, and soak tests</li>\n</ul>\n<ul>\n<li>System blueprints that combine TLS with storage IP for secure capture and replay</li>\n</ul>\n<ul>\n<li>Procurement support for optics, cables, and evaluation adapters</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/image_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/macnica-workflow-diagram.jpg",
+   "alt": "Macnica workflow diagram",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/heading_3_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_3": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Key Specifications",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/text_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li><b>Protocol:</b> TLS 1.3 record layer and handshake</li>\n</ul>\n<ul>\n<li><b>Crypto:</b> X25519, HKDF-SHA-384, AES-GCM with authentication tag</li>\n</ul>\n<ul>\n<li><b>Interfaces:</b> Streaming data path for Tx and Rx, register control for session and status</li>\n</ul>\n<ul>\n<li><b>Speeds:</b> 1G, 10G, 25G, and up to 100G depending on platform</li>\n</ul>\n<ul>\n<li><b>Resources:</b> Pure RTL data path, no CPU, no external DDR</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/heading_4_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_4": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Typical Applications",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/text_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<ul>\n<li>Secure sensor and video backhaul</li>\n</ul>\n<ul>\n<li>Industrial and medical device connectivity</li>\n</ul>\n<ul>\n<li>Aerospace telemetry and command links</li>\n</ul>\n<ul>\n<li>Encrypted data movers for analytics and AI nodes</li>\n</ul>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/heading_5_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_5": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Resources",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/download_1_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "download_1": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "dg ipcore brochure",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/downloads/dg-ipcore-brochure.pdf",
+   "sling:resourceType": "macnicaglobal2/components/content/download"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/heading_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "heading_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:title": "Get Started",
+   "type": "h2",
+   "sling:resourceType": "macnicaglobal2/components/content/title"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/text_6_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "text_6": {
+   "jcr:primaryType": "nt:unstructured",
+   "text": "<p>Share target link speed, cipher preferences, and certificate plan. We will map a demo flow, resource estimate, and the right MAC and PHY options for your Agilex board.</p>",
+   "sling:resourceType": "macnicaglobal2/components/content/text",
+   "textIsRich": "true"
+  }
+ },
+ "/content/copia-teste/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload/jcr:content/root/container/image_2_wrap": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "macnicaglobal2/components/content/container",
+  "cq:styleIds": [
+   "1717498053499"
+  ],
+  "image_2": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-Logo-TLS1.3.png",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ }
+}
