@@ -152,6 +152,9 @@ dados/
 ferramentas/
   measure.py + probe.js    mede geometria renderizada (x/y/largura/gap por componente)
   censo_nos_mortos.py      nós da página fora das regiões editable do template (R9)
+  diff_payload.py          dry-run REAL: payload novo x JCR gravado, chave a chave
+  cmp_motor.py             duas versões do motor sobre as 136 páginas, offline
+  prints.sh + fatiar.py    prints GWI x destino (--publicado) em fatias legíveis
 
 recon-dossie.md         o levantamento bruto das 7 lentes (200k)
 recon-lacunas.md        as investigações que fecharam as lacunas do crítico (115k)
