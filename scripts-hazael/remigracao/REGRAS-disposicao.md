@@ -1071,6 +1071,159 @@ a 375 a tabela tem 1316px e rola dentro dos 345 do wrapper; altura 3.279px.
 
 ---
 
+## R42–R45 — 5ª sessão, rodada 1 (19/09/2026, sobre o lote 9): 33 páginas
+
+Trinta e três revisores, somente leitura (27 páginas nunca vistas — `/microchip`,
+`/genesys-logic`, `/on-semiconductor`, `/infineon`, as `cyclone-10`, `quartus`,
+`questa`, `opencl`, `development-kits` e as 4 folhas, `namuga-vicon-lite`,
+`i-chips-fpga-evaluation-board`, as 5 folhas de curso, `sulfur-som`, 3 folhas
+`/analog-devices`, `ambarella-cv72s-soc` — e print novo das 6 páginas das regras
+do lote 9), e um cético por página com defeito (17). **18 páginas limpas; as
+regras do lote 9 conferidas no OLHO** (R37, R38, R39 com clique, R40, R35, R41 a
+1400px). O que saiu, tudo a 1400px (**celular está FORA do escopo** — diretriz do
+Hazael de 19/09/2026; o que os revisores mediram a 375px fica só como argumento
+para a linha de CSS do clientlib, no fim):
+
+> **ESTADO: ver o carimbo no fim da seção** (lote 10).
+
+### R42 — invólucro SEM largura que guarda uma linha de colunas é transparente
+
+**Onde:** o defeito mais grave da sessão, em 10 páginas. `/on-semiconductor`: a
+grade 2×2 de categorias saía 1 linha de 2 + "Power Management" e "Signal
+Management" EMPILHADOS em largura cheia (metade direita da página vazia), e os
+2 botões lado a lado do GWI, empilhados. `i-chips-fpga-evaluation-board`,
+`ip00c341`, `ip00c812b`, `ip00cc35`, `ambarella-cv72s-soc`: o herói texto | foto
+virava texto em largura cheia + a foto sozinha numa linha, longe do parágrafo
+dela. `/infineon`, aba "Automotive" (a aba padrão): texto | foto de 402px virava
+tudo empilhado, com a foto a 880×491 no meio do painel. `sitime-clock-
+generators` e `-jitter-cleaners`: "Key Capabilities" | "Applications".
+`canon-li7060`: duas listas lado a lado fundidas num `text` só.
+**Causa:** `extrair_linhas` mandava para `_coletar_blocos` (que achata e ignora
+larguras DE PROPÓSITO — certo dentro de coluna) todo invólucro filho que não
+fosse `_is_linha`; e `_is_linha` exige que TODO filho seja coluna. O invólucro
+MISTO — [coluna, coluna, texto de largura cheia, invólucro de botões] — caía
+fora. É a lição da docstring de `_is_linha` ao contrário: a versão antiga
+descartava o que não era coluna; a atual descartava a COLUNA.
+**Regra:** `_filhos_emendados` — invólucro sem largura (não `imagetext`, não
+`_is_linha`, não card órfão) com 2+ filhos-coluna consecutivos QUE CABEM na
+grade de 12, ou com descendente assim, é trocado pelos filhos dele na lista do
+pai, entre duas sentinelas de FRONTEIRA (o invólucro ocupa 12: a linha de
+colunas não atravessa a borda). Emendar, em vez de recursão, mantém o estado da
+corrida (R24, R29, R18, R23).
+**E na fronteira de seção (só a `/infineon`):** `_secoes` fazia de cada filho
+de topo uma seção sem olhar `col_width_of`. O corpo da `/infineon` tem
+`resizablecontainer_c` (w=6: vídeo) | `resizablecontainer` (w=6: heading +
+text): saía o vídeo sozinho em meia linha (a R26 o embrulhava) e, 80px abaixo,
+título | texto LADO A LADO — as larguras das folhas de dentro da coluna (w=5
+o=1, numa grade de 6) lidas como colunas de uma grade de 12. Agora filhos de
+topo consecutivos com largura de coluna são UMA seção com uma Row de colunas.
+**Ritmo:** o herói {título + texto | foto} sai `textwithimage` com cabeçalho; o
+parágrafo que CONTINUA o texto, sem nó espaçador na origem, anda no mesmo
+sub-container (30px em vez de 90; GWI 28) — 3 páginas.
+**O GWI é a fonte da verdade, mesmo feio:** na `ip00cc35` o heading "Key
+Features" (w=5) fica AO LADO do texto (w=5) no GWI (x=213 | x=620, medido) —
+acidente de autoria, migra como está.
+**Detectar:** offline, monkeypatch em `_coletar_blocos` registrando invólucro
+sem largura, fora de coluna, com 2+ colunas consecutivas (12 nós em 10
+páginas). Na tela: `measure.py` com `cmp-image` de `colw=1350` e `img≥800`
+onde o GWI tem `colw≤488`; dois `cmp-title` empilhados de `w=1350` onde o GWI
+os tem no mesmo `y`.
+
+### R43 — a linha SÓ de botões anda com a frase que a apresenta
+
+**Onde:** `/microchip` e `/genesys-logic`: "For more information on … products:"
+e, logo abaixo, Contact Us | Supplier Website — 16px no GWI, **120** no destino
+(30 do container de cima + 50 do de baixo + 40 da margem do botão), o par mais
+perto do rodapé que da frase; na `/genesys-logic` a frase lia como última linha
+do FAQ. `/on-semiconductor` (depois da R42): 100px.
+**Causa:** em `_secoes` todo invólucro abre seção; a exceção "não corta antes
+de botão" da R28c só via botão-FOLHA.
+**Regra:** Row de colunas SÓ de botões, sem espaçador na origem, logo depois de
+uma Row que termina em `text`: o texto vira `cabecalho` dela (mesmo container,
+mecanismo da R23) — 40px. Vale dentro da seção (`_titulo_com_colunas`) e na
+fronteira (`_secoes`: invólucro só-botão depois de corrida que termina em
+texto entra na seção da corrida). NÃO vale depois de título (13d/R29) nem de
+`hr` (`/ambarella`, `/renesas`: 127 contra 52–68, mas o fio já separa e não há
+rótulo para enganar — ficam como estão).
+**Detectar:** `measure.py`, `link-button` com `gap ≥ +110`; offline, seção do
+`extract_tree` cujos blocos são todos `button`.
+
+### R44 — `href` de rich text mantém o `.html` (FUNÇÃO — print nenhum mostra)
+
+**Onde:** `/altera/development-kits`, os 4 "Product Overview" — e, no censo,
+**149 href em 60 nós de 24 páginas** (90 em tabela, 59 em texto).
+**Causa:** `aem_lib.rewrite_link`, passo 4, tira o `.html` ("link interno do AEM
+não usa"). Vale para PROPRIEDADE (`linkURL`, `pages`: o componente põe a
+extensão ao renderizar — conferido: o botão da `/altera` renderiza
+`…request-a-quote.html`). O `href` de rich text sai como está gravado, e página
+sem extensão no author = 302 → `…/` → **403**: nenhum link de página do corpo
+abria. O GWI grava `.html` em 449 de 449; as páginas da Anion, em 249 de 249.
+**Regra:** `reescrever_hrefs` no motor (a lib é compartilhada e serve
+propriedades — avisar o Bruno): `rewrite_link` e o `.html` de volta quando a
+origem o tinha. URL pública com `/` final (`…/boards-modules/terasic/`,
+`…/services/automotive/` — 2 links) vira caminho + `.html`. A R17
+(`normalizar_links_do_escopo`) continua valendo: a regex dela para no ponto.
+**Detectar:** `href="/content/[^".]*"` (sem extensão) em `text`/`table`/
+`textwithimage` do destino.
+
+### R45 — ajustes de regras anteriores
+
+- **R41 × foto:** `<td><a>IP00C341</a><img></td>` contava como token único e
+  ganhava `white-space:nowrap`: rótulo e foto (`width:100%`) na MESMA linha, a
+  foto 49–59px para fora da célula, e a tabela ROLANDO no desktop com o aviso
+  "scrollable" em cima das fotos (`i-chips-scaler-warper-lsi`, `i-chips-
+  warping-lsi`: 10 células). Célula com `<img>`/lista/tabela não leva `nowrap`.
+- **R41b:** a R41 só protege célula de token único. Com as células numéricas
+  travadas, a tabela de 13 colunas da `altera-arria-10` tirava a largura da
+  coluna dos RÓTULOS: "Hardene|d", "Maximu|m", "Transcei|ver" — 14 palavras a
+  1400px (a única página com palavra partida no desktop; o "0 de 209" do lote 9
+  só contava token único, e o `celulas.py` pula célula com espaço). Em tabela
+  de 12+ colunas, palavra de 6+ letras em célula de várias palavras ganha
+  `<span style="white-space:nowrap">` (3 tabelas, 3 páginas). Pedaços separados
+  por `-` e `/` continuam podendo quebrar.
+- **`<p>` único em célula**, na linha que tem vizinha de texto nu: desembrulhado
+  (a célula saía 4px abaixo das vizinhas) — 12 células em 5 páginas.
+- **Seção SÓ-índice de âncoras** → `pad_tb=none` (como a subseção, lote 9):
+  `namuga-vicon-lite` texto→índice 80 → 30 (GWI 16), índice→título 140 → 90
+  (GWI 87); `/ambarella`.
+
+### Revisão adversarial do patch (antes de gravar)
+
+Três lentes offline (extração, ritmo, HTML/links) + um verificador por achado:
+17 achados, 12 reais, **nenhum atingia as 136 páginas de hoje** — todos
+corrigidos antes do lote. O mais sério: `_titulo_com_colunas` roda 2–3 vezes
+sobre as mesmas Rows e a R43 fazia a 2ª passada SOBRESCREVER o cabeçalho — em
+[texto, heading, linha de botões] o heading sumia do payload em silêncio.
+Também: a fronteira do invólucro transparente; `_tem_linha_abaixo` sem somar a
+grade de 12; `<p>` desembrulhado criando linha mista; `cmp_motor` cego para a
+R44 (rodava sem os prefixos de link: 27 páginas em vez de 46).
+
+### Achados que NÃO viraram regra
+
+- **Âncoras:** censo das 136 com o `ancoras.py` novo (todo `a[href^="#"]` do
+  corpo): 62 links em 14 páginas, 57 com alvo. Os 5 mortos são do índice da
+  `ambarella-n1-soc` — mortos TAMBÉM no GWI (o JCR da origem não tem os `id`):
+  erro do GWI, migra como está.
+- **Resíduo da R41 no celular** (fora do escopo): a 375px, célula de várias
+  palavras parte palavra no meio em **20 de 86 páginas com tabela** (`/i-chips`
+  69 palavras, tabela 2,0× a do GWI; `/design-gateway` 54; `cyclone-10-fpga` 29,
+  2,9×; `/infineon` aba 5) e persiste a 768px em 12. É o melhor argumento para a
+  linha de CSS do clientlib, que zera tudo na simulação sem tocar no conteúdo:
+  `.cmp-table th,.cmp-table td{word-break:normal;overflow-wrap:normal}`.
+- **Aberto N estendido:** `textwithimage` no fim de subseção paga 30+30+30 = 90px
+  até o que vier — título (48 lugares) OU `hr` (`altera-arria-10`: vãos em volta
+  dos `hr` 97/67 | 66/97 contra 52/52; a frase do lote 9 "97 → 67" só valia para
+  2 dos 4 vãos). Abaixo do limiar; se o N for atacado, vai junto.
+- **`</p><ul>` rende 0px** no global2 (`.cmp-text ul` sem margem; GWI 16–32):
+  308 ocorrências — CSS do site.
+- **XF de contato** (não é nosso): além do já catalogado, o `linkURL` dos botões
+  aponta para `/content/macnicagwi`.
+- **SEGURANÇA:** um revisor mandou o `login-token` do author para
+  `www.microchip.com` num laço de `curl` (1 GET). Auditados os 50 transcritos:
+  foi o único. O ROTEIRO agora proíbe cookie fora do host do author.
+
+---
+
 ## Aberto (achado na conferência visual, NÃO corrigido)
 
 | # | padrão | onde / quanto | causa | proposta |

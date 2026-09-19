@@ -5,6 +5,71 @@ referência; este diz onde parou e o que fazer a seguir.
 
 ---
 
+## ESTADO EM 19/09/2026, FIM DA 5ª SESSÃO — LEIA ISTO PRIMEIRO (vale sobre o resto do arquivo)
+
+```
+servidor = lotes 3–9 (R1–R41)                      <- NADA foi gravado nesta sessão
+motor    = HEAD do branch = R1–R45 + R41b          <- À FRENTE do servidor
+lote 10  = 43 páginas, PRONTO PARA GRAVAR: remigracao/lote10_paginas.txt (dry-run real de 19/09, diff_payload nas 136)
+conferência visual: 67 de 136 (remigracao/CONFERIDAS.md tem as vistas e as 69 que faltam)
+```
+
+**Diretriz nova do Hazael (19/09): só se confere a 1400px.** Celular (375px) está fora do escopo.
+
+**O que a sessão fez:** rodada de 33 revisores + 17 céticos sobre o lote 9 (18 páginas limpas; regras do
+lote 9 conferidas no olho). Defeitos reais viraram R42 (grade aninhada achatada — 10 páginas, ALTA), R43
+(frase→botões 120px), R44 (`.html` cortado de 149 href de rich text — 403 no author), R45/R41b (ajustes da
+R41). O patch passou por revisão adversarial offline (12 achados reais corrigidos). Ferramentas: `measure.py`
+rola a página e lista twi/list/hr/heading; `ancoras.py` olha todo link `#` do corpo; `cmp_motor`/`vaos` já
+exercitam a reescrita de links; `lista_do_dry.py` tira do dry-run a lista real (ignora o `alt` vazio).
+
+### PRÓXIMO PASSO (nesta ordem)
+
+1. **Gravar o lote 10.** Cookie: o `.env` é de 19/09 05:48 — renovar se tiver mais de ~6h. ANTES: o Hazael
+   deve ter feito LOGOUT/login no AEM (um revisor vazou o `login-token` antigo para `www.microchip.com`; só o
+   logout invalida). Conferir `cq:lastModifiedBy` da árvore e que não há outro `aem_remigrar` rodando.
+   ```bash
+   cd scripts-hazael && set -a; . ../.env; set +a
+   # validar ANTES em 3 páginas e olhar a tela (measure.py dos dois lados, 1400px):
+   python3 aem_remigrar.py --paginas /on-semiconductor /altera/altera-arria-10 /altera/development-kits --executar
+   #   /on-semiconductor  -> grade 2x2 e 2 botões lado a lado, frase->botões ~40px (R42, R43)
+   #   altera-arria-10    -> o <span style="white-space:nowrap"> SOBREVIVE ao filtro XSS do AEM? (R41b — só o
+   #                         style em <td> estava validado). Se o AEM tirar o style: desligar a R41b
+   #                         (`larga = False` em nao_quebrar_tokens) e refazer o dry-run.
+   #   development-kits   -> os 4 "Product Overview" com .html no href renderizado (R44)
+   python3 aem_remigrar.py --paginas $(cat remigracao/lote10_paginas.txt) --executar     # ~5 min
+   ```
+   Se o motor mudar antes de gravar, refazer a lista: `diff_payload.py $(cat <W>/rels.txt) > dry.txt` e
+   `lista_do_dry.py dry.txt`.
+2. **Conferir na tela depois do lote** (1400px): `/infineon` (topo vídeo | título+texto; aba Automotive texto |
+   foto ~662px), `i-chips-fpga-evaluation-board`, `ip00c341`, `ip00c812b`, `ambarella-cv72s-soc` (herói texto |
+   foto; a foto de 108px NÃO pode esticar; parágrafo seguinte a ~30px), `ip00cc35` ("Key Features" | texto lado a
+   lado, como o GWI), `sitime-clock-generators`/`-jitter-cleaners`, `canon-li7060` (2 listas lado a lado),
+   `/microchip` e `/genesys-logic` (frase→botões ~40), `i-chips-scaler-warper-lsi` e `i-chips-warping-lsi`
+   (rótulo em cima/baixo da foto, tabela SEM rolagem), `namuga-vicon-lite` (índice 30/90). Depois a conferência
+   de conteúdo (~25 min; esperado 134/136, 0 sobrando) e copiar o csv para `dados/fidelidade_atual.csv`.
+   Preencher o "ESTADO" da seção R42–R45 do REGRAS com o que foi medido.
+3. **Rodada 2 da conferência visual:** as 69 de `CONFERIDAS.md` (22 `design-gateway/*`, 19 `i-chips/*`, 11
+   `altera`, 9 `canon`, 4 `sitime`, 3 `ambarella`, `8-helio-view-software`). Só DEPOIS do lote 10 — não gravar
+   enquanto revisores medem. Custo da rodada 1: ~75 min e ~5,4M tokens de subagente para 33 páginas.
+4. **Decisões para o Hazael** (evidência no REGRAS, R42–R45 "Achados que NÃO viraram regra" e tabela Aberto):
+   - **I e L (dialeto):** nas páginas da Anion, 41 de 44 botões são `Center` e 66 de 66 imagens ficam no padrão
+     (centradas, tamanho natural; nenhuma `Left`) — amostra de 41 páginas sony/deepx, GET em 19/09. Seguir o GWI
+     (esquerda) é SAIR do dialeto da Anion. 7 revisores citaram o L de novo (diagrama "Why Macnica" 79px para
+     dentro do texto). Opções: (a) deixar como está = dialeto da Anion; (b) `Left` só onde o GWI tem
+     `alignment=left` e a imagem é mais estreita que a coluna (~85 imagens/50 páginas).
+   - **Linha de CSS no clientlib** `.cmp-table th,.cmp-table td{word-break:normal;overflow-wrap:normal}`: hoje
+     é o que resolve o celular (20 de 86 páginas com tabela partem palavra a 375px) e dispensaria R41/R41b.
+   - **R44 mexe num ponto que é da lib do Bruno** (`aem_lib.rewrite_link` tira o `.html`): corrigi no motor, sem
+     tocar na lib. Avisar o Bruno — as migrações dele (tq-systems etc.) têm `.html`, mas hitek/iei/mpression/
+     terasic ficaram com `/` final vindo de URL pública.
+5. **Aberto M tem caminho:** a policy do `flexcontaineritem` PERMITE `flexcontainer` aninhado (lida por GET em
+   19/09); carousel de 2+ slides pode ir num flex [carousel | vazio] dentro da coluna (~318px contra 379 no GWI;
+   hoje 662). `carousel` e `flexcontainer` não têm campo de largura no diálogo nem style group para isso. 4
+   folhas `/canon`. Não implementado.
+
+---
+
 ## O que é
 
 Remigrar do GWI as páginas de `/semiconductors` que a agência **Anion ainda

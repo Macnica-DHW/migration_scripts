@@ -1,4 +1,11 @@
-# Remigração — onde parei (18/09/2026, 4ª sessão)
+# Remigração — onde parei (19/09/2026, 5ª sessão)
+
+> **O motor está À FRENTE do servidor.** Servidor = lote 9. Motor (HEAD) = R1–R45 + R41b. O lote 10 (43
+> páginas, `remigracao/lote10_paginas.txt`) está PRONTO e NÃO foi gravado — passo a passo no topo do
+> `HANDOFF.md`. Conferência visual: 67 de 136 (`CONFERIDAS.md`). Só se confere a 1400px.
+> A lista de um lote sai do `diff_payload.py` + `lista_do_dry.py`, nunca do `cmp_motor --lista`.
+
+(o resto deste arquivo é da 4ª sessão e continua valendo)
 
 ## Estado
 

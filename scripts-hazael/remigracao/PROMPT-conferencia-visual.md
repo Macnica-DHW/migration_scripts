@@ -3,6 +3,12 @@ página a página (5ª sessão). Você não tem memória das sessões anteriores
 que precisa está no repositório.
 Repositório: ~/projects/migration_scripts   (branch migration/semiconductors-remigration)
 
+ATENÇÃO — ESTE PROMPT É DA 5ª SESSÃO E FICOU DESATUALIZADO NO MEIO DELA (19/09/2026). O que vale agora está no
+TOPO do HANDOFF.md: o motor está À FRENTE do servidor (lote 10 pronto, NÃO gravado: remigracao/lote10_paginas.txt),
+a conferência visual está em 67 de 136 (remigracao/CONFERIDAS.md lista as 69 que faltam), SÓ se confere a 1400px
+(celular fora do escopo — ignore todo "375px" abaixo), a próxima regra é a R46, e as tarefas 2 e 3 abaixo estão
+FEITAS. Revisor NUNCA manda o cookie do AEM para host externo (está no ROTEIRO).
+
 LEIA PRIMEIRO, nesta ordem:
   scripts-hazael/remigracao/HANDOFF.md            estado, próximo passo, método, armadilhas
   scripts-hazael/remigracao/REGRAS-disposicao.md  R1–R41 + tabela "Aberto" (I, K, L, M, N) + pontos cegos do comparador
