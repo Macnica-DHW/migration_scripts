@@ -1084,7 +1084,40 @@ regras do lote 9 conferidas no OLHO** (R37, R38, R39 com clique, R40, R35, R41 a
 Hazael de 19/09/2026; o que os revisores mediram a 375px fica só como argumento
 para a linha de CSS do clientlib, no fim):
 
-> **ESTADO: ver o carimbo no fim da seção** (lote 10).
+> **ESTADO: GRAVADO no lote 10 (19/09/2026, 43 de 43 sem falha)** — a lista do
+> dry-run real (`diff_payload.py` nas 136 + `lista_do_dry.py`). Validado ANTES em
+> 3 páginas: o `<span style="white-space:nowrap">` da R41b SOBREVIVE ao filtro do
+> AEM (reformatado como `white-space: nowrap;`, 41 no render da `arria-10`).
+>
+> **Conferido NA TELA depois do lote 10** (1400px, `?wcmmode=disabled`,
+> `measure.py` dos dois lados; print lado a lado da `/on-semiconductor` e da
+> `/infineon`):
+> R42 `/on-semiconductor` grade 2×2 (Power | Signal no mesmo y) e 2 botões lado
+> a lado · `/infineon` vídeo | título+texto no topo; aba "Automotive" texto |
+> foto 662×369 (era 880×491 no meio do painel; GWI 402×224) · heróis texto | foto
+> da `fpga-evaluation-board` (foto 223×218, GWI 227×222), `ip00c341` (314×309,
+> GWI 322×316), `cv72s` (108×104 = GWI) e `ip00c812b`, parágrafo seguinte a 30px
+> (era 90) · `ip00cc35` "Key Features" | texto lado a lado, como o GWI · 2
+> `/sitime` e `canon-li7060` colunas lado a lado · R43 frase→botões 40px na
+> `/microchip`, `/genesys-logic` e `/on-semiconductor` (era 120/120/100) · R44
+> `development-kits`: os 4 "Product Overview" com `.html`; censo no HTML
+> renderizado das 136: 803 href de página com `.html` e **0 sem** no rich text
+> (sobram 10 `linkURL` de BOTÃO sem extensão, todos para página que não existe
+> no global2 — o componente só põe `.html` quando o alvo existe; resolve no
+> go-live) · R45 `i-chips-scaler-warper-lsi` e `i-chips-warping-lsi`: rótulo em
+> cima/embaixo da foto como no GWI, foto dentro da célula, tabela SEM rolagem ·
+> R41b `arria-10` 0 palavras partidas a 1400px (eram 14), tabela 2.954px de
+> altura (era 3.404; GWI 2.498) · seção só-índice `namuga-vicon-lite`
+> texto→índice 30 (era 80; GWI 16), índice→título 90 (era 140; GWI 87).
+> Conferência de conteúdo depois do lote: 134/136, faltando 22 (as de sempre),
+> sobrando 0 — nenhuma regressão.
+>
+> **Visto e NÃO corrigido** (baixa): `ip00c812b` foto do herói 393×393 contra
+> 239×239 no GWI (1,6×, `residuo_J` — a largura-alvo da R36 vem da coluna w=5, e
+> o GWI desenha menor); `/genesys-logic` twi→lista 110px (GWI 32) continua;
+> `/infineon` vídeo→abas 123 (GWI 72); `canon-li7060` "Technical Specifications"
+> DUAS vezes — o GWI também desenha as duas (erro do GWI; no destino saem
+> coladas, no GWI com o espaçador no meio).
 
 ### R42 — invólucro SEM largura que guarda uma linha de colunas é transparente
 

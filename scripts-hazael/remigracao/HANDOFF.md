@@ -8,11 +8,14 @@ referência; este diz onde parou e o que fazer a seguir.
 ## ESTADO EM 19/09/2026, FIM DA 5ª SESSÃO — LEIA ISTO PRIMEIRO (vale sobre o resto do arquivo)
 
 ```
-servidor = lotes 3–9 (R1–R41)                      <- NADA foi gravado nesta sessão
-motor    = HEAD do branch = R1–R45 + R41b          <- À FRENTE do servidor
-lote 10  = 43 páginas, PRONTO PARA GRAVAR: remigracao/lote10_paginas.txt (dry-run real de 19/09, diff_payload nas 136)
+servidor = lotes 3–10 = motor no HEAD do branch (R1–R45 + R41b)     <- nada pendente de gravação
+lote 10  = 43 páginas GRAVADAS em 19/09 (43/43 sem falha), conferidas na tela — ver REGRAS, seção R42–R45
+conteúdo = 134/136 limpas depois do lote 10 (faltando 22: landing 16, /ambarella 6; sobrando 0)
 conferência visual: 67 de 136 (remigracao/CONFERIDAS.md tem as vistas e as 69 que faltam)
 ```
+
+> **Os passos 1 e 2 abaixo estão FEITOS** (19/09, 07:40–08:26). O próximo é o 3 (rodada 2 da
+> conferência visual). O que ficou visto e não corrigido está no "ESTADO" da seção R42–R45 do REGRAS.
 
 **Diretriz nova do Hazael (19/09): só se confere a 1400px.** Celular (375px) está fora do escopo.
 
