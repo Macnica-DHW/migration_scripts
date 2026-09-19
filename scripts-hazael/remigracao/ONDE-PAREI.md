@@ -8,8 +8,8 @@ lotes 3–7: R1–R27
 lote 8 de 18/09/2026: R28–R36 — 134/134 sem falha
 lote 9 de 18/09/2026: R37–R41 + ajustes — 108 páginas (as que o diff_payload acusou)
 
-conferência de conteúdo depois do lote 8: 134 de 136 limpas (22 faltando nas 2
-páginas conhecidas, 0 sobrando). REFAZER depois do lote 9.
+conferência de conteúdo REFEITA depois do lote 9: 134 de 136 limpas (22 faltando
+nas 2 páginas conhecidas — landing 16, /ambarella 6 —, 0 sobrando).
 conferência visual: 40 de 136 — ver HANDOFF.md.
 ```
 

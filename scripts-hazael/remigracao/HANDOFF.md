@@ -35,10 +35,12 @@ servidor = lotes 3–7 (R1–R27)
 motor    = HEAD do branch migration/semiconductors-remigration
 Tudo o que está no motor está no servidor.
 
-conferência de CONTEÚDO depois do lote 8 (136 páginas): 133 limpas + 1 que era
-   ponto cego do comparador (corrigido) = 134; faltando 22 nas 2 conhecidas
-   (landing 16 hover-only, /ambarella 6 do índice automático); sobrando 0.
-   REFAZER depois do lote 9 (o lote mexe em HTML de tabela e de text).
+conferência de CONTEÚDO refeita DEPOIS do lote 9 (18/09/2026, 136 páginas):
+   páginas limpas     134 de 136
+   faltando            22          landing 16 (supplierlist — hover-only)
+                                   /ambarella 6 (artefato do índice automático do GWI, R10)
+   sobrando             0
+Nenhuma regressão dos lotes 8 e 9. `dados/fidelidade_atual.csv` é desta rodada.
 ```
 
 **Conferência VISUAL: 40 de 136 páginas** — 16 (3ª sessão) + 10 (rodada 1) +
@@ -61,8 +63,8 @@ adversarial offline antes de gravar (10 achados reais, todos corrigidos).
 
 ## PRÓXIMO PASSO
 
-1. **Conferência de conteúdo depois do lote 9** (`aem_fidelidade_render.py`
-   nas 136) e print de 4–5 páginas onde as regras novas têm de aparecer:
+1. **Print novo** (o conteúdo já foi conferido depois do lote 9; as medidas
+   também — falta o OLHO) de 4–5 páginas onde as regras novas têm de aparecer:
    `altera-arria-10` (R41, tabela rola no celular), `canon-120mxs` (R40 fio do
    título; foto do Eval Kit ~250px), `sitime-clock-buffers` (R38 e índice),
    `altera-holoscan` (R37), `/design-gateway` (clicar em "See the full … lineup
