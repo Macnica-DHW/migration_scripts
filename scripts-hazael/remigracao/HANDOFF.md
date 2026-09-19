@@ -178,6 +178,7 @@ PESQUISA-formulario.md  o form da macnica-and-adi: levantamento, decisão e o qu
 REGRAS-disposicao.md    R1–R36 + o que ficou aberto + os pontos cegos do comparador  <-- LER
 patch3-disposicao.diff  o patch 3 (R13a–f) fora do git; já gravado no lote 3
 PROMPT-conferencia-visual.md  o prompt para abrir a próxima sessão
+ROTEIRO-revisor.md      o roteiro que cada revisor (subagente, somente leitura) recebe
 ESPEC-motor-layout.md   a especificação do motor (50k, do levantamento de 17 agentes)
 ONDE-PAREI.md           comandos de reexecução e retomada
 achados_template_policy.md   policy do template: allow-list, layoutDisabled, swatches
@@ -203,6 +204,8 @@ ferramentas/
   ancoras.py               todo link do índice de âncoras tem alvo na página renderizada?
   vaos_estruturais.py      OFFLINE: vão entre componentes calculado do payload, antes x depois, nas 136
   conf_texto.py            OFFLINE: nenhum texto some nem muda de ordem entre duas versões do motor
+  twi.py                   imagem x texto de cada textwithimage, a 1400 e a 375px (validou a R36)
+  celulas.py               célula de tabela com token partido + a tabela rola no wrapper? a 1400 e 375px (R41)
 
 recon-dossie.md         o levantamento bruto das 7 lentes (200k)
 recon-lacunas.md        as investigações que fecharam as lacunas do crítico (115k)

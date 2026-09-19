@@ -19,3 +19,6 @@ venv/
 migration-tracking/
 checklist-revisao-tqsystems.txt
 instruções_tq_systems.docx
+
+# Cache de JCR das ferramentas offline (cmp_motor, vaos_estruturais, conf_texto) — recriável
+jcr_cache*.pkl
