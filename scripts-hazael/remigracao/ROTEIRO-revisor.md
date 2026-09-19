@@ -17,8 +17,18 @@ página migrada (destino) e relata defeitos de DISPOSIÇÃO.
 - Não rode `prints.sh` nem `aem_screenshot.py`: os prints já existem.
 - Se qualquer ferramenta devolver HTTP 401, PARE e diga isso no relatório (o
   cookie expirou) — não invente medida.
+- **O cookie do AEM só vai para o host do author.** NUNCA `curl -H "Cookie:
+  $AEM_COOKIES"` (nem `requests.get(..., cookies=…)`) para URL que não comece
+  pelo `base_url` do author — e nunca num laço que misture URL do AEM com URL
+  externa. Link externo (site do fabricante, PDF) se confere SEM cookie, em
+  comando SEPARADO. Em 19/09/2026 um revisor mandou o `login-token` para
+  `www.microchip.com` assim; o Hazael teve de derrubar a sessão.
 
 ## CRITÉRIO
+**Só a 1400px.** Nesta migração NÃO se confere celular (diretriz do Hazael,
+19/09/2026): não meça a 375px, não rode `--largura 375`, e achado que só aparece
+abaixo de 1400px NÃO é defeito — no máximo uma linha em "fora do escopo".
+
 As páginas migradas NÃO têm margem (sem max-width de 1000px; padding lateral
 25px): ficam MAIS LARGAS que o GWI (coluna de ~976px) e isso é ESPERADO — largura
 diferente NÃO é defeito. O que tem de bater é a DISPOSIÇÃO:
@@ -63,8 +73,8 @@ diferente NÃO é defeito. O que tem de bater é a DISPOSIÇÃO:
 - Fatias em resolução cheia: `<SCRATCH>/prints/fatias/<nome>__gwi__NN.png` e
   `<nome>__dest__NN.png` (1500px de altura cada, sobreposição de 100px).
 - Geometria renderizada (x/y/largura/altura/gap por componente), nos DOIS lados,
-  sempre com `?wcmmode=disabled`; `--largura 375` para o celular:
-    `python3 remigracao/ferramentas/measure.py <caminho-completo> "?wcmmode=disabled" [--largura 375]`
+  sempre com `?wcmmode=disabled`:
+    `python3 remigracao/ferramentas/measure.py <caminho-completo> "?wcmmode=disabled"`
   ROLA a página antes de medir e lista título/heading, text, image, textwithimage
   (com `img=LxA@x`), list, carousel, índice de âncoras, tabela, botão, embed, abas
   e `hr`. `gap` = distância ao componente anterior do MESMO nível; `in` (linha com
@@ -78,9 +88,10 @@ diferente NÃO é defeito. O que tem de bater é a DISPOSIÇÃO:
   — todo `a[href^="#"]` do CORPO (índice de âncoras E link no meio de texto, botão,
   tabela), com o y do alvo ou `MORTO`. Serve para os dois lados: âncora morta
   também no GWI é erro do GWI (migra como está), não defeito nosso.
-- Imagem x texto de cada `textwithimage`, a 1400 e a 375px:
+- Imagem x texto de cada `textwithimage` (a ferramenta mede a 1400 e a 375px —
+  leia só o bloco de 1400):
     `python3 remigracao/ferramentas/twi.py <caminho-completo> [...]`
-- Células de tabela com token partido no meio + a tabela rola no wrapper?
+- Células de tabela com token partido no meio (idem: só o bloco de 1400):
     `python3 remigracao/ferramentas/celulas.py <caminho-completo> [...]`
 - Se precisar de uma medida que nenhuma ferramenta dá, escreva uma sonda
   playwright curta no SEU rascunho (copie o padrão de `twi.py`: cookies do .env,
