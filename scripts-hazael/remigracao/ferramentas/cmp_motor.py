@@ -63,7 +63,12 @@ def montar(AL, j, o):
         l = AL.Row("single"); c = AL.Column(o, width=12); c.blocks = [AL.Block("title_vazio", o)]; l.columns = [c]; cab.rows = [l]; page.sections.insert(0, cab)
     for b in page.blocks:
         if b.kind in ('related', 'productlist') and not b.props.get('pages'): b.props['pages'] = ['/x/placeholder']
-    payload, cont = AL.build_layout_payload(page, reescrever_listas=False)
+    # com os prefixos de link: a reescrita de href de rich text (R44) só roda
+    # com eles — sem isto 19 das 46 páginas do lote 10 não apareciam na lista
+    from aem_lib import CONFIG
+    payload, cont = AL.build_layout_payload(page, link_de=CONFIG['gwi_prefix'],
+                                            link_para=CONFIG['global2_prefix'],
+                                            reescrever_listas=False)
     return page, payload, cont
 def esboco(payload):
     """árvore de resourceTypes, indentada"""

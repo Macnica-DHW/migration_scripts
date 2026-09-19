@@ -20,7 +20,8 @@ def textos(pl):
     out=[]
     for k,v in pl.items():
         if k.rsplit('/',1)[-1] in ('text','jcr:title','linkURL','fileReference','cq:panelTitle','pages','youtubeVideoId','linkTarget') and not k.endswith('@TypeHint'):
-            t=re.sub(r'\s+',' ',re.sub(r'<[^>]+>',' ',str(v)).replace('&nbsp;',' ')).strip()
+            s=re.sub(r'</?span\b[^>]*>','',str(v))          # R41b: span nowrap em volta de palavra não é fronteira de texto
+            t=re.sub(r'\s+',' ',re.sub(r'<[^>]+>',' ',s).replace('&nbsp;',' ')).strip()
             if t: out.append(t)
     return out
 ruim=0; ordem=0

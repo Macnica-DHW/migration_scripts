@@ -48,7 +48,10 @@ def montar(AL, j, o):
     for b in page.blocks:
         if b.kind in ("related", "productlist") and not b.props.get("pages"):
             b.props["pages"] = ["/x/placeholder"]
-    payload, _ = AL.build_layout_payload(page, reescrever_listas=False)
+    from aem_lib import CONFIG
+    payload, _ = AL.build_layout_payload(page, link_de=CONFIG['gwi_prefix'],
+                                         link_para=CONFIG['global2_prefix'],
+                                         reescrever_listas=False)
     return payload
 
 

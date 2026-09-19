@@ -83,7 +83,7 @@ from aem_lib import (BUTTON_TYPES, CAROUSEL_TYPES, CONTAINER_RT, DOWNLOAD_TYPES,
                      DOWNLOADLIST_TYPES, HEADING_TYPES, IMAGE_TYPES,
                      IMAGEPACK_TYPES, KNOWN_CONTAINER_TYPES, PRODUCTLISTING_TYPES,
                      RESPONSIVE_GRID_RT, TABLE_TYPES, TEXT_TYPES,
-                     is_meaningful_text, list_child_nodes, rewrite_links_in_html,
+                     is_meaningful_text, list_child_nodes, rewrite_link,
                      strip_empty_blocks)
 
 # ---------------------------------------------------------------------------
@@ -341,7 +341,91 @@ _ESPACADOR_COM_INLINE = re.compile(
     r"|</?(?:b|strong|i|em|u|span|font)\b[^>]*>)*</\1\s*>", re.I)
 
 
+_HREF = re.compile(r'(href=")([^"]+)(")')
+_PAGINA_HTML = re.compile(r"\.html(?=$|[?#])", re.I)
+_URL_PUBLICA = re.compile(r"^https?://(?:www\.)?macnica\.com/", re.I)
+
+
+def reescrever_hrefs(html, link_de, link_para):
+    """`rewrite_link` em todo href do rich text — MANTENDO o `.html` (R44).
+
+    `aem_lib.rewrite_link` tira o `.html` ("link interno do AEM não usa"), o
+    que vale para PROPRIEDADE de link (`linkURL`, `pages`: o componente põe a
+    extensão ao renderizar). O `href` de rich text sai como está gravado, e
+    sem extensão o Sling responde 302 -> `…/` -> 403 no author: nenhum dos 149
+    links de página do corpo (24 páginas) abria. O GWI grava `.html` em 449 de
+    449 href de página, e as páginas da Anion em 249 de 249. A lib é
+    compartilhada (e serve propriedades), então a correção fica aqui.
+    URL pública com `/` final (`…/boards-modules/terasic/`, 2 links) vira
+    caminho de conteúdo + `.html`, não `…/terasic/`.
+    """
+    def troca(m):
+        orig = m.group(2)
+        novo = rewrite_link(orig, link_de, link_para)
+        if novo == orig or not novo.startswith("/content/"):
+            return m.group(0)
+        mm = re.match(r"([^?#]*)(.*)$", novo, re.S)
+        caminho, resto = mm.group(1), mm.group(2)
+        era_pagina = bool(_PAGINA_HTML.search(orig.strip())) or (
+            _URL_PUBLICA.match(orig.strip()) and caminho.endswith("/"))
+        if era_pagina and not caminho.lower().endswith(".html"):
+            caminho = caminho.rstrip("/") + ".html"
+        return m.group(1) + caminho + resto + m.group(3)
+    return _HREF.sub(troca, html) if html and isinstance(html, str) else html
+
+
+_P_UNICO_NA_CELULA = re.compile(
+    r"(<t[dh]\b[^>]*>)\s*<p>((?:(?!</?p\b|</?t[dh]\b).)*?)</p>\s*(</t[dh]\s*>)",
+    re.I | re.S)
+
+
+_TR_INTEIRA = re.compile(r"<tr\b[^>]*>.*?</tr\s*>", re.I | re.S)
+
+
+def _texto_nu(miolo):
+    """Célula com texto direto, sem bloco (`<p>`, lista, título) a embrulhá-lo."""
+    m = miolo.strip()
+    return (bool(re.sub(r"<[^>]+>|&nbsp;|\s", "", m))
+            and not re.match(r"<(p|ul|ol|h[1-6]|div|table)\b", m, re.I))
+
+
+def desembrulhar_p_de_celula(html):
+    """`<td><p>texto</p></td>` -> `<td>texto</td>` na linha MISTA (R45).
+
+    O `<p>` dentro da célula pega a entrelinha de `.cmp-table p`: a célula sai
+    4px abaixo das vizinhas de texto nu na MESMA linha (`1-vworkshop-altera-
+    soc-introduction`, `agilex-5-…-overview`, 3 folhas `stratix-10`: 12 células
+    em 5 páginas). Só o `<p>` ÚNICO e sem atributo (com `style` fica), e só na
+    linha que TEM vizinha de texto nu: linha toda em `<p>` já é uniforme, e
+    desembrulhar uma célula dela é que criaria a linha mista.
+    """
+    def linha(m):
+        tr = m.group(0)
+        if not any(_texto_nu(c.group(3)) for c in _CELULA.finditer(tr)):
+            return tr
+        return _P_UNICO_NA_CELULA.sub(r"\1\2\3", tr)
+    return _TR_INTEIRA.sub(linha, html or "")
+
+
 _CELULA = re.compile(r"<(t[dh])\b([^>]*)>((?:(?!</?t[dh]\b).)*?)</\1\s*>", re.I | re.S)
+
+
+_TAG = re.compile(r"(<[^>]+>)")
+_LINHA_DE_TABELA = re.compile(r"<tr\b[^>]*>(.*?)</tr\s*>", re.I | re.S)
+# palavra de 6+ letras que não é nome de entidade (`&middot;`) nem pedaço de número
+_PALAVRA_LONGA = re.compile(r"(?<![&\w])([^\W\d_]{6,})(?![\w;])")
+
+
+def _colunas_da_tabela(html):
+    """Nº de colunas da linha mais larga (somando `colspan`)."""
+    n = 0
+    for linha in _LINHA_DE_TABELA.findall(html):
+        c = 0
+        for m in _CELULA.finditer(linha):
+            cs = re.search(r"""\bcolspan\s*=\s*["']?(\d+)""", m.group(2), re.I)
+            c += int(cs.group(1)) if cs else 1
+        n = max(n, c)
+    return n
 
 
 def nao_quebrar_tokens(html):
@@ -356,10 +440,35 @@ def nao_quebrar_tokens(html):
     `.cmp-table{overflow-x:auto}`; com `white-space:nowrap` nas células de
     token único o destino faz o mesmo (o wrapper `scroll-hint` já rola).
     """
+    # Tabela MUITO larga (12+ colunas): com as células numéricas travadas pelo
+    # `nowrap`, o layout automático tira a largura justamente da coluna dos
+    # RÓTULOS de várias palavras, e ela parte palavra no meio a 1400px —
+    # "Hardene|d", "Maximu|m", "Transcei|ver" na `altera-arria-10` (14 palavras
+    # em 11 células; a única página com palavra partida no desktop). Ali cada
+    # palavra de 6+ letras ganha um `<span>` que não quebra: a coluna volta a
+    # ter a largura da maior palavra, como no GWI (R41b). 3 tabelas em 3
+    # páginas. A saída de raiz continua sendo a linha de CSS no clientlib.
+    larga = _colunas_da_tabela(html or "") >= 12
+
     def troca(m):
         tag, attrs, miolo = m.group(1), m.group(2), m.group(3)
         txt = re.sub(r"<[^>]+>", "", miolo).replace("&nbsp;", " ").replace("\u00a0", " ").strip()
+        if (larga and re.search(r"\s", txt) and "white-space" not in miolo.lower()
+                and not re.search(r"<(?:img|table|ul|ol|iframe|video)\b", miolo, re.I)):
+            partes = _TAG.split(miolo)
+            for i, parte in enumerate(partes):
+                if not parte.startswith("<"):
+                    partes[i] = _PALAVRA_LONGA.sub(
+                        r'<span style="white-space:nowrap">\1</span>', parte)
+            return f"<{tag}{attrs}>{''.join(partes)}</{tag}>"
         if not (2 <= len(txt) <= 16) or re.search(r"\s", txt) or "white-space" in attrs.lower():
+            return m.group(0)
+        # …nem a célula que também tem FOTO: `<a>IP00C341</a><img>` conta como
+        # token único, e com `nowrap` o rótulo e a foto (`width:100%`) ficam na
+        # MESMA linha — a foto passa 49–59px da célula, invade a vizinha e a
+        # tabela ROLA no desktop (`i-chips-scaler-warper-lsi`, `i-chips-
+        # warping-lsi`: 10 células). A foto já segura a largura da coluna (R45).
+        if re.search(r"<(?:img|table|ul|ol|iframe|video)\b", miolo, re.I):
             return m.group(0)
         ms = re.search(r"""\bstyle\s*=\s*(["'])""", attrs, re.I)
         if ms:
@@ -1389,14 +1498,36 @@ def _titulo_com_colunas(linhas):
     out = []
     for r in linhas:
         ant = out[-1] if out else None
+        # `not r.cabecalho`: a função roda 2–3 vezes sobre as mesmas Rows
+        # (`extrair_linhas`, `_secoes`, `extract_tree`); sem isto a 2ª passada
+        # SOBRESCREVIA o cabeçalho — em [texto, heading, linha de botões] o
+        # heading sumia do payload em silêncio (revisão adversarial do lote 10).
         if (ant is not None and r.kind == "columns" and ant.kind == "single"
-                and not ant.cabecalho and ant.blocks
-                and all(b.kind == "title" for b in ant.blocks)):
+                and not r.cabecalho and not ant.cabecalho and ant.blocks
+                and (all(b.kind == "title" for b in ant.blocks)
+                     or _frase_apresenta_botoes(ant, r))):
             r.cabecalho = ant.blocks
             out[-1] = r
         else:
             out.append(r)
     return out
+
+
+def _frase_apresenta_botoes(ant, r):
+    """A linha SÓ de botões anda com o texto que a apresenta (R43).
+
+    "For more information on Microchip products:" e, logo abaixo, Contact Us |
+    Supplier Website: 16px no GWI. Em dois containers eram 30 + 50 + 40 (a
+    margem do botão) = 120px na `/microchip` e na `/genesys-logic`, com o par
+    de botões mais perto do rodapé que da frase — e na `/genesys-logic` a
+    frase lia como última linha do FAQ de cima. No mesmo container (o
+    mecanismo do `cabecalho`, R23) ficam a 40px. Só sem espaçador na origem:
+    com ele o GWI também separa.
+    """
+    return (ant.blocks[-1].kind == "text"
+            and all(c.blocks and all(b.kind == "button" for b in c.blocks)
+                    for c in r.columns)
+            and not r.columns[0].blocks[0].props.get("espaco_antes"))
 
 
 def _e_card_orfao(node):
@@ -1445,6 +1576,72 @@ def _completar_grades(linhas):
     return linhas
 
 
+def _tem_linha_abaixo(node):
+    """O invólucro guarda uma LINHA de colunas: 2+ filhos-coluna consecutivos
+    QUE CABEM na mesma linha da grade de 12, ou um descendente (descendo só por
+    invólucro sem largura) que guarda uma."""
+    n = soma = 0
+    for _n, c in list_child_nodes(node):
+        if not tem_conteudo_renderizavel(c):
+            continue
+        w = col_width_of(c)
+        if w is None:
+            n = soma = 0
+            continue
+        # 2 colunas consecutivas só são LINHA se cabem na grade de 12 (R19):
+        # w=8 seguido de w=8 são dois blocos empilhados, não uma linha
+        ocupa = w + (offset_of(c) or 0)
+        if n and soma + ocupa > 12:
+            n = soma = 0
+        n += 1
+        soma += ocupa
+        if n >= 2:
+            return True
+    for _n, c in list_child_nodes(node):
+        if (not tem_conteudo_renderizavel(c) or rt_of(c) not in WRAPPER_TYPES
+                or rt_of(c) == IMAGETEXT_RT or col_width_of(c) is not None):
+            continue
+        if _tem_linha_abaixo(c):
+            return True
+    return False
+
+
+_FRONTEIRA = {}     # sentinela: borda de invólucro transparente (R42)
+
+
+def _filhos_emendados(node, caminho):
+    """Filhos de `node`, com o invólucro TRANSPARENTE trocado pelos filhos dele (R42).
+
+    `_coletar_blocos` achata e ignora larguras de propósito — certo DENTRO de
+    coluna, errado num invólucro SEM largura que guarda uma linha de colunas
+    misturada a irmãos de largura cheia. `_is_linha` exige que TODO filho seja
+    coluna; o invólucro misto caía em `_coletar_blocos` e a linha saía
+    EMPILHADA: na `/on-semiconductor` a 2ª linha da grade 2x2 (Power Management
+    | Signal Management) e os dois botões lado a lado; o herói texto | foto da
+    `i-chips-fpga-evaluation-board`, da `ip00c341` e da `ambarella-cv72s-soc`
+    (foto sozinha numa linha, longe do parágrafo dela); a aba "Automotive" da
+    `/infineon` (texto | foto virou tudo empilhado, a foto com 880px no meio
+    do painel); "Key Capabilities" | "Applications" de 2 `/sitime`. 12 nós em
+    10 páginas. Emendar os filhos na lista do pai (em vez de recursão) mantém
+    o estado da corrida: espaçador (R24), coluna solitária (R29), card órfão
+    (R18) e o título que acompanha a linha (R23).
+    """
+    for nome, ch in list_child_nodes(node):
+        p = f"{caminho}/{nome}"
+        if (tem_conteudo_renderizavel(ch) and rt_of(ch) in WRAPPER_TYPES
+                and rt_of(ch) != IMAGETEXT_RT and col_width_of(ch) is None
+                and not _is_linha(ch) and not _e_card_orfao(ch)
+                and _tem_linha_abaixo(ch)):
+            # o invólucro sem largura ocupa 12 na grade: abre e fecha linha.
+            # Sem a borda, colunas de PAIS diferentes caíam na mesma linha
+            # ([X w4, Y w4, T{a4, b4, c4}] saía [X, Y, a] + [b, c]).
+            yield p, _FRONTEIRA
+            yield from _filhos_emendados(ch, p)
+            yield p, _FRONTEIRA
+        else:
+            yield p, ch
+
+
 def extrair_linhas(node, caminho, page):
     """Filhos de um nó viram linhas: `single` ou `columns`.
 
@@ -1472,7 +1669,9 @@ def extrair_linhas(node, caminho, page):
     corrida = []          # folhas consecutivas de largura cheia
     colunas = []          # colunas consecutivas -> uma linha
     antes = []            # a corrida que a 1ª coluna interrompeu (R29)
-    vivos = [c for _n, c in list_child_nodes(node) if tem_conteudo_renderizavel(c)]
+    filhos = list(_filhos_emendados(node, caminho))
+    vivos = [c for _p, c in filhos
+             if c is not _FRONTEIRA and tem_conteudo_renderizavel(c)]
 
     def fechar_corrida():
         """Fecha a corrida, quebrando numa Row por SUBSEÇÃO.
@@ -1535,8 +1734,10 @@ def extrair_linhas(node, caminho, page):
             espaco = False
         return blocos
 
-    for nome, ch in list_child_nodes(node):
-        p = f"{caminho}/{nome}"
+    for p, ch in filhos:
+        if ch is _FRONTEIRA:
+            fechar_colunas()     # a linha de colunas não atravessa a borda
+            continue
         if not tem_conteudo_renderizavel(ch):
             if rt_of(ch) in TEXT_TYPES:
                 espaco = True
@@ -1571,6 +1772,7 @@ def extrair_linhas(node, caminho, page):
             fechar_corrida()
             r = _linha_de(ch, p, page)
             if r.columns:
+                marcar(r.columns[0].blocks)
                 linhas.extend(_quebrar_por_largura(r))
             continue
         corrida.extend(marcar(_coletar_blocos(ch, p, page)))
@@ -1707,8 +1909,45 @@ def _secoes(corpo, caminho, page):
             return
         fechar()
 
-    for i, (nome, ch) in enumerate(list_child_nodes(corpo)):
+    # Filhos de TOPO consecutivos com largura de coluna são UMA linha (R42). Na
+    # `/infineon` o corpo tem `resizablecontainer_c` (w=6: vídeo) e
+    # `resizablecontainer` (w=6: heading + text) lado a lado; cada invólucro
+    # virava uma seção — o vídeo sozinho em meia linha (a R26 o embrulhava) e,
+    # 80px abaixo, título | texto lado a lado, porque `extrair_linhas` lia as
+    # larguras das FOLHAS de dentro da coluna (w=5 o=1, numa grade de 6) como
+    # colunas de uma grade de 12. Única página do escopo com o padrão.
+    topo = [(n, c) for n, c in list_child_nodes(corpo)]
+    em_linha = {}         # índice do 1º filho da linha -> índice do último
+    i = 0
+    while i < len(topo):
+        j = i
+        while (j < len(topo) and tem_conteudo_renderizavel(topo[j][1])
+               and not so_pageproperties(topo[j][1])
+               and col_width_of(topo[j][1]) is not None):
+            j += 1
+        if j - i >= 2:
+            em_linha[i] = j - 1
+        i = max(j, i + 1)
+    pular_ate = -1
+
+    for i, (nome, ch) in enumerate(topo):
         p = f"{caminho}/{nome}"
+        if i <= pular_ate:
+            continue
+        if i in em_linha:
+            pular_ate = em_linha[i]
+            falso = {"jcr:primaryType": "nt:unstructured"}
+            falso.update(dict(topo[i:pular_ate + 1]))
+            r = _linha_de(falso, caminho, page)
+            if r.columns:
+                cortar()
+                ts = titulo_que_introduz()
+                fechar()
+                s = Section(p, len(secoes))
+                s.rows = _quebrar_por_largura(r)
+                s.rows[0].cabecalho = ts + s.rows[0].cabecalho
+                secoes.append(s)
+            continue
 
         if not tem_conteudo_renderizavel(ch):
             # spacer de topo: não é conteúdo, mas CORTA a corrida de folhas.
@@ -1754,11 +1993,29 @@ def _secoes(corpo, caminho, page):
             continue
 
         # invólucro: seção própria, com suas linhas e colunas
+        tinha_corte = corte
         cortar()
+        linhas_ch = extrair_linhas(ch, p, page)
+        if (corrida and not tinha_corte and linhas_ch
+                and rt_of(corrida[-1][0]) in TEXT_TYPES
+                and all(b.kind == "button" for r in linhas_ch for b in r.blocks)):
+            # …menos o invólucro SÓ de botões logo depois de uma corrida de
+            # folhas que TERMINA na frase que os apresenta, sem espaçador: a
+            # linha de botões entra na seção DELA (R43). Corrida que termina
+            # em título segue o caminho de sempre (o título acompanha o bloco,
+            # 13d/R29); a que termina em `hr` (`/ambarella`: `<hr>&nbsp;`
+            # embutido no fim do text) fica como estava — o fio já separa.
+            fechar()
+            ult = secoes[-1] if secoes else None
+            if (ult is not None and getattr(ult, "_de_corrida", False)
+                    and ult.rows and ult.rows[-1].blocks
+                    and ult.rows[-1].blocks[-1].kind == "text"):
+                ult.rows = _titulo_com_colunas(ult.rows + linhas_ch)
+                continue
         ts = titulo_que_introduz()
         fechar()
         s = Section(p, len(secoes))
-        s.rows = extrair_linhas(ch, p, page)
+        s.rows = linhas_ch
         if ts:
             if s.rows and s.rows[0].kind == "single" and s.rows[0].columns:
                 s.rows[0].columns[0].blocks[:0] = ts
@@ -1922,6 +2179,12 @@ def _marcar_papeis(page):
     for s in page.sections:
         if s.role == "cta":
             s.pad_tb = "none"
+        # …e a que é SÓ o índice de âncoras: `.anchor-link__list` traz 60px de
+        # margem embaixo. Como subseção já saía `none` (lote 9); como SEÇÃO
+        # ficava a 80 do texto de cima (GWI 16) e a 120–140 do título de baixo
+        # (GWI 87) — `namuga-vicon-lite`, `/ambarella` (R45).
+        elif s.blocks and all(b.kind == "anchorlink" for b in s.blocks):
+            s.pad_tb = "none"
 
 
 def _page_props(jcr_content):
@@ -1997,7 +2260,7 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
     def html(s):
         s = strip_empty_blocks(s or "")
         if link_de and link_para:
-            s = rewrite_links_in_html(s, link_de, link_para)
+            s = reescrever_hrefs(s, link_de, link_para)
         return s
 
     k = b.kind
@@ -2123,7 +2386,8 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         # HTML cru do GWI preservado: não existe UMA regra CSS para <table>
         # dentro de .cmp-text (0 ocorrências no site.css), então jogar tabela
         # num `text` perde a formatação inteira.
-        payload[f"{base}/text"] = html(b.props.get("html", ""))
+        payload[f"{base}/text"] = desembrulhar_p_de_celula(
+            html(b.props.get("html", "")))
         payload[f"{base}/textIsRich"] = "true"
         if b.props.get("de_layout"):
             _styles(payload, base, [S_TABLE_BLACK, S_TABLE_NOBG,
@@ -2680,7 +2944,22 @@ def _emitir_secao(payload, slot, nomes, s, page, link_de, link_para):
     # padrão do container é `50px 25px` e esses 25px empurrariam o texto para
     # dentro, desalinhando com o resto da seção.
     if len(s.rows) > 1:
+        sub = ant = None
         for r in s.rows:
+            # O herói {títulos + texto | foto} sai `textwithimage` COM cabeçalho
+            # (sub-container `small`); o parágrafo que CONTINUA o texto, sem nó
+            # espaçador na origem, anda no MESMO sub-container: 30px (a margem
+            # do twi) em vez de 30+30+30 = 90 no meio do texto corrido (GWI 28:
+            # `ambarella-cv72s-soc`, `ip00c812b`, `ip00c341`) (R42).
+            if (ant is not None and ant.cabecalho and not ant.vazias
+                    and r.kind == "single" and not r.cabecalho and r.blocks
+                    and all(b.kind == "text" for b in r.blocks)
+                    and not r.blocks[0].props.get("espaco_antes")
+                    and _tentar_textwithimage(ant) is not None):
+                _emitir_linha(payload, sub, nomes, r, page, link_de, link_para)
+                ant = None
+                continue
+            ant = r
             sub = f"{alvo}/{nomes(alvo, 'container')}"
             # subseção que é SÓ o índice de âncoras: `.anchor-link__list` já
             # traz 60px de margem embaixo — com o 30+30 do sub-container o
