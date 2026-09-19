@@ -62,22 +62,28 @@ diferente NÃO é defeito. O que tem de bater é a DISPOSIÇÃO:
   TODOS com a ferramenta Read.
 - Fatias em resolução cheia: `<SCRATCH>/prints/fatias/<nome>__gwi__NN.png` e
   `<nome>__dest__NN.png` (1500px de altura cada, sobreposição de 100px).
-- Geometria renderizada (x/y/altura/gap por componente), nos DOIS lados, sempre
-  com `?wcmmode=disabled`:
-    `python3 remigracao/ferramentas/measure.py <caminho-completo> "?wcmmode=disabled"`
+- Geometria renderizada (x/y/largura/altura/gap por componente), nos DOIS lados,
+  sempre com `?wcmmode=disabled`; `--largura 375` para o celular:
+    `python3 remigracao/ferramentas/measure.py <caminho-completo> "?wcmmode=disabled" [--largura 375]`
+  ROLA a página antes de medir e lista título/heading, text, image, textwithimage
+  (com `img=LxA@x`), list, carousel, índice de âncoras, tabela, botão, embed, abas
+  e `hr`. `gap` = distância ao componente anterior do MESMO nível; `in` (linha com
+  ↳) = distância ao topo do componente que o contém. A 1ª linha traz a altura da
+  página e, se houver, `ESTOURO HORIZONTAL NO CORPO` (o cabeçalho/rodapé do site
+  passam 12px da janela em TODA página — não é nosso).
 - Vão entre um título e o texto seguinte:
     `python3 remigracao/ferramentas/vao.py <caminho-completo> "Texto exato do título" [...]`
 - Árvore enxuta do JCR: `python3 remigracao/ferramentas/jcr.py <rel> gwi|dest|ambos [--filtro "texto"]`
-- Âncoras: `python3 remigracao/ferramentas/ancoras.py <caminho-completo-do-destino>`
-  (só olha o ÍNDICE de âncoras; link `#x` no meio de um texto tem de ser conferido
-  à parte: `main a[href^="#"]` sem `getElementById` — foi assim que a R39 escapou)
+- Âncoras: `python3 remigracao/ferramentas/ancoras.py <caminho-completo> [...]`
+  — todo `a[href^="#"]` do CORPO (índice de âncoras E link no meio de texto, botão,
+  tabela), com o y do alvo ou `MORTO`. Serve para os dois lados: âncora morta
+  também no GWI é erro do GWI (migra como está), não defeito nosso.
 - Imagem x texto de cada `textwithimage`, a 1400 e a 375px:
     `python3 remigracao/ferramentas/twi.py <caminho-completo> [...]`
 - Células de tabela com token partido no meio + a tabela rola no wrapper?
     `python3 remigracao/ferramentas/celulas.py <caminho-completo> [...]`
-- ATENÇÃO: `measure.py` NÃO rola a página (imagem lazy do GWI desloca os y abaixo
-  dela) e NÃO lista `textwithimage`, `list` nem `hr`. Para esses, escreva uma sonda
-  playwright curta no seu rascunho (copie o padrão de `twi.py`: cookies do .env,
+- Se precisar de uma medida que nenhuma ferramenta dá, escreva uma sonda
+  playwright curta no SEU rascunho (copie o padrão de `twi.py`: cookies do .env,
   rolar a página inteira antes de medir, só GET).
 - Regras no motor (R1–R41) e abertos: `remigracao/REGRAS-disposicao.md`. O motor é
   `../scripts-bruno/aem_layout.py` (pode LER para apontar a causa).
