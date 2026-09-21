@@ -1,0 +1,46 @@
+{
+ "quando": "2026-09-21T08:57:53.011493",
+ "motivo": "XF products-contact-block: bot\u00f5es empilhados -> lado a lado (GWI \u00e9 a fonte da verdade). \u00daltimo editor: bruno.jaques",
+ "xf": "/content/experience-fragments/copia-teste/americas/mai/en/site/products-contact-block/master",
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "Products-Contact block",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/xf-web-variation",
+  "jcr:created": "Thu Sep 10 2026 18:39:37 GMT+0000",
+  "cq:lastModified": "Tue Sep 15 2026 18:21:18 GMT+0000",
+  "cq:xfVariantType": "web",
+  "sling:resourceType": "macnicaglobal2/components/page",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "containerpy": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "button_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "button_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Contact Us for More Information",
+      "linkURL": "/content/macnicagwi/americas/mai/en/contact/form",
+      "linkTarget": "_self",
+      "sling:resourceType": "macnicaglobal2/components/content/button"
+     }
+    },
+    "button_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "button_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Request a Quote",
+      "linkURL": "/content/macnicagwi/americas/mai/en/request-a-quote",
+      "linkTarget": "_self",
+      "sling:resourceType": "macnicaglobal2/components/content/button"
+     }
+    }
+   }
+  }
+ }
+}

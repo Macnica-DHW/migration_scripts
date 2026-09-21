@@ -1272,6 +1272,28 @@ pioram — menos largura por item. Autor da Macnica já usa o estilo em
 logo depois de trocar a classe devolve o valor ANTIGO — a primeira rodada
 concluiu "o estilo não faz nada". Esperar 400ms antes de medir.
 
+### R49 — `alt` nunca sai vazio em `textwithimage` e `image`
+
+**Onde:** o Hazael, tentando pôr 36% de largura de imagem nos `textwithimage`
+pelo editor (21/09/2026), não conseguia salvar o diálogo: a aba Metadata
+recusava. 69 nós em 41 páginas (44 `textwithimage`, 25 `image`).
+**Causa:** os dois componentes herdam a aba Metadata do core image v2, onde
+"Alternative Text" (`./alt`) é `required=True`; só `isDecorative` ou
+`altValueFromDAM` dispensam. O motor gravava `alt=""`, o JCR não guarda
+string vazia, o nó fica sem `alt` e o diálogo não fecha. O GWI também não
+tinha alt nesses nós. O DAM não serve de fonte: dos 68 assets, 48 não têm
+`dc:title` e os 20 que têm trazem nome de arquivo ou id de banco de imagem
+("1129543888", "IP00C755 - 1"). `isDecorative` seria mentira — são fotos de
+produto e de aplicação.
+**Regra:** o alt sai do que a própria página já diz, nesta ordem —
+`textwithimage`: o `<hN>` do texto da própria dupla (5 nós) › o último
+`title` acima, na ordem do documento › o título da página; `image`: o último
+`title` acima › o título da página. Nunca a primeira frase de uma lista de
+features ("Built on TSMC's 55 nm high-volume flash proc" não é alt). Cobertura
+100%. No motor (`_alt_derivado`) e, para o que já está gravado sem
+regenerar a página, `ferramentas/alt_faltando.py` (só a propriedade `alt`, só
+onde falta; dry-run por padrão; idempotente).
+
 ### Revisão adversarial do patch (antes de gravar)
 
 Três lentes offline (extração, ritmo, HTML/links) + um verificador por achado:

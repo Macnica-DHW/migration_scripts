@@ -1,0 +1,201 @@
+1 cookies carregados de o .env (login-token presente: sim)
+
+
+=== /altera/altera-arria-10  —  2 nó(s) sem alt ===
+   textwithimage_1        [heading da dupla] 'Cloud Service and Storage'
+   textwithimage_1        [heading da dupla] 'Broadcast'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /altera/altera-holoscan  —  1 nó(s) sem alt ===
+   textwithimage_1        [heading da dupla] '10G Sensor Bridge Development Platform'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /altera/altera-max-10  —  3 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Automotive'
+   textwithimage_1        [título anterior ] 'Industrial'
+   textwithimage_1        [título anterior ] 'Communications'
+   [dry-run] 3 alt(s) a gravar. Use --executar.
+
+=== /altera/altera-stratix-10  —  4 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Communications'
+   textwithimage_1        [título anterior ] 'Computing and Storage'
+   textwithimage_1        [título anterior ] 'Defense'
+   textwithimage_1        [título anterior ] 'Broadcast'
+   [dry-run] 4 alt(s) a gravar. Use --executar.
+
+=== /altera/development-kits/altera-agilex-7-i-series  —  1 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Features'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /altera/development-kits/altera-agilexr-7-fpga-m-series  —  1 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Features'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /altera/development-kits/altera-agilextm-5-fpga-e-series-premium  —  1 nó(s) sem alt ===
+   textwithimage_1        [heading da dupla] 'Features'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /altera/opencl-software-technology  —  1 nó(s) sem alt ===
+   image_1                [título da página] 'FPGA SDK for OpenCL Software'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /altera/sulfur-som-carrier-board  —  1 nó(s) sem alt ===
+   image_1                [título anterior ] "Macnica's Modular SoM-Based Dev Kit for Agilex® 5E FPGA Developers"
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /ambarella  —  2 nó(s) sem alt ===
+   spImage                [título anterior ] 'Why Choose Ambarella Products?'
+   spImage                [título anterior ] 'Why Choose Ambarella Products?'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /ambarella/ambarella-cv72s-soc  —  1 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '4K, 5nm Edge AI SoC for mainstream security cameras'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /analog-devices/analog-devices-3d-time-of-flight-development-platform  —  1 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'AD-96TOF1-EBZ'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /analog-devices/analog-devices-multimodal-sensor-front-ends  —  1 nó(s) sem alt ===
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /analog-devices/analog-devices-radar-development-kit  —  1 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'TinyRad 24 GHz Demonstration Platform'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /analog-devices/analog-devices-smartmesh-ip-starter-kit  —  1 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'DC9021B'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /analog-devices/macnica-and-adi  —  1 nó(s) sem alt ===
+   image_1                [título anterior ] 'Macnica and Analog Devices'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /canon  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Canon Quality for Industrial, Machine Vision & Scientific Applications'
+   textwithimage_1        [título anterior ] 'Canon CMOS Sensor Evaluation Kit'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /canon/canon-120mxs-cmos-image-sensors  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Ultra-High Resolution and Speed'
+   textwithimage_1        [título anterior ] '120MXS Eval Kits'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /canon/canon-35mmfhdxs-a-cmos-sensors  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'High Sensitivity in Low Light'
+   textwithimage_1        [título anterior ] '35MMFHDXS_A Evaluation Kit'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /canon/canon-li3030sa-19mm-cmos-sensor  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Expand Visibility into RGB and NIR Spectrums with a Single Full HD CMOS Sensor From Canon'
+   textwithimage_1        [título anterior ] 'Canon LI3030SA CMOS Sensor Expands Possibilities in a Wide Range of Applications'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /canon/canon-li8020sa-250mp-cmos-sensor-0  —  1 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Unprecedented Resolution in a Compact CMOS Sensor'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /canon/canon-li8030sa-410mp-ultra-high-resolution-cmos-sensor  —  1 nó(s) sem alt ===
+   textwithimage_1        [heading da dupla] 'Sensor resolution only matters if the lens can deliver it'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /genesys-logic  —  1 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Serial Interface Devices - USB, PCIe, SATA and more'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-lsi  —  6 nó(s) sem alt ===
+   image_1                [título anterior ] 'i-Chips Scaler Devices'
+   image_1                [título anterior ] 'i-Chips Scaler Devices'
+   image_1                [título anterior ] 'i-Chips Scaler Devices'
+   image_1                [título anterior ] 'i-Chips Scaler Devices'
+   image_1                [título anterior ] 'i-Chips Scaler Devices'
+   image_1                [título anterior ] 'i-Chips Scaler Devices'
+   [dry-run] 6 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c241  —  1 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Memory Less Scaler LSI for 4K60Hz'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c251  —  1 nó(s) sem alt ===
+   image_1                [título anterior ] '3 x 3 Cross Point Switch LSI for 4k60Hz'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c331  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '4K Quad Input De-interlacer/Scaler/Warping LSI'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c733a  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Quad Input/Output Scaler for 4k'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c734  —  1 nó(s) sem alt ===
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c755  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Dual Input De-interlacer/Scaler with Built-in Memory LSI'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c811  —  1 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '4K Dual De-interlacer/Scaler with Video Decoder LSI'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c812b  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '4K Dual Input/Output De-interlacer/Scaler LSI'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c341  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '4K Quad Input De-interlacer/Scaler/Warping LSI'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c813a  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] 'Dual Input/Output De-interlacer/Scaler with Warping LSI'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c814  —  1 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '4K Dual Input PiP De-interlacer/Scaler/Warping LSI'
+   [dry-run] 1 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c821  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '2K Dual Input Pip De-interlacer/Scaler/Warping/Edge-blending LSI'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c381  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '4K Quad Input De-interlacer/Scaler/Warping LSI'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c382  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '4K60Hz Supported Warping / Edge-Blending LSI'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c787  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '2K Warping/Edge-blending LSI with Built in Memory'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c788  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '2K Warping/Edge-blending LSI'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c789  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '2K120Hz/3D Support Warping/Edge-blending LSI'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c790  —  2 nó(s) sem alt ===
+   textwithimage_1        [título anterior ] '4K Warping/Edge-blending LSI'
+   image_1                [título anterior ] 'Block Diagram'
+   [dry-run] 2 alt(s) a gravar. Use --executar.
+
+71 alt(s) a gravar.

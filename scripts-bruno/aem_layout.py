@@ -2076,6 +2076,11 @@ def extract_tree(jcr_content, source_path, archetype=None):
     page = Page(source_path, archetype)
     page.template = jcr_content.get("cq:template") or None
     page.page_props = _page_props(jcr_content)
+    # fontes do alt derivado (R49): último título emitido e, em último caso,
+    # o título da página
+    page.titulo_pagina = str(jcr_content.get("pageTitle")
+                             or jcr_content.get("jcr:title") or "").strip()
+    page._ultimo_titulo = ""
     jcr_content = podar_nos_mortos(jcr_content, page)
     jcr_content = _ids_de_espacador_para_titulo(jcr_content)
     corpo, caminho = achar_corpo(jcr_content)
@@ -2250,6 +2255,32 @@ def _container(payload, base, *, max_width=False, pad_tb="default",
     ])
 
 
+def _alt_derivado(b, page):
+    """`alt` nunca vazio em `image`/`textwithimage` (R49).
+
+    Os dois herdam a aba Metadata do core image v2, onde "Alternative Text" é
+    obrigatório; o JCR não guarda string vazia, então `alt=""` deixava o nó
+    sem alt e o autor sem conseguir salvar o diálogo (69 nós em 41 páginas).
+    O GWI não tinha alt nesses nós e o DAM só tem nome de arquivo ou id de
+    banco de imagem. Sai do que a própria página já diz: o <hN> do texto da
+    dupla › o último `title` emitido acima › o título da página. Nunca a
+    primeira frase de uma lista de features; nunca `isDecorative`.
+    """
+    import re
+    alt = str(b.props.get("alt") or "").strip()
+    if alt:
+        return alt
+    if b.kind == "textwithimage":
+        m = re.search(r"<h[1-6][^>]*>(.*?)</h[1-6]>",
+                      str(b.props.get("html") or ""), re.S)
+        if m:
+            h = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(1))).strip()
+            if h:
+                return h[:120]
+    return (getattr(page, "_ultimo_titulo", "")
+            or getattr(page, "titulo_pagina", "") or "")[:120]
+
+
 def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
     """Um Block -> nós no payload. Emissor TOTAL: o que não souber emitir vira
     pendência explícita, nunca descarte silencioso (o bug de `aem_lib.py:2067`
@@ -2293,6 +2324,8 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         # nenhum, nunca um sem o outro no corpus autoral).
         payload[f"{base}/jcr:title"] = b.props.get("titulo", "")
         payload[f"{base}/type"] = b.props.get("tipo") or "h2"
+        if str(b.props.get("titulo") or "").strip():
+            page._ultimo_titulo = str(b.props["titulo"]).strip()   # R49
         # o `id` da origem é o alvo das âncoras do anchorlink — sem ele os
         # links do índice apontam para lugar nenhum
         if b.props.get("id"):
@@ -2317,7 +2350,7 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         payload[f"{base}/jcr:primaryType"] = "nt:unstructured"
         payload[f"{base}/sling:resourceType"] = RT["image"]
         payload[f"{base}/fileReference"] = b.props.get("fileReference", "")
-        payload[f"{base}/alt"] = b.props.get("alt", "") or ""
+        payload[f"{base}/alt"] = _alt_derivado(b, page)
         payload[f"{base}/altValueFromDAM"] = "false"
         payload[f"{base}/isDecorative"] = "false"
         # banner clicável (`macnica-and-adi`: a imagem TEM um botão desenhado
@@ -2342,7 +2375,7 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         payload[f"{base}/jcr:primaryType"] = "nt:unstructured"
         payload[f"{base}/sling:resourceType"] = RT["textwithimage"]
         payload[f"{base}/fileReference"] = b.props.get("fileReference", "")
-        payload[f"{base}/alt"] = b.props.get("alt", "") or ""
+        payload[f"{base}/alt"] = _alt_derivado(b, page)
         payload[f"{base}/text"] = html(b.props.get("html", ""))
         payload[f"{base}/textIsRich"] = "true"
         ratio = _image_ratio(b, getattr(page, "_util_px", JANELA_REF_PX - 50))
