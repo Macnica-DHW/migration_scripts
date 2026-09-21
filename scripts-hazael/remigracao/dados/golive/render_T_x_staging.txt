@@ -1,4 +1,0 @@
-1 cookies carregados de o .env (login-token presente: sim)
-
-90 páginas: 75 idênticas, 15 só com a `list` vazia (esperado no staging: o alvo ainda não existe), 0 com diferença
-  list vazia: ['/altera/agilex', '/altera/altera-arria-10', '/altera/altera-cyclone-10-fpga', '/altera/altera-max-10', '/altera/altera-stratix-10', '/altera/development-kits', '/ambarella', '/i-chips/i-chips-scaler-lsi', '/i-chips/i-chips-scaler-warper-lsi', '/sitime/sitime-clock-buffers', '/sitime/sitime-clock-generators', '/sitime/sitime-jitter-cleaners', '/sitime/sitime-mems-resonator-technology', '/sitime/sitime-network-synchronizers', '/sitime/sitime-oscillators']
