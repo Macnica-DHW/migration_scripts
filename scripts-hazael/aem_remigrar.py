@@ -253,7 +253,14 @@ def aplicar_dimensoes_de_imagem(page, session, base_url, auth, cache):
                     yield from todos(r.blocks)
 
     for b in todos(page.blocks):
-        if b.kind in ("image", "textwithimage") and not b.props.get("largura_px"):
+        # Com `largura_px` autoral o asset não era consultado — bastava a
+        # largura. A R46 passou a CAPAR essa largura pelo que o GWI desenha
+        # (min(480, W, 277*W/H)), e para isso precisa da proporção real: sem
+        # ela o teto cai no palpite 3:2 (416px) e o logo CVflow de 510x287
+        # saía 416 em vez dos 480 do GWI. Origem imagetext consulta sempre.
+        precisa_dims = (not b.props.get("largura_px")
+                        or b.props.get("origem_midia") == "imagetext")
+        if b.kind in ("image", "textwithimage") and precisa_dims:
             ref = b.props.get("fileReference")
             if isinstance(ref, str) and ref.startswith("/content/dam/"):
                 b.props["dims"] = dims_do_asset(session, base_url, auth, ref, cache)
