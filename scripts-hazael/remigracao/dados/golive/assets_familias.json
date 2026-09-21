@@ -1,0 +1,874 @@
+{
+ "/content/dam/copia-teste/americas/mai/public/en/logos/altera/altera-logo-tm-alterablue-3000.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/macnica-workflow-diagram.jpg": [
+  "altera",
+  "design-gateway",
+  "i-chips",
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems",
+  "sitime",
+  "toppan-3d-tof-sensing-solutions"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/wireless-antenna-544581870.jpg": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/mactechproducts/iStock-943065362.jpg": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/mactechproducts/Broadcast-ProAV_1280x720.jpg": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/altera/altera-holoscan-landingpage-banner.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/10g-sensor-bridge-development-platform.jpg": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/agilex5-development-kits.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/car driving on the road at night.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/Picture9_0.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/Picture10.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/multi-power-sequencer-2.1.2.zip": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/an896-683778-6663891.pdf": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/WP-14033 - Altera SoC Design Advantages .pdf": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/vWorkshops_Preparation_v2p0.pdf": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/vWorkshops_Getting_Started_v2p0.pdf": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/Creating_CentOS_VM_v2p1.pdf": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/SoC_2_lab.zip": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/Soc_3_lab.zip": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/Helio_VIP_ref_design.zip": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/SoC_4_VIP_NXP_Drivers_SD_image.rar": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/SoC_5_references.zip": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/Helio_LTPM_board_modifications_v2p0.pdf": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/SoC_6_Lab.zip": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/SoC_7_lab.zip": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/MAI_Linux_BSP_package (5).tar.gz": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/SoC_8_Ref_Design.zip": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/communications.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/pictures of computer server rooms.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/defense.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/broadcast.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/Altera Stratix 10 GX-SX Product Table.pdf": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/altera/altera-agilex-5-badge.jpg": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/agilex-i-series-fpga-board.png.rendition.intel_.web_.576.3241.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/altera/altera-agilex-7-badge.jpg": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/agilex-7-fpga-m-series-es-devkit-photo.png.rendition.intel_.web_.576.3241.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/terasic/agilex-5-fpga-soc-e-series-065b-dev-kit.png.rendition.intel_.web_.480.270.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/opencl.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/Macnica Sulfur Agilex 5 Dev Kit Features.png": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/Sulfur baseboard and SOM.png": [
+  "altera"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/Sulfur SOM features.png": [
+  "altera"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/ambarella/Ambarella logo transparent (300).png": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/Ambarella cvflow_0.png": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-stereovision-lidar.png": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/apac/anstek/public/zh_tw/images/technical-articles/2025h1/571236-fig-01.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/bandwidth-storage.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/service/lens blue background.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/mactechproducts/Robotics-1280x720.jpeg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/dhw/public/pt/images/automotive-1024x683.png": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv72s.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv2.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv2fs.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv20aq.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv22.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv22aq.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv22fs.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv25.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv25aq.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv28aq.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv28m.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-h22aq.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-h32aq.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-a12aq.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/CV72S.png": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/cv72S block diagram.png": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/banners/banner-ambarella-n1.jpg": [
+  "ambarella"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/analog-devices/ADI-Logo-CMYK-FullColor-140x1001.png": [
+  "analog-devices"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/adi/Streamlined Inventory Management_Black.png": [
+  "analog-devices"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/adi/Flexible Financing_Black.png": [
+  "analog-devices"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/adi/Quality Assurance_Black.png": [
+  "analog-devices"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/AD_96TOF1_EBZ-new.png": [
+  "analog-devices"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/adpd4100.png": [
+  "analog-devices"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/adpd4100-adpd4101-fbl.png": [
+  "analog-devices"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/eval-web.png": [
+  "analog-devices"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/dc9021B-dc9021b-v2-contents-96dpi.jpg": [
+  "analog-devices"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/adi/Macnica_ADI_Campaign Landing Page Banner_with CTA_940X420.jpg": [
+  "analog-devices"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/adi/Trevor Bingham with quote.jpg": [
+  "analog-devices"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/canon/CanonLogo_Red_Web.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/cmos-sensors-callout-300x300.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-120MXS.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI8020.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI8030SA.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI3030.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/35MMFHDXS_A.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI7080SA.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI7070sa.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI7060.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI7050SA.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/LI7030SA.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI5070SA.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI5040.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI5030SA.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/Canon-5MP-Eval-kit-v2.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/120mxs_0.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/120MP-angle-1_6127_Silhouette.png": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/19um-color_0.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/35MMFHDXS_A Evaluation Kit.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/RGBIR_front_LI3030.png": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/35MMFHDXSB-industry-photos.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon_li5030sam.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-li5040-rgb-nir.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-5070-front.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-5070-slant.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/Canon_LI7030SA.png": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/Canon_LI7060.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-li7070sa-front.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-li7070sa-slant.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-li7070sa-nir.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/Canon_LI7080SA.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/Canon 250Mp Color_slant_0.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-li8030sa-herobanner.png": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-li8030sa-infographic.png": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/li8030sa-sensor-front.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/li8030sa-inspecion.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/li8030sa-sensor-resolution.jpg": [
+  "canon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/design-gateway/design-gateway-logo.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-AB07-USB3FMC.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AB07-USB3FMC-MAN-E.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-AB17-M2FMC_320.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AB17-M2FMC-MAN-E.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-AB18-PCIeX16.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AB18-PCIEx16-MAN-E.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-AB19-M2PCI_320.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AB19-M2PCI-MAN-E.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-AB20-U2PCI_260.png": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AB20-U2PCI-MAN-E.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/dg-aes-128-256.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/dg-ipcore-brochure.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AES128IP-datasheet-intel-en.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AES256IP-datasheet-intel-en.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AES256SSIP-datasheet-intel-en.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-Logo-AES256XTS.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-AES256XTSSTGIP-datasheet-intel-en.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-Logo-LLNetwork-IPs.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-LowLatency-Block.png": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-LowLatency-Block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_toe10gllip_data_sheet_intel.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_udp10grxip_data_sheet_intel.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_ll10gemacip_data_sheet_intel.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/design-gateway/nvme.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway-nvme-ip-core-block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/design-gateway/nvmeg4.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway-nvmeg4-block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/design-gateway/banner-nvmetcp.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway-nvmetcp-ip-block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/design-gateway/dg-quic.png": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/dg-quic-block-diagram.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/design-gateway/ranvme.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/design-gateway/rmnvme.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/design-gateway/banner-sata.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway-sata-ip-block-diagram.gif": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-Logo-SHA256.gif": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-SHA256-datasheet-intel-en.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-Logo-tCAM.gif": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-TCAM-Block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/DG-tCAM-datasheet-intel-en.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-Logo-TLS1.3.png": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-TLS1.3-Block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/dg-banner-TOExG.gif": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-TOE100-Block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_toe100gip_data_sheet_intel.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-TOE10G-BLOCK.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_toe10gip_data_sheet_intel_en.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-Logo-TOE200G-IP_225.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-TOE200-Block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_toe200gadvip_data_sheet_intel.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-TOE25G-Block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_toe25gip_data_sheet_intel.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-UDP100G-IP_Logo.png": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-UDP100G-Block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_udp100gip_data_sheet_intel.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-UDP-IP10G_Logo.png": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-UDP10G-Block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_udp10gip_data_sheet_intel_en.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-UDP25G-IP_Logo.png": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/design-gateway/DG-UDP25G-Block.jpg": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/downloads/dg_udp25gip_data_sheet_intel.pdf": [
+  "design-gateway"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/genesys-logic/Genesys Logic logo2.jpg": [
+  "genesys-logic"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/Genesys products.png": [
+  "genesys-logic"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/i-chips/i-chips1-e1407422256377.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ichips-hero.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/infostream-pro.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/projection-mapping.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/eye-grid.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/broadcast-equipment.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/medical-displays.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/automation-industry-concept.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ichips-ieb-kxu2.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ichips IP00C331.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ichips ip00c733.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/banners/ip00c734.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/banners/IP00C755.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/banners/IP00C811_0.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/banners/IP00C812B_0.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/c241.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/IP00241.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/c251.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/IP00C2511.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ichips IP00C331.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ip00c331.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ichips ip00c733.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/IP00C733A.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c734.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/IP00C734_0.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/IP00C755_0.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ip00C755.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c812b-0.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c812b.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ichips-ip00c335-b.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/ichip/ichipip00c341silicon.png": [
+  "i-chips"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/ichip/IP00C813A.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/ichip/IP00C814ichips.png": [
+  "i-chips"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/ichip/IP00C821.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ichipip00c341silicon1.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c341.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ichip/ip00C813a-(2).png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c813a-(1)-(1).png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c814.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/ichip/IP00C821.jpg": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c821.png": [
+  "i-chips"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/i-chips/ichips-ip00c381.png": [
+  "i-chips"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/i-chips/ip00c382-0.png": [
+  "i-chips"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/i-chips/ip00c787.png": [
+  "i-chips"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/i-chips/ip00c788.png": [
+  "i-chips"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/i-chips/ip00c789.png": [
+  "i-chips"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/images/products/i-chips/ip00c790.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ichips-ip00c381.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c381.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c382-0.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c382.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c787.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c787-(1).png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c788.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c788-(1).png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/IP00C789.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c789-(1).png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c790.png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/i-chips/ip00c790-(1).png": [
+  "i-chips"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/infineon/Infineon.png": [
+  "infineon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/automotive.jpg": [
+  "infineon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/robotics.jpg": [
+  "infineon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/healthcare.jpg": [
+  "infineon"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/microchip-technology/microchip-logo.png": [
+  "microchip"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/namuga/namuga-vision-connectivity-logo.jpg": [
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/amr-warehouse-shelves.jpg": [
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/black-vr-ar-gui.jpg": [
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/mobility-intelligent-sensing-cars.jpg": [
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/black-mesh-model-grid.jpg": [
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/engineer-camera-module.jpg": [
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/namuga/namuga-vicon-lite.jpg": [
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/namuga/namuga-pinocchio.jpg": [
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/namuga/namuga-stella180.jpg": [
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/namuga/namuga-cta-4.jpg": [
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/namuga/namuga-why-macnica.jpg": [
+  "namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/on-semiconductor/onsemi-logo.png": [
+  "on-semiconductor"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/renesas/Renesas - 180x50.png": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-rl78-f12.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-rh850.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-r-car.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-ra-arm-cortex.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-rz-g2l.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-rx140.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-rl78-g15.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/reality-ai-logo.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-ac-dc.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-dc-dc.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-ldo.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-pmic.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-digital-multiphase.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-usb-pd.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-discrete-power.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/renesas-gate-driver.jpg": [
+  "renesas"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/si-time/SiTime-logo-JPEG-large.jpg": [
+  "sitime"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/sitime-buffers.png": [
+  "sitime"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/sitime-clock-generators.jpg": [
+  "sitime"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/sitime-jitter-cleaners.png": [
+  "sitime"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/sitime-mems-resonator.png": [
+  "sitime"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/sitime-network-synchronizers.png": [
+  "sitime"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/sitime-oscillators.png": [
+  "sitime"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/logos/toppan/toppan-logo.jpg": [
+  "toppan-3d-tof-sensing-solutions"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/toppan-senspure-table.png": [
+  "toppan-3d-tof-sensing-solutions"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/toppan-c11u-hybrid-tof-camera.pdf": [
+  "toppan-3d-tof-sensing-solutions"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/toppan-c11u-camera.jpg": [
+  "toppan-3d-tof-sensing-solutions"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/toppan-automated-guided-vehicle.jpg": [
+  "toppan-3d-tof-sensing-solutions"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/toppan-lawnmower.jpg": [
+  "toppan-3d-tof-sensing-solutions"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/toppan-forklift.jpg": [
+  "toppan-3d-tof-sensing-solutions"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/stock/toppan-drone.jpg": [
+  "toppan-3d-tof-sensing-solutions"
+ ],
+ "/content/dam/macnicagwi/americas/mai/public/en/downloads/toppan-tpht4040-hybrid-tof-sensor.pdf": [
+  "toppan-3d-tof-sensing-solutions"
+ ],
+ "/content/dam/copia-teste/americas/mai/public/en/images/products/toppan-senspure-sdk-viewer.png": [
+  "toppan-3d-tof-sensing-solutions"
+ ]
+}
