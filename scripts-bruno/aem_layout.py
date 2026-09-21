@@ -1631,6 +1631,16 @@ def _completar_grades(linhas):
                 r.vazias = ref[0] - g[0]
             else:
                 ref = g
+                # A PRÓPRIA linha já prova a grade quando as colunas iguais não
+                # fecham os 12 e não há offset: 3 cards `width=3` ocupam 3/4 no
+                # GWI, com o 4º lugar vazio — não 1/3 cada. Na aba "Suppliers/
+                # Partners" da `imaging-and-vision` as linhas de 3 e de 2 logos
+                # esticavam e o logo da Sony saía com 450px de largura (R61).
+                cabem = 12 // g[1] if g[1] and 12 % g[1] == 0 else 0
+                if (cabem > g[0] and not r.vazias
+                        and not any(getattr(c, "offset", 0) for c in r.columns)):
+                    r.vazias = cabem - g[0]
+                    ref = (cabem, g[1])
         elif (ref and r.kind == "single" and r.largura_orfa == ref[1]
               and len(r.columns) == 1):
             r.kind = "columns"
@@ -2190,6 +2200,23 @@ def _resolver_anchorlinks(page):
             continue
         b.props["itens"] = [{"text": t.props.get("titulo", ""),
                              "linkId": t.props["id"]} for t in titulos]
+    # Índice DENTRO de aba: `page.blocks` não desce nos painéis, então o
+    # `pagesectionlisting` automático de uma aba nunca era resolvido e virava
+    # `anchorlink_sem_itens` — a aba "Applications" da `imaging-and-vision`
+    # perdia "Factory Automation (FA) | Professional Surveillance | Video
+    # Cameras | Medical Vision Systems | Agritech". No GWI o índice de uma aba
+    # lista só os headings com `id` DAQUELA aba (5 itens, não os 11 da página)
+    # (R60).
+    for b in page.blocks:
+        for painel in (b.panels or []):
+            do_painel = [x for r in painel.rows for x in r.blocks]
+            tit = [x for x in do_painel if x.kind == "title" and x.props.get("id")]
+            for x in do_painel:
+                if (x.kind == "anchorlink" and not x.props.get("itens")
+                        and str(x.props.get("listingMode") or "automatic").lower() != "static"
+                        and x.props.get("useHeadings")):
+                    x.props["itens"] = [{"text": str(t.props.get("titulo", "")).strip(),
+                                         "linkId": t.props["id"]} for t in tit]
 
 
 def _marcar_papeis(page):

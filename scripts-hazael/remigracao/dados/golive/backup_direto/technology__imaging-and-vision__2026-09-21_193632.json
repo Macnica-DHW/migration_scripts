@@ -1,0 +1,1522 @@
+{
+ "caminho": "/content/macnicaglobal2/americas/mai/en/technology/imaging-and-vision",
+ "lido_em": "2026-09-21_193632",
+ "jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "admin",
+  "jcr:title": "Advanced Imaging & Vision Solutions - Computers, Factories, CCTV & More",
+  "pwaOrientation": "any",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+  "jcr:created": "Thu Mar 05 2026 00:16:38 GMT+0000",
+  "pwaDisplay": "standalone",
+  "cq:lastModified": "Mon Sep 21 2026 22:27:27 GMT+0000",
+  "jcr:description": "Get advanced imaging and computer vision solutions. Macnica Americas imaging tools and services for factory automation, medical, security cameras, and more.",
+  "pwaCachestrategy": "staleWhileRevalidate",
+  "pageTitle": "Advanced Imaging & Vision Solutions",
+  "sling:resourceType": "macnicaglobal2/components/page",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Imaging & Vision",
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "ohashi@yamato-ltd.com",
+   "jcr:lastModified": "Tue Feb 17 2026 06:34:00 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "true"
+  },
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "image_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/imaging-vision-banner.jpg",
+      "alt": "Imaging and Vision",
+      "sling:resourceType": "macnicaglobal2/components/content/image",
+      "isDecorative": "false",
+      "altValueFromDAM": "false"
+     },
+     "tabs_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/tabs",
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Imaging & Vision Applications",
+       "cq:panelTitle": "Imaging & Vision Applications",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498056876",
+        "1717498055877"
+       ],
+       "container_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h1>Imaging &amp; Vision Applications<br>\n</h1>\n<p style=\"margin-top:0\">Imaging and advanced computer vision solutions have been enabling key innovations in a variety of use cases. Starting from factory automation (FA), the field is expanding to security surveillance, automotive, medical diagnostics, agriculture automation, and more.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        },
+        "list_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkItems": "true",
+         "pages": [
+          "/content/macnicaglobal2/americas/mai/en/blog/image-sensor-selection-5-trade-offs-every-vision-engineer-should-nail-before-tape-out"
+         ],
+         "sling:resourceType": "macnicaglobal2/components/content/list",
+         "listFrom": "static"
+        },
+        "anchorlink_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+         "cq:styleIds": [
+          "",
+          "1718861445028"
+         ],
+         "anchor": {
+          "jcr:primaryType": "nt:unstructured",
+          "item0": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "1",
+           "text": "Factory Automation (FA)"
+          },
+          "item1": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "2",
+           "text": "Professional Surveillance"
+          },
+          "item2": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "3",
+           "text": "Video Cameras"
+          },
+          "item3": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "4",
+           "text": "Medical Vision Systems"
+          },
+          "item4": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "5",
+           "text": "Agritech"
+          }
+         }
+        }
+       },
+       "container_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Factory Automation (FA)",
+         "id": "1",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/high-speed-camera-on-manufacturing-line-2.jpg",
+         "imageRatio": "28",
+         "alt": "High-speed camera on manufacturing line",
+         "text": "<h4>High-speed inspection</h4>\n<p style=\"margin-top:0\">High-speed cameras are used to sort defects and abnormalities in manufacturing lines in a very high-speed moving environment. Typically global shutter image sensors with high frame rate is required to accurately capture the images of products without distortion.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors.html#tabs-8728eaf17a-item-2b0110129e-tab\" target=\"_blank\" rel=\"noopener noreferrer\">Sony Global Shutter CMOS Sensors:</a>&nbsp;Ideal for distortion-free capture of fast motion lines and parts</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\" rel=\"noopener noreferrer\">Canon High-Resolution CMOS Sensors:</a>&nbsp;For detailed inspection and defect detection</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/toppan-3d-tof-sensing-solutions.html\" target=\"_self\" rel=\"noopener noreferrer\">Toppan ToF Depth Sensors/Cameras:</a>&nbsp;For 3D object measurement, volume calculation, and spatial mapping tasks</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_4": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/maanufacture-robot-with-camera-2.jpg",
+         "imageRatio": "28",
+         "alt": "Manufacturing robot with camera",
+         "text": "<h4>Vision-guided robotics</h4>\n<p style=\"margin-top:0\">Robots are taking over more complex manufacturing processes with the help of advanced vision solutions. Multi-axis robots can move their arms and hands like humans and see the subject using cameras and analytics &amp; control software to guide the movement necessary to accomplish the tasks in the manufacturing process more efficiently and accurately.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors.html\" target=\"_self\" rel=\"noopener noreferrer\">Sony CMOS and Global Shutter Families:</a>&nbsp;For accurate motion capture and object recognition</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/toppan-3d-tof-sensing-solutions.html\" target=\"_self\" rel=\"noopener noreferrer\">Toppan 3D ToF Sensors:</a>&nbsp;Supporting robot navigation, obstacle avoidance, and pose estimation</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\" rel=\"noopener noreferrer\">Canon CMOS Sensors:</a>&nbsp;When high-resolution imaging is needed in robot perception systems</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_6": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/vision-inspection-robots.jpg",
+         "imageRatio": "28",
+         "alt": "Vision inspection robots",
+         "text": "<h4>Wide-area inspection and quality control</h4>\n<p style=\"margin-top:0\">For scanning complex products over wide areas, such as inspecting solder joints on printed circuit boards, high-resolution advanced imaging solutions are the ideal technology. These systems leverage high-resolution image sensors to capture precise, detailed scans in a single shot, enabling efficient detection of defects or abnormalities in the manufacturing process.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors.html\" target=\"_self\" rel=\"noopener noreferrer\">Sony High-Resolution CMOS and Global Shutter Sensors</a>: For precise defect detection and measurement</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\" rel=\"noopener noreferrer\">Canon Ultra-High-Resolution CMOS Sensors:</a> Enabling fine detail capture at large pixel counts</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_7": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_8": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Professional Surveillance",
+         "id": "2",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/icetana-sw-gui.jpg",
+         "imageRatio": "28",
+         "alt": "icetana GUI",
+         "text": "<h4>Self-learning AI for real-time threat detection</h4>\n<p style=\"margin-top:0\">Security teams face thousands of cameras and millions of video frames each day, making it easy to miss real threats. icetana transforms existing CCTV systems into proactive security tools by analyzing unusual activity and threats in real time and learning what is normal for each scene within days. Without complex setup, it detects loitering, sudden gatherings, or erratic movement, helping teams focus on credible risks. By filtering routine footage and elevating genuine threats, icetana reduces false alerts, speeds response, and protects people, property, and reputation.</p>\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/ip-software/icetana.html\" target=\"_self\" rel=\"noopener noreferrer\">Learn more</a></p>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_9": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_10": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/security-camera.jpg",
+         "imageRatio": "28",
+         "alt": "Security camera",
+         "text": "<h4>Outdoor surveillance camera</h4>\n<p style=\"margin-top:0\">Security cameras operating outdoor often need to tolerate both extremely bright light that can cause the image to blowout in the daytime&nbsp;and extremely low light situations in the night time that require high sensitivity of the sensors. To cope with the very wide dynamic range of lighting, camera's image processing component needs to be equipped with mechanisms called high dynamic range (HDR).</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors.html#tabs-8728eaf17a-item-de2ebff3c6-tab\" target=\"_blank\">Sony STARVIS / Low-Light CMOS Sensors:</a> For high sensitivity and low-noise capture</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\">Canon CMOS Sensors:</a> For advanced imaging in surveillance system</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_11": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_12": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/dashcam.jpg",
+         "imageRatio": "28",
+         "alt": "Dashcam on a car windshield",
+         "text": "<h4>Dashcam</h4>\n<p style=\"margin-top:0\">Dashcams need to record scenes of driving in various conditions in light dynamics to capture necessary information to prove causes of accidents and license plate numbers. Image sensors need to be highly sensitive while providing high dynamic range capabilities for the camera processing engine.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors.html\" target=\"_self\">Sony CMOS Sensors:</a> High dynamic range and low-light performance for day/night driving conditions, glare mitigation, and fast scene transitions</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\">Canon CMOS Sensors:</a> High-resolution capture for evidentiary detail, license plate readability, and wide-FOV imaging</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/toppan-3d-tof-sensing-solutions.html\" target=\"_self\">Toppan 3D ToF Sensors:</a> Depth sensing for driver monitoring, in-cabin awareness, and advanced safety features</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_13": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_14": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Video Cameras",
+         "id": "3",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/broadcast-camera.jpg",
+         "imageRatio": "28",
+         "alt": "Broadcast camera",
+         "text": "<h4>Broadcast camera</h4>\n<p style=\"margin-top:0\">Typically, broadcast camera's product life cycle is longer than consumer products and anyone designing for it need to consider longer product life of its components too. Macnica offers various components with industrial product life.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors.html\" target=\"_self\">Sony CMOS and Global Shutter Sensors:</a> High dynamic range, low noise, and accurate color reproduction for live production and studio environments</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\">Canon CMOS Sensors:</a> Large-format and high-sensitivity imaging for cinematic capture, broadcast, and professional video systems</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_15": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_16": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Medical Vision Systems",
+         "id": "4",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/digital-pathology-systems.jpg",
+         "imageRatio": "28",
+         "alt": "Digital pathology systems",
+         "text": "<h4>Digital pathology systems</h4>\n<p style=\"margin-top:0\">Digital pathology platforms leverage advanced imaging, AI, and cloud-based technologies to digitize and analyze pathology slides. These advanced computer vision solutions convert glass slides into high-resolution digital images using specialized scanners, enabling pathologists to view, annotate, and share slides remotely.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\" rel=\"noopener noreferrer\">Canon High-Sensitivity CMOS Sensors:</a> Supporting medical imaging, microscopy, and low-light diagnostic imaging</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_17": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_18": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/robotic-surgery.jpg",
+         "imageRatio": "28",
+         "alt": "Robotic surgery systems",
+         "text": "<h4>Robotic surgery systems</h4>\n<p style=\"margin-top:0\">Robotic surgery systems are advanced platforms that enhance surgical precision, flexibility, and control through robotic arms, cameras, and specialized tools. They are often controlled by surgeons via a console that translates hand movements into micro-precise actions.&nbsp;Imaging and vision technologies are indispensable in robotic surgery, providing the surgeon with augmented capabilities to perform complex procedures with unprecedented accuracy.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\">Sony CMOS Sensors:</a> Used for precision machine vision in medical devices</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_19": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_20": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Agritech",
+         "id": "5",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/agriculture-vision-imaging.jpg",
+         "imageRatio": "28",
+         "alt": "Unmanned aerial vehicles (UAV)",
+         "text": "<h4>UAVs</h4>\n<p style=\"margin-top:0\">Unmanned aerial vehicles (UAV) are used in agriculture in various ways; to assess the growth and health of crops, to analyze soil moisture and topography, to manage irrigation, and so on. Imaging and vision systems play great roles in collecting visual and spectral data for accurate analysis.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors.html\" target=\"_self\">Sony CMOS Sensors:</a> High dynamic range and low-light performance for aerial imaging and mapping</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\">Canon CMOS Sensors:</a> Ultra-high-resolution imaging for surveying, inspection, and geospatial analysis</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/toppan-3d-tof-sensing-solutions.html\" target=\"_self\">Toppan 3D ToF Sensors:</a> Depth perception and obstacle awareness for navigation and situational awareness</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_21": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_22": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/apples-on-conveyor-belt.jpg",
+         "imageRatio": "28",
+         "alt": "Apples on conveyor belt",
+         "text": "<h4>Crop sorting and grading systems</h4>\n<p style=\"margin-top:0\">Advanced computer vision solution technologies are used to automate sorting crops and grading fruits, vegetables and grains based on size, color, and quality. For speed and accuracy, image sensors need to high-speed, high-frame rate, and wide-spectral range. In the grading application, polarized sensors are useful in capturing dents and scars more effectively.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors.html\" target=\"_self\" rel=\"noopener noreferrer\">Sony High-Speed CMOS Sensors:</a> Rapid capture for color, shape, and defect detection on high-throughput lines</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\" rel=\"noopener noreferrer\">Canon CMOS Sensors:</a> Accurate color reproduction and fine detail analysis for grading and quality assessment</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/toppan-3d-tof-sensing-solutions.html\" target=\"_self\" rel=\"noopener noreferrer\">Toppan 3D ToF Sensors:</a> Size, volume, and surface profiling for consistent grading</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_23": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Imaging & Vision Components",
+       "cq:panelTitle": "Imaging & Vision Components",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498056876",
+        "1717498055877"
+       ],
+       "container_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h2>How does Macnica help you design imaging and vision products?</h2>\n<p style=\"margin-top:0\">Advanced imaging and vision solutions must connect to other components using one of several competing interface standards.&nbsp;Macnica makes connection simple by providing the basic engineering required to evaluate, and then implement the best interface for a given need.&nbsp;We offer image sensors, image processing components, intellectual property packages for interface, control and analytics software, and a hardware development kit perfect for imaging and vision product development, in addition to the design services to bring your ideas to production.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        },
+        "list_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkItems": "true",
+         "pages": [
+          "/content/macnicaglobal2/americas/mai/en/blog/image-sensor-selection-5-trade-offs-every-vision-engineer-should-nail-before-tape-out"
+         ],
+         "sling:resourceType": "macnicaglobal2/components/content/list",
+         "listFrom": "static"
+        },
+        "anchorlink_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+         "cq:styleIds": [
+          "",
+          "1718861445028"
+         ],
+         "anchor": {
+          "jcr:primaryType": "nt:unstructured",
+          "item0": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "6",
+           "text": "Image Sensors"
+          },
+          "item1": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "7",
+           "text": "ISP and Data Processing"
+          },
+          "item2": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "8",
+           "text": "Sensor & Camera Network Interface"
+          },
+          "item3": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "9",
+           "text": "Design & Engineering "
+          }
+         }
+        }
+       },
+       "container_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Image Sensors",
+         "id": "6",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>Macnica supplies leading image sensors from Sony, Canon, and Toppan as an official distributor for the Americas with technical support and design services capabilities.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/sony-logo-300px.jpg",
+           "alt": "Sony logo",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false",
+           "cq:styleIds": [
+            "",
+            "1726800547211"
+           ]
+          },
+          "text_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "text": "<p style=\"margin-top:0\">&nbsp;</p><p style=\"margin-top:0\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors.html\" target=\"_self\" rel=\"noopener noreferrer\">Sony Image Sensors</a></p>\n<p>Sony’s CMOS image sensors define performance in industrial and embedded vision with high sensitivity, low noise, and advanced pixel architectures. Our Sony portfolio includes global shutter and rolling shutter CMOS devices, high dynamic range sensors, event-based vision sensors, SWIR imaging, and depth sensing variants - delivering unmatched clarity, speed, and robustness for demanding vision systems.</p>",
+           "sling:resourceType": "macnicaglobal2/components/content/text",
+           "textIsRich": "true"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/canon-logo-50px.jpg",
+           "alt": "Canon logo",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false",
+           "cq:styleIds": [
+            "",
+            "1726800547211"
+           ]
+          },
+          "text_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "text": "<p style=\"margin-top:0\">&nbsp;</p><p style=\"margin-top:0\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\" rel=\"noopener noreferrer\">Canon CMOS Sensors</a></p>\n<p>Canon’s CMOS image sensors bring exceptional imaging performance to industrial and scientific vision applications. From ultra-high-resolution and high-pixel-count sensors to large-pixel, high-sensitivity designs and global shutter options, Canon sensors expand possibilities in high-precision inspection, low-light imaging, and advanced machine vision system design.</p>",
+           "sling:resourceType": "macnicaglobal2/components/content/text",
+           "textIsRich": "true"
+          }
+         },
+         "flexcontaineritem_3": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/toppan-logo-300px.jpg",
+           "alt": "Toppan logo",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false",
+           "cq:styleIds": [
+            "",
+            "1726800547211"
+           ]
+          },
+          "text_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "text": "<p style=\"margin-top:0\">&nbsp;</p><p style=\"margin-top:0\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/toppan-3d-tof-sensing-solutions.html\" target=\"_self\" rel=\"noopener noreferrer\">Toppan 3D ToF Sensing Solutions</a></p>\n<p>Toppan’s 3D Time-of-Flight (ToF) sensing technology delivers precise depth and spatial perception across robotics, automation, AMRs, and advanced system safety applications. With high frame rates, strong ambient-light tolerance, and accurate 3D data capture, Toppan ToF modules complement 2D imaging to enable true hybrid vision solutions.</p>",
+           "sling:resourceType": "macnicaglobal2/components/content/text",
+           "textIsRich": "true"
+          }
+         }
+        }
+       },
+       "container_4": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/semiconductor-on-a-pcb-with-trace.jpg",
+         "imageRatio": "28",
+         "alt": "semiconductor chip on a PCB",
+         "text": "<h3 id=\"7\">Image Sensor Pipeline (ISP) and Data Processing</h3><p style=\"margin-top:0\">Macnica's featured suppliers support imaging and vision applications in a wide range of forms and performance.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera.html\">Altera FPGAs</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella.html\">Ambarella SoC</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei.html\">iEi&nbsp;embedded computing platforms</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces.html\">Reflex CES FPGA boards</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems.html\">TQ SoC Modules</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/deepx.html\" target=\"_self\">DeepX AI Accelerators and Vision SoCs</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/connect-tech.html\" target=\"_self\">Connect Tech Embedded Platforms</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/ienso.html\" target=\"_self\">iENSO Embedded Vision Platforms</a></li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_6": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_7": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/slvs-ec3-block-diagram1.jpg",
+         "imageRatio": "28",
+         "alt": "SLVS-EC3 diagram",
+         "text": "<h3 id=\"8\">Sensor and Camera Network Interface</h3><p style=\"margin-top:0\">Macnica's internal R&amp;D team provides IP core packages for imaging and vision applications with deep knowledge of standards and targeted FPGAs.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/ip-software/slvs-ec-3-rx-ip.html\">SLVS-EC 3.1 Rx IP Package</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/ip-software/coaxpress-11-device-package.html\">CoaXpress Tx IP Package</a></li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_8": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_9": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "textwithimage_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/slvs-ec-v3-luminous.jpg",
+         "imageRatio": "28",
+         "alt": "Luminous Kit",
+         "text": "<h3 id=\"9\">Evaluation/Reference Design and Engineering Services for Production</h3><p style=\"margin-top:0\">Macnica's original evaluation kit enables customers to easily evaluate featured image sensors and sensor interface IP cores. Macnica also helps customers with implementing customers' imaging and vision requirements from concept, design, and to mass production with its experienced engineering services programs.</p>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/luminous-platform.html\">Macnica Luminous Platform</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/services/imaging-and-vision-engineering-services.html\">Macnica Imaging and Vision Engineering Services for Production</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/imaging-design-platform-luminous-platform-sulfur-dev-kit.html\">Macnica Imaging Application Development Platform (Luminous + Sulfur)</a></li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/luminous-comet-a65-vision-development-solution.html\" target=\"_self\">Macnica Vision Development Solution (Luminous Platform + Terasic Comet A65 SOM EVK)</a></li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384"
+         ]
+        }
+       },
+       "container_10": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      },
+      "item_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Suppliers/Partners",
+       "cq:panelTitle": "Suppliers/Partners",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498056876",
+        "1717498055877"
+       ],
+       "container_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h2>Suppliers/Partners</h2>\n<p style=\"margin-top:0\">Macnica Americas' suppliers and partners tap into our highly skilled field team, proven logistics support, and deep technology expertise - all backed by a $5B global distribution network headquartered in Japan. Every day, we help customers solve complex engineering challenges and expand into new markets across Asia and beyond. We can do the same for you.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        },
+        "list_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkItems": "true",
+         "pages": [
+          "/content/macnicaglobal2/americas/mai/en/blog/image-sensor-selection-5-trade-offs-every-vision-engineer-should-nail-before-tape-out"
+         ],
+         "sling:resourceType": "macnicaglobal2/components/content/list",
+         "listFrom": "static"
+        },
+        "anchorlink_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+         "cq:styleIds": [
+          "",
+          "1718861445028"
+         ],
+         "anchor": {
+          "jcr:primaryType": "nt:unstructured",
+          "item0": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "10",
+           "text": "Sensors"
+          },
+          "item1": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "11",
+           "text": "Processing"
+          },
+          "item2": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "12",
+           "text": "Embedded"
+          },
+          "item3": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "13",
+           "text": "I/O"
+          },
+          "item4": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "14",
+           "text": "Displays"
+          },
+          "item5": {
+           "jcr:primaryType": "nt:unstructured",
+           "linkId": "specialty",
+           "text": "Specialty"
+          }
+         }
+        }
+       },
+       "container_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Sensors",
+         "id": "10",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Sony",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/sony.svg",
+           "alt": "Sony",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Infineon",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/infineon.png",
+           "alt": "Infineon",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/infineon",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_3": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Canon",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/canonlogo-red-web.jpg",
+           "alt": "Canon",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         }
+        }
+       },
+       "container_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Processing",
+         "id": "11",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Altera",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/altera-logo-tm-alterablue-3000.png",
+           "alt": "Altera",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Ambarella",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/ambarella-logo-transparent-300.png",
+           "alt": "Ambarella",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_3": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Infineon",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/infineon.png",
+           "alt": "Infineon",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/infineon",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_4": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Microchip (Automotive Only)",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/microchip-logo.png",
+           "alt": "Microchip (Automotive Only)",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/microchip",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         }
+        }
+       },
+       "container_4": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Renesas (Automotive only)",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/renesas-180x50.png",
+           "alt": "Renesas (Automotive only)",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/renesas",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+         },
+         "flexcontaineritem_3": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+         },
+         "flexcontaineritem_4": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+         }
+        }
+       },
+       "container_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Embedded",
+         "id": "12",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Terasic",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/terasic-technologies.png",
+           "alt": "Terasic",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "TQ Systems",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/logo-tq-systems-svg.png",
+           "alt": "TQ Systems",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_3": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "IEI",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/iei.png",
+           "alt": "IEI",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_4": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Reflex CES",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/reflexces-logo-horizontal-nobaseline.png",
+           "alt": "Reflex CES",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         }
+        }
+       },
+       "container_6": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "I/O",
+         "id": "13",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Analog Devices",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/adi-logo-cmyk-fullcolor-140x1001.png",
+           "alt": "Analog Devices",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Genesys Logic",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/genesys-logic-logo2.jpg",
+           "alt": "Genesys Logic",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/genesys-logic",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_3": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Infineon",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/infineon.png",
+           "alt": "Infineon",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/infineon",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         }
+        }
+       },
+       "container_7": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Displays",
+         "id": "14",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Innolux",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/innolux-logo-svg.png",
+           "alt": "Innolux",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/displays/innolux",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Lilliput Monitors",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/lilliput-logo-300x60.png",
+           "alt": "Lilliput Monitors",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/displays/lilliput-monitors",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         }
+        }
+       },
+       "container_8": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Specialty",
+         "id": "specialty",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Analog Devices",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/adi-logo-cmyk-fullcolor-140x1001.png",
+           "alt": "Analog Devices",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "SiTime",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/sitime-logo-jpeg-large.jpg",
+           "alt": "SiTime",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_3": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Infineon",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/infineon.png",
+           "alt": "Infineon",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/infineon",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_4": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Genesys Logic",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/genesys-logic-logo2.jpg",
+           "alt": "Genesys Logic",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/genesys-logic",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         }
+        }
+       },
+       "container_9": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "i-Chips",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/logos/i-chips1-e1407422256377.png",
+           "alt": "i-Chips",
+           "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips",
+           "displayPopupTitle": "false",
+           "titleValueFromDAM": "false",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+         },
+         "flexcontaineritem_3": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+         },
+         "flexcontaineritem_4": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+         }
+        }
+       }
+      }
+     },
+     "experiencefragment_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    }
+   }
+  }
+ }
+}

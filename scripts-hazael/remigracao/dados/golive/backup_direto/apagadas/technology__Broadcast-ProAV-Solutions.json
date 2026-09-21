@@ -1,0 +1,707 @@
+{
+ "caminho": "/content/macnicaglobal2/americas/mai/en/technology/Broadcast-ProAV-Solutions",
+ "lido_em": "2026-09-21T19:15:18",
+ "pagina": {
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Thu Mar 05 2026 00:16:38 GMT+0000",
+  "jcr:content": {
+   "jcr:primaryType": "cq:PageContent",
+   "jcr:createdBy": "admin",
+   "jcr:title": "Broadcast & ProAV System Solutions",
+   "pwaOrientation": "any",
+   "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+   "jcr:created": "Thu Mar 05 2026 00:16:38 GMT+0000",
+   "pwaDisplay": "standalone",
+   "cq:lastModified": "Tue May 05 2026 15:47:27 GMT+0000",
+   "pwaCachestrategy": "staleWhileRevalidate",
+   "sling:resourceType": "macnicaglobal2/components/page",
+   "cq:lastModifiedBy": "Pete.bunke@macnica.com",
+   "navTitle": "Broadcast & ProAV",
+   "root": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+    "sling:resourceType": "wcm/foundation/components/responsivegrid",
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "admin",
+     "jcr:lastModifiedBy": "admin",
+     "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+     "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "contentlist_1215761907": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 19:43:10 GMT+0000",
+      "parentPage": "/content/macnicaglobal2/americas/mai/en/technology",
+      "alt": "fdfdff",
+      "jcr:lastModified": "Thu Apr 09 2026 19:43:30 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/contentlist",
+      "childDepth": "1",
+      "listFrom": "children",
+      "isDecorative": "false"
+     },
+     "flexcontainer_copy_c": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Tue May 05 2026 15:37:21 GMT+0000",
+      "jcr:lastModified": "Tue May 05 2026 15:37:21 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "Pete.bunke@macnica.com",
+       "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+       "jcr:created": "Tue May 05 2026 15:37:28 GMT+0000",
+       "jcr:lastModified": "Tue May 05 2026 15:37:28 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "3"
+        }
+       },
+       "image_552923873_copy": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "Pete.bunke@macnica.com",
+        "jcr:title": "Viva Tech 2026 - Event page - 1",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/banners/iStock-2196613795.jpg",
+        "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+        "jcr:created": "Tue May 05 2026 15:40:26 GMT+0000",
+        "alt": "Viva Tech 2026 - Event page - 1",
+        "displayPopupTitle": "false",
+        "linkTarget": "_self",
+        "jcr:lastModified": "Tue May 05 2026 15:47:27 GMT+0000",
+        "titleValueFromDAM": "false",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         "1726800548797"
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+         "jcr:lastModified": "Tue May 05 2026 15:47:27 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       }
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "6",
+        "width": "6"
+       }
+      }
+     },
+     "flexcontainer_copy": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Tue May 05 2026 15:37:21 GMT+0000",
+      "jcr:lastModified": "Tue May 05 2026 15:37:21 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "Pete.bunke@macnica.com",
+       "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+       "jcr:created": "Tue May 05 2026 15:37:28 GMT+0000",
+       "jcr:lastModified": "Tue May 05 2026 15:37:28 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "3"
+        }
+       },
+       "image_552923873_copy": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "Pete.bunke@macnica.com",
+        "jcr:title": "Viva Tech 2026 - Event page - 1",
+        "fileReference": "/content/dam/macnicagwi/europe/atd-europe/public/en/banners/events/2026/VivaTech2026_EventPage.png",
+        "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+        "jcr:created": "Tue May 05 2026 15:40:26 GMT+0000",
+        "alt": "Viva Tech 2026 - Event page - 1",
+        "displayPopupTitle": "false",
+        "linkTarget": "_self",
+        "jcr:lastModified": "Tue May 05 2026 15:41:59 GMT+0000",
+        "titleValueFromDAM": "false",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         "1726800548797"
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+         "jcr:lastModified": "Tue May 05 2026 15:41:59 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       }
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "6",
+        "width": "6"
+       }
+      }
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Tue May 05 2026 15:37:21 GMT+0000",
+      "jcr:lastModified": "Tue May 05 2026 15:37:21 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "Pete.bunke@macnica.com",
+       "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+       "jcr:created": "Tue May 05 2026 15:37:28 GMT+0000",
+       "jcr:lastModified": "Tue May 05 2026 15:37:28 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "accordion": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "Pete.bunke@macnica.com",
+        "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+        "jcr:created": "Tue May 05 2026 15:37:34 GMT+0000",
+        "jcr:lastModified": "Tue May 05 2026 15:37:34 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/accordion",
+        "item_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Item 1",
+         "layout": "responsiveGrid",
+         "sling:resourceType": "macnicaglobal2/components/content/container"
+        },
+        "item_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Item 2",
+         "layout": "responsiveGrid",
+         "sling:resourceType": "macnicaglobal2/components/content/container"
+        },
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "12"
+         }
+        }
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "3"
+        }
+       }
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "6",
+        "width": "6"
+       }
+      }
+     },
+     "anchorlink": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:33:18 GMT+0000",
+      "jcr:lastModified": "Thu Apr 09 2026 19:09:01 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+      "cq:styleIds": [
+       "",
+       ""
+      ],
+      "anchor": {
+       "jcr:primaryType": "nt:unstructured",
+       "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkId": "#link1",
+        "text": "test"
+       }
+      }
+     },
+     "navigation": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 19:44:37 GMT+0000",
+      "disableShadowing": "true",
+      "navigationRoot": "/content/macnicaglobal2/americas/mai/en/technology",
+      "jcr:lastModified": "Thu Apr 09 2026 19:45:06 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/navigation",
+      "collectAllPages": "true",
+      "structureStart": "1"
+     },
+     "button": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:33:22 GMT+0000",
+      "jcr:lastModified": "Thu Apr 09 2026 18:33:22 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/button"
+     },
+     "list_1018947974": {
+      "jcr:primaryType": "nt:unstructured",
+      "showModificationDate": "false",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "tagsMatch": "any",
+      "linkItems": "true",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 19:44:05 GMT+0000",
+      "parentPage": "/content/macnicaglobal2/americas/mai/en/technology",
+      "sortOrder": "asc",
+      "showDescription": "false",
+      "jcr:lastModified": "Thu Apr 09 2026 19:44:18 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/list",
+      "childDepth": "1",
+      "listFrom": "children",
+      "cq:styleIds": [
+       "",
+       ""
+      ]
+     },
+     "contentlist": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:33:33 GMT+0000",
+      "jcr:lastModified": "Thu Apr 09 2026 18:33:33 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/contentlist"
+     },
+     "experiencefragment": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:33:40 GMT+0000",
+      "jcr:lastModified": "Thu Apr 09 2026 18:33:40 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     },
+     "featurednews": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:title": "Request a Quote",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:33:45 GMT+0000",
+      "date": "Thu Apr 09 2026 00:00:00 GMT+0000",
+      "linkURL": "#test",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Apr 09 2026 19:09:19 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/featurednews"
+     },
+     "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:34:23 GMT+0000",
+      "jcr:lastModified": "Thu Apr 09 2026 18:34:23 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     },
+     "newslist": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:title": "test",
+      "displaySearchPulldowns": "true",
+      "tagsMatch": "any",
+      "orderBy": "releaseDate",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:52:28 GMT+0000",
+      "parentPage": "/content/macnicagwi/americas/mai/en/technology",
+      "sortOrder": "desc",
+      "type": "h1",
+      "buttonLink": "#test2",
+      "buttonText": "test2",
+      "jcr:lastModified": "Thu Apr 09 2026 19:10:10 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/newslist",
+      "childDepth": "1",
+      "listFrom": "children",
+      "displayButton": "true"
+     },
+     "teaser_copy": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "fileReference": "/content/dam/macnicagwi/apac/cytech/public/zh/technical-articles-images/260409-面向人形机器人的线性关节模组（上）——直线关节与adi-admt4000-高精度位置记忆方案/图15 磁角度读取与计算-1.jpg",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:54:11 GMT+0000",
+      "alt": "test",
+      "text": "test",
+      "linkURL": "#",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Apr 09 2026 18:55:16 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/teaser",
+      "isDecorative": "false",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1726809542533"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+       "jcr:lastModified": "Thu Apr 09 2026 18:55:16 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "3"
+       }
+      }
+     },
+     "teaser_copy_2058914325": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "fileReference": "/content/dam/macnicagwi/apac/cytech/public/zh/technical-articles-images/260409-面向人形机器人的线性关节模组（上）——直线关节与adi-admt4000-高精度位置记忆方案/图15 磁角度读取与计算-1.jpg",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:54:11 GMT+0000",
+      "alt": "test",
+      "text": "test",
+      "linkURL": "#",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Apr 09 2026 18:54:41 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/teaser",
+      "isDecorative": "false",
+      "altValueFromDAM": "false",
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+       "jcr:lastModified": "Thu Apr 09 2026 18:54:41 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "3"
+       }
+      }
+     },
+     "teaser_copy_1755763482": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "fileReference": "/content/dam/macnicagwi/apac/cytech/public/zh/technical-articles-images/260409-面向人形机器人的线性关节模组（上）——直线关节与adi-admt4000-高精度位置记忆方案/图15 磁角度读取与计算-1.jpg",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:54:11 GMT+0000",
+      "alt": "test",
+      "text": "test",
+      "linkURL": "#",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Apr 09 2026 18:54:41 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/teaser",
+      "isDecorative": "false",
+      "altValueFromDAM": "false",
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+       "jcr:lastModified": "Thu Apr 09 2026 18:54:41 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "3"
+       }
+      }
+     },
+     "teaser": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "fileReference": "/content/dam/macnicagwi/apac/cytech/public/zh/technical-articles-images/260409-面向人形机器人的线性关节模组（上）——直线关节与adi-admt4000-高精度位置记忆方案/图15 磁角度读取与计算-1.jpg",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:54:11 GMT+0000",
+      "alt": "test",
+      "text": "test",
+      "linkURL": "#",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Apr 09 2026 18:54:41 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/teaser",
+      "isDecorative": "false",
+      "altValueFromDAM": "false",
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+       "jcr:lastModified": "Thu Apr 09 2026 18:54:41 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "3"
+       }
+      }
+     },
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "fileReference": "/content/dam/macnicagwi/apac/cytech/public/zh/technical-articles-images/260409-面向人形机器人的线性关节模组（上）——直线关节与adi-admt4000-高精度位置记忆方案/图15 磁角度读取与计算-1.jpg",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:57:08 GMT+0000",
+      "alt": "test",
+      "text": "<p>test</p>\r\n",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Apr 09 2026 18:57:55 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "",
+       "1718154382437"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+       "jcr:lastModified": "Thu Apr 09 2026 18:57:55 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     },
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:title": "Header 1",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:59:00 GMT+0000",
+      "type": "h1",
+      "jcr:lastModified": "Thu Apr 09 2026 18:59:30 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_copy": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:title": "Header 2",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:59:00 GMT+0000",
+      "type": "h2",
+      "jcr:lastModified": "Thu Apr 09 2026 19:00:02 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_copy_copy": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:title": "Header 3",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:59:00 GMT+0000",
+      "type": "h3",
+      "jcr:lastModified": "Thu Apr 09 2026 19:00:14 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_copy_copy_copy": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:title": "Header 4",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:59:00 GMT+0000",
+      "type": "h4",
+      "jcr:lastModified": "Thu Apr 09 2026 19:00:28 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_copy_copy_copy_179940742": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:title": "Header 5",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:59:00 GMT+0000",
+      "type": "h5",
+      "jcr:lastModified": "Thu Apr 09 2026 19:00:48 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_copy_copy_copy_461230215": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:title": "Header 6",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:59:00 GMT+0000",
+      "type": "h6",
+      "jcr:lastModified": "Thu Apr 09 2026 19:00:59 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 18:56:05 GMT+0000",
+      "text": "<p>Testing the body copy paragraph!</p>\r\n",
+      "jcr:lastModified": "Thu Apr 09 2026 19:02:33 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "list": {
+      "jcr:primaryType": "nt:unstructured",
+      "showModificationDate": "false",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "tagsMatch": "any",
+      "linkItems": "true",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 19:04:07 GMT+0000",
+      "parentPage": "/content/macnicagwi/americas/mai/en/technology",
+      "sortOrder": "asc",
+      "showDescription": "false",
+      "jcr:lastModified": "Thu Apr 09 2026 19:04:19 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/list",
+      "childDepth": "1",
+      "listFrom": "children",
+      "cq:styleIds": [
+       "",
+       ""
+      ]
+     },
+     "anchorlink_1674942248": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 19:04:36 GMT+0000",
+      "jcr:lastModified": "Thu Apr 09 2026 19:05:12 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+      "cq:styleIds": [
+       "1718759837531",
+       "1718861445028"
+      ],
+      "anchor": {
+       "jcr:primaryType": "nt:unstructured",
+       "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkId": "#test",
+        "text": "test"
+       },
+       "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkId": "test2",
+        "text": "test 2"
+       }
+      }
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 19:05:28 GMT+0000",
+      "jcr:lastModified": "Thu Apr 09 2026 19:05:28 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table"
+     },
+     "tabs": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "Pete.bunke@macnica.com",
+      "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+      "jcr:created": "Thu Apr 09 2026 19:10:46 GMT+0000",
+      "jcr:lastModified": "Thu Apr 09 2026 19:10:46 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/tabs",
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 1",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "carousel": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "Pete.bunke@macnica.com",
+        "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+        "jcr:created": "Thu Apr 09 2026 19:11:48 GMT+0000",
+        "jcr:lastModified": "Thu Apr 09 2026 19:11:48 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/carousel",
+        "image": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "Pete.bunke@macnica.com",
+         "fileReference": "/content/dam/macnicagwi/apac/cytech/public/zh/technical-articles-images/260409-面向人形机器人的线性关节模组（上）——直线关节与adi-admt4000-高精度位置记忆方案/图15 磁角度读取与计算-1.jpg",
+         "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+         "jcr:created": "Thu Apr 09 2026 19:11:57 GMT+0000",
+         "alt": "dfdfd",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Apr 09 2026 19:12:08 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModifiedBy": "Pete.bunke@macnica.com",
+          "jcr:lastModified": "Thu Apr 09 2026 19:12:08 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        }
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 2",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container"
+      }
+     }
+    }
+   },
+   "cq:featuredimage": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "ohashi@yamato-ltd.com",
+    "jcr:lastModified": "Tue Feb 17 2026 06:33:40 GMT+0000",
+    "sling:resourceType": "core/wcm/components/image/v3/image",
+    "altValueFromDAM": "true"
+   }
+  }
+ }
+}

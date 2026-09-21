@@ -45,6 +45,7 @@ def normv(v):
 def payload_novo(session, base_url, auth, origem, cache_dc, cache_asset):
     jcr, st = get_json(session, f"{base_url}{origem}/jcr:content.50.json", auth)
     if st != 200: return None, None, f"GET {st}"
+    R.materializar_supplierlists(session, base_url, auth, jcr, cache_dc)
     page = AL.extract_tree(jcr, origem)
     R.aplicar_titulos_download(page, session, base_url, auth, cache_dc)
     R.aplicar_dimensoes_de_imagem(page, session, base_url, auth, cache_dc)

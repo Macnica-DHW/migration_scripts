@@ -147,6 +147,66 @@ def normalizar_links_do_escopo(payload, link_de, link_para):
         if isinstance(v, str) and raiz in v:
             payload[k] = padrao.sub(troca, v)
 
+SUPPLIERLIST_RT = "macnicagwi/components/content/supplierlist"
+_RC_RT = "macnicagwi/components/content/resizablecontainer"
+_BANNER_RT = "macnicagwi/components/content/bannerimage"
+
+
+def materializar_supplierlists(session, base_url, auth, jcr, cache):
+    """`supplierlist` -> grade de logos com link e legenda (R59). Devolve quantos converteu.
+
+    O GWI desenha, para cada página da lista (estática, na ordem de `pages`), um
+    card: o `manufacturerlogo` da página LINKADA, o `navTitle` dela embaixo e o
+    card inteiro como link — 4 por linha. Nada disso está no nó: depende de ler
+    as páginas dos fornecedores, por isso mora no driver (como o `related`).
+
+    Em vez de inventar um emissor, o nó é REESCRITO no JCR da origem (em
+    memória) na estrutura que o motor já sabe migrar e que a landing
+    `/technology` usa: colunas de largura 3, cada uma com um `bannerimage`
+    (imagem com link; o `subText` vira a legenda visível, R58). Sem isto a aba
+    "Suppliers/Partners" da `imaging-and-vision` saía com 6 títulos e nada
+    embaixo (3.180px no GWI, 828 no destino) — apontado pelo Hazael em 21/09/2026.
+    Lista que não é estática, ou página sem logo, fica como estava (pendência).
+    """
+    feitas = 0
+
+    def anda(no):
+        nonlocal feitas
+        for k, v in list(no.items()):
+            if not isinstance(v, dict):
+                continue
+            if v.get("sling:resourceType") != SUPPLIERLIST_RT:
+                anda(v)
+                continue
+            pages = v.get("pages")
+            pages = [pages] if isinstance(pages, str) else [x for x in (pages or []) if x]
+            if str(v.get("listFrom") or "static").lower() != "static" or not pages:
+                continue
+            cards = {}
+            for i, pg in enumerate(pages, 1):
+                if pg not in cache:
+                    pj, st = get_json(session, f"{base_url}{pg}/jcr:content.1.json", auth)
+                    cache[pg] = pj if st == 200 and isinstance(pj, dict) else {}
+                pj = cache[pg]
+                logo = (pj.get("manufacturerlogo") or {}).get("fileReference")
+                if not logo:
+                    cards = None
+                    break
+                nome = (pj.get("navTitle") or pj.get("jcr:title") or pg.rsplit("/", 1)[-1]).strip()
+                cards[f"card_{i}"] = {
+                    "jcr:primaryType": "nt:unstructured", "sling:resourceType": _RC_RT,
+                    "cq:responsive": {"default": {"width": "3", "offset": "0"}},
+                    "logo": {"jcr:primaryType": "nt:unstructured", "sling:resourceType": _BANNER_RT,
+                             "fileReference": logo, "linkURL": pg, "subText": nome, "alt": nome}}
+            if not cards:
+                continue
+            no[k] = {"jcr:primaryType": "nt:unstructured", "sling:resourceType": _RC_RT, **cards}
+            feitas += 1
+
+    anda(jcr)
+    return feitas
+
+
 def titulo_do_asset(session, base_url, auth, ref, cache):
     """`dc:title` do asset no DAM. Sem inventar nada a partir do nome."""
     if ref in cache:
@@ -457,6 +517,7 @@ def main():
                            "pendencias": "", "detalhe": "sem jcr:content"})
             continue
 
+        materializar_supplierlists(session, args.base_url, auth, jcr, cache_dc)
         page = AL.extract_tree(jcr, origem)
 
         # depende de rede: rótulo de download e related children/search

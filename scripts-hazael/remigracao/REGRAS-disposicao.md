@@ -1487,6 +1487,36 @@ batem com o navTitle; batem com o `subText`.)
 componente do global2 desenha `<span class="cmp-image__title">` nessa condição). Decisão do Hazael (21/09):
 legenda SOB a foto por ora; o GWI a escreve SOBRE a foto. Só propriedade, nenhum nó novo. 0 de 136 mudam.
 
+### R59 — `supplierlist` vira grade de logos com link e legenda  *(fecha a pendência aberta desde a landing)*
+
+**Onde:** aba "Suppliers/Partners" da `technology/imaging-and-vision`: 6 listas, 22 cards. Saía com os 6
+títulos e NADA embaixo (painel de 828px contra 3.180 no GWI) — "the page is broken", Hazael, 21/09/2026.
+**O que o GWI desenha:** por página de `pages` (estática, na ordem do nó), um card com o `manufacturerlogo` da
+página LINKADA, o `navTitle` dela embaixo e o card inteiro como link; 4 por linha. Nada disso está no nó.
+**Regra:** o DRIVER (`materializar_supplierlists`, porque depende de ler as páginas dos fornecedores) reescreve o
+nó, em memória, em colunas `width=3` com um `bannerimage` cada (logo + `linkURL` + `subText` = nome). O motor
+migra isso com o que já tinha: flexcontainer + `image` com link e legenda (R58) — o MESMO desenho da landing
+`/technology`. Nenhum componente novo. Os logos são copiados para `<DAM>/<página>/logos`. Lista não estática
+ou página sem logo continua pendência. `diff_payload.py` chama a mesma função.
+**Limite conhecido:** o `image` do global2 não tem opção de tamanho (policy: só "Expand to Fit Width" e
+posição): o logo fica com o tamanho natural, limitado pela coluna (~320px). No GWI o card normaliza para uma
+caixa fixa; aqui Sony/Altera saem largos e TQ alto. Só CSS do site resolve.
+**Atenção:** a landing `/semiconductors` da copia-teste (16 cards) MUDA na próxima regeneração — não regravada.
+
+### R60 — índice de âncoras DENTRO de aba lista os headings da própria aba
+
+**Onde:** aba "Applications" da `imaging-and-vision`: sumia "Factory Automation (FA) | Professional Surveillance
+| Video Cameras | Medical Vision Systems | Agritech" e o motor acusava `anchorlink_sem_itens` "sem heading com
+id" — havia 5, com id `1`…`5`. **Causa:** `_resolver_anchorlinks` só olhava `page.blocks`, que não desce nos
+painéis de `tabs`. **Regra:** dentro de um painel, o índice automático recebe os títulos com `id` DAQUELE painel
+(no GWI: 5 itens, não os 11 da página). 0 de 136 mudam. Conferido: 15 links `#`, 0 sem alvo.
+
+### R61 — linha de colunas iguais que não fecha os 12 é grade fixa: completa com vazios
+
+**Onde:** as linhas de 3 e de 2 logos esticavam para 1/3 e 1/2 (Sony com 450px). **Regra:** a R18 só completava
+a linha logo ABAIXO de uma linha cheia; agora a própria linha basta como evidência — colunas de mesma largura
+`w`, `12 % w == 0`, menos colunas que `12/w` e nenhum `offset`. 0 de 136 mudam; nas 19 do global2 só esta página.
+
 ---
 
 ## Aberto (achado na conferência visual, NÃO corrigido)
