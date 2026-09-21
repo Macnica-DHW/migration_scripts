@@ -1,0 +1,216 @@
+{
+ "caminho": "/content/macnicaglobal2/americas/mai/en/technology",
+ "lido_em": "2026-09-21_190305",
+ "jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:mixinTypes": [
+   "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:title": "Specialized Technology Integration Services and Solutions",
+  "jcr:versionHistory": "c353950d-b306-426b-812b-36a59635d8c6",
+  "pwaOrientation": "any",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+  "jcr:predecessors": [
+   "b5b2d8de-a0a6-4290-a3e6-b64d0994d0d0"
+  ],
+  "jcr:created": "Thu Mar 05 2026 00:16:38 GMT+0000",
+  "pwaDisplay": "standalone",
+  "cq:lastModified": "Mon Sep 21 2026 20:54:26 GMT+0000",
+  "jcr:description": "Rely on Macnica Americas for specialized technology in video & imaging, live video transport, & more. Explore our technology integration services today.",
+  "pwaCachestrategy": "staleWhileRevalidate",
+  "jcr:baseVersion": "b5b2d8de-a0a6-4290-a3e6-b64d0994d0d0",
+  "jcr:isCheckedOut": true,
+  "pageTitle": "Industry Solutions",
+  "cq:tags": [
+   "mai:product-category/image-sensors",
+   "mai:business-categories/semiconductors",
+   "mai:business-categories/boards-modules",
+   "mai:business-categories/iot-components",
+   "mai:business-categories/image-sensors"
+  ],
+  "jcr:uuid": "9da94bd2-fae4-4ea0-901b-a1723a391a79",
+  "sling:resourceType": "macnicaglobal2/components/page",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Solutions",
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "ohashi@yamato-ltd.com",
+   "jcr:lastModified": "Tue Feb 17 2026 06:32:08 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "true"
+  },
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Industry Solutions",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Expertise you can count on",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Macnica focuses on the specialized technology areas of video/imaging and networking/storage to better support customers trying to develop products and services using these technologies.</p>\n<p>We offer products at various levels of technology integration services: component-level semiconductor devices, FPGA IP, boards and modules, software and total solutions.<br>\n</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/common/images/broadcast-proav-1280x720.jpg",
+         "alt": "StudioSwitcher",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/technology/broadcast-proav-solutions",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/common/images/imaging-vision-1280x720.jpg",
+         "alt": "Imaging & Vision",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/technology/imaging-and-vision",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        }
+       }
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/common/images/istock-1079995926.jpg",
+         "alt": "Smart City & Mobility",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/technology/smartcity-mobility",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/common/images/istock-943065362.jpg",
+         "alt": "optical switch 2",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/technology/networking-storage",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        }
+       }
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/common/images/medical-healthcare-solutions.jpg",
+         "alt": "Medical & Healthcare Solutions",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/technology/medical-and-healthcare-solutions",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/common/images/robotics-1280x720.jpeg",
+         "alt": "Expertise you can count on",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/technology/robotics-amrs",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

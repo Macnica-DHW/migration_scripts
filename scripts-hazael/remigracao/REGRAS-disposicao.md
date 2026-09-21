@@ -1476,6 +1476,17 @@ fotos o visitante do GWI nunca viu (`security-camera.jpg` no lugar da grade `ice
 **Regra:** havendo `resizableimage`, o filho `image` não entra (a R25 só cobria o MESMO arquivo). 0 de 136.
 **Lição repetida:** conteúdo conferia (faltando 0, sobrando 0); só o print mostrou.
 
+### R58 — `subText` do `bannerimage` é a legenda do bloco: vira legenda visível do `image`
+
+**Onde:** os 6 blocos da landing `/technology` ("Broadcast & ProAV", "Imaging & Vision"…): migravam como
+6 fotos com link e SEM rótulo. O comparador não acusava — o rótulo é igual ao do menu e ele lê como navegação.
+**Causa:** o motor não lia `subText`. (Na 1ª leitura eu concluí que o GWI desenhava o navTitle da página
+linkada: ERRADO — a sonda é que não imprimia essa chave. "Medical & Healthcare Solutions" e "Robotics" não
+batem com o navTitle; batem com o `subText`.)
+**Regra:** `subText` -> `jcr:title` + `displayPopupTitle=false` + `titleValueFromDAM=false` no `image` (o HTL do
+componente do global2 desenha `<span class="cmp-image__title">` nessa condição). Decisão do Hazael (21/09):
+legenda SOB a foto por ora; o GWI a escreve SOBRE a foto. Só propriedade, nenhum nó novo. 0 de 136 mudam.
+
 ---
 
 ## Aberto (achado na conferência visual, NÃO corrigido)

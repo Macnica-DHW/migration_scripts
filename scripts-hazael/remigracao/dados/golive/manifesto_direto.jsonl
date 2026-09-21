@@ -188,3 +188,5 @@
 {"quando": "2026-09-21T18:22:16", "op": "pagina-preenchida", "origem": null, "destino": "/content/macnicaglobal2/americas/mai/en/technology/broadcast-proav-solutions/st-2110-at-scale-resources", "status": 200, "era": "nossa"}
 {"quando": "2026-09-21T18:33:57", "op": "backup+limpa-root", "origem": null, "destino": "/content/macnicaglobal2/americas/mai/en/technology/imaging-and-vision", "status": 200, "backup": "technology__imaging-and-vision__2026-09-21_183357.json", "era": "nossa"}
 {"quando": "2026-09-21T18:33:58", "op": "pagina-preenchida", "origem": null, "destino": "/content/macnicaglobal2/americas/mai/en/technology/imaging-and-vision", "status": 200, "era": "nossa"}
+{"quando": "2026-09-21T19:03:06", "op": "backup+limpa-root", "origem": null, "destino": "/content/macnicaglobal2/americas/mai/en/technology", "status": 200, "backup": "technology__2026-09-21_190305.json", "era": "nossa"}
+{"quando": "2026-09-21T19:03:07", "op": "pagina-preenchida", "origem": null, "destino": "/content/macnicaglobal2/americas/mai/en/technology", "status": 200, "era": "nossa"}

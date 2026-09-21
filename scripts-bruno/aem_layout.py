@@ -890,10 +890,18 @@ def bloco_de(node, caminho, page):
             page.pendencias.append(Pendencia(
                 caminho, rt, "imagem_quebrada", "sem fileReference"))
             return None
+        # `subText` do `bannerimage`: a LEGENDA que o GWI escreve sobre a foto
+        # ("Broadcast & ProAV", "Imaging & Vision"… nos 6 blocos da landing
+        # `/technology`). Sem ela a landing virava 6 fotos sem rótulo — e a
+        # conferência de texto não acusava, porque o rótulo é igual ao do menu e
+        # o comparador o lê como navegação (R58).
+        legenda = ""
+        if rt.endswith("/bannerimage"):
+            legenda = _texto_visivel(node.get("subText") or "")
         return Block("image", caminho, fileReference=ref, alt=node.get("alt", ""),
                      linkURL=node.get("linkURL") or "",
                      alinhamento=str(node.get("alignment") or "").lower(),
-                     largura_px=_px(node.get("width")))
+                     largura_px=_px(node.get("width")), legenda=legenda)
 
     if rt in BUTTON_TYPES:
         # `linkTarget` vem da origem: gravado fixo como `_self`, o datasheet
@@ -2436,6 +2444,14 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
             if link_de and link_para and url.startswith(link_de):
                 url = link_para + url[len(link_de):]
             payload[f"{base}/linkURL"] = url
+        # Legenda VISÍVEL sob a foto: o `image` do global2 desenha
+        # `<span class="cmp-image__title">` quando há título e o popup está
+        # desligado (lido no HTL do componente). Decisão do Hazael em 21/09/2026:
+        # legenda por ora; o GWI a desenha SOBRE a foto (R58).
+        if b.props.get("legenda"):
+            payload[f"{base}/jcr:title"] = b.props["legenda"]
+            payload[f"{base}/displayPopupTitle"] = "false"
+            payload[f"{base}/titleValueFromDAM"] = "false"
         # foto de card alinhada com a legenda (R35): ver `_emitir_linha`
         if b.props.get("a_esquerda"):
             _styles(payload, base, ["", S_IMG_LEFT])
