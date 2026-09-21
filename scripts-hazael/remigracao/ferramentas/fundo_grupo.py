@@ -68,15 +68,30 @@ def so_divisor(bs):
 
 
 def papel(bs):
+    """Papel de uma seção pelo que ela contém.
+
+    Duas correções medidas no dry-run das 135 (21/09/2026):
+    - `table` nua é spec. O global2 faz spec com `tabs`, mas o motor emite
+      `table` na maior parte da árvore; só `tabs` deixava 30 grupos de spec
+      como `corpo` (e a `/canon` sem faixa na tabela de sensores).
+    - O bloco de contato só define o papel quando é o ÚNICO conteúdo. Nas
+      folhas de produto o motor emite `title > table > experiencefragment`
+      numa seção só, e "XF presente => cta" rotulava 52 grupos de spec como
+      cta. Pintar esses grupos pinta o formulário junto — limitação do nó,
+      não do rótulo; ver a nota em MIN_BLOCOS/PISO_FAIXA_PX.
+    """
     tipos = {rt for rt, _ in bs}
-    if "experiencefragment" in tipos or "form" in tipos:
+    if tipos and tipos <= {"experiencefragment", "form", "title", "text"} \
+            and tipos & {"experiencefragment", "form"}:
         return "cta"
     if "anchorlink" in tipos:
         return "indice"
     if "list" in tipos and tipos <= {"list", "title"}:
         return "related"
-    if tipos & {"tabs"}:
+    if tipos & {"tabs", "table"}:
         return "spec"
+    if tipos & {"experiencefragment", "form"}:
+        return "cta"
     return "corpo"
 
 
