@@ -2294,6 +2294,22 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
 
     k = b.kind
 
+    # Dois títulos IDÊNTICOS em seguida viram um (R52). Divergência DELIBERADA:
+    # o GWI tem `heading_copy` e `heading_copy_copy` iguais em tudo na
+    # `canon-li7070sa` e na `canon-li7060-hdr` e DESENHA os dois ("Technical
+    # Specifications" duas vezes, medido a 1400 e a 375) — deslize de
+    # copiar-e-colar do autor; tirar um não perde conteúdo. Só quando são
+    # vizinhos de verdade: qualquer bloco no meio zera (as duas tabelas de
+    # spec da `canon-120mxs`, o "Overview" de cada aba da `/altera` ficam).
+    if k == "title" and str(b.props.get("titulo") or "").strip():
+        chave = (re.sub(r"\s+", " ", str(b.props["titulo"])).strip().lower(),
+                 b.props.get("tipo") or "h2")
+        if getattr(page, "_titulo_anterior", None) == chave:
+            return False
+        page._titulo_anterior = chave
+    else:
+        page._titulo_anterior = None
+
     if k == "text":
         n = nomes(pai, "text")
         base = f"{pai}/{n}"
@@ -2483,7 +2499,16 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
             if s.get("kind") == "image":
                 payload[f"{item}/sling:resourceType"] = RT["image"]
                 payload[f"{item}/fileReference"] = s.get("fileReference", "")
-                payload[f"{item}/alt"] = s.get("alt", "") or ""
+                # slide é um `image`: mesma aba Metadata, mesmo default (R49).
+                # Sem as flags o alt do slide é ignorado e vale o do DAM; o
+                # `alt_faltando.py` já as tinha posto no servidor e regenerar a
+                # `canon-li7070sa` as APAGARIA — o dry-run da R52 acusou.
+                payload[f"{item}/alt"] = (
+                    str(s.get("alt") or "").strip()
+                    or getattr(page, "_ultimo_titulo", "")
+                    or getattr(page, "titulo_pagina", ""))[:120]
+                payload[f"{item}/altValueFromDAM"] = "false"
+                payload[f"{item}/isDecorative"] = "false"
             else:
                 payload[f"{item}/sling:resourceType"] = RT["embed"]
                 payload[f"{item}/type"] = "embeddable"
@@ -2851,6 +2876,39 @@ def _emitir_linha(payload, pai, nomes, row, page, link_de, link_para):
         for c in row.columns:
             for b in c.blocks:
                 _emitir_bloco(payload, pai, nomes, b, page, link_de, link_para)
+        return
+
+    # Coluna que guarda SÓ título não é coluna (R51). Divergência DELIBERADA:
+    # na `i-chips-ip00cc35` o GWI tem `heading w=5` + `text w=5` num invólucro
+    # w=12 e DESENHA o "Key Features" à esquerda e a lista à direita, na mesma
+    # linha (medido a 1400: título x=213, lista x=620). É autor que estreitou
+    # os dois e a grade os pôs lado a lado; título encalhado numa coluna ao
+    # lado do próprio conteúdo não é layout de ninguém (Hazael, 21/09/2026).
+    # O título sai em largura cheia e o resto embaixo — como colunas, se
+    # sobrarem 2+. Linha em que TODAS as colunas são só-título fica como está.
+    so_titulo = [c for c in row.columns
+                 if c.blocks and all(b.kind == "title" for b in c.blocks)]
+    if so_titulo and len(so_titulo) < len(row.columns) and not row.vazias:
+        grupo = []
+
+        def despejar():
+            if len(grupo) == 1:
+                for b in grupo[0].blocks:
+                    _emitir_bloco(payload, pai, nomes, b, page, link_de, link_para)
+            elif grupo:
+                sub = Row("columns")
+                sub.columns = list(grupo)
+                _emitir_linha(payload, pai, nomes, sub, page, link_de, link_para)
+            grupo.clear()
+
+        for c in row.columns:
+            if any(c is t for t in so_titulo):
+                despejar()
+                for b in c.blocks:
+                    _emitir_bloco(payload, pai, nomes, b, page, link_de, link_para)
+            else:
+                grupo.append(c)
+        despejar()
         return
 
     # Colunas que são SÓ botão têm de caber: o botão tem min-width 345px

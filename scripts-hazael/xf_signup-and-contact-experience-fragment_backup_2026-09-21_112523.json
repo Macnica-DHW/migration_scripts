@@ -1,0 +1,65 @@
+{
+ "quando": "2026-09-21T11:25:23.489064",
+ "xf": "/content/experience-fragments/copia-teste/americas/mai/en/site/signup-and-contact-experience-fragment/master",
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "SignUp and Contact Experience Fragment",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/xf-web-variation",
+  "jcr:created": "Thu Sep 10 2026 18:39:37 GMT+0000",
+  "cq:lastModified": "Tue Sep 15 2026 18:21:19 GMT+0000",
+  "cq:xfVariantType": "web",
+  "sling:resourceType": "macnicaglobal2/components/page",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "containerpy": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p style=\"text-align: center;\"><b>Stay up to date on the latest news from Macnica Partners.</b></p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "button_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "button_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Sign up",
+      "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+      "linkTarget": "_blank",
+      "sling:resourceType": "macnicaglobal2/components/content/button"
+     }
+    },
+    "text_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p style=\"text-align: center;\"><b>For more information:</b></p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "button_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "button_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Contact us",
+      "linkURL": "/content/macnicagwi/americas/mai/en/contact/form",
+      "linkTarget": "_self",
+      "sling:resourceType": "macnicaglobal2/components/content/button"
+     }
+    }
+   }
+  }
+ }
+}

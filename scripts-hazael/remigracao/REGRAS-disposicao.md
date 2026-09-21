@@ -1328,6 +1328,36 @@ isolado continua pela altura: ali pesa mais o buraco embaixo do texto (herói
 da `i-chips-ip00c788`, foto 600×600 → 275×275). `_harmonizar_series_twi`, na
 emissão (os `dims` só existem depois de o driver consultar o DAM).
 
+### R51 — coluna que guarda SÓ título não é coluna  *(divergência deliberada do GWI)*
+
+**Onde:** `i-chips-ip00cc35`: "Key Features" à esquerda e a lista de features à
+direita, na mesma linha; abaixo de 1050px "se conserta sozinho" (o
+flexcontainer empilha). Hazael, 21/09/2026.
+**Causa:** o GWI tem `heading w=5` + `text w=5` dentro de um invólucro `w=12`,
+e o motor leu uma linha de 2 colunas — corretamente: **o GWI desenha igual**
+(medido a 1400px: título x=213, lista x=620, mesmo y). É autor que estreitou os
+dois e a grade os deixou lado a lado.
+**Regra:** numa linha de colunas, a coluna que só tem `title` sai em largura
+cheia e o resto embaixo (como colunas, se sobrarem 2+). Linha em que TODAS as
+colunas são só-título fica como está. Varredura da árvore: 1 flexcontainer em 1
+página. Layout pode divergir do GWI; conteúdo, não — aqui nada se perde.
+
+### R52 — dois títulos idênticos em seguida viram um  *(divergência deliberada do GWI)*
+
+**Onde:** `canon-li7070sa` e `canon-li7060-hdr`: "Technical Specifications"
+duas vezes, uma embaixo da outra, em cima da tabela.
+**Causa:** o JCR do GWI tem `heading_copy` e `heading_copy_copy` iguais em
+todas as propriedades, e o GWI **desenha os dois** (visíveis a 1400 e a 375px)
+— copiar-e-colar do autor. O motor foi fiel.
+**Regra:** título igual em texto E nível ao título emitido imediatamente antes
+é descartado; qualquer bloco no meio zera a comparação. Varredura: 15 páginas
+têm título repetido em algum lugar, só estas 2 são duplicata de verdade. Ficam:
+`canon-120mxs`/`canon-35mmfhdxs-a` (o mesmo título sobre DUAS tabelas — sensor
+e Eval Kit), "Overview"/"Key Features" por aba ou família (`/altera`,
+`/infineon`, `sitime-*`). Em aberto, do Hazael: `i-chips-ip00c790` tem "Block
+Diagram" sobre o diagrama e de novo sobre uma lista de specs — parece erro de
+digitação da origem, não é vizinho, não foi tocado.
+
 ### Revisão adversarial do patch (antes de gravar)
 
 Três lentes offline (extração, ritmo, HTML/links) + um verificador por achado:

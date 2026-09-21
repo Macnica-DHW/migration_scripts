@@ -1,6 +1,6 @@
 # Remigração — onde parei (21/09/2026, 6ª sessão)
 
-> **Servidor = motor (HEAD) = R1–R50**, mais três coisas gravadas FORA do motor
+> **Servidor = motor (HEAD) = R1–R52**, mais três coisas gravadas FORA do motor
 > por ferramenta de uma propriedade só (ver abaixo). Revisão manual do Hazael em
 > andamento, página a página, no artifact "Conferência da remigração"
 > (https://claude.ai/artifact/CTjAuafxrCas9xAVJe8rDR — status e nota por página
@@ -20,6 +20,13 @@ print do Hazael):
   **e** `altValueFromDAM='false'` no `textwithimage`: sem a flag o componente
   ignora o alt do nó e serve o metadata do DAM (`alt="544581870"`).
 - **R50** pares texto|foto em SÉRIE dividem a mesma coluna (a maior da série).
+- **R51** coluna que guarda SÓ título não é coluna (`i-chips-ip00cc35`, "Key
+  Features" ao lado da lista) e **R52** dois títulos idênticos em seguida viram um
+  (`canon-li7070sa`, `canon-li7060-hdr`) — as duas são **divergência deliberada**:
+  o GWI desenha igual (medido); são deslizes do autor da origem. Lote 12, 3/3.
+- Slides de `carousel` também saem com alt derivado + `altValueFromDAM`/
+  `isDecorative` = false (o dry-run da R52 mostrou que regenerar apagaria as
+  flags que o `alt_faltando.py` tinha posto).
 
 **Gravado:** lote 11 (`lote11_paginas.txt`, 11/11) · `alt_faltando.py --todas`
 (66 alt em 39 páginas; depois 226 flags em 82) · `serie_twi.py /ambarella` (2
@@ -33,8 +40,10 @@ print do Hazael):
 - O XF `products-contact-block` (botões lado a lado, par ao centro) — gravado
   pela sessão paralela `migration-scripts-7a` com `xf_lado_a_lado.py`
   (commit 2b5a769). O driver NÃO escreve em experience-fragments, então lote
-  não desfaz. `signup-and-contact-experience-fragment` (4 páginas): mesmo
-  defeito, NÃO executado.
+  não desfaz. `signup-and-contact-experience-fragment` (4 páginas): gravado
+  nesta sessão a pedido do Hazael (`--colunas 2`): "Stay up to date…" + Sign up
+  numa coluna, "For more information:" + Contact us na outra; texto a 40px do
+  botão. Backup `xf_signup-and-contact-experience-fragment_backup_2026-09-21_112523.json`.
 
 **Fundo: o que ficou decidido e o que não.** Cor é de GRUPO, não de seção nem
 de bloco (no global2, 0 de 270 seções coloridas têm um bloco só); faixa fina
