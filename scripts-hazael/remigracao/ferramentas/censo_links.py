@@ -14,7 +14,10 @@ sys.path.insert(0, str(R / "scripts-hazael")); sys.path.insert(0, str(R / "scrip
 from aem_lib import CONFIG, build_session
 
 AQUI = Path(__file__).resolve().parents[1] / "dados" / "links"
-RAIZ = "/content/copia-teste/americas/mai/en/products/semiconductors-remigration"
+# uso: censo_links.py [raiz] [prefixo-de-saida]   — sem argumentos: a árvore revisada, refs.csv/paginas.csv
+_args = [a for a in sys.argv[1:] if not a.startswith("-")]
+RAIZ = _args[0].rstrip("/") if _args else "/content/copia-teste/americas/mai/en/products/semiconductors-remigration"
+PREFIXO = (_args[1] + "_") if len(_args) > 1 else ""
 BASE = CONFIG["base_url"].rstrip("/")
 assert re.match(r"^https://author-[a-z0-9-]+\.adobeaemcloud\.com$", BASE), BASE   # cookie só vai para o author
 
@@ -144,9 +147,9 @@ def main():
         for no, prop, tipo, u in out:
             linhas.append(("XF", x, no, prop, tipo, u, classe(u)))
 
-    with open(AQUI / "refs.csv", "w", newline="") as f:
+    with open(AQUI / f"{PREFIXO}refs.csv", "w", newline="") as f:
         w = csv.writer(f); w.writerow(["onde", "pagina", "no", "prop", "tipo", "url", "classe"]); w.writerows(linhas)
-    with open(AQUI / "paginas.csv", "w", newline="") as f:
+    with open(AQUI / f"{PREFIXO}paginas.csv", "w", newline="") as f:
         w = csv.writer(f); w.writerow(["path", "status", "info", "titulo", "lastModifiedBy", "n_refs"]); w.writerows(meta)
     print(f"{len(linhas)} referências; {len(xfs)} XFs distintos -> refs.csv / paginas.csv", file=sys.stderr)
 

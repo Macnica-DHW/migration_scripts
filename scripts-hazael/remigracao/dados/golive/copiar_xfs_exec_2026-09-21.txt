@@ -1,0 +1,16 @@
+
+EXECUTANDO
+  site: criado
+  signup-and-contact-experience-fragment [sling:Folder -> XF de verdade] raiz: criado  master: criado  xfpage: alterado
+  products-contact-block [sling:Folder -> XF de verdade] raiz: criado  master: criado  xfpage: alterado
+  popups [sling:OrderedFolder] cópia inteira: criado
+  ref /signup-and-contact-experience-fragment/master/jcr:content/root/containerpy/flexcontainer/flexcontaineritem_2/button_2 · linkURL
+      - /content/macnicagwi/americas/mai/en/contact/form
+      + /content/macnicaglobal2/americas/mai/en/contact-us
+  ref /products-contact-block/master/jcr:content/root/containerpy/flexcontainer/flexcontaineritem_1/button_1 · linkURL
+      - /content/macnicagwi/americas/mai/en/contact/form
+      + /content/macnicaglobal2/americas/mai/en/contact-us
+  ref /products-contact-block/master/jcr:content/root/containerpy/flexcontainer/flexcontaineritem_2/button_2 · linkURL
+      - /content/macnicagwi/americas/mai/en/request-a-quote
+      + /content/macnicaglobal2/americas/mai/en/request-a-quote
+3 referências reescritas; 0 sobras
