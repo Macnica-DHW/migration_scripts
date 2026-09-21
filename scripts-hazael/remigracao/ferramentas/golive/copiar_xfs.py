@@ -9,8 +9,13 @@ para o `fragmentVariationPath` mudar só de prefixo:
   site/products-contact-block             na copia-teste a "raiz" é um sling:Folder com uma página
   site/signup-and-contact-...             dentro; aqui a raiz nasce como XF de verdade (cq:Page +
                                           template de experiencefragment, como o `footer`) e o `master`
-                                          é copiado para dentro. `master/jcr:content` passa de
-                                          `components/page` para `components/xfpage` + cq:xfMasterVariation.
+                                          é copiado para dentro, com cq:xfMasterVariation.
+
+`master/jcr:content` CONTINUA `macnicaglobal2/components/page`, como na copia-teste. Trocar para
+`components/xfpage` (o que o `footer` usa) parece o certo e NÃO é: o xfpage embrulha o fragmento embutido
+num `div.xf-content-height` com margem lateral de -12px, e o bloco de contato sai 24px mais largo
+(x=50 w=625 -> x=38 w=637 a 1400px) em todas as páginas que o embutem. Medido em 21/09/2026 com o
+comparar_render.py; o que o Hazael revisou é com `page`. Os popups nasceram xfpage e ficam como estão.
 
 Depois reescreve as referências DENTRO dos XFs novos (os botões apontavam para /content/macnicagwi).
 Só cria; se `site` já existir e não for nosso, aborta (ver _comum.py).
@@ -37,9 +42,9 @@ def main():
         titulo = (j["master"].get("jcr:content") or {}).get("jcr:title", nome)
         print(f"  {nome} [{tipo} -> XF de verdade] raiz:", criar(f"{XF_G2}/{nome}", {**RAIZ_XF, "jcr:content/jcr:title": titulo}, executar), end="")
         print("  master:", copiar(f"{XF_T}/{nome}/master", f"{XF_G2}/{nome}/master", executar), end="")
-        print("  xfpage:", alterar(f"{XF_G2}/{nome}/master/jcr:content",
-                                   {"sling:resourceType": "macnicaglobal2/components/xfpage", "cq:xfMasterVariation": "true",
-                                    "cq:xfMasterVariation@TypeHint": "Boolean"}, executar) if executar else "dry")
+        print("  master variation:", alterar(f"{XF_G2}/{nome}/master/jcr:content",
+                                             {"sling:resourceType": "macnicaglobal2/components/page", "cq:xfMasterVariation": "true",
+                                              "cq:xfMasterVariation@TypeHint": "Boolean"}, executar) if executar else "dry")
 
     # referências dentro dos XFs: na origem (dry-run) ou já no destino (executar)
     base, assets = (XF_G2 if executar else XF_T), mapa_assets()

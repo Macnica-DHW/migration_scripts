@@ -8,6 +8,31 @@ Scripts em `ferramentas/golive/` e `ferramentas/censo_links*.py`; dados em `dado
 
 ---
 
+## EXECUÇÃO — 21/09/2026 (decisões do Hazael às ~13:25 BRT; vale sobre as seções 2 e 4)
+
+**Decidido:** segurar `canon` e `design-gateway` e não sobrescrever NADA da Anion; migrar só as famílias
+que não existem no global2 (14 famílias, 90 páginas, sem as 4 de teste, sem a landing); assumir que o
+cookie grava no global2 (confirmado: HTTP 201); desenho e nome de DAM da Anion; bloco de contato continua
+XF, agora no global2. **Pedido dele no meio da execução:** conferir página tocada pela Anion antes de
+gravar → virou trava em `ferramentas/golive/_comum.py` (lista branca + destino relido AO VIVO antes de
+cada escrita + só cria, nunca `:replace` + manifesto). Os 6 links para as 2 páginas de `ip-software`
+ficaram como estão: o caminho está certo, a página é que não existe ainda.
+
+| fase | estado | evidência |
+|---|---|---|
+| 3 assets | **feito** — 178 criados (189 origens; 11 eram o mesmo arquivo por `dam:sha1`, 1 ganhou `-2`), 1,4 GB servidor-a-servidor; todos `dam:Asset`, mesmo sha1, `processed` | `dados/golive/copiar_assets_exec_2026-09-21.txt` |
+| 4 XFs | **feito** — `…/macnicaglobal2/americas/mai/en/site/{products-contact-block, signup-and-contact-experience-fragment, popups/form-success, popups/form-error}`; botões → `/contact-us` e `/request-a-quote`; geometria a 1400px idêntica à da copia-teste | `copiar_xfs_exec_2026-09-21.txt` |
+| 2 staging | **feito** — `copia-teste/.../semiconductors-golive`, 90 páginas | `staging_exec_2026-09-21.txt` |
+| 5 reescrita | **feito** — 270 propriedades em 82 páginas; 2ª passada = 0 | `reescrita_exec.csv` |
+| 6 conferência do staging | refs: 452, **0** para copia-teste/gwi; 251 alvos internos, 1 inexistente e previsto (`ip-software/v-by-oner-hs-ip`) | `dados/links/stg_refs.csv`, `conferir_refs.py` |
+| 7–8 cópia final e conferência no global2 | ver o fim desta seção | `retrato_g2_antes/depois.json` |
+
+Desfazer: tudo que foi criado está em `dados/golive/manifesto.jsonl` (só criação; nenhuma sobrescrita).
+Detalhe cosmético: o tar.gz de 858 MB ficou `mai-linux-bsp-package-5-tar.gz` (a normalização comeu o
+ponto de `.tar`); abre normalmente com `tar xzf`.
+
+---
+
 ## 0. O que trava (ler antes do resto)
 
 1. **A Anion está migrando à mão, no destino, as mesmas famílias — AGORA.** `venkatesh`, `mahendra`,
