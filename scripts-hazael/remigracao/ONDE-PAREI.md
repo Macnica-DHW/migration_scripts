@@ -1,6 +1,6 @@
 # Remigração — onde parei (21/09/2026, 6ª sessão)
 
-> **Servidor = motor (HEAD) = R1–R52**, mais três coisas gravadas FORA do motor
+> **Servidor = motor (HEAD) = R1–R53**, mais três coisas gravadas FORA do motor
 > por ferramenta de uma propriedade só (ver abaixo). Revisão manual do Hazael em
 > andamento, página a página, no artifact "Conferência da remigração"
 > (https://claude.ai/artifact/CTjAuafxrCas9xAVJe8rDR — status e nota por página
@@ -24,6 +24,15 @@ print do Hazael):
   Features" ao lado da lista) e **R52** dois títulos idênticos em seguida viram um
   (`canon-li7070sa`, `canon-li7060-hdr`) — as duas são **divergência deliberada**:
   o GWI desenha igual (medido); são deslizes do autor da origem. Lote 12, 3/3.
+- **R53 — o fundo cinza entrou NO MOTOR.** Política do Hazael: intro branca,
+  corpo `#f7f7f7`, botões de contato brancos no fim; página grande alterna por
+  grupo de `h2` (faixa mínima de 5 blocos). Escopo = a lista dele, 49 páginas,
+  em `dados/fundo_cinza_paginas.txt` (2ª coluna `alternar` nas 19 grandes) —
+  para pôr ou tirar uma página, editar esse arquivo e regravar a página. Como a
+  cor só pega em seção inteira, o motor CORTA a seção na emissão (intro | corpo |
+  contato) sem mexer no IR nem no respiro. Lote 13: 49/49, 57 faixas, a menor
+  com 499px; `/design-gateway` com +0px de altura, as folhas com +60px (os
+  30/30 do bloco de contato, agora seção própria).
 - Slides de `carousel` também saem com alt derivado + `altValueFromDAM`/
   `isDecorative` = false (o dry-run da R52 mostrou que regenerar apagaria as
   flags que o `alt_faltando.py` tinha posto).
@@ -33,7 +42,8 @@ print do Hazael):
 `imageRatio`). Backups: `lote11_backup.json`.
 
 **Gravado FORA do motor — a próxima regeneração da página APAGA:**
-- **Fundo por grupo semântico** em `/ambarella` e `/canon`
+- **Fundo por grupo semântico** em `/ambarella` e `/canon` — as DUAS únicas
+  páginas com fundo ainda fora do motor (não estão na lista da R53)
   (`ferramentas/fundo_grupo.py`, teste de 2 páginas). Depois de qualquer lote
   que inclua uma delas: `fundo_grupo.py <pág> --executar` (idempotente).
   `ferramentas/faixas.py` confere que nenhuma faixa tem menos de 200px.
