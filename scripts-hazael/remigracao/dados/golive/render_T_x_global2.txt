@@ -1,0 +1,2 @@
+1 cookies carregados de o .env (login-token presente: sim)
+

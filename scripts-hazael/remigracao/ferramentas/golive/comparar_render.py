@@ -55,6 +55,10 @@ def main():
     cookies = parse_cookie_string(env["AEM_COOKIES"].strip().strip('"').strip("'"))
     host = BASE.split("//", 1)[1]
     rels = paginas(b)
+    if "--familias-nossas" in sys.argv:                 # B = global2: lá há famílias da Anion, que não são desta comparação
+        from _comum import familias
+        nossas = set(familias())
+        rels = [r for r in rels if r.strip("/").split("/")[0] in nossas]
     with Pool(6) as pool:
         res = pool.map(mede, [(BASE, cookies, host, (a, b), r) for r in rels], chunksize=1)
     json.dump(res, open(DADOS / f"{nome}.json", "w"))

@@ -1273,5 +1273,455 @@
   "venkatesh@anionmarketing.com",
   "Mon Sep 21 2026 17:26:37 GMT+0000",
   "venkatesh@anionmarketing.com"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/4-helio-view-hardware": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Fri Sep 18 2026 23:50:53 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/8-helio-view-software": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Fri Sep 18 2026 23:50:51 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/ambarella-n1-soc": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:11 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/ambarella-cv72s-soc": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:10 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:07 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-nx-soc-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:39 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-tx-soc-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:41 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-dx-soc-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:35 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-mx-soc-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:38 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-ax-soc-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:34 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-gx-soc-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:37 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-stratix-10/altera-stratix-10-sx-soc-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:40 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-stratix-10": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:33 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/5-altera-soc-power-considerations": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Fri Sep 18 2026 23:51:25 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-soc-courses": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:29 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/1-vworkshop-altera-soc-introduction": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Sat Sep 19 2026 10:50:51 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/agilex-3-fpga-and-soc-overview": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:04 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:06 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:05 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:07 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:03 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-sx-soc-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:12 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-gt-soc-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:11 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:10 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/2-basic-altera-soc-hps-usage": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Fri Sep 18 2026 23:51:21 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-max-10/altera-max-10-soc-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:23 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-max-10/multi-rail-power-sequencer-monitor-reference-design-for-intel-maxr10-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:24 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-max-10": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:23 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-quartus-prime": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:25 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-holoscan": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:19 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/6-altera-soc-embedded-design-suite": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Fri Sep 18 2026 23:51:20 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/sulfur-som-carrier-board": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:52 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-gx-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:15 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-lp-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:16 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:14 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilex-7-i-series": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:45 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilexr-7-fpga-m-series": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:48 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilex-5-e-series-065b-development-kit": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:44 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilextm-5-fpga-e-series-premium": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:49 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:42 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-questa-fpga-edition": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:27 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/3-adding-and-simulating-custom-soc-peripherals": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Fri Sep 18 2026 23:51:23 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/opencl-software-technology": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:51 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:46:00 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/analog-devices-multimodal-sensor-front-ends": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:20 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/analog-devices-3d-time-of-flight-development-platform": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:17 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/analog-devices-radar-development-kit": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:22 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/macnica-and-adi": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:29 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/analog-devices-smartmesh-ip-starter-kit": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:24 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/analog-devices-lidar-development-kit": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Fri Sep 18 2026 22:47:43 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:15 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/genesys-logic": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:31 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c341": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:11 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c813a": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:13 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c821": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:18 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c814": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:15 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:09 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c381": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:23 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c382": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:25 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c789": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:32 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c790": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:34 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c787": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:27 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c788": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:30 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:20 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-fpga-evaluation-board": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:41 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c331": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:53 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00cc35": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:07 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c755": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:00 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c811": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:02 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c241": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:49 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c251": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:51 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c812b": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:04 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c733a": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:55 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c734": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:58 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:46 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:47:39 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/infineon": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:37 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/microchip": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:39 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/on-semiconductor": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:52 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems/namuga-vicon-lite": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:50 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:48:45 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/renesas": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:49:03 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-oscillators": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:49:16 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-clock-buffers": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:49:08 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-mems-resonator-technology": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:49:13 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:49:14 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-clock-generators": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:49:10 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-jitter-cleaners": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:49:11 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:49:04 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
+ ],
+ "/content/macnicaglobal2/americas/mai/en/products/semiconductors/toppan-3d-tof-sensing-solutions": [
+  "valter.toffolo@macnicadhw.com.br",
+  "Mon Sep 21 2026 16:49:24 GMT+0000",
+  "valter.toffolo@macnicadhw.com.br"
  ]
 }

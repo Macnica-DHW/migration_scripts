@@ -100,7 +100,7 @@ def classe(u):
     if l.startswith("/content/experience-fragments/macnicaglobal2"): return "XF-global2"
     if l.startswith("/content/experience-fragments/"): return "XF-outro"
     if l.startswith("/content/macnicagwi"): return "PAGINA-gwi"
-    if l.startswith(RAIZ.lower()): return "pagina-copia-teste(na arvore)"
+    if l.startswith(RAIZ.lower()): return "pagina-na-arvore" if RAIZ.startswith("/content/macnicaglobal2") else "pagina-copia-teste(na arvore)"
     if l.startswith("/content/copia-teste"): return "pagina-copia-teste(FORA da arvore)"
     if l.startswith("/content/macnicaglobal2"): return "pagina-global2"
     if l.startswith("/content/cq:tags") or l.startswith("/content/_cq_tags"): return "tag"

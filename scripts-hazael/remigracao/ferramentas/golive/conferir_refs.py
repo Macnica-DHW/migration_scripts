@@ -13,6 +13,10 @@ PREVISTOS = {f"{MAI}/products/ip-software/v-by-oner-hs-ip", f"{MAI}/products/ip-
 def main():
     prefixo, raiz = sys.argv[1], sys.argv[2].rstrip("/")
     L = list(csv.DictReader(open(DADOS.parent / "links" / f"{prefixo}_refs.csv")))
+    if "--familias-nossas" in sys.argv:
+        from _comum import familias
+        nossas = set(familias())
+        L = [l for l in L if l["onde"] == "XF" or l["pagina"][len(raiz):].strip("/").split("/")[0] in nossas]
     print(f"{len(L)} referências sob {raiz}")
     print("  por classe:", dict(collections.Counter(l["classe"] for l in L)))
     fora = [l for l in L if re.search(r"copia-teste|macnicagwi|gwi", l["classe"], re.I)]

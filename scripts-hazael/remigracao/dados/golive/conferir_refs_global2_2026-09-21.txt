@@ -1,0 +1,6 @@
+
+452 referências sob /content/macnicaglobal2/americas/mai/en/products/semiconductors
+  por classe: {'DAM-global2': 202, 'pagina-global2': 20, 'pagina-na-arvore': 139, 'XF-global2': 68, 'externo': 23}
+  alvos internos distintos: 251; que a cópia cria: 0; inexistentes: 1
+     previsto HTTP 404  <mai/en>/products/ip-software/v-by-oner-hs-ip   <- ['/i-chips/i-chips-scaler-lsi/i-chips-ip00c241', '/i-chips/i-chips-scaler-lsi/i-chips-ip00c331', '/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c341'] …
+  RESULTADO: tudo aponta para o global2 e todo alvo existe (fora os 2 previstos)
