@@ -1,0 +1,54 @@
+# Páginas com fundo cinza-claro no corpo (intro branca, corpo #f7f7f7, botões de contato brancos).
+# Lista do Hazael, revisão página a página em 21/09/2026 — é DECISÃO dele, não regra de tamanho.
+# Caminho relativo à raiz semiconductors do GWI (com as maiúsculas da origem).
+# 2ª coluna = modo: `alternar` (página grande: cinza/branco por grupo de h2, faixa mínima de 5 blocos)
+#                    vazio = `faixa` (uma faixa cinza só, da intro até os botões).
+/altera/agilex/altera-agilex-5-fpga-and-soc-overview  alternar
+/altera/agilex/altera-agilex-7-fpga-and-soc-overview  alternar
+/altera/altera-arria-10
+/altera/altera-cyclone-10-fpga
+/altera/altera-holoscan  alternar
+/ambarella/TEST-AUTOGENERATE-LIST-ambarella-n1-soc-html  alternar
+/ambarella/TEST-FIXED-LIST-ambarella-n1-soc  alternar
+/ambarella/ambarella-n1-soc  alternar
+/analog-devices/analog-devices-multimodal-sensor-front-ends
+/analog-devices/macnica-and-adi  alternar
+/canon/canon-120mxs-cmos-image-sensors  alternar
+/canon/canon-35mmfhdxs-a-cmos-sensors  alternar
+/canon/canon-li3030sa-19mm-cmos-sensor
+/canon/canon-li5030sa-35mm-full-size-19mp-global-shutter-cmos-sensor
+/canon/canon-li5040-5m-cmos-sensor
+/canon/canon-li8020sa-250mp-cmos-sensor-0
+/canon/canon-li8030SA-410mp-ultra-high-resolution-cmos-sensor  alternar
+/design-gateway  alternar
+/i-chips  alternar
+/i-chips/i-chips-fpga-evaluation-board  alternar
+/i-chips/i-chips-scaler-lsi  alternar
+/i-chips/i-chips-scaler-lsi/i-chips-ip00c241
+/i-chips/i-chips-scaler-lsi/i-chips-ip00c251
+/i-chips/i-chips-scaler-lsi/i-chips-ip00c331
+/i-chips/i-chips-scaler-lsi/i-chips-ip00c733a
+/i-chips/i-chips-scaler-lsi/i-chips-ip00c734
+/i-chips/i-chips-scaler-lsi/i-chips-ip00c755
+/i-chips/i-chips-scaler-lsi/i-chips-ip00c811
+/i-chips/i-chips-scaler-lsi/i-chips-ip00c812b
+/i-chips/i-chips-scaler-lsi/i-chips-ip00cc35  alternar
+/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c341
+/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c813a
+/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c814
+/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c821
+/i-chips/i-chips-warping-lsi/i-chips-ip00c381
+/i-chips/i-chips-warping-lsi/i-chips-ip00c382
+/i-chips/i-chips-warping-lsi/i-chips-ip00c787
+/i-chips/i-chips-warping-lsi/i-chips-ip00c788
+/i-chips/i-chips-warping-lsi/i-chips-ip00c789
+/i-chips/i-chips-warping-lsi/i-chips-ip00c790
+/namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems/namuga-vicon-lite  alternar
+/renesas  alternar
+/sitime/sitime-clock-buffers  alternar
+/sitime/sitime-clock-generators
+/sitime/sitime-jitter-cleaners
+/sitime/sitime-mems-resonator-technology
+/sitime/sitime-network-synchronizers
+/sitime/sitime-oscillators
+/toppan-3d-tof-sensing-solutions  alternar

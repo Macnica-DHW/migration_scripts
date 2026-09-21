@@ -3149,6 +3149,184 @@ def _harmonizar_series_twi(page):
     fechar()
 
 
+_FUNDO_LISTA = None
+FUNDO_MIN_BLOCOS = 5     # faixa com menos que isso funde na vizinha: senão listra
+
+
+def _fundo_da_lista():
+    """{rel do GWI: modo} de `remigracao/dados/fundo_cinza_paginas.txt` (R53)."""
+    global _FUNDO_LISTA
+    if _FUNDO_LISTA is None:
+        import os
+        _FUNDO_LISTA = {}
+        arq = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..",
+                           "scripts-hazael", "remigracao", "dados",
+                           "fundo_cinza_paginas.txt")
+        if os.path.exists(arq):
+            for linha in open(arq, encoding="utf-8"):
+                campos = linha.split("#")[0].split()
+                if campos:
+                    _FUNDO_LISTA[campos[0].rstrip("/") or "/"] = (
+                        campos[1] if len(campos) > 1 else "faixa")
+    return _FUNDO_LISTA
+
+
+def _copiar_secao(s, rows):
+    """Pedaço de uma seção cortada pela R53, com o MESMO respiro de antes.
+
+    As linhas de uma seção com 2+ linhas viviam em sub-containers 30/30 (ou
+    0/0 quando são só índice ou só textwithimage — R28e). Um pedaço de uma
+    linha só vira seção sem sub-container, então herda esse padding; com 2+
+    linhas o emissor volta a criar os sub-containers sozinho.
+    """
+    ns = Section(s.origin_path, s.origin_index, s.role)
+    ns.background, ns.full_bleed = s.background, s.full_bleed
+    ns.max_width_1000, ns.pad_lr = s.max_width_1000, s.pad_lr
+    ns.rows = rows
+    ns.pad_tb = s.pad_tb
+    if len(rows) == 1:
+        r = rows[0]
+        so_indice = r.blocks and all(b.kind == "anchorlink" for b in r.blocks)
+        so_twi = (not r.cabecalho and r.blocks
+                  and (all(b.kind == "textwithimage" for b in r.blocks)
+                       or _tentar_textwithimage(r) is not None))
+        ns.pad_tb = "none" if (so_indice or so_twi) else "small"
+    return ns
+
+
+def _aplicar_fundo_da_lista(page):
+    """Fundo cinza-claro no CORPO das páginas que o Hazael listou (R53).
+
+    Política dele (21/09/2026): a página começa branca (a introdução, quase
+    sempre texto com foto ou vídeo ao lado), o conteúdo depois dela ganha
+    `#f7f7f7`, e o fim volta ao branco quando o fim são os botões de contato
+    (sign up / quote / contact). Página grande alterna branco/cinza por grupo;
+    a `/infineon` acaba cinza porque não tem os botões.
+
+    A cor só pega em SEÇÃO inteira (sub-container fica a 25px da borda, medido
+    na `altera-arria-10`), e nas folhas de produto intro, corpo e contato vêm
+    na mesma seção — a fronteira de seção vem da origem. Por isso o corte é
+    feito AQUI, na emissão, depois de `_marcar_papeis`: o IR continua fiel à
+    origem e o respiro calibrado desde a R28 não muda (`_copiar_secao`).
+
+      intro    = tudo antes da 1ª linha que abre com `title h2` (no mínimo a 1ª)
+      contato  = as linhas do fim que têm o XF; se o XF divide a linha com
+                 conteúdo (`title > table > xf`), ele sai para uma linha própria.
+                 A chamada curta que o antecede ("Get Started", <5 blocos) fica
+                 branca junto com ele
+      corpo    = o resto. modo `faixa`: uma faixa só. modo `alternar`: um grupo
+                 por `h2`, cinza/branco/cinza…, e grupo com menos de
+                 FUNDO_MIN_BLOCOS funde no vizinho — alternar a cada h2 dava
+                 `G2 W2 G11 W2 G2 W2 G4` na `ip00cc35`, a listra
+                 título/conteúdo/título/conteúdo que o Hazael já tinha recusado.
+    Faixa que o motor já pinta (a das abas) nunca é despintada.
+    """
+    rel = str(page.source_path or "").split("/products/semiconductors", 1)[-1]
+    modo = _fundo_da_lista().get(rel.rstrip("/") or "/")
+    if not modo:
+        return
+
+    def tem_xf(r):
+        return any(b.kind == "xf" for b in r.blocks)
+
+    def abre_h2(r):
+        b = r.blocks[0] if r.blocks else None
+        return bool(b and b.kind == "title" and (b.props.get("tipo") or "h2") == "h2"
+                    and str(b.props.get("titulo") or "").strip())
+
+    # 1. o bloco de contato sai do meio do conteúdo — em QUALQUER linha que ele
+    #    feche, não só na última da página: na `canon-li5040` a ordem é
+    #    `[title, table, xf]` e DEPOIS vem a seção "Similar Products".
+    for s in page.sections:
+        linhas = []
+        for r in s.rows:
+            linhas.append(r)
+            if r.kind != "single" or len(r.columns) != 1:
+                continue
+            bs = r.columns[0].blocks
+            k = len(bs)
+            while k > 0 and bs[k - 1].kind == "xf":
+                k -= 1
+            if 0 < k < len(bs):
+                c0 = r.columns[0]
+                col = Column(c0.origin_path, c0.width, c0.phone_width)
+                col.blocks, c0.blocks = bs[k:], bs[:k]
+                nova = Row("single")
+                nova.columns = [col]
+                linhas.append(nova)
+        s.rows = linhas
+
+    def so(r, tipos):
+        return bool(r.blocks) and all(b.kind in tipos for b in r.blocks)
+
+    plano = [r for s in page.sections for r in s.rows]
+    n = len(plano)
+    if n < 2:
+        return
+    # o fim = botões de contato e a lista "Similar Products" que os cerca; só
+    # vale como fim BRANCO se tiver os botões — sem eles a página acaba cinza
+    j = n
+    while j > 1 and (so(plano[j - 1], ("xf",))
+                     or so(plano[j - 1], ("related", "productlist"))):
+        j -= 1
+    if not any(tem_xf(r) for r in plano[j:]):
+        j = n
+    i = next((x for x in range(1, j) if abre_h2(plano[x])), 1)
+    if i >= j:
+        return
+
+    grupos = []
+    for x in range(i, j):
+        if not grupos or abre_h2(plano[x]):
+            grupos.append([x])
+        else:
+            grupos[-1].append(x)
+
+    def nb(g):
+        return sum(len(plano[x].blocks) for x in g)
+
+    if j < n and len(grupos) > 1 and nb(grupos[-1]) < FUNDO_MIN_BLOCOS:
+        grupos.pop()                      # a chamada que antecede os botões
+    cinza = set()
+    if modo == "alternar":
+        fund = []
+        for g in grupos:
+            if fund and nb(g) < FUNDO_MIN_BLOCOS:
+                fund[-1] = fund[-1] + g
+            else:
+                fund.append(list(g))
+        if len(fund) > 1 and nb(fund[0]) < FUNDO_MIN_BLOCOS:
+            fund[1] = fund[0] + fund[1]
+            fund.pop(0)
+        for k, g in enumerate(fund):
+            if k % 2 == 0:
+                cinza.update(g)
+    else:
+        for g in grupos:
+            cinza.update(g)
+
+    # 2. corta a seção onde a cor muda e pinta
+    novas, x = [], 0
+    for s in page.sections:
+        if not s.rows:
+            novas.append(s)
+            continue
+        partes = []
+        for r in s.rows:
+            c = x in cinza
+            x += 1
+            if partes and partes[-1][0] == c:
+                partes[-1][1].append(r)
+            else:
+                partes.append((c, [r]))
+        for c, rows in partes:
+            ns = s if len(partes) == 1 else _copiar_secao(s, rows)
+            if c and not ns.background:
+                ns.background = COR_APOIO
+            novas.append(ns)
+    page.sections = novas
+
+
 def build_layout_payload(page, template_path=None, link_de=None, link_para=None,
                          slot="jcr:content/root/container", reescrever_listas=True):
     """Page (IR) -> payload achatado para o Sling POST.
@@ -3166,6 +3344,7 @@ def build_layout_payload(page, template_path=None, link_de=None, link_para=None,
     nomes = _Nomes()
     page._reescrever_listas = reescrever_listas
     _harmonizar_series_twi(page)
+    _aplicar_fundo_da_lista(page)
     for s in page.sections:
         _emitir_secao(payload, slot, nomes, s, page, link_de, link_para)
 

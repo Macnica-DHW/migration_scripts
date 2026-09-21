@@ -1358,6 +1358,42 @@ e Eval Kit), "Overview"/"Key Features" por aba ou família (`/altera`,
 Diagram" sobre o diagrama e de novo sobre uma lista de specs — parece erro de
 digitação da origem, não é vizinho, não foi tocado.
 
+### R53 — fundo cinza-claro no CORPO das páginas que o Hazael listou (e o corte de seção que isso exige)
+
+**Política (Hazael, 21/09/2026):** a página começa branca — a introdução,
+quase sempre texto com foto ou vídeo ao lado —, o conteúdo depois dela ganha
+`#f7f7f7`, e o fim volta ao branco **quando o fim são os botões de contato**
+(sign up / quote / contact). Página grande alterna branco/cinza por grupo.
+Exemplos dele: `/altera` (branco → cinza → branco nos botões), `/canon`
+(branco → cinza → branco → botões), `/infineon` (branco → cinza até o fim: não
+tem os botões), `/design-gateway` (cinza em "Why Macnica…", branco em
+"Industries and Use Cases", cinza nas abas, "Get Started" e botões brancos).
+**Escopo = lista dele, não regra de tamanho:** `dados/fundo_cinza_paginas.txt`,
+49 páginas revistas uma a uma. Nenhum limiar reproduz a lista (48 páginas não
+listadas têm corpo ≥ ao da menor listada; ela inclui 7 que o classificador
+chamava de pequenas e 17 "longas mas simples"). 2ª coluna = `alternar` nas 19
+grandes; vazio = uma faixa só.
+**O corte.** A cor só pega em seção inteira (sub-container fica a 25px da
+borda), e nas folhas de produto intro, corpo e contato vêm na MESMA seção —
+fronteira de seção vem da origem. `_aplicar_fundo_da_lista` corta na EMISSÃO,
+depois de `_marcar_papeis`: o IR continua fiel à origem e o respiro não muda
+(a linha que vivia num sub-container 30/30 vira seção com o mesmo 30/30; no
+corte, "30+30 branco" vira "30 branco + 30 cinza").
+- **intro** = tudo antes da 1ª linha que abre com `title h2` (no mínimo a 1ª);
+- **fim** = as linhas do fim que são só XF ou só "Similar Products"; o XF sai
+  de qualquer linha que ele feche (`[title, table, xf]` → `[title, table]` +
+  `[xf]`; na `canon-li5040` há uma seção "Similar Products" DEPOIS dele). Só
+  conta como fim branco se tiver os botões; a chamada curta que os antecede
+  ("Get Started", <5 blocos) fica branca junto;
+- **corpo**: `faixa` = uma faixa; `alternar` = um grupo por `h2`, e grupo com
+  menos de 5 blocos funde no vizinho — alternar a cada h2 dava
+  `G2 W2 G11 W2 G2 W2 G4` na `ip00cc35`, a listra título/conteúdo que ele já
+  tinha recusado de manhã.
+Faixa que o motor já pinta (abas) nunca é despintada. Conferir depois de
+gravar com `ferramentas/faixas.py` (piso 200px).
+Isto tira o fundo de FORA do motor: `fundo_grupo.py` fica para o teste da
+`/ambarella` e da `/canon`, que não estão na lista.
+
 ### Revisão adversarial do patch (antes de gravar)
 
 Três lentes offline (extração, ritmo, HTML/links) + um verificador por achado:
