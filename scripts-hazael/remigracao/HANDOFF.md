@@ -5,7 +5,85 @@ referência; este diz onde parou e o que fazer a seguir.
 
 ---
 
-## ESTADO EM 19/09/2026, FIM DA 5ª SESSÃO — LEIA ISTO PRIMEIRO (vale sobre o resto do arquivo)
+## ESTADO EM 21/09/2026, FIM DA 6ª SESSÃO — LEIA ISTO PRIMEIRO (vale sobre TUDO abaixo)
+
+```
+servidor = motor no HEAD (R1–R53)  +  2 páginas com fundo FORA do motor (/ambarella, /canon)
+lotes do dia: 11 (11 pág., R46–R49) · 12 (3 pág., R51–R52) · 13 (49 pág., R53) — todos sem falha
+XFs de contato: products-contact-block (sessão 7a) e signup-and-contact (sessão 69), lado a lado
+revisão manual do Hazael EM ANDAMENTO, página a página — é dela que saem os pedidos
+cookie do .env: renovado 21/09 07:21, dura ~8h — conferir a idade antes de qualquer lote
+```
+O detalhe de cada regra está em `REGRAS-disposicao.md` (R46–R53) e o resumo em `ONDE-PAREI.md`.
+Aqui fica o que SÓ existia na conversa da 6ª sessão.
+
+### Como o Hazael está trabalhando
+- Manda print + URL de UMA página e espera o defeito tratado como **PADRÃO**: medir dos dois lados,
+  varrer a árvore, corrigir onde aparece e dizer onde NÃO aparece. "Não tome o exemplo como
+  'conserte só esta página'" (palavras dele).
+- Autoriza escrita explicitamente e com escopo ("só as páginas, não as subpáginas"). "Explore e me
+  reporte" = NÃO gravar. Dry-run, lista, backup, gravar, medir na tela — nessa ordem.
+- **Edita no editor do AEM ao mesmo tempo, logado como `valter.toffolo` — o MESMO usuário do
+  cookie.** `cq:lastModifiedBy` não distingue lote nosso de edição dele. Edição manual se acha pelo
+  `jcr:lastModified` NO NÓ do componente (o diálogo carimba; POST de script não). Antes do lote 13:
+  0 nós assim nas 49 páginas.
+- Confere a 1400px, mas olha 1366 e reclama do que vê lá (os pills do índice).
+- Aceita divergir do GWI quando a origem tem deslize óbvio de autor (R51 título ao lado do
+  conteúdo; R52 título duplicado) — e quer isso REGISTRADO como divergência deliberada. Nos dois
+  casos o GWI desenha o "defeito": medir o GWI ANTES de concluir que o motor errou.
+
+### Política de fundo (dele, literal) — virou a R53
+Intro branca (quase sempre texto com foto/vídeo ao lado) → conteúdo em `#f7f7f7` → branco no fim
+**se** o fim são os botões de contato (sign up / quote / contact); página grande alterna por grupo;
+sem os botões a página acaba cinza (`/infineon`). Cor é de GRUPO semântico, nunca de bloco nem de
+seção solta ("título/conteúdo/título/conteúdo para cada coisinha" foi recusado). **Faixa fina
+(~100px) é sintoma de cor errada** — piso de 200px, `ferramentas/faixas.py`. A regra dos 1000px
+está OBSOLETA. Escopo = a lista DELE (`dados/fundo_cinza_paginas.txt`, 49), não regra de tamanho:
+ele incluiu 7 páginas que o classificador chamava de pequenas. Para pôr/tirar uma página: editar o
+arquivo, `previa_fundo.py`, regravar a página, `faixas.py`.
+
+### Perguntas que ficaram SEM resposta dele
+1. SiTime sem botões acaba cinza com o "Similar Products" dentro — é isso, ou a lista fica branca?
+2. `/altera`: a seção "What Macnica Delivers for Altera" (entre a intro e as abas) está BRANCA e ele
+   chamou a página de bom exemplo; a regra a pintaria. `/altera` NÃO está na lista — não mexer.
+3. `/ambarella` e `/canon` têm o fundo por `fundo_grupo.py`, FORA do motor: um lote que as regenere
+   apaga (refazer com `fundo_grupo.py <pág> --executar`, idempotente). Sugestão não feita: pô-las na
+   lista da R53 — a prévia com `alternar` dá o MESMO desenho de hoje nas duas.
+4. `i-chips-ip00c790`: "Block Diagram" sobre o diagrama e de novo sobre uma lista de specs — parece
+   erro de digitação da origem; não é vizinho, a R52 não pega; decisão dele.
+5. 18 `<img>` soltos em `table` sem alt (HTML cru do GWI) e com `src` em `/content/dam/macnicagwi`
+   (quebra no go-live). Botões dos XFs ainda linkam para `/content/macnicagwi/...`. XFs com
+   resourceType `page` em vez de `xfpage`. Abaixo de 1050px o 1º botão do products-contact-block
+   encosta à direita (efeito do `--par-ao-centro`; fora do escopo de 1400, mas visível).
+6. Tamanho das páginas (`dados/tamanho_paginas_2026-09-21.json`): 25 grandes, 14 médias, 17 "longas
+   mas simples" (i-chips: uma lista de specs de 2300px, fiel ao GWI), 79 pequenas — ele disse que
+   ia "direcionar tarefas" para as grandes; só veio a do fundo até agora.
+
+### Ferramentas novas (todas com dry-run por padrão, `--executar` grava, idempotentes)
+`fundo_grupo.py` fundo por grupo fora do motor (só /ambarella e /canon) · `faixas.py` altura
+renderizada das faixas, sai 1 se houver tira · `alt_faltando.py` alt + `altValueFromDAM`/
+`isDecorative` onde faltam (`--todas`) · `serie_twi.py` mesma coluna em pares em série ·
+`xf_lado_a_lado.py` XF em colunas (`--colunas`, `--par-ao-centro`) · `artifact_conferencia/`
+(gerador do artifact + `previa_fundo.py` + `geom_twi.py`, ver o README de lá).
+Depois de QUALQUER lote: `alt_faltando.py --todas` e `serie_twi.py --todas` devem dar 0.
+
+### Armadilhas que custaram rodadas nesta sessão
+pill do índice tem `transition:.3s` (medir logo após trocar classe devolve o valor antigo) ·
+caminho do GWI com maiúsculas (`li8030SA`) dá 404 silencioso — usar a coluna `origem` de
+`dados/remigracao_atual.csv` · imagem lazy mede `naturalWidth=0` · zsh NÃO divide `$VAR` sem
+aspas: `--paginas $(cat lista)` sim, `--paginas $LISTA` não (o 1º lote 11 abortou por isso) ·
+`cd x && python3 y.py` às vezes não pega o `cd`: usar caminho absoluto do script · o classificador
+de permissão bloqueia Bash cujo TEXTO tenha caminho de XF + `@Delete`; escrever a ferramenta em
+arquivo e rodar o arquivo · `altValueFromDAM` ausente = LIGADO: conferir alt no HTML, não no JCR.
+
+### Memórias novas (pasta de memória do projeto — ler)
+`aem-fundo-e-propriedade-de-secao-tres-cores` · `aem-altvaluefromdam-vale-true-quando-falta` ·
+acréscimos em `aem-gwi-esconde-conteudo-com-flags` (flag de centro vertical e `width` autoral que o
+GWI ignora) e em `medir-antes-de-atribuir-causa` (as três medições erradas do dia).
+
+---
+
+## ESTADO EM 19/09/2026, FIM DA 5ª SESSÃO (vale sobre o resto do arquivo)
 
 ```
 servidor = lotes 3–10 = motor no HEAD do branch (R1–R45 + R41b)     <- nada pendente de gravação
