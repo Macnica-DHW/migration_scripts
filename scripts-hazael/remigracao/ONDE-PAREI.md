@@ -1,4 +1,63 @@
-# Remigração — onde parei (19/09/2026, 5ª sessão)
+# Remigração — onde parei (21/09/2026, 6ª sessão)
+
+> **Servidor = motor (HEAD) = R1–R50**, mais três coisas gravadas FORA do motor
+> por ferramenta de uma propriedade só (ver abaixo). Revisão manual do Hazael em
+> andamento, página a página, no artifact "Conferência da remigração"
+> (https://claude.ai/artifact/CTjAuafxrCas9xAVJe8rDR — status e nota por página
+> ficam no banco do artifact; ler de lá em vez de pedir o relatório).
+
+## 6ª sessão (21/09/2026) — o que mudou
+
+**Regras novas no motor** (todas em `REGRAS-disposicao.md`, todas nascidas de
+print do Hazael):
+- **R46** teto do `imagetext` (480/277) vale mesmo com `width` autoral — 2 pares
+  da `/ambarella` saíam sem `imageRatio` (foto 655×437). O driver passou a
+  consultar o DAM também quando há largura autoral.
+- **R47 revoga a R34**: `elementsPositionVerticalAlignCenter` está no JCR do GWI
+  e o template do GWI o ignora (medido: título a 11/−3/26/29px do topo da foto).
+- **R48** todo `anchorlink` com Text Size Small — pills uniformes a 1400/1366.
+- **R49** `alt` nunca vazio (heading da dupla › título acima › título da página)
+  **e** `altValueFromDAM='false'` no `textwithimage`: sem a flag o componente
+  ignora o alt do nó e serve o metadata do DAM (`alt="544581870"`).
+- **R50** pares texto|foto em SÉRIE dividem a mesma coluna (a maior da série).
+
+**Gravado:** lote 11 (`lote11_paginas.txt`, 11/11) · `alt_faltando.py --todas`
+(66 alt em 39 páginas; depois 226 flags em 82) · `serie_twi.py /ambarella` (2
+`imageRatio`). Backups: `lote11_backup.json`.
+
+**Gravado FORA do motor — a próxima regeneração da página APAGA:**
+- **Fundo por grupo semântico** em `/ambarella` e `/canon`
+  (`ferramentas/fundo_grupo.py`, teste de 2 páginas). Depois de qualquer lote
+  que inclua uma delas: `fundo_grupo.py <pág> --executar` (idempotente).
+  `ferramentas/faixas.py` confere que nenhuma faixa tem menos de 200px.
+- O XF `products-contact-block` (botões lado a lado, par ao centro) — gravado
+  pela sessão paralela `migration-scripts-7a` com `xf_lado_a_lado.py`
+  (commit 2b5a769). O driver NÃO escreve em experience-fragments, então lote
+  não desfaz. `signup-and-contact-experience-fragment` (4 páginas): mesmo
+  defeito, NÃO executado.
+
+**Fundo: o que ficou decidido e o que não.** Cor é de GRUPO, não de seção nem
+de bloco (no global2, 0 de 270 seções coloridas têm um bloco só); faixa fina
+(<200px) é sintoma de cor errada. **Em aberto, decisão do Hazael:** nas folhas
+de produto a spec divide o único nó full-bleed com o herói e/ou o CTA (59
+páginas) e 54 páginas têm UMA seção só — ali só o motor resolve, cortando
+seção em mudança de papel, contra "fronteira de seção vem da origem". Sem essa
+decisão a regra de grupo não entra no motor. Responde Q6 e reformula Q1 do ESPEC.
+
+**Achados sem dono ainda:** 18 `<img>` soltos em `table` sem alt (HTML cru do
+GWI) e com `src` em `/content/dam/macnicagwi` (quebra no go-live) · os botões
+do XF de contato ainda linkam para `/content/macnicagwi/...` · o cookie do
+`.env` autentica como **valter.toffolo**, então `cq:lastModifiedBy` não separa
+lote nosso de edição manual dele.
+
+**Armadilhas de medição desta sessão** (custaram rodadas): pill com
+`transition:.3s` devolve o valor antigo logo após trocar a classe · caminho do
+GWI com maiúsculas (`li8030SA`) dá 404 silencioso · imagem lazy mede
+`naturalWidth=0` · zsh não divide `$VAR` sem aspas (o 1º lote 11 abortou).
+
+---
+
+# (5ª sessão, 19/09/2026 — continua valendo)
 
 > **Servidor = motor (HEAD) = R1–R45 + R41b.** O lote 10 (43 páginas, `remigracao/lote10_paginas.txt`)
 > foi GRAVADO em 19/09/2026 (43/43 sem falha) e conferido na tela; conteúdo 134/136, 0 sobrando. Conferência visual: 67 de 136 (`CONFERIDAS.md`). Só se confere a 1400px.

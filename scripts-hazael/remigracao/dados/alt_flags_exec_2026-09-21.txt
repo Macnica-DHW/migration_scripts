@@ -1,0 +1,363 @@
+1 cookies carregados de o .env (login-token presente: sim)
+
+
+=== /altera/altera-arria-10  —  3 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 6 alt(s)  HTTP 200
+
+=== /altera/altera-holoscan  —  2 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 4 alt(s)  HTTP 200
+
+=== /altera/altera-max-10  —  3 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 6 alt(s)  HTTP 200
+
+=== /altera/altera-stratix-10  —  4 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 8 alt(s)  HTTP 200
+
+=== /altera/development-kits/altera-agilex-7-i-series  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /altera/development-kits/altera-agilexr-7-fpga-m-series  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /altera/development-kits/altera-agilextm-5-fpga-e-series-premium  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /ambarella  —  7 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 14 alt(s)  HTTP 200
+
+=== /ambarella/ambarella-cv72s-soc  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /analog-devices/analog-devices-3d-time-of-flight-development-platform  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /analog-devices/analog-devices-multimodal-sensor-front-ends  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /analog-devices/analog-devices-radar-development-kit  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /analog-devices/analog-devices-smartmesh-ip-starter-kit  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /canon  —  2 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 4 alt(s)  HTTP 200
+
+=== /canon/canon-120mxs-cmos-image-sensors  —  2 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 4 alt(s)  HTTP 200
+
+=== /canon/canon-35mmfhdxs-a-cmos-sensors  —  2 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 4 alt(s)  HTTP 200
+
+=== /canon/canon-li3030sa-19mm-cmos-sensor  —  2 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 4 alt(s)  HTTP 200
+
+=== /canon/canon-li5030sa-35mm-full-size-19mp-global-shutter-cmos-sensor  —  1 nó(s) a corrigir ===
+   item_2                 [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /canon/canon-li5040-5m-cmos-sensor  —  2 nó(s) a corrigir ===
+   item_2                 [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 4 alt(s)  HTTP 200
+
+=== /canon/canon-li5070sa-cmos-sensor  —  2 nó(s) a corrigir ===
+   item_1                 [só flags        ] + altValueFromDAM, isDecorative
+   item_2                 [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 4 alt(s)  HTTP 200
+
+=== /canon/canon-li7030sa-cmos-sensor  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /canon/canon-li7050-2m-cmos-sensor  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /canon/canon-li7060-hdr-cmos-sensor  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /canon/canon-li7070sa-cmos-sensor  —  3 nó(s) a corrigir ===
+   item_1                 [só flags        ] + altValueFromDAM, isDecorative
+   item_2                 [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 6 alt(s)  HTTP 200
+
+=== /canon/canon-li7080sa-cmos-sensor  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /canon/canon-li8020sa-250mp-cmos-sensor-0  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /canon/canon-li8030sa-410mp-ultra-high-resolution-cmos-sensor  —  3 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 6 alt(s)  HTTP 200
+
+=== /design-gateway/ab07-usb3fmc-1-8vif  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/ab17-m2fmc  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/ab18-pciex16  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/ab19-m2pci  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/ab20-u2pci  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/aes128-256-ip-compact-aes-building-block  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/aes256-gcm-ip-authenticated-encryption-for-10g-and-25g  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/aes256-xts-ip-data-at-rest-protection-for-nvme-and-sata  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/low-latency-emac-10g-and-25g  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/nvme-ip-standalone-nvme-host-for-fpgas  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/nvmeg4-ip-nvme-host-with-pcie-gen4-soft-ip  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/nvmetcp-ip-nvme-over-tcp-host-for-fpgas  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/quic10gc-ip-cpu-less-quic-offload-for-10g  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/ranvme-ip-random-access-nvme-host  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/rmnvme-ip-random-access-plus-multi-user-nvme-host  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/sata-ip-sata-iii-storage-for-fpgas  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/sha256-ip-hardware-sha-2-hash  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/tcam-ip-deterministic-packet-match-and-filter  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/toe100g-ip-100g-tcp-offload-engine  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/toe10g-ip-10g-tcp-offload-engine  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/toe200g-ip-200g-tcp-offload-engine  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/toe25g-ip-25g-tcp-offload-engine  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/udp100g-ip-100g-udp-offload  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/udp10g-ip-10g-udp-offload  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /design-gateway/udp25g-ip-25g-udp-offload  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /genesys-logic  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-fpga-evaluation-board  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c241  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c331  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c733a  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c734  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c755  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c811  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00c812b  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-lsi/i-chips-ip00cc35  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c341  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c813a  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c814  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c821  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c381  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c382  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c787  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c788  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c789  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /i-chips/i-chips-warping-lsi/i-chips-ip00c790  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems  —  4 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 8 alt(s)  HTTP 200
+
+=== /renesas  —  5 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 10 alt(s)  HTTP 200
+
+=== /sitime/sitime-clock-buffers  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /sitime/sitime-clock-generators  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /sitime/sitime-jitter-cleaners  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /sitime/sitime-mems-resonator-technology  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /sitime/sitime-network-synchronizers  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /sitime/sitime-oscillators  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+=== /toppan-3d-tof-sensing-solutions  —  1 nó(s) a corrigir ===
+   textwithimage_1        [só flags        ] + altValueFromDAM, isDecorative
+   [gravado] 2 alt(s)  HTTP 200
+
+226 alt(s) gravados, 226 gravados.
