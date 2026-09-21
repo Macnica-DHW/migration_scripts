@@ -138,6 +138,10 @@ def destino_livre(path):
 
 def copiar(origem, destino, executar):
     """`:operation=copy` servidor-a-servidor, sem `:replace`. Devolve 'criado' | 'ja-nosso' | 'dry'."""
+    # REGRA MESTRA (Hazael, 21/09/2026): nunca gravar no GWI. O copy do Sling é um POST na URL da
+    # ORIGEM — não altera a origem, mas é requisição de escrita contra ela. Origem no GWI: recusar.
+    if "macnicagwi" in origem or "macnicagwi" in destino:
+        aborta(f"caminho do GWI numa operação de escrita — o GWI é SOMENTE LEITURA: {origem} -> {destino}")
     if not destino_livre(destino):
         return "ja-nosso"
     if not executar:

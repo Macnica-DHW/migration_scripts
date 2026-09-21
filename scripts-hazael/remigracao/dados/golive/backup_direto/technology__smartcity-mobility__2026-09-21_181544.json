@@ -1,0 +1,488 @@
+{
+ "caminho": "/content/macnicaglobal2/americas/mai/en/technology/smartcity-mobility",
+ "lido_em": "2026-09-21_181544",
+ "jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Smart City Technologies & Solutions | Smart Mobility Solutions",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+  "jcr:created": "Mon Sep 21 2026 20:57:41 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 20:57:41 GMT+0000",
+  "jcr:description": "Discover how Macnica's smart city and mobility technologies integrate AI, IoT, and cloud platforms to create mobility solutions like autonomous driving.",
+  "pageTitle": "Smart City & Mobility",
+  "cq:tags": [
+   "galaxy:application-categories/automotive",
+   "anstek:solutions/automotive-led-driver-technology",
+   "anstek:solutions/automotive-testing-solutions",
+   "anstek:product-lines/automotive-interfaces",
+   "anstek:solutions/adas-&-safety",
+   "macnica-atd-europe:sensor-category/linear-sensors",
+   "anstek:product-lines/-sensors-and-mems",
+   "dhw:application-categories/sensores",
+   "mai:business-categories/image-sensors"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/page",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Smart City & Mobility",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/smartcity-mobility/images/smart-city-mobility-banner.jpg",
+       "alt": "Smart City and Mobility Technologies and Solutions",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>Autonomous driving, shared transport, and electric vehicles are all areas of smart mobility solutions where Macnica seeks to make our technology and intelligence available to customers who are addressing the challenges and opportunities around the mobility of people.</p>\n<p>Some prime examples include autonomous driving and shared transport, where we have been working with partners to bring smart mobility solutions to market. We use our knowhow to propose hardware/software integration techniques, to collect the masses of data required from the physical environment, and to build and incorporate AI, cloud platform, and security into smart city technologies and solutions that we develop together with customers and partners.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "JJLYCspkOsM",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       }
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876",
+       "1717498055877"
+      ],
+      "anchorlink_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+       "cq:styleIds": [
+        "",
+        "1718861445028"
+       ],
+       "anchor": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "aptpod",
+         "text": "aptpod"
+        },
+        "item1": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "automotivepro",
+         "text": "Automotive Pro"
+        },
+        "item2": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "everfleet",
+         "text": "everfleet"
+        },
+        "item3": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "gama",
+         "text": "GAMA"
+        },
+        "item4": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "icetana",
+         "text": "icetana"
+        },
+        "item5": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "senseplus",
+         "text": "Sense Plus"
+        }
+       }
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "RwTnBd0h-gY",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p><b>aptpod - Bidirectional Data Transmission Platform for Mobility and Industrial IOT -&nbsp;intdash</b></p>\n<p>aptpod is an IoT software and services company specializing in high-speed time-series data for industrial IoT applications. They provide a comprehensive suite of technology solutions, including sensor and hardware, cloud computing, and graphical user interface design for IoT/M2M applications. aptpod's platform offers a robust framework for the collecting, transmitting, and processing large volumes of high-speed data in industrial environments, featuring advanced capabilities for real-time processing and event management.</p>\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/technology/smartcity-mobility/aptpod-2.html\">Learn more</a></p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p><b>Automotive Pro - Streamlined Remote Data Collection for Automotive Telemetry</b></p>\n<p>Introducing Intdash Automotive Pro CAN/CAN-FD DAQ Bundle - a comprehensive automotive telemetry solution supporting CAN/CAN-FD. Our bundled services include specialized in-vehicle equipment, data acquisition interfaces, cloud systems, and intuitive data visualization and management applications.</p>\n<p><a href=\"https://www.macnica.co.jp/en/business/maas/services/144020/\" target=\"_blank\" rel=\"noopener noreferrer\">Learn more</a></p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "vmZAEgF4eZU",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       }
+      }
+     },
+     "container_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "A-6afk6-cfg",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p><b>everfleet</b></p>\n<p>Realizing the social integration of autonomous driving demands a robust system for remote monitoring and control. Our Fleet Management System offers real-time oversight of vehicle positioning and conditions, enabling centralized management across various vehicle types and locations. Maximize operational efficiency with streamlined management and control through a single interface.</p>\n<p><a href=\"https://www.macnica.co.jp/en/business/maas/services/142732/\" target=\"_blank\" rel=\"noopener noreferrer\">Learn more</a></p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p><b>GAMA (formerly NAVYA)</b></p>\n<p>GAMA, is at the forefront of autonomous driving solutions. With a mission to alleviate traffic congestion and enhance safety for road users, we're dedicated to the &quot;first and last mile&quot; concept. Our collaboration with France's GAUSSIN led to the establishment of Macnica Mobility, focused on developing autonomous, zero-emission mobility solutions for people and goods transportation.&nbsp;From urban mobility to large tractors and AGVs for private land use, our smart city and mobility solutions pave the way to a more efficient and innovative future.</p>\n<p><a href=\"https://www.macnica.co.jp/en/business/maas/products/133978/\" target=\"_blank\" rel=\"noopener noreferrer\">Learn more</a></p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "3LHbW-lZMQs",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       }
+      }
+     },
+     "container_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_13": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "9Vb1mtidLDY",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p><b>icetana</b></p>\n<p>Security teams face thousands of cameras and millions of video frames each day, making it easy to miss real threats. icetana transforms existing CCTV systems into proactive security tools by analyzing unusual activity and threats in real time and learning what is normal for each scene within days. Without complex setup, it detects loitering, sudden gatherings, or erratic movement, helping teams focus on credible risks. By filtering routine footage and elevating genuine threats, icetana reduces false alerts, speeds response, and protects people, property, and reputation.</p>\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/ip-software/icetana.html\" target=\"_self\">Learn more</a></p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_14": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_15": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p><b>Sense Plus</b></p>\n<p>Explore our groundbreaking Sense Plus, where we tap into the driver's brain activity to monitor and predict their states and emotions - ranging from concentration and stress to drowsiness. Designed to support automotive engineers crafting futuristic applications, our product revolutionizes the understanding of human responses within automotive contexts. InnerEye's Sense Plus platform is an advanced system that deciphers human emotions and mental states from brain activity, visualizing them as precise numerical data in real-time.</p>\n<p><a href=\"https://www.macnica.co.jp/en/business/ai/manufacturers/innereye/\">Learn more</a></p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "6nL9EvEcGn0",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       }
+      }
+     },
+     "container_16": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

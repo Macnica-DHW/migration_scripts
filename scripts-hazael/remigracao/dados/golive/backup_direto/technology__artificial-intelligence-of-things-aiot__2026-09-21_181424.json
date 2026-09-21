@@ -1,0 +1,1119 @@
+{
+ "caminho": "/content/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot",
+ "lido_em": "2026-09-21_181424",
+ "jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Artificial Intelligence of Things (AIoT)",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+  "jcr:created": "Mon Sep 21 2026 20:55:14 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 20:55:15 GMT+0000",
+  "jcr:description": "At Macnica, we work across the entire AIoT stack, from machine learning to on-device LLMs and VLMs. Our component-to-solution model means we're not just supplying parts. We're helping engineers and product teams build AIoT systems that perform outside the lab, in the environments where it actually matters.",
+  "keywords": "macnica, aiot, artificial intelligence, artificial intelligence of things, llm, vlm",
+  "pageTitle": "Artificial Intelligence of Things (AIoT)",
+  "sling:resourceType": "macnicaglobal2/components/page",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Artificial Intelligence of Things (AIoT)",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Artificial Intelligence of Things (AIoT)",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/banner-aiot.jpg",
+       "alt": "Automated guided orange cranes or robot arms connected by an overlaid matrix lattice graphic in a warehouse",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Intelligence at the Edge, Reliability in the Field",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "IoT Has Evolved - Has Your Hardware?",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Connected devices alone don't create intelligence. The Artificial Intelligence of Things (AIoT) is what happens when machine learning moves out of the data center and into the machine itself, enabling systems to sense, reason, and act in real time, at the point of operation.</p>\n<p>For AIoT to work in the field, every layer of the stack has to hold up: sensors that capture the right data, processors that can run inference at the edge, computing platforms built for continuous industrial operation, and connectivity that ties it all together without introducing latency or fragility.</p>\n<p>At Macnica, we work across that entire stack. Our component-to-solution model means we're not just supplying parts. We're helping engineers and product teams build AIoT systems that perform outside the lab, in the environments where it actually matters.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "tabs_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/tabs",
+       "item_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sense",
+        "cq:panelTitle": "Sense",
+        "layout": "responsiveGrid",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498056876",
+         "1717498055877"
+        ],
+        "container_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "title_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:title": "Capturing the World with Precision",
+          "type": "h3",
+          "sling:resourceType": "macnicaglobal2/components/content/title"
+         },
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<p>Every AIoT system begins with data. The quality, speed, and fidelity of that data is determined entirely by the sensor layer, and in demanding industrial environments, sensor choice is rarely interchangeable. Vibration, thermal stress, EMI, and constrained form factors all create requirements that consumer-grade hardware simply cannot meet.</p>\n<p>Macnica's sensor portfolio spans high-resolution imaging and machine vision, intelligent AI inference sensors, and precision timing, giving design teams the components to build a perception layer that holds up under real operating conditions.</p>",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "container_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "image_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/banner-aiot-machine-vision.jpg",
+          "alt": "Image sensor with monitor in fab or lab for machine vision and industrial automation",
+          "sling:resourceType": "macnicaglobal2/components/content/image",
+          "isDecorative": "false",
+          "altValueFromDAM": "false"
+         }
+        },
+        "container_3": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "flexcontainer_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+          "cq:styleIds": [
+           "",
+           "1719484596357"
+          ],
+          "flexcontaineritem_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "image_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/sony-imx900-amr-embedded-world-2026.png",
+            "alt": "Sony image sensors in a color testing lab",
+            "sling:resourceType": "macnicaglobal2/components/content/image",
+            "isDecorative": "false",
+            "altValueFromDAM": "false",
+            "cq:styleIds": [
+             "",
+             "1726800547211"
+            ]
+           }
+          },
+          "flexcontaineritem_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "title_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "Sony Semiconductor",
+            "type": "h3",
+            "sling:resourceType": "macnicaglobal2/components/content/title"
+           },
+           "text_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "<p>Sony's Pregius S and STARVIS 2 global shutter CMOS image sensors are purpose-built for industrial machine vision and intelligent sensing. With resolutions ranging from sub-1MP to 250MP, low-noise performance in challenging light conditions, and industry-leading pixel architecture, Sony sensors give AIoT systems the visual input they need to run reliable AI inference, from defect detection on a production line to perimeter monitoring in a smart facility.</p>",
+            "sling:resourceType": "macnicaglobal2/components/content/text",
+            "textIsRich": "true"
+           },
+           "button_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "View Sony Products",
+            "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony-image-sensors",
+            "linkTarget": "_self",
+            "sling:resourceType": "macnicaglobal2/components/content/button",
+            "cq:styleIds": [
+             "",
+             "1722936853890",
+             "1717669229626"
+            ]
+           }
+          }
+         }
+        },
+        "container_4": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<hr />",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "container_5": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "flexcontainer_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+          "cq:styleIds": [
+           "",
+           "1719484596357"
+          ],
+          "flexcontaineritem_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "image_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/canon-li5040-rgb-nir.jpg",
+            "alt": "Canon RGB vs. RGB-NIR imaging comparison",
+            "sling:resourceType": "macnicaglobal2/components/content/image",
+            "isDecorative": "false",
+            "altValueFromDAM": "false",
+            "cq:styleIds": [
+             "",
+             "1726800547211"
+            ]
+           }
+          },
+          "flexcontaineritem_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "title_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "Canon Industrial Sensors",
+            "type": "h3",
+            "sling:resourceType": "macnicaglobal2/components/content/title"
+           },
+           "text_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "<p>Canon brings decades of optical engineering to industrial imaging. Their large-format CMOS sensors deliver ultra-high resolution and exceptional dynamic range for applications where fine detail and color accuracy are non-negotiable, including quality inspection systems, medical imaging, and high-speed assembly line vision.</p>",
+            "sling:resourceType": "macnicaglobal2/components/content/text",
+            "textIsRich": "true"
+           },
+           "button_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "View Canon Products",
+            "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon",
+            "linkTarget": "_self",
+            "sling:resourceType": "macnicaglobal2/components/content/button",
+            "cq:styleIds": [
+             "",
+             "1722936853890",
+             "1717669229626"
+            ]
+           }
+          }
+         }
+        },
+        "container_6": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<hr />",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "container_7": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "flexcontainer_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+          "cq:styleIds": [
+           "",
+           "1719484596357"
+          ],
+          "flexcontaineritem_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "image_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/adi-otosense.png",
+            "alt": "Analog Devices Otosense hardware and software app GUIs",
+            "sling:resourceType": "macnicaglobal2/components/content/image",
+            "isDecorative": "false",
+            "altValueFromDAM": "false",
+            "cq:styleIds": [
+             "",
+             "1726800547211"
+            ]
+           }
+          },
+          "flexcontaineritem_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "title_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "Analog Devices",
+            "type": "h3",
+            "sling:resourceType": "macnicaglobal2/components/content/title"
+           },
+           "text_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "<p>AIoT systems need more than cameras. Analog Devices brings intelligent multimodal sensing to the edge: radar, LiDAR, time-of-flight depth, and precision signal front-ends that allow industrial systems to perceive their environment beyond the visible spectrum. SmartMesh IP wireless sensor networking enables robust, low-power sensor connectivity in harsh industrial environments.</p>",
+            "sling:resourceType": "macnicaglobal2/components/content/text",
+            "textIsRich": "true"
+           },
+           "button_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "View Analog Devices Products",
+            "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices",
+            "linkTarget": "_self",
+            "sling:resourceType": "macnicaglobal2/components/content/button",
+            "cq:styleIds": [
+             "",
+             "1722936853890",
+             "1717669229626"
+            ]
+           }
+          }
+         }
+        }
+       },
+       "item_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Process",
+        "cq:panelTitle": "Process",
+        "layout": "responsiveGrid",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498056876",
+         "1717498055877"
+        ],
+        "container_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "title_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:title": "Running Intelligence at the Edge",
+          "type": "h3",
+          "sling:resourceType": "macnicaglobal2/components/content/title"
+         },
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<p>Capturing data is only the beginning. AIoT systems must process that data locally, running inference, making decisions, and triggering responses, without relying on a round trip to the cloud. Edge inference demands processors that balance AI throughput with power efficiency, thermal headroom, and the deterministic behavior that industrial control systems require.</p>\n<p>Macnica's processing portfolio covers AI inference accelerators, high-performance FPGAs, and AI vision SoCs, giving engineers the flexibility to match compute architecture to application, not the other way around.</p>",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "container_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "image_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/banner-aiot-ai.jpg",
+          "alt": "Isometric AI vector on semiconductor chip on techy blue circuitboard",
+          "sling:resourceType": "macnicaglobal2/components/content/image",
+          "isDecorative": "false",
+          "altValueFromDAM": "false"
+         }
+        },
+        "container_3": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "flexcontainer_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+          "cq:styleIds": [
+           "",
+           "1719484596357"
+          ],
+          "flexcontaineritem_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "image_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/dx-m1-socs-m2.png",
+            "alt": "DEEPX DX-M1 chips and modules with diagrams",
+            "sling:resourceType": "macnicaglobal2/components/content/image",
+            "isDecorative": "false",
+            "altValueFromDAM": "false",
+            "cq:styleIds": [
+             "",
+             "1726800547211"
+            ]
+           }
+          },
+          "flexcontaineritem_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "title_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "DEEPX",
+            "type": "h3",
+            "sling:resourceType": "macnicaglobal2/components/content/title"
+           },
+           "text_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "<p>DEEPX delivers 25 TOPS of AI inference performance at just 5 watts, fanless, in a compact form factor that fits inside virtually any enclosure. Designed for physical AI applications where thermal constraints and space limitations are real, DEEPX NPUs enable continuous, real-time inference for visual inspection, autonomous systems, and smart factory applications without compromising reliability or power budgets.</p>",
+            "sling:resourceType": "macnicaglobal2/components/content/text",
+            "textIsRich": "true"
+           },
+           "button_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "View DEEPX Products",
+            "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/deepx",
+            "linkTarget": "_self",
+            "sling:resourceType": "macnicaglobal2/components/content/button",
+            "cq:styleIds": [
+             "",
+             "1722936853890",
+             "1717669229626"
+            ]
+           }
+          }
+         }
+        },
+        "container_4": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<hr />",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "container_5": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "flexcontainer_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+          "cq:styleIds": [
+           "",
+           "1719484596357"
+          ],
+          "flexcontaineritem_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "image_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/altera-cyclone-v.jpg",
+            "alt": "Altera Cyclone V GX FPGA block diagram",
+            "sling:resourceType": "macnicaglobal2/components/content/image",
+            "isDecorative": "false",
+            "altValueFromDAM": "false",
+            "cq:styleIds": [
+             "",
+             "1726800547211"
+            ]
+           }
+          },
+          "flexcontaineritem_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "title_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "Altera (Agilex FPGAs)",
+            "type": "h3",
+            "sling:resourceType": "macnicaglobal2/components/content/title"
+           },
+           "text_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "<p>Altera Agilex FPGAs provide the flexible, high-performance processing backbone that AIoT systems need to handle complex, heterogeneous workloads without sacrificing the deterministic behavior industrial applications demand. Agilex 5 and Agilex 7 devices support AI inference acceleration, real-time sensor fusion, and custom logic implementation, making them the the right choice when off-the-shelf AI chips don't fit the application requirements.</p>",
+            "sling:resourceType": "macnicaglobal2/components/content/text",
+            "textIsRich": "true"
+           },
+           "button_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "View Altera Products",
+            "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera",
+            "linkTarget": "_self",
+            "sling:resourceType": "macnicaglobal2/components/content/button",
+            "cq:styleIds": [
+             "",
+             "1722936853890",
+             "1717669229626"
+            ]
+           }
+          }
+         }
+        },
+        "container_6": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<hr />",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "container_7": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "flexcontainer_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+          "cq:styleIds": [
+           "",
+           "1719484596357"
+          ],
+          "flexcontaineritem_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "image_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/ambarella-cvflow-ai-socs-embedded-world-2026.png",
+            "alt": "Ambarella CVFlow SoC enabling computer vision for product bottles",
+            "sling:resourceType": "macnicaglobal2/components/content/image",
+            "isDecorative": "false",
+            "altValueFromDAM": "false",
+            "cq:styleIds": [
+             "",
+             "1726800547211"
+            ]
+           }
+          },
+          "flexcontaineritem_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "title_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "Ambarella",
+            "type": "h3",
+            "sling:resourceType": "macnicaglobal2/components/content/title"
+           },
+           "text_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "<p>Ambarella's CV-series AI vision SoCs combine high-efficiency neural network inference with advanced ISP capabilities in a single chip, enabling compact, low-power AIoT cameras and edge vision systems. The N1 platform extends Ambarella's AI architecture to robotics and physical AI, providing the processing foundation for applications that require high-throughput computer vision with minimal power draw.</p>",
+            "sling:resourceType": "macnicaglobal2/components/content/text",
+            "textIsRich": "true"
+           },
+           "button_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "View Ambarella Products",
+            "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella",
+            "linkTarget": "_self",
+            "sling:resourceType": "macnicaglobal2/components/content/button",
+            "cq:styleIds": [
+             "",
+             "1722936853890",
+             "1717669229626"
+            ]
+           }
+          }
+         }
+        }
+       },
+       "item_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Deploy",
+        "cq:panelTitle": "Deploy",
+        "layout": "responsiveGrid",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498056876",
+         "1717498055877"
+        ],
+        "container_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "title_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:title": "Built for Where Systems Actually Run",
+          "type": "h3",
+          "sling:resourceType": "macnicaglobal2/components/content/title"
+         },
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<p>The most common failure point in AIoT development isn't the algorithm. It's deploying hardware that was validated in a controlled environment into conditions it was never designed for. Temperature swings, vibration, dust, EMI, and continuous 24/7 operation expose weaknesses that lab testing won't reveal.</p>\n<p>Macnica's embedded computing and module portfolio addresses this directly with purpose-built platforms engineered for industrial-grade durability, with the processing headroom and I/O flexibility that AIoT applications require.</p>",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "container_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "image_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/banner-circuit-board-blue.jpg",
+          "alt": "Blue circuit board with radial crop circle like overlays",
+          "sling:resourceType": "macnicaglobal2/components/content/image",
+          "isDecorative": "false",
+          "altValueFromDAM": "false"
+         }
+        },
+        "container_3": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "flexcontainer_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+          "cq:styleIds": [
+           "",
+           "1719484596357"
+          ],
+          "flexcontaineritem_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "image_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/tqma6ulx-003.jpg",
+            "alt": "TQ Group System-on-Module board",
+            "sling:resourceType": "macnicaglobal2/components/content/image",
+            "isDecorative": "false",
+            "altValueFromDAM": "false",
+            "cq:styleIds": [
+             "",
+             "1726800547211"
+            ]
+           }
+          },
+          "flexcontaineritem_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "title_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "TQ Group",
+            "type": "h3",
+            "sling:resourceType": "macnicaglobal2/components/content/title"
+           },
+           "text_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "<p>TQ Group's embedded computing modules are engineered from the ground up for industrial-grade reliability, not adapted from commercial designs. Their SoMs and system modules meet the environmental and operational demands of real-world AIoT deployments, covering extended temperature ranges, vibration tolerance, and long product lifecycle commitments that industrial customers require. TQ Group hardware is the deployment foundation for AIoT systems that need to keep running after the demo.</p>",
+            "sling:resourceType": "macnicaglobal2/components/content/text",
+            "textIsRich": "true"
+           },
+           "button_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "View TQ Group Products",
+            "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems",
+            "linkTarget": "_self",
+            "sling:resourceType": "macnicaglobal2/components/content/button",
+            "cq:styleIds": [
+             "",
+             "1722936853890",
+             "1717669229626"
+            ]
+           }
+          }
+         }
+        },
+        "container_4": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<hr />",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "container_5": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "flexcontainer_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+          "cq:styleIds": [
+           "",
+           "1719484596357"
+          ],
+          "flexcontaineritem_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "image_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/ienso-demo-trans-1280-720.png",
+            "alt": "iENSO imaging video demo with screen and camera in lab",
+            "sling:resourceType": "macnicaglobal2/components/content/image",
+            "isDecorative": "false",
+            "altValueFromDAM": "false",
+            "cq:styleIds": [
+             "",
+             "1726800547211"
+            ]
+           }
+          },
+          "flexcontaineritem_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "title_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "iENSO",
+            "type": "h3",
+            "sling:resourceType": "macnicaglobal2/components/content/title"
+           },
+           "text_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "<p>iENSO delivers purpose-built embedded imaging platforms designed for deployment in constrained and demanding environments. Their compact camera modules and embedded vision hardware are engineered for the physical realities of industrial and field deployment: small enough to fit where off-the-shelf cameras can't, robust enough to run continuously in harsh conditions. iENSO is the vision hardware layer for AIoT systems that need to see in tight spaces.</p>",
+            "sling:resourceType": "macnicaglobal2/components/content/text",
+            "textIsRich": "true"
+           },
+           "button_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "View iENSO Products",
+            "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ienso",
+            "linkTarget": "_self",
+            "sling:resourceType": "macnicaglobal2/components/content/button",
+            "cq:styleIds": [
+             "",
+             "1722936853890",
+             "1717669229626"
+            ]
+           }
+          }
+         }
+        },
+        "container_6": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<hr />",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "container_7": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "flexcontainer_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+          "cq:styleIds": [
+           "",
+           "1719484596357"
+          ],
+          "flexcontaineritem_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "image_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/iei-advanced-video-solutions.jpg",
+            "alt": "iEi Integration Corp internal medicine/medical imaging display with hardware",
+            "sling:resourceType": "macnicaglobal2/components/content/image",
+            "isDecorative": "false",
+            "altValueFromDAM": "false",
+            "cq:styleIds": [
+             "",
+             "1726800547211"
+            ]
+           }
+          },
+          "flexcontaineritem_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "title_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "IEI Integration Corp.",
+            "type": "h3",
+            "sling:resourceType": "macnicaglobal2/components/content/title"
+           },
+           "text_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "<p>IEI's industrial computing platforms provide the fanless, rugged system-level foundation for AIoT edge deployments. From the TANK series embedded PCs to the FLEX AIoT Developer Kit and AI accelerator cards, IEI systems are designed to run continuously in industrial environments, with extended temperature tolerance, wide-voltage inputs, and the I/O density that factory and field deployments require. IEI platforms serve as the integration layer where sensors, processors, and software meet the real world.</p>",
+            "sling:resourceType": "macnicaglobal2/components/content/text",
+            "textIsRich": "true"
+           },
+           "button_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "View iEi Integration Corp. Products",
+            "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei",
+            "linkTarget": "_self",
+            "sling:resourceType": "macnicaglobal2/components/content/button",
+            "cq:styleIds": [
+             "",
+             "1722936853890",
+             "1717669229626"
+            ]
+           }
+          }
+         }
+        }
+       },
+       "item_4": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Connect",
+        "cq:panelTitle": "Connect",
+        "layout": "responsiveGrid",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498056876",
+         "1717498055877"
+        ],
+        "container_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "title_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:title": "Precision Timing for Systems That Can't Afford to Drift",
+          "type": "h3",
+          "sling:resourceType": "macnicaglobal2/components/content/title"
+         },
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<p>In AIoT deployments, connectivity is more than network infrastructure. Synchronized, low-jitter timing is the foundation of deterministic system behavior, ensuring that sensor data, inference outputs, and control signals are aligned across distributed nodes, even in electrically noisy industrial environments.</p>\n<p>Where clock drift or timing imprecision would cause latency mismatches, data misalignment, or unpredictable control behavior, Macnica's timing portfolio provides the synchronization layer AIoT systems rely on.</p>",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "container_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "image_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/banner-mesh-grid-red-violet-blue.jpg",
+          "alt": "Waves in a dotted mesh grid with highlights in red-violet and blue",
+          "sling:resourceType": "macnicaglobal2/components/content/image",
+          "isDecorative": "false",
+          "altValueFromDAM": "false"
+         }
+        },
+        "container_3": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/container",
+         "cq:styleIds": [
+          "",
+          "1717498052331",
+          "1717498055877"
+         ],
+         "flexcontainer_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+          "cq:styleIds": [
+           "",
+           "1719484596357"
+          ],
+          "flexcontaineritem_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "image_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/sitime-oscillators.png",
+            "alt": "SiTime oscillator chips for precision timing",
+            "sling:resourceType": "macnicaglobal2/components/content/image",
+            "isDecorative": "false",
+            "altValueFromDAM": "false",
+            "cq:styleIds": [
+             "",
+             "1726800547211"
+            ]
+           }
+          },
+          "flexcontaineritem_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+           "title_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "SiTime",
+            "type": "h3",
+            "sling:resourceType": "macnicaglobal2/components/content/title"
+           },
+           "text_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "<p>SiTime's MEMS-based precision timing solutions outperform traditional quartz oscillators in vibration, thermal stress, and EMI tolerance, exactly the conditions industrial AIoT environments create. From ultra-stable oscillators to network synchronizers and jitter cleaners, SiTime provides the timing foundation that keeps distributed AIoT systems synchronized and deterministic under operating conditions that would degrade quartz-based alternatives.</p>",
+            "sling:resourceType": "macnicaglobal2/components/content/text",
+            "textIsRich": "true"
+           },
+           "button_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "View SiTime Products",
+            "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime",
+            "linkTarget": "_self",
+            "sling:resourceType": "macnicaglobal2/components/content/button",
+            "cq:styleIds": [
+             "",
+             "1722936853890",
+             "1717669229626"
+            ]
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "From Component to Deployed System",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Most distributors stop at the component. Macnica doesn't.</p>\n<p>Our component-to-solution model means we engage from early architecture through production deployment, helping customers evaluate components against real application requirements, accelerate hardware bring-up, and navigate the integration challenges that AIoT system development inevitably surfaces.</p>\n<p>We work across the full AIoT stack: sensors, inference processors, FPGAs, embedded platforms, and precision timing. We do it with engineering depth, not just fulfillment. When your system needs to work in the field and not just the lab, that difference matters.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/macnica-workflow-diagram.jpg",
+       "alt": "Macnica workflow diagram",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/citizen-machinery-group.jpg",
+         "alt": "Citizen Machinery staff group photo",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          "1726800547211"
+         ]
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "CASE STUDY",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "title_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Citizen Machinery: AIoT in Machine Tool Operations",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>See how Macnica's component-to-solution approach helped Citizen Machinery integrate intelligent sensing and edge computing into precision machine tools, delivering real-time operational visibility without disrupting existing production workflows.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        },
+        "button_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Read the Citizen Machinery Case Study",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/citizen-machinery-case-study",
+         "linkTarget": "_self",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "",
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       }
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Is Your AIoT System Built for the Field?",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Whether you're in early architecture or trying to solve a field deployment challenge, our engineers want to hear about it. Tell us about your application and we'll connect you with the right components, the right expertise, and the right path to a system that holds up where it needs to.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

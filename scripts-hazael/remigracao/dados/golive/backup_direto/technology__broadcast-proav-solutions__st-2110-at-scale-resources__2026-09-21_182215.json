@@ -1,0 +1,142 @@
+{
+ "caminho": "/content/macnicaglobal2/americas/mai/en/technology/broadcast-proav-solutions/st-2110-at-scale-resources",
+ "lido_em": "2026-09-21_182215",
+ "jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "ST 2110 at Scale: Resources",
+  "manufacturer": "mai:manufacturers/macnica-products",
+  "businessCategories": [
+   "mai:business-categories/broadcast-proav",
+   "mai:manufacturers/macnica-products"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "ST 2110 at Scale: Resources",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 20:57:57 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 20:57:57 GMT+0000",
+  "jcr:description": "Whether you’re just beginning your journey into IP-based media production or refining an existing ST 2110 deployment, this collection of resources is designed to support your understanding of real-world workflows, infrastructure choices, and emerging trends. Below you’ll find blogs and video content from Macnica Americas, covering key topics like converged broadcast/Pro AV networks, high-speed Ethernet for real-time video, quality-driven design practices, and innovative use cases such as medical video transmission over ST 2110.",
+  "keywords": "macnica, macnica products, st 2110, broadcast, proav, ip, ethernet",
+  "pageTitle": "ST 2110 at Scale: Resources",
+  "cq:tags": [
+   "mai:business-categories/broadcast-proav",
+   "mai:manufacturers/macnica-products"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "ST 2110 at Scale: Resources",
+  "manufacturerlogo": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/broadcast-proav-solutions/logos/macnica-brand-logo-rgb-1.png",
+   "alt": "Macnica logo",
+   "sling:resourceType": "core/wcm/components/image/v3/image"
+  },
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Whether you’re just beginning your journey into IP-based media production or refining an existing ST 2110 deployment, this collection of resources is designed to support your understanding of real-world workflows, infrastructure choices, and emerging trends. Below you’ll find blogs and video content from Macnica Americas, covering key topics like converged broadcast/Pro AV networks, high-speed Ethernet for real-time video, quality-driven design practices, and innovative use cases such as medical video transmission over ST 2110.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Videos",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "U_kvHyUTYEg",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "u3mdYGr9sRw",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Blogs",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><a href=\"https://www.thebroadcastbridge.com/content/entry/21341/eliminate-the-barriers-to-amateur-sports-live-production?cat_id=133\" target=\"_blank\" aria-label=\"https://www.thebroadcastbridge.com/content/entry/21341/eliminate-the-barriers-to-amateur-sports-live-production?cat_id=133\" rel=\"noopener noreferrer\">Eliminate the Barriers to Amateur Sports &amp; Live Production</a></li>\n</ul>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/blog/one-market-one-network-the-new-reality-of-broadcast-and-pro-av.html\" target=\"_self\" rel=\"noopener noreferrer\">One Market, One Network: The New Reality of Broadcast and Pro AV</a></li>\n</ul>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/blog/the-math-change-100-gbe-and-the-new-threshold-for-real-time-video.html\" target=\"_self\" rel=\"noopener noreferrer\">The Math Change: 100 GbE and the New Threshold for Real-Time Video</a></li>\n</ul>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/blog/quality-by-design-the-discipline-behind-the-mep100.html\" target=\"_self\" rel=\"noopener noreferrer\">Quality by Design: The Discipline Behind the MEP100</a></li>\n</ul>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/blog/transforming-medical-video-transmission-with-st-2110-and-the-macnica-mep100.html\" target=\"_self\" rel=\"noopener noreferrer\">Transforming Medical Video Transmission with ST 2110 and the Macnica MEP100</a></li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

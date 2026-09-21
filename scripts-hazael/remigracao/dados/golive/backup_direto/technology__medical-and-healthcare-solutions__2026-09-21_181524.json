@@ -1,0 +1,646 @@
+{
+ "caminho": "/content/macnicaglobal2/americas/mai/en/technology/medical-and-healthcare-solutions",
+ "lido_em": "2026-09-21_181524",
+ "jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "admin",
+  "jcr:title": "Advanced Medical & Healthcare Technology Solutions",
+  "pwaOrientation": "any",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+  "jcr:created": "Thu Mar 05 2026 00:16:38 GMT+0000",
+  "pwaDisplay": "standalone",
+  "cq:lastModified": "Mon Sep 21 2026 20:57:02 GMT+0000",
+  "jcr:description": "Discover innovative medical technology solutions that enhance patient care and efficiency. Explore advanced medical technology at Macnica Americas.",
+  "pwaCachestrategy": "staleWhileRevalidate",
+  "keywords": "macnica, medical solutions, healthcare solutions, reference designs, applied engineering, medical products, hospital infrastructure, imaging systems, surgical systems, integration support",
+  "pageTitle": "Medical & Healthcare Solutions",
+  "sling:resourceType": "macnicaglobal2/components/page",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Medical & Healthcare",
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "ohashi@yamato-ltd.com",
+   "jcr:lastModified": "Tue Feb 17 2026 06:34:32 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "true"
+  },
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Medical and Healthcare Solutions",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/medical-and-healthcare-solutions/images/banner-medical-healthcare-solutions.jpg",
+       "alt": "A collage of medical device prototypes (wearables, displays, imaging equipment)",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>Move faster from concept to cleared device with Macnica. We combine best-in-class components, reference designs, and applied engineering to help you build safer, smarter medical products. From imaging and surgical systems to wearables and smart hospital infrastructure, we supply technology, integration support, and a path to scale.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "NqjesmTgKr4",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       }
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "list_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "linkItems": "true",
+       "pages": [
+        "/content/macnicaglobal2/americas/mai/en/blog/macnica-medical-displays--quality-and-innovation-for-hospital-eq"
+       ],
+       "sling:resourceType": "macnicaglobal2/components/content/list",
+       "listFrom": "static"
+      },
+      "anchorlink_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+       "cq:styleIds": [
+        "",
+        "1718861445028"
+       ],
+       "anchor": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "whymacnicaformedical",
+         "text": "Why Macnica for Medical?"
+        },
+        "item1": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "applicationswepower",
+         "text": "Applications We Power"
+        },
+        "item2": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "solutionbuildingblocks",
+         "text": "Solution Building Blocks"
+        },
+        "item3": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "proofpoints",
+         "text": "Proof Points"
+        },
+        "item4": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "howweengage",
+         "text": "How We Engage"
+        }
+       }
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why Macnica for Advanced Medical Technology Solutions?",
+       "id": "whymacnicaformedical",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Broad supplier depth across sensors, signal chains, compute, timing, displays, and connectivity</li>\n</ul>\n<ul>\n<li>Solution design and integration support with rapid prototyping and reference builds</li>\n</ul>\n<ul>\n<li>Compliance-aware workflows and documentation support to help you design toward IEC 60601 and related requirements</li>\n</ul>\n<ul>\n<li>Collaboration with specialty design partners for medical cameras, embedded vision, and edge AI</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Applications We Power",
+       "id": "applicationswepower",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Medical Imaging and Vision",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>Build sharper, lower latency imaging systems for endoscopy, ultrasound, digital pathology, and surgical visualization.</p>\n<ul>\n<li><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony-image-sensors.html\" target=\"_self\" rel=\"noopener noreferrer\">Sony image sensors and micro-displays</a></b> for endoscopy, ophthalmology, and surgical visualization<br>\n<br>\n</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" style=\"background-color: rgb(245,245,245);\"><b>Canon's</b></a> medical-grade CMOS sensors deliver exceptional low-light sensitivity and signal fidelity for endoscopy, surgical imaging, and clinical visualization<br>\n<br>\n</li>\n<li><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera.html\" target=\"_self\" rel=\"noopener noreferrer\">Altera FPGAs</a></b> for real-time image processing, reconstruction, compression, and video transport</li>\n</ul>\n<ul>\n<li><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices.html\">Analog Devices</a></b> for ultrasound front-ends and complete signal chains</li>\n</ul>\n<ul>\n<li><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime.html\" target=\"_self\" rel=\"noopener noreferrer\">SiTime MEMS timing</a></b> for stable acquisition and system synchronization</li>\n</ul>\n<ul>\n<li><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems.html\" target=\"_self\" rel=\"noopener noreferrer\">TQ embedded video modules and computing platforms</a></b> designed for IEC 60601 compliance and sub-millisecond surgical video distribution</li>\n</ul>\n<ul>\n<li><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/displays.html\" target=\"_self\" rel=\"noopener noreferrer\">Macnica medical displays</a></b> for clinical monitors and mobile diagnostics</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/medical-and-healthcare-solutions/images/endoscopic-pathology-imaging.jpg",
+         "alt": "Endoscopic or pathology imaging with high-resolution clarity",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          "1726800547211"
+         ]
+        }
+       }
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/medical-and-healthcare-solutions/images/operating-room-digital-surgical-monitors.jpg",
+         "alt": "A modern operating room with digital surgical monitors and connected equipment",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          "1726800547211"
+         ]
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Surgical and Interventional Rooms",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>Enable real-time, ultra-low latency video and reliable synchronization for today’s hybrid operating rooms.</p>\n<ul>\n<li>High-resolution surgical video distribution in 4K and beyond</li>\n</ul>\n<ul>\n<li>Robust timing and synchronization across multi-modal equipment</li>\n</ul>\n<ul>\n<li>Options for ST 2110 over IP to enable tele-surgery workflows</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Wearables and Remote Patient Monitoring",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>Empower healthcare beyond the hospital with connected, sensor-rich wearables.</p>\n<ul>\n<li>Activity, respiration, and vital signs monitoring with <a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/infineon.html\">Infineon</a> sensors</li>\n</ul>\n<ul>\n<li>Secure, low-power connectivity for longer battery life</li>\n</ul>\n<ul>\n<li>Reference designs that shorten proof-of-concept cycles</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/medical-and-healthcare-solutions/images/patient-health-monitor-wearables.jpg",
+         "alt": "Patient wearing a sleek wristband or patch-style health monitor, paired with a smartphone app",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          "1726800547211"
+         ]
+        }
+       }
+      }
+     },
+     "container_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/medical-and-healthcare-solutions/images/smart-hospital-nurse-display.jpg",
+         "alt": "A hospital nurse’s station or bedside patient monitoring system with clear, modern UI",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          "1726800547211"
+         ]
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Smart Hospital and Home Care",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>Transform clinical workflows and patient experiences with embedded and advanced healthcare technology solutions.</p>\n<ul>\n<li>Bedside and ICU monitoring systems</li>\n</ul>\n<ul>\n<li>Asset tracking and workflow analytics</li>\n</ul>\n<ul>\n<li>Reliable, disinfectant-resistant clinical displays</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Solution Building Blocks",
+       "id": "solutionbuildingblocks",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Imaging Sensors and Modules",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony-image-sensors.html\" target=\"_blank\" rel=\"noopener noreferrer\">Sony sensors</a> and microdisplays deliver high precision for surgical, endoscopic, and diagnostic imaging. Through partners like iENSO, we provide <a href=\"/content/macnicaglobal2/americas/mai/en/services/imaging-and-vision-engineering-services.html\">camera design services and embedded vision modules</a> optimized for medical devices.</p><p style=\"margin-top:0\">&nbsp;</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n<tbody><tr><th style=\"white-space:nowrap\">Category</th>\n<th>Key Features/Technologies</th>\n<th>Example Medical Applications</th>\n</tr><tr><td width=\"33%\">CMOS Image Sensors</td>\n<td width=\"33%\">High sensitivity, low noise, global &amp; rolling shutter options</td>\n<td width=\"33%\">Endoscopy, surgical cameras, digital pathology</td>\n</tr><tr><td>UV &amp; NIR Sensors</td>\n<td>Detection beyond visible spectrum, specialized coatings</td>\n<td>Dermatology imaging, fluorescence-guided surgery, dental diagnostics</td>\n</tr><tr><td>SWIR / SenSWIR Sensors</td>\n<td>Extended wavelength capture, high quantum efficiency</td>\n<td>Ophthalmology, tissue oxygenation studies, advanced microscopy</td>\n</tr><tr><td style=\"white-space:nowrap\">Microdisplays</td>\n<td>High-resolution OLED / LCOS panels, compact form factor</td>\n<td>Ophthalmology headsets, surgical EVFs, training simulators</td>\n</tr><tr><td>Camera Modules &amp; Design</td>\n<td>Ready-to-use modules, ISP integration, partner design (iENSO)</td>\n<td>OEM medical cameras, embedded vision in wearables and devices</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_13": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Real-Time Compute and Acceleration",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera.html\" target=\"_blank\">Altera</a> FPGAs provide deterministic performance for imaging pipelines, beamforming, and video transport. <a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/deepx.html\" target=\"_blank\">DEEPX</a> AI accelerators enable low-power inference for triage, workflow assist, and quality control. <a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems.html\" target=\"_blank\">TQ</a> embedded computing platforms (SMARC, COM-Express, x86/ARM) with medical certifications to accelerate device development.</p><p style=\"margin-top:0\">&nbsp;</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n<tbody><tr><th>Platform/Supplier</th>\n<th>Key Features/Advantages</th>\n<th>Example Medical Applications</th>\n</tr><tr><td width=\"33%\">Altera FPGAs</td>\n<td width=\"33%\">Deterministic performance, high-speed DSP, PCIe Gen5, HBM options</td>\n<td width=\"33%\">Ultrasound beamforming, image reconstruction, compression pipelines</td>\n</tr><tr><td>DeepX AI Accelerators</td>\n<td>Ultra-low power inference, edge-ready modules, CNN/DNN optimized</td>\n<td>Wearables, smart hospital devices, automated triage</td>\n</tr><tr><td>TQ Embedded Platforms</td>\n<td>SMARC, COM-Express, and x86/ARM boards; IEC 60601 compliance; video modules with sub-ms latency</td>\n<td>Surgical video distribution, medical imaging systems, OEM medical device compute</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_14": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Precision Timing",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime.html\" target=\"_blank\">SiTime</a> MEMS oscillators and TCXOs deliver unmatched stability for acquisition systems, ensuring reliable synchronization across medical equipment.</p><p style=\"margin-top:0\">&nbsp;</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n<tbody><tr><th>Product Class</th>\n<th>Typical Stability</th>\n<th>Power Profile</th>\n<th>Key Applications</th>\n</tr><tr><td width=\"25%\">MEMS Oscillators</td>\n<td width=\"25%\">±25–50 ppm</td>\n<td width=\"25%\">Ultra-low power</td>\n<td width=\"25%\">Patient monitors, wearables</td>\n</tr><tr><td>TCXOs (Temp Compensated)</td>\n<td>±0.5–2.0 ppm</td>\n<td>Low power</td>\n<td>Ultrasound, surgical video</td>\n</tr><tr><td>OCXOs (Oven Controlled)</td>\n<td>±0.05–0.1 ppm</td>\n<td>Higher power</td>\n<td>MRI, CT scanners, lab equipment</td>\n</tr><tr><td style=\"white-space:nowrap\">Resonators</td>\n<td>±100 ppm</td>\n<td>Lowest cost/size</td>\n<td>Disposable medical sensors</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_15": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Signal Chains and Power",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices.html\" target=\"_blank\">Analog Devices</a> provides AFEs, high-voltage drivers, and power management essential for ultrasound, patient monitoring, and surgical instruments.</p><p style=\"margin-top:0\">&nbsp;</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n<tbody><tr><th>Subsystem/Function</th>\n<th>Key Features/Components</th>\n<th>Example Medical Applications</th>\n</tr><tr><td width=\"33%\">Ultrasound Front End</td>\n<td width=\"33%\">High-voltage pulsers, T/R switches, AFEs, beamformers</td>\n<td width=\"33%\">Portable and cart-based ultrasound, handheld probes</td>\n</tr><tr><td>Patient Monitoring</td>\n<td>Low-noise amplifiers, precision ADCs, ECG/EEG AFEs</td>\n<td>Bedside monitors, wearable vital-sign devices</td>\n</tr><tr><td>Imaging Power Mgmt.</td>\n<td>High-efficiency DC/DC converters, PMICs</td>\n<td>CT/MRI system power rails, digital pathology scanners</td>\n</tr><tr><td>Therapeutic Devices</td>\n<td>HV drivers, isolation ICs, power conditioning</td>\n<td>Defibrillators, infusion pumps, surgical tools</td>\n</tr><tr><td>Lab &amp; Diagnostic</td>\n<td>Precision signal chains, low drift references</td>\n<td>Blood analyzers, lab-on-chip devices, portable diagnostics</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_16": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Clinical Displays",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Macnica offers <a href=\"/content/macnicaglobal2/americas/mai/en/products/displays.html\" target=\"_blank\">medical-grade displays</a> built for clarity, reliability, and long-term hospital use. Options include wide-angle IPS panels, anti-reflective glass, and disinfectant-resistant coatings.</p><p style=\"margin-top:0\">&nbsp;</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n<tbody><tr><th>Display Type</th>\n<th>Size Range</th>\n<th>Key Features</th>\n<th>Ideal Use Cases</th>\n</tr><tr><td width=\"25%\">IPS Clinical Panels</td>\n<td width=\"18%\" style=\"white-space:nowrap\">15–32”</td>\n<td width=\"32%\">Wide viewing angles, high contrast</td>\n<td width=\"25%\">Surgical monitors, diagnostic workstations</td>\n</tr><tr><td>Ruggedized Touch Panels</td>\n<td style=\"white-space:nowrap\">10–22”</td>\n<td>Anti-reflective, disinfectant-safe</td>\n<td>Mobile carts, bedside monitors</td>\n</tr><tr><td>High Brightness Panels</td>\n<td style=\"white-space:nowrap\">12–24”</td>\n<td>Outdoor readable, &gt;1000 nits</td>\n<td>Field diagnostics, emergency transport</td>\n</tr><tr><td>Custom OEM Displays</td>\n<td style=\"white-space:nowrap\">Configurable</td>\n<td>Integration with housings &amp; interfaces</td>\n<td>Specialized devices, kiosks</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_17": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Proof Points",
+       "id": "proofpoints",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Endoscopy, ultrasound, and surgical imaging powered by <a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\">Canon</a> and&nbsp;<a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony-image-sensors.html\">Sony</a> sensors, <a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera.html\">Altera</a> FPGAs, and <a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices.html\">Analog Devices</a> AFEs</li>\n</ul>\n<ul>\n<li>Real-time video platforms with sub-millisecond latency and compliance-ready design from <a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems.html\">TQ</a> and Macnica</li>\n</ul>\n<ul>\n<li>Wearables and remote patient monitoring devices using <a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/infineon.html\">Infineon</a> and ADI technologies</li>\n</ul>\n<ul>\n<li>Stable, MEMS-based timing solutions from <a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime.html\">SiTime</a> for clinical synchronization</li>\n</ul>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/displays.html\">Rugged displays</a> from Macnica engineered for clinical reliability</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_18": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "How We Engage",
+       "id": "howweengage",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ol>\n<li>Discovery and requirements gathering</li>\n<li>Rapid feasibility and component selection</li>\n<li>Reference builds and design collaboration</li>\n<li>Compliance-aware design toward IEC 60601 families</li>\n<li>Pilot, scale, and supply continuity</li>\n</ol>\n<p>Bring us your imaging stack, wearable concept, or smart hospital requirement. We will help you select the right parts, assemble a reference design, and move you toward a manufacturable solution with advanced medical technology solutions..</p>\n<p><b>Contact Macnica Americas</b> to start a technical discovery session.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

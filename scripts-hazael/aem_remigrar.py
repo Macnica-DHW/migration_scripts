@@ -7,7 +7,9 @@ DESTINO: `/content/copia-teste/americas/mai/en/products/semiconductors-remigrati
 É árvore de rascunho, criada do zero. **Nada em `/semiconductors` é tocado** —
 as edições manuais do Bruno no `/canon` (79 nós, incluindo 8 blocos de texto em
 português que não existem no GWI e uma anotação viva) continuam onde estão.
-Também não se escreve em `macnicagwi` nem em `macnicaglobal2`.
+Também não se escreve em `macnicagwi` — NUNCA, regra mestra do Hazael — nem em
+`macnicaglobal2`, salvo com `--alvo-global2` (autorizado em 21/09/2026 para
+`/technology` e `/services`; travas em `remigracao/ferramentas/golive/direto.py`).
 
 ESCOPO: 135 páginas — tudo em `/semiconductors` que a Anion ainda NÃO autorou.
 Fora: `sony-image-sensors` (216) e `deepx` (3). Conferido: o global2 só tem
@@ -41,6 +43,13 @@ COMO RODAR
   python3 aem_remigrar.py --limite 3                 # dry-run, 3 páginas
   python3 aem_remigrar.py --so /altera --executar    # uma subárvore
   python3 aem_remigrar.py --executar                 # as 135
+
+  # outra seção, DIRETO no global2 (dry-run; o `= servidor`/`MUDA` sai na tela):
+  python3 aem_remigrar.py --origem <gwi>/technology --destino <global2>/technology \
+      --alvo-global2 --template-por-origem --so-publicadas \
+      --gemeos-conhecidos <global2>/technology/Broadcast-ProAV-Solutions …
+  # gravar: só as que MUDAM, com --paginas <lista> --executar; depois
+  # remigracao/ferramentas/golive/conferir_direto.py <csv do driver>
 """
 
 import argparse
@@ -76,6 +85,20 @@ FORA_DE_ESCOPO = ("sony", "deepx")
 # `components/page` o autor não consegue nem ver nem editar as propriedades
 # pd_*. As 16 páginas migradas hoje estão todas erradas nisso.
 PAGE_RT = "macnicaglobal2/components/maeproductpage"
+
+# Página de CONTEÚDO (`/technology`, `/services`): o GWI usa `base-page-content` e as cascas que o
+# time do site criou no global2 usam `mai-page-content` + `components/page`. Conferido em
+# 21/09/2026: os 24 mapeamentos de policy e a structure são IDÊNTICOS aos do `mai-mae-product-page`
+# — os styleIds do motor valem igual. Só com `--template-por-origem` (as 136 não mudam).
+TEMPLATE_CONTEUDO = "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content"
+PAGE_RT_CONTEUDO = "macnicaglobal2/components/page"
+
+
+def template_de(jcr, por_origem):
+    tpl = str(jcr.get("cq:template", "")).rsplit("/", 1)[-1]
+    if por_origem and tpl == "base-page-content":
+        return TEMPLATE_CONTEUDO, PAGE_RT_CONTEUDO
+    return TEMPLATE, PAGE_RT
 
 
 def destino_de(origem):
@@ -271,8 +294,12 @@ def aplicar_dimensoes_de_imagem(page, session, base_url, auth, cache):
                     sl["dims"] = dims_do_asset(session, base_url, auth, ref, cache)
 
 
-def copiar_assets(page, session, base_url, auth, cache, dry_run):
-    """Todo fileReference do GWI vira o equivalente em copia-teste."""
+def copiar_assets(page, session, base_url, auth, cache, dry_run, copiador=None):
+    """Todo fileReference do GWI vira o equivalente em copia-teste.
+
+    `copiador(ref) -> caminho novo | None`: quem grava em outro DAM (o do
+    global2, `--alvo-global2`) passa o seu; a trava e o desenho de pastas são dele.
+    """
     src, dst = CONFIG["dam_source_prefix"], CONFIG["dam_target_prefix"]
     falhas = []
 
@@ -280,8 +307,11 @@ def copiar_assets(page, session, base_url, auth, cache, dry_run):
         ref = props.get(chave)
         if not isinstance(ref, str) or not ref.startswith(src):
             return
-        novo = copy_asset(session, base_url, ref, src, dst, auth,
-                          cache=cache, dry_run=dry_run)
+        if copiador is not None:
+            novo = copiador(ref)
+        else:
+            novo = copy_asset(session, base_url, ref, src, dst, auth,
+                              cache=cache, dry_run=dry_run)
         if novo:
             props[chave] = novo
         else:
@@ -332,6 +362,19 @@ def main():
                          "páginas) a lista sai VAZIA na tela. 'destino' faz a "
                          "lista renderizar já na árvore de rascunho; trocar "
                          "para global2 é passada de go-live.")
+    ap.add_argument("--alvo-global2", action="store_true",
+                    help="grava DIRETO no macnicaglobal2 (autorizado pelo Hazael em "
+                         "21/09/2026 para /technology e /services). Travas em "
+                         "remigracao/ferramentas/golive/direto.py: lista branca de "
+                         "caminhos exatos, situação relida ao vivo, backup, manifesto, "
+                         "e NUNCA um POST contra URL do GWI.")
+    ap.add_argument("--gemeos-conhecidos", nargs="*", default=[], metavar="CAMINHO",
+                    help="cascas do global2 com o nome do GWI em MAIÚSCULA que ficam AO "
+                         "LADO da página de nome normalizado (não são tocadas)")
+    ap.add_argument("--template-por-origem", action="store_true",
+                    help="base-page-content -> mai-page-content + components/page")
+    ap.add_argument("--so-publicadas", action="store_true",
+                    help="pula página que não está ativada no GWI (teste, rascunho)")
     args = ap.parse_args()
 
     # `destino_de`, `em_escopo` e `normalizar_links_do_escopo` leem as raízes do
@@ -362,8 +405,38 @@ def main():
     paginas = paginas[args.inicio:]
     if args.limite:
         paginas = paginas[:args.limite]
+    if args.so_publicadas:
+        vivas = []
+        for p in paginas:
+            c0, _st = get_json(session, f"{args.base_url}{p}/jcr:content.0.json", auth)
+            if isinstance(c0, dict) and c0.get("cq:lastReplicationAction") == "Activate":
+                vivas.append(p)
+            else:
+                print(f"  [pulada] não publicada no GWI: {p[len(GWI_ROOT):]}")
+        paginas = vivas
     print(f"  páginas : {len(paginas)} (de {len(todas)} no GWI; "
           f"{len(todas) - len([p for p in todas if em_escopo(p)])} fora de escopo)\n")
+
+    alvo_g2 = None
+    if args.alvo_global2:
+        sys.path.insert(0, str(Path(__file__).resolve().parent / "remigracao" / "ferramentas" / "golive"))
+        import direto as DIR
+        if not DEST_ROOT.startswith(DIR.MAI + "/") or not GWI_ROOT.startswith(DIR.GWI_MAI + "/"):
+            sys.exit(f"[erro] --alvo-global2 exige origem sob {DIR.GWI_MAI} e destino sob {DIR.MAI}")
+        secao_g2 = DEST_ROOT[len(DIR.MAI):].strip("/").split("/")[0]
+        alvo_g2 = DIR.Alvo(session, secao_g2, [destino_de(p) for p in paginas],
+                           gemeos_conhecidos=args.gemeos_conhecidos)
+        # os XFs de contato e os popups do form já existem no global2 (go-live, 21/09/2026)
+        AL.XF_MAP = {k: DIR.XF_G2 + k[len(DIR.XF_GWI):] for k in AL.XF_MAP}
+        # `master1` é a variação de 3 botões do MESMO XF (Contact Us, Request a Quote, Request
+        # Evaluation Kit), usada só na `st-2110-at-scale-resources`. O global2 só tem a `master`
+        # (2 botões) e o alvo do 3º botão nem existe lá: melhor o bloco de contato com 2 botões
+        # do que a página sem bloco nenhum. Criar a variação no global2 é decisão do Hazael.
+        AL.XF_MAP[DIR.XF_GWI + "/products-contact-block/master1"] = DIR.XF_G2 + "/products-contact-block/master"
+        AL.XF_FORM_POPUPS = DIR.XF_G2 + "/popups"
+        args.links_de_lista = "global2"
+        print(f"  ALVO    : macnicaglobal2 DIRETO — {len(alvo_g2.paginas)} caminhos na lista branca; "
+              f"DAM em {alvo_g2.dam}\n")
 
     taxonomia = None if args.sem_tags else load_tag_taxonomy(
         session, args.base_url, auth)
@@ -404,8 +477,12 @@ def main():
                 b.props["pages"] = resolvidas
                 b.props["listFrom"] = "static"
 
+        copiador = None
+        if alvo_g2 is not None:
+            fam = DIR.familia_de(destino_de(origem), alvo_g2.secao)
+            copiador = lambda ref, _f=fam: alvo_g2.copiar_asset(ref, _f, args.executar)
         falhas = copiar_assets(page, session, args.base_url, auth, cache_asset,
-                               dry_run=not args.executar)
+                               dry_run=not args.executar, copiador=copiador)
         for ref in falhas:
             page.pendencias.append(AL.Pendencia(
                 origem, "asset", "asset_nao_copiado", "copy_asset falhou", ref))
@@ -425,8 +502,9 @@ def main():
         # como seção própria (R28): ver `AL.inserir_titulo_da_pagina`.
         AL.inserir_titulo_da_pagina(page, origem)
 
+        tpl_pagina, rt_pagina = template_de(jcr, args.template_por_origem)
         payload, contagens = AL.build_layout_payload(
-            page, template_path=TEMPLATE,
+            page, template_path=tpl_pagina,
             link_de=args.link_de, link_para=args.link_para,
             reescrever_listas=(args.links_de_lista != "destino"))
 
@@ -436,12 +514,12 @@ def main():
         seo = build_seo_props(jcr)
         pagina_payload = build_page_payload(
             title=jcr.get("jcr:title") or destino.rsplit("/", 1)[-1],
-            template_path=TEMPLATE,
+            template_path=tpl_pagina,
             description=jcr.get("jcr:description"),
             hide_in_nav=str(jcr.get("hideInNav", "")).lower() == "true",
             seo_props=seo)
         # maeproductpage, não page — sem isso o diálogo pd_* nem aparece
-        pagina_payload["jcr:content/sling:resourceType"] = PAGE_RT
+        pagina_payload["jcr:content/sling:resourceType"] = rt_pagina
         if "jcr:content/hideInNav" not in pagina_payload:
             # Página que JÁ existia, feita por outro script: o POST faz MERGE e
             # o `hideInNav=true` antigo sobrevivia (macnica-cv75). O GWI não tem
@@ -464,7 +542,7 @@ def main():
                 if isinstance(valor, list):
                     pagina_payload[f"jcr:content/{prop}@TypeHint"] = "String[]"
 
-        if tag_props:
+        if tag_props and rt_pagina == PAGE_RT:        # pd_* só existe no diálogo do maeproductpage
             fabricante = tag_props.get("manufacturer", "")
             slug = fabricante.rsplit("/", 1)[-1] if fabricante else None
             pd_props = build_pd_props(jcr, destino.rsplit("/", 1)[-1], slug)
@@ -493,6 +571,25 @@ def main():
             for k2, v2 in val.items():
                 pagina_payload[f"{base}/{k2}"] = v2
 
+        proibidas = []
+        if alvo_g2 is not None:
+            for ref in DIR.assets_do_html(payload, alvo_g2, fam, args.executar):
+                page.pendencias.append(AL.Pendencia(
+                    origem, "asset", "asset_nao_copiado", "asset de HTML cru não copiado", ref))
+            DIR.acertar_links(payload, ("technology", "services"))
+            DIR.acertar_links(pagina_payload, ("technology", "services"))
+            trocas, mortos = DIR.resolver_alvos(payload, alvo_g2, a_nascer=alvo_g2.paginas)
+            for de, para in trocas:
+                print(f"        link: {de[len(DIR.MAI):]} -> {para[len(DIR.MAI):]}")
+            for morto in mortos:
+                page.pendencias.append(AL.Pendencia(
+                    origem, "link", "alvo_inexistente_no_global2",
+                    "a página-alvo ainda não existe no global2", morto))
+            proibidas = DIR.sobras_proibidas(payload) + DIR.sobras_proibidas(pagina_payload)
+            for chave, trecho in proibidas:
+                page.pendencias.append(AL.Pendencia(
+                    origem, "ref", "ref_proibida_no_global2", trecho[:150], chave))
+
         n_pend = len(page.pendencias)
         for p in page.pendencias:
             r = p.as_row()
@@ -513,6 +610,28 @@ def main():
         print(f"  [{i:3}/{len(paginas)}] {marca} {page.topology:8} "
               f"sec={len(page.sections):2} blocos={sum(contagens.values()):3} "
               f"pend={n_pend:2}  {destino[len(DEST_ROOT):][:52]}")
+
+        if alvo_g2 is not None:
+            sit = alvo_g2.situacao(destino)               # lido AO VIVO; aborta se for de outra pessoa
+            linhas[-1]["detalhe"] = f"[{sit}] " + linhas[-1]["detalhe"]
+            muda = ""
+            if sit == "nossa":
+                d3 = DIR.diferenca_com_o_servidor(alvo_g2, destino, payload)
+                muda = "  = servidor" if d3 == (0, 0, 0) else f"  MUDA +{d3[0]} -{d3[1]} ~{d3[2]}"
+                linhas[-1]["detalhe"] = muda.strip() + " " + linhas[-1]["detalhe"]
+            print(f"        global2: {sit:6} {destino[len(DIR.MAI):]}{muda}")
+            if proibidas:
+                linhas[-1]["status"] = "NAO GRAVADA: ref proibida"
+                print(f"        [não gravo] {len(proibidas)} referência(s) a GWI/copia-teste no payload")
+                continue
+            if not args.executar:
+                continue
+            sit, res = alvo_g2.gravar_pagina(destino, pagina_payload, payload)
+            linhas[-1]["status"] = res
+            if res != "ok":
+                print(f"        [falha] {res}")
+            time.sleep(CONFIG["write_delay"])
+            continue
 
         if not args.executar:
             continue

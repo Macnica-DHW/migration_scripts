@@ -154,6 +154,8 @@ XF_MAP = {
 }
 
 RELATED_TYPES = {"macnicagwi/components/content/relatedsuggestions"}
+CARDLIST_TYPES = {"macnicagwi/components/content/cardlist"}
+SEPARATOR_TYPES = {"macnicagwi/components/content/separator"}
 XF_TYPES = {"macnicagwi/components/content/experiencefragment"}
 VIDEO_TYPES = {"macnicagwi/components/content/video"}
 TABS_TYPES = {"macnicagwi/components/content/tabs"}
@@ -842,7 +844,17 @@ def bloco_de(node, caminho, page):
     if rt in TITLE_TYPES:
         txt = node.get("jcr:title") or node.get("text") or ""
         if not _texto_visivel(txt):
-            return None
+            # `title` SEM texto próprio não é nó vazio: o GWI desenha nele o
+            # título da PÁGINA (pageTitle, senão jcr:title). É como as páginas de
+            # `base-page-content` ganham o h1 — a structure desse template não tem
+            # título (R6): "Smart City & Mobility", "Citizen Machinery Case
+            # Study", "Japan Innovation Showcase 2018 by JETRO" sumiam (5 de 19
+            # páginas de `/technology` e `/services`). O `title` do destino sem
+            # jcr:title e sem type faz o mesmo. Continua bloco `title`, para as
+            # regras de agrupamento valerem (R56).
+            if str(txt).strip():
+                return None          # só `&nbsp;`/espaço digitado: espaçador do autor
+            return Block("title", caminho, titulo="", tipo="h1", da_pagina=True)
         # Sem `type`, o `title` do GWI é h1: o HTL do componente é
         # `<h1 data-sly-element="${title.type}">` e a policy que os templates
         # do escopo aplicam ("Macnica Title"/"Page Title") é type=h1. A landing
@@ -1037,6 +1049,27 @@ def bloco_de(node, caminho, page):
                      sortOrder=node.get("sortOrder"),
                      maxItems=node.get("maxItems"))
 
+    if rt in CARDLIST_TYPES:
+        # `cardlist` do GWI (`/technology`, `/services`): cards de página —
+        # título, data, descrição — quase sempre `static`, apontando para o
+        # blog e o news-archive. Mesmo alvo do `productlisting`: `list` (R55).
+        # Sem `listFrom` o GWI lista os filhos de `rootPath` (`/services`:
+        # maxItems=2, orderBy=jcr:title) — o driver materializa em `static`.
+        return Block("productlist", caminho,
+                     listFrom=node.get("listFrom") or "children",
+                     pages=node.get("pages"),
+                     parentPage=node.get("parentPage") or node.get("rootPath"),
+                     childDepth=node.get("childDepth"),
+                     orderBy=node.get("orderBy"),
+                     sortOrder=node.get("sortOrder"),
+                     maxItems=node.get("maxItems"))
+
+    if rt in SEPARATOR_TYPES:
+        # O componente `separator` do GWI é o mesmo fio que o `<hr>` de rich
+        # text (20 em 3 páginas de `/technology`) — mesmo bloco, mesmas regras
+        # (R13, R40).
+        return Block("hr", caminho)
+
     if rt in IMAGEPACK_TYPES:
         page.pendencias.append(Pendencia(
             caminho, rt, "sem_destino_mapeado", f"{rt} sem componente alvo"))
@@ -1142,9 +1175,21 @@ def _coletar_blocos(node, caminho, page):
         mostra_btn = str(node.get("isButton", "true")).lower() != "false"
         mostra_head = str(node.get("isHeading", "true")).lower() != "false"
 
+        # O `imagetext` desenha só o `resizableimage`. O filho `image` é resíduo
+        # de uma versão antiga do componente: na `imaging-and-vision` 3 nós guardam
+        # os dois com arquivos DIFERENTES e o HTML do GWI traz 0 ocorrência do
+        # arquivo do `image` (conferido em 21/09/2026: `icetana-sw-gui` 1x,
+        # `security-camera` só no bloco que é dele). Emitindo os dois saíam duas
+        # fotos de 1280px empilhadas e o texto embaixo, em vez do par lado a lado
+        # — e uma delas o visitante do GWI nunca viu (R57; a R25 só cobria o caso
+        # do MESMO arquivo).
+        tem_resizable = any(rt_of(ch).endswith("/resizableimage")
+                            for _n, ch in list_child_nodes(node))
         filhos = []
         for nome, ch in list_child_nodes(node):
             crt = rt_of(ch)
+            if tem_resizable and crt.endswith("/components/content/image"):
+                continue
             if crt in TEXT_TYPES and not mostra_txt:
                 continue
             if crt in BUTTON_TYPES and not mostra_btn:
@@ -2351,6 +2396,8 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         payload[f"{base}/sling:resourceType"] = RT["title"]
         # jcr:title e type andam SEMPRE juntos (413 com os dois, 67 com
         # nenhum, nunca um sem o outro no corpus autoral).
+        if b.props.get("da_pagina"):
+            return True          # sem jcr:title e sem type: o AEM desenha o pageTitle (R56)
         payload[f"{base}/jcr:title"] = b.props.get("titulo", "")
         payload[f"{base}/type"] = b.props.get("tipo") or "h2"
         if str(b.props.get("titulo") or "").strip():

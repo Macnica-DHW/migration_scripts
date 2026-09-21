@@ -1,0 +1,162 @@
+{
+ "caminho": "/content/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/citizen-machinery-case-study",
+ "lido_em": "2026-09-21_181549",
+ "jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Citizen Machinery - Machine Tools Case Study",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+  "jcr:created": "Mon Sep 21 2026 20:57:47 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 20:57:47 GMT+0000",
+  "jcr:description": "Explore the Citizen Machinery Case Study from Macnica Americas to learn how Macnica IoT Solutions can help you take your business to the next level.",
+  "keywords": "CITIZEN MACHINERY",
+  "pageTitle": "Citizen Machinery Case Study",
+  "sling:resourceType": "macnicaglobal2/components/page",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Citizen Machinery Case Study",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "CITIZEN MACHINERY offers customers Condition Based Maintenance in their automatic lathes and improves the visibility of its manufacturing processes across its worldwide factories with Macnica's SENSPIDER.",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/artificial-intelligence-of-things-aiot/images/citizen-machinery-banner.jpg",
+       "alt": "Citizen Machinery",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "An industry leader in machine tools",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>CITIZEN MACHINERY CO., LTD. was founded in 1982 as CITIZEN PRECISION MACHINERY CO., LTD. It was originally the Precision Machinery Division, a machine tool division, of CITIZEN WATCH CO., LTD. before being spun off from the company. The company has been operating under its current name since 2015, and is engaged in the development, manufacturing, and sales of machine tools with a focus on CNC automatic lathes. CITIZEN MACHINERY has contributed to the development of the manufacturing industry by realizing innovative manufacturing processes. The company develops the business around two brands, “Cincom” CNC sliding headstock automatic lathes and “Miyano” CNC fixed headstock automatic lathes, and pushes forward the machine tool business leveraging its unique technology, ease-of-use and processing know-hows as the second pillar of the Citizen Group after the watch business worldwide</p>\n<p>Within the company, it’s the Development Planning Department of the Development Headquarters that develops high value-added products by fully exploiting new technologies. Mr. Takaichi Nakaya, head of the team, explains, “We are conducting research and development work that will lead to new value creation in automatic lathes, such as the development of LFV technology that uses low-frequency vibration to break chips into small pieces to solve the problem of automatic lathes, which causes unexpected machining defects due to long chips generated during shaving, and friction bonding technology that succeeded in reducing the residual material by friction bonding the residual material, which accounts for 10% of the material used in the bar stock machining, with the new material.”</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Challenge to offer Industry 4.0 failure prediction",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>One of the new topics the company was thinking about was a failure prediction system for the automatic lathes it offers. This was triggered by one of the approaches of “Industry 4.0”, an innovative concept for the manufacturing industry advocated by Germany, that uses AI to analyze different types of sensor data obtained from machines and link them to failure prediction. “We also examined the weak points of our current lathes to understand where we can offer new value-added services such as failure prediction. In doing so, we found that the spindle bearing, which rotates at high speed, has a comparatively high failure rate, so we decided to develop a failure prediction technology for this part as a first step,” says Mr. Nakaya.</p>\n<p>Previously, the focus was on regular maintenance, where parts requiring maintenance were replaced at specific intervals, and reactive maintenance, where parts were replaced at the time of failure, both relying heavily on human judgment. But, the new system aims to enable condition-based maintenance where condition is quantified and parts are replaced only when replacement is deemed necessary. “For customers who replace spare parts as part of their regular maintenance, this means they no longer have to replace unnecessary parts and gain value at the cost level.&quot;, explains Mr. Yasuhiro Kera from the same department.<br>\n</p>\n<p>When they started working in 2016, there were very few examples of equipment failure prediction even beyond the machine tool industry, and it was considered to be cutting-edge project in the automatic lathe industry.<br>\n</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Selecting \"SENSPIDER,\" a data logger that can integrate the “brain”",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>To explore how they can use sensor technology for their bearing, the team installed a data logger to record vibration and connected it to a PC to create an environment for data collection. In 2016, they showcased a simple sensing environment at JIMTOF (Japan International Machine Tool Fair). &quot;Although we were able to create an environment where we could actually sense, the environment at that time wasn’t reliable enough for machine tools, and the connection was complicated due to the combination of multiple units, which made it difficult for wider deployment.”, says Mr. Kera.</p>\n<p>At that time, MACNICA, a development partner since early 2016, proposed “SENSPIDER” the sensor gateway &amp; edge computing terminal. “We were originally introduced to MACNICA by a department with which we had a relationship in the semiconductor business. We needed a partner who could help us develop a combination of new technologies like sensors and AI that we’d never worked with before, and we learned that MACNICA had just started offering one-stop solutions for Industrial IoT. As a partner with a high-level of technical knowledge and extensive knowledge and experience in the industry, they joined our project for JIMTOF,” says Mr. Nakaya.<br>\n</p>\n<p>The data loggers used so far are devices that simply collect data, but SENSPIDER is equipped not only with data logger functionalities but also with a “brain” that can analyze the data using an AI model in a compact form factor. “Since the analysis function can be built into the box, we thought that SENSPIDER could be incorporated into an automatic lathe in the future.”, says Mr. Nakaya. They also considered a PLC-based solution, but then decided on the Linux-based SENSPIDER because of its ease of use in handling software. During the actual testing, it was confirmed that the same data trends could be obtained as with the conventional data logger.<br>\n</p>\n<p>Ms. Ayami Misono from the same department performing the analysis says, “The previous system didn’t include an anti-aliasing filter, which is necessary for frequency analysis, and that made the analysis very difficult. We are so thankful we no longer have to worry about this because SENSPIDER can properly apply the low-pass filter required for data preprocessing. Considering the premise of incorporating it into the product, we also appreciated the cool appearance.” Mr. Kera also says, &quot; We eventually want to integrate the device into our product, and we felt that its practical size would also fit our needs.”<br>\n</p>\n<p>So, the decision was made to use MACNICA's newly developed SENSPIDER to create the new environment.<br>\n</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Improving the quality of its own manufacturing process",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>While considering to use SENSPIDER on its automatic lathes, CITIZEN MACHINERY currently uses SENSPIDER in its own manufacturing processes to improve its visibility, and many SENSPIDERs have been deployed in the production lines of domestic and overseas factories. In particular, the condition of the spindle bearing installed in the machine tool is visualized numerically, analyzed, and used for confirmation before initiating the next stage of production. “It used to take us a long time to understand the condition based on temperature and noise, but now we use SENSPIDER for visualization, which helps improve quality in the manufacturing process,&quot; assesses Mr. Daigo Nakahara from the same department. They’re also working to gradually expand the business to overseas locations.</p>\n<p>“With SENSPIDER’s vibration measurement, data can be collected properly and the Citizen machine tools are easy to use. The support is great. When we have questions, we get an answer quickly. The team even visits our site for troubleshooting,” says Mr. Nakahara.<br>\n</p>\n<p>The analysis software was developed in-house based on samples and manuals provided by MACNICA. The data collected via the vibration sensor is aggregated into SENSPIDER, which is currently connected to a PC to enable condition assessment using an AI approach based on statistical analysis methods. “Analyzing frequencies allows us to make reliable conclusions about abnormal parts. In the past, when there was a problem with abnormal noise, if the machine didn’t have a sensor system, the person in charge on site had to determine the situation based on years of experience and replace or reassemble parts to find the cause which took a lot of time. With the sensor system, it’s possible to quickly determine if the spindle isn’t balanced, if the bearings were assembled incorrectly, or if the bearings are wrong in the first place, and to quickly decide what to do about it,” says Ms. Misono. There have been many reports from the fields where the cause of unsolved problems are quickly identified with SENSPIDER.<br>\n</p>\n<p>When a problem occurs with a machine tool delivered to their customer, they install SENSPIDER on site and monitor the situation on a case-by-case basis, but in some cases the problem isn’t reproducible and occurs only every six months to a year. “With the web APIs implemented in SENSPIDER, it’s now possible to monitor data remotely. One of the benefits is that we’ve been able to expand the scope of customer support,” says Mr. Nakahara. The company offers a tool for monitoring machine operation called “alkart live 2”, but currently the focus is to display the operating data of the machine controller, not the mechanical data of the machine itself. “If we can visualize the mechanical data obtained from SENSPIDER, we can expand the scope of remote analysis technology and provide new value to our customers,” says Mr. Nakaya. It’s expected that in addition to the sale of machines, the range of new services that IoT technology will also expand.<br>\n</p>\n<p>As this was the first attempt for CITIZEN MACHINERY to work in the field of sensors and AI, they praised MACNICA for its generous support in creating new value. &quot;There were many things we didn't understand in our first challenge, including IoT, but the MACNICA team was very sincere in their response. We are grateful for the positive and quick response to any issues that came up,” says Mr. Kera.<br>\n</p>\n<p>In fact, during the SENSPIDER rollout, a unit experienced noise at one particular plant, and the team had difficulty solving the issue. “There was a level of electrical noise that made the vibration sensor inoperable, and it was difficult to find the cause. We asked MACNICA to come on site immediately, and after seeing the actual waveform, it was determined that the power supply was affecting the system, and the problem was successfully resolved. Normally, it would be difficult for us to get support if there was no problem with the product, but we are very grateful for the support in areas that other manufacturers don’t cover such as exploring the possibility of peripheral environments beyond sensors,” says Ms. Misono.<br>\n</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "What's next",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The team’s final goal is to make failure prediction by SENSPIDER a standard feature positioning it as new added-value to the company’s machine tools. Although the current focus is on vibration sensors, there are plans to use different sensors for different environments. “The scalability of SENSPIDER opens up a wide range of possibilities,&quot;&nbsp; Mr. Nakaya expects for the future. Also, the sensor technology is currently focused on spindle bearings, but it’s not the only moving parts. The team would like to consider applying it to as much elements as possible.</p>\n<p>In terms of usage, they want to use SENSPIDER for outsourcing management, which leads to quality improvement for partners, such as making the outsourced process visible in the same process as the visualization currently performed in the in-house manufacturing process. “At present, we are building software that allows analysis and assessment on a PC connected to SENSPIDER, but if it is difficult to make an assessment on site, we are preparing an environment where the collected data can be sent to us for detailed analysis,” says Mr. Kera. They’re also considering a service that goes to the customer's site and install sensors on the machine tools they provide, and performs a machine health check based on the measurement results. “The compact housing and simple wiring make on-site measurement easy at the user's site. While it’s relatively easy to find a broken object, the ability to perform high-level predictive detection for health checks is significant,” says Mr. Nakaya.<br>\n</p>\n<p>To meet the needs for remote monitoring, they hope to eventually create an environment where information stored by SENSPIDER can be automatically uploaded to the cloud via Wi-Fi. “It would be ideal if the collected data could be reviewed in the cloud. We’d be happy if we could check the status of our customers' machines from the day SENSPIDER is installed, even from remote locations, maybe using MACNICA's cloud platform,” says Mr. Nakaya. He expressed his enthusiasm for MACNICA not only for SENSPIDER product and service, but also for expectation on MACNICA's platform.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   }
+  }
+ }
+}

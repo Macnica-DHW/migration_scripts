@@ -1449,6 +1449,33 @@ do h2. **Armadilha de medição:** o `--antes` do `cmp_motor` tem de ficar AO
 LADO do `aem_layout.py`; fora dali não acha `fundo_cinza_paginas.txt` e acusa
 49 páginas "mudando" — exatamente a lista da R53, nada a ver com o patch.
 
+### R55 — `cardlist` vira `list`; `separator` vira o fio (`hr`)  *(`/technology`, `/services`)*
+
+**Onde:** 6 `cardlist` (cards de blog/notícia, quase todos `static`) e 20 `separator` em 3 páginas.
+**Regra:** `cardlist` -> o mesmo bloco do `productlisting` (`list` estática; sem `listFrom` o GWI lista os
+filhos de `rootPath`, e o driver materializa). `separator` -> bloco `hr`, com as regras R13/R40. Como na R12,
+o card perde data e descrição (o `list` só tem título). Item cujo alvo não existe no destino NÃO desenha.
+**Alcance:** 0 de 136 páginas de `/semiconductors` mudam.
+
+### R56 — `title` do GWI SEM texto próprio desenha o título da PÁGINA
+
+**Onde:** 5 de 19 páginas (`smartcity-mobility`, `imaging-and-vision`, `citizen-machinery-case-study`,
+`pathfinder-by-retrocausal`, `japan-innovation`): o h1 sumia. É como página de `base-page-content` ganha
+título — a structure desse template não tem (R6).
+**Causa:** o motor descartava `title` sem `jcr:title` como nó vazio. O JCR da origem não é a página da origem.
+**Regra:** sem NENHUMA propriedade de texto -> `title` sem `jcr:title` e sem `type` (o AEM desenha pageTitle,
+senão jcr:title, igual ao GWI). Continua bloco `title` para as regras de agrupamento. Só `&nbsp;`/espaço
+digitado continua sendo espaçador. **Alcance:** 0 de 136.
+
+### R57 — dentro do `imagetext`, o filho `image` é resíduo: o GWI só desenha o `resizableimage`
+
+**Onde:** `technology/imaging-and-vision`, 3 nós com `image` E `resizableimage` de arquivos DIFERENTES.
+Saíam duas fotos de 1280px empilhadas e o texto embaixo (página com 5.993px contra 3.450 no GWI), e uma das
+fotos o visitante do GWI nunca viu (`security-camera.jpg` no lugar da grade `icetana-sw-gui.jpg`).
+**Evidência:** no HTML renderizado do GWI o arquivo do filho `image` aparece 0 vezes; o do `resizableimage`, 1.
+**Regra:** havendo `resizableimage`, o filho `image` não entra (a R25 só cobria o MESMO arquivo). 0 de 136.
+**Lição repetida:** conteúdo conferia (faltando 0, sobrando 0); só o print mostrou.
+
 ---
 
 ## Aberto (achado na conferência visual, NÃO corrigido)

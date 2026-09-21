@@ -1,0 +1,28 @@
+{
+ "caminho": "/content/macnicaglobal2/americas/mai/en/technology/robotics-amrs",
+ "lido_em": "2026-09-21_175734",
+ "jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "admin",
+  "jcr:title": "Robotics & AMRs",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+  "jcr:created": "Thu Mar 05 2026 00:16:38 GMT+0000",
+  "cq:lastModified": "Tue Feb 17 2026 03:57:16 GMT+0000",
+  "sling:resourceType": "macnicaglobal2/components/page",
+  "cq:lastModifiedBy": "ohashi@yamato-ltd.com",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container"
+   }
+  }
+ }
+}

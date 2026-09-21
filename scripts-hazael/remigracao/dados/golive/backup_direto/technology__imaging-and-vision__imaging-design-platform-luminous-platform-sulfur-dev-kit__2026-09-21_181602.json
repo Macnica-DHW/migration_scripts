@@ -1,0 +1,175 @@
+{
+ "caminho": "/content/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/imaging-design-platform-luminous-platform-sulfur-dev-kit",
+ "lido_em": "2026-09-21_181602",
+ "jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Imaging Design Platform (Luminous Platform + Sulfur Dev Kit)",
+  "manufacturer": "mai:manufacturers/macnica-products",
+  "businessCategories": [
+   "mai:business-categories/imaging-vision-solutions"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Imaging Design Platform (Luminous Platform + Sulfur Dev Kit)",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 20:58:02 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 20:58:02 GMT+0000",
+  "jcr:description": "The Luminous image sensor board directly connects with the Sulfur board through a ribbon cable running SLVS-EC 3.0 protocol using Macnica’s SLVS-EC 3.0 Rx IP core inside the Agilex 5 FPGA. The reference design also integrates an video trimming block, HDMI 2.0 Tx IP core, and Nios V soft processor, in addition to the EMIF Control block to connect with external DDR4 bank as frame buffers, and the SPI bus master block to control the image sensor on the Luminous image sensor board.",
+  "keywords": "macnica, macnica products, imaging and vision, luminous evm, dev kit, sulfur",
+  "pageTitle": "Imaging Design Platform (Luminous Platform + Sulfur Dev Kit)",
+  "cq:tags": [
+   "mai:business-categories/imaging-vision-solutions"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Imaging Design Platform (Luminous Platform + Sulfur Dev Kit)",
+  "manufacturerlogo": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/broadcast-proav-solutions/logos/macnica-brand-logo-rgb-1.png",
+   "alt": "Macnica logo",
+   "sling:resourceType": "core/wcm/components/image/v3/image"
+  },
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "image_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/technology/imaging-and-vision/images/luminous-platform-macnica-sulfur-dev-kit.jpg",
+      "alt": "Luminous Platform + Macnica Sulfur Dev Kit",
+      "sling:resourceType": "macnicaglobal2/components/content/image",
+      "isDecorative": "false",
+      "altValueFromDAM": "false"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Macnica has created a reference design for imaging applications using Macnica Luminous Platform with Sony image sensors and Sulfur Dev Kit with Altera Agilex 5 FPGA.</p>\n<p>The Luminous image sensor board directly connects with the Sulfur board through a ribbon cable running SLVS-EC 3.1 protocol using Macnica’s SLVS-EC 3.1 Rx IP core inside the Agilex 5 FPGA. The reference design also integrates an video trimming block, HDMI 2.0 Tx IP core, and Nios V soft processor, in addition to the EMIF Control block to connect with external DDR4 bank as frame buffers, and the SPI bus master block to control the image sensor on the Luminous image sensor board.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Features",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Luminous Image Sensor EVM (IMX537 or IMX901)</li>\n<li>Sulfur Dev Kit</li>\n<li>SLVS-EC ribbon cable</li>\n<li>Reference design with:<ul>\n<li>SLVS-EC Rx IP core</li>\n<li>Trimming reference block</li>\n<li>HDMI 2.0 Tx IP core</li>\n<li>Nios V soft processor</li>\n<li>EMIF control block</li>\n<li>SPI bus master block</li>\n</ul>\n</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Luminous Platform",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/luminous-platform",
+         "linkTarget": "_self",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "",
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "SLVS-EC",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/products/ip-software/slvs-ec-3-rx-ip",
+         "linkTarget": "_self",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "",
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Sulfur Dev Kit",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/sulfur-som---carrier-board",
+         "linkTarget": "_self",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "",
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       }
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

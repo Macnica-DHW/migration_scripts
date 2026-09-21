@@ -1,0 +1,49 @@
+{
+ "caminho": "/content/macnicaglobal2/americas/mai/en/services",
+ "lido_em": "2026-09-21_175216",
+ "jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:mixinTypes": [
+   "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:title": "Electronics Design Services & Support",
+  "jcr:versionHistory": "8cd970ed-d0ed-48b5-9a54-d409fb0df178",
+  "pwaOrientation": "any",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+  "jcr:predecessors": [
+   "8bdc6a60-b607-471a-846f-1ed58145e8e3"
+  ],
+  "jcr:created": "Thu Mar 05 2026 00:16:38 GMT+0000",
+  "pwaDisplay": "standalone",
+  "cq:lastModified": "Tue Feb 17 2026 06:33:01 GMT+0000",
+  "pwaCachestrategy": "staleWhileRevalidate",
+  "jcr:baseVersion": "8bdc6a60-b607-471a-846f-1ed58145e8e3",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "1ad18616-aa46-462e-a919-a0d6e3218515",
+  "sling:resourceType": "macnicaglobal2/components/page",
+  "cq:lastModifiedBy": "ohashi@yamato-ltd.com",
+  "navTitle": "Services",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container"
+   }
+  },
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "ohashi@yamato-ltd.com",
+   "jcr:lastModified": "Tue Feb 17 2026 06:33:01 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "true"
+  }
+ }
+}
