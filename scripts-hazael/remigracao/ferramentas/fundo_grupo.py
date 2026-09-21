@@ -39,6 +39,11 @@ F7 = "rgb(247,247,247)"   # faixa padrão do corpus autoral
 EB = "rgb(235,235,235)"   # 2ª cor, quando dois grupos coloridos se encostam
 IGN = {"container", "flexcontainer", "flexcontaineritem", "responsivegrid"}
 
+# Nenhuma das 270 seções coloridas do global2 tem menos que 2 blocos, e a faixa
+# mais fina medida a 1400px tem 218px. Abaixo disso não é faixa, é tira.
+MIN_BLOCOS = 2
+PISO_FAIXA_PX = 200       # usado pelo conferidor (ferramentas/faixas.py)
+
 
 def blocos(no, saida):
     """Componentes-folha de uma seção, em ordem."""
@@ -109,7 +114,7 @@ def pintar(grupos):
     """Decide a cor de cada grupo. Devolve os grupos com a chave `cor`."""
     anterior = None
     for j, g in enumerate(grupos):
-        if j == 0 or g["papel"] in FECHO or g["nb"] < 2:
+        if j == 0 or g["papel"] in FECHO or g["nb"] < MIN_BLOCOS:
             g["cor"] = None
             anterior = None
             continue
@@ -119,6 +124,31 @@ def pintar(grupos):
     for j in range(1, len(grupos)):
         if grupos[j]["cor"] and grupos[j]["cor"] == grupos[j - 1]["cor"]:
             grupos[j]["cor"] = EB
+    return absorver_ilhas(grupos)
+
+
+def absorver_ilhas(grupos):
+    """Grupo pequeno demais para ser faixa também é pequeno demais para ser VÃO.
+
+    Medido a 1400px: a faixa mais fina de todo o global2 tem 218px, e nenhuma
+    fica abaixo de 200px. O índice de âncoras da `/ambarella` (1 bloco) ficava
+    branco entre duas faixas `#f7f7f7` e rendia uma tira de 126px — mais fina
+    que qualquer coisa da referência. Faixa fina é sintoma de cor errada
+    (diretriz do Hazael, 21/09/2026).
+
+    Mesma régua dos dois lados: `MIN_BLOCOS` já impede pintar grupo com menos
+    de 2 blocos (no global2 são 0 de 270); aqui ele também impede que um grupo
+    desses ABRA um vão. Se os dois vizinhos têm a mesma cor, a ilha some dentro
+    deles. Grupo grande entre duas faixas continua sendo vão legítimo — é o
+    `branco` de 685px da `sony-imx939`, que a referência tem e é para manter.
+    """
+    for j in range(1, len(grupos) - 1):
+        g, ant, prox = grupos[j], grupos[j - 1], grupos[j + 1]
+        if g["nb"] >= MIN_BLOCOS:
+            continue
+        if ant["cor"] is not None and ant["cor"] == prox["cor"] != g["cor"]:
+            g["cor"] = ant["cor"]
+            g["absorvido"] = True
     return grupos
 
 
