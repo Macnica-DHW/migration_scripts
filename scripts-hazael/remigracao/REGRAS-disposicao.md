@@ -1517,6 +1517,25 @@ painéis de `tabs`. **Regra:** dentro de um painel, o índice automático recebe
 a linha logo ABAIXO de uma linha cheia; agora a própria linha basta como evidência — colunas de mesma largura
 `w`, `12 % w == 0`, menos colunas que `12/w` e nenhum `offset`. 0 de 136 mudam; nas 19 do global2 só esta página.
 
+### R62 — logo de card de fornecedor: tamanho ÚNICO, resolvido no ARQUIVO  *(substitui o "limite conhecido" da R59)*
+
+**Exigência do Hazael (21/09/2026):** "The logos MUST be the same size." Eu tinha dito que só CSS resolvia,
+depois de ler SÓ a policy do `image` — cedo demais. O que foi conferido antes de decidir: a Anion não tem grade
+de fornecedor em lugar nenhum (sem precedente); o CSS do site só fixa forma de imagem em `cardlist`/`teaser`, e
+com `object-fit:cover` (CORTA o logo); "Expand to Fit Width" iguala só a largura (o TQ quadrado viraria 320x320).
+**O que o GWI faz (medido nos 22 cards):** `object-fit:contain` numa caixa de 147x120, centrada numa área de
+229x120 — Altera (arquivo de 1280px) e Renesas (180x30) saem os dois com 147 de largura no máximo.
+**Regra:** `direto.logo_uniforme` redesenha cada logo — inteiro, centrado, sem a margem transparente do arquivo —
+numa tela transparente única de 458x240 (2x; caixa útil 294x204) e sobe como `logos/card-<nome>.png` no DAM da
+página no global2. SVG é rasterizado pelo Chrome. Arquivos de dimensões idênticas renderizam idênticos: medido
+no navegador, 22 de 22 com 318x167. O GWI só é LIDO (GET da `original`). Só vale com `--alvo-global2`.
+**Armadilha:** `createasset` NÃO garante processamento — 8 dos 17 subiram e ficaram só com a `original` (imagem
+quebrada na página até o reprocess). O upload agora confere e reprocessa na hora (`Alvo.reprocessar`).
+**Custo:** são arquivos DERIVADOS — se um fornecedor trocar de logo, regenerar. A alternativa limpa é uma regra
+de CSS no site (`max-height` + `object-fit:contain` para imagem dentro de `flexcontaineritem`), do time do site.
+**Armadilha de ferramenta:** heredoc sem aspas (`<<EOF`) com crase no texto faz o shell EXECUTAR o que está entre
+crases — esta seção foi gravada mutilada na 1ª vez. Texto com crase vai por `<<'EOF'` ou pela ferramenta de edição.
+
 ---
 
 ## Aberto (achado na conferência visual, NÃO corrigido)

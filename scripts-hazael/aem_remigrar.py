@@ -153,7 +153,7 @@ _BANNER_RT = "macnicagwi/components/content/bannerimage"
 
 
 def materializar_supplierlists(session, base_url, auth, jcr, cache):
-    """`supplierlist` -> grade de logos com link e legenda (R59). Devolve quantos converteu.
+    """`supplierlist` -> grade de logos com link e legenda (R59). Devolve os logos dos cards.
 
     O GWI desenha, para cada página da lista (estática, na ordem de `pages`), um
     card: o `manufacturerlogo` da página LINKADA, o `navTitle` dela embaixo e o
@@ -201,10 +201,12 @@ def materializar_supplierlists(session, base_url, auth, jcr, cache):
             if not cards:
                 continue
             no[k] = {"jcr:primaryType": "nt:unstructured", "sling:resourceType": _RC_RT, **cards}
+            logos.update(c["logo"]["fileReference"] for c in cards.values())
             feitas += 1
 
+    logos = set()
     anda(jcr)
-    return feitas
+    return logos
 
 
 def titulo_do_asset(session, base_url, auth, ref, cache):
@@ -517,8 +519,27 @@ def main():
                            "pendencias": "", "detalhe": "sem jcr:content"})
             continue
 
-        materializar_supplierlists(session, args.base_url, auth, jcr, cache_dc)
+        logos_de_card = materializar_supplierlists(session, args.base_url, auth, jcr, cache_dc)
         page = AL.extract_tree(jcr, origem)
+
+        if alvo_g2 is not None:
+            # Duas variações do MESMO XF na origem (`master` e `master1`) caem na única que o
+            # global2 tem: o bloco de contato saía DUAS vezes na `st-2110-at-scale-resources`
+            # — o Hazael apagou a cópia à mão no editor (21/09/2026, 23:28 GMT). A 2ª ocorrência
+            # do mesmo alvo na página não é emitida.
+            vistos_xf = set()
+            for sec in page.sections:
+                for row in sec.rows:
+                    for col in row.columns:
+                        fica = []
+                        for blk in col.blocks:
+                            alvo_xf = blk.props.get("fragmentVariationPath") if blk.kind == "xf" else None
+                            if alvo_xf and alvo_xf in vistos_xf:
+                                continue
+                            if alvo_xf:
+                                vistos_xf.add(alvo_xf)
+                            fica.append(blk)
+                        col.blocks = fica
 
         # depende de rede: rótulo de download e related children/search
         aplicar_titulos_download(page, session, args.base_url, auth, cache_dc)
@@ -541,7 +562,10 @@ def main():
         copiador = None
         if alvo_g2 is not None:
             fam = DIR.familia_de(destino_de(origem), alvo_g2.secao)
-            copiador = lambda ref, _f=fam: alvo_g2.copiar_asset(ref, _f, args.executar)
+            # logo de card de fornecedor: versão de TAMANHO ÚNICO (ver direto.logo_uniforme, R62)
+            copiador = lambda ref, _f=fam, _l=logos_de_card: (
+                alvo_g2.logo_uniforme(ref, _f, args.executar) if ref in _l
+                else alvo_g2.copiar_asset(ref, _f, args.executar))
         falhas = copiar_assets(page, session, args.base_url, auth, cache_asset,
                                dry_run=not args.executar, copiador=copiador)
         for ref in falhas:

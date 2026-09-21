@@ -291,6 +291,117 @@ class Alvo:
         return destino
 
 
+    # ---------- logo de card: todos do MESMO tamanho
+    # O card de fornecedor do GWI encaixa (`object-fit:contain`) qualquer logo numa caixa de 147x120
+    # centrada numa área de 229x120 — medido nos 22 cards da `imaging-and-vision`. O `image` do global2
+    # não tem opção de tamanho e o CSS do site não tem "contain" para imagem solta (cardlist/teaser
+    # CORTAM com `cover`). Então a uniformidade vai no ARQUIVO: cada logo é redesenhado, centrado e
+    # inteiro, numa tela transparente de tamanho único (2x, para tela de alta densidade). Arquivos de
+    # dimensões idênticas renderizam idênticos. Exigência do Hazael em 21/09/2026 ("MUST be the same size").
+    TELA = (458, 240)
+    CAIXA = (294, 204)          # 18px de folga em cima e embaixo: a legenda fica colada na imagem
+
+    def _desenhar_logo(self, ref):
+        """PNG (bytes) do logo de `ref` encaixado na tela única. Só LÊ o GWI."""
+        import io
+        from PIL import Image
+        r = self.s.get(_url(ref + "/jcr:content/renditions/original"), timeout=120)
+        if r.status_code != 200 or not r.content:
+            return None
+        if ref.lower().endswith(".svg"):
+            from playwright.sync_api import sync_playwright
+            import base64
+            with sync_playwright() as pw:
+                nav = pw.chromium.launch(executable_path="/usr/bin/google-chrome",
+                                         args=["--no-sandbox", "--disable-dev-shm-usage"])
+                pg = nav.new_page(viewport={"width": self.CAIXA[0] * 2, "height": self.CAIXA[1] * 2})
+                uri = "data:image/svg+xml;base64," + base64.b64encode(r.content).decode()
+                pg.set_content(f'<html><body style="margin:0;background:transparent"><img id="l" src="{uri}" '
+                               f'style="width:{self.CAIXA[0] * 2}px;height:auto;display:block"></body></html>')
+                pg.wait_for_timeout(400)
+                bruto = pg.locator("#l").screenshot(omit_background=True)
+                nav.close()
+            logo = Image.open(io.BytesIO(bruto)).convert("RGBA")
+        else:
+            logo = Image.open(io.BytesIO(r.content)).convert("RGBA")
+        caixa = logo.getbbox()                              # tira a margem transparente do arquivo
+        if caixa:
+            logo = logo.crop(caixa)
+        f = min(self.CAIXA[0] / logo.width, self.CAIXA[1] / logo.height)
+        logo = logo.resize((max(1, round(logo.width * f)), max(1, round(logo.height * f))), Image.LANCZOS)
+        tela = Image.new("RGBA", self.TELA, (255, 255, 255, 0))
+        tela.paste(logo, ((self.TELA[0] - logo.width) // 2, (self.TELA[1] - logo.height) // 2), logo)
+        out = io.BytesIO()
+        tela.save(out, "PNG", optimize=True)
+        return out.getvalue()
+
+    def logo_uniforme(self, ref, familia, executar):
+        """ref do logo no GWI -> asset `card-<nome>.png` no DAM do global2 (criando se preciso)."""
+        ref = unquote(ref)
+        chave = "card:" + ref
+        if chave in self.assets:
+            return self.assets[chave]
+        base = nome_asset(ref.rsplit("/", 1)[-1]).rsplit(".", 1)[0]
+        destino = f"{self.dam}/{familia}/logos/card-{base}.png"
+        st, _j = self.ler(destino, ".0.json")
+        if st == 200:
+            if not self._nosso(destino):
+                aborta(f"já existe e não é nosso: {destino}")
+            self.assets[chave] = destino
+            return destino
+        if st != 404:
+            aborta(f"HTTP {st} ao conferir {destino}")
+        if not executar:
+            print(f"    [simulado] logo uniforme {ref.rsplit('/', 1)[-1]} -> {destino[len(DAM_MAI):]}")
+            self.assets[chave] = destino
+            return destino
+        png = self._desenhar_logo(ref)
+        if not png:
+            return None
+        pasta, nome = destino.rsplit("/", 1)
+        self._pasta(pasta, executar)
+        if "macnicagwi" in pasta or not pasta.startswith(self.dam + "/"):
+            aborta(f"upload fora do DAM da seção: {pasta}")
+        r = self.s.post(_url(pasta + ".createasset.html"), files={"file": (nome, png, "image/png")}, timeout=180)
+        self._registra("asset", f"logo uniforme de {ref}", destino, r.status_code)
+        if r.status_code not in (200, 201):
+            print(f"    [falha] upload do logo HTTP {r.status_code}: {destino}")
+            return None
+        # `createasset` NÃO garante o processamento: em 21/09/2026, 8 de 17 logos subiram e ficaram
+        # só com a `original` (imagem quebrada na página). Conferir e reprocessar NA HORA.
+        if self.reprocessar([destino], espera=180):
+            print(f"    [falha] o DAM não processou {destino}")
+            return None
+        self.assets[chave] = destino
+        return destino
+
+
+    def saudavel(self, asset):
+        """Processado de verdade? `dc:format` + mais que a `original` (o `.coreimg` de asset não
+        processado devolve 1 byte e a imagem sai quebrada — lição da cv75)."""
+        st, j = self.ler(asset + "/jcr:content", ".2.json")
+        md = (j or {}).get("metadata") or {}
+        rend = [k for k, v in ((j or {}).get("renditions") or {}).items() if isinstance(v, dict)]
+        return bool(md.get("dc:format")) and len(rend) > 1
+
+    def reprocessar(self, assets, espera=240):
+        """"Reprocess Assets" (POST em /bin/asynccommand) só para asset NOSSO, no DAM da seção."""
+        import time
+        pend = [a for a in assets if not self.saudavel(a)]
+        for a in pend:
+            if "macnicagwi" in a or not a.startswith(self.dam + "/") or not self._nosso(a):
+                aborta(f"só reprocesso asset que esta ferramenta criou: {a}")
+            r = self.s.post(BASE + "/bin/asynccommand", timeout=120, data={
+                "_charset_": "utf-8", "operation": "PROCESS", "description": "direto.py",
+                "profile-select": "full-process", "runPostProcess": "false", "asset": a})
+            self._registra("reprocess", None, a, r.status_code)
+        fim = time.time() + espera
+        while pend and time.time() < fim:
+            time.sleep(8)
+            pend = [a for a in pend if not self.saudavel(a)]
+        return pend                                        # o que continuou sem processar
+
+
 def familia_de(pagina_destino, secao):
     """Pasta do DAM: a página de 1º nível da seção; a landing da seção usa `common`."""
     rel = pagina_destino[len(f"{MAI}/{secao.strip('/')}"):].strip("/")
