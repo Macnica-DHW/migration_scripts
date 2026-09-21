@@ -128,7 +128,8 @@ S_TITLE_H3SIZE = "1718280237031"   # [3] Tamanho -> classe heading3
 S_FLEX_SP_1COL = "1719484596357"   # [1] Design SP: empilha abaixo de 1050px
 S_IMG_LEFT = "1726800547211"       # image [1] Display Position: Left (o padrão é Center)
 S_TWI_LEFT = "1718154328384"       # [0] imagem à esquerda
-S_TWI_VCENTER = "1783061491236"    # [Vertical Alignment] Center (`vert-center`)
+S_TWI_VCENTER = "1783061491236"    # [Vertical Alignment] Center (`vert-center`) — NÃO emitido desde a R47
+S_ANCHOR_SMALL = "1718861445028"   # anchorlink [1] Text Size: Small (`.text-small`, 1,2rem)
 S_TABLE_NOROUND = "1722939215525"  # [2] No Rounded Corner
 S_TABLE_BLACK = "1722937999485"    # [0] Color Scheme: Black (texto #4d4d4d)
 S_TABLE_NOBG = "1722858778108"     # [1] Header: No Background
@@ -1199,10 +1200,7 @@ def _coletar_blocos(node, caminho, page):
                           imagem_esquerda=(pos == "left"),
                           origem_midia="imagetext",
                           largura_px=img[0].props.get("largura_px"),
-                          dims=img[0].props.get("dims"),
-                          centro_vertical=str(node.get(
-                              "elementsPositionVerticalAlignCenter", ""
-                          )).lower() == "true")]
+                          dims=img[0].props.get("dims"))]
         if pos == "top" and img:
             # imagem primeiro, depois o resto, na ordem do documento
             return img + [b for b in filhos if b.kind != "image"]
@@ -2352,13 +2350,15 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
             payload[f"{base}/imageRatio"] = str(ratio)
         # padrão do componente é imagem à DIREITA (row-reverse); só carimba
         # quando a origem põe a imagem primeiro (174 de 179 casos autorais)
-        # `elementsPositionVerticalAlignCenter` do imagetext: o GWI centra o
-        # texto na altura da foto; sem o style ele sobe para o topo e sobra um
-        # buraco embaixo (`canon-li8030sa`: 0 em cima, 231px embaixo) (R34).
+        # Alinhamento pelo TOPO, sempre (R47, revoga a R34). A flag
+        # `elementsPositionVerticalAlignCenter` existe no JCR do imagetext mas
+        # o template do GWI a ignora: medido a 1400px nos 4 nós que a têm, o
+        # título fica a 11/-3/26/29px do topo da foto (centrado seria 64-106).
+        # Copiá-la centrava o texto onde a origem não centra — é a mesma
+        # classe de armadilha do `isText`/`isButton`/`isHeading`.
         # forma posicional: [Image Position, Text Wrapping, Vertical Alignment]
         _styles(payload, base, [
-            S_TWI_LEFT if b.props.get("imagem_esquerda") else "", "",
-            S_TWI_VCENTER if b.props.get("centro_vertical") else ""])
+            S_TWI_LEFT if b.props.get("imagem_esquerda") else "", "", ""])
         return True
 
     if k == "button":
@@ -2548,6 +2548,15 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         base = f"{pai}/{n}"
         payload[f"{base}/jcr:primaryType"] = "nt:unstructured"
         payload[f"{base}/sling:resourceType"] = RT["anchorlink"]
+        # Text Size Small (R48). O componente dá 1/3 da linha a cada pill
+        # (435px a 1400) com fonte 1,7rem e não estica os irmãos: rótulo de
+        # 38+ caracteres quebrava em duas linhas e saía um botão de 67px ao
+        # lado de dois de 42 (`/ambarella`, `/renesas`, a 1400 E 1366). Com
+        # `.text-small` (1,2rem) todos os pills medem 26px, uniformes, a 1400,
+        # 1366 e 1200. Estilo sancionado pela policy e usado por autor da
+        # Macnica em `/technology/Broadcast-ProAV-Solutions`. 【Columns】
+        # 4/5 pioram. forma posicional: [Columns, Text Size]
+        _styles(payload, base, ["", S_ANCHOR_SMALL])
         payload[f"{base}/anchor/jcr:primaryType"] = "nt:unstructured"
         for i, it in enumerate(itens):
             item = f"{base}/anchor/item{i}"
@@ -2732,15 +2741,24 @@ def _image_ratio(b, util_px):
     px = b.props.get("largura_px")
     dims = b.props.get("dims")
     origem = b.props.get("origem_midia")
-    if not px:
-        if origem == "imagetext":
-            # `dims[0]`: foto menor que isso sai no tamanho natural (256px
-            # na `altera-max-10`) — sem ele a coluna da imagem ficava com 36%
-            # e a foto encostada num canto dela
-            px = (min(GWI_IMAGETEXT_COL, dims[0],
-                      round(GWI_IMAGETEXT_MAX_H * dims[0] / dims[1]))
-                  if dims else round(GWI_IMAGETEXT_MAX_H * 1.5))
-        elif origem == "carousel":
+    if origem == "imagetext":
+        # O teto do GWI vale MESMO com `width` autoral no resizableimage (R46):
+        # `.cmp-image-text img{max-height:277px}` e a coluna de 480 cortam a
+        # foto na tela independente do que o autor digitou. Com `width=900` a
+        # largura autoral ganhava, 900/1310 dava 69%, clampava em 50 e o
+        # `!= 50` de quem chama não gravava nada — coluna de 50%, foto 655x437
+        # contra 480x277 no GWI, texto ao lado desalinhado da série inteira
+        # (`/ambarella` Low Power e Functional Safety; CVflow `width=510` saía
+        # 39 contra 37).
+        # `dims[0]`: foto menor que isso sai no tamanho natural (256px
+        # na `altera-max-10`) — sem ele a coluna da imagem ficava com 36%
+        # e a foto encostada num canto dela
+        teto = (min(GWI_IMAGETEXT_COL, dims[0],
+                    round(GWI_IMAGETEXT_MAX_H * dims[0] / dims[1]))
+                if dims else round(GWI_IMAGETEXT_MAX_H * 1.5))
+        px = min(px, teto) if px else teto
+    elif not px:
+        if origem == "carousel":
             px = min(GWI_CAROUSEL_PX, dims[0]) if dims else GWI_CAROUSEL_PX
         elif origem == "coluna":
             col = round(GWI_COLUNA_PX * (b.props.get("coluna_w") or 6) / 12) - 16

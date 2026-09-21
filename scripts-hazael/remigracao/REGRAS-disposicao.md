@@ -1220,6 +1220,58 @@ origem o tinha. URL pública com `/` final (`…/boards-modules/terasic/`,
   `namuga-vicon-lite` texto→índice 80 → 30 (GWI 16), índice→título 140 → 90
   (GWI 87); `/ambarella`.
 
+### R46 — `imagetext`: o teto do GWI vale MESMO com largura autoral
+
+**Onde:** `/ambarella`, "Why Choose Ambarella Products?": Low Power e
+Functional Safety saíam SEM `imageRatio` (coluna de 50%, foto 655×437) contra
+480×277 no GWI; CVflow com 39% (510px) contra 480. Os outros 4 pares da série,
+sem `width` autoral, saíam certos (36%). A série inteira parecia desalinhada
+— apontado pelo Hazael em 21/09/2026.
+**Causa:** o `resizableimage` desses três tem `width` autoral (900, 1024,
+510). `_image_ratio` dava prioridade a ela e só aplicava o teto de 480/277
+quando NÃO havia largura: 900/1310 = 69% clampava em 50 e o `!= 50` de quem
+chama não gravava nada. Mas o GWI corta a foto do imagetext no CSS
+(`.cmp-image-text img{max-height:277px}`) independente do `width`.
+**Regra:** para `origem_midia == "imagetext"`, `px = min(largura autoral,
+teto)`. 3 nós em 1 página. `i-chips-ip00c788` (38%) e `toppan-3d-tof` (42%)
+também estão acima do teto, por outra origem — o dry-run diz se mudam.
+
+### R47 — R34 revogada: o GWI NÃO renderiza `elementsPositionVerticalAlignCenter`
+
+**Onde:** os 4 `imagetext` com a flag (`/ambarella` Stereovision e Functional
+Safety; `canon-li8030sa` "One capture…" e "Sensor resolution…") saíam com o
+texto centrado na altura da foto (57–106px de recuo) enquanto os vizinhos
+ficavam no topo.
+**Causa:** medido no GWI a 1400px, o título desses 4 fica a 11 / −3 / 26 /
+29px do topo da foto — encostado em cima, nunca centrado (centrado seria
+64–106). A flag está no JCR da origem e o template da origem a ignora, como
+`isText`/`isButton`/`isHeading`. A R34 copiou uma flag que a origem não
+desenha; o "buraco embaixo" que a motivou era a foto 1,6x maior de antes da
+R36.
+**Regra:** não emitir o style Vertical Center (`1783061491236`). Topo em todos
+os pares, como o GWI. 4 nós em 2 páginas.
+
+### R48 — índice de âncoras leva Text Size Small
+
+**Onde:** `/ambarella` "Key Features of Ambarella SoC Products" (38
+caracteres) e `/renesas` "Renesas Automotive Microcontrollers/Processors" (46)
+quebravam em duas linhas dentro do pill a 1400 E a 1366px: um botão de 67px ao
+lado de dois de 42. O GWI desenha o índice como lista de links em texto
+corrido e nunca tem esse problema.
+**Causa:** o `anchorlink` dá 1/3 da linha a cada item (`calc(33.3% − 15px)` =
+435px a 1400) com fonte 1,7rem, e o `align-items` não estica os irmãos. O
+diálogo não tem opção; a policy "MACNICA GLOBAL2 - Anchor Link" tem 【Text
+Size】Small (`.text-small`, 1,2rem) e 【Columns】4/5/10.
+**Regra:** todo `anchorlink` sai com `cq:styleIds=['', '1718861445028']`
+(posicional: [Columns, Text Size]). Medido com a classe aplicada no navegador:
+todos os pills a 26px, uniformes, nas duas páginas a 1400, 1366 e 1200 (única
+sobra: o rótulo de 46 caracteres a 1200px, fora do escopo). 【Columns】4/5
+pioram — menos largura por item. Autor da Macnica já usa o estilo em
+`/technology/Broadcast-ProAV-Solutions`. 12 nós em 12 páginas.
+**Armadilha de medição:** o pill tem `transition:.3s`. Ler a fonte ou a altura
+logo depois de trocar a classe devolve o valor ANTIGO — a primeira rodada
+concluiu "o estilo não faz nada". Esperar 400ms antes de medir.
+
 ### Revisão adversarial do patch (antes de gravar)
 
 Três lentes offline (extração, ritmo, HTML/links) + um verificador por achado:
