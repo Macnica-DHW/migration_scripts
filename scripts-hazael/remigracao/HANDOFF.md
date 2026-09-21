@@ -55,6 +55,16 @@ arquivo, `previa_fundo.py`, regravar a página, `faixas.py`.
    (quebra no go-live). Botões dos XFs ainda linkam para `/content/macnicagwi/...`. XFs com
    resourceType `page` em vez de `xfpage`. Abaixo de 1050px o 1º botão do products-contact-block
    encosta à direita (efeito do `--par-ao-centro`; fora do escopo de 1400, mas visível).
+   **Links — censo AO VIVO feito em 21/09 pela sessão 7a (só leitura, `ce134d4`):**
+   `ferramentas/censo_links.py` + `censo_links_alvos.py`, saída em `dados/links/`. 136 páginas + 4 XFs,
+   810 refs, nenhuma quebrada HOJE. Fora do global2: 139 `pages` de `list` (R5, proposital), 111 refs
+   aos 4 XFs da copia-teste, 325 ao DAM copia-teste, 33 ao DAM do GWI (7 páginas), 3 `linkURL` dos XFs.
+   Dos 106 alvos global2 distintos, 8 a cópia NÃO cria — e trocar o prefixo não basta: `/contact/form`
+   → no global2 é `/contact-us`; `europe/atd-europe` → `eu/atd-europe`; sony aninhada em
+   `/sony/sony-image-sensors/`; `ip-software` sem filhos. **`canon` e `design-gateway` JÁ EXISTEM no
+   global2** (saichand, 18 e 21/09, construção independente — sem XF, DAM do global2): a cópia colide.
+   Decisões pendentes dele: destino no DAM, XFs (recriar ou botão inline), as 2 páginas de `ip-software`.
+   Memórias: `links-global2-troca-de-prefixo-nao-basta`, `global2-ja-tem-familias-do-saichand`.
 6. Tamanho das páginas (`dados/tamanho_paginas_2026-09-21.json`): 25 grandes, 14 médias, 17 "longas
    mas simples" (i-chips: uma lista de specs de 2300px, fiel ao GWI), 79 pequenas — ele disse que
    ia "direcionar tarefas" para as grandes; só veio a do fundo até agora.
