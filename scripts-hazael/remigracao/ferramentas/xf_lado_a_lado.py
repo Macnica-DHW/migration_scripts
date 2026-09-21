@@ -26,6 +26,13 @@ no GWI. Botão em coluna leva ['', Fixed Minimum Width, Center]: o padrão do
 link-button é min-width 550px e dois não cabem lado a lado abaixo de ~1200px.
 Propriedades dos componentes copiadas 1:1.
 
+`--par-ao-centro` (só para XF de 1 botão por coluna): com Center em cada
+coluna os botões ficam no meio de cada METADE da página, 317px um do outro
+@1400; no GWI o par fica junto no centro (vão de 81px). A flag põe o 1º
+botão Right, o último sem posição (= esquerda) e o gap Large (50px): medido
+277–675 | 725–1070, vão centrado em x=700. Funciona também sobre um XF que
+já tem o flexcontainer (só regrava os cq:styleIds).
+
 ATENÇÃO: os dois XFs foram criados e editados à mão por bruno.jaques
 (10/09 e 15/09/2026). Backup do jcr:content inteiro antes de gravar
 (scripts-hazael/xf_<nome>_backup_<data>.json). Escreve só dentro de
@@ -34,7 +41,7 @@ páginas-alvo não existem na copia-teste) nem no resourceType da página
 (`page` em vez de `xfpage` — item separado).
 
     python3 xf_lado_a_lado.py products-contact-block                 # dry-run
-    python3 xf_lado_a_lado.py products-contact-block --executar
+    python3 xf_lado_a_lado.py products-contact-block --par-ao-centro --executar
     python3 xf_lado_a_lado.py signup-and-contact-experience-fragment --colunas 2 --executar
 """
 import argparse
@@ -57,7 +64,26 @@ RT = {
 S_FLEX_SP_1COL = "1719484596357"
 S_BTN_FIXEDMIN = "1722936853890"
 S_BTN_CENTER = "1717669229626"
+S_BTN_RIGHT = "1717669230937"
+S_FLEX_GAP_LARGE = "1718800456497"       # --gap 50px (padrão 26px)
 INVOLUCROS = {"container", "responsivegrid"}
+
+
+def par_ao_centro(cp):
+    """Payload que junta o par de botões no CENTRO DA PÁGINA, como no GWI (lá: 376–701 | 782–1026,
+    vão de 81px). Com Center em cada coluna os botões ficam no meio de cada metade, com 317px de
+    vão @1400. Aqui: botão da 1ª coluna Right, o da última sem posição (= esquerda), gap Large."""
+    flex = cp.get("flexcontainer", {})
+    itens = [k for k, v in flex.items() if isinstance(v, dict) and rt(v) == "flexcontaineritem"]
+    payload = {"flexcontainer/cq:styleIds": [S_FLEX_GAP_LARGE, S_FLEX_SP_1COL],
+               "flexcontainer/cq:styleIds@TypeHint": "String[]"}
+    for item, estilos in ((itens[0], ["", S_BTN_FIXEDMIN, S_BTN_RIGHT]), (itens[-1], ["", S_BTN_FIXEDMIN])):
+        for ck, cv in flex[item].items():
+            if isinstance(cv, dict) and rt(cv) == "button":
+                payload[f"flexcontainer/{item}/{ck}/cq:styleIds"] = estilos
+                payload[f"flexcontainer/{item}/{ck}/cq:styleIds@TypeHint"] = "String[]"
+                print(f"    {item}/{ck}: cq:styleIds {cv.get('cq:styleIds')} -> {estilos}")
+    return payload
 
 
 def rt(no):
@@ -92,6 +118,9 @@ def main():
     ap.add_argument("xf", help="nome do XF sob .../site, ex: products-contact-block")
     ap.add_argument("--colunas", type=int, default=2)
     ap.add_argument("--executar", action="store_true")
+    ap.add_argument("--par-ao-centro", action="store_true",
+                    help="junta o par de botões no centro da página (Right | esquerda, gap Large); "
+                         "vale também para um XF que já tem o flexcontainer")
     args = ap.parse_args()
 
     sessao, auth = build_session()
@@ -107,13 +136,31 @@ def main():
     if not isinstance(cp, dict):
         print("[erro] sem root/containerpy — estrutura diferente da esperada; nada feito")
         sys.exit(1)
+
+    def gravar(payload):
+        bk = _RAIZ / "scripts-hazael" / f"xf_{args.xf}_backup_{datetime.datetime.now():%Y-%m-%d_%H%M%S}.json"
+        json.dump({"quando": datetime.datetime.now().isoformat(), "xf": xf, "jcr_content": jcr},
+                  open(bk, "w"), indent=1)
+        print(f"  backup -> {bk}")
+        st, txt = post_node(sessao, base_url, f"{xf}/jcr:content/root/containerpy", payload, auth)
+        print(f"  [gravado] HTTP {st}" if st in (200, 201) else f"  [FALHA] HTTP {st} {txt[:150]}")
+        return st in (200, 201)
+
     wraps = [(k, v) for k, v in cp.items()
              if isinstance(v, dict) and k != "cq:responsive" and rt(v) in INVOLUCROS]
+    if "flexcontainer" in cp:
+        if not args.par_ao_centro:
+            print("  já existe um flexcontainer em containerpy — nada a fazer (idempotente)")
+            return
+        print("\n  flexcontainer já existe; só os estilos do par:")
+        payload = par_ao_centro(cp)
+        if not args.executar:
+            print("  [dry-run] nada gravado. Use --executar.")
+            return
+        gravar(payload)
+        return
     if not wraps:
         print("  já não há _wrap em containerpy — nada a fazer")
-        return
-    if "flexcontainer" in cp:
-        print("  já existe um flexcontainer em containerpy — nada a fazer (idempotente)")
         return
     n = args.colunas
     if len(wraps) % n:
@@ -142,12 +189,10 @@ def main():
         print("  [dry-run] nada gravado. Use --executar.")
         return
 
-    bk = _RAIZ / "scripts-hazael" / f"xf_{args.xf}_backup_{datetime.date.today():%Y-%m-%d}.json"
-    json.dump({"quando": datetime.datetime.now().isoformat(), "xf": xf, "jcr_content": jcr},
-              open(bk, "w"), indent=1)
-    print(f"  backup -> {bk}")
-    st, txt = post_node(sessao, base_url, f"{xf}/jcr:content/root/containerpy", payload, auth)
-    print(f"  [gravado] HTTP {st}" if st in (200, 201) else f"  [FALHA] HTTP {st} {txt[:150]}")
+    if gravar(payload) and args.par_ao_centro:
+        jcr, st = get_json(sessao, f"{base_url}{xf}/jcr:content.infinity.json", auth)
+        print("\n  estilos do par:")
+        gravar(par_ao_centro(jcr["root"]["containerpy"]))
 
 
 if __name__ == "__main__":
