@@ -1308,6 +1308,17 @@ def _quebrar_em_subsecoes(blocos, caminho):
             # da série; colado, a série saía 22/71/71/71/71 (R38, 6 páginas).
             if b.props.get("espaco_antes") and _nivel(b) > _nivel(atual[-1]):
                 abre = True
+            # …e o espelho disso: espaçador e o de baixo é de nível MAIOR (h4,
+            # espaçador, h2). Título não é subtítulo de um menor que ele: o h4
+            # "This reduces regulatory risk…" da `macnica-cv75` é a FRASE DE
+            # FECHO da seção de cima (GWI: 25px dela, 56px do h2 seguinte) e
+            # saía a 89px dela e COLADO no h2 "Why UAV…", lendo como subtítulo
+            # da seção errada. O h2 abre subseção e o que ficou para trás é
+            # marcado `fecho`: `_emitir_secao` o põe no container de cima (R54).
+            elif b.props.get("espaco_antes") and _nivel(b) < _nivel(atual[-1]):
+                abre = True
+                for x in atual:
+                    x.props["fecho"] = True
         # Texto que o autor do GWI fechou com `<p>&nbsp;</p>` antes de uma
         # imagem (ou abriu com ele depois dela): o respiro era essa linha em
         # branco, que `strip_empty_blocks` apaga — e entre irmãos o gap é 0. A
@@ -1502,6 +1513,8 @@ def _titulo_com_colunas(linhas):
         # heading sumia do payload em silêncio (revisão adversarial do lote 10).
         if (ant is not None and r.kind == "columns" and ant.kind == "single"
                 and not r.cabecalho and not ant.cabecalho and ant.blocks
+                # frase de fecho (R54) fecha a seção de CIMA: não apresenta nada
+                and not any(b.props.get("fecho") for b in ant.blocks)
                 and (all(b.kind == "title" for b in ant.blocks)
                      or _frase_apresenta_botoes(ant, r))):
             r.cabecalho = ant.blocks
@@ -3075,6 +3088,15 @@ def _emitir_secao(payload, slot, nomes, s, page, link_de, link_para):
                     and all(b.kind == "text" for b in r.blocks)
                     and not r.blocks[0].props.get("espaco_antes")
                     and _tentar_textwithimage(ant) is not None):
+                _emitir_linha(payload, sub, nomes, r, page, link_de, link_para)
+                ant = None
+                continue
+            # A frase de FECHO (título de nível menor que o título que vem
+            # depois do espaçador) anda no sub-container da subseção que ela
+            # fecha — sem espaçador ANTES dela na origem, como na R42 (R54).
+            if (sub is not None and r.kind == "single" and not r.cabecalho
+                    and r.blocks and all(b.props.get("fecho") for b in r.blocks)
+                    and not r.blocks[0].props.get("espaco_antes")):
                 _emitir_linha(payload, sub, nomes, r, page, link_de, link_para)
                 ant = None
                 continue

@@ -12,6 +12,7 @@ um +/- grande costuma ser só deslocamento — olhe o resumo primeiro.
 
 COMO RODAR (de scripts-hazael/)
   python3 remigracao/ferramentas/diff_payload.py /altera /canon /
+  python3 remigracao/ferramentas/diff_payload.py --origem <raiz GWI> --destino <raiz copia-teste> /macnica-cv75
 """
 import json, re
 import sys
@@ -72,6 +73,12 @@ def resumo(flat):
 
 def main():
     rels = sys.argv[1:]
+    # outra família: --origem <raiz no GWI> --destino <raiz na copia-teste>
+    for flag, attr in (("--origem", "GWI_ROOT"), ("--destino", "DEST_ROOT")):
+        if flag in rels:
+            i = rels.index(flag)
+            setattr(R, attr, rels[i + 1].rstrip("/"))
+            del rels[i:i + 2]
     session, auth = build_session(verbose=False)
     base_url = CONFIG["base_url"]
     cache_dc, cache_asset = {}, set()   # set: ensure_dam_folder faz cache.add()

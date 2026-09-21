@@ -1,0 +1,463 @@
+{
+ "caminho": "/content/copia-teste/americas/mai/en/products/macnica-products/macnica-cv75",
+ "lido_em": "2026-09-21",
+ "pagina": {
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:created": "Fri Sep 11 2026 12:52:45 GMT+0000",
+  "jcr:content": {
+   "jcr:primaryType": "cq:PageContent",
+   "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+   "jcr:title": "CV75 SoM | Edge AI Vision for UAV/UAS and Robotics",
+   "manufacturer": "mai:manufacturers/macnica-products",
+   "businessCategories": "mai:business-categories/imaging-vision-solutions",
+   "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+   "jcr:created": "Fri Sep 11 2026 12:52:45 GMT+0000",
+   "cq:lastModified": "Mon Sep 21 2026 17:19:23 GMT+0000",
+   "jcr:description": "The iENSO CV75 embedded vision platform delivers edge AI and onboard inference for autonomous UAV/UAS systems, ready to deploy from eval to production.",
+   "keywords": "CV75 SoM, CV75 System-on-Module, Macnica Americas, edge AI vision, Ambarella CV75, UAV vision module, UAS perception system, robotics vision SoM, AMR edge AI, embedded vision platform, obstacle avoidance AI, 4K video encoding SoC, onboard AI inference, NDAA compliant drone, autonomous perception, CVflow AI engine, 5nm vision SoC, EVPaaS framework, AI accelerator drone, real time edge AI",
+   "hideInNav": "true",
+   "pageTitle": "iENSO CV75 - Embedded Vision & Edge AI Platform | Macnica Americas",
+   "cq:tags": "mai:business-categories/imaging-vision-solutions",
+   "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+   "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+   "navTitle": "iENSO CV75 - Embedded Vision & Edge AI Platform | Macnica Americas",
+   "root": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "wcm/foundation/components/responsivegrid",
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "container_imagem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498056876"
+      ],
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/europe/atd-europe/public/en/images/solutions/ienso-cv75.png",
+       "imageRatio": "40",
+       "alt": "Extend UAV/UAS Flight Times, Enable Robotics Perception, and Deploy Real-Time AI at the Edge",
+       "text": "<h1>iENSO CV75 - Embedded Vision & Edge AI Platform | Macnica Americas</h1>\n<p>The iENSO CV75 embedded vision platform delivers edge AI and onboard inference for autonomous UAV/UAS systems, ready to deploy from eval to production.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "1783061491236"
+       ],
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       },
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/copia-teste/europe/atd-europe/public/en/images/solutions/ienso-cv75.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      }
+     },
+     "heading_1_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Advancing Autonomous Systems with Intelligent Edge Perception",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      }
+     },
+     "section_1_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Extend UAV/UAS Flight Times, Enable Robotics Perception, and Deploy Real-Time AI at the Edge",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Drones, robotics platforms and Physical AI systems increasingly depend on onboard vision to support navigation, inspection, tracking, obstacle avoidance, and autonomous decision-making. These functions must operate under strict power, thermal, and latency constraints while remaining reliable in production environments.</p>\r\n<p>&nbsp;</p>\r\n<p>The <b>iENSO CV75 platform</b>, created in collaboration with <b>Macnica</b>, is designed to support these requirements through a consolidated embedded vision architecture built for Unmanned Aerial Vehicle (UAV), Unmanned Aerial Systems (UAS), robotics, Autonomous Mobile Robots (AMRs), and other edge AI perception systems.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request Evaluation Kit",
+       "linkURL": "/content/macnicagwi/americas/mai/en/contact/request-evaluation-kit",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button"
+      }
+     },
+     "section_2_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Common Challenges in Autonomous Vision Development",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>UAV/UAS and robotics manufacturers often face a difficult trade-off between advanced computer vision capabilities and the rigid constraints of embedded hardware. Integrating artificial intelligence requires discrete accelerators or GPU-based compute that can increase payload weight, board complexity, power consumption, and generate significant heat.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>These limitations can force developers to rely on cloud-based processing, which introduces unacceptable latency, bandwidth dependency, and raises privacy and data-sovereignty concerns. For autonomous systems, vision and AI workloads often need to run directly on the device, close to the image sensor. These constraints also apply to security, access control, machine vision, mobile vision, smart city, and consumer IoT systems that require real-time edge perception.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "heading_4_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_4": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "CV75 System-on-Module (SoM): A Unified Architecture for Edge AI Vision",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      }
+     },
+     "textwithimage_1_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/macnica-cv75.jpg",
+       "imageRatio": "40",
+       "alt": "System-on-Module (SoM)",
+       "text": "<p>The CV75 SoM addresses the integration and performance challenges common in embedded vision systems. Powered by the Ambarella CV75 System-on-Chip (SoC), the module consolidates image signal processing, 4K video encoding, CPU processing, and dedicated AI acceleration into a single 5nm architecture optimized for edge AI vision workloads.</p>\r\n<p>&nbsp;</p>\r\n<p>This unified design provides the performance required for aerial perception, robot navigation, object tracking, visual inspection, scene understanding, and situational awareness while maintaining the power and thermal efficiency required for compact autonomous systems.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384"
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/macnica-cv75.jpg",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      }
+     },
+     "text_3_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "text_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\r\n<li><b>Maximize Power Efficiency:</b> Built on Ambarella’s 5nm CMOS process, the CV75 delivers industry-leading performance per watt, helping extend drone flight time and mobile robot runtime, minimizing battery drain during operations.</li>\r\n</ul>\r\n<ul>\r\n<li><b>Enable Real-Time Decisions:</b> Process complex AI models directly on the device for obstacle avoidance, navigation, tracking, inspection, and perception, eliminating the latency of cloud connectivity.</li>\r\n</ul>\r\n<ul>\r\n<li><b>Compact Integration:</b> A complete embedded vision system including ISP, encoder, and AI acceleration in a small form factor (77mm x 77mm or 85mm x 85mm)</li>\r\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "section_3_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why Autonomous Systems Developers Select the CV75 SoM",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The CV75 platform is selected when program priorities include:</p>\r\n<ul>\r\n<li>Reducing architectural complexity instead of adding discrete AI accelerators</li>\r\n<li>Maintaining predictable performance, power, and thermal behavior across drone, robotics, and AMR operating conditions</li>\r\n<li>Running vision and AI workloads directly on the device, close to the image sensor</li>\r\n<li>Delivering reliable vision performance in low-light and challenging lighting conditions</li>\r\n<li>Supporting real-time perception for navigation, tracking, inspection, obstacle avoidance, and situational awareness</li>\r\n<li>Shortening time between evaluation and production readiness</li>\r\n<li>Deploying an embedded platform optimized for edge AI vision workloads</li>\r\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "section_4_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Compliance-Ready for Regulated Autonomous Systems",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Compliance requirements such as EAR, NDAA, and TAA are often identified late in development, after hardware decisions are difficult and costly to change.</p>\r\n<p>&nbsp;</p>\r\n<p>The iENSP CV75 platform is designed to support compliance-aligned UAV/UAS systems through controlled component selection, vetted imaging components, and manufacturing processes suitable for regulated programs</p>\r\n<p>&nbsp;</p>\r\n<p>Built on the Ambarella CV75 SoC and an embedded vision architecture designed for production deployment, the platform enables manufacturers to address regulatory considerations earlier in the design cycle without re-architecting the vision stack later in the program.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/associations/ear-ndaa-taa-compliant-badge.jpg",
+       "alt": "EAR/NDAA/TAA-Compliant badge",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     },
+     "heading_7_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_7": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "This reduces regulatory risk and simplifies qualification for government, public safety, infrastructure, industrial, and enterprise deployments.",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      }
+     },
+     "section_5_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why UAV, Robotics, and Physical AI Developers Select the CV75 SoM",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The CV75 platform is selected when program priorities include:</p>\r\n<ul>\r\n<li>Reducing architectural complexity instead of adding discrete accelerators</li>\r\n<li>Maintaining predictable performance, power, and thermal behavior</li>\r\n<li>Running AI models directly on the device with low latency</li>\r\n<li>Delivering reliable vision performance in low-light and challenging lighting conditions</li>\r\n<li>Supporting compact autonomous systems with strict size and weight limits</li>\r\n<li>Shortening time between evaluation and production readiness</li>\r\n<li>Deploying an embedded platform optimized for vision workloads</li>\r\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "section_6_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "From Prototype to Production",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The CV75 platform is designed to support a structured and repeatable development path for autonomous vision systems, reducing integration risk and maintaining continuity from evaluation through deployment.</p>\r\n<p>&nbsp;</p>\r\n<p><b>The platform enables this through:</b></p>\r\n<ul>\r\n<li>Evaluation kits for early validation of image quality, AI performance, and end-to-end latency</li>\r\n<li>A consistent SoM architecture used across engineering validation test (EVT), design validation test (DVT), and production phases</li>\r\n<li>Customization options for image sensors, optics, firmware, and mechanical integration</li>\r\n<li>A stable operating environment optimized for the Ambarella CV75 SoC</li>\r\n<li>SDKs and tools for application development, AI model deployment, and software updates</li>\r\n<li>A clear path from evaluation hardware to production systems supported by the Embedded Vision Platform as a Service <b>(</b>EVPaaS) framework</li>\r\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "section_7_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Autonomous System Types Supported by the CV75 SoM Platform",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The CV75 platform is designed for commercial and industrial systems that require onboard vision and edge AI before data transmission.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Typical applications include:</b></p>\r\n<ul>\r\n<li>UAV/UAS platforms for inspection, mapping, surveying, tracking, and navigation</li>\r\n<li>Robotics platforms requiring perception, localization, object detection, and situational awareness</li>\r\n<li>AMRs used in warehouses, factories, logistics, and commercial environments</li>\r\n<li>Physical AI systems that combine vision, compute, and real-world action</li>\r\n<li>Machine vision systems for inspection, metrology, and guidance</li>\r\n<li>Embedded vision systems for security, access control, mobile vision, smart city, and consumer IoT applications</li>\r\n</ul>\r\n<p>The architecture is suitable for both single-camera and multi-sensor configurations.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "section_8_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Customization Services",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>iENSO and Macnica provide customization services to adapt the CV75 platform to specific application and system requirements. These services support programs that require more than a reference design while maintaining a clear path to production.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Customization options include:</b></p>\r\n<ul>\r\n<li>Image sensor and optics selection based on performance and environmental requirements</li>\r\n<li>Firmware and software feature customization, including AI model integration</li>\r\n<li>ISP tuning for application-specific image quality</li>\r\n<li>Mechanical and form factor adaptation for payloads, enclosures, terminals, or robot platforms</li>\r\n<li>System-level optimization for power, thermal, and interface requirements</li>\r\n</ul>\r\n<p>These services enable customers to deploy application-specific vision systems without rebuilding core platform infrastructure, reducing development risk and supporting scalable production.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "section_9_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "heading_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Next Steps",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Evaluation kits are available to assess image quality, video performance, edge AI behavior, latency, and power consumption under real operating conditions. Technical discussions can be scheduled to review system requirements and platform suitability.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request Evaluation Kit",
+       "linkURL": "/content/macnicagwi/americas/mai/en/contact/form",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button"
+      }
+     },
+     "tabs_1_wrap": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498052331"
+      ],
+      "tabs_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/tabs",
+       "item_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Technical Specifications",
+        "layout": "responsiveGrid",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "table_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<table width=\"100%\" cellpadding=\"1\" cellspacing=\"0\" border=\"1\">\r\n<tbody><tr><th>Specification</th>\r\n<th>CV75S55m SoM</th>\r\n<th>CV75S88 SoM</th>\r\n</tr><tr><td width=\"33%\">Ambarella SoC</td>\r\n<td width=\"33%\">CV75S55m</td>\r\n<td width=\"33%\">CV75S88</td>\r\n</tr><tr><td width=\"33%\">CPU Architecture</td>\r\n<td width=\"33%\">Dual Arm Cortex-A76 + Arm Cortex-M3</td>\r\n<td width=\"33%\">Dual Arm Cortex-A76 + Arm Cortex-M3</td>\r\n</tr><tr><td width=\"33%\">AI Compute Performance</td>\r\n<td width=\"33%\">~4 eTOPS</td>\r\n<td width=\"33%\">~6 eTOPS</td>\r\n</tr><tr><td width=\"33%\">Vision Processor</td>\r\n<td colspan=\"2\" width=\"450\">CVflow AI Engine</td>\r\n</tr><tr><td width=\"33%\">Supported AI Models</td>\r\n<td colspan=\"2\" width=\"450\">CNNs and transformer-based models</td>\r\n</tr><tr><td width=\"33%\">Video Encoding</td>\r\n<td colspan=\"2\" width=\"450\">4Kp30+ H.264 / H.265</td>\r\n</tr><tr><td width=\"33%\">Physical Image Sensor Inputs*</td>\r\n<td width=\"33%\">1</td>\r\n<td width=\"33%\">2</td>\r\n</tr><tr><td width=\"33%\">EVK Image Sensor</td>\r\n<td width=\"33%\">Sony IMX664, 4 MP, 1/1.8”</td>\r\n<td width=\"33%\">Sony IMX678, 8 MP, 1/1.8”</td>\r\n</tr><tr><td width=\"33%\">DRAM</td>\r\n<td width=\"33%\">16 Gb LPDDR4x, 16-bit</td>\r\n<td width=\"33%\">32 Gb LPDDR5, 32-bit</td>\r\n</tr><tr><td width=\"33%\">eMMC Support</td>\r\n<td width=\"33%\">No</td>\r\n<td width=\"33%\">Yes</td>\r\n</tr><tr><td width=\"33%\">Power Consumption<br>\r\n(SoC only)</td>\r\n<td width=\"33%\">&lt; 1.5 W</td>\r\n<td width=\"33%\">&lt; 2.5 W</td>\r\n</tr><tr><td width=\"33%\">Wi-Fi/BLE Module</td>\r\n<td colspan=\"2\" width=\"450\">Azurewave AW-AM617 based on Infineon CYW43022</td>\r\n</tr><tr><td width=\"33%\">Main Board Size</td>\r\n<td width=\"33%\">77 × 77 mm</td>\r\n<td width=\"33%\">85 × 85 mm</td>\r\n</tr><tr><td width=\"33%\">Target Applications</td>\r\n<td><p>Lightweight payloads, compact robotics, navigation, obstacle avoidance</p>\r\n</td>\r\n<td width=\"33%\">Advanced perception, tracking, multi-sensor systems, robotics, AMRs, and edge AI vision</td>\r\n</tr></tbody></table>\r\n<p><br>\r\n*Both SoM variants can support additional sensor configurations depending on system design.</p>\r\n",
+         "sling:resourceType": "macnicaglobal2/components/content/table",
+         "textIsRich": "true"
+        },
+        "button_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Request a Quote",
+         "linkURL": "/content/macnicagwi/americas/mai/en/contact/form",
+         "linkTarget": "_self",
+         "sling:resourceType": "macnicaglobal2/components/content/button"
+        }
+       },
+       "item_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "FAQs",
+        "layout": "responsiveGrid",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "heading_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Why use an integrated vision SoC instead of an AI accelerator plus host processor?",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>An integrated vision SoC reduces system complexity by combining image signal processing, video encoding, CPU processing, and AI acceleration in a single device. This approach lowers power consumption, simplifies board design, and reduces integration effort compared to architectures that rely on separate accelerators and host processors.</p>\r\n<p>&nbsp;</p>\r\n<p>For drones, robotics, and AMRs, this typically results in more predictable latency, lower thermal load, and improved reliability in constrained operating environments.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        },
+        "heading_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "How does this platform compare to GPU-based solutions?",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>Compared with GPU-based platforms, CV75 typically offers lower power consumption, smaller form factor, and a vision-optimized architecture that integrates ISP and video encoding directly on the chip. This makes it suitable for autonomous systems where power, size, weight, and thermal constraints are critical.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        },
+        "heading_3": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Does the platform support onboard AI without cloud connectivity?",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_3": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>Yes. The CV75 platform supports on-device execution of CNN and transformer-based models. Detection, classification, tracking, and scene understanding can be performed locally on the device without relying on cloud-based inference. This reduces latency and bandwidth requirements and supports operation in disconnected or limited-connectivity environments.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        },
+        "heading_4": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "What video capabilities are available?",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_4": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>The integrated video pipeline supports 4K processing, multi-stream encoding, HDR, electronic image stabilization, and de-warping. These features are handled within the SoC and do not require external video processing hardware. This is particularly relevant for stabilized imaging, mobile vision, robotics perception, and aerial payload applications.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        },
+        "heading_5": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "What is the EVPaaS framework?",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_5": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>EVPaaS is a unified development and deployment framework that integrates hardware, system software, AI tools, and lifecycle management into a production-oriented platform. It enables embedded vision systems built on CV75 to move from evaluation to production without re-architecting the system at each stage.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     }
+    }
+   },
+   "manufacturerlogo": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/macnica/macnica_Brand_LOGO_RGB_1.png",
+    "sling:resourceType": "core/wcm/components/image/v3/image",
+    "altValueFromDAM": "false"
+   }
+  }
+ }
+}

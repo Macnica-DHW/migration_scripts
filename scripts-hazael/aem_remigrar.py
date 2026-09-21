@@ -304,6 +304,7 @@ def copiar_assets(page, session, base_url, auth, cache, dry_run):
 
 
 def main():
+    global GWI_ROOT, DEST_ROOT
     ap = argparse.ArgumentParser()
     ap.add_argument("--origem", default=GWI_ROOT)
     ap.add_argument("--destino", default=DEST_ROOT)
@@ -332,6 +333,12 @@ def main():
                          "lista renderizar já na árvore de rascunho; trocar "
                          "para global2 é passada de go-live.")
     args = ap.parse_args()
+
+    # `destino_de`, `em_escopo` e `normalizar_links_do_escopo` leem as raízes do
+    # MÓDULO: sem isto `--origem/--destino` mudavam o crawl e mais nada, e uma
+    # página de outra família (macnica-products/macnica-cv75) sairia com o
+    # destino calculado contra `/semiconductors`.
+    GWI_ROOT, DEST_ROOT = args.origem.rstrip("/"), args.destino.rstrip("/")
 
     print_header("remigração semiconductors (dialeto Anion)")
     print(f"  origem  : {args.origem}")
@@ -435,6 +442,11 @@ def main():
             seo_props=seo)
         # maeproductpage, não page — sem isso o diálogo pd_* nem aparece
         pagina_payload["jcr:content/sling:resourceType"] = PAGE_RT
+        if "jcr:content/hideInNav" not in pagina_payload:
+            # Página que JÁ existia, feita por outro script: o POST faz MERGE e
+            # o `hideInNav=true` antigo sobrevivia (macnica-cv75). O GWI não tem
+            # a propriedade, nem as páginas da Anion no global2.
+            pagina_payload["jcr:content/hideInNav@Delete"] = ""
 
         # build_tag_props devolve (props, pendencias) e as chaves vêm SEM o
         # prefixo jcr:content/ — o chamador é que prefixa.

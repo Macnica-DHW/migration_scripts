@@ -1429,6 +1429,26 @@ R44 (rodava sem os prefixos de link: 27 páginas em vez de 46).
   `www.microchip.com` num laço de `curl` (1 GET). Auditados os 50 transcritos:
   foi o único. O ROTEIRO agora proíbe cookie fora do host do author.
 
+### R54 — título MENOR, espaçador, título MAIOR: o de cima é frase de FECHO  *(1ª página fora de `/semiconductors`)*
+
+**Onde:** `macnica-products/macnica-cv75` (21/09/2026): o h4 roxo "This reduces
+regulatory risk and simplifies qualification…" saía a 89px do bloco de
+Compliance e COLADO (0px) no h2 "Why UAV, Robotics…" — lia como subtítulo da
+seção errada. No GWI: ~25px do texto que ele fecha, ~56px do h2 seguinte.
+**Causa:** a R20 ("título logo depois de título é SUBTÍTULO, mesmo container")
+não olhava o nível. A origem tem `h4`, nó espaçador (`&nbsp;`), `h2`: um h2
+não é subtítulo de um h4. É o espelho da R38 (espaçador + nível MENOR abre).
+**Regra:** com espaçador na origem E o título de baixo de nível MAIOR, o de
+baixo abre subseção e o que ficou para trás é marcado `fecho`;
+`_emitir_secao` põe a linha de `fecho` no sub-container da subseção de cima
+(mesmo mecanismo da R42), desde que não haja espaçador ANTES dela; a R23 não
+a toma como cabeçalho de colunas. Sem espaçador nada muda (o GWI também cola).
+**Alcance:** `cmp_motor` offline: **0 de 136** páginas de `/semiconductors`
+mudam — servidor = motor continua valendo. Na cv75: h4 a 29px do bloco, 60px
+do h2. **Armadilha de medição:** o `--antes` do `cmp_motor` tem de ficar AO
+LADO do `aem_layout.py`; fora dali não acha `fundo_cinza_paginas.txt` e acusa
+49 páginas "mudando" — exatamente a lista da R53, nada a ver com o patch.
+
 ---
 
 ## Aberto (achado na conferência visual, NÃO corrigido)
