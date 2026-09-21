@@ -1,0 +1,1462 @@
+{
+ "quando": "2026-09-21T07:37:24.795492",
+ "motivo": "teste de fundo por grupo semantico \u2014 /ambarella e /canon",
+ "paginas": {
+  "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/ambarella": {
+   "jcr:primaryType": "cq:PageContent",
+   "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:title": "Ambarella Products: SoCs, CPUs, Chipsets, and More",
+   "manufacturer": "mai:manufacturers/ambarella",
+   "businessCategories": [
+    "mai:business-categories/semiconductors"
+   ],
+   "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+   "pd_modelName": "Ambarella",
+   "pd_isModelNameLinkToPage": "true",
+   "jcr:created": "Fri Sep 18 2026 13:59:08 GMT+0000",
+   "cq:lastModified": "Sat Sep 19 2026 10:49:56 GMT+0000",
+   "jcr:description": "Ambarella SoCs and CVflow AI processors for edge AI, ADAS, robotics, and security cameras. Explore low-power computer vision solutions from Macnica today.",
+   "keywords": "Ambarella",
+   "pageTitle": "Ambarella SoCs & CVflow AI Processors | Edge AI | Macnica",
+   "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+   "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "navTitle": "Ambarella",
+   "manufacturerlogo": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/ambarella/Ambarella logo transparent (300).png",
+    "sling:resourceType": "core/wcm/components/image/v3/image"
+   },
+   "root": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "wcm/foundation/components/responsivegrid",
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "container_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498052331",
+        "1717498055877"
+       ],
+       "title_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "flexcontainer_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "",
+         "1719484596357"
+        ],
+        "flexcontaineritem_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "embed_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "layout": "responsive",
+          "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+          "type": "embeddable",
+          "youtubeVideoId": "rCRyoARrcJ4",
+          "sling:resourceType": "macnicaglobal2/components/content/embed"
+         }
+        },
+        "flexcontaineritem_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<p>Ambarella\u2019s technologies make cameras smarter - enabling features like person detection, object classification, analytics, and more - performing complex data analysis in real time, delivering breathtaking imagery, and preserving vital system resources such as power and network bandwidth. Ambarella specializes in the development of deployable, scalable designs for intelligent cameras, offering a proven path to mass production.&nbsp;Check out our Ambarella products, SoCs, CPUs, chipsets, and more.</p>",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        }
+       }
+      },
+      "container_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498052331",
+        "1717498055877"
+       ],
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><b>What is Ambarella CVflow architecture?</b></p>\n<p style=\"margin-top:0\">CVflow is Ambarella\u2019s computer vision chip architecture. Unlike a general-purpose CPU or GPU, it uses a dedicated vision processing engine programmed with a high-level algorithm description. That design scales performance to trillions of operations per second at very low power.</p>\n<p><b>Which neural network frameworks do Ambarella SoCs support?</b></p>\n<p style=\"margin-top:0\">Customers map CNNs trained with industry-standard tools such as Caffe, TensorFlow, and PyTorch onto Ambarella processors. The CNN toolkit also covers ONNX. Detection, classification, and related CNN/DNN tasks run on-chip.</p>\n<p><b>Which Ambarella SoCs are used for ADAS?</b></p>\n<p style=\"margin-top:0\">CV2FS is for front-facing stereovision ADAS cameras and computer-vision ECUs at L2+ and higher, with CVflow AI and ASIL C compliance. CV22FS targets forward-facing monocular ADAS cameras and similar ECUs, also with ASIL C. Ambarella uses ISO 26262 processes for functional safety\u2013certified products used in ADAS and autonomous driving.</p>\n<p><b>What makes Ambarella a low-power edge AI SoC choice?</b></p>\n<p style=\"margin-top:0\">The SoCs and CPUs are built for embedded edge platforms such as battery-powered cameras. They can outperform competing solutions on power efficiency, sometimes by 5\u00d7 or more, while matching or beating results. Compression also cuts bandwidth and storage.</p>\n<p><b>What does stereovision add for robotics?</b></p>\n<p style=\"margin-top:0\">Stereo processing turns a 2D view into a 3D scene and can detect generic obstacles the system was not trained to recognize. CV2 is positioned for accurate 3D environmental modeling, real-time neural network performance, advanced robotics, and industrial autonomous robots.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Ambarella N1 Family - Edge GenAI Is Here",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Ambarella\u2019s N1 family of Edge GenAI SoCs delivers the processing power needed to run multimodal large language models (LLMs), vision-language models (VLMs), and traditional CNN networks locally, without cloud dependency. Designed for autonomous mobile robots, on-premise AI boxes, smart city security, industrial automation, and intelligent healthcare, the N1 series sets a new benchmark for AI performance per watt at the edge.</p>\n<p>As an authorized Ambarella distributor and value-added engineering partner, Macnica Americas provides component supply, design-in support, and technical consulting to help you bring your next N1-based design to production.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Explore the Ambarella N1 Family",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/ambarella-n1-soc",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "anchorlink_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+       "anchor": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "1",
+         "text": "Why Choose Ambarella Products?"
+        },
+        "item1": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "2",
+         "text": "Ambarella SoCs"
+        },
+        "item2": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "3",
+         "text": "Key Features of Ambarella SoC Products"
+        }
+       }
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why Choose Ambarella Products?",
+       "id": "1",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/Ambarella cvflow_0.png",
+       "imageRatio": "39",
+       "alt": "Ambarella CV Flow",
+       "text": "<h3>CVflow\u00ae Chip Architecture</h3>\n<p style=\"margin-top:0\">Ambarella CVflow\u00ae&nbsp;chip architecture is based on a deep understanding of core computer vision algorithms. Unlike general-purpose CPUs and GPUs, CVflow includes a dedicated vision processing engine programmed with a high-level algorithm description, allowing Ambarella architecture to scale performance to trillions of operations per second with extremely low power consumption.</p>\n<p>With CVflow, customers can efficiently map their own CNN networks trained with industry-standard tools (e.g., Caffe, TensorFlow, PyTorch)&nbsp;to run on Ambarella processors.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-stereovision-lidar.png",
+       "imageRatio": "36",
+       "alt": "Stereovision vs. LIDAR",
+       "text": "<h3>Stereovision</h3>\n<p style=\"margin-top:0\">Stereo processing transforms the world from a flat 2D plane into a full 3D environment. This not only provides a richer, denser representation of the target scene, but also allows the detection of generic obstacles that the system hasn\u2019t been trained to recognize, making navigation safer and more effective for warehouse robots, autonomous vehicles, and more.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1783061491236"
+       ]
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/apac/anstek/public/zh_tw/images/technical-articles/2025h1/571236-fig-01.jpg",
+       "alt": "Low Power",
+       "text": "<h3>Low Power</h3>\n<p style=\"margin-top:0\">Ambarella technology products are designed to be deployed in embedded platforms on the edge (e.g., battery-powered cameras), where power consumption is a critical concern. Ambarella SoCs and CPUs consistently outperform competitive solutions in power efficiency - sometimes by 5x or more - while delivering equal or superior results.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "textIsRich": "true"
+      }
+     },
+     "container_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/stock/bandwidth-storage.jpg",
+       "imageRatio": "36",
+       "alt": "Reduce Bandwidth & Storage Costs",
+       "text": "<h3>Reduce Bandwidth &amp; Storage Costs</h3>\n<p style=\"margin-top:0\">Ambarella compression technologies dramatically reduce data transmission size, slashing storage costs and bandwidth usage with Ambarella products.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "textIsRich": "true"
+      }
+     },
+     "container_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/service/lens blue background.jpg",
+       "imageRatio": "36",
+       "alt": "Image Quality",
+       "text": "<h3>Image Quality</h3>\n<p style=\"margin-top:0\">One of the hallmarks of Ambarella processors is our image processing pipeline. Encompassing everything from HDR to EIS to dewarping, our state-of-the-art ISP ensures that every frame of every video is exquisite, improving safety and enhancing the viewing experience.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "textIsRich": "true"
+      }
+     },
+     "container_13": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_14": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/mactechproducts/Robotics-1280x720.jpeg",
+       "imageRatio": "36",
+       "alt": "Autonomy",
+       "text": "<h3>Autonomy</h3>\n<p style=\"margin-top:0\">From drones to robots, from taxis to long-haul semi trucks, Ambarella\u2019s vision processors were designed to revolutionize the way we work and travel. Our hardware platforms deliver the flexibility required to implement all levels of automation, including partial, conditional, high, and full autonomy.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "textIsRich": "true"
+      }
+     },
+     "container_15": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_16": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/dhw/public/pt/images/automotive-1024x683.png",
+       "alt": "Functional Safety",
+       "text": "<h3>Functional Safety</h3>\n<p style=\"margin-top:0\">As an AI silicon company offering SoCs for applications such as ADAS and autonomous driving, Ambarella has implemented an array of internal processes and procedures to ensure that their functional safety-certified products comply with ISO 26262. These strict processes and procedures touch every aspect of the work Ambarella does - from technical documentation to software engineering to VLSI - and have become an inextricable part of Ambarella culture, from top to bottom.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1783061491236"
+       ]
+      }
+     },
+     "container_17": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_18": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Ambarella SoCs",
+       "id": "2",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv72s.jpg",
+         "alt": "Ambarella CV72S",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\">CV72S</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The Ambarella CV72S SoC's combination of high performance and low power consumption makes it an ideal solution for various applications, including automotive, security cameras, drones, and other intelligent vision systems.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv2.jpg",
+         "alt": "Ambarella CV2",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\">CV2</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Designed for accurate 3D environmental modeling and real-time neural network performance, the CV2 chip enables advanced robotics and industrial applications, including autonomous robots.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv2fs.jpg",
+         "alt": "Ambarella CV2FS",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">CV2FS</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">Designed for front-facing stereovision ADAS cameras, as well as computer vision ECUs for L2+ and higher levels of autonomy, the CV2FS chip features CVflow\u00ae AI processing and ASIL C compliance to enable safety-critical applications.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_19": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv20aq.jpg",
+         "alt": "Ambarella CV20AQ",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\">CV20AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Featuring CVflow\u00ae AI processing, the CV20AQ chip targets stereo-camera advanced driver assistance systems (ADAS), multi-camera L2+ systems, multi-camera driver monitoring systems (DMS) and occupancy monitoring solutions (OMS), multi-channel electronic mirrors with blind spot detection, and intelligent parking assistance systems.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv22.jpg",
+         "alt": "Ambarella CV22",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\">CV22</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Ambarella\u2019s CV22 SoC combines advanced image processing with our powerful CVflow\u00ae computer vision architecture to deliver the next generation of intelligent robotics and industrial applications.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv22aq.jpg",
+         "alt": "Ambarella CV22AQ",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">CV22AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">The CV22AQ delivers next-generation image processing, 12MP30 video encoding, and CVflow\u00ae computer vision performance in an optimized, low-power design.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_20": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv22fs.jpg",
+         "alt": "Ambarella CV22FS",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\">CV22FS</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Featuring CVflow\u00ae&nbsp;AI processing and ASIL C compliance to enable safety-critical applications, the CV22FS chip targets forward-facing monocular ADAS cameras, as well as computer vision ECUs for L2+ and higher levels of autonomy.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv25.jpg",
+         "alt": "Ambarella CV25",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\">CV25</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The CV25 chip combines advanced image processing and real-time CVflow\u00ae&nbsp;computer vision performance for intelligent industrial/robotics applications.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv25aq.jpg",
+         "alt": "Ambarella CV25AQ",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">CV25AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">With the lowest power consumption in the CVflow\u00ae&nbsp;family, the CV25AQ combines advanced image processing, 6MP30 video encoding, and CVflow computer vision performance.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_21": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv28aq.jpg",
+         "alt": "Ambarella CV28AQ",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\">CV28AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Ambarella\u2019s AEC-Q100 qualified CV28AQ SoC combines image processing, 6MP30 video encoding/decoding, and CVflow\u00ae&nbsp;computer vision processing in a single, low-power design, making it an ideal choice to power the next generation of intelligent automotive.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-cv28m.jpg",
+         "alt": "Ambarella CV28M",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\">CV28M</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Our CV28M SoC is designed for intelligent applications at the edge, including smart home security, retail monitoring, consumer robotics, and occupancy monitoring. The chip\u2019s high-performance CVflow\u00ae&nbsp;architecture provides deep neural network (DNN) computer vision processing and 4KP30 video encoding, enabling an array of computer vision-based devices.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-h22aq.jpg",
+         "alt": "Ambarella H22AQ",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">H22AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">An industry-leading combination of low power and high performance, the H22AQ SoC delivers image/video processing and 8MP30 video encoding/decoding in a single design.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_22": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-h32aq.jpg",
+         "alt": "Ambarella H32AQ",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\">H32AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The H32AQ SoC combines 6MP30 video encoding, image/video processing, and a quad-core processor in a single, low-power design.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/ambarella-a12aq.jpg",
+         "alt": "Ambarella A12AQ",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\">A12AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Engineered for electronic mirrors and automotive video recording systems, the A12AQ processor provides superior visibility even in low-light or high-contrast environments, delivering a combination of advanced image processing, high dynamic range (HDR), 3D noise filtering, smart auto exposure, and high-resolution encode performance.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "container_23": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "container_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498052331",
+        "1717498055877"
+       ],
+       "title_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Key Features of Ambarella SoC Products",
+        "id": "3",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\n<li>CNN / DNN-based processing: detection, classification, and more</li>\n<li>CNN toolkit for easy porting of neural networks implemented in Caffe, TensorFlow, PyTorch, or ONNX frameworks</li>\n<li>8KP30 video performance</li>\n<li>Enhanced secure boot with TrustZone\u00ae and secure memory, TRNG, OTP, Arm TBSA compliance, DRAM scrambling, and virtualization</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "list_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkItems": "true",
+        "pages": [
+         "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/ambarella/ambarella-cv72s-soc",
+         "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/ambarella/ambarella-n1-soc"
+        ],
+        "sling:resourceType": "macnicaglobal2/components/content/list",
+        "listFrom": "static"
+       }
+      },
+      "container_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498052331",
+        "1717498055877"
+       ],
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<hr />",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "container_24": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Supplier Website",
+         "linkURL": "https://www.ambarella.com/",
+         "linkTarget": "_blank",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "",
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Request a Quote",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote",
+         "linkTarget": "_blank",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "",
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon": {
+   "jcr:primaryType": "cq:PageContent",
+   "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:title": "Canon CMOS Image Sensors, Machine Vision & Industrial Sensors",
+   "manufacturer": "mai:manufacturers/canon",
+   "businessCategories": [
+    "mai:business-categories/semiconductors"
+   ],
+   "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+   "pd_modelName": "Canon",
+   "pd_isModelNameLinkToPage": "true",
+   "jcr:created": "Fri Sep 18 2026 13:59:16 GMT+0000",
+   "cq:lastModified": "Sat Sep 19 2026 10:50:10 GMT+0000",
+   "jcr:description": "Enhance your imaging solutions with Canon CMOS image sensors and cameras. Our selection features Canon's high-resolution and low-light machine vision products.",
+   "keywords": "Canon, CMOS, Image Sensor, 120MP, 5MP, high-speed, high resolution, high sensitivity, development kit,industrial vision",
+   "pageTitle": "Canon",
+   "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+   "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "navTitle": "Canon",
+   "manufacturerlogo": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/canon/CanonLogo_Red_Web.jpg",
+    "sling:resourceType": "core/wcm/components/image/v3/image"
+   },
+   "root": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "wcm/foundation/components/responsivegrid",
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Canon Quality for Industrial, Machine Vision & Scientific Applications",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p>Canon\u2019s CMOS sensor technology offers OEMs and end users expanded possibilities for industrial vision applications. From uniquely large pixel sizes to exceptionally high pixel counts in a compact design, Canon CMOS image sensors and Canon industrial sensors push the boundaries of imaging possibilities. Facilitating on-going innovation in industrial camera and image capture technologies, Canon CMOS sensors support pioneering solutions for advanced industrial, machine vision and scientific applications. </p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "sXDiUbxnBBc",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/cmos-sensors-callout-300x300.jpg",
+       "imageRatio": "23",
+       "text": "<p>Innovation has been at the heart of Canon\u2019s success since the start. One of the largest patent holders in the U.S., Canon has developed highly unique CMOS sensors over the past decade. Each CMOS sensor from Canon features proprietary innovations at the pixel-level that translate into industry-leading performance in advanced industrial and scientific applications.&nbsp;</p>\n<p>Innovation is within your reach. High-performance Canon CMOS image sensors are readily available to transform your imaging products.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "1718154328384"
+       ]
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Canon Image Sensors",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Ultra-High Resolution Industrial Sensors",
+       "id": "1",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-120MXS.jpg",
+         "alt": "Canon LI8010SA (120MXS)",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-120mxs-cmos-image-sensors.html\">LI8010SA (120MXS)</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">By incorporating close to the same number of pixels as photoreceptors in the human eye, the Canon 120MXS CMOS sensor delivers ultra-high 120 MP resolution in a compact design.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI8020.jpg",
+         "alt": "Canon LI8020SA",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li8020sa-250mp-cmos-sensor-0.html\">LI8020SA</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Capturing detail 125 times greater than in full HD resolution, the LI8020SA CMOS sensor from Canon offers remarkably high 250 MP resolution to uncover more detail than ever before.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI8030SA.jpg",
+         "alt": "Canon LI8030SA",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\"><a rel=\"noopener noreferrer\" target=\"_self\" href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li8030sa-410mp-ultra-high-resolution-cmos-sensor.html\">From spec sheet to solution -&nbsp;LI8030SA</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">410 megapixels is just a number until you see where it's used. Explore how LI8030SA performs across wafer inspection, advanced packaging, and five other precision applications, backed by real resolution test data.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Ultra-High Sensitivity Canon Industrial Sensors",
+       "id": "2",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI3030.jpg",
+         "alt": "Canon LI3030SA",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li3030sa-19mm-cmos-sensor.html\">LI3030SA</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The LI3030SA Canon CMOS sensor features enormous 19\u00b5m pixels, each with an expanded well depth for greatly enhanced quantum efficiency (QE) for increased NIR detection.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/35MMFHDXS_A.jpg",
+         "alt": "Canon 35MMFHDXS_A",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-35mmfhdxs-a-cmos-sensors.html\">35MMFDHXS_A</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The 35MMFHDXS_A CMOS sensor delivers high-sensitivity, low-noise imaging performance, even in extreme low-light environments. The sensor\u2019s pixels and readout circuitry employ technologies that reduce noise which tends to increase as pixel size increases.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Rolling Shutter",
+       "id": "3",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI7080SA.jpg",
+         "alt": "Canon LI7080SA",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7080sa-cmos-sensor.html\">LI7080SA</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">LI7080SA is a CMOS type solid-state imaging sensor of Super 35mm size, and 6.4 \u03bcm square pixel arrangement with 10.8 mega effective pixels.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI7070sa.jpg",
+         "alt": "Canon LI7070SA",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7070sa-cmos-sensor.html\">LI7070SA</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The Canon LI7070SA CMOS Sensor, available in RGB and Mono, offers 2M pixels with increased sensitivity in the NIR range in addition to HDR functions.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI7060.jpg",
+         "alt": "Canon LI7060SA",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7060-hdr-cmos-sensor.html\">LI7060SA</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The LI7060SA is a 1 /2.3 inch size (diagonal 7.75 mm) color CMOS solid state image sensor with 2.82M effective pixels in a square pixel array.&nbsp;This sensor is capable of full area readout at 60 fps and realizes high dynamic range movie recording.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI7050SA.jpg",
+         "alt": "Canon LI7050SA",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7050-2m-cmos-sensor.html\" target=\"_self\">LI7050SA</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The Canon LI7050SA CMOS Sensor offers 2M pixel HDR with high sensitivity at an affordable price. It\u2019s square 4.1\u03bcm x 4.1\u03bcm pixel arrangement and 1/1.8\u2033 frame achieves very high and low light capability in a compact design.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/LI7030SA.jpg",
+         "alt": "LI7030SA",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7030sa-cmos-sensor.html\">LI7030SA</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The Canon LI7030SA is a CMOS type solid-state imaging sensor having a size equivalent to 1 inch, and 3.2 \u03bcm square pixel arrangement with 12 mega effective pixels. Video of 4K3K at 24 fps (12bit), 4K2K at 60 fps (10bit) and HD720p at 120 fps (10bit) can be achieved.&nbsp;</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "container_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "container_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498052331",
+        "1717498055877"
+       ],
+       "title_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Global Shutter",
+        "id": "4",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "flexcontainer_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "",
+         "1719484596357"
+        ],
+        "flexcontaineritem_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "image_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI5070SA.jpg",
+          "alt": "Canon LI5070SA",
+          "sling:resourceType": "macnicaglobal2/components/content/image",
+          "isDecorative": "false",
+          "altValueFromDAM": "false"
+         },
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5070sa-cmos-sensor.html\">LI5070SA</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The Canon LI5070SA CMOS Sensor, available in RGB, offers 10M pixels in a Super35 format. It\u2019s global shutter, square 6.4\u03bcm x 6.4\u03bcm pixel arrangement and professional-grade imaging delivers performance suitable for high-end security and cinema cameras.</p>",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "flexcontaineritem_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "image_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI5040.jpg",
+          "alt": "Canon LI5040",
+          "sling:resourceType": "macnicaglobal2/components/content/image",
+          "isDecorative": "false",
+          "altValueFromDAM": "false"
+         },
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5040-5m-cmos-sensor.html\">LI5040SA</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The Canon LI5040 CMOS Sensor offers 5.33M pixels. It\u2019s square 3.4\u00b5m x 3.4\u00b5m pixel arrangement and 2/3\u201d frame achieves high resolution, allowing you to capture everything you need in a compact design.</p>",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        }
+       }
+      },
+      "container_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498052331",
+        "1717498055877"
+       ],
+       "flexcontainer_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "",
+         "1719484596357"
+        ],
+        "flexcontaineritem_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "image_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/canon-LI5030SA.jpg",
+          "alt": "Canon LI5030SA",
+          "sling:resourceType": "macnicaglobal2/components/content/image",
+          "isDecorative": "false",
+          "altValueFromDAM": "false"
+         },
+         "text_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "<h3 style=\"margin-left: 40.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5030sa-35mm-full-size-19mp-global-shutter-cmos-sensor.html\">LI5030SA</a></h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">LI5030SA is a CMOS type of solid-state image sensor with a 35mm full frame effective pixel array of 19 Megapixels. It enables simultaneous exposure timing for all 19 Mega pixels. It can output an effective 5688 x 3334 pixels of video at 57.99 fps and 12bit via 24 channels of digital signal output.</p>",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "flexcontaineritem_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+        }
+       }
+      }
+     },
+     "container_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Canon CMOS Sensors",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717668113714"
+       ]
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th style=\"white-space:nowrap\">Category</th>\n<th style=\"white-space:nowrap\">Product</th>\n<th>Image Size</th>\n<th>Resolution<br>\n(MP)</th>\n<th>Pixel Size<br>\n(\u03bcm)</th>\n<th>Filter Type</th>\n<th>Max Frame<br>\nRate (fps)</th>\n</tr></tbody><tbody><tr><td rowspan=\"3\">Ultra High Resolution</td>\n<td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li8020sa-250mp-cmos-sensor-0.html\">LI8020SA</a></td>\n<td style=\"white-space:nowrap\">APS-H</td>\n<td style=\"white-space:nowrap\">250</td>\n<td style=\"white-space:nowrap\">1.5</td>\n<td style=\"white-space:nowrap\">Mono/RGB</td>\n<td>5</td>\n</tr><tr><td><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-120mxs-cmos-image-sensors.html\">LI8010SA (120MXS)</a></td>\n<td style=\"white-space:nowrap\">APS-H</td>\n<td style=\"white-space:nowrap\">120</td>\n<td style=\"white-space:nowrap\">2.2</td>\n<td style=\"white-space:nowrap\">Mono/RGB/RGB-IR</td>\n<td style=\"white-space:nowrap\">9.4</td>\n</tr><tr><td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li8030sa-410mp-ultra-high-resolution-cmos-sensor.html\">LI8030SA</a></td>\n<td>Full Frame</td>\n<td style=\"white-space:nowrap\">410</td>\n<td style=\"white-space:nowrap\">1.5</td>\n<td style=\"white-space:nowrap\">Color</td>\n<td style=\"white-space:nowrap\">24</td>\n</tr><tr><td rowspan=\"2\">Ultra High Sensitivity</td>\n<td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li3030sa-19mm-cmos-sensor.html\">LI3030SA</a></td>\n<td>Full Frame</td>\n<td style=\"white-space:nowrap\">2.7</td>\n<td style=\"white-space:nowrap\">19</td>\n<td style=\"white-space:nowrap\">Mono/RGB/RGB-IR</td>\n<td style=\"white-space:nowrap\">98</td>\n</tr><tr><td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-35mmfhdxs-a-cmos-sensors.html\">35MMFHDXS</a></td>\n<td>Full Frame</td>\n<td style=\"white-space:nowrap\">2.7</td>\n<td style=\"white-space:nowrap\">19</td>\n<td style=\"white-space:nowrap\">Mono/RGB</td>\n<td style=\"white-space:nowrap\">98</td>\n</tr><tr><td rowspan=\"3\">Global Shutter</td>\n<td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5030sa-35mm-full-size-19mp-global-shutter-cmos-sensor.html\">LI5030SA</a></td>\n<td>Full Frame</td>\n<td style=\"white-space:nowrap\">19</td>\n<td style=\"white-space:nowrap\">6.4</td>\n<td>Mono/RGB/RGB-IR/Naked</td>\n<td style=\"white-space:nowrap\">58</td>\n</tr><tr><td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5040-5m-cmos-sensor.html\">LI5040SA</a></td>\n<td style=\"white-space:nowrap\">2/3&quot;</td>\n<td style=\"white-space:nowrap\">5.3</td>\n<td style=\"white-space:nowrap\">3.4</td>\n<td style=\"white-space:nowrap\">Mono/RGB/RGB-IR</td>\n<td style=\"white-space:nowrap\">120</td>\n</tr><tr><td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5070sa-cmos-sensor.html\">LI5070SA</a></td>\n<td>Super 35mm</td>\n<td style=\"white-space:nowrap\">10.3</td>\n<td style=\"white-space:nowrap\">6.4</td>\n<td style=\"white-space:nowrap\">RGB</td>\n<td style=\"white-space:nowrap\">60</td>\n</tr><tr><td rowspan=\"5\">Rolling Shutter</td>\n<td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7080sa-cmos-sensor.html\">LI7080SA</a></td>\n<td>Super 35mm</td>\n<td style=\"white-space:nowrap\">10.8</td>\n<td style=\"white-space:nowrap\">6.4</td>\n<td style=\"white-space:nowrap\">RGB</td>\n<td style=\"white-space:nowrap\">120</td>\n</tr><tr><td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7030sa-cmos-sensor.html\">LI7030SA</a></td>\n<td style=\"white-space:nowrap\">1&quot;</td>\n<td style=\"white-space:nowrap\">12</td>\n<td style=\"white-space:nowrap\">3.2</td>\n<td style=\"white-space:nowrap\">RGB</td>\n<td style=\"white-space:nowrap\">60</td>\n</tr><tr><td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7050-2m-cmos-sensor.html\">LI7050SA</a></td>\n<td style=\"white-space:nowrap\">1/1.8&quot;</td>\n<td style=\"white-space:nowrap\">2.1</td>\n<td style=\"white-space:nowrap\">4.1</td>\n<td style=\"white-space:nowrap\">RGB</td>\n<td style=\"white-space:nowrap\">60</td>\n</tr><tr><td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7070sa-cmos-sensor.html\">LI7070SA</a></td>\n<td style=\"white-space:nowrap\">1/1.8&quot;</td>\n<td style=\"white-space:nowrap\">2.1</td>\n<td style=\"white-space:nowrap\">4.1</td>\n<td>RGB, Mono</td>\n<td style=\"white-space:nowrap\">60</td>\n</tr><tr><td style=\"white-space:nowrap\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7060-hdr-cmos-sensor.html\">LI7060SA</a></td>\n<td style=\"white-space:nowrap\">1/2.3&quot;</td>\n<td style=\"white-space:nowrap\">2.8</td>\n<td style=\"white-space:nowrap\">3.2</td>\n<td style=\"white-space:nowrap\">RGB</td>\n<td style=\"white-space:nowrap\">60</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Canon CMOS Sensor Evaluation Kit",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/Canon-5MP-Eval-kit-v2.jpg",
+       "imageRatio": "21",
+       "text": "<p>Canon offers a portfolio of advanced CMOS sensor evaluation kits designed to help developers accelerate prototyping and integration. These kits provide complete reference platforms for evaluating Canon\u2019s high-performance CMOS sensors, including the ultra-sensitive 35mm Full HD sensor, the 120MP ultra-high-resolution sensor, and the LI5040 with 5MP global shutter. Each kit includes a camera module, interface board, lens mount, and supporting software - enabling seamless sensor testing, image capture, and system design validation.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "textIsRich": "true"
+      }
+     },
+     "container_13": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331"
+      ],
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th>35MM Full HD High-Sensitivity CMOS Sensor Kit</th>\n<th>120MXSI 120MP CMOS Sensor Evaluation Kit</th>\n<th>LI5040 5MP Global Shutter CMOS Sensor Kit</th>\n</tr><tr><td valign=\"top\"><ul>\n<li>Resolution: 1920 x 1080</li>\n<li>Large 19\u03bcm pixels for exceptional low-light performance</li>\n<li>Ideal for night vision, astronomy, and scientific imaging</li>\n</ul>\n</td>\n<td valign=\"top\"><ul>\n<li>Resolution: 13280 x 9184 (120MP)</li>\n<li>High-resolution APS-H sensor with rolling shutter</li>\n<li>Suitable for industrial inspection and aerial imaging</li>\n</ul>\n</td>\n<td valign=\"top\"><ul>\n<li>Resolution: 2464 x 2056</li>\n<li>Global shutter and 5.0\u00b5m pixel pitch</li>\n<li>Designed for machine vision and high-speed imaging</li>\n</ul>\n</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_14": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Interested in testing Canon CMOS sensors?",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Contact Macnica Americas for kit availability, customization support, design integration assistance or questions about Canon machine vision products.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "list_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "linkItems": "true",
+       "pages": [
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-120mxs-cmos-image-sensors",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-35mmfhdxs-a-cmos-sensors",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-li3030sa-19mm-cmos-sensor",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-li5030sa-35mm-full-size-19mp-global-shutter-cmos-sensor",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-li5040-5m-cmos-sensor",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-li5070sa-cmos-sensor",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-li7030sa-cmos-sensor",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-li7050-2m-cmos-sensor",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-li7060-hdr-cmos-sensor",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-li7070sa-cmos-sensor",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-li7080sa-cmos-sensor",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-li8020sa-250mp-cmos-sensor-0",
+        "/content/copia-teste/americas/mai/en/products/semiconductors-remigration/canon/canon-li8030sa-410mp-ultra-high-resolution-cmos-sensor"
+       ],
+       "sling:resourceType": "macnicaglobal2/components/content/list",
+       "listFrom": "static"
+      }
+     },
+     "container_15": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876"
+      ],
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/copia-teste/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}
