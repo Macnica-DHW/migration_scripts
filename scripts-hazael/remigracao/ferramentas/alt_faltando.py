@@ -67,7 +67,17 @@ def plano_da_pagina(jcr):
     for caminho, rt, no in em_ordem(jcr.get("root", {}), "root", []):
         if rt == "title" and texto(no.get("jcr:title")):
             ultimo_titulo = texto(no.get("jcr:title"))
-        if rt not in ALVOS or texto(no.get("alt")):
+        if rt not in ALVOS:
+            continue
+        # Sem `altValueFromDAM=false` o componente assume o checkbox LIGADO
+        # (default do core image v2): ignora o alt do nó e serve o metadata do
+        # DAM — `alt="544581870"` na tela — e trava o diálogo quando o DAM não
+        # tem nada. O motor gravava a flag no `image` e nunca no twi.
+        flags = {f: "false" for f in ("altValueFromDAM", "isDecorative")
+                 if str(no.get(f, "")).lower() not in ("true", "false")}
+        if texto(no.get("alt")):
+            if flags:
+                plano.append((caminho, None, "só flags", flags))
             continue
         novo, fonte = "", ""
         if rt == "textwithimage" and heading_do_texto(no.get("text")):
@@ -77,9 +87,9 @@ def plano_da_pagina(jcr):
         elif titulo_pagina:
             novo, fonte = titulo_pagina, "título da página"
         if novo:
-            plano.append((caminho, novo[:120], fonte))
+            plano.append((caminho, novo[:120], fonte, flags))
         else:
-            plano.append((caminho, "", "SEM FONTE"))
+            plano.append((caminho, "", "SEM FONTE", flags))
     return plano
 
 
@@ -112,9 +122,14 @@ def main():
         plano = plano_da_pagina(jcr)
         if not plano:
             continue
-        print(f"\n=== {rel}  —  {len(plano)} nó(s) sem alt ===")
+        print(f"\n=== {rel}  —  {len(plano)} nó(s) a corrigir ===")
         payload = {}
-        for caminho, novo, fonte in plano:
+        for caminho, novo, fonte, flags in plano:
+            for f, v in flags.items():
+                payload[f"{caminho}/{f}"] = v
+            if novo is None:                      # alt já existe; faltavam só as flags
+                print(f"   {caminho.split('/')[-1]:22} [{fonte:16}] + {', '.join(flags)}")
+                continue
             marca = "  <<< SEM FONTE, não grava" if not novo else ""
             print(f"   {caminho.split('/')[-1]:22} [{fonte:16}] {novo!r}{marca}")
             if novo:

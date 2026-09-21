@@ -1294,6 +1294,40 @@ features ("Built on TSMC's 55 nm high-volume flash proc" não é alt). Cobertura
 regenerar a página, `ferramentas/alt_faltando.py` (só a propriedade `alt`, só
 onde falta; dry-run por padrão; idempotente).
 
+**R49, segunda metade — `altValueFromDAM=false` no `textwithimage`.** Gravado o
+alt, o Hazael ainda via "imagens sem alt". Causa: o checkbox "Get alternative
+text from DAM" do core image v2 vale **`true` quando a propriedade falta**
+(`cqDesign.altValueFromDAM : true`). O emissor do `image` sempre gravou
+`altValueFromDAM='false'`; o do `textwithimage` nunca. Efeito, medido na
+`altera-arria-10`: o alt do nó é IGNORADO e a página serve o metadata do DAM —
+`alt="544581870"` (id de banco de imagem) onde o GWI dizia "Satellite
+antenna", legenda de stock onde o nó dizia "Broadcast"; e onde o DAM não tem
+nada o diálogo não fecha. Valia para os 107 `textwithimage`, com ou sem alt.
+O twi passa a sair com `altValueFromDAM='false'` e `isDecorative='false'`;
+`alt_faltando.py` grava as duas onde faltam.
+**Fora desta regra:** 18 `<img>` soltos dentro de `table` sem `alt` (célula só
+de imagem: ícones e fotos de placa). É o HTML cru do GWI, que também não tem
+alt ali, e não trava diálogo nenhum — erro da origem migra como está. O `src`
+deles ainda aponta para `/content/dam/macnicagwi` (problema de go-live, à parte).
+
+### R50 — pares texto|foto em SÉRIE dividem a mesma coluna
+
+**Onde:** `/ambarella`, "Why Choose Ambarella Products?", depois da R46/R47:
+texto no topo nos 7 pares, fotos todas com ~270px de altura — e a coluna da
+foto com 472px em 5 pares e 419px em 2 (Low Power, Functional Safety): a borda
+esquerda das fotos em zigue-zague, 53px fora do prumo. Hazael, 21/09/2026:
+"still not aligned".
+**Causa:** a R36/R46 dimensionam pela ALTURA que o GWI desenha (277px), então
+a coluna varia com a proporção: 36% para 16:9, 32% para 3:2. O GWI corta a foto
+numa caixa fixa de 480×277; o `textwithimage` não corta, então ou a altura ou a
+largura varia. Sozinho o par fica certo; em série é a largura que o olho cobra.
+**Regra:** série = 2+ `textwithimage` seguidos na ordem do documento, podendo
+haver só `hr`/espaçador entre eles. Todos ficam com a MAIOR razão da série —
+nunca acima da coluna do GWI, porque cada uma já vem capada pela R46. Par
+isolado continua pela altura: ali pesa mais o buraco embaixo do texto (herói
+da `i-chips-ip00c788`, foto 600×600 → 275×275). `_harmonizar_series_twi`, na
+emissão (os `dims` só existem depois de o driver consultar o DAM).
+
 ### Revisão adversarial do patch (antes de gravar)
 
 Três lentes offline (extração, ritmo, HTML/links) + um verificador por achado:

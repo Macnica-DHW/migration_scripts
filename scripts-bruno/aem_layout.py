@@ -2376,9 +2376,19 @@ def _emitir_bloco(payload, pai, nomes, b, page, link_de=None, link_para=None):
         payload[f"{base}/sling:resourceType"] = RT["textwithimage"]
         payload[f"{base}/fileReference"] = b.props.get("fileReference", "")
         payload[f"{base}/alt"] = _alt_derivado(b, page)
+        # SEM estas duas o componente assume "Get alternative text from DAM"
+        # LIGADO (default `true` do core image v2 quando a propriedade falta):
+        # o alt gravado é IGNORADO e a página serve o metadata do DAM —
+        # `alt="544581870"` (id de banco de imagem) no lugar de "Satellite
+        # antenna" na `altera-arria-10`; e onde o DAM não tem nada o diálogo
+        # não fecha. O emissor do `image` já gravava; o do twi nunca (R49).
+        payload[f"{base}/altValueFromDAM"] = "false"
+        payload[f"{base}/isDecorative"] = "false"
         payload[f"{base}/text"] = html(b.props.get("html", ""))
         payload[f"{base}/textIsRich"] = "true"
-        ratio = _image_ratio(b, getattr(page, "_util_px", JANELA_REF_PX - 50))
+        # em SÉRIE, a coluna da foto é a mesma em todos os pares (R50)
+        ratio = b.props.get("ratio_serie") or _image_ratio(
+            b, getattr(page, "_util_px", JANELA_REF_PX - 50))
         if ratio and ratio != 50:
             payload[f"{base}/imageRatio"] = str(ratio)
         # padrão do componente é imagem à DIREITA (row-reverse); só carimba
@@ -3040,6 +3050,47 @@ def _emitir_secao(payload, slot, nomes, s, page, link_de, link_para):
             del payload[k]
 
 
+def _harmonizar_series_twi(page):
+    """Pares texto|foto em SÉRIE dividem a MESMA largura de coluna (R50).
+
+    A R36/R46 dimensionam cada foto pela ALTURA que o GWI desenha (277px), e
+    por isso a coluna varia com a proporção: 36% para a foto 16:9, 32% para a
+    3:2. Sozinho o par fica certo; numa série a borda esquerda das fotos faz
+    zigue-zague — na `/ambarella`, "Why Choose…", 5 colunas de 472px e 2 de
+    419px, 53px fora do prumo (Hazael, 21/09/2026: "still not aligned"). No
+    GWI a caixa é sempre 480x277 com corte; aqui não há corte, então ou a
+    altura ou a largura varia — e numa série é a largura que o olho cobra.
+
+    Série = 2+ `textwithimage` seguidos na ordem do documento, podendo haver
+    só `hr`/espaçador entre eles (título, texto, tabela… quebram). Todos ficam
+    com a MAIOR razão da série — nunca acima da coluna do GWI, porque cada uma
+    já vem capada. Par isolado continua pela altura: ali o buraco embaixo do
+    texto pesa mais (herói da `i-chips-ip00c788`, foto 600x600).
+    Roda na emissão: os `dims` só existem depois do driver consultar o DAM.
+    """
+    import re
+    serie = []
+
+    def fechar():
+        razoes = [r for _, r in serie if r]
+        if len(serie) >= 2 and razoes:
+            for b, _ in serie:
+                b.props["ratio_serie"] = max(razoes)
+        serie.clear()
+
+    for s in page.sections:
+        util = _largura_util(s)
+        for b in s.blocks:
+            if b.kind == "textwithimage":
+                serie.append((b, _image_ratio(b, util)))
+            elif b.kind == "hr" or (b.kind == "text" and not re.sub(
+                    r"<[^>]+>|&nbsp;|\s", "", str(b.props.get("html") or ""))):
+                continue
+            else:
+                fechar()
+    fechar()
+
+
 def build_layout_payload(page, template_path=None, link_de=None, link_para=None,
                          slot="jcr:content/root/container", reescrever_listas=True):
     """Page (IR) -> payload achatado para o Sling POST.
@@ -3056,6 +3107,7 @@ def build_layout_payload(page, template_path=None, link_de=None, link_para=None,
 
     nomes = _Nomes()
     page._reescrever_listas = reescrever_listas
+    _harmonizar_series_twi(page)
     for s in page.sections:
         _emitir_secao(payload, slot, nomes, s, page, link_de, link_para)
 
