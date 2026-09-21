@@ -7,6 +7,7 @@ se é cortado por um ancestral com overflow, e se divide a linha com outro botã
 Por página: estouro horizontal do corpo. `--controle`: mede também páginas da ANION (sony, canon) para separar
 "defeito da migração" de "como o CSS do site se comporta".  Saída: dados/golive/mobile.json + resumo por padrão.
 `--raiz`: mede TODA página sob uma raiz qualquer (ex.: .../boards-modules/tq-systems) -> dados/golive/mobile_<nome>.json.
+`--lista <json>` (com --raiz): mede só as páginas do json [{"path": ...}].
 `--resumo <nome>`: só relê o json e imprime os padrões.
 """
 import collections, json, sys
@@ -102,6 +103,8 @@ def main():
         d = json.load(open(DADOS / f"mobile_{arg('--resumo')}.json")); return resumo(d["paginas"], d["raiz"])
     if arg("--raiz"):
         raiz = arg("--raiz").rstrip("/"); alvo = [raiz] + [raiz + r for r in paginas(raiz)]
+        if arg("--lista"):                  # só as páginas de um json [{"path": ...}] (escopo já filtrado: dono, vivas, sem cópias)
+            alvo = [e["path"] for e in json.load(open(arg("--lista")))]
         with Pool(6) as pool:
             res = pool.map(mede, [(BASE, cookies, BASE.split("//", 1)[1], p) for p in alvo], chunksize=1)
         json.dump({"raiz": raiz, "paginas": res}, open(DADOS / f"mobile_{arg('--saida')}.json", "w"))
