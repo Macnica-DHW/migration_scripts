@@ -1,0 +1,785 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "STREAL Semiconductor Industrial Strain Gauges for Sale",
+ "manufacturer": "mai:manufacturers/macnica-products",
+ "businessCategories": "mai:business-categories/ip-software",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Fri Sep 11 2026 12:52:57 GMT+0000",
+ "cq:lastModified": "Tue Sep 22 2026 15:07:34 GMT+0000",
+ "jcr:description": "STREAL™ brings semiconductor-level precision to the factory floor, capturing real-time force, load, and torque data. Learn more at Macnica Americas!",
+ "keywords": "macnica,streal,torque data,strain sensing",
+ "hideInNav": "true",
+ "pageType": "productDetailsPage",
+ "pageTitle": "STREAL",
+ "cq:tags": "mai:business-categories/ip-software",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "STREAL",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498056876"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "STREAL",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "embed_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:created": "Tue Sep 22 2026 15:06:00 GMT+0000",
+     "jcr:lastModified": "Tue Sep 22 2026 15:06:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 15:06:09 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 15:06:09 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "embed_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "layout": "responsive",
+       "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+       "youtubeLoop": "false",
+       "youtubeMute": "false",
+       "youtubeRel": "false",
+       "type": "embeddable",
+       "youtubeVideoId": "32l2kEEtUDA",
+       "sling:resourceType": "macnicaglobal2/components/content/embed",
+       "youtubeAutoPlay": "false",
+       "youtubePlaysInline": "false"
+      }
+     },
+     "flexcontaineritem_1754586812": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 15:06:19 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 15:06:19 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "section_1_wrap": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498052331"
+       ],
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Semiconductor-Grade Strain Sensing for Smarter Machines",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>STREAL™ brings semiconductor-level precision to the factory floor with semiconductor strain gauges, capturing real-time force, load, and torque data in places traditional gauges cannot reach. Macnica Americas turns that signal into results with design services, firmware, and production support for STREAL industrial strain gauges.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    }
+   },
+   "section_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Why STREAL?",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li><b>Microscale precision</b>&nbsp;for motion control, machining quality, structural health, and micromobility. Not intended for automotive-grade or safety-critical automotive use.</li>\r\n</ul>\r\n<ul>\r\n<li><b>Compact and easy to embed</b>&nbsp;on toolholders, robot joints, composite parts, and frames. Slim semiconductor strain gauge modules fit in tight envelopes.</li>\r\n</ul>\r\n<ul>\r\n<li><b>Low power options</b>&nbsp;that enable battery-powered wireless nodes and IIoT retrofits.</li>\r\n</ul>\r\n<ul>\r\n<li><b>Integrated intelligence where you need it</b>&nbsp;with digital conversion, temperature compensation, and self-diagnostics on select models.</li>\r\n</ul>\r\n<ul>\r\n<li><b>A portfolio that fits the job</b>&nbsp;from power-optimized industrial strain gauges to high-resolution industrial parts.</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<hr>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "imgrow_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": "1718800458698",
+     "flexcontaineritem_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/streal-sr300.jpg",
+       "alt": "STREAL SR300",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3 style=\"margin-left: 40.0px;\">SR300</h3>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/streal-sr500.jpg",
+       "alt": "STREAL SR500",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3 style=\"margin-left: 40.0px;\">SR500</h3>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/streal-eval-kit.jpg",
+       "alt": "STREAL Eval Kit",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">Evaluation Kit</h3>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "section_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "What you can build with STREAL",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li><b>Predictive machining quality</b><br>\r\nDetect subtle force changes that vibration sensors miss, reduce scrap, and prevent unplanned downtime</li>\r\n</ul>\r\n<ul>\r\n<li><b>Collaborative and industrial robots</b><br>\r\nAdd joint or gripper force feedback for safer interaction and precise pick and place</li>\r\n</ul>\r\n<ul>\r\n<li><b>Structural and asset monitoring</b><br>\r\nBond sensors to frames, tanks, or press dies and stream data to dashboards for condition-based maintenance</li>\r\n</ul>\r\n<ul>\r\n<li><b>Micromobility systems</b><br>\r\nMeasure pedal torque or suspension loads within tight power budgets for natural assist and system health monitoring</li>\r\n</ul>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "section_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Real-Time Force Insight for Robots and AMRs",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>With ultra-compact, high-resolution industrial strain sensors, STREAL gives robots and AMRs direct visibility into internal forces for smoother motion and safer interaction.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "button_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Learn More",
+     "linkURL": "/content/macnicagwi/americas/mai/en/products/macnica-products/streal/streal-for-robotics-and-amrs",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button"
+    },
+    "text_1_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "text": "<p>&nbsp;</p>\r\n<hr>\r\n\r\n",
+     "jcr:lastModified": "Tue Sep 22 2026 14:55:39 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_copy": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+    "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+    "jcr:created": "Tue Sep 22 2026 14:46:39 GMT+0000",
+    "jcr:lastModified": "Tue Sep 22 2026 14:46:39 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:created": "Tue Sep 22 2026 14:46:50 GMT+0000",
+     "jcr:lastModified": "Tue Sep 22 2026 14:46:50 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 14:46:58 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 14:46:58 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/_imagens-inline-recuperadas/metal-machining.jpg",
+       "alt": "Metal machining",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "section_5_wrap": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498052331"
+       ],
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Metal Machining",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\r\n<li>Control Enhancement</li>\r\n<li>Productivity Enhancement</li>\r\n<li>Skills Transfer</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontaineritem_1332161978": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 14:47:04 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 14:47:04 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/stock/collaborative-robots.jpg",
+       "alt": "Collaborative robots",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "section_6_wrap": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498052331"
+       ],
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Collaborative Robots",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\r\n<li>Functional Enhancement</li>\r\n<li>Safety Enhancement</li>\r\n<li>Productivity Enhancement</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontaineritem_50991720": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 14:47:15 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 14:47:15 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/stock/train-infrastructure.jpg",
+       "alt": "Train infrastructure",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "section_7_wrap": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498052331"
+       ],
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Train Infrastructure",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\r\n<li>Field Safety Enhancement</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:created": "Tue Sep 22 2026 14:51:35 GMT+0000",
+     "jcr:lastModified": "Tue Sep 22 2026 14:51:35 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container"
+    },
+    "flexcontainer_1007514526": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:created": "Tue Sep 22 2026 14:46:50 GMT+0000",
+     "jcr:lastModified": "Tue Sep 22 2026 14:46:50 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 14:46:58 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 14:46:58 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1_765172428": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/stock/roads-bridges-wires.jpg",
+       "alt": "Roads, bridges, wires",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "section_8_wrap": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498052331"
+       ],
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Roads, Bridges, Wires",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\r\n<li>Safety</li>\r\n<li>Maintainability</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontaineritem_1332161978": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 14:47:04 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 14:47:04 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1_918542740": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/stock/bulbs-and-plumbing.jpg",
+       "alt": "Bulbs and Plumbing",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "section_9_wrap": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498052331"
+       ],
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Bulbs and Plumbing",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\r\n<li>Detecting Aging Pipes and Connections</li>\r\n<li>Optimizing Maintenance Cycles</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontaineritem_50991720": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 14:47:15 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 14:47:15 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1_227064749": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/stock/production-line.jpg",
+       "alt": "Production line",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "section_10_wrap": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498052331"
+       ],
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Production Line",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\r\n<li>Reduction of Downtime</li>\r\n<li>Optimization of Operation</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    }
+   },
+   "section_11_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Product Family",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:created": "Tue Sep 22 2026 14:56:27 GMT+0000",
+     "jcr:lastModified": "Tue Sep 22 2026 14:56:27 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 14:56:35 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 14:56:35 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/streal-sr300.jpg",
+       "alt": "STREAL SR300",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "heading_12": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SR300",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "section_12_wrap": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498052331"
+       ],
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Optimized for low-power IoT",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\r\n<li><b>Resolution:</b> 1 µε</li>\r\n<li><b>Signal bandwidth:</b> 1.3 kHz</li>\r\n<li><b>Typical power:</b> ≤ 3 mW</li>\r\n<li><b>Die size:</b> 2.5 mm × 2.5 mm</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontaineritem_2085022545": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 14:56:43 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 14:56:43 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/streal-sr500.jpg",
+       "alt": "STREAL SR500",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "heading_14": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SR500",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "section_13_wrap": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498052331"
+       ],
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Optimized for high-precision industrial use",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\r\n<li><b>Resolution:</b> 0.1 µε measured at 1.3 kHz</li>\r\n<li><b>Signal bandwidth:</b> up to 20 kHz</li>\r\n<li><b>Typical power:</b> about 70 mW</li>\r\n<li><b>Die size:</b> 3.2 mm × 3.2 mm</li>\r\n<li><b>Integrated functions:</b> on-chip ADC and amplifier, temperature compensation, and self-diagnostics</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    }
+   },
+   "heading_16_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_16": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Highlights",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "section_14_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 15:01:16 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 15:01:16 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:created": "Tue Sep 22 2026 15:01:25 GMT+0000",
+       "jcr:lastModified": "Tue Sep 22 2026 15:01:25 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/streal-adhesive-surface.jpg",
+        "alt": "Adhesive surface",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      },
+      "flexcontaineritem_1957576288": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:created": "Tue Sep 22 2026 15:01:36 GMT+0000",
+       "jcr:lastModified": "Tue Sep 22 2026 15:01:36 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "heading_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Integration",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\r\n<li><b>Mounting</b> with adhesive to planar surfaces, usable in tension, compression, or shear orientations.</li>\r\n</ul>\r\n<ul>\r\n<li><b>Outputs</b> can be digital or analog depending on model and design approach.</li>\r\n</ul>\r\n<ul>\r\n<li><b>Calibration note</b> outputs are not factory calibrated. Perform one-time calibration during installation, then verify periodically to manage drift.</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "text_1_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "text": "<p>&nbsp;</p>\r\n<hr>\r\n\r\n",
+     "jcr:lastModified": "Tue Sep 22 2026 14:55:39 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "section_15_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "flexcontainer_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:created": "Tue Sep 22 2026 15:01:16 GMT+0000",
+     "jcr:lastModified": "Tue Sep 22 2026 15:01:16 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 15:01:25 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 15:01:25 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1_437357244": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/copia-teste/americas/mai/public/en/images/products/streal-sensing-methods.png",
+       "alt": "STREAL sensing methods",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     },
+     "flexcontaineritem_1957576288": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 15:01:36 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 15:01:36 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "heading_1_90898142": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Technical",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1_846133068": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\r\n<li><b>Resolution range:</b> 0.1 to 1 µε</li>\r\n</ul>\r\n<ul>\r\n<li><b>Sensor formats:</b> compact silicon die and slim modules</li>\r\n</ul>\r\n<ul>\r\n<li><b>Typical module length:</b> under 66 mm</li>\r\n</ul>\r\n<ul>\r\n<li><b>Power:</b> from milliwatts on low power devices to tens of milliwatts on high precision devices</li>\r\n</ul>\r\n<ul>\r\n<li><b>Primary use cases:</b> robotics, machining, micromobility, structural monitoring</li>\r\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "section_16_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Get Started",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Schedule a design consultation or request evaluation hardware from Macnica Americas regarding industrial strain gauges for sale. Our team will help you select the right STREAL configuration, plan your data path, and move from prototype to production with confidence.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "contact_block_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "text_intro": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p style=\"text-align: center;\"><i>For more information:</i></p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "linkURL": "/content/macnicagwi/americas/mai/en/contact.html",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Tue Sep 22 2026 15:05:14 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "linkURL": "/content/macnicagwi/americas/mai/en/contact.html",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Tue Sep 22 2026 15:05:28 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/copia-teste/americas/mai/public/en/logos/macnica/macnica_Brand_LOGO_RGB_1.png",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ }
+}
