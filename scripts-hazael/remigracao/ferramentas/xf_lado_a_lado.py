@@ -26,7 +26,11 @@ no GWI. Botão em coluna leva ['', Fixed Minimum Width, Center]: o padrão do
 link-button é min-width 550px e dois não cabem lado a lado abaixo de ~1200px.
 Propriedades dos componentes copiadas 1:1.
 
-`--par-ao-centro` (só para XF de 1 botão por coluna): com Center em cada
+`--par-ao-centro` — APOSENTADO em 21/09/2026: o CSS do site não tem variante de celular para
+`.right`, então abaixo de 1050px (itens empilhados) o 1º botão encostava à direita e o 2º à
+esquerda em qualquer janela entre 376 e 1049px. O Hazael decidiu Center nos dois; no global2 isso
+é o `golive/xf_botoes_centro.py`. Fica aqui só como registro do que foi feito na copia-teste.
+Descrição original (só para XF de 1 botão por coluna): com Center em cada
 coluna os botões ficam no meio de cada METADE da página, 317px um do outro
 @1400; no GWI o par fica junto no centro (vão de 81px). A flag põe o 1º
 botão Right, o último sem posição (= esquerda) e o gap Large (50px): medido
