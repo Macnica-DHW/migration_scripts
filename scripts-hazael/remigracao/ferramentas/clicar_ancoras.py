@@ -82,12 +82,11 @@ def main():
                 a.click()
                 p.wait_for_timeout(1200)
                 depois = p.evaluate("scrollY")
-                # o máximo é lido DEPOIS do clique: imagem lazy muda a altura da página no caminho
-                maximo = p.evaluate("document.documentElement.scrollHeight - innerHeight")
-                # o site desconta a altura do cabeçalho fixo; chegou = parou a menos de 200px do alvo —
-                # ou no FIM da página, quando o alvo está tão embaixo que não dá para rolar até ele
+                # "chegou" = o alvo ficou NA TELA depois do clique (o site desconta o cabeçalho fixo;
+                # perto do fim da página a animação para no máximo de ENTÃO — imagem lazy ainda
+                # alonga a página depois — e o título fica visível, só não encostado no topo)
                 chegou = (alvo is not None and depois != antes
-                          and (abs(depois - alvo) < 200 or (depois >= maximo - 5 and alvo > depois)))
+                          and depois - 200 <= alvo <= depois + 1000 - 120)
                 falhas += 0 if chegou else 1
                 print(f"  {rot}  {'ok ' if chegou else 'NÃO'}  '{l['texto']:30}' {l['href']:14} alvoY={alvo}  scroll {antes}->{depois}")
         nav.close()
