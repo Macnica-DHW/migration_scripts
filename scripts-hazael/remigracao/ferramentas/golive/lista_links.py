@@ -29,6 +29,10 @@ cabeçalho sem link. Nó intermediário que não é nosso também aparece só co
     python3 lista_links.py                   # gera dados/golive/global2_link_map.{html,json}
     python3 lista_links.py --conferir        # + GET em cada link, lista o que não deu 200
     python3 lista_links.py --raizes solutions services --nome outro_nome
+    python3 lista_links.py --soltas products     # landing(s) que entram SÓ como link, sem a subárvore (padrão)
+
+`--soltas`: páginas avulsas que o Hazael pediu no mapa (22/09: a landing `/products`). Entram sempre, sem o
+filtro de autor — é pedido explícito —, só com o link e o título; a subárvore delas já está nas raízes.
 """
 import argparse
 import collections
@@ -54,6 +58,7 @@ GWI_MAI = "/content/macnicagwi/americas/mai/en"
 RAIZES = ("solutions", "products/boards-modules", "products/semiconductors", "services")
 NOMES = {"solutions": "Solutions", "products/boards-modules": "Boards & Modules",
          "products/semiconductors": "Semiconductors", "services": "Services"}
+SOLTAS = ("products",)                                            # landings avulsas, só o link (pedido do Hazael, 22/09)
 ANTIGO = {"solutions": "technology"}                              # nome da seção no GWI e nos manifestos
 MANIFESTOS = (DADOS / "manifesto.jsonl", DADOS / "manifesto_direto.jsonl")
 OPS_PAGINA = {"pagina-nova", "pagina-preenchida", "copy", "create"}   # o que nos manifestos é página nossa
@@ -286,10 +291,41 @@ def _ul(no, caminho):
     return "".join(out)
 
 
-def montar_html(escolhidas, raizes, quando):
+def solta(rel):
+    """Landing avulsa: título lido ao vivo (GET), sem filtro de autor."""
+    r = sessao.get(url(f"{MAI}/{rel}/jcr:content", ".json"), timeout=90, allow_redirects=False)
+    assert r.status_code == 200, (r.status_code, rel)
+    j = r.json()
+    return {"rel": rel, "path": f"{MAI}/{rel}", "titulo": re.sub(r"\s+", " ", j.get("jcr:title") or "").strip(),
+            "solta": True, "criador": j.get("jcr:createdBy"), "editor": j.get("cq:lastModifiedBy")}
+
+
+def _secoes(raizes, soltas):
+    """Ordem das seções: cada solta vem logo antes da 1ª raiz que está debaixo dela (products antes de
+    products/boards-modules); solta sem raiz abaixo vai para o fim."""
+    ordem = []
+    for raiz in raizes:
+        for sl in soltas:
+            if sl not in ordem and raiz.startswith(sl + "/"):
+                ordem.append(sl)
+        ordem.append(raiz)
+    return ordem + [sl for sl in soltas if sl not in ordem]
+
+
+def montar_html(escolhidas, raizes, quando, soltas=()):
     por = {e["rel"]: e for e in escolhidas}
     corpo, nav, nomes = [], [], []
-    for raiz in raizes:
+    avulsas = {e["rel"]: e for e in soltas}
+    for raiz in _secoes(raizes, [e["rel"] for e in soltas]):
+        if raiz in avulsas:                                    # landing avulsa: só o link
+            e = avulsas[raiz]
+            nome = NOMES.get(raiz) or raiz.rsplit("/", 1)[-1].replace("-", " ").title()
+            idr = raiz.replace("/", "-")
+            nav.append(f'<a href="#{idr}">{html.escape(nome)}</a>')
+            nomes.append(nome)
+            corpo.append(f'<h2 id="{idr}">{html.escape(nome)}<span class="n">landing page</span></h2>')
+            corpo.append(f'<p class="landing">{_a(e, e["titulo"] or nome)}<span class="p">/{html.escape(raiz)}</span></p>')
+            continue
         nome = NOMES.get(raiz) or raiz.rsplit("/", 1)[-1].replace("-", " ").title()
         idr = raiz.replace("/", "-")
         itens = [e for e in escolhidas if e["rel"] == raiz or e["rel"].startswith(raiz + "/")]
@@ -310,11 +346,12 @@ def montar_html(escolhidas, raizes, quando):
                              raiz if "_" in no else f"{raiz}/{cat}"))
             corpo.append("</details>")
     escopo = (", ".join(nomes[:-1]) + " and " + nomes[-1]) if len(nomes) > 1 else nomes[0]
+    total = len(escolhidas) + len(soltas)
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Macnica global2 — link map</title><style>{CSS}</style></head><body><main>
 <h1>Macnica global2 — link map</h1>
-<p class="sub">Americas / MAI / EN — {html.escape(escopo)}. {len(escolhidas)} pages. Links open the page as a visitor sees
+<p class="sub">Americas / MAI / EN — {html.escape(escopo)}. {total} pages. Links open the page as a visitor sees
 it (outside the editor) in a new tab; you must be logged in to the AEM author. Generated {quando}.</p>
 <div class="barra"><input id="q" type="search" placeholder="Filter by title or path…" autocomplete="off">
 <nav>{''.join(nav)}</nav></div>
@@ -331,17 +368,22 @@ def main():
     ap.add_argument("--raizes", nargs="+", default=RAIZES, metavar="REL",
                     help="raízes do mapa, relativas a /americas/mai/en (padrão: %(default)s)")
     ap.add_argument("--nome", default=NOME_PADRAO, help="nome dos arquivos de saída em dados/golive (sem extensão)")
+    ap.add_argument("--soltas", nargs="*", default=SOLTAS, metavar="REL",
+                    help="landings avulsas, só o link, sem filtro de autor (padrão: %(default)s; `--soltas` vazio = nenhuma)")
     a = ap.parse_args()
     raizes = tuple(p.strip("/") for p in a.raizes)
+    soltas = [solta(p.strip("/")) for p in a.soltas]
 
     escolhidas, fora = escolher(raizes)
     quando = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     DADOS.mkdir(parents=True, exist_ok=True)
     saida_html, saida_json = DADOS / f"{a.nome}.html", DADOS / f"{a.nome}.json"
-    saida_html.write_text(montar_html(escolhidas, raizes, quando), encoding="utf-8")
-    saida_json.write_text(json.dumps({"quando": quando, "raizes": raizes, "paginas": escolhidas, "fora": fora},
+    saida_html.write_text(montar_html(escolhidas, raizes, quando, soltas), encoding="utf-8")
+    saida_json.write_text(json.dumps({"quando": quando, "raizes": raizes, "soltas": soltas, "paginas": escolhidas, "fora": fora},
                                      ensure_ascii=False, indent=1), encoding="utf-8")
 
+    for e in soltas:
+        print(f"{e['rel']}: landing avulsa (só o link) — criada por {e['criador']}, último editor {e['editor']}")
     for raiz in raizes:
         itens = [e for e in escolhidas if e["rel"] == raiz or e["rel"].startswith(raiz + "/")]
         print(f"{raiz}: {len(itens)}" + ("" if raiz in {e['rel'] for e in itens} else "  (raiz não é nossa: sem link)"))
@@ -354,8 +396,9 @@ def main():
     print(f"\n{saida_html}\n{saida_json}")
 
     if a.conferir:
-        ruins = [(e, st) for e, st in conferir(escolhidas) if st != 200]
-        print(f"\nconferência: {len(escolhidas) - len(ruins)} com 200, {len(ruins)} sem")
+        todas = soltas + escolhidas
+        ruins = [(e, st) for e, st in conferir(todas) if st != 200]
+        print(f"\nconferência: {len(todas) - len(ruins)} com 200, {len(ruins)} sem")
         for e, st in ruins:
             print(f"    {st}  {e['rel']}")
 
