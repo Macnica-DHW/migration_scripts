@@ -62,9 +62,12 @@ def main():
             p.evaluate("async()=>{for(let y=0;y<document.body.scrollHeight;y+=600){scrollTo(0,y);"
                        "await new Promise(r=>setTimeout(r,100));}scrollTo(0,0);}")
             p.wait_for_timeout(500)
+            # só links do CONTEÚDO: o "Page Top" do rodapé do site (#page-top) não é nosso
             links = p.evaluate("""()=>[...document.querySelectorAll('main a[href^="#"], .root a[href^="#"]')]
-                .filter(a=>a.offsetParent!==null && a.getAttribute('href').length>1)
+                .filter(a=>a.offsetParent!==null && a.getAttribute('href').length>1
+                        && a.getAttribute('href')!=='#page-top' && !a.closest('header, footer, .page-top'))
                 .map(a=>({href:a.getAttribute('href'), texto:a.innerText.trim().slice(0,30)}))""")
+            maximo = p.evaluate("document.documentElement.scrollHeight - innerHeight")
             rot = f"aba {i + 1}" if i is not None else "página"
             if not links:
                 print(f"  {rot}: sem link '#' visível")
@@ -80,8 +83,10 @@ def main():
                 a.click()
                 p.wait_for_timeout(1200)
                 depois = p.evaluate("scrollY")
-                # o site desconta a altura do cabeçalho fixo; chegou = parou a menos de 200px do alvo
-                chegou = alvo is not None and abs(depois - alvo) < 200 and depois != antes
+                # o site desconta a altura do cabeçalho fixo; chegou = parou a menos de 200px do alvo —
+                # ou no FIM da página, quando o alvo está tão embaixo que não dá para rolar até ele
+                chegou = (alvo is not None and depois != antes
+                          and (abs(depois - alvo) < 200 or (depois >= maximo - 5 and alvo > depois)))
                 falhas += 0 if chegou else 1
                 print(f"  {rot}  {'ok ' if chegou else 'NÃO'}  '{l['texto']:30}' {l['href']:14} alvoY={alvo}  scroll {antes}->{depois}")
         nav.close()
