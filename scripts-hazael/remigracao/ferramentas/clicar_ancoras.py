@@ -67,7 +67,6 @@ def main():
                 .filter(a=>a.offsetParent!==null && a.getAttribute('href').length>1
                         && a.getAttribute('href')!=='#page-top' && !a.closest('header, footer, .page-top'))
                 .map(a=>({href:a.getAttribute('href'), texto:a.innerText.trim().slice(0,30)}))""")
-            maximo = p.evaluate("document.documentElement.scrollHeight - innerHeight")
             rot = f"aba {i + 1}" if i is not None else "página"
             if not links:
                 print(f"  {rot}: sem link '#' visível")
@@ -83,6 +82,8 @@ def main():
                 a.click()
                 p.wait_for_timeout(1200)
                 depois = p.evaluate("scrollY")
+                # o máximo é lido DEPOIS do clique: imagem lazy muda a altura da página no caminho
+                maximo = p.evaluate("document.documentElement.scrollHeight - innerHeight")
                 # o site desconta a altura do cabeçalho fixo; chegou = parou a menos de 200px do alvo —
                 # ou no FIM da página, quando o alvo está tão embaixo que não dá para rolar até ele
                 chegou = (alvo is not None and depois != antes
