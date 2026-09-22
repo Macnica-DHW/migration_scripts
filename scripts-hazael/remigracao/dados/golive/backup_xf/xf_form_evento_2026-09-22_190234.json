@@ -1,0 +1,393 @@
+{
+ "lido_em": "2026-09-22T19:02:34",
+ "/content/copia-teste/americas/mai/en/about-us/news-events/events-archive/embedded-vision-summit-2025/jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "Embedded Vision Summit 2025",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "EMBEDDED-VISION-SUMMIT-2025",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 23:19:00 GMT+0000",
+  "cq:lastModified": "Tue Sep 22 2026 21:38:31 GMT+0000",
+  "jcr:description": "Macnica is proud to exhibit at the premier event for innovators building AI and computer vision into products. Embedded Vision Summit brings together industry leaders, engineers, and developers to explore the latest in edge AI, machine learning, and vision technologies.",
+  "keywords": "imaging, vision, embedded vision summit",
+  "hideInNav": "true",
+  "pageTitle": "Embedded Vision Summit 2025",
+  "cq:tags": "mai:business-categories/imaging-vision-solutions",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "pd_description": "Macnica is proud to exhibit at the premier event for innovators building AI and computer vision into products. Embedded Vision Summit brings together industry leaders, engineers, and developers to explore the latest in edge AI, machine learning, and vision technologies.",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "navTitle": "Embedded Vision Summit 2025",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Embedded Vision Summit 2025",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_evento": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<p><b>Location</b>: Santa Clara, California<br>\r\n<b>Start Date</b>: Tuesday, May 20, 2025<br>\r\n<b>End Date</b>: Thursday, May 22, 2025</p>\r\n",
+      "jcr:lastModified": "Tue Sep 22 2026 20:47:57 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "text_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<h3>Join Macnica at Embedded Vision Summit 2025</h3>\n<p><b>Booth&nbsp;#719&nbsp;·&nbsp;May&nbsp;20-22 ·&nbsp;Santa Clara, CA</b></p>\n<p>Macnica is proud to exhibit at the premier event for innovators building AI and computer vision into products. <b>Embedded Vision Summit</b> brings together industry leaders, engineers, and developers to explore the latest in edge AI, machine learning, and vision technologies.</p>\n<p>Visit us at <b>Booth #719</b> to experience how we’re pushing the boundaries of real-time, AI-powered analytics and product design with our partner, iENSO, and solutions from Ambarella and Sony.</p>\n<h3>What You'll See at Our Booth:</h3>\n<ul>\n<li><b>GenAI in action</b>&nbsp;- iENSO will demo one of Microsoft’s popular multimodal Generative AI models running on&nbsp;<b>Ambarella’s latest on-device CV72S AI SoC</b>&nbsp;platform with the industry’s best AI performance per watt.</li>\n</ul>\n<ul>\n<li><b>Smarter Vision at the Edge </b>-&nbsp;iENSO’s CV72S and CV75 vision platforms<b>&nbsp;</b>unite&nbsp;<b>Sony’s latest HDR CMOS sensors&nbsp;</b>with&nbsp;<b>Ambarella’s latest on-device CVflow® 3.0 AI SoCs</b>, delivering&nbsp;scalable, high-performance reasoning for vision AI applications.</li>\n</ul>\n<h3><b>Let's talk innovation!</b></h3>\n<p>Whether you're designing next-gen robotics, smart cameras, or AI-enabled devices, we’d love to connect and show how Macnica’s ecosystem can help you accelerate development and scale smarter.</p>\n<h3>Ready for a demo or meeting with our team?&nbsp;</h3>\n<p>Fill out the form below, tell us what you’d like to discuss, and our team will confirm your meeting within one business day.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "text_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "container": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "action": "/content/usergenerated/copia-teste/americas/mai/en/about-us/news-events/events-archive/embedded-vision-summit-2025/cq-gen1790110558044/",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "macnicadefault_subject": "Embedded Vision Summit 2025 Meeting Request",
+      "errorFragmentPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/landingpage_popups/form-error/master",
+      "jcr:created": "Tue Sep 22 2026 20:55:58 GMT+0000",
+      "macnicadefault_mailto": [
+       "Carl.Dahlberg@macnica.com",
+       "motoki.nagashima@macnica.com",
+       "cindy.plante@macnica.com"
+      ],
+      "downloadasset_includePageTitle": "false",
+      "successFragmentPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/landingpage_popups/form-success/master1",
+      "jcr:lastModified": "Tue Sep 22 2026 21:00:19 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/form/container",
+      "actionType": "macnicaglobal2/components/form/actions/macnicadefault",
+      "macnicadefault_includePageTitle": "false",
+      "text_225325896_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:title": "First/Given Name",
+       "constraintMessage": "Please Enter First Name",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "required": "true",
+       "jcr:created": "Tue Sep 22 2026 19:25:30 GMT+0000",
+       "usePlaceholder": "true",
+       "name": "fullName",
+       "rows": "2",
+       "type": "text",
+       "jcr:lastModified": "Tue Sep 22 2026 20:01:10 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "First Name"
+      },
+      "text_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:title": "Last/Family Name",
+       "constraintMessage": "Please Enter Last Name",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "required": "true",
+       "jcr:created": "Tue Sep 22 2026 19:25:23 GMT+0000",
+       "usePlaceholder": "true",
+       "name": "lastName",
+       "rows": "2",
+       "type": "text",
+       "jcr:lastModified": "Tue Sep 22 2026 20:05:45 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Last Name"
+      },
+      "text_copy_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:title": "Company",
+       "constraintMessage": "Please Enter Company Name",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "required": "true",
+       "jcr:created": "Tue Sep 22 2026 19:25:23 GMT+0000",
+       "usePlaceholder": "true",
+       "name": "company",
+       "rows": "2",
+       "type": "text",
+       "jcr:lastModified": "Tue Sep 22 2026 20:06:30 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Company"
+      },
+      "text_copy_2108557944": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:title": "Email Address",
+       "constraintMessage": "Please Enter Valid Email",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "required": "true",
+       "jcr:created": "Tue Sep 22 2026 19:25:23 GMT+0000",
+       "usePlaceholder": "true",
+       "name": "email",
+       "rows": "2",
+       "type": "email",
+       "jcr:lastModified": "Tue Sep 22 2026 20:09:22 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Email Address"
+      },
+      "text_191754703_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:title": "Phone Number",
+       "constraintMessage": "Please Enter Phone Number",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "required": "true",
+       "jcr:created": "Tue Sep 22 2026 20:10:03 GMT+0000",
+       "usePlaceholder": "true",
+       "name": "phoneNumber",
+       "rows": "2",
+       "type": "text",
+       "jcr:lastModified": "Tue Sep 22 2026 20:10:40 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Phone Number"
+      },
+      "text_copy_814069991_": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:title": "Title",
+       "constraintMessage": "Please Enter Title",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:created": "Tue Sep 22 2026 19:25:23 GMT+0000",
+       "usePlaceholder": "true",
+       "name": "title",
+       "rows": "2",
+       "type": "text",
+       "jcr:lastModified": "Tue Sep 22 2026 20:08:10 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Title"
+      },
+      "text_499368991_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:title": "Message",
+       "constraintMessage": "Your input must be at least 2 characters long.",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:created": "Tue Sep 22 2026 20:22:46 GMT+0000",
+       "usePlaceholder": "true",
+       "name": "Message",
+       "rows": "2",
+       "type": "textarea",
+       "jcr:lastModified": "Tue Sep 22 2026 20:24:19 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Please provide any additional information regarding your availability"
+      },
+      "text_1080188014_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:created": "Tue Sep 22 2026 19:27:03 GMT+0000",
+       "text": "<p>Would you like to be added to our mailing list to receive the Macnica Americas Newsletter?</p>\r\n",
+       "jcr:lastModified": "Tue Sep 22 2026 20:24:57 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "options_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:title": "Newsletter Signup",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "source": "local",
+       "consentCheckbox": "false",
+       "jcr:created": "Tue Sep 22 2026 19:26:37 GMT+0000",
+       "name": "Newsletter Signup",
+       "type": "radio",
+       "jcr:lastModified": "Tue Sep 22 2026 20:03:31 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/form/options",
+       "items": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Yes",
+         "value": "Yes",
+         "selected": "false"
+        },
+        "item1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "No",
+         "value": "No",
+         "selected": "false"
+        }
+       }
+      },
+      "button_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:title": "Send message",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:created": "Tue Sep 22 2026 20:03:53 GMT+0000",
+       "type": "submit",
+       "jcr:lastModified": "Tue Sep 22 2026 20:04:18 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/form/button"
+      }
+     }
+    },
+    "container_botoes": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact Us for More Information",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_861351158": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Request a Quote",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/popups/form-success/master/jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Form Success",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/xf-web-variation",
+  "cq:xfMasterVariation": true,
+  "jcr:created": "Mon Sep 21 2026 16:41:13 GMT+0000",
+  "cq:lastModified": "Fri Sep 18 2026 21:06:24 GMT+0000",
+  "cq:xfVariantType": "web",
+  "sling:resourceType": "macnicaglobal2/components/xfpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "layout": "responsiveGrid",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "popup": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/popup",
+     "container": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Success",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Your request was sent. A member of our team will be in touch with you soon!</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   }
+  }
+ },
+ "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/popups/form-error/master/jcr:content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Form Error",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/xf-web-variation",
+  "cq:xfMasterVariation": true,
+  "jcr:created": "Mon Sep 21 2026 16:41:13 GMT+0000",
+  "cq:lastModified": "Fri Sep 18 2026 21:06:25 GMT+0000",
+  "cq:xfVariantType": "web",
+  "sling:resourceType": "macnicaglobal2/components/xfpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "layout": "responsiveGrid",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "popup": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/popup",
+     "container": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Error",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>There was an error submitting your message, please try again later.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   }
+  }
+ }
+}
