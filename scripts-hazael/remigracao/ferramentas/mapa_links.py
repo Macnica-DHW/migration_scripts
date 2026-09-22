@@ -106,8 +106,14 @@ def _host(u):
     return m.group(1) if m else (u or "")
 
 
-def _a(href, texto):
-    return f'<a href="{html.escape(href, quote=True)}" target="_blank" rel="noopener">{html.escape(texto)}</a>'
+def _a(href, texto, cls=None):
+    c = f' class="{cls}"' if cls else ""
+    return f'<a{c} href="{html.escape(href, quote=True)}" target="_blank" rel="noopener">{html.escape(texto)}</a>'
+
+
+def _abrir(n):
+    """Link que abre em novas abas todas as páginas (a.pg) do grupo: o <details> quando está no <summary>, o <li> senão."""
+    return f'<a class="abrir" href="#" title="Open every page of this group in a new tab (visible ones only, when filtering)">open all {n} in new tabs</a>'
 
 
 def conferir(itens):
@@ -128,6 +134,24 @@ CSS_EXTRA = """
 .x a,.x a:visited{color:var(--mut);text-decoration:underline dotted}
 .x .st{color:#b3261e;font-weight:600}
 .raiz{margin:0 0 6px;font-size:17px}
+.abrir{font-size:12px;font-weight:400;margin-left:10px;white-space:nowrap}
+summary .abrir{margin-left:14px}
+.aviso{font-size:12px;color:var(--mut);margin-left:8px}
+.aviso.bloq{color:#b3261e}
+"""
+
+JS_EXTRA = """
+document.addEventListener('click',ev=>{
+  const a=ev.target.closest('a.abrir');if(!a)return;
+  ev.preventDefault();ev.stopPropagation();
+  const grupo=a.closest('summary')?a.closest('details'):a.closest('li');
+  const links=[...grupo.querySelectorAll('a.pg')].filter(x=>!x.closest('.oculto'));
+  let bloq=0;for(const x of links){if(!window.open(x.href,'_blank'))bloq++}
+  let av=a.nextElementSibling;
+  if(!av||!av.classList.contains('aviso')){av=document.createElement('span');av.className='aviso';a.after(av)}
+  av.classList.toggle('bloq',bloq>0);
+  av.textContent=bloq?`${bloq} of ${links.length} blocked — allow pop-ups for this page (icon at the right of the address bar) and click again`:`${links.length} opened`;
+});
 """
 
 
@@ -167,18 +191,21 @@ class Mapa:
             nota += " · origin has a page: " + _a(ll.link(o["path"]), o["titulo"] or rel.rsplit("/", 1)[-1])
         return f'<span class="x">{nota}</span>'
 
-    def _ul(self, no, caminho):
+    def _ul(self, no, caminho, abrir_topo=True):
+        """abrir_topo=False: o 1º nível não ganha 'open all' (o <summary> do ramo já tem o mesmo link)."""
         out = ["<ul>"]
         for nome in sorted(k for k in no if k != "_"):
             filho, rel = no[nome], f"{caminho}/{nome}" if caminho else nome
             e = filho.get("_")
             busca = html.escape(f"{(e or {}).get('titulo', '')} {rel}".lower(), quote=True)
             out.append(f'<li data-t="{busca}">')
+            tem_filhos = any(k != "_" for k in filho)
+            grupo = _abrir(_conta(filho)) if tem_filhos and abrir_topo else ""
             if e:
-                out.append(f'{_a(ll.link(e["path"]), e["titulo"] or nome)}{self._extras(e)}<span class="p">/{html.escape(rel)}</span>')
+                out.append(f'{_a(ll.link(e["path"]), e["titulo"] or nome, "pg")}{self._extras(e)}{grupo}<span class="p">/{html.escape(rel)}</span>')
             else:
-                out.append(f'<span class="sem">{html.escape(nome)}</span>{self._pasta(rel)}<span class="p">/{html.escape(rel)}</span>')
-            if any(k != "_" for k in filho):
+                out.append(f'<span class="sem">{html.escape(nome)}</span>{self._pasta(rel)}{grupo}<span class="p">/{html.escape(rel)}</span>')
+            if tem_filhos:
                 out.append(self._ul(filho, rel))
             out.append("</li>")
         out.append("</ul>")
@@ -190,9 +217,9 @@ class Mapa:
             busca = html.escape(f"{e['titulo']} {e['rel']}".lower(), quote=True)
             if links_origem:
                 extra = f'<span class="x">redirect to {html.escape(e["redirect"])}</span>' if e["redirect"] else ""
-                out.append(f'<li data-t="{busca}">{_a(ll.link(e["path"]), e["titulo"] or e["rel"])}{extra}<span class="p">/{html.escape(e["rel"])}</span></li>')
+                out.append(f'<li data-t="{busca}">{_a(ll.link(e["path"]), e["titulo"] or e["rel"], "pg")}{extra}<span class="p">/{html.escape(e["rel"])}</span></li>')
             else:
-                out.append(f'<li data-t="{busca}">{_a(ll.link(e["path"]), e["titulo"] or e["rel"])}{self._extras(e)}<span class="p">/{html.escape(e["rel"])}</span></li>')
+                out.append(f'<li data-t="{busca}">{_a(ll.link(e["path"]), e["titulo"] or e["rel"], "pg")}{self._extras(e)}<span class="p">/{html.escape(e["rel"])}</span></li>')
         out.append("</ul>")
         return "".join(out)
 
@@ -205,7 +232,7 @@ class Mapa:
         if soltas:
             n = len(soltas)
             nav.append(f'<a href="#nivel-raiz">Root level ({n})</a>')
-            corpo.append(f'<details open id="nivel-raiz"><summary>Pages directly under /{html.escape(nome_raiz)}<span class="n">{_n(n)}</span></summary>')
+            corpo.append(f'<details open id="nivel-raiz"><summary>Pages directly under /{html.escape(nome_raiz)}<span class="n">{_n(n)}</span>{_abrir(n)}</summary>')
             corpo.append(self._ul({k: v for k, v in soltas.items()}, ""))
             corpo.append("</details>")
         for nome in sorted(ramos):
@@ -213,24 +240,24 @@ class Mapa:
             idr = "r-" + re.sub(r"[^a-z0-9]+", "-", nome.lower())
             nav.append(f'<a href="#{idr}">{html.escape(nome)} ({n})</a>')
             corpo.append(f'<details open id="{idr}"><summary>{html.escape(nome)}<span class="n">{_n(n)}</span>'
-                         + ("" if "_" in no else ' <span class="n">(folder)</span>') + "</summary>")
-            corpo.append(self._ul({nome: no}, ""))
+                         + ("" if "_" in no else ' <span class="n">(folder)</span>') + f"{_abrir(n)}</summary>")
+            corpo.append(self._ul({nome: no}, "", abrir_topo=False))
             corpo.append("</details>")
         if self.deletadas:
             nav.append(f'<a href="#deletadas">Soft-deleted ({len(self.deletadas)})</a>')
             corpo.append(f'<details id="deletadas"><summary>Soft-deleted — hidden from the Sites console, still in the JCR'
-                         f'<span class="n">{_n(len(self.deletadas))}</span></summary>{self._lista(self.deletadas)}</details>')
+                         f'<span class="n">{_n(len(self.deletadas))}</span>{_abrir(len(self.deletadas))}</summary>{self._lista(self.deletadas)}</details>')
         if self.origem and self.so_na_origem:
             nav.append(f'<a href="#so-origem">Only in the origin ({len(self.so_na_origem)})</a>')
             corpo.append(f'<details open id="so-origem"><summary>Only in the origin — no page here'
-                         f'<span class="n">{_n(len(self.so_na_origem))}</span></summary>{self._lista(self.so_na_origem, True)}</details>')
+                         f'<span class="n">{_n(len(self.so_na_origem))}</span>{_abrir(len(self.so_na_origem))}</summary>{self._lista(self.so_na_origem, True)}</details>')
 
         if self.o_raiz and self.o_raiz["pagina"]:
             o = " · origin: " + _a(ll.link(self.o_raiz["path"]), self.o_raiz["titulo"] or nome_raiz)
         else:
             o = ""
         if self.raiz_info["pagina"]:
-            linha = _a(ll.link(self.raiz), self.raiz_info["titulo"] or nome_raiz) + f'<span class="x">{_a(editor(self.raiz), "edit")}{o}</span>'
+            linha = _a(ll.link(self.raiz), self.raiz_info["titulo"] or nome_raiz, "pg") + f'<span class="x">{_a(editor(self.raiz), "edit")}{o}</span>'
         else:
             linha = f'<span class="sem">{html.escape(nome_raiz)}</span><span class="x">{html.escape(self.raiz_info["tipo"] or "?")}, no page here{o}</span>'
         ruins = sum(1 for st in self.status.values() if st != 200)
@@ -242,13 +269,14 @@ class Mapa:
 <h1>{html.escape(nome_raiz)} — link map</h1>
 <p class="sub"><code>{html.escape(self.raiz)}</code> — {_n(len(self.vivas))}{f", {len(self.deletadas)} soft-deleted" if self.deletadas else ""}.
 Links open the page as a visitor sees it (outside the editor) in a new tab; <i>edit</i> opens the editor; <i>origin</i> opens the
-page this one was migrated from. You must be logged in to the AEM author.{conf} Generated {quando}.</p>
+page this one was migrated from; <i>open all</i> opens every page of a group in new tabs (the browser may ask you to allow
+pop-ups the first time). You must be logged in to the AEM author.{conf} Generated {quando}.</p>
 <div class="barra"><input id="q" type="search" placeholder="Filter by title or path…" autocomplete="off">
 <nav>{''.join(nav)}</nav></div>
 <p class="raiz">{linha}<span class="p">{html.escape(self.raiz)}</span></p>
 {''.join(corpo)}
 <footer>Paths are relative to <code>{html.escape(self.raiz)}</code>.{sub_origem} Every cq:Page under the root is listed, whoever made it.</footer>
-</main><script>{ll.JS}</script></body></html>
+</main><script>{ll.JS}{JS_EXTRA}</script></body></html>
 """
 
 
