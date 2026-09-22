@@ -21,6 +21,9 @@ O HTML NÃO diz quem fez cada página — autor é filtro, não coluna.
 
     python3 lista_links.py                # gera o HTML e o JSON
     python3 lista_links.py --conferir     # + GET em cada link, lista o que não deu 200
+    python3 lista_links.py --so products/boards-modules/tq-systems products/semiconductors technology services \
+                           --nome global2_links_tq-systems_semiconductors_technology_services
+                                          # só esses ramos (a landing da seção continua no topo); outro nome de saída
 """
 import argparse
 import collections
@@ -39,8 +42,7 @@ sys.path.insert(0, str(_RAIZ / "scripts-bruno"))
 from aem_lib import CONFIG, build_session  # noqa: E402
 
 DADOS = Path(__file__).resolve().parents[2] / "dados" / "golive"
-SAIDA_HTML = DADOS / "global2_links_products_technology_services.html"
-SAIDA_JSON = DADOS / "global2_links_products_technology_services.json"
+NOME_PADRAO = "global2_links_products_technology_services"
 
 MAI = "/content/macnicaglobal2/americas/mai/en"
 GWI_MAI = "/content/macnicagwi/americas/mai/en"
@@ -94,8 +96,13 @@ def _familia(rel):
     return "/".join(p[:3] if p[0] == "products" else p[:2])
 
 
-def escolher():
-    """(escolhidas, fora): escolhidas = [{rel, path, titulo, gwi}], fora = Counter por motivo + exemplos."""
+def _dentro(rel, so):
+    return not so or any(rel == p or rel.startswith(p + "/") for p in so)
+
+
+def escolher(so=()):
+    """(escolhidas, landings, fora): escolhidas = [{rel, path, titulo, gwi}], fora = {motivo: [rel]}.
+    `so` = caminhos relativos que entram (vazio = tudo); a landing de cada seção entra sempre."""
     gwi, g2 = {}, []
     for sec in SECOES:
         for h in paginas(f"{GWI_MAI}/{sec}"):
@@ -120,7 +127,7 @@ def escolher():
         rel = h["jcr:path"][len(MAI) + 1:]
         if rel in SECOES:
             continue                                            # a landing entra à parte, sempre
-        if not nossa(h, rel):
+        if not _dentro(rel, so) or not nossa(h, rel):
             continue
         if h.get("jcr:content", {}).get("deleted"):
             fora["soft-deleted"].append(rel)
@@ -253,11 +260,13 @@ def _ul(no, caminho):
     return "".join(out)
 
 
-def montar_html(escolhidas, landings, quando):
-    corpo, nav = [], []
+def montar_html(escolhidas, landings, quando, so=()):
+    corpo, nav, escopo = [], [], []
     for sec in SECOES:
         itens = [e for e in escolhidas if e["rel"].startswith(sec + "/")]
         nav.append(f'<a href="#{sec}">{sec.capitalize()} ({len(itens) + 1})</a>')
+        ramos = sorted(p[len(sec) + 1:] for p in so if p.startswith(sec + "/"))
+        escopo.append(sec.capitalize() + (f" ({', '.join(ramos)})" if ramos else ""))
         L = landings[sec]
         corpo.append(f'<h2 id="{sec}">{sec.capitalize()}<span class="n">{_n(len(itens) + 1)}</span></h2>')
         corpo.append(f'<p class="landing"><a href="{html.escape(link(L["path"]), quote=True)}" target="_blank" '
@@ -265,6 +274,10 @@ def montar_html(escolhidas, landings, quando):
         arv = _arvore(itens, sec)
         for cat in sorted(arv):
             no = arv[cat]
+            # categoria que é só passagem para um único ramo (boards-modules -> tq-systems): vira o cabeçalho
+            while "_" not in no and len(no) == 1:
+                (filho,) = no
+                cat, no = f"{cat}/{filho}", no[filho]
             e = no.get("_")
             corpo.append(f'<details open><summary>{html.escape(cat)}<span class="n">{_n(_conta(no))}</span></summary>')
             # a própria categoria é o 1º item da lista dela quando é página nossa
@@ -276,8 +289,8 @@ def montar_html(escolhidas, landings, quando):
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Macnica global2 — page links</title><style>{CSS}</style></head><body><main>
 <h1>Macnica global2 — page links</h1>
-<p class="sub">Americas / MAI / EN — Products, Technology and Services. {total} pages, each with a counterpart on the
-GWI site. Links open the page as a visitor sees it (outside the editor) in a new tab; you must be logged in to the AEM
+<p class="sub">Americas / MAI / EN — {', '.join(escopo[:-1])} and {escopo[-1]}. {total} pages, each with a counterpart
+on the GWI site. Links open the page as a visitor sees it (outside the editor) in a new tab; you must be logged in to the AEM
 author. Generated {quando}.</p>
 <div class="barra"><input id="q" type="search" placeholder="Filter by title or path…" autocomplete="off">
 <nav>{''.join(nav)}</nav></div>
@@ -291,13 +304,20 @@ the content may change.</footer>
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--conferir", action="store_true", help="GET em cada link; lista o que não deu 200")
+    ap.add_argument("--so", nargs="+", default=(), metavar="REL",
+                    help="só estes ramos (relativos a /americas/mai/en, ex. products/semiconductors); a landing entra sempre")
+    ap.add_argument("--nome", default=NOME_PADRAO, help="nome dos arquivos de saída em dados/golive (sem extensão)")
     a = ap.parse_args()
+    so = tuple(p.strip("/") for p in a.so)
+    for p in so:
+        assert p.split("/")[0] in SECOES, f"--so fora de {SECOES}: {p}"
 
-    escolhidas, landings, fora = escolher()
+    escolhidas, landings, fora = escolher(so)
     quando = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     DADOS.mkdir(parents=True, exist_ok=True)
-    SAIDA_HTML.write_text(montar_html(escolhidas, landings, quando), encoding="utf-8")
-    SAIDA_JSON.write_text(json.dumps({"quando": quando, "landings": landings, "paginas": escolhidas,
+    saida_html, saida_json = DADOS / f"{a.nome}.html", DADOS / f"{a.nome}.json"
+    saida_html.write_text(montar_html(escolhidas, landings, quando, so), encoding="utf-8")
+    saida_json.write_text(json.dumps({"quando": quando, "so": so, "landings": landings, "paginas": escolhidas,
                                       "fora": fora}, ensure_ascii=False, indent=1), encoding="utf-8")
 
     for sec in SECOES:
@@ -309,7 +329,7 @@ def main():
         print(f"\nfora — {motivo}: {len(rels)}")
         for k, v in sorted(collections.Counter(_familia(r) for r in rels).items()):
             print(f"    {v:4d}  {k}")
-    print(f"\n{SAIDA_HTML}\n{SAIDA_JSON}")
+    print(f"\n{saida_html}\n{saida_json}")
 
     if a.conferir:
         ruins = [(e, st) for e, st in conferir(list(landings.values()) + escolhidas) if st != 200]
