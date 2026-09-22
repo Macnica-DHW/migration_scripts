@@ -1,29 +1,34 @@
 """
-lista_links.py — SOMENTE LEITURA. Gera um HTML (abre em qualquer navegador, sem dependência externa)
-com o link FORA DO EDITOR (`.html?wcmmode=disabled`) das páginas do macnicaglobal2 em
-`/americas/mai/en/{products,technology,services}` feitas pelo Bruno ou pelo Valter.
+lista_links.py — SOMENTE LEITURA. Mapa de links (HTML autônomo, abre em qualquer navegador) das páginas do
+macnicaglobal2 feitas pelo Bruno ou pelo Valter, FORA DO EDITOR (`.html?wcmmode=disabled`), em quatro raízes
+de /americas/mai/en: solutions, products/boards-modules, products/semiconductors e services.
 
-Só sai GET daqui: querybuilder dos dois lados (global2 e GWI) e, com `--conferir`, o GET do próprio link.
+Pedido do Hazael (21–22/09/2026): filtrar por autor (Valter e Bruno) sem dizer o autor no HTML; o HTML é
+estritamente do macnicaglobal2 — não cita o GWI. O GWI só é LIDO, para descartar cópia de teste (página sem
+par lá). `technology` virou `solutions` no global2 em 22/09; no GWI e nos manifestos o nome continua
+`technology` (tabela ANTIGO).
 
-Entra na lista a página que:
-  1. é NOSSA: `jcr:createdBy` é Bruno/Valter; ou o `cq:lastModifiedBy` é Bruno/Valter E a página era
-     casca (`createdBy` = admin) ou é de família em que a maioria das páginas foi criada por nós (a
-     raiz de `tq-systems` é do anil, a família é do Bruno). Página da Anion em que o lote do Bruno
-     encostou (`sony/…/sony-imx174llj-c`) NÃO entra;
+Só sai GET daqui: querybuilder dos dois lados e, com `--conferir`, o GET do próprio link.
+
+Entra no mapa a página que:
+  1. é NOSSA: `jcr:createdBy` é Bruno/Valter; ou o `cq:lastModifiedBy` é Bruno/Valter E a página era casca
+     (`createdBy` = admin) ou é de família em que a maioria das páginas foi criada por nós (a raiz de
+     `tq-systems` é do anil, a família é do Bruno); ou está nos manifestos do go-live (manifesto.jsonl e
+     manifesto_direto.jsonl) como página criada/preenchida por nós — o `cq:lastModifiedBy` sozinho não basta:
+     o rename de `technology` fez o `reference-adjustment-service` carimbar as landings que linkam filhas
+     (imaging-and-vision, casca do admin, sumia da lista). Página da Anion em que o lote do Bruno encostou
+     (`sony/…/sony-imx174llj-c`) NÃO entra;
   2. NÃO está soft-deleted (`deleted` no jcr:content — some do console, continua no JCR);
   3. TEM par no GWI: mesmo caminho relativo com o nome normalizado; se não casar, mesmo pai + mesmo
-     `jcr:title` (o Bruno renomeou `ibase/…/mi991`). Sem par = teste/cópia (`tq-systems1`, `tq-systems5`,
-     `tq-systems-embedded`, `products/test`, `boards-modules0`…) e fica de fora.
+     `jcr:title`, desde que o par ainda não tenha página viva no global2 (o Bruno renomeou `ibase/…/mi991`).
+     Sem par = cópia de teste (`tq-systems1/4/5`, `tq-systems-embedded`…) e fica de fora.
 
-A landing de cada seção vai sempre no topo da seção (pedido do Hazael), seja de quem for. Nó
-intermediário que não é nosso (`products/boards-modules`, da Anion) aparece só como texto, sem link.
-O HTML NÃO diz quem fez cada página — autor é filtro, não coluna.
+A raiz de cada ramo passa pelo MESMO filtro: `boards-modules` e `semiconductors` são da Anion e ficam como
+cabeçalho sem link. Nó intermediário que não é nosso também aparece só como texto.
 
-    python3 lista_links.py                # gera o HTML e o JSON
-    python3 lista_links.py --conferir     # + GET em cada link, lista o que não deu 200
-    python3 lista_links.py --so products/boards-modules/tq-systems products/semiconductors technology services \
-                           --nome global2_links_tq-systems_semiconductors_technology_services
-                                          # só esses ramos (a landing da seção continua no topo); outro nome de saída
+    python3 lista_links.py                   # gera dados/golive/global2_link_map.{html,json}
+    python3 lista_links.py --conferir        # + GET em cada link, lista o que não deu 200
+    python3 lista_links.py --raizes solutions services --nome outro_nome
 """
 import argparse
 import collections
@@ -42,11 +47,16 @@ sys.path.insert(0, str(_RAIZ / "scripts-bruno"))
 from aem_lib import CONFIG, build_session  # noqa: E402
 
 DADOS = Path(__file__).resolve().parents[2] / "dados" / "golive"
-NOME_PADRAO = "global2_links_products_technology_services"
+NOME_PADRAO = "global2_link_map"
 
 MAI = "/content/macnicaglobal2/americas/mai/en"
 GWI_MAI = "/content/macnicagwi/americas/mai/en"
-SECOES = ("products", "technology", "services")
+RAIZES = ("solutions", "products/boards-modules", "products/semiconductors", "services")
+NOMES = {"solutions": "Solutions", "products/boards-modules": "Boards & Modules",
+         "products/semiconductors": "Semiconductors", "services": "Services"}
+ANTIGO = {"solutions": "technology"}                              # nome da seção no GWI e nos manifestos
+MANIFESTOS = (DADOS / "manifesto.jsonl", DADOS / "manifesto_direto.jsonl")
+OPS_PAGINA = {"pagina-nova", "pagina-preenchida", "copy", "create"}   # o que nos manifestos é página nossa
 NOSSOS = ("valter.toffolo@", "bruno.jaques@")
 PROPS = ("jcr:path jcr:createdBy jcr:content/jcr:title jcr:content/cq:lastModifiedBy "
          "jcr:content/cq:lastModified jcr:content/deleted")
@@ -96,26 +106,47 @@ def _familia(rel):
     return "/".join(p[:3] if p[0] == "products" else p[:2])
 
 
-def _dentro(rel, so):
-    return not so or any(rel == p or rel.startswith(p + "/") for p in so)
+def _troca_secao(rel, tabela):
+    sec, _, resto = rel.partition("/")
+    return tabela.get(sec, sec) + ("/" + resto if resto else "")
 
 
-def escolher(so=()):
-    """(escolhidas, landings, fora): escolhidas = [{rel, path, titulo, gwi}], fora = {motivo: [rel]}.
-    `so` = caminhos relativos que entram (vazio = tudo); a landing de cada seção entra sempre."""
+def _paginas_dos_manifestos():
+    """Caminhos relativos (já com o nome atual da seção) das páginas que o go-live criou/preencheu."""
+    atual = {v: k for k, v in ANTIGO.items()}
+    out = set()
+    for arq in MANIFESTOS:
+        if not arq.exists():
+            continue
+        for linha in arq.read_text().splitlines():
+            if not linha.strip():
+                continue
+            m = json.loads(linha)
+            if m.get("op") not in OPS_PAGINA or m.get("status") not in (200, 201):
+                continue
+            d = m.get("destino") or ""
+            if d.startswith(MAI + "/"):
+                out.add(_troca_secao(d[len(MAI) + 1:].split("/jcr:content")[0], atual))
+    return out
+
+
+def escolher(raizes):
+    """(escolhidas, fora): escolhidas = [{rel, path, titulo}] ordenadas por rel; fora = {motivo: [rel]}."""
     gwi, g2 = {}, []
-    for sec in SECOES:
-        for h in paginas(f"{GWI_MAI}/{sec}"):
-            gwi[norm(h["jcr:path"][len(GWI_MAI) + 1:])] = h
-        g2 += paginas(f"{MAI}/{sec}")
+    for raiz in raizes:
+        raiz_gwi = f"{GWI_MAI}/{_troca_secao(raiz, ANTIGO)}"
+        for h in paginas(raiz_gwi):
+            gwi[norm(raiz + h["jcr:path"][len(raiz_gwi):])] = h        # chave já com o nome atual do global2
+        g2 += paginas(f"{MAI}/{raiz}")
 
     criadas = collections.defaultdict(collections.Counter)      # família -> nossas x de outros (admin é casca: neutro)
     for h in g2:
         if h.get("jcr:createdBy") != "admin":
             criadas[_familia(h["jcr:path"][len(MAI) + 1:])][_nosso(h.get("jcr:createdBy"))] += 1
+    do_manifesto = _paginas_dos_manifestos()
 
     def nossa(h, rel):
-        if _nosso(h.get("jcr:createdBy")):
+        if _nosso(h.get("jcr:createdBy")) or rel in do_manifesto:
             return True
         if not _nosso(h.get("jcr:content", {}).get("cq:lastModifiedBy")):
             return False
@@ -125,22 +156,20 @@ def escolher(so=()):
     candidatas, fora = [], collections.defaultdict(list)
     for h in g2:
         rel = h["jcr:path"][len(MAI) + 1:]
-        if rel in SECOES:
-            continue                                            # a landing entra à parte, sempre
-        if not _dentro(rel, so) or not nossa(h, rel):
+        if not nossa(h, rel):
+            fora["de outra pessoa"].append(rel)
             continue
         if h.get("jcr:content", {}).get("deleted"):
             fora["soft-deleted"].append(rel)
             continue
         candidatas.append((rel, h))
 
-    # par do GWI já ocupado por página VIVA do global2, de quem for: `products/test` tem o título de
-    # `products/macnica-products`, que a Anion já fez — não é renomeada, é cópia de teste
+    # par do GWI já ocupado por página VIVA do global2, de quem for — a renomeada só casa com par livre
     casadas = {norm(h["jcr:path"][len(MAI) + 1:]) for h in g2 if not h.get("jcr:content", {}).get("deleted")} & set(gwi)
     escolhidas = []
     for rel, h in candidatas:
         par = gwi.get(norm(rel))
-        if par is None:                                         # renomeada: mesmo pai, mesmo título, par ainda livre
+        if par is None:                                         # renomeada: mesmo pai, mesmo título, par livre
             pai = norm(rel).rsplit("/", 1)[0]
             achados = [k for k, g in gwi.items() if k.rsplit("/", 1)[0] == pai and k not in casadas
                        and _titulo(g) and _titulo(g).lower() == _titulo(h).lower()]
@@ -150,14 +179,8 @@ def escolher(so=()):
         if par is None:
             fora["sem par no GWI"].append(rel)
             continue
-        escolhidas.append({"rel": rel, "path": h["jcr:path"], "titulo": _titulo(h), "gwi": par["jcr:path"]})
-
-    landings = {}
-    for h in g2:
-        rel = h["jcr:path"][len(MAI) + 1:]
-        if rel in SECOES:
-            landings[rel] = {"rel": rel, "path": h["jcr:path"], "titulo": _titulo(h)}
-    return sorted(escolhidas, key=lambda e: e["rel"]), landings, fora
+        escolhidas.append({"rel": rel, "path": h["jcr:path"], "titulo": _titulo(h)})
+    return sorted(escolhidas, key=lambda e: e["rel"]), fora
 
 
 def link(path):
@@ -241,6 +264,10 @@ def _n(n):
     return f"{n} page" + ("" if n == 1 else "s")
 
 
+def _a(e, texto):
+    return f'<a href="{html.escape(link(e["path"]), quote=True)}" target="_blank" rel="noopener">{html.escape(texto)}</a>'
+
+
 def _ul(no, caminho):
     out = ["<ul>"]
     for nome in sorted(k for k in no if k != "_"):
@@ -249,8 +276,7 @@ def _ul(no, caminho):
         busca = html.escape(f"{(e or {}).get('titulo', '')} {rel}".lower(), quote=True)
         out.append(f'<li data-t="{busca}">')
         if e:
-            out.append(f'<a href="{html.escape(link(e["path"]), quote=True)}" target="_blank" rel="noopener">'
-                       f'{html.escape(e["titulo"] or nome)}</a><span class="p">/{html.escape(rel)}</span>')
+            out.append(f'{_a(e, e["titulo"] or nome)}<span class="p">/{html.escape(rel)}</span>')
         else:
             out.append(f'<span class="sem">{html.escape(nome)}</span>')
         if any(k != "_" for k in filho):
@@ -260,42 +286,40 @@ def _ul(no, caminho):
     return "".join(out)
 
 
-def montar_html(escolhidas, landings, quando, so=()):
-    corpo, nav, escopo = [], [], []
-    for sec in SECOES:
-        itens = [e for e in escolhidas if e["rel"].startswith(sec + "/")]
-        nav.append(f'<a href="#{sec}">{sec.capitalize()} ({len(itens) + 1})</a>')
-        ramos = sorted(p[len(sec) + 1:] for p in so if p.startswith(sec + "/"))
-        escopo.append(sec.capitalize() + (f" ({', '.join(ramos)})" if ramos else ""))
-        L = landings[sec]
-        corpo.append(f'<h2 id="{sec}">{sec.capitalize()}<span class="n">{_n(len(itens) + 1)}</span></h2>')
-        corpo.append(f'<p class="landing"><a href="{html.escape(link(L["path"]), quote=True)}" target="_blank" '
-                     f'rel="noopener">{html.escape(L["titulo"] or sec)}</a><span class="p">/{sec}</span></p>')
-        arv = _arvore(itens, sec)
+def montar_html(escolhidas, raizes, quando):
+    por = {e["rel"]: e for e in escolhidas}
+    corpo, nav, nomes = [], [], []
+    for raiz in raizes:
+        nome = NOMES.get(raiz) or raiz.rsplit("/", 1)[-1].replace("-", " ").title()
+        idr = raiz.replace("/", "-")
+        itens = [e for e in escolhidas if e["rel"] == raiz or e["rel"].startswith(raiz + "/")]
+        nav.append(f'<a href="#{idr}">{html.escape(nome)} ({len(itens)})</a>')
+        nomes.append(nome)
+        corpo.append(f'<h2 id="{idr}">{html.escape(nome)}<span class="n">{_n(len(itens))}</span></h2>')
+        r = por.get(raiz)
+        if r:                                                   # a raiz é nossa: link; senão só o caminho
+            corpo.append(f'<p class="landing">{_a(r, r["titulo"] or nome)}<span class="p">/{html.escape(raiz)}</span></p>')
+        else:
+            corpo.append(f'<p class="landing"><span class="p">/{html.escape(raiz)}</span></p>')
+        arv = _arvore([e for e in itens if e["rel"] != raiz], raiz)
         for cat in sorted(arv):
             no = arv[cat]
-            # categoria que é só passagem para um único ramo (boards-modules -> tq-systems): vira o cabeçalho
-            while "_" not in no and len(no) == 1:
-                (filho,) = no
-                cat, no = f"{cat}/{filho}", no[filho]
-            e = no.get("_")
             corpo.append(f'<details open><summary>{html.escape(cat)}<span class="n">{_n(_conta(no))}</span></summary>')
             # a própria categoria é o 1º item da lista dela quando é página nossa
-            corpo.append(_ul({cat: no} if e else {k: v for k, v in no.items() if k != "_"},
-                             sec if e else f"{sec}/{cat}"))
+            corpo.append(_ul({cat: no} if "_" in no else {k: v for k, v in no.items() if k != "_"},
+                             raiz if "_" in no else f"{raiz}/{cat}"))
             corpo.append("</details>")
-    total = len(escolhidas) + len(SECOES)
+    escopo = (", ".join(nomes[:-1]) + " and " + nomes[-1]) if len(nomes) > 1 else nomes[0]
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Macnica global2 — page links</title><style>{CSS}</style></head><body><main>
-<h1>Macnica global2 — page links</h1>
-<p class="sub">Americas / MAI / EN — {', '.join(escopo[:-1])} and {escopo[-1]}. {total} pages, each with a counterpart
-on the GWI site. Links open the page as a visitor sees it (outside the editor) in a new tab; you must be logged in to the AEM
-author. Generated {quando}.</p>
+<title>Macnica global2 — link map</title><style>{CSS}</style></head><body><main>
+<h1>Macnica global2 — link map</h1>
+<p class="sub">Americas / MAI / EN — {html.escape(escopo)}. {len(escolhidas)} pages. Links open the page as a visitor sees
+it (outside the editor) in a new tab; you must be logged in to the AEM author. Generated {quando}.</p>
 <div class="barra"><input id="q" type="search" placeholder="Filter by title or path…" autocomplete="off">
 <nav>{''.join(nav)}</nav></div>
 {''.join(corpo)}
-<footer>Paths are relative to <code>{MAI}</code>. Technology and Services are still being edited; the page set is final,
+<footer>Paths are relative to <code>{MAI}</code>. Solutions and Services are still being edited; the page set is final,
 the content may change.</footer>
 </main><script>{JS}</script></body></html>
 """
@@ -304,26 +328,24 @@ the content may change.</footer>
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--conferir", action="store_true", help="GET em cada link; lista o que não deu 200")
-    ap.add_argument("--so", nargs="+", default=(), metavar="REL",
-                    help="só estes ramos (relativos a /americas/mai/en, ex. products/semiconductors); a landing entra sempre")
+    ap.add_argument("--raizes", nargs="+", default=RAIZES, metavar="REL",
+                    help="raízes do mapa, relativas a /americas/mai/en (padrão: %(default)s)")
     ap.add_argument("--nome", default=NOME_PADRAO, help="nome dos arquivos de saída em dados/golive (sem extensão)")
     a = ap.parse_args()
-    so = tuple(p.strip("/") for p in a.so)
-    for p in so:
-        assert p.split("/")[0] in SECOES, f"--so fora de {SECOES}: {p}"
+    raizes = tuple(p.strip("/") for p in a.raizes)
 
-    escolhidas, landings, fora = escolher(so)
+    escolhidas, fora = escolher(raizes)
     quando = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     DADOS.mkdir(parents=True, exist_ok=True)
     saida_html, saida_json = DADOS / f"{a.nome}.html", DADOS / f"{a.nome}.json"
-    saida_html.write_text(montar_html(escolhidas, landings, quando, so), encoding="utf-8")
-    saida_json.write_text(json.dumps({"quando": quando, "so": so, "landings": landings, "paginas": escolhidas,
-                                      "fora": fora}, ensure_ascii=False, indent=1), encoding="utf-8")
+    saida_html.write_text(montar_html(escolhidas, raizes, quando), encoding="utf-8")
+    saida_json.write_text(json.dumps({"quando": quando, "raizes": raizes, "paginas": escolhidas, "fora": fora},
+                                     ensure_ascii=False, indent=1), encoding="utf-8")
 
-    for sec in SECOES:
-        itens = [e for e in escolhidas if e["rel"].startswith(sec + "/")]
-        print(f"{sec}: landing + {len(itens)}")
-        for k, v in sorted(collections.Counter(_familia(e["rel"]) for e in itens).items()):
+    for raiz in raizes:
+        itens = [e for e in escolhidas if e["rel"] == raiz or e["rel"].startswith(raiz + "/")]
+        print(f"{raiz}: {len(itens)}" + ("" if raiz in {e['rel'] for e in itens} else "  (raiz não é nossa: sem link)"))
+        for k, v in sorted(collections.Counter(_familia(e["rel"]) for e in itens if e["rel"] != raiz).items()):
             print(f"    {v:4d}  {k}")
     for motivo, rels in fora.items():
         print(f"\nfora — {motivo}: {len(rels)}")
@@ -332,8 +354,8 @@ def main():
     print(f"\n{saida_html}\n{saida_json}")
 
     if a.conferir:
-        ruins = [(e, st) for e, st in conferir(list(landings.values()) + escolhidas) if st != 200]
-        print(f"\nconferência: {len(escolhidas) + len(landings) - len(ruins)} com 200, {len(ruins)} sem")
+        ruins = [(e, st) for e, st in conferir(escolhidas) if st != 200]
+        print(f"\nconferência: {len(escolhidas) - len(ruins)} com 200, {len(ruins)} sem")
         for e, st in ruins:
             print(f"    {st}  {e['rel']}")
 
