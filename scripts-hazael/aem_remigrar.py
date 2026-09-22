@@ -45,7 +45,7 @@ COMO RODAR
   python3 aem_remigrar.py --executar                 # as 135
 
   # outra seção, DIRETO no global2 (dry-run; o `= servidor`/`MUDA` sai na tela):
-  python3 aem_remigrar.py --origem <gwi>/technology --destino <global2>/technology \
+  python3 aem_remigrar.py --origem <gwi>/technology --destino <global2>/solutions \
       --alvo-global2 --template-por-origem --so-publicadas \
       --gemeos-conhecidos <global2>/technology/Broadcast-ProAV-Solutions …
   # gravar: só as que MUDAM, com --paginas <lista> --executar; depois
@@ -661,8 +661,8 @@ def main():
             for ref in DIR.assets_do_html(payload, alvo_g2, fam, args.executar):
                 page.pendencias.append(AL.Pendencia(
                     origem, "asset", "asset_nao_copiado", "asset de HTML cru não copiado", ref))
-            DIR.acertar_links(payload, ("technology", "services"))
-            DIR.acertar_links(pagina_payload, ("technology", "services"))
+            DIR.acertar_links(payload, ("solutions", "services"))
+            DIR.acertar_links(pagina_payload, ("solutions", "services"))
             trocas, mortos = DIR.resolver_alvos(payload, alvo_g2, a_nascer=alvo_g2.paginas)
             for de, para in trocas:
                 print(f"        link: {de[len(DIR.MAI):]} -> {para[len(DIR.MAI):]}")
