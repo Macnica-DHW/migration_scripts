@@ -8,6 +8,7 @@ _reescrita.py — a tabela de reescrita de referências do go-live, num lugar s�
   e o que trocar prefixo NÃO resolve (o global2 tem outra árvore):
          <mai/en>/contact/form                     -> <mai/en>/contact-us       (é o que a Anion usa; /contact dá 404)
          /content/macnicaglobal2/europe/atd-europe -> /content/macnicaglobal2/eu/atd-europe
+         <mai/en>/technology                       -> <mai/en>/solutions       (move do Hazael, 21/09/2026)
 
 Fica de fora, de propósito: `<mai/en>/products/ip-software/{v-by-oner-hs-ip,munvme-ip-core}` — o caminho
 está CERTO, a página é que ainda não existe no global2 (6 links). Externos, âncoras e tags não mudam.
@@ -21,7 +22,8 @@ from _comum import DADOS, G, MAI, T, XF_G2, XF_T
 
 GWI_MAI = "/content/macnicagwi/americas/mai/en"
 FIXOS = [(f"{MAI}/contact/form", f"{MAI}/contact-us"),
-         ("/content/macnicaglobal2/europe/atd-europe", "/content/macnicaglobal2/eu/atd-europe")]
+         ("/content/macnicaglobal2/europe/atd-europe", "/content/macnicaglobal2/eu/atd-europe"),
+         (f"{MAI}/technology", f"{MAI}/solutions")]          # /technology virou /solutions em 21/09/2026 (move no console)
 PROIBIDO = re.compile(r"/content/(?:dam/)?copia-teste|/content/(?:dam/)?macnicagwi|experience-fragments/copia-teste")
 ATRIBUTO = re.compile(r'(\b(?:href|src|data-src|poster)\s*=\s*)(["\'])(.*?)\2', re.I | re.S)
 IGNORAR = {"jcr:primaryType", "jcr:mixinTypes", "sling:resourceType", "sling:resourceSuperType", "cq:template",

@@ -43,7 +43,8 @@ XF_G2 = "/content/experience-fragments/macnicaglobal2/americas/mai/en/site"
 NOSSO_USUARIO = "valter.toffolo@macnicadhw.com.br"
 # o que trocar o prefixo não resolve (o global2 tem outra árvore) — mesma tabela do go-live
 FIXOS = [(f"{MAI}/contact/form", f"{MAI}/contact-us"),
-         ("/content/macnicaglobal2/europe/atd-europe", "/content/macnicaglobal2/eu/atd-europe")]
+         ("/content/macnicaglobal2/europe/atd-europe", "/content/macnicaglobal2/eu/atd-europe"),
+         (f"{MAI}/technology", f"{MAI}/solutions")]          # /technology virou /solutions em 21/09/2026 (move no console)
 ESTRUTURA = ("container", "responsivegrid", "breadcrumb", "experiencefragment")
 
 BASE = CONFIG["base_url"].rstrip("/")
