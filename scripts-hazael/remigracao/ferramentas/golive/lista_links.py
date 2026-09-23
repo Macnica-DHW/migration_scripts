@@ -312,7 +312,9 @@ def _secoes(raizes, soltas):
     return ordem + [sl for sl in soltas if sl not in ordem]
 
 
-def montar_html(escolhidas, raizes, quando, soltas=()):
+def secoes_html(escolhidas, raizes, soltas=()):
+    """(corpo, nav, nomes): as seções <h2> + <details> e os links da barra — o miolo do mapa, reusado pelo
+    mapa_completo.py."""
     por = {e["rel"]: e for e in escolhidas}
     corpo, nav, nomes = [], [], []
     avulsas = {e["rel"]: e for e in soltas}
@@ -345,6 +347,11 @@ def montar_html(escolhidas, raizes, quando, soltas=()):
             corpo.append(_ul({cat: no} if "_" in no else {k: v for k, v in no.items() if k != "_"},
                              raiz if "_" in no else f"{raiz}/{cat}"))
             corpo.append("</details>")
+    return corpo, nav, nomes
+
+
+def montar_html(escolhidas, raizes, quando, soltas=()):
+    corpo, nav, nomes = secoes_html(escolhidas, raizes, soltas)
     escopo = (", ".join(nomes[:-1]) + " and " + nomes[-1]) if len(nomes) > 1 else nomes[0]
     total = len(escolhidas) + len(soltas)
     return f"""<!doctype html>

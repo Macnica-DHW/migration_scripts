@@ -314,7 +314,7 @@ ORDEM_REVISAO = ("contact", "top", "about", "partner", "news", "newsletter", "ev
 CSS_REVISAO = """
 .barra nav{display:flex;flex-wrap:wrap;row-gap:4px;min-width:0}
 .sets{font-size:12px;font-weight:400;color:var(--mut);margin-left:14px}
-.sets a{margin-left:8px;white-space:nowrap}
+.sets a{margin-left:4px;white-space:nowrap}
 .sets a.feito,.sets a.feito:visited{color:var(--mut)}
 .sets a.feito::after{content:" \\2713"}
 .aviso{font-size:12px;font-weight:400;color:var(--mut);margin-left:10px}
@@ -333,15 +333,19 @@ try{const v=localStorage.getItem('g2-mai-en-map:tam');if(v!==null&&[...tam.optio
 function conjunto(txt,part){const a=document.createElement('a');a.href='#';a.textContent=txt;a._part=part;return a}
 function conjuntos(){
   const n=+tam.value;
-  document.querySelectorAll('details[data-grupo]').forEach(d=>{
-    const box=d.querySelector('.sets'),av=d.querySelector('.aviso');
+  // todo grupo (<details>): os do lista_links.py não trazem os spans — criados aqui
+  document.querySelectorAll('details').forEach(d=>{
+    const sm=d.querySelector('summary');
+    let box=sm.querySelector('.sets'),av=sm.querySelector('.aviso');
+    if(!box){box=document.createElement('span');box.className='sets';sm.append(box)}
+    if(!av){av=document.createElement('span');av.className='aviso';av.setAttribute('aria-live','polite');sm.append(av)}
     box.textContent='';av.textContent='';av.classList.remove('bloq');
-    const links=[...d.querySelectorAll('a.pg')].filter(x=>!x.closest('.oculto'));
+    const links=[...d.querySelectorAll('li > a[href]')].filter(x=>!x.closest('.oculto'));
     if(!links.length)return;
     const s=n||links.length;
-    if(s>=links.length){box.append(conjunto(`open ${links.length===1?'':'all '+links.length+' '}in new tab${links.length===1?'':'s'}`,links));return}
-    box.append('open in new tabs:');
-    for(let i=0;i<links.length;i+=s){const part=links.slice(i,i+s);box.append(conjunto(`${i+1}\\u2013${i+part.length}`,part))}
+    if(s>=links.length){box.append(' ',conjunto(`open ${links.length===1?'':'all '+links.length+' '}in new tab${links.length===1?'':'s'}`,links));return}
+    box.append('open in new tabs:');   // o espaço antes de cada conjunto deixa a linha quebrar (tq-systems tem 15)
+    for(let i=0;i<links.length;i+=s){const part=links.slice(i,i+s);box.append(' ',conjunto(`${i+1}\\u2013${i+part.length}`,part))}
   });
 }
 document.addEventListener('click',ev=>{
@@ -408,7 +412,8 @@ def _ul_revisao(no, caminho):
     return "".join(out)
 
 
-def pagina_revisao(d, quando):
+def grupos_html(d):
+    """(corpo, nav, total): os cartões dos grupos e os links da barra — reusado pelo mapa_completo.py."""
     grupos = _grupos_revisao(d)
     nomes = {gid: nome for gid, nome, _ in GRUPOS_REVISAO}
     corpo, nav = [], []
@@ -425,7 +430,11 @@ def pagina_revisao(d, quando):
             cartao(gid, nomes[gid], len(itens), _ul_revisao(arv, prefixo))
     xf = {"titulo": "Event Meeting Request Form", "path": d["xf"]}
     cartao("xf", "Experience fragment", 1, f"<ul>{_li_revisao(xf, d['xf'].lstrip('/'))}</ul>")
-    total = sum(len(v) for v in grupos.values())
+    return corpo, nav, sum(len(v) for v in grupos.values())
+
+
+def pagina_revisao(d, quando):
+    corpo, nav, total = grupos_html(d)
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Macnica global2 — About Us &amp; Contact link map</title><style>{ll.CSS}{CSS_REVISAO}</style></head><body><main>
