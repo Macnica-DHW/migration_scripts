@@ -24,6 +24,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import lista_links as ll  # noqa: E402
 import lista_migradas_mai_en as lm  # noqa: E402
 
+SEM_PAR_NO_GWI = {"contact-us"}
+
 
 def main():
     hoje = datetime.date.today().isoformat()
@@ -35,6 +37,9 @@ def main():
     escolhidas, fora = ll.escolher(ll.RAIZES)
     corpo_a, nav_a, nomes_a = ll.secoes_html(escolhidas, ll.RAIZES, soltas)
     d = lm.dados()
+    # /contact-us é só do global2 (casca do admin virada redirect para /contact/form) — sem par no GWI, fora do mapa
+    # (pedido do Hazael, 23/09); a casca Careers fica: o GWI tem Careers
+    d["extras"] = [e for e in d["extras"] if e["rel"] not in SEM_PAR_NO_GWI]
     corpo_b, nav_b, total_b = lm.grupos_html(d)
 
     total = len(escolhidas) + len(soltas) + total_b
