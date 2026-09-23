@@ -18,6 +18,10 @@ Passos (cada um só depois do anterior conferido):
                extras (redirect de /contact-us e da casca Careers), assets novos. Grava dados/golive/plano_mai_en.json
   gravar       executa o plano.json (nada fora dele); relê o destino antes de CADA gravação; backup antes de
                trocar; manifesto em dados/golive/manifesto_mai_en.jsonl
+  faltantes    depois do go-live: copia de STG para G as páginas de FALTANTES (publicadas no GWI e deixadas de
+               fora pelo critério errado de D3) — só se o destino for 404 e o staging já estiver reescrito.
+               Ordem: `staging` (traz de T) -> `reescrever --so <rel>…` -> `conferir --so` -> `faltantes` ->
+               `conferir-g --so <rel>… --tela`
 
 REGRA MESTRA: nenhuma requisição que não seja GET contra caminho com `macnicagwi` (checado em toda escrita).
 """
@@ -51,10 +55,13 @@ MANIFESTO = DADOS / "manifesto_mai_en.jsonl"
 
 RAIZES = ["about-us", "contact", "error", "request-a-quote",
           "terms-conditions-mep100-ecosystem-partners-tour-challenge-raffle"]
-FORA = {"contact/download": "nunca publicada no GWI (D3)",
-        "contact/watch": "nunca publicada no GWI (D3)",
-        "about-us/news-events/events-archive/Altera-Sales-Conference-2026": "nunca publicada no GWI (D3)",
+FORA = {"about-us/news-events/events-archive/Altera-Sales-Conference-2026":
+            "D3 — dada como 'nunca publicada', mas está publicada no GWI (só _publish); decisão pendente",
         "about-us/news-events/events-archive/automate-2026": "G tem a da Anion (mahendra, 68 componentes) — não sobrescrever"}
+# Publicadas no GWI (só cq:lastReplicationAction_publish) e deixadas de fora do go-live pelo critério errado (D3):
+# os cards "Fill Out Our Online Contact Information Form" do /contact. Trazidas depois, decisão do Hazael (23/09):
+# `staging` copia de T, `reescrever --so`, `faltantes` copia para G. O TEST-request-evaluatoin-kit fica de fora.
+FALTANTES = ("contact/download", "contact/watch")
 # cascas que podem ter o jcr:content trocado: rel -> (criador, último editor, máx. componentes) do levantamento
 CASCAS = {"about-us": ("admin", "ohashi", 0), "about-us/company-profile": ("admin", "ohashi", 0),
           "about-us/locations": ("admin", "ohashi", 0), "about-us/news-events": ("admin", "ohashi", 0),
@@ -244,6 +251,9 @@ def staging(executar):
         st, _ = ler(f"{STG}/{rel}")
         if st == 200 or not executar:
             print(f"  tira {rel} ({motivo}):", apagar(f"{STG}/{rel}", executar) if st == 200 else "dry")
+    for rel in FALTANTES:                               # o ramo já estava no staging: a página vem sozinha de T
+        if ler(f"{STG}/{rel}")[0] == 404:
+            print(f"  traz {rel} (faltante):", copiar(f"{T}/{rel}", f"{STG}/{rel}", executar))
     # nome normalizado: move no próprio staging, do mais fundo para o mais raso
     for rel in sorted(paginas(STG) if executar else [], key=lambda x: -x.count("/")):
         seg = rel.rsplit("/", 1)[-1]
@@ -389,9 +399,9 @@ def gwi_de(rel):
 POPUPS = "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/popups"
 
 
-def reescrever(executar):
+def reescrever(executar, so=None):
     R = Reescrita()
-    rels = paginas(STG)
+    rels = [r for r in paginas(STG) if not so or r in so]
     print(f"{'EXECUTANDO' if executar else 'dry-run'} — {len(rels)} páginas no staging")
     log, sobras, n = [], [], 0
     for rel in rels:
@@ -454,7 +464,7 @@ def reescrever(executar):
         n += bool(muda or props)
     import collections
     import csv
-    with open(DADOS / f"reescrita_mai_en_{'exec' if executar else 'dry'}.csv", "w", newline="") as f:
+    with open(DADOS / f"reescrita_mai_en_{'exec' if executar else 'dry'}{'_so' if so else ''}.csv", "w", newline="") as f:
         wr = csv.writer(f); wr.writerow(["pagina", "no", "prop", "antes", "depois"]); wr.writerows(log)
     print(f"{len(log)} mudanças em {n} páginas:", dict(collections.Counter(l[2] for l in log)))
     for alvo, us in R.pendentes.items():
@@ -465,9 +475,9 @@ def reescrever(executar):
 
 
 # ---------------------------------------------------------------- conferir
-def conferir():
+def conferir(so=None):
     R = Reescrita()
-    rels = [r for r in paginas(STG) if r]
+    rels = [r for r in paginas(STG) if r and (not so or r in so)]
     refs, sobras = [], []
     for rel in rels:
         _, jc = ler(f"{STG}/{rel}/jcr:content", ".infinity.json")
@@ -625,10 +635,34 @@ def gravar(executar, lote):
         aborta("lote: assets | xf | criar | cascas | extras")
 
 
-def conferir_g(tela):
+def faltantes(executar):
+    """FALTANTES: STG -> G, sem plano.json (o `plano` de agora bloquearia as 125 que já estão em G). Destino tem
+    de ser 404 com o pai existente; o staging tem de estar reescrito (canonical = caminho em G); lista branca =
+    os caminhos exatos."""
+    lista = {f"{G}/{rel}" for rel in FALTANTES}
+    print(f"{'EXECUTANDO' if executar else 'dry-run'} — faltantes {list(FALTANTES)}")
+    for rel in FALTANTES:
+        destino = f"{G}/{rel}"
+        st_t, jt = ler(f"{T}/{rel}/jcr:content")
+        st_s, js = ler(f"{STG}/{rel}/jcr:content")
+        print(f"  {rel}: T {st_t} ({(jt or {}).get('cq:lastModifiedBy')} {(jt or {}).get('cq:lastModified')}), STG {st_s}")
+        if st_s != 200:
+            aborta(f"{STG}/{rel} não existe — rode `staging --executar` antes")
+        if js.get("cq:canonicalUrl") != destino:
+            aborta(f"{STG}/{rel} não está reescrita (canonical {js.get('cq:canonicalUrl')!r}) — rode `reescrever --so {rel}`")
+        if ler(destino)[0] != 404:
+            aborta(f"{destino} já existe — não sobrescrevo")
+        if ler(destino.rsplit("/", 1)[0])[0] != 200:
+            aborta(f"pai de {destino} não existe em G")
+        print(f"    -> {destino}:", copiar(f"{STG}/{rel}", destino, executar, lista))
+        if executar:
+            registra("copy", destino, {"origem": f"{STG}/{rel}", "motivo": "faltante (D3 errado), decisão do Hazael 23/09"})
+
+
+def conferir_g(tela, so=None):
     """Depois da gravação: cada página do STG existe em G com os mesmos componentes, menu, canonical e
     redirect; com --tela, a geometria a 1400px (comparar_render.mede) STG x G."""
-    rels = [r for r in paginas(STG) if r]
+    rels = [r for r in paginas(STG) if r and (not so or r in so)]
     ruins = []
     for rel in rels:
         _, a = ler(f"{STG}/{rel}/jcr:content", ".infinity.json")
@@ -671,18 +705,27 @@ def conferir_g(tela):
 if __name__ == "__main__":
     passo = sys.argv[1] if len(sys.argv) > 1 else ""
     ex = "--executar" in sys.argv
+    # --so REL… : reescrever / conferir / conferir-g só nestas páginas do staging
+    so = None
+    if "--so" in sys.argv:
+        i = sys.argv.index("--so") + 1
+        so = []
+        while i < len(sys.argv) and not sys.argv[i].startswith("--"):
+            so.append(sys.argv[i].strip("/")); i += 1
     if passo == "ensaio":
         ensaio(ex)
     elif passo == "staging":
         staging(ex)
     elif passo == "reescrever":
-        reescrever(ex)
+        reescrever(ex, so)
     elif passo == "conferir":
-        conferir()
+        conferir(so)
     elif passo == "plano":
         plano()
+    elif passo == "faltantes":
+        faltantes(ex)
     elif passo == "conferir-g":
-        conferir_g("--tela" in sys.argv)
+        conferir_g("--tela" in sys.argv, so)
     elif passo == "gravar":
         gravar(ex, sys.argv[sys.argv.index("--lote") + 1] if "--lote" in sys.argv else "")
     else:
