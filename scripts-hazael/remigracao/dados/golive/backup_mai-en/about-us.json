@@ -1,0 +1,45 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:mixinTypes": [
+  "mix:versionable"
+ ],
+ "jcr:createdBy": "admin",
+ "jcr:title": "About Us | Technology Product Company",
+ "jcr:versionHistory": "37bf07a3-4116-454d-b66f-ea9a27feb908",
+ "pwaOrientation": "any",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+ "jcr:predecessors": [
+  "83196efb-06cd-4754-bc2d-595e9ceef855"
+ ],
+ "jcr:created": "Thu Mar 05 2026 00:16:38 GMT+0000",
+ "pwaDisplay": "standalone",
+ "cq:lastModified": "Tue Feb 17 2026 06:33:15 GMT+0000",
+ "pwaCachestrategy": "staleWhileRevalidate",
+ "jcr:baseVersion": "83196efb-06cd-4754-bc2d-595e9ceef855",
+ "jcr:isCheckedOut": true,
+ "jcr:uuid": "140053a6-b915-4e0c-b256-ec6882605322",
+ "sling:resourceType": "macnicaglobal2/components/page",
+ "cq:lastModifiedBy": "ohashi@yamato-ltd.com",
+ "navTitle": "About Us",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:createdBy": "admin",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container"
+  }
+ },
+ "cq:featuredimage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "ohashi@yamato-ltd.com",
+  "jcr:lastModified": "Tue Feb 17 2026 06:33:15 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "true"
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "admin",
+ "jcr:title": "Video Compression & Technology Services Distributor",
+ "pwaOrientation": "any",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+ "jcr:created": "Thu Mar 05 2026 00:16:38 GMT+0000",
+ "pwaDisplay": "standalone",
+ "cq:lastModified": "Tue Feb 17 2026 06:38:31 GMT+0000",
+ "pwaCachestrategy": "staleWhileRevalidate",
+ "sling:resourceType": "macnicaglobal2/components/page",
+ "cq:lastModifiedBy": "ohashi@yamato-ltd.com",
+ "navTitle": "Company Profile",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:createdBy": "admin",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container"
+  }
+ },
+ "cq:featuredimage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "ohashi@yamato-ltd.com",
+  "jcr:lastModified": "Tue Feb 17 2026 06:38:31 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "true"
+ }
+}

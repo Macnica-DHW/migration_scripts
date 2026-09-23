@@ -1,0 +1,35 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "admin",
+ "jcr:title": "Error",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-top",
+ "jcr:created": "Thu Apr 16 2026 03:21:08 GMT+0000",
+ "cq:robotsTags": "noindex",
+ "cq:lastModified": "Thu Apr 16 2026 06:32:58 GMT+0000",
+ "sling:resourceType": "macnicaglobal2/components/page",
+ "cq:lastModifiedBy": "ohashi@yamato-ltd.com",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:createdBy": "admin",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "text": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Fri Mar 06 2026 16:20:38 GMT+0900",
+    "text": "<p>error americas/mai/en</p>",
+    "jcr:lastModified": "Fri Mar 06 2026 16:20:47 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/text",
+    "textIsRich": "true"
+   }
+  }
+ }
+}

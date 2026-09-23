@@ -1,0 +1,44 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:mixinTypes": [
+  "mix:versionable"
+ ],
+ "jcr:createdBy": "admin",
+ "jcr:title": "Contact Us",
+ "jcr:versionHistory": "2b7c8cb9-fc9c-441d-9187-ee48020d21a9",
+ "pwaOrientation": "any",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+ "jcr:predecessors": [
+  "eecef223-9864-4695-9d8f-fdf31ecd7e6d"
+ ],
+ "jcr:created": "Thu Mar 05 2026 00:16:38 GMT+0000",
+ "pwaDisplay": "standalone",
+ "cq:lastModified": "Wed Mar 11 2026 12:08:01 GMT+0000",
+ "pwaCachestrategy": "staleWhileRevalidate",
+ "jcr:baseVersion": "eecef223-9864-4695-9d8f-fdf31ecd7e6d",
+ "jcr:isCheckedOut": true,
+ "jcr:uuid": "d95b212c-8b31-4c5b-abbd-66fb7c367c86",
+ "sling:resourceType": "macnicaglobal2/components/page",
+ "cq:lastModifiedBy": "anil@anionmarketing.com",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:createdBy": "admin",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container"
+  }
+ },
+ "cq:featuredimage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "takahashi-mas@macnica.co.jp",
+  "jcr:lastModified": "Thu Mar 05 2026 12:24:11 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ }
+}

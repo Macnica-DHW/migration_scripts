@@ -1,0 +1,44 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:mixinTypes": [
+  "mix:versionable"
+ ],
+ "jcr:createdBy": "admin",
+ "jcr:title": "Request a Quote",
+ "jcr:versionHistory": "73f64f55-191b-428d-ade7-02ae440ad277",
+ "pwaOrientation": "any",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+ "jcr:predecessors": [
+  "d02cf52a-5851-47ea-bb45-030b79fd3656"
+ ],
+ "jcr:created": "Fri Mar 27 2026 05:11:20 GMT+0000",
+ "pwaDisplay": "standalone",
+ "cq:lastModified": "Thu Apr 16 2026 06:40:32 GMT+0000",
+ "pwaCachestrategy": "staleWhileRevalidate",
+ "jcr:baseVersion": "d02cf52a-5851-47ea-bb45-030b79fd3656",
+ "jcr:isCheckedOut": true,
+ "jcr:uuid": "5443b40e-9f27-4a7f-83a8-c557fbf30ef7",
+ "sling:resourceType": "macnicaglobal2/components/page",
+ "cq:lastModifiedBy": "ohashi@yamato-ltd.com",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:createdBy": "admin",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container"
+  }
+ },
+ "cq:featuredimage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "ohashi@yamato-ltd.com",
+  "jcr:lastModified": "Thu Apr 16 2026 06:40:32 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ }
+}

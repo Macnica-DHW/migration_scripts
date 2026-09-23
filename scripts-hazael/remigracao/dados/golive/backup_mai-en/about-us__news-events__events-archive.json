@@ -1,0 +1,25 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "saichand@anionmarketing.com",
+ "jcr:title": "events-archive",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "cq:redirectTarget": "https://www.macnica.com/americas/mai/en/about-us/news-events/events-archive/",
+ "jcr:created": "Mon Jul 27 2026 09:51:38 GMT+0000",
+ "cq:lastModified": "Mon Jul 27 2026 09:51:38 GMT+0000",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "saichand@anionmarketing.com",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:createdBy": "admin",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container"
+  }
+ }
+}
