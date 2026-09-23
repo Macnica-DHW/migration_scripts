@@ -10,8 +10,10 @@ parity yet." LISTA = um caminho por linha, relativo a /content/macnicagwi/americ
 Para cada página: estado no GWI (existe, publicada, redirect, soft-deleted, nº de componentes, texto) e o PAR no global2:
   1. caminho com cada segmento normalizado (normalize_name), sem diferença de caixa;
   2. trocas de árvore conhecidas (`technology` → `solutions`, sony aninhada — as de gwi_faltando.py);
-  3. se não achou: página do global2 com o mesmo título (jcr:title ou pageTitle) debaixo do MESMO pai — "provável par
-     com outro nome" (ex.: `-0` que a Anion tirou), para conferir à mão.
+  3. página do global2 com o mesmo título (jcr:title ou pageTitle) debaixo do MESMO pai — "provável par com outro
+     nome" (ex.: `-0` que a Anion tirou), para conferir à mão.
+Fica o 1º candidato COM conteúdo: o par pelo caminho pode ser pasta vazia e o conteúdo estar em outra página do mesmo
+título (sony-image-sensors do GWI = semiconductors/sony no global2).
 O par NÃO conta como migrado se: soft-deleted (`deleted`), teste (nome ou título), ou vazio (nenhum componente de
 conteúdo sob jcr:content/root além de `title` — container, grade, breadcrumb, XF, flex, abas e acordeão são estrutura, e
 um `title` sozinho só repete o nome da página: a landing de boards-modules no global2 é assim, x heading + texto +
@@ -114,18 +116,25 @@ def main():
         w = estado(f"{GWI}/{rel}")
         linha = {"rel": rel, "gwi": w}
         ks = cands(rel)
-        par = next((Gidx[k] for k in ks if k in Gidx), None)
-        como = "caminho" if par else None
-        if par is None and w.get("http") == 200:
+        opcoes = [(Gidx[k], "caminho") for k in ks if k in Gidx]
+        if w.get("http") == 200:
             for k in ks:
                 pai = k.rsplit("/", 1)[0]
-                achou = titulos.get((pai, w["titulo"].strip().lower())) or titulos.get((pai, w["jcr_title"].strip().lower()))
-                if achou:
-                    par, como = achou[0], f"título (mesmo pai; outros: {achou[1:]})" if achou[1:] else "título (mesmo pai)"
-                    break
+                for t in {w["titulo"].strip().lower(), w["jcr_title"].strip().lower()} - {""}:
+                    opcoes += [(r, "título (mesmo pai)") for r in titulos.get((pai, t), [])]
+        opcoes = list(dict.fromkeys(opcoes))
         linha["morta_em_g"] = next((Gmortas[k] for k in ks if k in Gmortas), None)
-        if par:
-            linha.update(par=par, como=como, g=estado(f"{G}/{par}"))
+        # o par pelo caminho pode ser só pasta (sony/sony-image-sensors guarda os 209 sensores; o conteúdo da landing
+        # do GWI a Anion pôs em semiconductors/sony, mesmo título): fica o 1º candidato COM conteúdo
+        vistos = []
+        for par, como in opcoes:
+            g = estado(f"{G}/{par}")
+            vistos.append((par, como, g))
+            if set(g.get("tipos") or {}) - {"title"}:
+                break
+        if vistos:
+            par, como, g = next((v for v in vistos if set(v[2].get("tipos") or {}) - {"title"}), vistos[0])
+            linha.update(par=par, como=como, g=g, outros=[v[0] for v in vistos if v[0] != par])
         return linha
 
     with cf.ThreadPoolExecutor(8) as ex:
@@ -165,6 +174,8 @@ def main():
                 extra += f" [par por {x['como']}: {x['par']}]"
             elif x.get("par") and chave(x["par"]) != chave(x["rel"]):
                 extra += f" [par: {x['par']}]"
+            if x.get("outros"):
+                extra += f" [candidato(s) vazio(s): {x['outros']}]"
             if w.get("redirect"):
                 extra += f" [GWI redirect -> {w['redirect']}]"
             if x.get("aviso"):
