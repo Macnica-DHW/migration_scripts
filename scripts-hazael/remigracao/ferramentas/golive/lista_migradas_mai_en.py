@@ -18,6 +18,7 @@ GWI, editor ou autor. Mesmos grupos, cada um em árvore (landing e filhas); ao l
 as páginas em abas novas, N por vez (N escolhível na barra; só as visíveis quando há filtro).
 
     python3 lista_migradas_mai_en.py --revisao   # -> dados/mapas/global2_link_map_mai-en.html
+    python3 lista_migradas_mai_en.py --revisao --saida global2_link_map_2026-09-23.html   # outro nome em dados/mapas
 """
 import argparse
 import datetime
@@ -443,6 +444,7 @@ at a time (the browser may ask you to allow pop-ups the first time). You must be
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--revisao", action="store_true", help=f"versão para quem revisa as páginas finais -> {SAIDA_REVISAO.name}")
+    ap.add_argument("--saida", default=SAIDA_REVISAO.name, help="com --revisao: nome do arquivo em dados/mapas (padrão: %(default)s)")
     a = ap.parse_args()
     d = dados()
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
@@ -451,10 +453,11 @@ def main():
         print(f"{len(d['pages'])} páginas + {len(d['extras'])} redirects extras + 1 XF -> {SAIDA}")
         return
     quando = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    SAIDA_REVISAO.write_text(pagina_revisao(d, quando), encoding="utf-8")
+    saida = SAIDA.with_name(Path(a.saida).name)                     # sempre em dados/mapas
+    saida.write_text(pagina_revisao(d, quando), encoding="utf-8")
     for gid, itens in _grupos_revisao(d).items():
         print(f"    {len(itens):4d}  {gid}")
-    print(f"{len(d['pages'])} páginas + {len(d['extras'])} redirects extras + 1 XF -> {SAIDA_REVISAO}")
+    print(f"{len(d['pages'])} páginas + {len(d['extras'])} redirects extras + 1 XF -> {saida}")
 
 
 if __name__ == "__main__":
