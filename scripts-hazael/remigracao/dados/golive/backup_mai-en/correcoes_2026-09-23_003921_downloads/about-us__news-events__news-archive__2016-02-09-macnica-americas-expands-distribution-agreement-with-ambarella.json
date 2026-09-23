@@ -1,0 +1,158 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "Macnica Americas Expands Distribution Agreement with Ambarella",
+ "showInLists": "true",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+ "cq:lastModified": "Wed Sep 23 2026 01:50:10 GMT+0000",
+ "jcr:description": "Macnica Becomes Distributor for Ambarella in the U.S., Canada and rest of Americas SAN DIEGO, CA February 9, 2016 – Macnica Americas today announced that it has completed a distribution franchise agreement with Ambarella to include all of North and South America. This represents an expansion of the franchise to extend beyond Europe, where the two companies have previously been engaged.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2016-02-09-macnica-americas-expands-distribution-agreement-with-ambarella",
+ "hideInNav": "true",
+ "pageTitle": "Macnica Americas Expands Distribution Agreement with Ambarella",
+ "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "Macnica Americas Expands Distribution Agreement with Ambarella",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Macnica Americas Expands Distribution Agreement with Ambarella",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "About Macnica Americas",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Macnica Americas is a fully franchised semiconductor distributor covering North America with expertise in design services, IP, applications support, and logistics. We are a division of Macnica Inc., a $3.6B global leader in semiconductor distribution and design services. The Macnica Americas IP portfolio includes solutions for high speed networking, broadcast video, DSP, and embedded applications.</p>\n<p>Find out more about Macnica Americas products and design services at <a href=\"/content/macnicaglobal2/americas/mai/en\" target=\"_self\">www.macnica-na.com&amp;nbsp;</a></p>\n<p style=\"text-align: center;\">The Macnica Americas logo is a trademark of Macnica, Inc. Other trademarks are the property of their respective owners.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Downloads",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "download_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "download_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Macnica Americas Adds Ambarella Across the Americas",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/downloads/Macnica Americas Adds Ambarella Across the Americas.pdf",
+     "sling:resourceType": "macnicaglobal2/components/content/download"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Macnica Becomes Distributor for Ambarella in the U.S., Canada and rest of Americas",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>SAN DIEGO, CA February 9, 2016 – Macnica Americas today announced that it has completed a distribution franchise agreement with Ambarella to include all of North and South America. This represents an expansion of the franchise to extend beyond Europe, where the two companies have previously been engaged.</p>\n<p>Ambarella, Inc. is a leading developer of low-power, high-definition (HD) and Ultra HD video compression and image processing solutions. The company’s products are used in a variety of professional and consumer applications including security IP-cameras, wearable cameras, flying cameras and automotive video processing solutions.</p>\n<p>“Macnica is pleased to be able to now support Ambarella customers across the United States, Canada, and the rest of the Americas.” said John Burton, President of Macnica Americas, Inc. “Ambarella is a great fit with Macnica’s technical expertise in the video market and with our other product lines, including image sensors and WiFi products.&quot;</p>\n<p>“We are pleased to have Macnica Americas as our distributor for Ambarella products in the Americas.” said Chris Day, Vice President of Marketing and Business Development at Ambarella. “Macnica’s experience as a technical distributor will help us expand our market presence to reach more customers designing new and cutting edge applications.”</p>\n<p>Macnica Americas is a semiconductor distributor that is also a leading supplier of FPGA-based IP for many different video functions in broadcast and industrial applications.</p>\n<p>Macnica Americas is available now to discuss Ambarella design opportunities. Information on Ambarella products is available on the Ambarella web site at <a href=\"https://www.ambarella.com/\" target=\"_blank\" rel=\"noopener noreferrer\">www.ambarella.com</a>. Contact information for Macnica Americas offices throughout the region is available on the Macnica Americas web site at&nbsp;<a href=\"/content/macnicaglobal2/americas/mai/en/contact/form\" target=\"_self\">www.macnica- na.com/contact-info.</a></p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_botoes": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_861351158": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

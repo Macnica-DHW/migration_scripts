@@ -1,0 +1,435 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "IEI Integration Corp. Products: Motherboards & AI Accelerators",
+ "manufacturer": "mai:manufacturer/iei",
+ "businessCategories": "mai:business-categories/boards-modules",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 02 2026 13:57:43 GMT+0000",
+ "cq:lastModified": "Tue Sep 22 2026 12:27:13 GMT+0000",
+ "jcr:description": "Discover IEI Integration Corp.'s industrial-grade motherboards and AI accelerators. These products support smart city, telemedicine, and IoT applications.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei",
+ "pageTitle": "IEI Products",
+ "cq:tags": "mai:business-categories/boards-modules",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "IEI",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_titulo": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "container_1864534790": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>About IEI</h3>\r\n<p>IEI Technology USA Corp. is a leading provider of industrial computing solutions, specializing in high-performance, application-ready systems for industrial automation, network infrastructure, and medical applications. Our products are engineered to optimize smart manufacturing, process control, security systems, networking appliances, national defense, transportation, telecommunications, edge medical technology, and intelligent solutions such as AI and IoT.</p>\r\n<p><span style=\"letter-spacing: 0px;\">Evolving from industrial PCs to advanced AI and edge computing technologies, IEI delivers complete intelligent systems that integrate hardware, software, cloud services, and data security. Designed for long-term reliability, seamless integration, and compliance with industry standards, our solutions are trusted in mission-critical environments worldwide.</span></p>\r\n<p><span style=\"letter-spacing: 0px;\">Supported by global R&amp;D resources and U.S.-based technical teams, IEI is a trusted partner for OEMs and system integrators - helping customers accelerate innovation, enhance operational efficiency, and maintain a competitive edge, while advancing IoT and AI to create smarter, safer, and more connected living spaces.</span></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_1452989800": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "embed": {
+       "jcr:primaryType": "nt:unstructured",
+       "url": "https://www.youtube.com/watch?v=BpqhiDXk7AI&t=2s",
+       "type": "url",
+       "sling:resourceType": "macnicaglobal2/components/content/embed",
+       "cq:styleIds": "1719541568246"
+      }
+     },
+     "flexcontaineritem_45562908": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3>Product Application - The IEI Virtualization Edge Computer (iVEC)</h3>\r\n<p><b>The IEI Virtualization Edge Computer (iVEC)</b> revolutionizes industrial applications by seamlessly integrating virtualization with powerful hardware, offering remote desktop accessibility for OT professionals. This transformative solution enables multiple industrial applications to run efficiently on a single physical machine, streamlining device management and optimizing hardware utilization for edge AI workloads. iVEC supports flexible workload distribution, scalable infrastructure, and remote maintenance, empowering organizations to enhance efficiency, reduce costs, and embrace the future of edge computing. With features such as software-defined networking, remote<b> </b>system<b> </b>restoration, and AI acceleration engine integration, iVEC drives Industry 4.0 agility, fostering innovation and elevating operational performance for enterprises.</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_1907134166": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Vertical Solutions with iVEC",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    }
+   },
+   "container_tabs_copy": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "tabs_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/tabs",
+     "item_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 1",
+      "cq:panelTitle": "Digital Transformation",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498056876",
+       "1717498055877"
+      ],
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/Digital Transformation.png",
+       "imageRatio": "40",
+       "alt": "IEI iVEC Digital Transformation",
+       "text": "<p>iVEC empowers industries by seamlessly separating hardware and applications, facilitating trouble-free hardware updates without disrupting critical operations. The act of decoupling software from hardware not only streamlines the process of platform upgrades or transitions but also significantly reduces the financial and technical burdens typically associated with such endeavors. Elevate your business into the future with iVEC's innovative approach to digital transformation.</p>\r\n<p>&nbsp;</p>\r\n",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ],
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       },
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/Digital Transformation.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      }
+     },
+     "item_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 2",
+      "cq:panelTitle": "Automated Optical Inspection (AOI)",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498056876",
+       "1717498055877"
+      ],
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/Automated Optical Inspection (AOI).png",
+       "imageRatio": "40",
+       "alt": "Automated Optical Inspection (AOI)",
+       "text": "<p>iVEC revolutionizes Automated Optical Inspection (AOI) with cutting-edge features. Leveraging the advanced capabilities of its 13th Gen Intel® Core™ CPUs, iVEC enhances computing power, particularly for AI tasks, through its integrated GPU. This not only reduces the need for additional GPU investments but also enables dynamic GPU resource allocation, providing a seamless solution for streamlined remote workload management and added convenience.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ]
+      }
+     },
+     "item_1787868062411": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "Industrial IoT",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498056876",
+       "1717498055877"
+      ],
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/Industrial IoT.jpg",
+       "imageRatio": "40",
+       "alt": "INDUSTRIAL IOT",
+       "text": "<p>iVEC stands as an optimal edge server in IIoT environments, renowned for its unparalleled flexibility and storage expandability. Tailored to meet diverse IIoT protocol requirements, iVEC leverages Intel® TCC &amp;TSN to deliver heightened real-time performance. This empowers seamless, dynamic expansion of IOT data through networked storage, ensuring a robust and efficient solution for industrial environments.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ]
+      }
+     },
+     "item_1787868073385": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "Building Automation",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498056876",
+       "1717498055877"
+      ],
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/Building Automation.png",
+       "imageRatio": "40",
+       "alt": "Building Automation",
+       "text": "<p>iVEC streamlines hardware management for building automation by consolidating multiple edge computers, optimizing resource use and saving space. With virtual machines and features like remote management, remote desktop, and disaster recovery, iVEC offers enhanced control and troubleshooting capabilities, making it an ideal solution for dynamic building automation needs.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ]
+      }
+     }
+    }
+   },
+   "container_1135112258": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "textwithimage": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/Digital Transformation 1.jpg",
+     "imageRatio": "40",
+     "alt": "Digital Transformation",
+     "text": "<p>iVEC empowers industries by seamlessly separating hardware and applications, facilitating trouble-free hardware updates without disrupting critical operations. The act of decoupling software from hardware not only streamlines the process of platform upgrades or transitions but also significantly reduces the financial and technical burdens typically associated with such endeavors. Elevate your business into the future with iVEC's innovative approach to digital transformation.</p>",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+     "isDecorative": "false",
+     "textIsRich": "true",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "1718154328384",
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/Digital Transformation 1.jpg",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     },
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    }
+   },
+   "container_1814557326": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Resources",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    }
+   },
+   "container_tabs_copy_39779571": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "tabs_copy_39779571": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/tabs",
+     "item_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 1",
+      "cq:panelTitle": "Product Catalog",
+      "layout": "responsiveGrid",
+      "id": "view-transcend-memory-product-portfolio-id",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498056876",
+       "1717498055877"
+      ],
+      "container_180292821": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498056876",
+        "1717498055877"
+       ],
+       "table": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\"><tbody><tr><th>Category</th><th>Description &amp; Key Examples</th></tr><tr><td width=\"25%\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-networking-servers/\">Networking &amp; Servers</a></td><td>GRAND storage (1U–3U, 10 GbE, RAID); Mustang-QA100 (QAT accelerator); PUZZLE appliances (desktop → rack, various CPUs)</td></tr><tr><td><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-embedded-computers-built-for-industry/\">Embedded Computer</a></td><td>SBCs (full &amp; half-size, PICOe), Backplanes, Industrial motherboards (ATX/Mini-ITX)</td></tr><tr><td><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-embedded-systems/\">Embedded System</a></td><td>TANK/ECW box PCs (modular, rugged), DRPC DIN-rail systems, IDS signage players</td></tr><tr><td><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-panel-pc-and-monitors/\">Panel PC &amp; Monitors</a></td><td>7″–24″ panel PCs (Core/Celeron, glove touch), rugged monitors (vibration, dust/water-proof)</td></tr><tr><td><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-medical-computers-and-odm/\">Medical Computers &amp; ODM</a></td><td>POCi, POCm, IASO, HTB (AI diagnostics), EndoCap (video capture for endoscopy)</td></tr><tr><td><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-aiot-edge-computing/\">AIoT &amp; Edge Computing</a></td><td>Support for AI accelerators, GPUs, and industry-leading toolkits, scalable performance for AI workloads and IoT connectivity</td></tr><tr><td><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-advanced-video-solutions/\">Advanced Video Solutions</a></td><td>Medical imaging, broadcasting, surveillance, and AI-driven video analytics, with hardware optimized for low latency, multi-stream input, long-term reliability, and seamless integration into professional video workflows</td></tr><tr><td><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-support-categories/\">Support Categories</a></td><td>PSUs, Peripherals, Software, ePaper (new) through integrated catalog and resource system</td></tr></tbody></table>\r\n<p>For additional IEI product information, <a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-product-guide-2025.pdf\">download the 2025 IEI Product Guide</a>.</p>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      }
+     },
+     "item_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 2",
+      "cq:panelTitle": "Case Studies and Whitepapers",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498056876",
+       "1717498055877"
+      ],
+      "table": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n<tbody><tr><td><a href=\"https://www.ieiworld.com/en/news/con_show.php?cid=1384\">AI-Powered Endoscopic Imaging Diagnosis Case Study</a></td>\r\n</tr><tr><td><a href=\"https://www.ieiworld.com/en/news/con_show.php?cid=1257\">OT Security for Cyber Risk Management at the Edge</a></td>\r\n</tr><tr><td><a href=\"https://www.ieiworld.com/en/news/con_show.php?cid=1323&amp;cat=2\">AI Computer Vision in Factory Automation</a></td>\r\n</tr><tr><td><a href=\"https://www.ieiworld.com/en/news/con_show.php?cid=1314&amp;cat=2\">Powering IIoT Edge-Computing for Vertical Market AI, Energy and Transportation</a></td>\r\n</tr><tr><td><a href=\"https://www.ieiworld.com/en/news/con_show.php?cid=1306&amp;cat=2\">IEI Industrial Computer Hardware for AI-Powered X-Ray Food Inspection Machine</a></td>\r\n</tr><tr><td><a href=\"https://www.ieiworld.com/en/news/con_show.php?cid=1277&amp;cat=2\">IVS-200 Embedded Computer Optimizes Static Freight Dimensioning</a></td>\r\n</tr><tr><td><a href=\"https://www.ieiworld.com/en/news/con_show.php?cid=1274&amp;cat=2\">IEI’s IVS-200 Provides Perfect Upgrade for Automated Weighbridge</a></td>\r\n</tr><tr><td><a href=\"https://www.ieiworld.com/en/news/con_show.php?cid=1267&amp;cat=2\">IEI Panel PC Powers Pharma Production Line</a></td>\r\n</tr><tr><td><a href=\"https://www.ieiworld.com/en/news/con_show.php?cid=1257&amp;cat=2\">AI Vision Crowd Monitoring System</a></td>\r\n</tr><tr><td><a href=\"https://www.ieiworld.com/en/news/con_show.php?cid=1251&amp;cat=2\">Hotel Selects IEI AFL3 for Membership Management Terminal Upgrade</a></td>\r\n</tr></tbody></table>\r\n<p>&nbsp;</p>\r\n<p>For additional IEI Case Studies, visit the <a href=\"https://www.ieiworld.com/en/news/list.php?cat=2\">iEi Website</a>.</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      }
+     }
+    }
+   },
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+    "jcr:lastModified": "Fri Sep 18 2026 19:52:51 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_861351158": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,248 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "Terms & Conditions - MEP100 Ecosystem Partners Tour Challenge Raffle",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 23 2026 02:27:19 GMT+0000",
+ "cq:lastModified": "Wed Sep 23 2026 01:54:04 GMT+0000",
+ "jcr:description": "Enter the MEP100 Ecosystem Partners Tour Challenge Raffle for a chance to win an Apple Vision Pro! Terms and conditions may apply.",
+ "keywords": "macnica, macnica americas, terms and conditions, apple vision pro, mep100, ibc2025",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/terms-conditions-mep100-ecosystem-partners-tour-challenge-raffle",
+ "hideInNav": "true",
+ "pageTitle": "Terms & Conditions - MEP100 Ecosystem Partners Tour Challenge Raffle",
+ "sling:resourceType": "macnicaglobal2/components/page",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "Terms & Conditions - MEP100 Ecosystem Partners Tour Challenge Raffle",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Terms & Conditions - MEP100 Ecosystem Partners Tour Challenge Raffle",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Terms & Conditions - MEP100 Ecosystem Partners Tour Challenge Raffle",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/banners/banner-ibc2025-ttour-challenge.png",
+     "alt": "Terms & Conditions - MEP100 Ecosystem Partners Tour Challenge Raffle banner",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Organizer",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>This promotion (the “Raffle”) is organized by <b>Macnica Americas, Inc.</b>, 380 Stevens Avenue, Suite 206, Solana Beach, California 92075, USA (“Organizer”), joined by <b>Softron Microcomputing S.A./N.V.</b>, Avenue Molière, 470, 1050 Brussels, Belgium, and Leading Light Technologies Ltd, trading as <b>L2Tek</b>, 1st Floor, The Hub, Fowler Avenue, Farnborough, Hampshire, GU14 7JF, United Kingdom, as the partners/sponsors. The Raffle is conducted in accordance with the Dutch <a href=\"https://kansspelautoriteit.nl/zelf-kansspel-organiseren/promotioneel/gedragscode/\" target=\"_blank\"><i>Gedragscode Promotionele Kansspelen</i></a> (Code of Conduct for Promotional Games of Chance).</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "1. Participation",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\n<li>Participation is <b>free of charge</b>. No purchase is required.</li>\n</ul>\n<ul>\n<li>Participants must be attendees of <b>IBC 2025, Amsterdam</b>, and complete the <b>Ecosystem Partners Tour Challenge</b> by collecting partner booth stamps on the official card.</li>\n</ul>\n<ul>\n<li>A completed card and a business card must be submitted at the Macnica stand <b>(Hall 2, Stand 2.A46)</b> by <b>17:00 CET on 14 September, 2025</b>.</li>\n</ul>\n<ul>\n<li>Only one entry per participant is permitted.</li>\n</ul>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "2. Eligibility",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\n<li>Open to individuals aged <b>18 years or older</b> who are attendees of IBC 2025.</li>\n</ul>\n<ul>\n<li>Employees of Macnica Americas, Inc., its affiliates, ecosystem partners, and their immediate families are excluded.</li>\n</ul>\n<ul>\n<li>Entries that are incomplete, late, or illegible will not be accepted.</li>\n</ul>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "3. Prizes",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\n<li>One winner will be selected at random from eligible entries.</li>\n</ul>\n<ul>\n<li>The prize is: <b>Apple Vision Pro (approx. value €3,999)</b>.</li>\n</ul>\n<ul>\n<li><b>Total prize value</b> does not exceed €4,500, in compliance with Dutch regulations.</li>\n</ul>\n<ul>\n<li>If the prize value exceeds €454, Dutch gaming tax (<i>kansspelbelasting</i>) may apply. The Organizer will bear responsibility for such tax.</li>\n</ul>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "4. Winner Selection & Notification",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\n<li>The draw will take place <b>the Macnica stand</b> <b>2.A46</b>, <b>17:30 CET on 14 September 2025</b>.</li>\n</ul>\n<ul>\n<li>The winner <b>does not need to be present</b> at the draw.</li>\n</ul>\n<ul>\n<li>The winner will be notified within <b>7 days</b> by email or phone using the details provided on the submitted business card.</li>\n</ul>\n<ul>\n<li>If the winner does not respond within <b>14 days</b>, the prize may be forfeited, and another winner may be drawn.</li>\n</ul>\n<ul>\n<li>The Organizer reserves the right to verify eligibility and to refuse to award a prize if false information was provided.</li>\n</ul>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_7_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "5. Data Protection",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\n<li>Personal data collected (business card information) will be used <b>solely for the purposes of administering the Raffle and contacting the winner</b>.</li>\n</ul>\n<ul>\n<li>Data will be retained only as long as necessary to complete the Raffle process and will be securely deleted no later than <b>31 October, 2025</b>.</li>\n</ul>\n<ul>\n<li>Data will not be used for marketing purposes unless participants provide explicit opt-in consent.</li>\n</ul>\n<ul>\n<li>Participants have the right to access, correct, or request deletion of their personal data by contacting <a href=\"mailto:info.mai@macnica.com\"><b>info.mai@macnica.com</b></a>.</li>\n</ul>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_8_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_8": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "6. Complaints",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\n<li>Any complaints regarding the Raffle may be submitted in writing to the Organizer at the above address.</li>\n</ul>\n<ul>\n<li>If a complaint cannot be resolved, participants may contact the <b>Dutch Gaming Authority (<i>Kansspelautoriteit</i>)</b>.</li>\n</ul>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_9_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_9": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "7. Liability",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_8": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\n<li>The Organizer is not responsible for technical issues, lost entries, or events outside its control.</li>\n</ul>\n<ul>\n<li>No cash alternatives or substitutions are available, except at the Organizer’s discretion if the prize becomes unavailable.</li>\n</ul>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_10_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_10": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "8. Governing Law",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_9": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\n<li>These Terms are governed by <b>Dutch law</b>.</li>\n</ul>\n<ul>\n<li>Any disputes arising out of or in connection with the Raffle shall be subject to the jurisdiction of the competent courts of the Netherlands.</li>\n</ul>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   }
+  }
+ }
+}

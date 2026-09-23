@@ -1,0 +1,158 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "Macnica Americas Demonstrates Sony's IP Live Production Interoperability using Altera® FPGAs",
+ "showInLists": "true",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+ "cq:lastModified": "Wed Sep 23 2026 01:50:06 GMT+0000",
+ "jcr:description": "New IP Core Will Allow For Seamless Implementation of IP Live Workflows SAN DIEGO, CA September 11, 2015 – Macnica Americas today announced that it has demonstrated a new IP core that shows interoperability with the Sony’s IP Live production system operating in an Altera FPGA. The core enables real-time transmission of video, audio, and metadata via standard IP networks. It supports forward error correction and essence independent SDI-IP mapping of IP Live work flows. It will allow customers to interoperate with Sony and other equipment implementing IP Live.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2015-09-11-macnica-americas-demonstrates-sonys-ip-live-production",
+ "hideInNav": "true",
+ "pageTitle": "Macnica Americas Demonstrates Sony's IP Live Production Interoperability using Altera® FPGAs",
+ "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "Macnica Americas Demonstrates Sony's IP Live Production Interoperability using Altera® FPGAs",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Macnica Americas Demonstrates Sony's IP Live Production Interoperability using Altera® FPGAs",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "About Macnica Americas",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Macnica Americas is a fully franchised semiconductor distributor covering North America with expertise in design services, IP, applications support, and logistics. Macnica Americas is a division of Macnica Inc, a $3.2B global leader in semiconductor distribution and design services. The Macnica Americas IP portfolio includes solutions for high speed networking, broadcast video, DSP and embedded applications.</p>\n<p>Find out more about Macnica Americas products and design services at <a href=\"https://macnicatech.com/en/intellectual-property/\" target=\"_blank\">macnicatech.com.</a></p>\n<p><sub>The Macnica Americas logo is a trademark of Macnica, Inc. Altera®, Arria®, and Stratix® are registered trademarks of Altera Corp. Other trademarks are the property of their respective owners.</sub></p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Downloads",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "download_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "download_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "IBC 2015 Sony IP Live demo press release",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/downloads/IBC 2015 Sony IP Live demo press release.pdf",
+     "sling:resourceType": "macnicaglobal2/components/content/download"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "New IP Core Will Allow For Seamless Implementation of IP Live Workflows",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>SAN DIEGO, CA September 11, 2015 – Macnica Americas today announced that it has demonstrated a new IP core that shows interoperability with the Sony’s IP Live production system operating in an Altera FPGA. The core enables real-time transmission of video, audio, and metadata via standard IP networks. It supports forward error correction and essence independent SDI-IP mapping of IP Live work flows. It will allow customers to interoperate with Sony and other equipment implementing IP Live.</p>\n<p>“Macnica is pleased to add support for Sony’s IP Live production system to our industry-leading portfolio of high performance video IP,” said Marc Levy, Chief Technical Officer of Macnica Americas. “This capability further extends the video IP solutions we can offer to Altera FPGA users.”</p>\n<p>Macnica Americas has a long history of supplying advanced IP cores for high performance video systems with a focus on IP transport over Ethernet, most recently using SMPTE 2022-5/6. This new IP core, combined with SMPTE ST 2059 time sync IP and Sony’s Low Latency Video Codec (LLVC) IP, will give end equipment manufacturers the flexibility to support Sony’s IP Live Production System with Altera Stratix® V and Arria® 10 FPGA families. Additionally, implementation on Altera FPGAs allows for dynamic re-configuration and field upgrades, for flexible and upgradeable deployments.</p>\n<p>Macnica Americas is demonstrating the IP Live compatible core at IBC 2015 in the Altera booth (2.A50) and further information is available at the Sony IBC booth (12.A10). Macnica plans full release of the core in the 4th quarter of this year.&nbsp;</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_botoes": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_861351158": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

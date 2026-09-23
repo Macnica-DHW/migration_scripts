@@ -1,0 +1,595 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "Reflex CES Products: Industrial FPGAs & Processors",
+ "manufacturer": "mai:manufacturers/reflex-ces",
+ "businessCategories": "mai:business-categories/boards-modules",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 02 2026 13:57:43 GMT+0000",
+ "cq:lastModified": "Tue Sep 22 2026 01:22:03 GMT+0000",
+ "jcr:description": "Reflex CES products offer a comprehensive range of FPGAs and processors. Trusted by OEMs globally, these solutions cater to various industrial needs.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces",
+ "pageTitle": "Reflex CES Products",
+ "cq:tags": "mai:business-categories/boards-modules",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "Reflex CES",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_titulo": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "container_67658178": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>Your one-stop supplier for cutting edge FPGA solutions</h3>\r\n<p>Based in Paris, France, REFLEX CES is a well-known and trusted supplier to major OEMs across the world, since 2000.&nbsp;</p>\r\n<p>REFLEX CES’ team of highly skilled engineers has been focused on designing and manufacturing high-speed boards and rugged system solutions based on high-density industrial FPGAs and processors. Thanks to its expertise in Hardware, Firmware, Software, Mechanics, CAD, and Signal integrity, REFLEX CES offers a wide range of solutions with its products:</p>\r\n<ul>\r\n<li>Modules</li>\r\n<li>PCIe Boards</li>\r\n<li>Servers &amp; Systems</li>\r\n<li>Full turnkey solutions</li>\r\n<li>Manufacturing</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_907146119": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title_table": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Modules",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_intro": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>REFLEX CES took their wide FPGA experience, combined it with their embedded knowledge, and created perfectly suitable Modules for your needs. Those System-on-Modules can be used into many embedded applications.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "flex_modules_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800525141",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/comxpressv2-01-554x321.jpg",
+       "alt": "COMXpress Stratix® 10 SoC",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">COMXpress Stratix® 10 SoC</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_1_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/pcie-carrier-board-of-the-comxpress-01-554x321-(1).png",
+       "alt": "COMXpress Stratix® 10 SoC PCIe Carrier Board",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">COMXpress Stratix® 10 SoC PCIe Carrier Board</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "flex_modules_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800525141",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/achilles-554x321.jpg",
+       "alt": "Achilles Instant DevKit Arria 10 SoC SoM",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">Achilles Instant DevKit Arria 10 SoC SoM</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_2_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/pcie-carrier-board-1-554x321-(2).jpg",
+       "alt": "PCIe Carrier Board Arria 10 SoC SoM",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">PCIe Carrier Board Arria 10 SoC SoM</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title_textwithimage": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "PCIe Boards",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "textwithimage": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces-/XpressSX AGI-FH400G Agilex.jpg",
+     "imageRatio": "40",
+     "alt": "XpressSX AGI-FH400G",
+     "text": "<p>REFLEX CES’ large roadmap of PCIe boards (a high-speed serial computer expansion bus standard), based on FPGAs, allows you a large choice for your projects and developments. Their PCIe boards can be used into many embedded applications.</p>\r\n<p><i>XpressSX AGI-FH400G Agilex™ I-Series SoC PCIe board</i></p>",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+     "isDecorative": "false",
+     "textIsRich": "true",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "1718154328384",
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces-/XpressSX AGI-FH400G Agilex.jpg",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    }
+   },
+   "container_1836817728": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flex_pcie_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800525141",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/pcie-carrier-board-of-the-comxpress-01-554x321-(1).png",
+       "alt": "COMXpress Stratix® 10 SoC PCIe Carrier Board",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">COMXpress Stratix® 10 SoC PCIe Carrier Board</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_1_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/sargon-website-554x321.png",
+       "alt": "Sargon Instant Dev Kit Stratix 10 FPGA FMC+ IDK",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">Sargon Instant Dev Kit Stratix 10 FPGA FMC+ IDK</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "flex_pcie_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800525141",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/xpressgxs10-website-554x321-(13).png",
+       "alt": "XpressGX/SX S10-FH200G",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">XpressGX/SX S10-FH200G</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_2_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/xpressgxs10-800G-554x321-0.png",
+       "alt": "XpressGX S10-FH800G Stratix® 10 FPGA PCIe board",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">XpressGX S10-FH800G Stratix® 10 FPGA PCIe board</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "flex_pcie_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800525141",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/alaricarria10-soc-554x321-2.jpg",
+       "alt": "Alaric Instant DevKit Arria 10 SoC FMC PCIe board",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">Alaric Instant DevKit Arria 10 SoC FMC PCIe board</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_3_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/pcie-carrier-board-1-554x321-(2).jpg",
+       "alt": "PCIe Carrier Board Arria 10 SoC SoM",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">PCIe Carrier Board Arria 10 SoC SoM</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "flex_pcie_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800525141",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/xpressgxa10-1-554x321-(2)-(1).jpg",
+       "alt": "XpressGXA10-LP1150",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">XpressGXA10-LP1150</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_4_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/xpressgxa10-lp1151-01-554x321.png",
+       "alt": "XpressGXA10-LP1151",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">XpressGXA10-LP1151</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "flex_pcie_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800525141",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/fmc060flat-01-554x321.png",
+       "alt": "FMC060",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">FMC060</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_5_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/xpressgx5-qe-1-554x321 (1).jpg",
+       "alt": "XpressGX5-LPA4QE-Gen3",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">XpressGX5-LPA4QE-Gen3</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "flex_pcie_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800525141",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/xpressgx5-se-1-(1)-(3).jpg",
+       "alt": "XpressGX5-LPA7SE-Gen3",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">XpressGX5-LPA7SE-Gen3</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_6_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces/clovis-1-554x321.jpg",
+       "alt": "Clovis CycloneV Video Development Kit (AVDB)",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: center;\">Clovis CycloneV Video Development Kit (AVDB)</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_266498063": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>Custom &amp; MOTS</h3>\r\n<p>60% of REFLEX CES activity is the development of full turnkey designs, or custom solutions, based on clients' specific requirements. They have the technical capabilities to address complete systems as well as offering partial design services such as hardware, firmware, software, mechanical, CAD P&amp;R, PCB stacking definition, signal integrity with Hyperlynx simulations, certifications, and more.&nbsp;</p>\r\n<p><span style=\"letter-spacing: 0px;\">They are developing many projects with the latest technologies allowing quicker, safer, more cost-effective access to our customers in order to implement their projects and catch the product cycle and deployment on the market.&nbsp;</span></p>\r\n<p><span style=\"letter-spacing: 0px;\">They also have developed expertise working with ruggedized and rack-mounted systems. REFLEX CES has the capability to develop customized systems to achieve precise customer requirements such as specific form factor, ruggedized level, or environmental qualification (thermal, vibration, shock, MTBF, and more).&nbsp;</span></p>\r\n<p><span style=\"letter-spacing: 0px;\">REFLEX CES also propose Modified-COTS, or</span><b style=\"letter-spacing: 0px;\"> MOTS</b><span style=\"letter-spacing: 0px;\">, which is a modification made to a standard REFLEX CES COTS board, adapted to meet customers’ specific requirements. Some MOTS can be created with a cost reduction objective. The modifications can include, for example, adding interfaces, depopulating the board, reducing the density of FPGA, finding a workaround, and more.</span></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_543818490": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "cq:responsive": {
+     "jcr:primaryType": "nt:unstructured",
+     "default": {
+      "jcr:primaryType": "nt:unstructured",
+      "offset": "0",
+      "width": "12"
+     }
+    },
+    "flex_mots_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484597737",
+      "1718800525141"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "https://www.macnica.com/adobe/dynamicmedia/deliver/dm-aid--b2ac0e23-8c52-45f5-92ae-a6c16d13b5d5/mots-heatsink.gif?quality=82&amp;preferwebp=true",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     },
+     "flexcontaineritem_1_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "https://www.macnica.com/adobe/dynamicmedia/deliver/dm-aid--ab6b24ee-e6a4-4ae9-8ef1-079c6f0e191d/mots-eolv2.gif?quality=82&amp;preferwebp=true",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     }
+    }
+   },
+   "container_1221263418": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498056876"
+    ],
+    "list_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "showModificationDate": "false",
+     "tagsMatch": "any",
+     "linkItems": "true",
+     "parentPage": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces",
+     "sortOrder": "asc",
+     "showDescription": "false",
+     "sling:resourceType": "macnicaglobal2/components/content/list",
+     "childDepth": "1",
+     "listFrom": "children",
+     "cq:styleIds": [
+      "1717649397305",
+      "1717648336486"
+     ]
+    }
+   },
+   "container_746606129_": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

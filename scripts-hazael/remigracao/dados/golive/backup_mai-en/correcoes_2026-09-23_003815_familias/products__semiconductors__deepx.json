@@ -1,0 +1,1049 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:mixinTypes": [
+  "mix:versionable"
+ ],
+ "jcr:createdBy": "saichand@anionmarketing.com",
+ "jcr:title": "25 TOPS at 5W. Fanless AI Inference for Any Enclosure",
+ "manufacturer": "mai:manufacturers/deepx",
+ "businessCategories": [
+  "mai:business-categories/semiconductors"
+ ],
+ "jcr:versionHistory": "67d4f102-baef-4a38-997f-ede8e98ee8b9",
+ "pwaOrientation": "any",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "pd_isModelNameLinkToPage": "false",
+ "jcr:predecessors": [
+  "11a1c7e7-a892-40c6-b62c-6b69c4fb3fa1"
+ ],
+ "jcr:created": "Mon Jul 27 2026 09:47:39 GMT+0000",
+ "pwaDisplay": "standalone",
+ "cq:lastModified": "Mon Sep 21 2026 10:33:26 GMT+0000",
+ "jcr:description": "DEEPX, Macnica Americas, DEEPX NPU, edge AI inference, AI accelerator, fanless AI inference, embedded AI module, M.2 AI module, DX-M1, DX-M1M, DX-H1 Quattro, DX-H1 V-NPU, PCIe AI card, low power AI accelerator, industrial AI, robotics AI, smart factory AI, surveillance AI, smart city AI, AI inference hardware, DXNN SDK",
+ "pwaCachestrategy": "staleWhileRevalidate",
+ "jcr:baseVersion": "11a1c7e7-a892-40c6-b62c-6b69c4fb3fa1",
+ "jcr:isCheckedOut": true,
+ "hideInNav": "true",
+ "pageTitle": "25 TOPS at 5W. Fanless AI Inference for Any Enclosure.",
+ "cq:tags": [
+  "mai:business-categories/semiconductors"
+ ],
+ "jcr:uuid": "44ee2952-0091-452f-a32a-9d2b8ca8b65a",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "saichand@anionmarketing.com",
+ "navTitle": "DEEPX",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:createdBy": "admin",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "saichand@anionmarketing.com",
+    "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+    "jcr:created": "Mon Jul 27 2026 10:41:20 GMT+0000",
+    "jcr:lastModified": "Mon Jul 27 2026 10:41:20 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717410661180",
+     "1717498056876"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:title": "25 TOPS at 5W. Fanless AI Inference for Any Enclosure.",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 11:09:32 GMT+0000",
+     "type": "h1",
+     "jcr:lastModified": "Mon Jul 27 2026 11:09:42 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "image": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/deepx-hero-banner.png",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 11:09:48 GMT+0000",
+     "alt": "Deepx - 25 TOPS at 5W. Fanless AI Inference for Any Enclosure.",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "jcr:lastModified": "Mon Jul 27 2026 11:35:45 GMT+0000",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/image",
+     "isDecorative": "false",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicagwi/americas/mai/public/en/images/products/deepx-hero-banner.png",
+      "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+      "jcr:lastModified": "Mon Jul 27 2026 11:35:45 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 11:11:33 GMT+0000",
+     "text": "<p><b>From embedded modules to high-density PCIe cards and complete systems, DEEPX delivers production AI inference where cloud and GPU solutions cannot operate. Exclusively available from Macnica.</b></p>\r\n<p>The DEEPX product line spans from a 42mm M.2 module for drones and embedded devices to high-density PCIe inference cards for multi-channel surveillance servers. The DX-M and DX-H families are deployed today in security systems, smart factories, robotics platforms, and transportation infrastructure worldwide. All products share the same SDK and model framework support.</p>\r\n<p>Macnica is the exclusive authorized distributor for North America, providing design-in support, evaluation hardware, and supply chain planning for production volumes, covering the full engagement from concept through volume ramp. Contact Macnica to request an evaluation kit or discuss your application with a field application engineer.</p>\r\n",
+     "jcr:lastModified": "Mon Jul 27 2026 11:12:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "title_964374696": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:title": "DEEPX NPU Architecture Built Around Power, Thermal, and Precision",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 11:37:57 GMT+0000",
+     "type": "h1",
+     "jcr:lastModified": "Mon Jul 27 2026 11:38:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text_909663515": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 11:38:37 GMT+0000",
+     "text": "<p>GPUs overheat in sealed enclosures, low-power NPUs cannot sustain production frame rates on real detection models, and cloud inference introduces round-trip latency and data egress that industrial and safety-critical systems cannot tolerate. DEEPX NPU architecture is designed specifically around these failure modes, with power envelope, thermal characteristics, and quantization fidelity treated as primary design constraints rather than secondary considerations. All performance claims are independently benchmarked against production workloads.</p>\r\n",
+     "jcr:lastModified": "Mon Jul 27 2026 11:38:45 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "image_300275373": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/deepx-npu-infographic.png",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 11:38:50 GMT+0000",
+     "alt": "DEEPX NPU Architecture",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "jcr:lastModified": "Mon Jul 27 2026 11:39:19 GMT+0000",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/image",
+     "isDecorative": "false",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/deepx-npu-infographic.png",
+      "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+      "jcr:lastModified": "Mon Jul 27 2026 11:39:19 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    },
+    "text_1041510229": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 11:39:33 GMT+0000",
+     "text": "<p>The DEEPX IQ8 quantization engine addresses the precision trade-off that limits most edge NPU deployments. Standard INT8 quantization reduces memory bandwidth and compute requirements but introduces accuracy degradation that requires per-layer calibration to recover. IQ8 performs INT8-width computation while preserving the numerical range of FP32 inference, delivering full-speed throughput without model accuracy loss and without manual calibration. For teams deploying YOLO-family or custom detection models, this removes a significant pre-production engineering step.</p>\r\n",
+     "jcr:lastModified": "Mon Jul 27 2026 11:39:39 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "flexcontainer_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "taj@anionmarketing.com",
+     "jcr:lastModifiedBy": "taj@anionmarketing.com",
+     "jcr:created": "Thu Jul 16 2026 13:25:36 GMT+0000",
+     "jcr:lastModified": "Thu Jul 16 2026 13:25:36 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "flexcontaineritem_807756024": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "taj@anionmarketing.com",
+      "jcr:lastModifiedBy": "taj@anionmarketing.com",
+      "jcr:created": "Thu Jul 16 2026 13:36:46 GMT+0000",
+      "jcr:lastModified": "Thu Jul 16 2026 13:36:46 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "embed_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "taj@anionmarketing.com",
+       "jcr:lastModifiedBy": "taj@anionmarketing.com",
+       "layout": "fixed",
+       "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+       "jcr:created": "Thu Jul 16 2026 13:37:41 GMT+0000",
+       "type": "embeddable",
+       "youtubeVideoId": "CXGtjv8U6OM",
+       "jcr:lastModified": "Thu Jul 16 2026 13:38:00 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/embed"
+      }
+     },
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "taj@anionmarketing.com",
+      "jcr:lastModifiedBy": "taj@anionmarketing.com",
+      "jcr:created": "Thu Jul 16 2026 13:25:39 GMT+0000",
+      "jcr:lastModified": "Thu Jul 16 2026 13:25:39 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "taj@anionmarketing.com",
+       "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+       "jcr:created": "Thu Jul 16 2026 13:37:23 GMT+0000",
+       "text": "<p>Thermal performance is validated in direct hardware comparison. Running identical workloads, the DX-M1 board surface measured 35.5 degrees C versus 60.7 degrees C for a competing chip. In sealed enclosures without active cooling, that 25-degree delta is the margin between a qualified fanless design and one that requires thermal redesign or derating at operating temperature.</p>\r\n",
+       "jcr:lastModified": "Mon Jul 27 2026 11:42:30 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "title_1994515384": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:title": "DEEPX Products: Chips, modules, PCIe cards, and Complete Systems",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 11:44:59 GMT+0000",
+     "type": "h1",
+     "jcr:lastModified": "Mon Jul 27 2026 11:45:20 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text_610046061": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 11:45:04 GMT+0000",
+     "text": "<p>The DEEPX portfolio covers two distinct deployment scenarios. The DX-M Series are bare chips and M.2 modules for embedding directly into host systems: robots, cameras, vehicles, and edge devices. The DX-H Series are low-profile PCIe cards for servers and workstations running multi-channel video analytics and AI inference at scale. All products share the same DXNN SDK and support the same model frameworks.</p>\r\n",
+     "jcr:lastModified": "Mon Jul 27 2026 11:45:28 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "image_879457884": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/deepx-products-chips-modules.jpg",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 11:47:55 GMT+0000",
+     "alt": "DEEPX Products: Chips",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "jcr:lastModified": "Mon Jul 27 2026 12:03:21 GMT+0000",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/image",
+     "isDecorative": "false",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/deepx-products-chips-modules.jpg",
+      "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+      "jcr:lastModified": "Mon Jul 27 2026 12:03:21 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    },
+    "tabs": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 11:51:08 GMT+0000",
+     "jcr:lastModified": "Mon Jul 27 2026 11:53:51 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/tabs",
+     "item_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 1",
+      "cq:panelTitle": "DX-M1 SoCs & M.2",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717410661180"
+      ],
+      "flexcontainer_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "taj@anionmarketing.com",
+       "jcr:lastModifiedBy": "taj@anionmarketing.com",
+       "jcr:created": "Thu Jul 16 2026 13:25:36 GMT+0000",
+       "jcr:lastModified": "Thu Jul 16 2026 13:25:36 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "flexcontaineritem_807756024": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "taj@anionmarketing.com",
+        "jcr:lastModifiedBy": "taj@anionmarketing.com",
+        "jcr:created": "Thu Jul 16 2026 13:36:46 GMT+0000",
+        "jcr:lastModified": "Thu Jul 16 2026 13:36:46 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "taj@anionmarketing.com",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Thu Jul 16 2026 13:37:23 GMT+0000",
+         "text": "<h4>DX-M1 SoCs and M2 Modules</h4>\r\n<p><i>Embedded chip with external memory, industrial and automotive grades</i></p>\r\n<p>The DX-M1 is the flagship embedded NPU. Its external memory architecture lets designers size LPDDR4x or LPDDR5 independently of the chip, supporting up to 8GB for workloads running multiple simultaneous models. Available as a bare chip or as an M.2 2280 module with 4GB LPDDR5 onboard. AEC-Q100 Grade 3 qualified, with Grade 2 available on request. This is the only DEEPX chip with automotive-grade certification.</p>\r\n<p><b>Best for:</b> Designs requiring memory flexibility, automotive-grade certification, or multi-model inference. Robotics platforms, industrial inspection systems, and smart city nodes.</p>\r\n",
+         "jcr:lastModified": "Mon Jul 27 2026 12:35:55 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "taj@anionmarketing.com",
+        "jcr:lastModifiedBy": "taj@anionmarketing.com",
+        "jcr:created": "Thu Jul 16 2026 13:25:39 GMT+0000",
+        "jcr:lastModified": "Thu Jul 16 2026 13:25:39 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "venkatesh@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx-m1-socs-m2.jpg",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Mon Jul 27 2026 12:00:55 GMT+0000",
+         "alt": "DX-M1 SoCs and M2 Modules",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Mon Jul 27 2026 12:04:20 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx-m1-socs-m2.jpg",
+          "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+          "jcr:lastModified": "Mon Jul 27 2026 12:04:20 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        }
+       }
+      },
+      "table": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "venkatesh@anionmarketing.com",
+       "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+       "jcr:created": "Mon Jul 27 2026 12:06:50 GMT+0000",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>AI performance</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"252\"><p style=\"text-align: center;\">25 TOPS (INT8)</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Power</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"252\"><p style=\"text-align: center;\">1 to 5W</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Memory</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"252\"><p style=\"text-align: center;\">Up to 8GB external LPDDR5</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Chip package</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"252\"><p style=\"text-align: center;\">17 x 17mm FCBGA</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Module</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"252\"><p style=\"text-align: center;\">M.2 2280, M-Key</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Host interface</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"252\"><p style=\"text-align: center;\">PCIe Gen3 x4</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Temp range</b></p>\r\n</td>\r\n<td valign=\"top\" width=\"400\"><p style=\"text-align: center;\">-40 to 85 degrees C / AEC-Q100 Grade 3</p>\r\n</td>\r\n</tr><tr><td style=\"text-align: center;\"><b>Status</b></td>\r\n<td valign=\"top\" width=\"252\"><p style=\"text-align: center;\">Mass production</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+       "jcr:lastModified": "Mon Jul 27 2026 12:08:07 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "flexcontainer": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "venkatesh@anionmarketing.com",
+       "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+       "jcr:created": "Mon Jul 27 2026 12:09:26 GMT+0000",
+       "jcr:lastModified": "Mon Jul 27 2026 12:09:26 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "flexcontaineritem": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "venkatesh@anionmarketing.com",
+        "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+        "jcr:created": "Mon Jul 27 2026 12:09:31 GMT+0000",
+        "jcr:lastModified": "Mon Jul 27 2026 12:09:31 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "venkatesh@anionmarketing.com",
+         "jcr:title": "Get the DX-M1 datasheet",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Mon Jul 27 2026 12:09:43 GMT+0000",
+         "linkURL": "https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1-Chip-AI-Accelerator-E-Brochure.pdf",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Mon Jul 27 2026 12:10:17 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "1717669229626",
+          "1722936853890"
+         ]
+        }
+       },
+       "flexcontaineritem_597182992": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "venkatesh@anionmarketing.com",
+        "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+        "jcr:created": "Mon Jul 27 2026 12:09:39 GMT+0000",
+        "jcr:lastModified": "Mon Jul 27 2026 12:09:39 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "venkatesh@anionmarketing.com",
+         "jcr:title": "Get the DX-M1 M.2 datasheet",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Mon Jul 27 2026 12:09:47 GMT+0000",
+         "linkURL": "https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1-M.2-Module-AI-Accelerator-E-Brochure.pdf",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Mon Jul 27 2026 12:10:48 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       }
+      }
+     },
+     "item_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 2",
+      "cq:panelTitle": "DX-M1M SoCs & M.2",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "flexcontainer_copy_c": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "taj@anionmarketing.com",
+       "jcr:lastModifiedBy": "taj@anionmarketing.com",
+       "jcr:created": "Thu Jul 16 2026 13:25:36 GMT+0000",
+       "jcr:lastModified": "Thu Jul 16 2026 13:25:36 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "flexcontaineritem_807756024": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "taj@anionmarketing.com",
+        "jcr:lastModifiedBy": "taj@anionmarketing.com",
+        "jcr:created": "Thu Jul 16 2026 13:36:46 GMT+0000",
+        "jcr:lastModified": "Thu Jul 16 2026 13:36:46 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "taj@anionmarketing.com",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Thu Jul 16 2026 13:37:23 GMT+0000",
+         "text": "<h4>DX-M1M SoCs and M.2 Modules</h4>\r\n<p><i>Compact all-in-one chip and module with integrated memory, half the footprint of DX-M1</i></p>\r\n<p>The DX-M1M integrates 2GB LPDDR4x directly into the chip package, eliminating the external DRAM device and reducing module length to 42mm. The result is a complete AI accelerator in a form factor that fits where the M1 cannot: drones, dashcams, and handheld devices. Hardware-based security includes a Root of Trust and True Random Number Generator.</p>\r\n<p><b>Best for:</b> Drones, ADAS systems, dashcams, autonomous mobile robots, and AIoT devices where size, weight, and power budget are the binding constraints.</p>\r\n",
+         "jcr:lastModified": "Mon Jul 27 2026 12:16:11 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "taj@anionmarketing.com",
+        "jcr:lastModifiedBy": "taj@anionmarketing.com",
+        "jcr:created": "Thu Jul 16 2026 13:25:39 GMT+0000",
+        "jcr:lastModified": "Thu Jul 16 2026 13:25:39 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "venkatesh@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx-m1m-socs-m2.jpg",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Mon Jul 27 2026 12:00:55 GMT+0000",
+         "alt": "DX-M1 SoCs and M2 Modules",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Mon Jul 27 2026 12:19:28 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx-m1m-socs-m2.jpg",
+          "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+          "jcr:lastModified": "Mon Jul 27 2026 12:19:28 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        }
+       }
+      },
+      "table_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "venkatesh@anionmarketing.com",
+       "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+       "jcr:created": "Mon Jul 27 2026 12:06:50 GMT+0000",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>AI performance</b></p>\r\n</td>\r\n<td width=\"198\" valign=\"top\"><p style=\"text-align: center;\">25 TOPS (INT8)</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Power</b></p>\r\n</td>\r\n<td width=\"198\" valign=\"top\"><p style=\"text-align: center;\">3W typical</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Memory</b></p>\r\n</td>\r\n<td width=\"400\" valign=\"top\"><p style=\"text-align: center;\">2GB integrated LPDDR4x</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Chip package</b></p>\r\n</td>\r\n<td width=\"198\" valign=\"top\"><p style=\"text-align: center;\">21 x 21mm FCL-BGA</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Module</b></p>\r\n</td>\r\n<td width=\"198\" valign=\"top\"><p style=\"text-align: center;\">M.2 2242, M+B Key</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Host interface</b></p>\r\n</td>\r\n<td width=\"198\" valign=\"top\"><p style=\"text-align: center;\">PCIe Gen3 x2 (module)</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Temp range</b></p>\r\n</td>\r\n<td width=\"198\" valign=\"top\"><p style=\"text-align: center;\">-40 to 85 degrees C industrial</p>\r\n</td>\r\n</tr><tr><td style=\"text-align: center;\"><b>Status</b></td>\r\n<td width=\"198\" valign=\"top\"><p style=\"text-align: center;\">Mass production Q4 2025</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+       "jcr:lastModified": "Mon Jul 27 2026 12:20:19 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "flexcontainer_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "venkatesh@anionmarketing.com",
+       "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+       "jcr:created": "Mon Jul 27 2026 12:09:26 GMT+0000",
+       "jcr:lastModified": "Mon Jul 27 2026 12:09:26 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "flexcontaineritem": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "venkatesh@anionmarketing.com",
+        "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+        "jcr:created": "Mon Jul 27 2026 12:09:31 GMT+0000",
+        "jcr:lastModified": "Mon Jul 27 2026 12:09:31 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "venkatesh@anionmarketing.com",
+         "jcr:title": "Get the DX-M1M datasheet",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Mon Jul 27 2026 12:09:43 GMT+0000",
+         "linkURL": "https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1M-Chip-AI-Accelerator-E-Brochure.pdf",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Mon Jul 27 2026 12:20:46 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "",
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       },
+       "flexcontaineritem_597182992": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "venkatesh@anionmarketing.com",
+        "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+        "jcr:created": "Mon Jul 27 2026 12:09:39 GMT+0000",
+        "jcr:lastModified": "Mon Jul 27 2026 12:09:39 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "venkatesh@anionmarketing.com",
+         "jcr:title": "Get the DX-M1M M.2 datasheet",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Mon Jul 27 2026 12:09:47 GMT+0000",
+         "linkURL": "https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-M1M-M.2-AI-Accelerator-E-Brochure.pdf",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Mon Jul 27 2026 12:21:31 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "",
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       }
+      }
+     },
+     "item_1785153106393": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "DX-H1 Quattro PCIe",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "flexcontainer_copy_c": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "taj@anionmarketing.com",
+       "jcr:lastModifiedBy": "taj@anionmarketing.com",
+       "jcr:created": "Thu Jul 16 2026 13:25:36 GMT+0000",
+       "jcr:lastModified": "Thu Jul 16 2026 13:25:36 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "flexcontaineritem_807756024": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "taj@anionmarketing.com",
+        "jcr:lastModifiedBy": "taj@anionmarketing.com",
+        "jcr:created": "Thu Jul 16 2026 13:36:46 GMT+0000",
+        "jcr:lastModified": "Thu Jul 16 2026 13:36:46 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "taj@anionmarketing.com",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Thu Jul 16 2026 13:37:23 GMT+0000",
+         "text": "<h4>DX-H1 Quattro PCIe Card</h4>\r\n<p><i>100 TOPS inference card, four DX-M1 chips on one low-profile PCIe slot</i></p>\r\n<p>The DX-H1 Quattro installs into a standard PCIe x16 slot and delivers 100 TOPS at 20W TDP, enough to process up to 128 AI video channels from a single workstation, or 768 channels from a 2U server with six cards. It works alongside existing NVR or decoder infrastructure; no onboard video codec is included. The host motherboard must support PCIe bifurcation x4x4x4x4, splitting the x16 slot into four independent x4 lanes. Verify BIOS support before specifying. Compatible with Dell, HPE, Lenovo, Supermicro, and KAYTUS servers.</p>\r\n<p><b>Best for:</b> Adding AI inference to existing camera and NVR infrastructure. Confirm BIOS bifurcation x4x4x4x4 support before selecting. Compatible with Dell, HPE, Lenovo, Supermicro, and KAYTUS servers.</p>\r\n",
+         "jcr:lastModified": "Mon Jul 27 2026 12:30:21 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "taj@anionmarketing.com",
+        "jcr:lastModifiedBy": "taj@anionmarketing.com",
+        "jcr:created": "Thu Jul 16 2026 13:25:39 GMT+0000",
+        "jcr:lastModified": "Thu Jul 16 2026 13:25:39 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "venkatesh@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx--h1-quattro-pcie.jpg",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Mon Jul 27 2026 12:00:55 GMT+0000",
+         "alt": "DX-H1 Quattro PCIe Card",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Mon Jul 27 2026 12:30:58 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx--h1-quattro-pcie.jpg",
+          "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+          "jcr:lastModified": "Mon Jul 27 2026 12:30:58 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        }
+       }
+      },
+      "table_copy_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "venkatesh@anionmarketing.com",
+       "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+       "jcr:created": "Mon Jul 27 2026 12:06:50 GMT+0000",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>AI performance</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p style=\"text-align: center;\">100 TOPS (INT8)</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Power</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p style=\"text-align: center;\">20W TDP</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>Memory</b></p>\r\n</td>\r\n<td width=\"400\" valign=\"top\"><p style=\"text-align: center;\">16GB LPDDR5</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>Video codec</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p style=\"text-align: center;\">Not included</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>Form factor</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p style=\"text-align: center;\">Low-profile PCIe card</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>Interface</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p style=\"text-align: center;\">PCIe x16 (bifurcation x4x4x4x4 required)</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>Dimensions</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p style=\"text-align: center;\">68.1 x 165.9 x 16mm with heatsink</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>Max channels</b></p>\r\n</td>\r\n<td width=\"228\" valign=\"top\"><p style=\"text-align: center;\">128 channels per workstation (YOLOv5s at 25fps)</p>\r\n</td>\r\n</tr><tr><td style=\"text-align: center;\"><b>Status</b></td>\r\n<td width=\"228\" valign=\"top\"><p style=\"text-align: center;\">Mass production</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+       "jcr:lastModified": "Mon Jul 27 2026 12:31:22 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "venkatesh@anionmarketing.com",
+       "jcr:title": " Get the DX-H1 Quatro datasheet",
+       "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+       "jcr:created": "Mon Jul 27 2026 12:31:51 GMT+0000",
+       "linkURL": "https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-H1-V-NPU-AI-Accelerator-Codec-PCIe-Card-E-Brochure.pdf",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Mon Jul 27 2026 12:32:09 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1723033446255",
+        "1717669229626"
+       ]
+      }
+     },
+     "item_1785153125187": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "DX-H1 V-NPU PCIe",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "flexcontainer_copy_c": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "taj@anionmarketing.com",
+       "jcr:lastModifiedBy": "taj@anionmarketing.com",
+       "jcr:created": "Thu Jul 16 2026 13:25:36 GMT+0000",
+       "jcr:lastModified": "Thu Jul 16 2026 13:25:36 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "flexcontaineritem_807756024": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "taj@anionmarketing.com",
+        "jcr:lastModifiedBy": "taj@anionmarketing.com",
+        "jcr:created": "Thu Jul 16 2026 13:36:46 GMT+0000",
+        "jcr:lastModified": "Thu Jul 16 2026 13:36:46 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "taj@anionmarketing.com",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Thu Jul 16 2026 13:37:23 GMT+0000",
+         "text": "<h4>DX-H1 V-NPU PCIe Card</h4>\r\n<p><i>Decode and infer on one card, full H.264/H.265 video pipeline with onboard codec</i></p>\r\n<p>The DX-H1 V-NPU adds hardware H.264/H.265 codec blocks alongside its dual NPUs, enabling the card to ingest, decode, and analyze live camera streams without involving the host CPU. One card handles 64 channels of 1080p decode and 50 TOPS of AI inference simultaneously, making it the right choice for new-build AI surveillance systems where eliminating separate video servers is a design goal. The PCIe interface uses x8 electrical lanes in a physical x16 slot, compatible with a broader range of server motherboards than the Quattro. DEEPX reports 82% lower hardware cost and 85% electricity savings versus GPU setups in 1,000-channel deployments over five years.<br>\r\n<br>\r\n<b>Best for:</b> New-build AI CCTV infrastructure where the goal is to consolidate decode and inference onto one card. DEEPX reports 82% lower hardware cost and 85% electricity savings versus GPU setups in 1,000-channel deployments over five years.</p>\r\n",
+         "jcr:lastModified": "Mon Jul 27 2026 12:36:16 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "taj@anionmarketing.com",
+        "jcr:lastModifiedBy": "taj@anionmarketing.com",
+        "jcr:created": "Thu Jul 16 2026 13:25:39 GMT+0000",
+        "jcr:lastModified": "Thu Jul 16 2026 13:25:39 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "venkatesh@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx-h1v-npu-pcie.jpg",
+         "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+         "jcr:created": "Mon Jul 27 2026 12:00:55 GMT+0000",
+         "alt": "DX-H1 V-NPU PCIe Card",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Mon Jul 27 2026 12:36:33 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx-h1v-npu-pcie.jpg",
+          "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+          "jcr:lastModified": "Mon Jul 27 2026 12:36:33 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        }
+       }
+      },
+      "table_copy_copy_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "venkatesh@anionmarketing.com",
+       "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+       "jcr:created": "Mon Jul 27 2026 12:06:50 GMT+0000",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><td width=\"200\" valign=\"top\"><p style=\"text-align: center;\"><b>AI performance</b></p>\r\n</td>\r\n<td width=\"400\" valign=\"top\"><p style=\"text-align: center;\">50 TOPS (INT8)</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p style=\"text-align: center;\"><b>Power</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p style=\"text-align: center;\">30W TDP</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>Memory</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p style=\"text-align: center;\">24GB LPDDR5</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p style=\"text-align: center;\"><b>Video codec</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p style=\"text-align: center;\">H.264/H.265: 64CH decode, 32CH encode at 1080p 30fps</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>Form factor</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p style=\"text-align: center;\">Low-profile PCIe card</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>Interface</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p style=\"text-align: center;\">PCIe x16 physical, x8 electrical</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>Dimensions</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p style=\"text-align: center;\">68.1 x 164.3 x 18mm with heatsink</p>\r\n</td>\r\n</tr><tr><td width=\"114\" valign=\"top\"><p style=\"text-align: center;\"><b>Max channels</b></p>\r\n</td>\r\n<td width=\"246\" valign=\"top\"><p style=\"text-align: center;\">64 channels per workstation (YOLOv5s at 30fps)</p>\r\n</td>\r\n</tr><tr><td style=\"text-align: center;\"><b>Status</b></td>\r\n<td width=\"246\" valign=\"top\"><p style=\"text-align: center;\">Available</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+       "jcr:lastModified": "Mon Jul 27 2026 12:36:56 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "button_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "venkatesh@anionmarketing.com",
+       "jcr:title": " Get the DX-H1 V-NPU datasheet",
+       "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+       "jcr:created": "Mon Jul 27 2026 12:31:51 GMT+0000",
+       "linkURL": "https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/pdfs/products/semiconductors/deepx/DEEPX-DX-H1-V-NPU-AI-Accelerator-Codec-PCIe-Card-E-Brochure.pdf",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Mon Jul 27 2026 12:37:13 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1723033446255",
+        "1717669229626"
+       ]
+      }
+     }
+    },
+    "title_519248179": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:title": "From Chips to Complete Systems: AI Systems with DEEPX NPUs",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:38:39 GMT+0000",
+     "type": "h1",
+     "jcr:lastModified": "Mon Jul 27 2026 12:39:01 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text_1643039440": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:38:55 GMT+0000",
+     "text": "<p>For teams that need a validated AI system without a custom hardware design cycle, the DX-AIPlayer series integrates DX-M1 NPU acceleration with onboard compute, storage, and I/O in a production-ready enclosure. Compact and expanded configurations are available to match application I/O and compute requirements.</p>\r\n",
+     "jcr:lastModified": "Mon Jul 27 2026 12:39:08 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:39:13 GMT+0000",
+     "jcr:lastModified": "Mon Jul 27 2026 12:39:13 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "venkatesh@anionmarketing.com",
+      "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+      "jcr:created": "Mon Jul 27 2026 12:39:25 GMT+0000",
+      "jcr:lastModified": "Mon Jul 27 2026 12:39:25 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "venkatesh@anionmarketing.com",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx-aibox-m1-n97.png",
+       "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+       "jcr:created": "Mon Jul 27 2026 12:39:38 GMT+0000",
+       "alt": "From Chips",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Mon Jul 27 2026 12:41:59 GMT+0000",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "",
+        ""
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx-aibox-m1-n97.png",
+        "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+        "jcr:lastModified": "Mon Jul 27 2026 12:41:59 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      }
+     },
+     "flexcontaineritem_1975487247": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "venkatesh@anionmarketing.com",
+      "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+      "jcr:created": "Mon Jul 27 2026 12:39:34 GMT+0000",
+      "jcr:lastModified": "Mon Jul 27 2026 12:39:34 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "venkatesh@anionmarketing.com",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx-aibox-m1-i5.png",
+       "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+       "jcr:created": "Mon Jul 27 2026 12:39:42 GMT+0000",
+       "alt": "DEEPX NPUs",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Mon Jul 27 2026 12:42:27 GMT+0000",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "",
+        ""
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dx-aibox-m1-i5.png",
+        "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+        "jcr:lastModified": "Mon Jul 27 2026 12:42:27 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      }
+     }
+    },
+    "table": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:42:42 GMT+0000",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\">\r\n<tbody><tr><td valign=\"top\" width=\"150\"><p><b>Part Number</b></p>\r\n</td>\r\n<td width=\"266\" valign=\"top\"><p>DX-AIBOX-M1-N97-08064-A</p>\r\n</td>\r\n<td width=\"249\" valign=\"top\"><p>DX-AIBOX-M1-i5-08128-i</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"150\"><p><b>Dimensions (mm)</b></p>\r\n</td>\r\n<td width=\"266\"><p>95 x 95 x 55 mm</p>\r\n</td>\r\n<td width=\"249\"><p>81 x 150 x190 mm</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p><b>CPU</b></p>\r\n</td>\r\n<td width=\"266\"><p>Intel® Processor N97</p>\r\n</td>\r\n<td width=\"249\"><p>13th Gen Intel® Core™ i5-1340PE</p>\r\n</td>\r\n</tr><tr><td valign=\"top\" width=\"120\"><p><b>Storage</b></p>\r\n</td>\r\n<td width=\"266\"><p>eMMC Onboard 64GB</p>\r\n</td>\r\n<td width=\"249\"><p>2.5'' SATA 128GB</p>\r\n</td>\r\n</tr><tr><td><b>Memory</b></td>\r\n<td width=\"266\"><p>RAM: 8GB LPDDR5</p>\r\n</td>\r\n<td width=\"150\"><p>RAM: 8GB DDR4</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>I/O Interfaces</b></p>\r\n</td>\r\n<td><p>HDMI 2.0b x 1/DP 1.2 x 1</p>\r\n<p>Gb Ethernet (full speed) RJ-45 x 2</p>\r\n<p>RS-232/422/485 x 2</p>\r\n<p>USB 2.0 x 2 (via 10 Pin Header x 1) USB 3.2 Gen 2 x 3 (Type-A)</p>\r\n</td>\r\n<td><p>HDMI/DP,</p>\r\n<p>3 x2.5GbE LAN</p>\r\n<p>4 x COM</p>\r\n<p>6 x USB</p>\r\n<p>1 x 12-bit DIO</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Certification</b></p>\r\n</td>\r\n<td width=\"516\" colspan=\"2\"><p>KC, CE, and FCC</p>\r\n</td>\r\n</tr><tr><td width=\"120\" valign=\"top\"><p><b>Power</b></p>\r\n</td>\r\n<td width=\"266\"><p>12V DC-in, 5A</p>\r\n</td>\r\n<td width=\"249\"><p>12~28V DC, RoHS</p>\r\n</td>\r\n</tr><tr><td><b>Weight</b></td>\r\n<td width=\"266\"><p>450g</p>\r\n</td>\r\n<td width=\"249\"><p>1.88kg</p>\r\n</td>\r\n</tr><tr><td width=\"200\" valign=\"top\"><p><b>Operating Temperature</b></p>\r\n</td>\r\n<td width=\"266\"><p>0°C ~ 60° C</p>\r\n</td>\r\n<td width=\"249\"><p>-20°C ~ 60°C</p>\r\n</td>\r\n</tr></tbody></table>\r\n",
+     "jcr:lastModified": "Mon Jul 27 2026 12:43:28 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "button_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:title": " Request a quote",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:31:51 GMT+0000",
+     "linkURL": "https://www.macnica.com/americas/mai/en/contact/form/",
+     "linkTarget": "_self",
+     "jcr:lastModified": "Mon Jul 27 2026 12:44:31 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:styleIds": [
+      "",
+      "1723033446255",
+      "1717669229626"
+     ]
+    },
+    "title_1248953726": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:title": "Applications Where DEEPX Is Deployed",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:45:23 GMT+0000",
+     "type": "h1",
+     "jcr:lastModified": "Mon Jul 27 2026 12:45:51 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text_798752518": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:45:27 GMT+0000",
+     "text": "<p>DEEPX hardware is deployed across industries where real-time inference, low power consumption, and fanless operation are hard requirements.&nbsp;</p>\r\n",
+     "jcr:lastModified": "Mon Jul 27 2026 12:45:59 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "image_1027309319": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/deepx-applications.jpg",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:45:32 GMT+0000",
+     "alt": "DEEPX Is Deployed",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "jcr:lastModified": "Mon Jul 27 2026 12:47:58 GMT+0000",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/image",
+     "isDecorative": "false",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/deepx-applications.jpg",
+      "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+      "jcr:lastModified": "Mon Jul 27 2026 12:47:58 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    },
+    "title_502710126": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:title": "DXNN® SDK: One Toolchain for Every DEEPX Product",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:48:11 GMT+0000",
+     "type": "h1",
+     "jcr:lastModified": "Mon Jul 27 2026 12:48:28 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text_1864162524": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:48:15 GMT+0000",
+     "text": "<p>The DXNN® SDK is the unified software stack for all DEEPX hardware. It provides a compiler that takes models from standard training frameworks and produces optimized binaries for DEEPX NPUs, applying IQ8 quantization automatically without manual per-layer tuning. The runtime supports concurrent multi-model execution and manages memory across chips.</p>\r\n<p>The SDK supports x86 and ARM aarch-64 host architectures, runs on Windows and major Linux distributions, and is compatible with containerized deployments via Docker. Software partners including Edge Impulse, CVEDIA, NetworkOptix, Nota AI, and others have pre-integrated DEEPX hardware into their platforms using the DXNN SDK.&nbsp;</p>\r\n",
+     "jcr:lastModified": "Mon Jul 27 2026 12:48:41 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "image_1081057567": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dxnn-sdk.jpg",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:48:20 GMT+0000",
+     "alt": "DEEPX Product",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "jcr:lastModified": "Mon Jul 27 2026 12:49:09 GMT+0000",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/image",
+     "isDecorative": "false",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/dxnn-sdk.jpg",
+      "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+      "jcr:lastModified": "Mon Jul 27 2026 12:49:09 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    },
+    "title_931632611": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:title": "Contact Macnica Americas",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:49:26 GMT+0000",
+     "type": "h1",
+     "jcr:lastModified": "Mon Jul 27 2026 12:49:44 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text_1698590967": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "venkatesh@anionmarketing.com",
+     "jcr:lastModifiedBy": "venkatesh@anionmarketing.com",
+     "jcr:created": "Mon Jul 27 2026 12:49:30 GMT+0000",
+     "text": "<p>Macnica provides evaluation hardware, design-in support, and production supply for all DEEPX products in America and Canada. Whether you are evaluating a chip for a new design or planning a production order, the team handles the full engagement from first sample through volume ramp.</p>\r\n<p>Contact Macnica to request evaluation hardware, speak to an expert, or get a quote</p>\r\n",
+     "jcr:lastModified": "Mon Jul 27 2026 12:49:51 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   }
+  }
+ },
+ "cq:featuredimage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Mon Jul 27 2026 17:14:23 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ },
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/deepx/deepx-logo.png",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "alt": "deepx-logo",
+  "jcr:lastModified": "Mon Jul 27 2026 17:14:23 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ },
+ "pd_downloadAsset": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Mon Jul 27 2026 17:14:23 GMT+0000"
+ },
+ "pd_productFamilyImage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Mon Jul 27 2026 17:14:23 GMT+0000"
+ },
+ "pd_technologyImage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Mon Jul 27 2026 17:14:23 GMT+0000"
+ }
+}

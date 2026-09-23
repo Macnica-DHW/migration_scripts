@@ -1,0 +1,139 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "iBase Industrial Computers & Motherboards | iBase Technologies",
+ "manufacturer": "mai:products/ibase",
+ "businessCategories": "mai:business-categories/boards-modules",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 02 2026 13:06:58 GMT+0000",
+ "cq:lastModified": "Mon Sep 21 2026 20:07:10 GMT+0000",
+ "jcr:description": "IBASE Technology Inc. is a reputable manufacturer & supplier of industrial motherboards, embedded systems, panel PCs & more. Contact us for iBase supplies.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase",
+ "pageTitle": "IBASE Industrial Computers & Motherboards",
+ "cq:tags": "mai:business-categories/boards-modules",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "IBASE",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_811415916": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+    "jcr:lastModified": "Thu Sep 03 2026 11:09:16 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498056876"
+    ],
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Sep 03 2026 11:10:56 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876",
+      ""
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Thu Sep 03 2026 11:00:12 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_1648735189": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Sep 03 2026 11:12:38 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<p>IBASE Technology Inc. is a reputable manufacturer and supplier of industrial motherboards, embedded systems, panel PCs, digital signage players, and network appliances in the Industrial computer and fast-growing IIoT market. Since its establishment in 2000, IBASE Technologies has been committed to the production of high quality products and technologies, and to the rendering of excellent services. The company is publicly listed in the Taipei Exchange (TPEx: 8050) and is now a leading global provider of innovative industrial and embedded computing products.</p>\r\n<ul>\r\n<li>Embedded Computing</li>\r\n<li>Industrial Panel PC</li>\r\n<li>Digital Signage Player</li>\r\n<li>Network Appliance</li>\r\n<li>RISC Platform</li>\r\n<li>Intelligent Transportation</li>\r\n<li>ODM Services</li>\r\n</ul>\r\n",
+      "jcr:lastModified": "Thu Sep 03 2026 11:05:31 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2055356222": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Sep 03 2026 11:26:01 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/images/ibase-product.png",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "IBASE products",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Sep 03 2026 11:32:45 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/image",
+      "isDecorative": "false",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "",
+       ""
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Thu Sep 03 2026 11:32:45 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured"
+      }
+     }
+    },
+    "container_939684142": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Sep 03 2026 11:59:06 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "list": {
+      "jcr:primaryType": "nt:unstructured",
+      "showModificationDate": "false",
+      "tagsMatch": "any",
+      "linkItems": "true",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "parentPage": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase",
+      "sortOrder": "asc",
+      "showDescription": "false",
+      "jcr:lastModified": "Thu Sep 03 2026 12:03:11 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/list",
+      "childDepth": "1",
+      "listFrom": "children",
+      "cq:styleIds": [
+       "1717648336486",
+       "1717649397305"
+      ]
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": "1718800458698",
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+      },
+      "flexcontaineritem_861351158": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "Lilliput Industrial LCD Display Monitors & Components",
+ "manufacturer": "mai:manufacturers/lilliput",
+ "businessCategories": "mai:business-categories/displays",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "pd_modelName": "MONITORS",
+ "pd_isModelNameLinkToPage": "true",
+ "jcr:created": "Tue Sep 22 2026 11:56:24 GMT+0000",
+ "cq:lastModified": "Tue Sep 22 2026 12:14:48 GMT+0000",
+ "jcr:description": "Lilliput is an ISO 9001:2015 certified research institute & manufacturer focused on industrial LCD display monitors. Check out our products & services today.",
+ "keywords": "Lilliput Monitors",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/displays/lilliput-monitors",
+ "hideInNav": "true",
+ "pageType": "productManufacturerLandingPage",
+ "pageTitle": "Lilliput Monitors",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "pd_description": "Lilliput is an ISO 9001:2015 certified research institute & manufacturer focused on industrial LCD display monitors. Check out our products & services today.",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "Lilliput Monitors",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498056876"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": "1718800458698",
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Lilliput Industrial LCD Display Monitors & Components",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      }
+     },
+     "flexcontaineritem_logo": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/logos/lilliput/lilliput-logo-300x60.png",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Packed with useful features for a wide variety of markets.",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "textwithimage_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "textwithimage_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/products/lilliput-tk1330-127273.1605501303.jpg",
+     "imageRatio": "40",
+     "text": "<p>LILLIPUT is an ISO 9001:2015 certified research institute and manufacturer focused on industrial LCD display monitors for broadcast, multimedia, video, film, security, POS, and FPV products across the world. They are a leader in touch screen displays offering enclosed or open frames with a wide range of interface options such as SDI, HDMI, DVI, VGA, and more. Headquartered in Zhangzhou, LILLIPUT has two plants with state-of-the-art Panasonic equipment, a manufacturing capacity of 20-33K/PCS across seven production lines, and 24 years of LCD display experience. LILLIPUT products also have 15 quality certifications.</p>\r\n",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+     "isDecorative": "false",
+     "textIsRich": "true",
+     "altValueFromDAM": "false",
+     "cq:styleIds": "1718154328384",
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/products/lilliput-tk1330-127273.1605501303.jpg",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    }
+   },
+   "section_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Lilliput offers:",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>4K/12G-SDI Broadcast Production and Studio Monitors</li>\r\n<li>21.5” Live Stream Quad Split Multiview Monitors</li>\r\n<li>Pro Video and Security Monitors ranging from 7-21.5”</li>\r\n<li>Capacitive Touch Screen VGA/HDMI Monitors for industrial application from 7-13.3”</li>\r\n<li>Resistive Touch Screen Monitors from 7-15”</li>\r\n<li>USB &amp; Type C Touch Screen Monitor Series from 7-14”</li>\r\n<li>Able to customize based on client requirements</li>\r\n</ul>\r\n<p>Macnica offers a variety of services to enhance Lilliput monitors such as <a href=\"https://macnicadisplays.com/macnica-display-solutions-services/\" target=\"_blank\">Specification Reviews, Project Management, and Customized Warehousing, and Logistics.</a></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "section_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Lilliput Part Number List",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><td width=\"178\"><b>Part Number</b></td>\r\n<td width=\"61\"><b>Size</b></td>\r\n<td width=\"86\"><b>Resolution</b></td>\r\n<td width=\"99\"><b>Brightness</b></td>\r\n<td width=\"200\"><b>Technology</b></td>\r\n<td width=\"138\"><b>Interface</b></td>\r\n</tr><tr><td>BM150-12G</td>\r\n<td>15.6&quot;</td>\r\n<td>3840 x 2160</td>\r\n<td>300</td>\r\n<td>Non-Touch</td>\r\n<td>SDI, SFP, HDMI</td>\r\n</tr><tr><td>BM230-12G</td>\r\n<td>23.8&quot;</td>\r\n<td>3840 x 2160</td>\r\n<td>300</td>\r\n<td>Non-Touch</td>\r\n<td>SDI, SFP, HDMI</td>\r\n</tr><tr><td>BM280-12G</td>\r\n<td>28&quot;</td>\r\n<td>3840 x 2160</td>\r\n<td>300</td>\r\n<td>Non-Touch</td>\r\n<td>SDI, SFP, HDMI</td>\r\n</tr><tr><td>Q15</td>\r\n<td>15.6&quot;</td>\r\n<td>3840 x 2160</td>\r\n<td>330</td>\r\n<td>Non-Touch</td>\r\n<td>SDI, SFP, HDMI</td>\r\n</tr><tr><td>Q24</td>\r\n<td>23.6&quot;</td>\r\n<td>3840 x 2160</td>\r\n<td>300</td>\r\n<td>Non-Touch</td>\r\n<td>SDI, SFP, HDMI</td>\r\n</tr><tr><td>Q23</td>\r\n<td>23.8&quot;</td>\r\n<td>3840 x 2160</td>\r\n<td>300</td>\r\n<td>Non-Touch</td>\r\n<td>SDI, SFP, HDMI</td>\r\n</tr><tr><td>Q31</td>\r\n<td>31.5&quot;</td>\r\n<td>3840 x 2160</td>\r\n<td>350</td>\r\n<td>Non-Touch</td>\r\n<td>SDI, SFP, HDMI</td>\r\n</tr><tr><td>PVM150S</td>\r\n<td>15.6&quot;</td>\r\n<td>1920 x 1080</td>\r\n<td>1000</td>\r\n<td>Non-Touch</td>\r\n<td>SDI, HDMI, VGA, Composite</td>\r\n</tr><tr><td>PVM210S</td>\r\n<td>21.5&quot;</td>\r\n<td>1920 x 1080</td>\r\n<td>1000</td>\r\n<td>Non-Touch</td>\r\n<td>SDI, HDMI, VGA, AV</td>\r\n</tr><tr><td>PVM220S</td>\r\n<td>21.5&quot;</td>\r\n<td>1920 x 1080</td>\r\n<td>500</td>\r\n<td>Non-Touch</td>\r\n<td>SDI, HDMI, Type-C</td>\r\n</tr><tr><td>779GL-70NP/C/T</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>1000</td>\r\n<td>PCAP Touch</td>\r\n<td>HDMI, VGA, AV</td>\r\n</tr><tr><td>FA1016-NP/C/T</td>\r\n<td>10.1&quot;</td>\r\n<td>1920 x 1200</td>\r\n<td>320</td>\r\n<td>PCAP Touch</td>\r\n<td>HDMI, VGA, AV</td>\r\n</tr><tr><td>FA1014-NP/C/T</td>\r\n<td>10.1&quot;</td>\r\n<td>1280 x 800</td>\r\n<td>350</td>\r\n<td>PCAP Touch</td>\r\n<td>HDMI, VGA, AV</td>\r\n</tr><tr><td>FA1012-NP/C/T</td>\r\n<td>10.1&quot;</td>\r\n<td>1024 x 600</td>\r\n<td>250</td>\r\n<td>PCAP Touch</td>\r\n<td>HDMI, DVI, VGA, AV</td>\r\n</tr><tr><td>FA1210-NP/C/T</td>\r\n<td>12.1&quot;</td>\r\n<td>1024 x 768</td>\r\n<td>800</td>\r\n<td>PCAP Touch</td>\r\n<td>HDMI, VGA, AV</td>\r\n</tr><tr><td>TK1330-NP/C/T</td>\r\n<td>13.3&quot;</td>\r\n<td>1920 x 1080</td>\r\n<td>300</td>\r\n<td>PCAP Touch</td>\r\n<td>HDMI, DVI, VGA, AV</td>\r\n</tr><tr><td>TK700-NP/C/T</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>1000</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>HDMI, VGA, AV</td>\r\n</tr><tr><td>TK970-NP/C/T</td>\r\n<td>9.7&quot;</td>\r\n<td>1024 x 768</td>\r\n<td>350</td>\r\n<td>Resistive Touch (5 wire)</td>\r\n<td>HDMI, VGA, AV</td>\r\n</tr><tr><td>TK1010-NP/C/T</td>\r\n<td>102.1&quot;</td>\r\n<td>1024 x 600</td>\r\n<td>200</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>HDMI, VGA, AV</td>\r\n</tr><tr><td>TK1040-NP/C/T</td>\r\n<td>10.4&quot;</td>\r\n<td>800 x 600</td>\r\n<td>250</td>\r\n<td>Resistive Touch (5 wire)</td>\r\n<td>HDMI, DVI, VGA, AV</td>\r\n</tr><tr><td>TK1500-NP/C/T</td>\r\n<td>15&quot;</td>\r\n<td>1024 x 768</td>\r\n<td>300</td>\r\n<td>Resistive Touch (5 wire)</td>\r\n<td>HDMI, DVI, VGA, AV</td>\r\n</tr><tr><td>765GL-70NP/C/T</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>450</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>HDMI, DVI</td>\r\n</tr><tr><td>669GL-70NP/C/T</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>250</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>HDMI, DVI, VGA, AV</td>\r\n</tr><tr><td>868GL-80NP/C/T</td>\r\n<td>8&quot;</td>\r\n<td>800 x 480</td>\r\n<td>250</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>HDMI, DVI, VGA, AV</td>\r\n</tr><tr><td>FA1000-NP/C/T</td>\r\n<td>9.7&quot;</td>\r\n<td>1024 x 768</td>\r\n<td>420</td>\r\n<td>Resistive Touch (5 wire)</td>\r\n<td>HDMI, DVI, VGA, AV</td>\r\n</tr><tr><td>FA1011-NP/C/T</td>\r\n<td>10.1&quot;</td>\r\n<td>1024 x 600</td>\r\n<td>250</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>HDMI, DVI, VGA, AV</td>\r\n</tr><tr><td>FA1046-NP/C/T</td>\r\n<td>10.4&quot;</td>\r\n<td>800 x 600</td>\r\n<td>250</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>HDMI, DVI, VGA, AV</td>\r\n</tr><tr><td>UM-70</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>250</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>USB Port</td>\r\n</tr><tr><td>UM-72</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>250</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>USB Port</td>\r\n</tr><tr><td>UM-80</td>\r\n<td>8&quot;</td>\r\n<td>800 x 600</td>\r\n<td>250</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>USB Port</td>\r\n</tr><tr><td>UM-82</td>\r\n<td>8&quot;</td>\r\n<td>800 x 600</td>\r\n<td>250</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>USB Port</td>\r\n</tr><tr><td>UM-900</td>\r\n<td>9.7&quot;</td>\r\n<td>1024 x 768</td>\r\n<td>400</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>USB Port, HDMI</td>\r\n</tr><tr><td>UM-1010</td>\r\n<td>10.1&quot;</td>\r\n<td>1024 x 600</td>\r\n<td>250</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>USB Port</td>\r\n</tr><tr><td>UMTC-1400</td>\r\n<td>14&quot;</td>\r\n<td>1920 x 1080</td>\r\n<td>250</td>\r\n<td>PCAP Touch</td>\r\n<td>USB Port, HDMI</td>\r\n</tr><tr><td>UM-1012</td>\r\n<td>10.1&quot;</td>\r\n<td>1024 x 600</td>\r\n<td>250</td>\r\n<td>Resistive Touch (4-wire)</td>\r\n<td>USB Port</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p style=\"text-align: center;\"><i>For more information:</i></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "button_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": " Contact Us",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "linkURL": "/content/macnicagwi/americas/mai/en/contact/form",
+     "linkTarget": "_self",
+     "jcr:lastModified": "Mon Sep 21 2026 14:14:31 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:styleIds": [
+      "",
+      "",
+      "1717669229626"
+     ]
+    }
+   }
+  }
+ },
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/logos/lilliput/lilliput-logo-300x60.png",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ }
+}

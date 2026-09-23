@@ -1,0 +1,112 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "Genesys Logic Products, USB Hubs, Storage, Interface Devices & More",
+ "manufacturer": "mai:manufacturers/genesys-logic",
+ "businessCategories": [
+  "mai:business-categories/semiconductors"
+ ],
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "pd_modelName": "Genesys Logic",
+ "pd_isModelNameLinkToPage": "true",
+ "jcr:created": "Mon Sep 21 2026 17:27:52 GMT+0000",
+ "cq:lastModified": "Mon Sep 21 2026 18:22:03 GMT+0000",
+ "jcr:description": "Genesys Logic USB hub, storage, and interface ICs for USB 2.0/3.0, SATA, and PCIe. Reliable controllers for hubs, bridges, scanners, and connectivity.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/genesys-logic",
+ "pageTitle": "Genesys Logic USB, PCIe & SATA Controllers | Interface ICs | Macnica",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "Genesys Logic",
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/genesys-logic/logos/genesys-logic-logo2.jpg",
+  "sling:resourceType": "core/wcm/components/image/v3/image"
+ },
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498052331"
+    ],
+    "title_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "title_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Serial Interface Devices - USB, PCIe, SATA and more",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "textwithimage_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/genesys-logic/images/genesys-products.png",
+     "imageRatio": "29",
+     "alt": "Serial Interface Devices - USB, PCIe, SATA and more",
+     "text": "<p>Genesys Logic develops system controller &amp; interfaces ICs for high-speed I/O applications, such as USB 2.0, USB 3.0, IEEE 1394, PCI Express, Serial ATA up to 6.0 Gbps and others. The major Genesys Logic products include USB Storage, USB Hub and scanner controllers.&nbsp;Contact Macnica Americas for more information on our Genesys Logic products.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+     "isDecorative": "false",
+     "textIsRich": "true",
+     "altValueFromDAM": "false"
+    }
+   },
+   "container_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\n<li>Storage Products<ul>\n<li>ATA / SATA Bridge Controller</li>\n<li>Card Reader Controller</li>\n</ul>\n</li>\n<li>Scanner Products<ul>\n<li>Scanner Controller</li>\n</ul>\n</li>\n<li>USB Hub Products<ul>\n<li>Hub Controller</li>\n</ul>\n</li>\n<li>USB Camera Products<ul>\n<li>PC Camera Controller</li>\n</ul>\n</li>\n<li>Silicon Intellectual Properties<ul>\n<li>High Speed Connectivity IPs</li>\n</ul>\n</li>\n<li>Others<ul>\n<li>USB Host Charger Controller</li>\n<li>PCIe x 1 PHY, PCIe x 4 PHY</li>\n</ul>\n</li>\n</ul>\n<p><b>What does Genesys Logic make?</b></p>\n<p style=\"margin-top:0\">Genesys Logic develops system controller and interface ICs for high-speed I/O. Coverage includes USB 2.0, USB 3.0, IEEE 1394, PCI Express, and Serial ATA up to 6.0 Gbps. Major product lines are USB storage, USB hub, and scanner controllers.</p>\n<p><b>Which Genesys Logic product categories does Macnica Americas carry?</b></p>\n<p style=\"margin-top:0\">Storage products (ATA/SATA bridge and card reader controllers), scanner controllers, USB hub controllers, USB camera and PC camera controllers, silicon IP for high-speed connectivity, plus USB host charger controllers and PCIe x1 and x4 PHY.</p>\n<p><b>What storage and hub parts are listed?</b></p>\n<p style=\"margin-top:0\">Under storage, Genesys Logic lists ATA/SATA bridge controllers and card reader controllers. USB hub products are listed as hub controllers. Those sit alongside scanner controllers as the main product groups.</p>\n<p><b>Does Genesys Logic offer PCIe PHY?</b></p>\n<p style=\"margin-top:0\">Yes. The lineup includes PCIe x1 PHY and PCIe x4 PHY, plus silicon intellectual property for high-speed connectivity IPs. Contact Macnica Americas for part details.</p>\n<p style=\"text-align: center;\"><i>For more information on Genesys logic products:</i></p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "flexcontainer_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "",
+      "1719484596357"
+     ],
+     "flexcontaineritem_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact-us",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Supplier Website",
+       "linkURL": "https://www.genesyslogic.com.tw/en/",
+       "linkTarget": "_blank",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

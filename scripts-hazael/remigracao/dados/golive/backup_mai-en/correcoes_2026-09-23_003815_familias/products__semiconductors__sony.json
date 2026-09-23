@@ -1,0 +1,1214 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:mixinTypes": [
+  "mix:versionable"
+ ],
+ "jcr:createdBy": "anil@anionmarketing.com",
+ "jcr:title": "Sony Global Shutter CMOS Image Sensors | Sensor List & Specs",
+ "manufacturer": "mai:manufacturers/sony",
+ "businessCategories": [
+  "mai:business-categories/image-sensors"
+ ],
+ "resolution": "mai:resolution/from-12m-to-24m",
+ "shuttertype": [
+  "mai:shutter-type/global-shutter",
+  "mai:shutter-type/rolling-shutter"
+ ],
+ "jcr:versionHistory": "33f94a19-6ed7-4cf6-b390-976cee541468",
+ "productManufacturerRanking": "1",
+ "pwaOrientation": "any",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "sensorcategory": [
+  "mai:sensor-type/polarization",
+  "mai:sensor-type/ultraviolet-(uv)",
+  "mai:sensor-type/sensswir",
+  "mai:sensor-type/time-of-flight-(tof)"
+ ],
+ "pd_isModelNameLinkToPage": "false",
+ "jcr:predecessors": [
+  "63b8b43c-1baa-4d36-919f-427d0946d75e"
+ ],
+ "jcr:created": "Fri Jul 03 2026 06:32:55 GMT+0000",
+ "pwaDisplay": "standalone",
+ "cq:lastModified": "Fri Sep 04 2026 12:07:04 GMT+0000",
+ "pixelsize": [
+  "mai:Pixel-size/more-than-8-micro-meter",
+  "mai:Pixel-size/from-0-micro-meter-to-2-micro-meter",
+  "mai:Pixel-size/from-4-micro-meter-to-6-micro-meter",
+  "mai:Pixel-size/from-2-micro-meter-to-4-micro-meter",
+  "mai:Pixel-size/from-6-micro-meter-to-8-micro-meter"
+ ],
+ "pwaCachestrategy": "staleWhileRevalidate",
+ "interface": [
+  "mai:interface/slvs-ec",
+  "mai:interface/mipi",
+  "mai:interface/cmos-parallel",
+  "mai:interface/lvds-sub-lvds"
+ ],
+ "jcr:baseVersion": "63b8b43c-1baa-4d36-919f-427d0946d75e",
+ "jcr:isCheckedOut": true,
+ "opticalformat": [
+  "mai:optical-format/from-one-third-inch-to-half-inch"
+ ],
+ "cq:tags": [
+  "mai:interface/slvs-ec",
+  "mai:interface/mipi",
+  "mai:interface/cmos-parallel",
+  "mai:interface/lvds-sub-lvds",
+  "mai:manufacturers/sony",
+  "mai:business-categories/image-sensors",
+  "mai:sensor-type/polarization",
+  "mai:sensor-type/ultraviolet-(uv)",
+  "mai:sensor-type/sensswir",
+  "mai:sensor-type/time-of-flight-(tof)",
+  "mai:product-families/pregius",
+  "mai:product-families/pregius-s",
+  "mai:product-families/starvis",
+  "mai:product-families/starvis-ii",
+  "mai:shutter-type/global-shutter",
+  "mai:shutter-type/rolling-shutter"
+ ],
+ "productLines": "mai:product-category/image-sensors",
+ "jcr:uuid": "a428cbfa-a55b-4a34-9711-0481e4f054b9",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "saichand@anionmarketing.com",
+ "navTitle": "Sony",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:createdBy": "admin",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_657333536": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "saichand@anionmarketing.com",
+    "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+    "jcr:created": "Fri Aug 14 2026 12:49:36 GMT+0000",
+    "jcr:lastModified": "Wed Aug 19 2026 11:52:26 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "saichand@anionmarketing.com",
+     "jcr:title": "Sony’s Global Shutter CMOS Image Sensors",
+     "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+     "jcr:created": "Fri Aug 14 2026 12:49:55 GMT+0000",
+     "type": "h1",
+     "jcr:lastModified": "Fri Aug 14 2026 12:50:06 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "saichand@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Fri Aug 14 2026 12:50:58 GMT+0000",
+     "jcr:lastModified": "Wed Aug 19 2026 06:45:39 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "saichand@anionmarketing.com",
+      "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+      "jcr:created": "Fri Aug 14 2026 12:51:22 GMT+0000",
+      "jcr:lastModified": "Fri Aug 14 2026 12:51:22 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "embed": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "saichand@anionmarketing.com",
+       "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+       "layout": "fixed",
+       "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+       "jcr:created": "Fri Aug 14 2026 12:51:42 GMT+0000",
+       "type": "embeddable",
+       "youtubeVideoId": "LevsuBIkn9s",
+       "jcr:lastModified": "Fri Aug 14 2026 13:01:10 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/embed"
+      }
+     },
+     "flexcontaineritem_1605832093": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "saichand@anionmarketing.com",
+      "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+      "jcr:created": "Fri Aug 14 2026 12:51:35 GMT+0000",
+      "jcr:lastModified": "Fri Aug 14 2026 12:51:35 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "saichand@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Fri Aug 14 2026 13:01:18 GMT+0000",
+       "text": "<p><b>Sony's Image Sensors</b>&nbsp; set the standard for imaging performance, reliability, and innovation. With high resolution, high speed, and high sensitivity Global Shutter CMOS technology, they capture clean detail in challenging light, support advanced HDR and low-noise operation, and power AI-ready vision across industrial, medical, and machine vision applications.</p>\r\n<p>Macnica Americas is a <a href=\"/content/macnicaglobal2/americas/mai/en/about-us/locations/\">global solutions company</a> that can take you from <b>Sensor to Solution</b>. Our team helps you choose the right Sony sensor, evaluate quickly with no-solder options, and integrate confidently with drivers, ISP tuning, optics guidance, and interface bridging to popular SoCs and FPGAs, all supported by proven supply and lifecycle planning.</p>\r\n<p>&nbsp;</p>\r\n",
+       "jcr:lastModified": "Wed Aug 19 2026 06:53:26 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Wed Aug 19 2026 05:06:58 GMT+0000",
+     "text": "<p style=\"text-align: left;\">Contact us to discuss your application requirements and schedule a consult with an imaging specialist.<br>\r\n<a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony.html\">Click here for the Sony Image Sensor Product Lineup</a><br>\r\n<br>\r\n</p>\r\n",
+     "jcr:lastModified": "Wed Aug 19 2026 06:51:15 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_425560638": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+    "jcr:created": "Wed Aug 19 2026 05:16:13 GMT+0000",
+    "jcr:lastModified": "Wed Aug 19 2026 10:15:13 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(235,235,235)",
+    "cq:styleIds": [
+     "",
+     "1717498056876",
+     ""
+    ],
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Wed Aug 19 2026 05:13:31 GMT+0000",
+     "jcr:lastModified": "Wed Aug 19 2026 05:13:42 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cardlist": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "saichand@anionmarketing.com",
+      "showTitle": "true",
+      "tagsMatch": "any",
+      "linkItems": "true",
+      "showArticleDate": "true",
+      "orderBy": "articleDate",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "showFeaturedImage": "false",
+      "showTags": "false",
+      "jcr:created": "Fri Aug 14 2026 13:19:53 GMT+0000",
+      "sortOrder": "desc",
+      "pages": "/content/macnicaglobal2/americas/mai/en/blog//unlocking-the-hidden-spectrum-sony-swir-imaging-with-macnica",
+      "maxItems": "1",
+      "showDescription": "true",
+      "isFreeTextSearchEnabled": "false",
+      "jcr:lastModified": "Wed Aug 19 2026 05:14:45 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/cardlist",
+      "childDepth": "1",
+      "listFrom": "static",
+      "cq:styleIds": [
+       "1776056741289"
+      ]
+     },
+     "text_copy": {
+      "jcr:primaryType": "nt:unstructured"
+     },
+     "text_copy_1233018993": {
+      "jcr:primaryType": "nt:unstructured"
+     },
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Wed Aug 19 2026 08:47:54 GMT+0000",
+      "text": "<p>Sep 17, 2025<br>\r\n<span style=\"letter-spacing: 0.0px;\"><b>Unlocking the Hidden Spectrum: Sony SWIR Imaging with Macnica</b><br>\r\n Learn how Sony SenSWIR sensors and Macnica’s integration support bring visible-to-SWIR imaging into real products, from wafer inspection to food quality and safety. Read the whitepaper for technology, applications,...</span></p>\r\n",
+      "jcr:lastModified": "Wed Aug 19 2026 08:49:26 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   },
+   "container_1539487244": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "saichand@anionmarketing.com",
+    "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+    "jcr:created": "Fri Aug 14 2026 13:19:36 GMT+0000",
+    "jcr:lastModified": "Wed Aug 19 2026 10:15:41 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "",
+     "1717498056876",
+     ""
+    ],
+    "container_213530596": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "saichand@anionmarketing.com",
+     "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+     "jcr:created": "Fri Aug 14 2026 13:23:14 GMT+0000",
+     "jcr:lastModified": "Wed Aug 19 2026 10:16:21 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "saichand@anionmarketing.com",
+      "jcr:title": "Sony Image Sensors for Industrial Use",
+      "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+      "jcr:created": "Fri Aug 14 2026 13:45:34 GMT+0000",
+      "type": "h2",
+      "jcr:lastModified": "Fri Aug 14 2026 13:45:57 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "1717668113714",
+       ""
+      ]
+     },
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "saichand@anionmarketing.com",
+      "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+      "jcr:created": "Fri Aug 14 2026 13:46:07 GMT+0000",
+      "text": "<p style=\"text-align: center;\">With its comprehensive range of image sensors for industrial use, Sony provides revolutionary solutions that extend well<br>\r\nbeyond mere automation and speed enhancements to address advanced issues in a variety of industries.</p>\r\n",
+      "jcr:lastModified": "Fri Aug 14 2026 13:49:56 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "tabs": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "saichand@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Fri Aug 14 2026 13:50:42 GMT+0000",
+      "jcr:lastModified": "Wed Aug 19 2026 06:21:43 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/tabs",
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 1",
+       "cq:panelTitle": "Global Shutter",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "flexcontainer": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:17:54 GMT+0000",
+        "jcr:lastModified": "Wed Aug 19 2026 05:48:21 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "",
+         "1719484596357"
+        ],
+        "flexcontaineritem": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:19:34 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:19:34 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "title": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:title": "Sony’s Global Shutter CMOS Image Sensors",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:20:03 GMT+0000",
+          "type": "h4",
+          "jcr:lastModified": "Wed Aug 19 2026 05:20:11 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/title",
+          "cq:styleIds": [
+           "",
+           "",
+           "",
+           ""
+          ]
+         },
+         "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:20:28 GMT+0000",
+          "text": "<p>redefine precision in motion capture, delivering distortion-free imaging for dynamic and high-speed applications. Unlike traditional rolling shutters, Sony’s innovative global shutter technology ensures that every pixel is exposed simultaneously, eliminating motion artifacts and ensuring sharp, accurate images in even the most demanding environments.</p>\r\n<p>Ideal for applications such as industrial automation, robotics, and machine vision, Sony’s Global Shutter CMOS Image Sensors combine high sensitivity, low noise, and advanced pixel design to deliver unparalleled performance. These sensors are the go-to choice for professionals who require precision, reliability, and speed in their imaging solutions.<br>\r\n&nbsp;</p>\r\n",
+          "jcr:lastModified": "Wed Aug 19 2026 06:54:42 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "flexcontaineritem_1049144788": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:19:39 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:19:39 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "embed": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "layout": "fixed",
+          "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+          "jcr:created": "Wed Aug 19 2026 05:20:48 GMT+0000",
+          "type": "embeddable",
+          "youtubeVideoId": "W89ZDOPTMIY",
+          "jcr:lastModified": "Wed Aug 19 2026 05:21:08 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/embed"
+         }
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:21:52 GMT+0000",
+        "text": "<p><b>Sony Global Shutter CMOS Image Sensors</b> with Pregius and Pregius S technology are ideal for imaging inspections in machine vision and the smart industry that require the processing of a large volume of image data at high speed, as they make it possible to capture high-quality, undistorted images at high speeds.<br>\r\n<a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors/sony-pregius-pregius-s.html\"><b>Read more about Sony Pregius/Pregius S Technology<br>\r\n <br>\r\n </b></a><span style=\"letter-spacing: 0.0px;\">Sony Image Sensors also expand the scope of their applications from factory automation to other industrial imaging and sensing contexts, such as traffic monitoring and infrastructure inspection.<br>\r\n&nbsp;</span></p>\r\n",
+        "jcr:lastModified": "Wed Aug 19 2026 06:55:46 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:title": "Features",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:22:45 GMT+0000",
+        "type": "h3",
+        "jcr:lastModified": "Wed Aug 19 2026 05:23:02 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       },
+       "text_141828907": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:23:21 GMT+0000",
+        "text": "<p><b>Provides undistorted images of moving objects</b><br>\r\n<span style=\"letter-spacing: 0.0px;\">Global shutters function enables the capturing of fast-moving objects without distortion. Text is legible in images.</span></p>\r\n<p><b>Faster signal processing with lower noise</b><br>\r\n<span style=\"letter-spacing: 0.0px;\">Our proprietary column A/D conversion circuit realizes both faster signal processing and lower noise. Enhancing the high-precision image inspection, it helps to improve on-site productivity in manufacturing.</span></p>\r\n<p><b>Realizing both higher definition and smaller size thanks to Pregius S technology</b><br>\r\n<span style=\"letter-spacing: 0.0px;\">The back-illuminated pixel structure adopted in Pregius S global shutter technology has made both higher definition and smaller size a reality, on top of its non-distortion imaging functionality.This new structure has a superior light collection efficiency compared to the conventional front-illuminated structure and, while maintaining the levels of sensitivity and saturation capacity, achieved a reduction of the pixel size down to 2.74 µm square, about 63% of the conventional models.*1 In addition, rearranging the circuit area from the edges to the back of the sensor area has helped to achieve a 1.7-fold increase in resolution for the same optical size and reduce the package size to about 91% of the existing products.*1</span></p>\r\n<p>As a result, it can achieve a high-definition small-sized machine vision camera compatible with up to approx. 24.45 M effective pixels in a C-mount 1.2-type sensor, allowing more flexibility in its applications to systems and production lines.</p>\r\n<p>*1) Compared to &quot;IMX253&quot; and &quot;IMX531,&quot; Sony’s 1.1-type CMOS image sensors with 12.37 M effective pixels.<br>\r\n&nbsp;</p>\r\n",
+        "jcr:lastModified": "Wed Aug 19 2026 05:35:56 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "flexcontainer_90244582": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:29:21 GMT+0000",
+        "jcr:lastModified": "Wed Aug 19 2026 05:48:43 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "",
+         "1719484596357"
+        ],
+        "flexcontaineritem": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:29:29 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:29:29 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:30:21 GMT+0000",
+          "text": "<p><b>Fast readout of captured data</b><br>\r\n<span style=\"letter-spacing: 0.0px;\">The high flexibility in the wiring layout offered by the back-illuminated pixel structure of Pregius S, combined with adoption of the proprietarily developed SLVS-EC interface with an embedded clock, enables high-resolution image data to be read at high speed and output efficiency. This potentially improves the takt time and throughput of the manufacturing systems or equipment.</span></p>\r\n<p>As technologies such as USB 3.0 and 5 GigE become more prevalent, our standard 5 Gbps-compatible product range is enhanced by an extensive lineup of high-speed products for high-end cameras that use a high-speed band, improving the productivity significantly through reducing the time necessary for inspection, image recognition, identification, measurement, and other types of measurement and inspection.<br>\r\n&nbsp;</p>\r\n",
+          "jcr:lastModified": "Wed Aug 19 2026 06:56:42 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "flexcontaineritem_111477852": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:29:34 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:29:34 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "title": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:title": "Sony Global Shutter Sensor Product Matrix",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:29:40 GMT+0000",
+          "type": "h3",
+          "jcr:lastModified": "Wed Aug 19 2026 05:29:50 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/title",
+          "cq:styleIds": [
+           "",
+           "",
+           "",
+           ""
+          ]
+         },
+         "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/images/sony-global-shutter-lineup.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:29:56 GMT+0000",
+          "alt": "sony global shutter lineup",
+          "displayPopupTitle": "true",
+          "linkTarget": "_self",
+          "jcr:lastModified": "Wed Aug 19 2026 05:34:32 GMT+0000",
+          "titleValueFromDAM": "true",
+          "sling:resourceType": "macnicaglobal2/components/content/image",
+          "isDecorative": "false",
+          "altValueFromDAM": "false",
+          "cq:styleIds": [
+           "",
+           ""
+          ],
+          "spImage": {
+           "jcr:primaryType": "nt:unstructured",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/images/sony-global-shutter-lineup.png",
+           "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+           "jcr:lastModified": "Wed Aug 19 2026 05:34:32 GMT+0000",
+           "sling:resourceType": "macnicaglobal2/components/content/image"
+          }
+         }
+        }
+       },
+       "text_277014142": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:35:04 GMT+0000",
+        "text": "<p><b>High definition imaging over a wide area</b><br>\r\nC-mount lens compatible image sensors are a standard option for industrial machines, but larger unit multi-pixel sensor will enable high-definition imaging of wider areas.</p>\r\n<p>For example, a comparison between the images taken with 1.1” 12.37 M pixels sensor and one with 127.68 M pixels sensor clearly shows the difference. This will enable to lower capture frequency, which contributes to improved efficiency. It also enhances recognition accuracy by the high resolution imaging.</p>\r\n",
+        "jcr:lastModified": "Wed Aug 19 2026 05:35:14 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 2",
+       "cq:panelTitle": "Rolling Shutter",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "flexcontainer_549783968": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:37:56 GMT+0000",
+        "jcr:lastModified": "Wed Aug 19 2026 05:48:04 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "",
+         "1719484596357"
+        ],
+        "flexcontaineritem": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:38:17 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:38:17 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:38:31 GMT+0000",
+          "text": "<p><b><a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/pdfs/Sony%20Rolling%20Shutter%20technical%20paper.pdf\">Rolling Shutter Image Sensors from Sony</a></b> are designed for high-resolution imaging with exceptional clarity and detail. By exposing pixels sequentially, rolling shutter technology optimizes power efficiency while maintaining outstanding image quality, making it ideal for applications like photography, video recording, and machine vision where moderate object motion is present.<br>\r\n<a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/pdfs/Sony%20Starvis%20and%20Starvis%20II%20Technology%20Guide.pdf\"><b>Download Starvis™/Starvis 2 Technology Guide</b></a></p>\r\n<p>Sony enhances this technology with innovations such as high dynamic range (HDR), fast readout speeds, and low noise, ensuring superior performance across a wide range of industries and environments.<br>\r\n<a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/pdfs/sony-security-image-sensors-using-starvis-and-starvis-2.html\"><b>Sony Security Image Sensors using Starvis/Starvis 2<br>\r\n &nbsp;</b></a></p>\r\n",
+          "jcr:lastModified": "Wed Aug 19 2026 06:38:57 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "flexcontaineritem_982692537": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:38:24 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:38:24 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "embed": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "layout": "fixed",
+          "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+          "jcr:created": "Wed Aug 19 2026 05:40:03 GMT+0000",
+          "type": "embeddable",
+          "youtubeVideoId": "CXGtjv8U6OM",
+          "jcr:lastModified": "Wed Aug 19 2026 05:40:34 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/embed"
+         }
+        }
+       },
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:title": "Features",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:40:58 GMT+0000",
+        "type": "h3",
+        "jcr:lastModified": "Wed Aug 19 2026 05:41:05 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       },
+       "flexcontainer": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:41:31 GMT+0000",
+        "jcr:lastModified": "Wed Aug 19 2026 05:45:32 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "",
+         "1719484596357"
+        ],
+        "flexcontaineritem": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:41:37 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:41:37 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:41:47 GMT+0000",
+          "text": "<p><b>Low Noise</b><br>\r\n<span style=\"letter-spacing: 0.0px;\">Sony’s rolling global shutter CMOS image sensors are renowned for their low noise performance. While controlling the noise within the pixels that handle photoelectric conversion, they also perform two rounds of noise removal, before and after A/D conversion, providing clear images with less noise even at the same number of pixels, thereby contributing to low-noise camera design.</span></p>\r\n",
+          "jcr:lastModified": "Wed Aug 19 2026 05:55:34 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "flexcontaineritem_974874793": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:41:41 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:41:41 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "title": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:title": "Sony Rolling Shutter Sensor Matrix",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:44:36 GMT+0000",
+          "type": "h3",
+          "jcr:lastModified": "Wed Aug 19 2026 05:44:43 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/title",
+          "cq:styleIds": [
+           "",
+           "",
+           "",
+           ""
+          ]
+         },
+         "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/images/sonyrs-sensorlineup.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:43:42 GMT+0000",
+          "alt": "sony global shutter",
+          "displayPopupTitle": "true",
+          "linkTarget": "_self",
+          "jcr:lastModified": "Wed Aug 19 2026 05:55:11 GMT+0000",
+          "titleValueFromDAM": "true",
+          "sling:resourceType": "macnicaglobal2/components/content/image",
+          "isDecorative": "false",
+          "altValueFromDAM": "false",
+          "cq:styleIds": [
+           "",
+           ""
+          ],
+          "spImage": {
+           "jcr:primaryType": "nt:unstructured",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/images/sony-global-shutter-lineup.png",
+           "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+           "jcr:lastModified": "Wed Aug 19 2026 05:55:11 GMT+0000",
+           "sling:resourceType": "macnicaglobal2/components/content/image"
+          }
+         }
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:45:03 GMT+0000",
+        "text": "<p><b>High Sensitivity</b><br>\r\nThe secondary characteristic of Sony’s rolling shutter image sensors is their high sensitivity. The back-illuminated structure allows them to take more light into the photodiodes than image sensors with a front-illuminated structure, achieving higher sensitivity. Some of our rolling global shutter CMOS image sensors are outfitted with highly sensitive STARVIS technology,* which is renowned even for its use in security cameras.<br>\r\n* Image sensors with STARVIS technology (industrial-use, monochrome): IMX455ALK-K, IMX571BLR-J, IMX226CLJ, IMX533CLK,IMX335LLN</p>\r\n<p><b>Large Image Sensor Lineup</b><br>\r\nC-mount lens compatible image sensors are a standard option for industrial machines, but larger unit multi-pixel sensors will enable high-definition imaging of wider areas.</p>\r\n<p>Our lineup of rolling global shutter CMOS image sensors includes large image sensors of more than 35 mm in size. For example, comparing a 1-type with 9 million pixels (the IMX533) and a 4.2-type with 151 million pixels (the IMX411), the latter can cover about 17 times the area as the former, even at the same pixel size. While using a large image sensor results in a bigger camera, it also leads to better productivity through reduced imaging frequency and better recognition accuracy through high resolution.</p>\r\n",
+        "jcr:lastModified": "Wed Aug 19 2026 05:55:51 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "item_1786715477880": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "Polarization",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "flexcontainer_549783": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:37:56 GMT+0000",
+        "jcr:lastModified": "Wed Aug 19 2026 06:47:53 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "",
+         "1719484596357"
+        ],
+        "flexcontaineritem": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:38:17 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:38:17 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:38:31 GMT+0000",
+          "text": "<p><b>Sony’s Polarization Image Sensors <br>\r\n </b>provide a revolutionary approach to imaging by capturing polarization data directly at the pixel level. This technology reveals critical insights about an object’s surface texture, stress, or composition—data that is invisible with standard imaging techniques. Perfect for industrial inspection, medical imaging, and material analysis, Sony’s polarization sensors enhance accuracy and efficiency in applications requiring unparalleled detail and precision.</p>\r\n<p>By integrating on-chip polarizers at four angles (0°, 45°, 90°, and 135°), Sony delivers comprehensive polarization information in real time, enabling advanced imaging solutions for challenging use cases.<br>\r\n<a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/pdfs/Sony%20Polarsense%20technical%20paper.pdf\"><b>Download the Sony Polarization Technology Guide<br>\r\n&nbsp;</b></a></p>\r\n",
+          "jcr:lastModified": "Wed Aug 19 2026 06:58:45 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "flexcontaineritem_982692537": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:38:24 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:38:24 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "embed": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "layout": "fixed",
+          "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+          "jcr:created": "Wed Aug 19 2026 05:40:03 GMT+0000",
+          "type": "embeddable",
+          "youtubeVideoId": "Stsfnwdt09Y",
+          "jcr:lastModified": "Wed Aug 19 2026 05:50:03 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/embed"
+         }
+        }
+       },
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:title": "Features",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:40:58 GMT+0000",
+        "type": "h3",
+        "jcr:lastModified": "Wed Aug 19 2026 05:41:05 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       },
+       "text_1283183541": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:41:47 GMT+0000",
+        "text": "<p><b>Four directional polarizer is formed on the image sensor</b><br>\r\n<span style=\"letter-spacing: 0.0px;\">Sony’s polarization image sensor can capture a four directional polarization image in one shot by the four directional polarizer (Fig.1). It can calculate the direction and degree of polarization (DoP) based on the intensity of each directional polarization. Together with subsequent signal processing, it can capture the polarization information*2 in real time*3.<br>\r\n *2) Degree of Polarization and Direction of Polarization<br>\r\n *3) Subject to subsequent signal processing power<br>\r\n&nbsp;</span></p>\r\n",
+        "jcr:lastModified": "Wed Aug 19 2026 06:59:46 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "image_1512941509": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/images/sony-whatispolarization.png",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:56:46 GMT+0000",
+        "alt": "sony",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "jcr:lastModified": "Wed Aug 19 2026 05:57:01 GMT+0000",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/images/sony-whatispolarization.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:lastModified": "Wed Aug 19 2026 05:57:01 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:57:29 GMT+0000",
+        "text": "<p><b><br>\r\nGlobal Shutter function</b><br>\r\nIndustrial applications require imaging of fast-moving objects. However, conventional CMOS image sensors are unable to accurately identify fast-moving objects, due to the focal plane distortion, which is caused by the rolling shutter function. The IMX250MZR/MYR, IMX264MZR/MYR, IMX253MZR/MYR（See lineup information.） address this issue by providing an analog memory inside each pixel and realizing the global shutter function to enable high-picture-quality without focal plane distortion.</p>\r\n<p><b>Compatible with High-frame-rate Photography</b><br>\r\nThe column-parallel A/D conversion technology of Sony's Global Shutter CMOS Image Sensors is used to realize high-speed imaging of up to 163.4frame/s (ADC 8 bit) for the IMX250MZR/MYR, 35.7 frame/s(ADC 12 bit) for the IMX264MZR/MYR and 68.3frame/s (ADC 8 bit) for the IMX253MZR/MYR. Increased processing speed is used for industrial applications.</p>\r\n<p><b>ROI Mode and Trigger Mode</b><br>\r\nRegion of Interest (ROI) Mode crops required areas. Up to 8 × 8 = 64 locations can be set with IMX250MZR/MYR, and 1 location with IMX264MZR/MYR. In addition to setting 8 × 8 = 64 locations, IMX253MZR/MYR provides greater freedom of specifying regions and allows overlap of specified regions. Various exposure methods are provided with the trigger mode, which controls the exposure time using an external pulse.</p>\r\n<p><b>What is Polarization?</b><br>\r\nLight has physical elements : brightness (amplitude), color (wavelength) and polarization (vibration direction). Lights from direct sun or fluorescent lamps vibrate in various directions and is called unpolarized light.</p>\r\n",
+        "jcr:lastModified": "Wed Aug 19 2026 06:59:55 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:52:53 GMT+0000",
+        "jcr:lastModified": "Wed Aug 19 2026 05:52:53 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      },
+      "item_1786715487975": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "Ultraviolet (UV)",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "flexcontainer_549783": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:37:56 GMT+0000",
+        "jcr:lastModified": "Wed Aug 19 2026 05:47:49 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "",
+         "1719484596357"
+        ],
+        "flexcontaineritem": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:38:17 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:38:17 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:38:31 GMT+0000",
+          "text": "<p><b>Sony’s Ultraviolet (UV) Image Sensors</b> open up new possibilities by capturing the unseen ultraviolet spectrum with unparalleled precision. Designed for industries where UV sensitivity is critical, these Sony Image Sensors provide exceptional imaging performance for applications such as industrial inspection, scientific research, and semiconductor manufacturing.</p>\r\n<p><span style=\"letter-spacing: 0.0px;\">By utilizing specialized materials and advanced sensor technology, Sony’s UV sensors deliver superior resolution, high sensitivity, and low noise, ensuring accurate results in challenging environments. With Sony’s expertise in imaging and sensor design, UV applications achieve new levels of detail and reliability.<br>\r\n&nbsp;</span></p>\r\n",
+          "jcr:lastModified": "Wed Aug 19 2026 07:02:07 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "flexcontaineritem_982692537": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:38:24 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:38:24 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "embed": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "layout": "fixed",
+          "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+          "jcr:created": "Wed Aug 19 2026 05:40:03 GMT+0000",
+          "type": "embeddable",
+          "youtubeVideoId": "zTMOrUulS8s",
+          "jcr:lastModified": "Wed Aug 19 2026 06:13:59 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/embed"
+         }
+        }
+       },
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:title": "Features",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:40:58 GMT+0000",
+        "type": "h3",
+        "jcr:lastModified": "Wed Aug 19 2026 05:41:05 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       },
+       "text_996337426": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 06:08:24 GMT+0000",
+        "text": "<p><b>Equipped with Global Shutter Capable of High-speed and Undistorted Photography</b><br>\r\n<span style=\"letter-spacing: 0.0px;\">With the structure specially designed for the properties of the UV wavelengths coupled with Pregius S technology, the image sensor can capture undistorted images of moving objects within a UV range of 200–400 nm and at a high frame rate of 193 fps (operated in the 10-bit mode). This image sensor has a potential to expand the scope of application from the conventional use of UV cameras in the inspection of semiconductors, etc. to areas that require high-speed capability, such as sorting of recycled materials.</span></p>\r\n<p><b>Achieving High-resolution and Low-noise Photography</b><br>\r\n<span style=\"letter-spacing: 0.0px;\">The Sony Image Sensor has adopted the component materials dedicated for UV range imaging, and a special structure has been developed for its light receiving area. These make it possible to maintain high UV sensitivity while significantly minimizing noises to produce high quality images.</span></p>\r\n<p><b>Huge Number of Pixels to Cover Versatile Applications</b><br>\r\n<span style=\"letter-spacing: 0.0px;\">The pixels are miniaturized down to 2.74 um while maintaining high UV sensitivity, realizing a small multi-pixel sensor of the 2/3 type with approximately 8.13 megapixels. It serves well with factory automation, but also for many other purposes, notably for outdoor use for infrastructure inspections, by virtue of its portability and high resolution.<br>\r\n&nbsp;</span></p>\r\n",
+        "jcr:lastModified": "Wed Aug 19 2026 06:10:09 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/images/sony-what-is-uv.png",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:56:46 GMT+0000",
+        "alt": "sony uv",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "jcr:lastModified": "Wed Aug 19 2026 06:29:35 GMT+0000",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/images/sony-what-is-uv.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:lastModified": "Wed Aug 19 2026 06:29:35 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 06:10:25 GMT+0000",
+        "text": "<p><br>\r\n<b>What is UV?</b><br>\r\nThe diagram below is a simplified illustration of the light spectrum. Ultraviolet (UV) has shorter wavelengths than visible light, typically ranging between 10–400 nm. IMX487 covers the range between 200–400 nm, which is the UV range suitable for industrial applications.</p>\r\n",
+        "jcr:lastModified": "Wed Aug 19 2026 06:10:36 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "item_1786715487975_c": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "SWIR",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "flexcontainer_549783": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:37:56 GMT+0000",
+        "jcr:lastModified": "Wed Aug 19 2026 05:47:49 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "",
+         "1719484596357"
+        ],
+        "flexcontaineritem": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:38:17 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:38:17 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:38:31 GMT+0000",
+          "text": "<p><b>Short-Wave Infrared (SWIR) Image Sensors</b> from Sony offer groundbreaking capabilities to capture what lies beyond the visible spectrum, enabling precise imaging in challenging conditions. By leveraging innovative sensor design, Sony’s SWIR technology provides exceptional sensitivity across wavelengths, from visible to short-wave infrared, making it ideal for specialized applications that demand clarity and accuracy.<br>\r\n<b style=\"letter-spacing: 0.0px;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors/sony-imx992aabj.html\">NEW! 1/1.4&quot; 5.32 MPIMX992 SWIR Image Sensor</a></b></p>\r\n",
+          "jcr:lastModified": "Wed Aug 19 2026 07:22:16 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "flexcontaineritem_982692537": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:38:24 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:38:24 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "embed": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "layout": "fixed",
+          "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+          "jcr:created": "Wed Aug 19 2026 05:40:03 GMT+0000",
+          "type": "embeddable",
+          "youtubeVideoId": "mS4EBbALAFM",
+          "jcr:lastModified": "Wed Aug 19 2026 06:17:46 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/embed"
+         }
+        }
+       },
+       "text_996337426": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 06:08:24 GMT+0000",
+        "text": "<p>Whether for industrial inspection, agricultural analysis, medical diagnostics, or security systems, Sony’s SWIR sensors deliver unmatched performance, enabling businesses to achieve new levels of operational efficiency and insight. With their compact size and high resolution, these Sony Global Shutter Sensors empower applications where space and precision are critical.<br>\r\n<br>\r\n<span style=\"letter-spacing: 0.0px;\"><a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/pdfs/Sony%20SenSWIR%20technical%20paper.pdf\">Download the Sony SensSWIR Technology Guide</a><br>\r\n <br>\r\n The use of SWIR imaging, which is not affected by fine airborne particles, means these sensors can also reduce the impact of mist, smoke, dust, and other substances to offer clear imaging of subjects that would not be perceptible to the human eye.</span></p>\r\n<p><span style=\"letter-spacing: 0.0px;\">Sony’s SWIR image sensors use original SenSWIR™ technology to achieve both high resolution and compact sensor size. They are also compatible with imaging not only of SWIR-band light but also the visible light spectrum. In addition to digital output compatibility, they have functions like global shutter and trigger mode, making them suitable for industrial cameras.</span></p>\r\n",
+        "jcr:lastModified": "Wed Aug 19 2026 06:41:56 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "item_1786715487975_c_1013836248": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "ToF",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "flexcontainer_549783": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 05:37:56 GMT+0000",
+        "jcr:lastModified": "Wed Aug 19 2026 05:47:49 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "",
+         "1719484596357"
+        ],
+        "flexcontaineritem": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:38:17 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:38:17 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:created": "Wed Aug 19 2026 05:38:31 GMT+0000",
+          "text": "<p><b>Sony Time of Flight (ToF) image sensors</b> measure the distance to a target object by emitting light from a source, usually a laser or LED, and detecting the reflected light, based on the time elapsed between the two. In addition to capturing images in the X and Y directions, they can acquire information in the Z direction and are capable of sensing in a 3D space. This enables inspections based on volume and 3D shapes, as well as the ability to distinguish overlapping objects - capabilities which are difficult to achieve with conventional 2D imaging.&nbsp;<br>\r\n<span style=\"letter-spacing: 0.0px;\"><br>\r\n The Sony Image Sensors can also be used for applications in which relative distances are used in real time, such as automatic control and collision avoidance.<br>\r\n <br>\r\n NEW! SPAD ToF Depth Sensor - <a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-IMX560-AAMV-C.html\">Learn More!</a><br>\r\n&nbsp;</span></p>\r\n",
+          "jcr:lastModified": "Wed Aug 19 2026 06:49:55 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/text",
+          "textIsRich": "true"
+         }
+        },
+        "flexcontaineritem_982692537": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Wed Aug 19 2026 05:38:24 GMT+0000",
+         "jcr:lastModified": "Wed Aug 19 2026 05:38:24 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "embed": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "mahendra@anionmarketing.com",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "layout": "fixed",
+          "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+          "jcr:created": "Wed Aug 19 2026 05:40:03 GMT+0000",
+          "type": "embeddable",
+          "youtubeVideoId": "S_zv9SSRJwo",
+          "jcr:lastModified": "Wed Aug 19 2026 06:22:29 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/embed"
+         }
+        }
+       },
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:title": "Areas of application for these different ToF sensors",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 06:23:43 GMT+0000",
+        "type": "h3",
+        "jcr:lastModified": "Wed Aug 19 2026 06:24:23 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       },
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/images/tof-sensors-areas-of-application.png",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 06:24:29 GMT+0000",
+        "alt": "tof sensor areas ",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "jcr:lastModified": "Wed Aug 19 2026 06:30:42 GMT+0000",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/images/tof-sensors-areas-of-application.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:lastModified": "Wed Aug 19 2026 06:30:42 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       },
+       "text_996337426": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Wed Aug 19 2026 06:08:24 GMT+0000",
+        "text": "<p><b>Features</b></p>\r\n<ul>\r\n<li><b>dToF and iToF Sensors - </b>dToF sensors are capable of measurement over long distances and iToF sensors offer high speed and high image resolution</li>\r\n<li><b>Direct ToF (dToF) - </b>This type of sensor measures the time between the emission of light and detection of the reflected light. It uses single photon avalanche diode (SPAD) pixels, detecting even low levels of light. This allows for accurate measurement of distant objects.</li>\r\n<li><b>Indirect ToF (iToF) - </b>This type of sensor measures distances by accumulating the electric charge generated by the reflected light in each pixel and detecting any phase differences from the time of emission of light. It uses a conventional CMOS image sensor structure and can capture high-resolution 3D images even with a compact size.</li>\r\n</ul>\r\n",
+        "jcr:lastModified": "Wed Aug 19 2026 06:23:17 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    }
+   },
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "saichand@anionmarketing.com",
+    "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+    "jcr:created": "Mon Jul 27 2026 14:42:10 GMT+0000",
+    "jcr:lastModified": "Thu Aug 06 2026 10:41:42 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717410661180",
+     "",
+     ""
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "saichand@anionmarketing.com",
+     "jcr:title": "Sony CMOS Image Sensor Product List",
+     "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+     "jcr:created": "Wed Aug 19 2026 10:16:54 GMT+0000",
+     "type": "h2",
+     "jcr:lastModified": "Wed Aug 19 2026 10:17:20 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "1717668113714",
+      ""
+     ]
+    },
+    "filterabletable": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "saichand@anionmarketing.com",
+     "tagsMatch": "any",
+     "jcr:lastModifiedBy": "anil@anionmarketing.com",
+     "clearAllButtonText": "Clear All",
+     "jcr:created": "Mon Jul 27 2026 14:42:16 GMT+0000",
+     "parentPage": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors",
+     "filterButtonText": "Filter",
+     "sortOrder": "desc",
+     "tagsSearchRoot": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony",
+     "tags": [
+      "mai:manufacturers/sony",
+      "mai:business-categories/semiconductors"
+     ],
+     "pages": [
+      "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors/sony-imx174llj-c",
+      ""
+     ],
+     "query": "Search",
+     "textSearchButtonText": "Go",
+     "searchIn": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony",
+     "jcr:lastModified": "Tue Sep 01 2026 04:34:55 GMT+0000",
+     "textSearchPlaceholder": "Search",
+     "sling:resourceType": "macnicaglobal2/components/content/filterabletable",
+     "childDepth": "1",
+     "listFrom": "children",
+     "applyButtonText": "Apply",
+     "columnSettings": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+       "jcr:primaryType": "nt:unstructured",
+       "filterType": "individual",
+       "isFilterEnabled": "false",
+       "label": "Model Name",
+       "pageProperty": "pd_modelName"
+      },
+      "item1": {
+       "jcr:primaryType": "nt:unstructured",
+       "filterType": "individual",
+       "isFilterEnabled": "false",
+       "label": "Description",
+       "pageProperty": "pd_description"
+      },
+      "item2": {
+       "jcr:primaryType": "nt:unstructured",
+       "filterType": "individual",
+       "mobileViewUseAs": "section",
+       "isFilterEnabled": "true",
+       "label": "Resolution\r\n(Megapixels)",
+       "pageProperty": "pd_resolution"
+      },
+      "item3": {
+       "jcr:primaryType": "nt:unstructured",
+       "filterType": "individual",
+       "mobileViewUseAs": "section",
+       "isFilterEnabled": "true",
+       "label": "Pixel Size",
+       "pageProperty": "pd_pixelSize"
+      },
+      "item4": {
+       "jcr:primaryType": "nt:unstructured",
+       "filterType": "individual",
+       "isFilterEnabled": "true",
+       "label": "Interface",
+       "pageProperty": "pd_interface"
+      },
+      "item5": {
+       "jcr:primaryType": "nt:unstructured",
+       "filterType": "individual",
+       "mobileViewUseAs": "accordion",
+       "isFilterEnabled": "true",
+       "label": "Technology",
+       "pageProperty": "pd_productFamilyText"
+      }
+     }
+    }
+   }
+  }
+ },
+ "cq:featuredimage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Fri Sep 04 2026 12:07:03 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ },
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sony/logos/sony-logo.png",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "alt": "sony",
+  "jcr:lastModified": "Fri Sep 04 2026 12:07:03 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ },
+ "pd_downloadAsset": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Fri Sep 04 2026 12:07:03 GMT+0000"
+ },
+ "pd_productFamilyImage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Fri Sep 04 2026 12:07:03 GMT+0000"
+ },
+ "pd_technologyImage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Fri Sep 04 2026 12:07:03 GMT+0000"
+ }
+}

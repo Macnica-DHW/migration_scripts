@@ -1,0 +1,189 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "LG OLED Digital Display Signage | LG Commercial OLEDs",
+ "manufacturer": "mai:manufacturers/lg-oled-display-signage",
+ "businessCategories": "mai:business-categories/displays",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "pd_modelName": "LG-OLED-DISPLAY-SIGNAGE",
+ "pd_isModelNameLinkToPage": "true",
+ "jcr:created": "Tue Sep 22 2026 11:56:21 GMT+0000",
+ "cq:lastModified": "Tue Sep 22 2026 12:14:46 GMT+0000",
+ "jcr:description": "Elevate your content with LG OLED displays from Macnica Americas. Contact Macnica Americas team today to learn about our innovative LG commercial solutions!",
+ "keywords": "LG OLED, LG OLED Display",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/displays/lg-oled-display-signage",
+ "hideInNav": "true",
+ "pageType": "productManufacturerLandingPage",
+ "pageTitle": "LG OLED Display Signage",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "pd_description": "Elevate your content with LG OLED displays from Macnica Americas. Contact Macnica Americas team today to learn about our innovative LG commercial solutions!",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "LG OLED Display Signage",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498056876"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": "1718800458698",
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "LG OLED Digital Display Signage | LG Commercial OLEDs",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      }
+     },
+     "flexcontaineritem_logo": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/logos/lg/lg.png",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    }
+   },
+   "section_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "OLED Digital Signage with State-of-the-Art Features and Contemporary Design",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "text": "<p>With LG Commercial OLED Digital Signage Displays, you can give the best possible viewing experience to increase audience engagement. Your company has the freedom to develop distinctive digital signage displays thanks to LG's curvable open frame OLEDs. Both portrait and landscape orientations are offered for concave and convex curves.</p>\r\n<p>&nbsp;</p>\r\n<p>LG OLED signage display technology offers a flexible design with incredibly light and thin characteristics because it doesn't require a backlight unit or a liquid crystal layer. By using elegantly curved or transparent screens, you may differentiate your finished product in a number of ways using our selection of LG commercial OLEDs.</p>\r\n",
+     "jcr:lastModified": "Mon Sep 21 2026 14:12:34 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "section_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Commercial LG Displays offer:",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "text": "<ul>\r\n<li>Perfect Black shows vivid colors and even fine details in the dark</li>\r\n<li>100% color fidelity</li>\r\n<li>100% pixel dimming</li>\r\n<li>Wide viewing angle</li>\r\n<li>Flicker-free that does not strain your eyes by eliminating even invisible flickering</li>\r\n<li>Low blue light</li>\r\n<li>Eco-friendly displays with minimal harmful substances</li>\r\n<li>Open frame curvable OLEDs in concave or convex curvatures in portrait or landscape orientations.</li>\r\n<li>55” Transparent Open Frame Panels or Monitors available</li>\r\n</ul>\r\n<p>Macnica offers various services to enhance LG OLED Commercial Signage, such as <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://macnicadisplays.com/macnica-display-solutions-services/\">Specification Reviews, Project Management, Customized Warehousing, and Logistics.</a></p>\r\n",
+     "jcr:lastModified": "Mon Sep 21 2026 14:12:51 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "section_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "LG OLED Signage Part Number List",
+     "type": "h3",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"1\" width=\"100%\">\r\n<tbody><tr><th>Part Number</th>\r\n<th>Size</th>\r\n<th>Resolution</th>\r\n<th>Brightness</th>\r\n<th>Technology</th>\r\n<th>Temperature</th>\r\n</tr><tr><td>48.0&quot; OLED UHD</td>\r\n<td>48&quot;</td>\r\n<td>3840 x 2160</td>\r\n<td>135</td>\r\n<td>OLED</td>\r\n<td>0 to 45</td>\r\n</tr><tr><td>55.0&quot; T-OLED FHD</td>\r\n<td>55&quot;</td>\r\n<td>1920 x 1080</td>\r\n<td>150</td>\r\n<td>T-OLED</td>\r\n<td>0 to 45</td>\r\n</tr><tr><td>55.0&quot; OLED FHD</td>\r\n<td>55&quot;</td>\r\n<td>1920 x 1080</td>\r\n<td>150</td>\r\n<td>OLED</td>\r\n<td>0 to 45</td>\r\n</tr><tr><td>65.0&quot; OLED UHD</td>\r\n<td>65&quot;</td>\r\n<td>3840 x 2160</td>\r\n<td>150</td>\r\n<td>OLED</td>\r\n<td>0 to 45</td>\r\n</tr><tr><td>77.0&quot; OLED UHD</td>\r\n<td>77&quot;</td>\r\n<td>3840 x 2160</td>\r\n<td>150</td>\r\n<td>OLED</td>\r\n<td>0 to 45</td>\r\n</tr><tr><td>AIO553</td>\r\n<td>55&quot;</td>\r\n<td>1920 x 1080</td>\r\n<td>150</td>\r\n<td>T-OLED Monitor</td>\r\n<td>0 to 40</td>\r\n</tr><tr><td>AIO553-T</td>\r\n<td>55&quot;</td>\r\n<td>1920 x 1080</td>\r\n<td>150</td>\r\n<td>T-OLED Monitor with Touch Screen</td>\r\n<td>0 to 40</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "contact_block_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "text_intro": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p style=\"text-align: center;\"><i>For more information:</i></p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": "1718800458698",
+     "flexcontaineritem_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "linkURL": "/content/macnicagwi/americas/mai/en/contact.html",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Mon Sep 21 2026 14:13:11 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "linkURL": "/content/macnicagwi/americas/mai/en/contact.html",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Mon Sep 21 2026 14:13:20 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/logos/lg/lg.png",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ }
+}

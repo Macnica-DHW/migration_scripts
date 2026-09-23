@@ -1,0 +1,453 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "NAMUGA | Advanced Camera and 3D Sensing Solutions for Intelligent Systems",
+ "manufacturer": "mai:manufacturers/namuga",
+ "businessCategories": [
+  "mai:business-categories/semiconductors"
+ ],
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "pd_modelName": "NAMUGA | Advanced Camera and 3D Sensing Solutions for Intelligent Systems",
+ "pd_isModelNameLinkToPage": "true",
+ "jcr:created": "Mon Sep 21 2026 17:28:01 GMT+0000",
+ "cq:lastModified": "Mon Sep 21 2026 18:22:29 GMT+0000",
+ "jcr:description": "From stereo vision and Time-of-Flight sensing to compact RGB camera modules and solid-state LiDAR technologies, NAMUGA enables next-generation systems across robotics, mobility, security, AR/VR, medical, and industrial markets. Through Macnica, customers gain access not only to NAMUGA’s innovative technologies, but also the engineering expertise needed to integrate vision systems into complete edge AI and embedded solutions.\r\n",
+ "keywords": "namuga, camera, 3d sensing, intelligent systems, stereo vision, time of flight, lidar, robotics, mobility, security, augmented reality, virtual reality, vision systems, edge ai, embedded solutions",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems",
+ "pageTitle": "NAMUGA | Advanced Camera and 3D Sensing Solutions for Intelligent Systems",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "NAMUGA | Advanced Camera and 3D Sensing Solutions for Intelligent Systems",
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/namuga/logos/namuga-vision-connectivity-logo.jpg",
+  "alt": "Namuga logo",
+  "sling:resourceType": "core/wcm/components/image/v3/image"
+ },
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498056876"
+    ],
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "embed_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "layout": "responsive",
+        "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+        "type": "embeddable",
+        "youtubeVideoId": "q5L-go0lWyw",
+        "sling:resourceType": "macnicaglobal2/components/content/embed"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "title_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "High-performance camera modules and 3D sensing technologies designed for robotics, mobility, AR/VR, security, industrial automation, and next-generation AI-enabled devices.",
+        "type": "h4",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>NAMUGA is a global innovator in advanced camera modules and 3D sensing solutions, delivering ultra-compact, high-performance imaging technologies for some of the world’s most demanding applications. Founded in 2004 and headquartered in South Korea, NAMUGA combines advanced optics, sensing, AI-enabled imaging, and automated manufacturing expertise to help customers accelerate intelligent vision system development.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>From stereo vision and Time-of-Flight sensing to compact RGB camera modules and solid-state LiDAR technologies, NAMUGA enables next-generation systems across robotics, mobility, security, AR/VR, medical, and industrial markets. Through Macnica, customers gain access not only to NAMUGA’s innovative technologies, but also the engineering expertise needed to integrate vision systems into complete edge AI and embedded solutions.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   },
+   "container_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498056876"
+    ],
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "NAMUGA Vicon Lite",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>A vision-powered access control terminal with multi-modal 3D facial recognition, on-device AI authentication, and post-quantum encryption. Designed for secure facilities, enterprise buildings, and privacy-sensitive environments.</p>\n<p><a rel=\"noopener noreferrer\" href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems/namuga-vicon-lite.html\" target=\"_self\">Learn more about the Vicon Lite platform</a>.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Why NAMUGA?",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>NAMUGA delivers advanced vision technologies engineered for real-world deployment. With expertise spanning optics, camera design, 3D sensing, calibration, and mass production manufacturing, NAMUGA supports customers from prototype through production scale.</p>\n<p><b>Key differentiators include:</b></p>\n<ul>\n<li>Advanced 3D sensing technologies including Stereo Vision, Time-of-Flight (ToF), and LiDAR</li>\n</ul>\n<ul>\n<li>Ultra-compact camera module design for space-constrained systems</li>\n</ul>\n<ul>\n<li>AI-enabled imaging solutions optimized for edge intelligence</li>\n</ul>\n<ul>\n<li>Expertise in robotics, mobility, AR/VR, security, and biomedical applications</li>\n</ul>\n<ul>\n<li>High-volume automated manufacturing capabilities</li>\n</ul>\n<ul>\n<li>Integrated optical, mechanical, and sensor engineering expertise</li>\n</ul>\n<ul>\n<li>Advanced calibration and active alignment technologies</li>\n</ul>\n<ul>\n<li>Proven support for global OEM and next-generation AI platforms</li>\n</ul>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   },
+   "container_3": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "",
+     "1717498056876"
+    ],
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Solutions and Technologies",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "tabs_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/tabs",
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "3D Sensing",
+       "cq:panelTitle": "3D Sensing",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717498055877"
+       ],
+       "textwithimage_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/namuga/images/amr-warehouse-shelves.jpg",
+        "imageRatio": "36",
+        "alt": "AMR shelving in warehouse",
+        "text": "<p>NAMUGA develops advanced 3D sensing solutions that enable machines to understand and interact with the physical world. Leveraging Stereo Vision, Time-of-Flight (ToF), and solid-state LiDAR technologies, these solutions provide accurate depth perception for robotics, autonomous systems, industrial automation, and smart devices.</p>\n<p><b>Applications include:</b></p>\n<ul>\n<li>Robotics and autonomous mobile robots (AMRs)</li>\n<li>Obstacle detection and navigation</li>\n<li>Gesture recognition</li>\n<li>Spatial mapping</li>\n<li>Smart access control and facial recognition</li>\n<li>Industrial automation and machine vision</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+        "isDecorative": "false",
+        "textIsRich": "true",
+        "altValueFromDAM": "false"
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "AR/VR",
+       "cq:panelTitle": "AR/VR",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717498055877"
+       ],
+       "textwithimage_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/namuga/images/black-vr-ar-gui.jpg",
+        "imageRatio": "36",
+        "alt": "VR/AR headset and GUI",
+        "text": "<p>NAMUGA provides advanced camera modules and sensing technologies optimized for augmented reality and virtual reality systems. Solutions include world-view cameras, eye-tracking cameras, gesture sensing, and compact 3D sensing modules designed for immersive and responsive user experiences.</p>\n<p><b>NAMUGA technologies support:</b></p>\n<ul>\n<li>Eye tracking</li>\n<li>Hand tracking</li>\n<li>World-facing cameras</li>\n<li>Spatial awareness</li>\n<li>Mixed reality systems</li>\n<li>Lightweight and compact headset designs</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+        "isDecorative": "false",
+        "textIsRich": "true",
+        "altValueFromDAM": "false"
+       }
+      },
+      "item_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Mobility and Intelligent Transportation",
+       "cq:panelTitle": "Mobility and Intelligent Transportation",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717498055877"
+       ],
+       "textwithimage_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/namuga/images/mobility-intelligent-sensing-cars.jpg",
+        "imageRatio": "36",
+        "alt": "Automotive radial sensing overlays",
+        "text": "<p>NAMUGA develops advanced imaging and sensing solutions for automotive and mobility platforms, supporting next-generation driver assistance, autonomous navigation, and intelligent transportation systems.</p>\n<p><b>Solutions support:</b></p>\n<ul>\n<li>ADAS and autonomous driving</li>\n<li>Surround view systems</li>\n<li>Driver monitoring systems</li>\n<li>In-cabin sensing</li>\n<li>AI-powered transportation safety systems</li>\n<li>Smart mobility platforms</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+        "isDecorative": "false",
+        "textIsRich": "true",
+        "altValueFromDAM": "false"
+       }
+      },
+      "item_4": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Security and Smart Vision Systems",
+       "cq:panelTitle": "Security and Smart Vision Systems",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717498055877"
+       ],
+       "textwithimage_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/namuga/images/black-mesh-model-grid.jpg",
+        "imageRatio": "36",
+        "alt": "Mesh mapping overlay on face",
+        "text": "<p>NAMUGA’s intelligent imaging technologies enable advanced security and access control applications through AI-powered vision and multispectral sensing technologies. These systems are designed to improve authentication accuracy, situational awareness, and intelligent monitoring capabilities.</p>\n<p><b>Applications include:</b></p>\n<ul>\n<li>Facial recognition</li>\n<li>Smart access systems</li>\n<li>AI-enabled surveillance</li>\n<li>Smart city infrastructure</li>\n<li>Intelligent security systems</li>\n<li>Secure authentication platforms</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+        "isDecorative": "false",
+        "textIsRich": "true",
+        "altValueFromDAM": "false"
+       }
+      }
+     }
+    }
+   },
+   "container_4": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Manufacturing and Engineering Excellence",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "flexcontainer_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "",
+      "1719484596357"
+     ],
+     "flexcontaineritem_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Engineered for Scale",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>NAMUGA combines advanced vision technology development with large-scale automated manufacturing capabilities. Its vertically integrated development model enables high-quality production while maintaining precision alignment, calibration, and reliability across complex imaging systems.</p>\n<p><b>Capabilities include:</b></p>\n<ul>\n<li>Active alignment assembly</li>\n<li>Automated calibration and validation</li>\n<li>Optical module integration</li>\n<li>Compact package design</li>\n<li>Wafer-level optics</li>\n<li>Meta lens technologies</li>\n<li>High-volume automated production</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/namuga/images/engineer-camera-module.jpg",
+       "alt": "Camera module on board",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "",
+        "1726800547211"
+       ]
+      }
+     }
+    }
+   },
+   "container_5": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498052331"
+    ],
+    "title_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Target Applications",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>NAMUGA technologies support a broad range of intelligent vision applications, including:</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_6": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "flexcontainer_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "",
+      "1719484596357"
+     ],
+     "flexcontaineritem_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Robotics and automation</li>\n<li>Industrial machine vision</li>\n<li>Autonomous mobile robots</li>\n<li>AR/VR and spatial computing</li>\n<li>Smart mobility systems</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Smart security and access control</li>\n<li>Medical and biomedical systems</li>\n<li>AI-enabled edge devices</li>\n<li>Drones and autonomous systems</li>\n<li>Intelligent transportation systems</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_7": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498056876"
+    ],
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Why Macnica + NAMUGA?",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Macnica helps customers accelerate intelligent vision system development by combining NAMUGA’s advanced sensing technologies with industry-leading processing, AI, networking, and embedded compute solutions.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "image_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/common/images/macnica-workflow-diagram.jpg",
+      "alt": "Macnica workflow diagram",
+      "sling:resourceType": "macnicaglobal2/components/content/image",
+      "isDecorative": "false",
+      "altValueFromDAM": "false"
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>Our engineering teams help customers to:</b></p>\n<ul>\n<li>Evaluate and select the right sensing architecture</li>\n<li>Accelerate AI vision development</li>\n<li>Integrate edge processing and connectivity</li>\n<li>Reduce design risk and development time</li>\n<li>Scale from prototype to production</li>\n</ul>\n<p>Macnica’s component-to-solution approach enables customers to build complete intelligent systems spanning image capture, AI processing, and system communication infrastructure.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   },
+   "container_8": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498056876"
+    ],
+    "experiencefragment_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+     "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+    }
+   }
+  }
+ }
+}

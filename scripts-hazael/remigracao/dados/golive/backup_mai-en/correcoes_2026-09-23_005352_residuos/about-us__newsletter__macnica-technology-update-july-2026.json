@@ -1,0 +1,513 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "Macnica Technology Update – July 2026",
+ "showInLists": "true",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 23 2026 02:27:47 GMT+0000",
+ "cq:lastModified": "Wed Sep 23 2026 01:52:32 GMT+0000",
+ "jcr:description": "Macnica Americas July newsletter highlights Canon LI8030SA, robotics design, Sony IMX785, SLVS-EC, GSX 2026, IBC 2026, & intelligent systems industry trends.",
+ "keywords": "Macnica Americas newsletter, Macnica Technology Update, Canon LI8030SA, 410MP CMOS image sensor, semiconductor inspection, packaging, industrial vision, robotics system design, robotics architectures, sensing, AI processing, communication and control, Sony IMX785, STARVIS 2, low-light performance, security and surveillance, SLVS-EC, FPGA integration, Sony CMOS sensors, machine vision, embedded vision, GSX 2026, icetana AI, physical security, self-learning video analytics, on-premises generative AI, IBC 2026, MEP100, ST 2110 workflows, FPGA-based PTP timing, built-in redundancy, broadcast system design.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/newsletter/macnica-technology-update-july-2026",
+ "hideInNav": "true",
+ "pageTitle": "Macnica Technology Update – July 2026",
+ "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "Macnica Technology Update – July 2026",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Macnica Technology Update – July 2026",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "title_wrap_conteudo": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "text_intro": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Macnica Americas July newsletter highlights Canon LI8030SA, robotics design, Sony IMX785, SLVS-EC, GSX 2026, IBC 2026, & intelligent systems industry trends.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/capture-process-communicate-hero-banner-new.png",
+     "alt": "Capture Process Communicate",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>From edge AI and robotics to imaging, networking, and industrial innovation, Macnica helps transform complex technologies into real-world solutions. Each month, we bring you the latest engineering insights, product innovations, partner updates, and industry trends shaping the future of intelligent systems.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Canon LI8030SA",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>The Canon LI8030SA 410MP CMOS image sensor captures an entire wafer in a single frame, revealing microscopic defects conventional cameras miss. Designed for high-resolution inspection, it combines exceptional detail, wide field of view, and high-speed performance for advanced semiconductor, packaging, and industrial vision applications.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/sony-imx711-cmos-sensor-new.png",
+     "alt": "Advancing the Next Generation of X-Ray Imaging",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/li8030-july-nl.png",
+     "alt": "Canon LI8030SA",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "button_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "button_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": " View Now",
+     "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li8030SA-410mp-ultra-high-resolution-cmos-sensor",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:styleIds": [
+      "",
+      "1722936853890",
+      "1717669229626"
+     ]
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Robotics System Design",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Build smarter robotic systems with Macnica's end-to-end technology portfolio. From sensing and AI processing to communication and control, we help engineering teams design optimized robotics architectures using industry-leading solutions and accelerating development with expert guidance across the entire robotics stack.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/sony-imx711-cmos-sensor-new.png",
+     "alt": "Advancing the Next Generation of X-Ray Imaging",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/robotics-july-nl.png",
+     "alt": "Robotics System Design",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "button_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "button_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Learn more",
+     "linkURL": "/content/macnicaglobal2/americas/mai/en/solutions/robotics-amrs",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:styleIds": [
+      "",
+      "1722936853890",
+      "1717669229626"
+     ]
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "IMX785",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Experience exceptional low-light performance with the Sony IMX785 Series. Featuring STARVIS® 2 technology, 5.12 MP resolution, HDR, and up to 90 fps output, these image sensors deliver outstanding sensitivity, wide dynamic range, and reliable imaging for next-generation security and surveillance environments.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/sony-imx711-cmos-sensor-new.png",
+     "alt": "Advancing the Next Generation of X-Ray Imaging",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_7_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/imx785-july-nl.png",
+     "alt": "IMX785",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "button_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "button_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Dive deeper",
+     "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors/sony-imx785-series",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:styleIds": [
+      "",
+      "1722936853890",
+      "1717669229626"
+     ]
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "SLVS EC",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>SLVS-EC is a high-speed image sensor interface that simplifies FPGA integration for Sony CMOS sensors. With clock technology, it enables high-bandwidth, low-latency image transfer, reduces board design complexity, and supports high-resolution imaging for machine vision, industrial, and embedded vision applications.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_8_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_8": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/sony-imx711-cmos-sensor-new.png",
+     "alt": "Advancing the Next Generation of X-Ray Imaging",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_9_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_9": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/slvc-ec-july-nl.png",
+     "alt": "SLVS EC",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "button_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "button_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Explore",
+     "linkURL": "/content/macnicaglobal2/americas/mai/en/products/ip-software/slvs-ec-3-rx-ip/what-is-slvs-ec",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:styleIds": [
+      "",
+      "1722936853890",
+      "1717669229626"
+     ]
+    }
+   },
+   "heading_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "IBC 2026, Sept. 11 - 14, Amsterdam, Netherlands",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Join us at 7.C07 and see MEP100 in action. Experience accelerated ST 2110 workflows, FPGA-based PTP timing, and built-in redundancy that simplify broadcast system design, reduce CPU overhead, and accelerate next-generation media designs.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_10_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_10": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/sony-imx711-cmos-sensor-new.png",
+     "alt": "Advancing the Next Generation of X-Ray Imaging",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_11_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_11": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/ibc-2026-hero-banner_980 x 436.png",
+     "alt": "IBC 2026, Sept. 11 - 14, Amsterdam, Netherlands",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "button_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "button_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Let's talk",
+     "linkURL": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/events-archive/ibc-2026",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:styleIds": [
+      "",
+      "1722936853890",
+      "1717669229626"
+     ]
+    }
+   },
+   "heading_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "GSX 2026, Sept. 14 - 16, Atlanta, GA",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Visit Macnica and icetana AI at GSX to experience the future of physical security. Discover how self-learning video analytics and private, on-premises generative AI help security teams detect anomalies, investigate incidents faster, and transform surveillance operations.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_12_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_12": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/sony-imx711-cmos-sensor-new.png",
+     "alt": "Advancing the Next Generation of X-Ray Imaging",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_13_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_13": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/gsx-july-nl.png",
+     "alt": "GSX 2026, Sept. 14 - 16, Atlanta, GA",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "button_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "button_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Meet us",
+     "linkURL": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/events-archive/global-security-exchange-2026",
+     "linkTarget": "_self",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:styleIds": [
+      "",
+      "1722936853890",
+      "1717669229626"
+     ]
+    }
+   }
+  }
+ }
+}

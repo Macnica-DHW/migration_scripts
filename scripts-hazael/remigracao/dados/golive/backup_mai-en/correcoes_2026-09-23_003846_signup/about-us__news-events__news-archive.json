@@ -1,0 +1,114 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "News & Press Releases | View the Latest Industry News & More",
+ "showInLists": "true",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-technical-article-page",
+ "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+ "cq:lastModified": "Wed Sep 23 2026 01:50:03 GMT+0000",
+ "jcr:description": "Browse our News & Press Releases at Macnica Americas! Take a look at the latest industry news, company updates, past announcements, & so much more.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive",
+ "pageTitle": "News & Press Releases",
+ "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "News & Press Releases",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "News & Press Releases | View the Latest Industry News & More",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "container_migrado_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "button": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": " Sign up for our newsletter",
+     "linkURL": "/content/macnicaglobal2/americas/mai/en/about-us/newsletter-sign-up",
+     "linkTarget": "_blank",
+     "sling:resourceType": "macnicaglobal2/components/content/button",
+     "cq:styleIds": [
+      "1717669229626"
+     ],
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "9",
+       "width": "3"
+      },
+      "phone": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      },
+      "tablet": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "8",
+       "width": "4"
+      }
+     }
+    }
+   },
+   "container_migrado_3": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "cardlist": {
+     "jcr:primaryType": "nt:unstructured",
+     "showTitle": "true",
+     "linkItems": "true",
+     "showArticleDate": "false",
+     "orderBy": "title",
+     "showFeaturedImage": "false",
+     "clearButtonText": "Uncheck All",
+     "showTags": "false",
+     "parentPage": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive",
+     "hideBannerMobile": "false",
+     "filterButtonText": "Filter",
+     "allButtonText": "All",
+     "sortOrder": "asc",
+     "hideBannerTablet": "false",
+     "showDescription": "true",
+     "showManufacturerLogo": "false",
+     "manufacturerpixelation": "default",
+     "isFreeTextSearchEnabled": "false",
+     "sling:resourceType": "macnicaglobal2/components/content/cardlist",
+     "childDepth": "1",
+     "listFrom": "children",
+     "hideBannerDesktop": "false",
+     "applyButtonText": "Apply",
+     "cq:styleIds": [
+      "1776056736854"
+     ]
+    }
+   }
+  }
+ },
+ "cq:featuredimage": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/banners/3-2-news-976x365-.jpeg",
+  "sling:resourceType": "macnicaglobal2/components/content/image"
+ }
+}

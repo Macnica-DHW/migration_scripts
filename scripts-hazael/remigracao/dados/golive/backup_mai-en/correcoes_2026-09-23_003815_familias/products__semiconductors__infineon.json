@@ -1,0 +1,643 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "Infineon Solutions Products - Semiconductors, Microcontrollers, SoC",
+ "manufacturer": "mai:manufacturers/infineon",
+ "businessCategories": [
+  "mai:business-categories/semiconductors"
+ ],
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "pd_modelName": "Infineon",
+ "pd_isModelNameLinkToPage": "true",
+ "jcr:created": "Mon Sep 21 2026 17:27:56 GMT+0000",
+ "cq:lastModified": "Mon Sep 21 2026 18:22:27 GMT+0000",
+ "jcr:description": "Explore Infineon semiconductors, microcontrollers, SoCs, & more for sale at Macnica Americas. These Infineon products are suitable for various applications.",
+ "keywords": "Infineon robotics, Infineon healthcare, motor control, AIROC, OPTIGA, REAL3, MOTIX, AURIX, PSoC",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/infineon",
+ "pageTitle": "Infineon ",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "Infineon",
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/infineon/logos/infineon.png",
+  "sling:resourceType": "core/wcm/components/image/v3/image"
+ },
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498052331"
+    ],
+    "title_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "flexcontainer_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "",
+      "1719484596357"
+     ],
+     "flexcontaineritem_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "embed_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "layout": "responsive",
+       "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+       "type": "embeddable",
+       "youtubeVideoId": "qZw-tnb0pHk",
+       "sling:resourceType": "macnicaglobal2/components/content/embed"
+      }
+     },
+     "flexcontaineritem_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why Infineon Solutions with Macnica?",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Infineon solutions bring a complete portfolio for system design, from motor control and power to sensing, connectivity, security, and memory. Macnica adds application expertise, reference designs, and hands-on support so you can move quickly from idea to pilot to production using Infineon semiconductors and microcontrollers.</p>\n<ul>\n<li>Automotive excellence, safety, quality, and long-term supply</li>\n<li>Robotics acceleration, motors, batteries, navigation, and security</li>\n<li>Healthcare readiness, precise sensing, secure connectivity, low power</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "",
+     "1717498056876"
+    ],
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "",
+      "1717498055877"
+     ],
+     "tabs_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/tabs",
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Automotive",
+       "cq:panelTitle": "Automotive",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498056876",
+        "1717498055877"
+       ],
+       "container_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "title_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Automotive",
+           "type": "h2",
+           "sling:resourceType": "macnicaglobal2/components/content/title"
+          },
+          "text_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "text": "<p>Infineon is a leader in automotive semiconductors for body, powertrain, ADAS, lighting, and in-cabin systems. Work with Macnica to map parts, accelerate design, and plan a secure supply program that matches your production goals.</p><p style=\"margin-top:0\">&nbsp;</p>",
+           "sling:resourceType": "macnicaglobal2/components/content/text",
+           "textIsRich": "true"
+          },
+          "title_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Key Building Blocks:",
+           "type": "h3",
+           "sling:resourceType": "macnicaglobal2/components/content/title"
+          },
+          "text_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "text": "<ul>\n<li>AURIX and TRAVEO microcontrollers</li>\n<li>OptiMOS and CoolMOS power, EiceDRIVER gate drivers</li>\n<li>Automotive transceivers and networking</li>\n<li>OPTIGA security for device identity and data integrity</li>\n</ul>",
+           "sling:resourceType": "macnicaglobal2/components/content/text",
+           "textIsRich": "true"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/infineon/images/automotive.jpg",
+           "alt": "Automotive",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false",
+           "cq:styleIds": [
+            "",
+            "1726800547211"
+           ]
+          }
+         }
+        }
+       },
+       "container_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Key Applications:",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li><b>Body and lighting systems</b><br>\nTRAVEO II and AURIX MCUs for body control, LITIX LED drivers for exterior and interior lighting, CAN FD transceivers and system basis chips for networking and power management. OptiMOS and CoolMOS for efficient switching, EiceDRIVER gate drivers for robust control.</li>\n</ul>\n<ul>\n<li><b>Comfort actuators, pumps, fans, seats, and closures</b><br>\nMOTIX motor control, either XMC or PSoC Control C3 MCUs with external 6EDL7141 three-phase gate driver, or the integrated IMD701A option that combines XMC1404 with a 6EDL7141 driver in one package. Pair with OptiMOS MOSFETs and angle or Hall sensors for position feedback.</li>\n</ul>\n<ul>\n<li><b>Battery management and 12-V sub-systems</b><br>\nTLE9012 or TLE9018 BMS ICs for cell monitoring and balancing, TLI4971 current sensor for accurate current measurement, protection and balancing MOSFETs, plus EiceDRIVER high-side drivers.</li>\n</ul>\n<ul>\n<li><b>ECU connectivity and security</b><br>\nAutomotive transceivers for CAN and LIN, OPTIGA security for device identity and firmware integrity, AURIX safety concepts for functional safety paths.</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Robotics",
+       "cq:panelTitle": "Robotics",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498056876",
+        "1717498055877"
+       ],
+       "container_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "title_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Robotics",
+           "type": "h2",
+           "sling:resourceType": "macnicaglobal2/components/content/title"
+          },
+          "text_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "text": "<p>From service and logistics robots to cobots and mobile platforms, Infineon covers motor control, batteries, sensing, compute, connectivity, and security. The Infineon Mobile Robot platform gives you a fast path from demo to design, with reference hardware and software that shorten evaluation.</p><p style=\"margin-top:0\">&nbsp;</p>",
+           "sling:resourceType": "macnicaglobal2/components/content/text",
+           "textIsRich": "true"
+          },
+          "title_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Key Building Blocks:",
+           "type": "h3",
+           "sling:resourceType": "macnicaglobal2/components/content/title"
+          },
+          "text_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "text": "<ul>\n<li><b>Motor control:</b> PSoC Control C3 and XMC MCUs, 6EDL7141 or MOTIX IMD701A drivers, OptiMOS or CoolGaN power, EiceDRIVER gate drivers</li>\n</ul>\n<ul>\n<li><b>Battery systems:</b> Battery monitor and balancing, current sensing, protection FETs, CAN transceivers</li>\n</ul>\n<ul>\n<li><b>Sensing and navigation:</b> REAL3 hybrid Time-of-Flight, 60 GHz radar, angle and current sensors, MEMS microphones</li>\n</ul>\n<ul>\n<li><b>Connectivity and security:</b> AIROC Wi-Fi and Bluetooth, OPTIGA security ICs</li>\n</ul>",
+           "sling:resourceType": "macnicaglobal2/components/content/text",
+           "textIsRich": "true"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/infineon/images/robotics.jpg",
+           "alt": "Robotics",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false",
+           "cq:styleIds": [
+            "",
+            "1726800547211"
+           ]
+          }
+         }
+        }
+       },
+       "container_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Key Applications and Ideal Infineon Solutions:",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li><b>AMR drive and motion control</b><br>\nChoose IMD701A for a compact, fully programmable wheel drive, or use XMC or PSoC Control C3 with a 6EDL7141 three-phase gate driver. Add OptiMOS MOSFETs, EiceDRIVER gate drivers, TLE5012 angle sensors, and TLE9351 CAN for robust motion subsystems.</li>\n</ul>\n<ul>\n<li><b>Battery systems for mobile robots</b><br>\nTLE9012 or TLE9018 BMS for 12 to 18-cell packs, TLI4971 current sensor for accurate current measurement, protection FETs and high-side drivers, AIROC Bluetooth LE for service interfaces.</li>\n</ul>\n<ul>\n<li><b>Navigation, obstacle avoidance, and SLAM</b><br>\nREAL3 hybrid ToF navigation sensor for high-resolution depth at close range and room-scale mapping, 60 GHz XENSIV radar for presence and motion sensing in all lighting conditions.</li>\n</ul>\n<ul>\n<li><b>Connectivity and fleet comms</b><br>\nAIROC Wi-Fi and Bluetooth combos for reliable links between robots, infrastructure, and cloud services.</li>\n</ul>\n<ul>\n<li><b>Edge compute and HMI</b><br>\nPSoC Edge for ML at the edge and sensor pre-processing, PSoC 6 or PSoC Control C3 for control loops, timing, and fast ADCs.</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      },
+      "item_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Healthcare",
+       "cq:panelTitle": "Healthcare",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498056876",
+        "1717498055877"
+       ],
+       "container_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "flexcontainer_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+         "cq:styleIds": [
+          "",
+          "1719484596357"
+         ],
+         "flexcontaineritem_1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "title_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Healthcare",
+           "type": "h2",
+           "sling:resourceType": "macnicaglobal2/components/content/title"
+          },
+          "text_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "text": "<p>Infineon enables medical wearables, patient monitoring, healthcare robotics, and lab automation. Pair low-power MCUs and precise sensors with secure connectivity and robust power to build reliable devices. Regulatory certifications depend on your end product, Macnica can help you choose components that align with your path.</p><p style=\"margin-top:0\">&nbsp;</p>",
+           "sling:resourceType": "macnicaglobal2/components/content/text",
+           "textIsRich": "true"
+          },
+          "title_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "jcr:title": "Key Building Blocks:",
+           "type": "h3",
+           "sling:resourceType": "macnicaglobal2/components/content/title"
+          },
+          "text_2": {
+           "jcr:primaryType": "nt:unstructured",
+           "text": "<ul>\n<li><b>Sensing:</b> CO2 and pressure sensors, 60 GHz radar for contactless vital signs, magnetic and current sensors, MEMS microphones</li>\n</ul>\n<ul>\n<li><b>Compute:</b> PSoC 6 and PSoC Edge MCUs for signal processing and ML at the edge</li>\n</ul>\n<ul>\n<li><b>Connectivity and security:</b> AIROC Bluetooth and Wi-Fi, OPTIGA security for device identity and data protection</li>\n</ul>",
+           "sling:resourceType": "macnicaglobal2/components/content/text",
+           "textIsRich": "true"
+          }
+         },
+         "flexcontaineritem_2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+          "image_1": {
+           "jcr:primaryType": "nt:unstructured",
+           "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/infineon/images/healthcare.jpg",
+           "alt": "Healthcare",
+           "sling:resourceType": "macnicaglobal2/components/content/image",
+           "isDecorative": "false",
+           "altValueFromDAM": "false",
+           "cq:styleIds": [
+            "",
+            "1726800547211"
+           ]
+          }
+         }
+        }
+       },
+       "container_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Key Applications:",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li><b>Patient monitoring and contactless vital sensing</b><br>\n60 GHz XENSIV radar modules for heart and respiration monitoring without contact, PSoC Edge for signal processing and ML, AIROC Wi-Fi and Bluetooth for data handoff, OPTIGA Trust for device identity and data integrity.</li>\n</ul>\n<ul>\n<li><b>Medical wearables and smart health devices</b><br>\nPSoC 6 for ultra-low power control and sensing, AIROC Bluetooth for mobile pairing, secure boot and OPTIGA for protected data paths, pressure and magnetic sensors where required.</li>\n</ul>\n<ul>\n<li><b>Air quality and facility monitoring</b><br>\nXENSIV PAS CO2 sensors for indoor air quality, DPS368 pressure sensors for environmental or flow feedback, plus Wi-Fi or BLE for connectivity.</li>\n</ul>\n<ul>\n<li><b>Lab automation and healthcare robotics</b><br>\nMotor and motion subsystems using IMD701A or 6EDL7141 with XMC or PSoC Control C3, OptiMOS MOSFETs and EiceDRIVER gate drivers for compact reliable pump and actuator control.</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      },
+      "item_4": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Solutions",
+       "cq:panelTitle": "Solutions",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "1717498056876",
+        "1717498055877"
+       ],
+       "container_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Solutions",
+         "type": "h2",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Actuate",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "title_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Motor and motion control for wheels, pumps, fans, joints, and valves",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>&nbsp;<b style=\"font-family: adobe-clean, &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, &quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, sans-serif;\">Use cases:</b> AMR wheel drives, cobot joints, conveyors, HVAC fans, lab pumps</li>\n</ul>\n<ul>\n<li><b>Ideal Infineon parts:</b> MOTIX IMD701A motor control SoC, 6EDL7141 three phase gate driver, OptiMOS MOSFETs or CoolGaN where density helps, EiceDRIVER gate drivers, IPMs for compact stages</li>\n</ul>\n<ul>\n<li><b>Add sensors:</b> TLI4971 current sensing, TLE5012 angle sensing for FOC, Hall where appropriate</li>\n</ul>\n<ul>\n<li><b>Tools:</b> ModusToolbox Motor Control, FOC libraries, tuning&nbsp;dashboards</li>\n</ul>\n<ul>\n<li><b style=\"font-family: adobe-clean, &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, &quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, sans-serif;\">Sense:</b> REAL3 hToF, 60 GHz radar, magnetic, current, pressure, MEMS microphones, CO2</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_4": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Compute",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "title_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Deterministic control and ML at the edge with low power",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li><b style=\"font-family: adobe-clean, &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, &quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, sans-serif;\">Use cases:</b> Motor control loops and timing, safety islands, HMI, sensor fusion and local inference</li>\n</ul>\n<ul>\n<li><b>Ideal Infineon parts:</b> PSoC Control C3, PSoC 6, PSoC Edge for ML and sensor processing, XMC for motor control, AURIX when automotive safety or performance is required</li>\n</ul>\n<ul>\n<li><b>Tips:</b> Isolate control and communications tasks, size flash and RAM for models and logs, design for OTA updates</li>\n</ul>\n<ul>\n<li><b>Tools:</b> ModusToolbox, RTOS options, ML toolchains and examples</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_6": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Connect",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "title_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Reliable links within devices and across fleets",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li><b style=\"font-family: adobe-clean, &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, &quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, sans-serif;\">Use cases:</b> Fleet telemetry, OTA updates, service BLE pairing, vehicle and facility networks, USB device attach</li>\n</ul>\n<ul>\n<li><b>Ideal Infineon parts:</b> AIROC Wi-Fi and Bluetooth combos, CAN and LIN transceivers, USB-C PD controllers, EZ-USB bridges, isolation for noisy domains</li>\n</ul>\n<ul>\n<li><b>Tips:</b> Reserve antenna keep-outs and ground, validate coexistence early, define PD power profiles and cable behavior</li>\n</ul>\n<ul>\n<li><b>Tools:</b> Connectivity stacks, certification test guides, antenna layout notes</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_7": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_8": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Secure",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "title_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Device identity, authentication, and protected firmware",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li><b>Use cases:</b> Secure boot and update, device attestation, cloud onboarding, accessory and battery pack authentication</li>\n</ul>\n<ul>\n<li><b>Ideal Infineon parts:</b> OPTIGA Trust and Authenticate families, TPM where required by platform policy</li>\n</ul>\n<ul>\n<li><b>Tips:</b> Define PKI and provisioning flows early, align security with OTA and manufacturing tests</li>\n</ul>\n<ul>\n<li><b>Tools:</b> OPTIGA host libraries, example flows and integration notes</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_9": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<hr />",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "container_10": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "",
+         "1717498052331",
+         "1717498055877"
+        ],
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Sense",
+         "type": "h3",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "title_2": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Depth, presence, position, current, pressure, and acoustic sensing",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li><b style=\"font-family: adobe-clean, &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, &quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, sans-serif;\">Use cases:</b> Obstacle detection, contactless vital signs, encoderless position, air quality, acoustic classification</li>\n</ul>\n<ul>\n<li><b>Ideal Infineon parts:</b> REAL3 hybrid ToF, XENSIV 60 GHz radar, XENSIV magnetic angle sensors, TLI4971 current sensors, DPS368 pressure, digital MEMS microphones, PAS CO2</li>\n</ul>\n<ul>\n<li><b>Tips:</b> Plan FOV and range early, budget for shielding and calibration, use sensor fusion to improve confidence</li>\n</ul>\n<ul>\n<li><b>Tools:</b> Sensor SDKs, data logging utilities, depth and radar visualization tools</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      },
+      "item_5": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Product Families",
+       "cq:panelTitle": "Product Families",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717498055877"
+       ],
+       "title_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Product Families",
+        "type": "h2",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n<tbody><tr><th style=\"white-space:nowrap\">Category</th>\n<th style=\"white-space:nowrap\">Family</th>\n<th>Short copy</th>\n<th>Ideal applications</th>\n<th>Recommended starter part or kit</th>\n</tr><tr><td rowspan=\"6\" valign=\"top\" style=\"white-space:nowrap\"><p><b>Microcontrollers</b></p>\n</td>\n<td valign=\"top\"><p>PSOC™ Control C3</p>\n</td>\n<td valign=\"top\"><p>Motor control oriented MCU with fast ADCs, high resolution PWMs, and peripherals for FOC and BLDC control.</p>\n</td>\n<td valign=\"top\"><p>AMR wheel drives, pumps and fans, lab automation actuators</p>\n</td>\n<td valign=\"top\"><p>PSOC™ Control C3 evaluation kit</p>\n</td>\n</tr><tr><td valign=\"top\"><p>PSOC™ 6</p>\n</td>\n<td valign=\"top\"><p>Ultra low power dual core MCU for connected HMI and sensing with plenty of memory for RTOS and comms stacks.</p>\n</td>\n<td valign=\"top\"><p>Wearables, patient monitors, smart health devices, robotics HMI panels</p>\n</td>\n<td valign=\"top\"><p>60 GHz radar evaluation board</p>\n</td>\n</tr><tr><td valign=\"top\"><p>PSOC™ Edge</p>\n</td>\n<td valign=\"top\"><p>Edge ML processing with sensor fusion support and secure boot to run local inference efficiently.</p>\n</td>\n<td valign=\"top\"><p>Vision and navigation pre processing, vital signs processing, anomaly detection at the edge</p>\n</td>\n<td valign=\"top\"><p>PSOC™ Edge starter kit</p>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>XMC</p>\n</td>\n<td valign=\"top\"><p>Industrial control MCUs that pair well with gate drivers for precise motor and power control.</p>\n</td>\n<td valign=\"top\"><p>Robot joints and conveyors, pumps, fans, industrial motion control</p>\n</td>\n<td valign=\"top\"><p>XMC motor control kit</p>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>AURIX</p>\n</td>\n<td valign=\"top\"><p>Safety focused multi core MCU for automotive control and gateways with powerful peripherals.</p>\n</td>\n<td valign=\"top\"><p>Body control modules, domain controllers, safety related control paths</p>\n</td>\n<td valign=\"top\"><p>AURIX TC3xx evaluation board</p>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>TRAVEO™</p>\n</td>\n<td valign=\"top\"><p>Automotive grade MCUs for body, comfort, lighting, and cluster applications.</p>\n</td>\n<td valign=\"top\"><p>Body control, lighting controllers, instrument clusters</p>\n</td>\n<td valign=\"top\"><p>TRAVEO™&nbsp;II body control starter kit</p>\n</td>\n</tr><tr><td rowspan=\"7\" valign=\"top\" style=\"white-space:nowrap\"><p><b>Sensors</b></p>\n</td>\n<td valign=\"top\"><p>REAL3 hToF depth</p>\n</td>\n<td valign=\"top\"><p>Hybrid Time of Flight depth sensing for navigation and close range perception with robust performance indoors.</p>\n</td>\n<td valign=\"top\"><p>Obstacle avoidance, path planning, people detection in service robots</p>\n</td>\n<td valign=\"top\"><p>REAL3 evaluation module</p>\n</td>\n</tr><tr><td valign=\"top\"><p>60 GHz radar</p>\n</td>\n<td valign=\"top\"><p>Compact radar modules for presence, motion, and contactless vital sign detection that work in all lighting.</p>\n</td>\n<td valign=\"top\"><p>Patient monitoring, human presence, fall detection, occupancy and intrusion sensing</p>\n</td>\n<td valign=\"top\"><p>60 GHz radar evaluation board</p>\n</td>\n</tr><tr><td valign=\"top\"><p>Magnetic angle TLE5012</p>\n</td>\n<td valign=\"top\"><p>Precise angle sensing for position feedback in motors and mechanisms, supports FOC control.</p>\n</td>\n<td valign=\"top\"><p>Robot joints, gimbals, closures, valves and actuators</p>\n</td>\n<td valign=\"top\"><p>TLE5012 angle sensor eval kit</p>\n</td>\n</tr><tr><td valign=\"top\"><p>Current sensing TLI4971</p>\n</td>\n<td valign=\"top\"><p>Accurate, fast current measurement with excellent linearity to stabilize motor and power loops.</p>\n</td>\n<td valign=\"top\"><p>Motor phase current, battery current, power rails</p>\n</td>\n<td valign=\"top\"><p>TLI4971 current sensor shield</p>\n</td>\n</tr><tr><td valign=\"top\"><p>DPS368 pressure</p>\n</td>\n<td valign=\"top\"><p>High precision pressure sensing in a very small package for environmental and flow feedback.</p>\n</td>\n<td valign=\"top\"><p>Airflow, altitude and pressure feedback, pump control</p>\n</td>\n<td valign=\"top\"><p>DPS368 pressure sensor board</p>\n</td>\n</tr><tr><td valign=\"top\"><p>Digital MEMS microphones</p>\n</td>\n<td valign=\"top\"><p>Low noise digital microphones for voice and acoustic sensing with simple digital interfaces.</p>\n</td>\n<td valign=\"top\"><p>Operator HMI, sound classification, audio monitoring</p>\n</td>\n<td valign=\"top\"><p>Infineon digital MEMS mic eval board</p>\n</td>\n</tr><tr><td valign=\"top\"><p>PAS CO2</p>\n</td>\n<td valign=\"top\"><p>Photoacoustic CO2 sensing for precise indoor air quality measurement and ventilation control.</p>\n</td>\n<td valign=\"top\"><p>Hospital rooms, labs, clean spaces, smart building monitoring</p>\n</td>\n<td valign=\"top\"><p>XENSIV PAS CO2 evaluation kit</p>\n</td>\n</tr><tr><td rowspan=\"5\" valign=\"top\"><p><b>Motor Control</b></p>\n</td>\n<td valign=\"top\"><p>MOTIX IMD701A</p>\n</td>\n<td valign=\"top\"><p>Integrated motor control SoC that combines control MCU and three phase gate driver for compact designs.</p>\n</td>\n<td valign=\"top\"><p>AMR wheel drives, pumps and fans, compact drives in lab equipment</p>\n</td>\n<td valign=\"top\"><p>IMD701A motor control kit</p>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>6EDL7141</p>\n</td>\n<td valign=\"top\"><p>Programmable three phase gate driver with protections and diagnostics for BLDC and PMSM control.</p>\n</td>\n<td valign=\"top\"><p>High performance drives using PSOC™ or XMC control, cobot joints, conveyors</p>\n</td>\n<td valign=\"top\"><p>6EDL7141 driver board</p>\n</td>\n</tr><tr><td valign=\"top\"><p>EiceDRIVER gate drivers</p>\n</td>\n<td valign=\"top\"><p>High side and half bridge drivers that simplify robust, efficient power stages.</p>\n</td>\n<td valign=\"top\"><p>Drives that require isolation or higher voltage stages, pumps, HVAC</p>\n</td>\n<td valign=\"top\"><p>EiceDRIVER evaluation board</p>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>iMOTION</p>\n</td>\n<td valign=\"top\"><p>Motor control IC family with built in field oriented control to speed time to spin.</p>\n</td>\n<td valign=\"top\"><p>Fans, pumps, compressors, appliances and facility systems</p>\n</td>\n<td valign=\"top\"><p>iMOTION MADK platform</p>\n</td>\n</tr><tr><td valign=\"top\"><p>Intelligent Power Modules</p>\n</td>\n<td valign=\"top\"><p>Compact modules that integrate switches and drivers for small, reliable power stages.</p>\n</td>\n<td valign=\"top\"><p>Space constrained drives and actuators in robots and lab tools</p>\n</td>\n<td valign=\"top\"><p>IPM dev board</p>\n</td>\n</tr><tr><td rowspan=\"5\" valign=\"top\" style=\"white-space:nowrap\"><p><b>Power</b></p>\n</td>\n<td valign=\"top\"><p>OptiMOS MOSFETs</p>\n</td>\n<td valign=\"top\"><p>Low Rds(on) MOSFETs for efficient switching with many voltage and package options.</p>\n</td>\n<td valign=\"top\"><p>Motor phases, battery protection, DC DC converters</p>\n</td>\n<td valign=\"top\"><p>OptiMOS reference design</p>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>CoolMOS</p>\n</td>\n<td valign=\"top\"><p>Superjunction MOSFETs for high efficiency AC DC and DC DC conversion.</p>\n</td>\n<td valign=\"top\"><p>Power supplies and PFC stages, chargers and adapters</p>\n</td>\n<td valign=\"top\"><p>CoolMOS PFC reference design</p>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>CoolGaN</p>\n</td>\n<td valign=\"top\"><p>Gallium nitride devices for high frequency, high density power stages.</p>\n</td>\n<td valign=\"top\"><p>Compact chargers, on robot power supplies where size matters</p>\n</td>\n<td valign=\"top\"><p>CoolGaN half bridge board</p>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>CoolSiC</p>\n</td>\n<td valign=\"top\"><p>Silicon carbide devices with excellent efficiency for demanding power conversion.</p>\n</td>\n<td valign=\"top\"><p>Fast charging, high power inverters and supplies</p>\n</td>\n<td valign=\"top\"><p>CoolSiC evaluation kit</p>\n</td>\n</tr><tr><td valign=\"top\"><p>DC DC and LDO regulators</p>\n</td>\n<td valign=\"top\"><p>Point of load conversion and low noise regulation for sensitive analog and compute domains.</p>\n</td>\n<td valign=\"top\"><p>Sensors, radios, MCUs, mixed signal subsystems</p>\n</td>\n<td valign=\"top\"><p>Multi rail DC DC eval board</p>\n</td>\n</tr><tr><td rowspan=\"4\" valign=\"top\" style=\"white-space:nowrap\"><p><b>Connectivity</b></p>\n</td>\n<td valign=\"top\"><p>AIROC™ Wi-Fi plus Bluetooth</p>\n</td>\n<td valign=\"top\"><p>Combo radios with certified stacks for robust device and fleet connectivity.</p>\n</td>\n<td valign=\"top\"><p>Fleet telemetry, OTA updates, service BLE pairing, local AP links</p>\n</td>\n<td valign=\"top\"><p>Wi-Fi 6 plus Bluetooth dev kit</p>\n</td>\n</tr><tr><td valign=\"top\"><p>CAN transceivers</p>\n</td>\n<td valign=\"top\"><p>Robust networking for vehicles and industrial robots with fault tolerant options.</p>\n</td>\n<td valign=\"top\"><p>AMRs and AGVs, ECUs, distributed motion nodes</p>\n</td>\n<td valign=\"top\"><p>TLE CAN transceiver shield</p>\n</td>\n</tr><tr><td valign=\"top\"><p>LIN transceivers</p>\n</td>\n<td valign=\"top\"><p>Simple low cost networking for body and actuator nodes.</p>\n</td>\n<td valign=\"top\"><p>Automotive body and comfort, auxiliary actuators and sensors</p>\n</td>\n<td valign=\"top\"><p>LIN transceiver board</p>\n</td>\n</tr><tr><td valign=\"top\"><p>USB C Power Delivery controllers</p>\n</td>\n<td valign=\"top\"><p>USB C and PD negotiation for device attach, charging, and accessory support.</p>\n</td>\n<td valign=\"top\"><p>Service and debug ports, accessory power, battery powered devices</p>\n</td>\n<td valign=\"top\"><p>USB C PD controller kit</p>\n</td>\n</tr><tr><td rowspan=\"3\" valign=\"top\" style=\"white-space:nowrap\"><p><b>Security</b></p>\n</td>\n<td valign=\"top\"><p>OPTIGA Trust</p>\n</td>\n<td valign=\"top\"><p>Secure element for device identity, authentication, and protected key storage.</p>\n</td>\n<td valign=\"top\"><p>Secure onboarding, accessory and battery authentication</p>\n</td>\n<td valign=\"top\"><p>OPTIGA Trust evaluation kit</p>\n</td>\n</tr><tr><td valign=\"top\"><p>OPTIGA Authenticate</p>\n</td>\n<td valign=\"top\"><p>Security IC for accessory and consumable authentication with lightweight host integration.</p>\n</td>\n<td valign=\"top\"><p>Disposable medical consumables, accessory lock out, anti counterfeiting</p>\n</td>\n<td valign=\"top\"><p>OPTIGA Authenticate starter kit</p>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>TPM</p>\n</td>\n<td valign=\"top\"><p>Trusted Platform Module for systems that require standards based measured boot and attestation.</p>\n</td>\n<td valign=\"top\"><p>Gateways, PCs and embedded controllers that adopt TPM policy</p>\n</td>\n<td valign=\"top\"><p>Infineon TPM module</p>\n</td>\n</tr><tr><td rowspan=\"4\" valign=\"top\" style=\"white-space:nowrap\"><p><b>Memory</b></p>\n</td>\n<td valign=\"top\"><p>SEMPER™ NOR Flash</p>\n</td>\n<td valign=\"top\"><p>High reliability NOR flash with safety features for code storage and OTA updates.</p>\n</td>\n<td valign=\"top\"><p>Automotive ECUs, robotics controllers, gateways</p>\n</td>\n<td valign=\"top\"><p>SEMPER™ evaluation board</p>\n</td>\n</tr><tr><td valign=\"top\"><p>EXCELON™ F RAM</p>\n</td>\n<td valign=\"top\"><p>Non volatile RAM with fast writes and high endurance for logs and parameters.</p>\n</td>\n<td valign=\"top\"><p>Event logs, configuration and counters, black box data</p>\n</td>\n<td valign=\"top\"><p>EXCELON™ F RAM shield</p>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>HYPERRAM™</p>\n</td>\n<td valign=\"top\"><p>High bandwidth, low pin count PSRAM for frame buffers and scratch storage.</p>\n</td>\n<td valign=\"top\"><p>Depth and radar buffers, display and vision tasks</p>\n</td>\n<td valign=\"top\"><p>HYPERRAM™ Pmod board</p>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>nvSRAM</p>\n</td>\n<td valign=\"top\"><p>SRAM speed with non volatile backup for critical data retention.</p>\n</td>\n<td valign=\"top\"><p>Robotics safety and state data, medical device records</p>\n</td>\n<td valign=\"top\"><p>nvSRAM dev board</p>\n</td>\n</tr><tr><td rowspan=\"3\" valign=\"top\"><p><b>USB and Interface</b></p>\n</td>\n<td valign=\"top\"><p>EZ-USB™ bridges</p>\n</td>\n<td valign=\"top\"><p>Flexible USB bridges for high speed data movement between sensors and hosts.</p>\n</td>\n<td valign=\"top\"><p>Cameras and sensors to host, test and measurement tools</p>\n</td>\n<td valign=\"top\"><p>EZ-USB™ dev kit</p>\n</td>\n</tr><tr><td valign=\"top\"><p>USB C PD controllers</p>\n</td>\n<td valign=\"top\"><p>USB C attach and power delivery control for peripherals and device charging.</p>\n</td>\n<td valign=\"top\"><p>Docking, charging and accessory power for robots and healthcare devices</p>\n</td>\n<td valign=\"top\"><p>USB C PD controller kit</p>\n</td>\n</tr><tr><td valign=\"top\"><p>Isolation and transceivers</p>\n</td>\n<td valign=\"top\"><p>Digital isolators and robust transceivers for noisy or high side domains.</p>\n</td>\n<td valign=\"top\"><p>High voltage motor and power stages, medical isolation paths</p>\n</td>\n<td valign=\"top\"><p>Isolation reference board</p>\n</td>\n</tr></tbody></table>",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "1722939215525"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

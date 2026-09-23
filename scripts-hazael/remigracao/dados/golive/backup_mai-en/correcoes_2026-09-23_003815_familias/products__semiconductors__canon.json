@@ -1,0 +1,1144 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "saichand@anionmarketing.com",
+ "jcr:title": "Canon CMOS Image Sensors, Machine Vision & Industrial Sensors",
+ "manufacturer": "macnica-atd-europe:manufacturers/canon",
+ "businessCategories": [
+  "macnica-atd-europe:business-categories/semiconductors"
+ ],
+ "pwaOrientation": "any",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "pd_isModelNameLinkToPage": "false",
+ "jcr:created": "Fri Sep 18 2026 12:59:31 GMT+0000",
+ "pwaDisplay": "standalone",
+ "cq:lastModified": "Mon Sep 21 2026 10:34:55 GMT+0000",
+ "jcr:description": "Enhance your imaging solutions with Canon CMOS image sensors and cameras. Our selection features Canon's high-resolution and low-light machine vision products.",
+ "pwaCachestrategy": "staleWhileRevalidate",
+ "pageTitle": "Canon",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "saichand@anionmarketing.com",
+ "navTitle": "Canon",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:createdBy": "admin",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_copy_copy": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Wed Sep 16 2026 07:21:47 GMT+0000",
+    "jcr:lastModified": "Wed Sep 16 2026 07:21:47 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Wed Sep 16 2026 07:22:22 GMT+0000",
+     "jcr:lastModified": "Wed Sep 16 2026 07:22:22 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Wed Sep 16 2026 07:22:26 GMT+0000",
+      "jcr:lastModified": "Wed Sep 16 2026 07:22:26 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "embed": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "layout": "fixed",
+       "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+       "jcr:created": "Wed Sep 16 2026 07:22:42 GMT+0000",
+       "type": "embeddable",
+       "youtubeVideoId": "sXDiUbxnBBc",
+       "jcr:lastModified": "Thu Sep 17 2026 05:40:40 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/embed"
+      }
+     },
+     "flexcontaineritem_1530550119": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Wed Sep 16 2026 07:22:30 GMT+0000",
+      "jcr:lastModified": "Wed Sep 16 2026 07:22:30 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Canon Quality for Industrial, Machine Vision & Scientific Applications",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Wed Sep 16 2026 07:23:09 GMT+0000",
+       "type": "h1",
+       "jcr:lastModified": "Thu Sep 17 2026 05:39:06 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Wed Sep 16 2026 07:23:26 GMT+0000",
+       "text": "<p>Canon’s CMOS sensor technology offers OEMs and end users expanded possibilities for industrial vision applications. From uniquely large pixel sizes to exceptionally high pixel counts in a compact design, Canon CMOS image sensors and Canon industrial sensors push the boundaries of imaging possibilities. Facilitating on-going innovation in industrial camera and image capture technologies, Canon CMOS sensors support pioneering solutions for advanced industrial, machine vision and scientific applications.</p>\r\n",
+       "jcr:lastModified": "Thu Sep 17 2026 05:39:30 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "button_copy_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "anil@anionmarketing.com",
+       "jcr:title": "Contact Our Experts",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Thu Aug 20 2026 05:34:34 GMT+0000",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact-us",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Fri Sep 18 2026 16:22:51 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        ""
+       ]
+      }
+     }
+    }
+   },
+   "container_copy": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Thu Sep 17 2026 05:39:57 GMT+0000",
+    "jcr:lastModified": "Thu Sep 17 2026 05:40:03 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "textwithimage": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/cmos-sensors-callout-300x300.png",
+     "imageRatio": "30",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Thu Sep 17 2026 05:51:59 GMT+0000",
+     "alt": "canon",
+     "text": "<p><br>\r\nInnovation has been at the heart of Canon’s success since the start. One of the largest patent holders in the U.S., Canon has developed highly unique CMOS sensors over the past decade. Each CMOS sensor from Canon features proprietary innovations at the pixel-level that translate into industry-leading performance in advanced industrial and scientific applications.&nbsp;</p>\r\n<p>Innovation is within your reach. High-performance Canon CMOS image sensors are readily available to transform your imaging products.</p>\r\n",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "jcr:lastModified": "Thu Sep 17 2026 05:55:36 GMT+0000",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+     "isDecorative": "false",
+     "textIsRich": "true",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "",
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/cmos-sensors-callout-300x300.png",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:lastModified": "Thu Sep 17 2026 05:55:36 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    }
+   },
+   "container_1509983208": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Thu Sep 17 2026 05:56:11 GMT+0000",
+    "jcr:lastModified": "Thu Sep 17 2026 05:56:11 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:title": "Canon Image Sensors",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Thu Sep 17 2026 05:56:17 GMT+0000",
+     "type": "h3",
+     "jcr:lastModified": "Thu Sep 17 2026 05:56:24 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "tabs": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Thu Sep 17 2026 05:56:57 GMT+0000",
+     "jcr:lastModified": "Thu Sep 17 2026 06:29:52 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/tabs",
+     "item_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 1",
+      "cq:panelTitle": "Ultra-High Resolution Industrial Sensors",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498052331",
+       "1717498053499"
+      ],
+      "flexcontainer": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Thu Sep 17 2026 05:58:01 GMT+0000",
+       "jcr:lastModified": "Thu Sep 17 2026 05:58:01 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "1719484596357"
+       ],
+       "flexcontaineritem": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:05 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:05 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-120mxs.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 05:59:32 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-120mxs.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 05:59:32 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-120mxs-cmos-image-sensors.html\">LI8010SA (120MXS)</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">By incorporating close to the same number of pixels as photoreceptors in the human eye, the Canon 120MXS CMOS sensor delivers ultra-high 120 MP resolution in a compact design.</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:23:35 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_974693883": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:10 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:10 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li8020.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 06:04:19 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li8020.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 06:04:19 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li8020sa-250mp-cmos-sensor-0.html\">LI8020SA</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">Capturing detail 125 times greater than in full HD resolution, the LI8020SA CMOS sensor from Canon offers remarkably high 250 MP resolution to uncover more detail than ever before.</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:24:02 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2122269046": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:27 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:27 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li8030sa.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 06:06:05 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li8030sa.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 06:06:05 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li8030SA-410mp-ultra-high-resolution-cmos-sensor.html\">From spec sheet to solution - LI8030SA</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">410 megapixels is just a number until you see where it's used. Explore how LI8030SA performs across wafer inspection, advanced packaging, and five other precision applications, backed by real resolution test data.</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:24:33 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "item_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 2",
+      "cq:panelTitle": "Ultra-High Sensitivity Canon Industrial Sensors",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498052331",
+       "1717498053499"
+      ],
+      "flexcontainer_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Thu Sep 17 2026 05:58:01 GMT+0000",
+       "jcr:lastModified": "Thu Sep 17 2026 05:58:01 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "1719484596357"
+       ],
+       "flexcontaineritem": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:05 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:05 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li3030.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 06:49:38 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li3030.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 06:49:38 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li3030sa-19mm-cmos-sensor.html\">LI3030SA</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">The LI3030SA Canon CMOS sensor features enormous 19µm pixels, each with an expanded well depth for greatly enhanced quantum efficiency (QE) for increased NIR detection.</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:25:08 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_974693883": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:10 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:10 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/35mmfhdxs-a.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 06:50:26 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/35mmfhdxs-a.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 06:50:26 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-35mmfhdxs-a-cmos-sensors.html\">35MMFDHXS_A</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">The 35MMFHDXS_A CMOS sensor delivers high-sensitivity, low-noise imaging performance, even in extreme low-light environments. The sensor’s pixels and readout circuitry employ technologies that reduce noise which tends to increase as pixel size increases.</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:25:30 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2122269046": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:27 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:27 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "item_1789626586539": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "Rolling Shutter",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498052331",
+       "1717498053499"
+      ],
+      "flexcontainer_copy_c": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Thu Sep 17 2026 05:58:01 GMT+0000",
+       "jcr:lastModified": "Thu Sep 17 2026 05:58:01 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "1719484596357"
+       ],
+       "flexcontaineritem_21": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:27 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:27 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li7080sa.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 06:51:18 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li7080sa.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 06:51:18 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7080sa-cmos-sensor.html\">LI7080SA</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">LI7080SA is a CMOS type solid-state imaging sensor of Super 35mm size, and 6.4 μm square pixel arrangement with 10.8 mega effective pixels.</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:26:00 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_co": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:05 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:05 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li7070sa.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 06:53:16 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li7070sa.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 06:53:16 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7070sa-cmos-sensor.html\">LI7070SA</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">The Canon LI7070SA CMOS Sensor, available in RGB and Mono, offers 2M pixels with increased sensitivity in the NIR range in addition to HDR functions.</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:26:13 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_97": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:10 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:10 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li7060.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 06:56:01 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li7060.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 06:56:01 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7060-hdr-cmos-sensor.html\">LI7060SA</a><br>\r\nThe LI7060SA is a 1 /2.3 inch size (diagonal 7.75 mm) color CMOS solid state image sensor with 2.82M effective pixels in a square pixel array. This sensor is capable of full area readout at 60 fps and realizes high dynamic range movie recording.</p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:26:28 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      },
+      "flexcontainer_copy_c_825903292": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Thu Sep 17 2026 05:58:01 GMT+0000",
+       "jcr:lastModified": "Thu Sep 17 2026 05:58:01 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "1719484596357"
+       ],
+       "flexcontaineritem_2122269046": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:27 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:27 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li7050sa.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 06:57:06 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li7050sa.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 06:57:06 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7050-2m-cmos-sensor.html\">LI7050SA</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">The Canon LI7050SA CMOS Sensor offers 2M pixel HDR with high sensitivity at an affordable price. It’s square 4.1μm x 4.1μm pixel arrangement and 1/1.8″ frame achieves very high and low light capability in a compact design.</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:26:53 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:05 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:05 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/li7030sa.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 07:00:03 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/li7030sa.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 07:00:03 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7030sa-cmos-sensor.html\">LI7030SA</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">The Canon LI7030SA is a CMOS type solid-state imaging sensor having a size equivalent to 1 inch, and 3.2 μm square pixel arrangement with 12 mega effective pixels. Video of 4K3K at 24 fps (12bit), 4K2K at 60 fps (10bit) and HD720p at 120 fps (10bit) can be achieved.&nbsp;</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:27:06 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_823645861": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 07:11:04 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 07:11:04 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "item_1789624638738": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "Global Shutter",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498052331",
+       "1717498053499"
+      ],
+      "flexcontainer_copy_c": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Thu Sep 17 2026 05:58:01 GMT+0000",
+       "jcr:lastModified": "Thu Sep 17 2026 05:58:01 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "1719484596357"
+       ],
+       "flexcontaineritem_21": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:27 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:27 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li5070sa.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 07:14:03 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li5070sa.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 07:14:03 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5070sa-cmos-sensor.html\">LI5070SA</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">The Canon LI5070SA CMOS Sensor, available in RGB, offers 10M pixels in a Super35 format. It’s global shutter, square 6.4μm x 6.4μm pixel arrangement and professional-grade imaging delivers performance suitable for high-end security and cinema cameras.</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:27:39 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_co": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:05 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:05 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li5040.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 07:15:10 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li5040.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 07:15:10 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5040-5m-cmos-sensor.html\">LI5040SA</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">The Canon LI5040 CMOS Sensor offers 5.33M pixels. It’s square 3.4µm x 3.4µm pixel arrangement and 2/3” frame achieves high resolution, allowing you to capture everything you need in a compact design.</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:27:52 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_97": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "mahendra@anionmarketing.com",
+        "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+        "jcr:created": "Thu Sep 17 2026 05:58:10 GMT+0000",
+        "jcr:lastModified": "Thu Sep 17 2026 05:58:10 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "image_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li5030sa.png",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:32 GMT+0000",
+         "alt": "canon",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "jcr:lastModified": "Thu Sep 17 2026 07:15:59 GMT+0000",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/image",
+         "isDecorative": "false",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "",
+          ""
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-li5030sa.png",
+          "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+          "jcr:lastModified": "Thu Sep 17 2026 07:15:59 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         }
+        },
+        "text_copy": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:createdBy": "mahendra@anionmarketing.com",
+         "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+         "jcr:created": "Thu Sep 17 2026 05:58:56 GMT+0000",
+         "text": "<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5030sa-35mm-full-size-19mp-global-shutter-cmos-sensor.html\">LI5030SA</a><br>\r\n<span style=\"letter-spacing: 0.0px;\">LI5030SA is a CMOS type of solid-state image sensor with a 35mm full frame effective pixel array of 19 Megapixels. It enables simultaneous exposure timing for all 19 Mega pixels. It can output an effective 5688 x 3334 pixels of video at 57.99 fps and 12bit via 24 channels of digital signal output.</span></p>\r\n",
+         "jcr:lastModified": "Fri Sep 18 2026 16:28:04 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     }
+    }
+   },
+   "container_copy_15679": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Thu Sep 17 2026 05:39:57 GMT+0000",
+    "jcr:lastModified": "Thu Sep 17 2026 05:40:03 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:title": "Canon CMOS Sensors",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Thu Sep 17 2026 07:17:31 GMT+0000",
+     "type": "h3",
+     "jcr:lastModified": "Thu Sep 17 2026 07:17:41 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "table": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Thu Sep 17 2026 07:18:16 GMT+0000",
+     "text": "<table height=\"100%\" width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><th style=\"text-align: center;\">Category</th>\r\n<th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Image Size</th>\r\n<th style=\"text-align: center;\">Resolution<br>\r\n(MP)</th>\r\n<th style=\"text-align: center;\">Pixel Size<br>\r\n(μm)</th>\r\n<th style=\"text-align: center;\">Filter Type</th>\r\n<th style=\"text-align: center;\">Max Frame<br>\r\nRate (fps)</th>\r\n</tr></tbody><tbody><tr><td rowspan=\"3\" style=\"text-align: center;\">Ultra High Resolution</td>\r\n<td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li8020sa-250mp-cmos-sensor-0.html\">LI8020SA</a></td>\r\n<td style=\"text-align: center;\">APS-H</td>\r\n<td style=\"text-align: center;\">250</td>\r\n<td style=\"text-align: center;\">1.5</td>\r\n<td style=\"text-align: center;\">Mono/RGB</td>\r\n<td style=\"text-align: center;\">5</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-120mxs-cmos-image-sensors.html\">LI8010SA (120MXS)</a></td>\r\n<td style=\"text-align: center;\">APS-H</td>\r\n<td style=\"text-align: center;\">120</td>\r\n<td style=\"text-align: center;\">2.2</td>\r\n<td style=\"text-align: center;\">Mono/RGB/RGB-IR</td>\r\n<td style=\"text-align: center;\">9.4</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li8030SA-410mp-ultra-high-resolution-cmos-sensor.html\">LI8030SA</a></td>\r\n<td style=\"text-align: center;\">Full Frame</td>\r\n<td style=\"text-align: center;\">410</td>\r\n<td style=\"text-align: center;\">1.5</td>\r\n<td style=\"text-align: center;\">Color</td>\r\n<td style=\"text-align: center;\">24</td>\r\n</tr><tr><td rowspan=\"2\" style=\"text-align: center;\">Ultra High Sensitivity</td>\r\n<td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li3030sa-19mm-cmos-sensor.html\">LI3030SA</a></td>\r\n<td style=\"text-align: center;\">Full Frame</td>\r\n<td style=\"text-align: center;\">2.7</td>\r\n<td style=\"text-align: center;\">19</td>\r\n<td style=\"text-align: center;\">Mono/RGB/RGB-IR</td>\r\n<td style=\"text-align: center;\">98</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-35mmfhdxs-a-cmos-sensors.html\">35MMFHDXS</a></td>\r\n<td style=\"text-align: center;\">Full Frame</td>\r\n<td style=\"text-align: center;\">2.7</td>\r\n<td style=\"text-align: center;\">19</td>\r\n<td style=\"text-align: center;\">Mono/RGB</td>\r\n<td style=\"text-align: center;\">98</td>\r\n</tr><tr><td rowspan=\"3\" style=\"text-align: center;\">Global Shutter</td>\r\n<td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5030sa-35mm-full-size-19mp-global-shutter-cmos-sensor.html\">LI5030SA</a></td>\r\n<td style=\"text-align: center;\">Full Frame</td>\r\n<td style=\"text-align: center;\">19</td>\r\n<td style=\"text-align: center;\">6.4</td>\r\n<td style=\"text-align: center;\">Mono/RGB/RGB-IR/Naked</td>\r\n<td style=\"text-align: center;\">58</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5040-5m-cmos-sensor.html\">LI5040SA</a></td>\r\n<td style=\"text-align: center;\">2/3&quot;</td>\r\n<td style=\"text-align: center;\">5.3</td>\r\n<td style=\"text-align: center;\">3.4</td>\r\n<td style=\"text-align: center;\">Mono/RGB/RGB-IR</td>\r\n<td style=\"text-align: center;\">120</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li5070sa-cmos-sensor.html\">LI5070SA</a></td>\r\n<td style=\"text-align: center;\">Super 35mm</td>\r\n<td style=\"text-align: center;\">10.3</td>\r\n<td style=\"text-align: center;\">6.4</td>\r\n<td style=\"text-align: center;\">RGB</td>\r\n<td style=\"text-align: center;\">60</td>\r\n</tr><tr><td rowspan=\"5\" style=\"text-align: center;\">Rolling Shutter</td>\r\n<td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7080sa-cmos-sensor.html\">LI7080SA</a></td>\r\n<td style=\"text-align: center;\">Super 35mm</td>\r\n<td style=\"text-align: center;\">10.8</td>\r\n<td style=\"text-align: center;\">6.4</td>\r\n<td style=\"text-align: center;\">RGB</td>\r\n<td style=\"text-align: center;\">120</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7030sa-cmos-sensor.html\">LI7030SA</a></td>\r\n<td style=\"text-align: center;\">1&quot;</td>\r\n<td style=\"text-align: center;\">12</td>\r\n<td style=\"text-align: center;\">3.2</td>\r\n<td style=\"text-align: center;\">RGB</td>\r\n<td style=\"text-align: center;\">60</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7050-2m-cmos-sensor.html\">LI7050SA</a></td>\r\n<td style=\"text-align: center;\">1/1.8&quot;</td>\r\n<td style=\"text-align: center;\">2.1</td>\r\n<td style=\"text-align: center;\">4.1</td>\r\n<td style=\"text-align: center;\">RGB</td>\r\n<td style=\"text-align: center;\">60</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7070sa-cmos-sensor.html\">LI7070SA</a></td>\r\n<td style=\"text-align: center;\">1/1.8&quot;</td>\r\n<td style=\"text-align: center;\">2.1</td>\r\n<td style=\"text-align: center;\">4.1</td>\r\n<td style=\"text-align: center;\">RGB, Mono</td>\r\n<td style=\"text-align: center;\">60</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon/canon-li7060-hdr-cmos-sensor.html\">LI7060SA</a></td>\r\n<td style=\"text-align: center;\">1/2.3&quot;</td>\r\n<td style=\"text-align: center;\">2.8</td>\r\n<td style=\"text-align: center;\">3.2</td>\r\n<td style=\"text-align: center;\">RGB</td>\r\n<td style=\"text-align: center;\">60</td>\r\n</tr></tbody></table>\r\n",
+     "jcr:lastModified": "Mon Sep 21 2026 03:56:05 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    }
+   },
+   "container_copy_29651": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Thu Sep 17 2026 05:39:57 GMT+0000",
+    "jcr:lastModified": "Thu Sep 17 2026 07:24:14 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498052331",
+     "1717498053499"
+    ],
+    "textwithimage": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-5mp-eval-kit-v2.png",
+     "imageRatio": "30",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Thu Sep 17 2026 05:51:59 GMT+0000",
+     "alt": "canon",
+     "text": "<h3 style=\"margin: 0.0px;\"><br>\r\nCanon CMOS Sensor Evaluation Kit</h3>\r\n<p style=\"margin: 0.0px;\">Canon offers a portfolio of advanced CMOS sensor evaluation kits designed to help developers accelerate prototyping and integration. These kits provide complete reference platforms for evaluating Canon’s high-performance CMOS sensors, including the ultra-sensitive 35mm Full HD sensor, the 120MP ultra-high-resolution sensor, and the LI5040 with 5MP global shutter. Each kit includes a camera module, interface board, lens mount, and supporting software - enabling seamless sensor testing, image capture, and system design validation.</p>\r\n",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "jcr:lastModified": "Thu Sep 17 2026 07:26:30 GMT+0000",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+     "isDecorative": "false",
+     "textIsRich": "true",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "",
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon/images/canon-5mp-eval-kit-v2.png",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:lastModified": "Thu Sep 17 2026 07:26:30 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    },
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Thu Sep 17 2026 07:29:09 GMT+0000",
+     "jcr:lastModified": "Thu Sep 17 2026 07:29:09 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Thu Sep 17 2026 07:29:24 GMT+0000",
+      "text": "<table height=\"100%\" width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><th style=\"text-align: center;\">35MM Full HD High-Sensitivity CMOS Sensor Kit</th>\r\n<th style=\"text-align: center;\">120MXSI 120MP CMOS Sensor Evaluation Kit</th>\r\n<th style=\"text-align: center;\">LI5040 5MP Global Shutter CMOS Sensor Kit</th>\r\n</tr><tr><td valign=\"top\"><ul>\r\n<li>Resolution: 1920 x 1080</li>\r\n<li>Large 19μm pixels for exceptional low-light performance</li>\r\n<li>Ideal for night vision, astronomy, and scientific imaging</li>\r\n</ul>\r\n</td>\r\n<td valign=\"top\"><ul>\r\n<li>Resolution: 13280 x 9184 (120MP)</li>\r\n<li>High-resolution APS-H sensor with rolling shutter</li>\r\n<li>Suitable for industrial inspection and aerial imaging</li>\r\n</ul>\r\n</td>\r\n<td valign=\"top\"><ul>\r\n<li>Resolution: 2464 x 2056</li>\r\n<li>Global shutter and 5.0µm pixel pitch</li>\r\n<li>Designed for machine vision and high-speed imaging</li>\r\n</ul>\r\n</td>\r\n</tr></tbody></table>\r\n",
+      "jcr:lastModified": "Thu Sep 17 2026 07:30:17 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    }
+   },
+   "container_copy_98112": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Thu Sep 17 2026 05:39:57 GMT+0000",
+    "jcr:lastModified": "Thu Sep 17 2026 05:40:03 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:title": "Interested in testing Canon CMOS sensors?",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Thu Sep 17 2026 07:31:07 GMT+0000",
+     "type": "h3",
+     "jcr:lastModified": "Thu Sep 17 2026 07:31:13 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Thu Sep 17 2026 07:31:22 GMT+0000",
+     "text": "<p>Contact Macnica Americas for kit availability, customization support, design integration assistance or questions about Canon machine vision products.</p>\r\n",
+     "jcr:lastModified": "Thu Sep 17 2026 07:31:33 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "filterabletable": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "tagsMatch": "any",
+     "orderBy": "pd_modelName",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Thu Sep 17 2026 07:36:27 GMT+0000",
+     "parentPage": "/content/macnicaglobal2/eu/atd-europe/en/products/semiconductors/canon",
+     "sortOrder": "asc",
+     "itemsPerPage": "30",
+     "jcr:lastModified": "Thu Sep 17 2026 07:37:13 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/filterabletable",
+     "childDepth": "1",
+     "listFrom": "children"
+    },
+    "flexcontainer_copy_c": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Wed Sep 16 2026 09:53:02 GMT+0000",
+     "jcr:lastModified": "Wed Sep 16 2026 09:53:02 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Wed Sep 16 2026 09:53:09 GMT+0000",
+      "jcr:lastModified": "Wed Sep 16 2026 09:53:09 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Contact Us for More Information",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Wed Sep 16 2026 09:53:18 GMT+0000",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact-us",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Fri Sep 18 2026 16:28:24 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669230937"
+       ]
+      }
+     },
+     "flexcontaineritem_734446168": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Wed Sep 16 2026 09:53:14 GMT+0000",
+      "jcr:lastModified": "Wed Sep 16 2026 09:53:14 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Request a Quote",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Wed Sep 16 2026 09:53:18 GMT+0000",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Fri Sep 18 2026 16:28:37 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        ""
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "cq:featuredimage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Mon Sep 21 2026 10:34:55 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ },
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Mon Sep 21 2026 10:34:55 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ },
+ "pd_downloadAsset": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Mon Sep 21 2026 10:34:55 GMT+0000"
+ },
+ "pd_productFamilyImage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Mon Sep 21 2026 10:34:55 GMT+0000"
+ },
+ "pd_technologyImage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "saichand@anionmarketing.com",
+  "jcr:lastModified": "Mon Sep 21 2026 10:34:55 GMT+0000"
+ }
+}

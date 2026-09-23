@@ -1,0 +1,317 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "Terasic Technologies FPGA Boards & Modules | Terasic Altera Agilex",
+ "manufacturer": "mai:manufacturers/terasic",
+ "businessCategories": "mai:business-categories/boards-modules",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 02 2026 13:57:43 GMT+0000",
+ "cq:lastModified": "Tue Sep 22 2026 01:20:48 GMT+0000",
+ "jcr:description": "Designed for AI applications, Terasic Technologies offers FPGA boards, SoMs, dev kits, and Altera solutions for accelerated computing. Learn more here!",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic",
+ "pageTitle": "Terasic Technologies",
+ "cq:tags": "mai:business-categories/boards-modules",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "Terasic",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_titulo": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "0",
+     "width": "12"
+    }
+   },
+   "container_878853420": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Terasic Next Generation Accelerated Computing",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800525141",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/terasic/images/agilex-som.png",
+       "alt": "agilex-board",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "",
+        ""
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3 style=\"text-align: center;\">Agilex SoM</h3>\r\n<p style=\"text-align: center;\">Real-time computing for edge and AI use cases</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_540302233": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/terasic/images/dev-starter.png",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "alt": "dev starter kit",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Mon Sep 21 2026 15:13:36 GMT+0000",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1717565101174",
+        ""
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+        "jcr:lastModified": "Mon Sep 21 2026 15:13:36 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3 style=\"text-align: center;\">Development and Starter Kits</h3>\r\n<p style=\"text-align: center;\">Essential solutions for development of next generation use cases</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_1445442562": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "container": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Mon Sep 21 2026 15:14:05 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": "1717498052331"
+      },
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/terasic/images/usb-blaster.png",
+       "alt": "usb blaster",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false",
+       "cq:styleIds": "1717565101174",
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3>&nbsp;</h3>\r\n<h3>USB Blaster II Cable</h3>\r\n<p>Access real-time FPGA data for development</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "tabs_copy_39779571_c": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/tabs",
+    "item_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Tab 1",
+     "cq:panelTitle": "Agilex SoMs",
+     "layout": "responsiveGrid",
+     "id": "view-transcend-memory-product-portfolio-id",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498055877"
+     ],
+     "container_180292821": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876",
+       ""
+      ],
+      "title_table": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Terasic Altera Agilex SoMs",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "table": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>As FPGA development engineers, delving into the Terasic Altera System on Module (SoM) opens avenues for robust and scalable solutions. Our SoM's integrate Altera's cutting-edge technology with Terasic's expertise, providing a solid foundation for diverse FPGA applications. With its compact form factor and powerful processing capabilities, the Terasic Altera SoM streamlines development cycles and facilitates seamless integration into various projects. Designed for high performance AI solutions, Terasic's Apollo <a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/terasic-apollo-agilex-som/\">Agilex SoM</a> takes advantage of Altera's latest SoC with 1400K logic elements.</p>\r\n<p>Featuring a rich set of peripherals and interfaces, including high-speed transceivers and DDR memory, the Terasic's Altera-powered SoM's empowers developers to build efficient and versatile FPGA-based systems. Its compatibility with Altera's development tools and ecosystem ensures a smooth transition for FPGA engineers, allowing them to leverage familiar workflows and resources. With the Terasic Altera SoM, FPGA development engineers can unlock the full potential of their designs while enjoying the reliability and support that Terasic offers throughout the development journey.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      }
+     }
+    },
+    "item_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Tab 2",
+     "cq:panelTitle": "Development and Starter Kits",
+     "layout": "responsiveGrid",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876",
+      ""
+     ],
+     "title_table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Terasic Development and Starter Kits",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Terasic's Development and Starter Kits stand as cornerstone tools in the arsenal of FPGA engineers, offering robust platforms engineered to accelerate project development. These kits embody Terasic's dedication to providing accessible yet feature-rich solutions, tailored to streamline the FPGA design process. Whether delving into the DE10 series or exploring specialized kits catering to specific application needs, engineers find a comprehensive range of options, each designed to accommodate diverse project requirements and skill levels. Equipped with integrated development environments, extensive documentation, and flexible hardware configurations, Terasic Kits empower both seasoned professionals and newcomers to delve into FPGA innovation with confidence and efficiency. With an emphasis on user-friendly interfaces and adaptable functionalities, these kits serve as catalysts for innovation, enabling engineers to channel their creativity into groundbreaking FPGA-based solutions across industries and applications. <a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/terasic-agilex-7-fpga-starter-kit/\">The Agilex 7 FPGA Starter Kit</a> utilizes advanced Intel FPGA SoC's.</p>\r\n<p><span style=\"letter-spacing: 0.0px;\">Terasic's Development and Starter Kits transcend mere hardware - they symbolize a commitment to nurturing innovation and empowering engineers to turn their FPGA visions into reality. By providing accessible yet powerful platforms, Terasic fosters a culture of exploration and ingenuity, driving advancements in FPGA technology and propelling the industry forward into new realms of possibility.</span></p>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    }
+   },
+   "container_679759061_": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "list_copy_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "showModificationDate": "false",
+     "tagsMatch": "any",
+     "linkItems": "true",
+     "parentPage": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic",
+     "sortOrder": "asc",
+     "showDescription": "false",
+     "sling:resourceType": "macnicaglobal2/components/content/list",
+     "childDepth": "1",
+     "listFrom": "children",
+     "cq:styleIds": [
+      "1717649397305",
+      "1717648336486"
+     ]
+    },
+    "flexcontainer_copy_c": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_861351158": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

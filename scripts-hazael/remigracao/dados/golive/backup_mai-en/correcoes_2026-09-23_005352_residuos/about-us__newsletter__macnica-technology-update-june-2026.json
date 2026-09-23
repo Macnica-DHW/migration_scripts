@@ -1,0 +1,334 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "Macnica Technology Update – June 2026",
+ "showInLists": "true",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 23 2026 02:27:50 GMT+0000",
+ "cq:lastModified": "Wed Sep 23 2026 01:52:38 GMT+0000",
+ "jcr:description": "Macnica Americas June newsletter highlights edge AI, robotics, Sony IMX711 X-ray imaging, rugged computing, Macnica philosophy, and engineering expertise.",
+ "keywords": "Macnica Americas newsletter, edge AI, robotics, intelligent systems, Sony IMX711, X-ray imaging, Connect Tech Falcon Vehicle System, NVIDIA Jetson Orin NX, rugged edge computing, industrial AI, imaging and vision, smart city technology, mobility solutions, healthcare technology, Broadcast ProAV, engineering services, advanced supply chain management, Macnica philosophy, engineering-first design, Who is Macnica, intelligent systems, imaging and vision, industrial innovation, supply chain management",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/newsletter/macnica-technology-update-june-2026",
+ "hideInNav": "true",
+ "pageTitle": "Macnica Technology Update – June 2026",
+ "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "Macnica Technology Update – June 2026",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Macnica Technology Update – June 2026",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "title_wrap_conteudo": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "text_intro": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Macnica Americas June newsletter highlights edge AI, robotics, Sony IMX711 X-ray imaging, rugged computing, Macnica philosophy, and engineering expertise.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/capture-process-communicate-hero-banner-new.png",
+     "alt": "Capture Process Communicate",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "text_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>From edge AI and robotics to imaging, networking, and industrial innovation, Macnica helps transform complex technologies into real-world solutions. Each month, we bring you the latest engineering insights, product innovations, partner updates, and industry trends shaping the future of intelligent systems.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Advancing the Next Generation of X-Ray Imaging",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>The Sony IMX711 redefines scientific X-ray imaging with ultra-high-speed capture, low-noise performance, and single-photon detection. Designed for advanced inspection, materials science, and life sciences, it delivers the precision and dynamic range needed to unlock deeper insights from every measurement.</p>\n<p><b><a rel=\"noopener noreferrer\" target=\"_self\" href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony/sony-image-sensors/sony-imx711-aaby\">Sony IMX711</a></b></p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/sony-imx711-cmos-sensor-new.png",
+     "alt": "Advancing the Next Generation of X-Ray Imaging",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/sony-imx711-cmos-sensor-new.png",
+     "alt": "Advancing the Next Generation of X-Ray Imaging",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Rugged Edge AI for the Real World",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Built for agriculture, construction, and mining, the Connect Tech Falcon Vehicle System brings AI directly onto heavy equipment. Powered by NVIDIA Jetson Orin NX, its IP67-rated, fanless design delivers reliable edge computing, real-time perception, and vehicle-native connectivity in the harshest environments.</p>\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/connect-tech/connect-tech-falcon-vehicle-system-ip67-edge-ai-for-heavy-equipment/\"><b>Falcon Vehicle System</b></a></p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/connect-tech-falcon-new.png",
+     "alt": "Advancing the Next Generation of X-Ray Imaging",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_5_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/connect-tech-falcon-new.png",
+     "alt": "Rugged Edge AI for the Real World",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Capture, Process, Communicate: The Philosophy Behind Everything We Build",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>If AI is the new electricity and robotics is the grid, then Macnica is the wiring. Our Capture, Process, Communicate framework guides how we solve problems, from sensors and silicon to networking. With a design-first approach, our engineers think through the full system before a single part is specified. Read on to find out how AI and our philosophy will define the next industrial era.</p>\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/blog/the-coming-robotics-revolution-how-ai-and-macnicas-capture-process-communicate-philosophy-will-define-the-next-industrial-era/\"><b>Macnica Philosophy</b></a></p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_6_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/macnica-philosophy-ai-new.png",
+     "alt": "Advancing the Next Generation of X-Ray Imaging",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_7_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/macnica-philosophy-ai-new.png",
+     "alt": "Capture, Process, Communicate: The Philosophy Behind Everything We Build",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "heading_4_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Who is Macnica? Get to know us.",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Macnica Americas started as an FPGA design house, not a distributor. That engineering-first mindset makes us a boutique partner, not just another catalog distributor. Today, we bring that same hands-on expertise to Broadcast/ProAV, Robotics, Edge AI, Smart City &amp; Mobility, Healthcare, and Imaging &amp; Vision. This month, we're sharing who we are, how we think, and what we build.</p>\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/solutions/\"><b>Macnica Solutions</b></a></p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "image_8_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_8": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/macnica-image-for-june-nl-new.png",
+     "alt": "Advancing the Next Generation of X-Ray Imaging",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "image_9_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "image_9": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/news/macnica-image-for-june-nl-new.png",
+     "alt": "Who is Macnica? Get to know us",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    }
+   },
+   "container_botoes": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_861351158": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

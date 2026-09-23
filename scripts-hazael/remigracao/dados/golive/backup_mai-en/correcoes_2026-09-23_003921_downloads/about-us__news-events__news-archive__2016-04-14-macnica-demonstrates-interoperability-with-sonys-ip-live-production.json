@@ -1,0 +1,110 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "Macnica Demonstrates Interoperability with Sony's IP Live Production System at NAB Show 2016",
+ "showInLists": "true",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+ "cq:lastModified": "Wed Sep 23 2026 01:50:16 GMT+0000",
+ "jcr:description": "Video over IP Transport Solutions Allow Manufacturers to Support Sony’s Networked Media Interface on an FPGA SAN DIEGO, CA April 14, 2016 – Macnica Americas today announced that it will demonstrate its industry- leading video transport IP solutions interoperating with Sony’s IP Live Production System at NAB 2016 on April 18-21 in Las Vegas, NV. The interactive demonstrations will feature video generation, transport, simulated error conditions, and data capture.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2016-04-14-macnica-demonstrates-interoperability-with-sonys-ip-live-production",
+ "hideInNav": "true",
+ "pageTitle": "Macnica Demonstrates Interoperability with Sony's IP Live Production System at NAB Show 2016",
+ "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "Macnica Demonstrates Interoperability with Sony's IP Live Production System at NAB Show 2016",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Macnica Demonstrates Interoperability with Sony's IP Live Production System at NAB Show 2016",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "About Macnica Americas",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Macnica Americas is a fully franchised semiconductor distributor covering North America with expertise in design services, IP, applications support, and logistics. Macnica Americas is a division of Macnica Inc., a $3.2B global leader in semiconductor distribution and design services. The Macnica Americas IP portfolio includes solutions for high speed networking, broadcast video, DSP, and embedded applications.</p>\n<p>Find out more about Macnica Americas products and design services at <a href=\"/content/macnicaglobal2/americas\" target=\"_self\" rel=\"noopener noreferrer\">https://www.macnica.com/americas.</a></p>\n<p style=\"text-align: center;\">The Macnica Americas logo is a trademark of Macnica, Inc. Other trademarks are the property of their respective owners.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Downloads",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "download_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "download_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Macnica NAB Press Release Sony IP Live Interop Demo",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/downloads/Macnica NAB Press Release - Sony IP Live Interop Demo.pdf",
+     "sling:resourceType": "macnicaglobal2/components/content/download"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Video over IP Transport Solutions Allow Manufacturers to Support Sony’s Networked Media Interface on an FPGA",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>SAN DIEGO, CA April 14, 2016 – Macnica Americas today announced that it will demonstrate its industry- leading video transport IP solutions interoperating with Sony’s IP Live Production System at NAB 2016 on April 18-21 in Las Vegas, NV. The interactive demonstrations will feature video generation, transport, simulated error conditions, and data capture.</p>\n<p>“Macnica is delighted to include support for Sony’s IP Live Production System in its portfolio of high performance video transport IP,” said Marc Levy, Chief Technical Officer of Macnica Americas. “This capability enhances our video over IP transport, which is already one of the industry’s most feature-rich and flexible solutions.”</p>\n<p>“We are pleased to demonstrate our IP Live Production System at the NAB Show in collaboration with Macnica,” said Ryosuke Hayashi, Deputy Senior General Manager of Sony Corporation. “Macnica is one of the first third party solution providers to demonstrate support for Sony’s Networked Media Interface (NMI). Offering various development options is essential to bringing a wide variety of products by our partner companies to the IP Live Production System workflow.”</p>\n<p>Macnica’s SMPTE 2022 based transport solutions enable real-time transmission of video, audio, and metadata via standard IP networks. Macnica supports forward error correction and mapping for IP Live Production System workflows, which will allow customers to interoperate with Sony and other equipment implementing the IP Live Production System. Macnica also supports an open source Linux environment to allow third party video applications to run on the host processor.</p>\n<p>IP solutions from Macnica can be combined with SMPTE 2059 time synchronization IP and Sony’s Low Latency Video Codec (LLVC) IP to allow end equipment manufacturers to support Sony’s NMI on an FPGA. FPGA implementation allows for flexible application, field upgrades and post-deployment feature enhancements.</p>\n<p>Macnica Americas is demonstrating its video transport IP portfolio at NAB Show 2016at its booth (SU15514). To learn more about the future of video transport and switching product designs using Macnica solutions, visit Macnica web site at <a href=\"/content/macnicaglobal2/americas/\">macnica.com/americas</a>..</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   }
+  }
+ }
+}

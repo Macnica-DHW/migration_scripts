@@ -1,0 +1,952 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "saichand@anionmarketing.com",
+ "jcr:title": "Design Gateway FPGA IP Solutions & ASIC IP Solutions",
+ "manufacturer": "mai:manufacturers/design-gateway",
+ "businessCategories": [
+  "mai:business-categories/semiconductors"
+ ],
+ "productManufacturerRanking": "7",
+ "pwaOrientation": "any",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "pd_isModelNameLinkToPage": "false",
+ "jcr:created": "Mon Sep 21 2026 04:58:07 GMT+0000",
+ "pwaDisplay": "standalone",
+ "cq:lastModified": "Mon Sep 21 2026 10:33:35 GMT+0000",
+ "jcr:description": "Design Gateway delivers hardwired FPGA IP and ASIC IP solutions. Visit Macnica Americas for our broad selection of Design Gateway technology products.",
+ "pwaCachestrategy": "staleWhileRevalidate",
+ "pageTitle": "Design Gateway FPGA IP Solutions & ASIC IP Solutions",
+ "cq:tags": [
+  "mai:business-categories/semiconductors"
+ ],
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "saichand@anionmarketing.com",
+ "navTitle": "Design Gateway",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:createdBy": "admin",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:created": "Thu Jan 08 2026 18:32:09 GMT+0900",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Mon Sep 21 2026 05:50:54 GMT+0000",
+    "jcr:lastModified": "Mon Sep 21 2026 05:50:54 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 05:51:08 GMT+0000",
+     "jcr:lastModified": "Mon Sep 21 2026 05:51:08 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:51:15 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:51:15 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "embed": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "layout": "fixed",
+       "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+       "jcr:created": "Mon Sep 21 2026 05:51:28 GMT+0000",
+       "type": "embeddable",
+       "youtubeVideoId": "iqG80CRZTkU",
+       "jcr:lastModified": "Mon Sep 21 2026 05:52:32 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/embed"
+      }
+     },
+     "flexcontaineritem_1026669204": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:51:19 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:51:19 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Design Gateway",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:51:39 GMT+0000",
+       "type": "h1",
+       "jcr:lastModified": "Mon Sep 21 2026 05:51:45 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "title_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Overview",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:51:39 GMT+0000",
+       "type": "h3",
+       "jcr:lastModified": "Mon Sep 21 2026 05:52:04 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:52:14 GMT+0000",
+       "text": "<p>Design Gateway delivers hardwired FPGA IP Solutions that handles complex protocols without a host CPU or external DDR. The result is simpler designs, lower latency, and better power efficiency. Key domains include NVMe storage, TCP offload, UDP transport, and high-speed Ethernet connectivity for AI, analytics, trading, and industrial networking.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 05:52:21 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_308009472": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Mon Sep 21 2026 05:53:06 GMT+0000",
+    "jcr:lastModified": "Mon Sep 21 2026 05:53:17 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:title": "Why Macnica for Design Gateway FPGA IP Solutions?",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+     "type": "h3",
+     "jcr:lastModified": "Mon Sep 21 2026 05:53:39 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+     "text": "<ul>\r\n<li>Faster path to working silicon with Macnica engineering and supply chain support</li>\r\n</ul>\r\n<ul>\r\n<li>Boards, kits, and adapters to bring up NVMe, TCP, and UDP quickly</li>\r\n</ul>\r\n<ul>\r\n<li>Application guidance for Agilex based on proven demos and training material</li>\r\n</ul>\r\n",
+     "jcr:lastModified": "Mon Sep 21 2026 05:53:53 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_1002051375": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Mon Sep 21 2026 05:54:05 GMT+0000",
+    "jcr:lastModified": "Mon Sep 21 2026 05:54:05 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:title": "Core IP & Solutions",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+     "type": "h3",
+     "jcr:lastModified": "Mon Sep 21 2026 05:54:28 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+     "text": "<ul>\r\n<li>NVMe-IP Host Controller, standalone NVMe host with integrated PCIe bridge and internal buffering, no CPU and no external DDR required. Multi-SSD capable.</li>\r\n<li>TOE IP, 1G to 200G, TCP Offload in pure logic to avoid high-end CPUs, with Altera reference designs to reduce bring-up time.</li>\r\n<li>UDP 10G and 25G IP, CPU-less, deterministic transport that pairs with Agilex EMAC hard IP.</li>\r\n<li>High-Speed Ethernet Connectivity, 100G to 400G paths for node-to-node links in AI and data center networks.</li>\r\n</ul>\r\n",
+     "jcr:lastModified": "Mon Sep 21 2026 05:54:40 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_308009472_": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Mon Sep 21 2026 05:53:06 GMT+0000",
+    "jcr:lastModified": "Mon Sep 21 2026 05:53:17 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:title": "Platform Focus",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+     "type": "h3",
+     "jcr:lastModified": "Mon Sep 21 2026 05:54:58 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+     "text": "<ul>\r\n<li>Agilex 7, NVMe as external memory for high performance computing, with demo setups using MCIO SSD adapters</li>\r\n<li>Agilex 5 E-Series, improved TOE10G and UDP10G performance through 10G and 25G EMAC hard IP and Intel 7 efficiency</li>\r\n</ul>\r\n",
+     "jcr:lastModified": "Mon Sep 21 2026 05:55:14 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_1744932565": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Mon Sep 21 2026 05:55:47 GMT+0000",
+    "jcr:lastModified": "Mon Sep 21 2026 05:55:47 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:title": "Design Gateway Industries and Use Cases",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 05:56:11 GMT+0000",
+     "type": "h3",
+     "jcr:lastModified": "Mon Sep 21 2026 05:56:17 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 05:56:27 GMT+0000",
+     "jcr:lastModified": "Mon Sep 21 2026 05:56:27 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "AI and accelerated analytics",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+       "type": "h4",
+       "jcr:lastModified": "Mon Sep 21 2026 05:57:18 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+       "text": "<p>Move large datasets between accelerators and storage with predictable latency and minimal CPU load. Use TOE100G or TOE200G with UDP100G for transport, pair with NVMe-IP or muNVMe-IP for storage on Agilex 7.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 05:57:29 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_co": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Financial trading and market data",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+       "type": "h4",
+       "jcr:lastModified": "Mon Sep 21 2026 05:58:16 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+       "text": "<p>Hit tight-latency targets for order flow, feed handling, and audit logging. Use Design Gateway's TOE10G or TOE25G with the Low Latency EMAC, add tCAM-IP for filtering and NVMe-IP for capture, target Agilex 5 for appliances or Agilex 7 for 100G aggregation.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 05:58:22 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_co_1156185633": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Media, broadcast, and ProAV contribution",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+       "type": "h4",
+       "jcr:lastModified": "Mon Sep 21 2026 05:58:29 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+       "text": "<p>Feed encoders and recorders reliably and keep long recordings steady without CPU tuning. Use UDP10G or UDP25G for media streams with TOE10G for control, combine with NVMe-IP for recording on Agilex 5, move to Agilex 7 for 100G hubs.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 05:58:36 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_co_88607727": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Industrial vision and robotics",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+       "type": "h4",
+       "jcr:lastModified": "Mon Sep 21 2026 05:58:43 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+       "text": "<p>Move high frame rate image data into processing chains with deterministic timing. Use UDP10G or UDP25G with the low-latency EMAC, add NVMe-IP for burst buffers, deploy on Agilex 5 E-Series.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 05:58:50 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 06:02:16 GMT+0000",
+     "jcr:lastModified": "Mon Sep 21 2026 06:02:16 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331"
+     ]
+    },
+    "flexcontainer_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 05:56:27 GMT+0000",
+     "jcr:lastModified": "Mon Sep 21 2026 05:56:27 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Edge data logging and test instrumentation",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+       "type": "h4",
+       "jcr:lastModified": "Mon Sep 21 2026 05:59:14 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+       "text": "<p>Sustain continuous high speed capture in compact enclosures. Use NVMe-IP for steady writes and raNVMe-IP for random access logs, target Agilex 5.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 05:59:21 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_co": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Telecom and 5G core or edge",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+       "type": "h4",
+       "jcr:lastModified": "Mon Sep 21 2026 05:59:27 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+       "text": "<p>Scale packet processing and stateful transport while keeping CPU usage low. Use TOE25G or TOE100G with UDP25G or UDP100G, add TLS1.3-IP and AES-GCM for security, select Agilex 7 for core and Agilex 5 for edge.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 05:59:34 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_co_1156185633": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Smart infrastructure and transportation",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+       "type": "h4",
+       "jcr:lastModified": "Mon Sep 21 2026 05:59:40 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+       "text": "<p>Move video and sensor telemetry at the edge with consistent throughput. Use UDP10G or UDP25G with the low-latency EMAC, add NVMe-IP for evidence buffers and AES-GCM for secure transport, target Agilex 5.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 05:59:47 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_co_88607727": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Healthcare imaging and medical devices",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+       "type": "h4",
+       "jcr:lastModified": "Mon Sep 21 2026 05:59:55 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+       "text": "<p>Move large image streams into processing pipelines and store raw data for review with privacy controls. Use UDP10G or TOE10G for transport and NVMe-IP for capture, add AES-GCM and AES-XTS for protection, select Agilex 5 for devices and Agilex 7 for aggregation.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 06:00:02 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 06:02:16 GMT+0000",
+     "jcr:lastModified": "Mon Sep 21 2026 06:02:16 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331"
+     ]
+    },
+    "flexcontainer_copy_c": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 05:56:27 GMT+0000",
+     "jcr:lastModified": "Mon Sep 21 2026 05:56:27 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Aerospace and defense",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+       "type": "h4",
+       "jcr:lastModified": "Mon Sep 21 2026 06:01:06 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+       "text": "<p>Meet strict latency and security goals for mission data transport and capture. Use UDP25G or TOE25G for links and NVMe-IP for mission data, add AES-GCM, SHA-256, and tCAM-IP, target Agilex 7.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 06:01:12 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_co": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "title_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Cloud and storage appliances",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:33 GMT+0000",
+       "type": "h4",
+       "jcr:lastModified": "Mon Sep 21 2026 06:01:20 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 05:53:48 GMT+0000",
+       "text": "<p>Build NVMe and NVMe over TCP services with stable throughput and low CPU load. Use TOE100G or TOE200G with NVMeTCP-IP for remote targets, pair with NVMe-IP for local pools on Agilex 7.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 06:01:26 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_co_1156185633": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+     },
+     "flexcontaineritem_co_88607727": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 05:56:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+     }
+    }
+   },
+   "container_1205980724": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Mon Sep 21 2026 06:03:06 GMT+0000",
+    "jcr:lastModified": "Mon Sep 21 2026 06:03:14 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:title": "Product Lineup",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 06:03:27 GMT+0000",
+     "type": "h3",
+     "jcr:lastModified": "Mon Sep 21 2026 06:03:33 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "tabs": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 06:03:42 GMT+0000",
+     "jcr:lastModified": "Mon Sep 21 2026 06:04:19 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/tabs",
+     "item_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 1",
+      "cq:panelTitle": "Storage IP ",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498052331",
+       "1717498053499"
+      ],
+      "table": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 06:05:32 GMT+0000",
+       "text": "<table width=\"100%\" border=\"1\" cellpadding=\"1\" cellspacing=\"0\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Variant</th>\r\n<th style=\"text-align: center;\">Interface/ Speed</th>\r\n<th style=\"text-align: center;\">CPU Required</th>\r\n<th style=\"text-align: center;\">Key Features</th>\r\n<th style=\"text-align: center;\">Notable Performance/ Capacity</th>\r\n<th style=\"text-align: center;\">Altera Support</th>\r\n</tr><tr><td width=\"12%\" style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/nvme-ip-standalone-nvme-host-for-fpgas.html\">NVMe-IP (Gen5/ Gen4/ Gen3)</a></td>\r\n<td width=\"12%\" style=\"text-align: center;\">Base host controller</td>\r\n<td width=\"12%\" style=\"text-align: center;\">PCIe Gen5, Gen4, Gen3 to NVMe SSD</td>\r\n<td width=\"12%\" style=\"text-align: center;\">No</td>\r\n<td width=\"12%\" style=\"text-align: center;\">Standalone NVMe host, built-in PCIe bridge, 256 KB internal buffer, IDENTIFY/ READ/ WRITE/ SMART/ SECURE ERASE/ FLUSH; optional WRITE ZERO, SANITIZE</td>\r\n<td width=\"12%\" style=\"text-align: center;\">Sustained &gt; 11 GB/s with PCIe Gen5 SSD (platform dependent)</td>\r\n<td width=\"12%\" style=\"text-align: center;\">Agilex 7, Agilex 5 (via networked flows where applicable), Arria 10; see DG docs for board specifics</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/nvmeg4-ip-nvme-host-with-pcie-gen4-soft-ip.html\">NVMeG4-IP</a></td>\r\n<td style=\"text-align: center;\">Soft PCIe Gen4 inside</td>\r\n<td style=\"text-align: center;\">PCIe Gen4 soft IP + NVMe</td>\r\n<td style=\"text-align: center;\">No</td>\r\n<td style=\"text-align: center;\">Enables NVMe on devices without Gen4 hard IP, supports multi-SSD RAID topologies</td>\r\n<td style=\"text-align: center;\">High throughput with low FPGA resource usage</td>\r\n<td style=\"text-align: center;\">Where Gen4 soft PCIe is applicable</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/ranvme-ip-random-access-nvme-host.html\">raNVMe-IP</a></td>\r\n<td style=\"text-align: center;\">Random access optimized</td>\r\n<td style=\"text-align: center;\">PCIe Gen4/Gen3 to NVMe SSD</td>\r\n<td style=\"text-align: center;\">No</td>\r\n<td style=\"text-align: center;\">Optimized for random I/O, simple FIFO and register interfaces</td>\r\n<td style=\"text-align: center;\">&gt; 500 K IOPS random write on high-performance NVMe SSDs</td>\r\n<td style=\"text-align: center;\">Agilex 7, Arria 10 (per DG docs)</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/ip-software.html\">muNVMe-IP</a></td>\r\n<td style=\"text-align: center;\">Multi-user streaming</td>\r\n<td style=\"text-align: center;\">PCIe Gen4/Gen3 to NVMe SSD</td>\r\n<td style=\"text-align: center;\">No</td>\r\n<td style=\"text-align: center;\">Simultaneous multi-user access in hardware</td>\r\n<td style=\"text-align: center;\">High-throughput concurrent streaming to single NVMe SSD</td>\r\n<td style=\"text-align: center;\">Agilex family and others per DG docs</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/rmnvme-ip-random-access-plus-multi-user-nvme-host.html\">rmNVMe-IP</a></td>\r\n<td style=\"text-align: center;\">Random + multi-user</td>\r\n<td style=\"text-align: center;\">PCIe Gen4/Gen3 to NVMe SSD</td>\r\n<td style=\"text-align: center;\">No</td>\r\n<td style=\"text-align: center;\">Combines random access and multi-user features</td>\r\n<td style=\"text-align: center;\">Parallel read and write by multiple interfaces to one SSD</td>\r\n<td style=\"text-align: center;\">Agilex family and others per DG docs</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/sata-ip-sata-iii-storage-for-fpgas.html\">SATA-IP</a></td>\r\n<td style=\"text-align: center;\">Link layer core</td>\r\n<td style=\"text-align: center;\">SATA III 6 Gbps</td>\r\n<td style=\"text-align: center;\">No for link, application layer often uses CPU in reference design</td>\r\n<td style=\"text-align: center;\">Implements SATA link (and part of transport), connects to SSD/HDD without external PHY on supported devices</td>\r\n<td style=\"text-align: center;\">6 Gbps link layer</td>\r\n<td style=\"text-align: center;\">Arria 10, Cyclone 10 GX, Arria V, Cyclone V E</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/nvmetcp-ip-nvme-over-tcp-host-for-fpgas.html\">NVMeTCP-IP</a></td>\r\n<td style=\"text-align: center;\">NVMe over TCP host</td>\r\n<td style=\"text-align: center;\">Up to 100G network path to NVMe-oF storage</td>\r\n<td style=\"text-align: center;\">No</td>\r\n<td style=\"text-align: center;\">Host-side NVMe/TCP controller in hardware for remote NVMe-oF access</td>\r\n<td style=\"text-align: center;\">High-performance remote storage access; platform dependent</td>\r\n<td style=\"text-align: center;\">Agilex and others per DG docs</td>\r\n</tr></tbody></table>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 07:12:33 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      }
+     },
+     "item_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 2",
+      "cq:panelTitle": "Networking IP ",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498052331",
+       "1717498053499"
+      ],
+      "table": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 06:08:48 GMT+0000",
+       "text": "<table width=\"100%\" border=\"1\" cellpadding=\"1\" cellspacing=\"0\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Category</th>\r\n<th style=\"text-align: center;\">Interface/ Speed</th>\r\n<th style=\"text-align: center;\">Key Features</th>\r\n<th style=\"text-align: center;\">Latency/ Throughput</th>\r\n<th style=\"text-align: center;\">Altera Support</th>\r\n</tr><tr><td width=\"15%\" style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/toe200G-ip-200g-tcp-offload-engine.html\">TOE200G-IP</a></td>\r\n<td style=\"text-align: center;\">TCP Offload</td>\r\n<td style=\"text-align: center;\">200 GbE</td>\r\n<td style=\"text-align: center;\">Hardware TCP stack, multi-session (ADV), server and client modes, AXI4-Stream interface</td>\r\n<td style=\"text-align: center;\">Line rate when paired with appropriate MAC/PHY</td>\r\n<td style=\"text-align: center;\">Agilex family support via AXI and EMAC integration</td>\r\n</tr><tr><td width=\"10%\" style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/toe100g-ip-100g-tcp-offload-engine.html\">TOE100G-IP</a></td>\r\n<td width=\"10%\" style=\"text-align: center;\">TCP Offload</td>\r\n<td width=\"10%\" style=\"text-align: center;\">100 GbE</td>\r\n<td style=\"text-align: center;\">Hardware TCP stack, server and client modes, jumbo frame support</td>\r\n<td width=\"20%\" style=\"text-align: center;\">Line rate with DG reference designs</td>\r\n<td width=\"20%\" style=\"text-align: center;\">Agilex family support via AXI and EMAC integration</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/toe25g-ip-25g-tcp-offload-engine.html\">TOE25G-IP</a></td>\r\n<td style=\"text-align: center;\">TCP Offload</td>\r\n<td style=\"text-align: center;\">25 GbE</td>\r\n<td style=\"text-align: center;\">Hardware TCP, works with DG 10G25G EMAC or 25G EMAC/PCS+RS-FEC</td>\r\n<td style=\"text-align: center;\">Low-latency with DG EMAC</td>\r\n<td style=\"text-align: center;\">Agilex and prior Altera families per DG docs</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/toe10g-ip-10g-tcp-offload-engine.html\">TOE10G-IP</a></td>\r\n<td style=\"text-align: center;\">TCP Offload</td>\r\n<td style=\"text-align: center;\">10 GbE</td>\r\n<td style=\"text-align: center;\">Hardware TCP, simple data and control interfaces, optional DG low-latency EMAC</td>\r\n<td style=\"text-align: center;\">Low-latency, full duplex</td>\r\n<td style=\"text-align: center;\">Agilex 5 and 7 through EMAC integration</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/udp100g-ip-100g-udp-offload.html\">UDP100G-IP</a></td>\r\n<td style=\"text-align: center;\">UDP Offload</td>\r\n<td style=\"text-align: center;\">100 GbE</td>\r\n<td style=\"text-align: center;\">Hardware UDP/IP stack, FIFO data interface, programmable buffers</td>\r\n<td style=\"text-align: center;\">High throughput at line rate, platform dependent</td>\r\n<td style=\"text-align: center;\">Agilex 7 F-Series</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/udp25g-ip-25g-udp-offload.html\">UDP25G-IP</a></td>\r\n<td style=\"text-align: center;\">UDP Offload</td>\r\n<td style=\"text-align: center;\">25 GbE</td>\r\n<td style=\"text-align: center;\">Hardware UDP/IP stack, pairs with DG 10G25G EMAC or 25G EMAC/PCS + RS-FEC</td>\r\n<td style=\"text-align: center;\">Low-latency when used with DG EMAC</td>\r\n<td style=\"text-align: center;\">Agilex F-Series</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/udp10g-ip-10g-udp-offload.html\">UDP10G-IP</a></td>\r\n<td style=\"text-align: center;\">UDP Offload</td>\r\n<td style=\"text-align: center;\">10 GbE</td>\r\n<td style=\"text-align: center;\">Hardware UDP/IP stack, FIFO data interface, optional DG low latency EMAC</td>\r\n<td style=\"text-align: center;\">Tx 19.2 ns, Rx 44.8 ns through DG 10G EMAC (MAC latency)</td>\r\n<td style=\"text-align: center;\">Agilex 7 I-Series, Agilex 5 Sulfur, Arria 10</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/low-latency-emac-10g-and-25g.html\">Low-Latency EMAC 10G/25G</a></td>\r\n<td style=\"text-align: center;\">MAC / PCS</td>\r\n<td style=\"text-align: center;\">10 GbE, 25 GbE</td>\r\n<td style=\"text-align: center;\">Low resource MAC; 10G Tx 19.2 ns, Rx 44.8 ns; 25G EMAC/PCS + RS-FEC option</td>\r\n<td style=\"text-align: center;\">Very-low MAC latency; 25G loopback round-trip ~471 ns</td>\r\n<td style=\"text-align: center;\">Pairs with UDP/TOE on Agilex</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/quic10gc-ip-cpu-less-quic-offload-for-10g.html\">QUIC10GC-IP</a></td>\r\n<td style=\"text-align: center;\">QUIC Offload</td>\r\n<td style=\"text-align: center;\">10 GbE</td>\r\n<td style=\"text-align: center;\">Hardware QUIC client with TLS 1.3, integrated UDP/IP and ARP, multi-stream support, TLS_AES_128_GCM_SHA256, X25519 and HKDF-SHA256, RSA-PSS or ECDSA P-256 certificates, Avalon ST payload and register control</td>\r\n<td style=\"text-align: center;\">Line rate at 10G when paired with the appropriate MAC and PHY, resilient under loss and jitter with QUIC congestion control</td>\r\n<td style=\"text-align: center;\">Agilex family support via 10G EMAC and Avalon ST integration, reference designs available</td>\r\n</tr></tbody></table>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 06:52:54 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      }
+     },
+     "item_1789970643168": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "Security IP ",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498052331",
+       "1717498053499"
+      ],
+      "table": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 06:53:04 GMT+0000",
+       "text": "<table width=\"100%\" border=\"1\" cellpadding=\"1\" cellspacing=\"0\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Function</th>\r\n<th style=\"text-align: center;\">Interface/ Speed</th>\r\n<th style=\"text-align: center;\">Key Features</th>\r\n<th style=\"text-align: center;\">Typical Use</th>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/tls1-3-ip-cpu-less-tls-1-3-offload.html\">TLS1.3-IP</a></td>\r\n<td style=\"text-align: center;\">Transport layer security offload</td>\r\n<td style=\"text-align: center;\">1G to 100G</td>\r\n<td style=\"text-align: center;\">TLS 1.3 handshake and bulk crypto in hardware, integrates with DG networking IP</td>\r\n<td style=\"text-align: center;\">Industrial IoT, aerospace and defense, secure data in motion</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/aes256-xts-ip-data-at-rest-protection-for-nvme-and-sata.html\">AES256-XTS-IP</a></td>\r\n<td style=\"text-align: center;\">Block cipher for storage data at rest</td>\r\n<td style=\"text-align: center;\">Core-specific</td>\r\n<td style=\"text-align: center;\">AES-256 XTS engine in hardware</td>\r\n<td style=\"text-align: center;\">Disk and NVMe data at rest encryption</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/aes256-gcm-ip-authenticated-encryption-for-10g-and-25g.html\">AES256-GCM-IP</a></td>\r\n<td style=\"text-align: center;\">Authenticated encryption</td>\r\n<td style=\"text-align: center;\">Core-specific</td>\r\n<td style=\"text-align: center;\">AES-256 GCM with authentication tag</td>\r\n<td style=\"text-align: center;\">High speed network payload encryption</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/aes128-256-ip-compact-aes-building-block.html\">AES128/256-IP</a></td>\r\n<td style=\"text-align: center;\">Block cipher engine</td>\r\n<td style=\"text-align: center;\">Core-specific</td>\r\n<td style=\"text-align: center;\">AES-128 and AES-256 modes</td>\r\n<td style=\"text-align: center;\">Embedded crypto primitives</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/sha256-ip-hardware-sha-2-hash.html\">SHA256-IP</a></td>\r\n<td style=\"text-align: center;\">Hash function</td>\r\n<td style=\"text-align: center;\">Core-specific</td>\r\n<td style=\"text-align: center;\">SHA2/SHA256 hardware hashing</td>\r\n<td style=\"text-align: center;\">Integrity and authentication</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/tcam-ip-deterministic-packet-match-and-filter.html\">tCAM-IP</a></td>\r\n<td style=\"text-align: center;\">Ternary CAM</td>\r\n<td style=\"text-align: center;\">Core-specific</td>\r\n<td style=\"text-align: center;\">Ternary match for ACLs and filtering</td>\r\n<td style=\"text-align: center;\">Packet classification, security filtering</td>\r\n</tr></tbody></table>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 06:54:11 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      }
+     },
+     "item_1789970656436": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "Eval Hardware",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498052331",
+       "1717498053499"
+      ],
+      "table": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 06:54:47 GMT+0000",
+       "text": "<table width=\"100%\" border=\"1\" cellpadding=\"1\" cellspacing=\"0\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Category</th>\r\n<th style=\"text-align: center;\">Interface/ Speed</th>\r\n<th style=\"text-align: center;\">Capacity/ Ports</th>\r\n<th style=\"text-align: center;\">Use Case</th>\r\n<th style=\"text-align: center;\">Other</th>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/ab20-u2pci.html\">AB20-U2PCI</a></td>\r\n<td style=\"text-align: center;\">Adapter Board</td>\r\n<td style=\"text-align: center;\">PCIe x16 to 4x U.2/U.3 NVMe</td>\r\n<td style=\"text-align: center;\">Up to 4 U.2/U.3 SSDs</td>\r\n<td style=\"text-align: center;\">NVMe-IP evaluation and prototyping</td>\r\n<td style=\"text-align: center;\">PCIe Gen5 capable; works with AMD and Altera dev kits</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/ab19-m2pci.html\">AB19-M2PCI</a></td>\r\n<td style=\"text-align: center;\">Adapter Board</td>\r\n<td style=\"text-align: center;\">PCIe to 4x M.2 NVMe</td>\r\n<td style=\"text-align: center;\">Up to 4 M.2 SSDs</td>\r\n<td style=\"text-align: center;\">NVMe-IP evaluation and prototyping</td>\r\n<td style=\"text-align: center;\">PCIe Gen5 capable</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/ab17-m2fmc.html\">AB17-M2FMC</a></td>\r\n<td style=\"text-align: center;\">Adapter Board</td>\r\n<td style=\"text-align: center;\">FMC to 2x M.2 NVMe</td>\r\n<td style=\"text-align: center;\">Up to 2 M.2 SSDs</td>\r\n<td style=\"text-align: center;\">NVMe-IP bring up on FMC carrier boards</td>\r\n<td style=\"text-align: center;\">Works with supported FPGA dev kits</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/ab18-pciex16.html\">AB18-PCIeX16</a></td>\r\n<td style=\"text-align: center;\">Adapter Board</td>\r\n<td style=\"text-align: center;\">PCIe x16 crossover</td>\r\n<td style=\"text-align: center;\">x16 lane</td>\r\n<td style=\"text-align: center;\">PCIe crossover for NVMe-IP demos</td>\r\n<td style=\"text-align: center;\">Used in DG reference designs</td>\r\n</tr><tr><td style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway/ab07-usb3fmc-1-8vif.html\">AB07-USB3FMC-1.8VIF</a></td>\r\n<td style=\"text-align: center;\">Adapter Board</td>\r\n<td style=\"text-align: center;\">USB 3.0 to FMC (1.8V I/O)</td>\r\n<td style=\"text-align: center;\">Single FMC</td>\r\n<td style=\"text-align: center;\">General-purpose FMC USB 3.0 interface</td>\r\n<td style=\"text-align: center;\">I/O voltage 1.8V only</td>\r\n</tr></tbody></table>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 06:55:45 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      }
+     }
+    }
+   },
+   "container_545874353": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "mahendra@anionmarketing.com",
+    "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+    "jcr:created": "Mon Sep 21 2026 06:56:13 GMT+0000",
+    "jcr:lastModified": "Mon Sep 21 2026 06:56:13 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:title": "Get Started",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 06:56:27 GMT+0000",
+     "type": "h3",
+     "jcr:lastModified": "Mon Sep 21 2026 06:56:34 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 06:56:43 GMT+0000",
+     "text": "<p>Share your target link speed, packet rate, and SSD count. We will recommend IP cores, a resource estimate, and a demo path on your Agilex platform.</p>\r\n",
+     "jcr:lastModified": "Mon Sep 21 2026 06:56:49 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "mahendra@anionmarketing.com",
+     "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+     "jcr:created": "Mon Sep 21 2026 06:57:06 GMT+0000",
+     "jcr:lastModified": "Mon Sep 21 2026 06:57:06 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 06:57:12 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 06:57:12 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Contact Us for More Information",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 06:57:24 GMT+0000",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact-us",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Mon Sep 21 2026 06:59:18 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669230937"
+       ]
+      }
+     },
+     "flexcontaineritem_1057724731": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "mahendra@anionmarketing.com",
+      "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+      "jcr:created": "Mon Sep 21 2026 06:57:17 GMT+0000",
+      "jcr:lastModified": "Mon Sep 21 2026 06:57:17 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "mahendra@anionmarketing.com",
+       "jcr:title": "Request a Quote",
+       "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+       "jcr:created": "Mon Sep 21 2026 06:57:24 GMT+0000",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Mon Sep 21 2026 06:59:12 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        ""
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "cq:featuredimage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+  "jcr:lastModified": "Mon Sep 21 2026 07:51:58 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ },
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/designgateway/images/cq5dam-thumbnail-319-319.png",
+  "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+  "alt": "Design Gateway logo",
+  "jcr:lastModified": "Mon Sep 21 2026 07:51:58 GMT+0000",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ },
+ "pd_downloadAsset": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+  "jcr:lastModified": "Mon Sep 21 2026 07:51:58 GMT+0000"
+ },
+ "pd_productFamilyImage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+  "jcr:lastModified": "Mon Sep 21 2026 07:51:58 GMT+0000"
+ },
+ "pd_technologyImage": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "mahendra@anionmarketing.com",
+  "jcr:lastModified": "Mon Sep 21 2026 07:51:58 GMT+0000"
+ }
+}

@@ -1,0 +1,266 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "Video Compression & Technology Services Distributor",
+ "showInLists": "true",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 23 2026 02:29:50 GMT+0000",
+ "cq:lastModified": "Wed Sep 23 2026 01:47:30 GMT+0000",
+ "jcr:description": "Macnica Americas, a leading technology services distributor, offers cutting-edge solutions like video compression technologies. Learn about our solutions here.",
+ "keywords": "Macnica Americas, technology solutions, distribution",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/company-profile",
+ "pageTitle": "Company Profile",
+ "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "Company Profile",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498056876"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Company Profile",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "type": "h2",
+     "jcr:lastModified": "Tue Sep 22 2026 19:33:50 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "1718280235037"
+     ]
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Empowering Efficient Innovation",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "textwithimage": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/service/macnica sign jp.jpg",
+     "imageRatio": "40",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "alt": "macnica building",
+     "text": "<p>Macnica Americas is a solutions company that partners with innovators to bring advanced technology products from concept to market. As the North American division of Macnica Holdings, Inc. - a $10B global leader headquartered in Yokohama, Japan - we deliver more than just components. We provide deep technical expertise, engineering services, and proprietary technologies to help customers design, develop, and deploy differentiated solutions.</p>\r\n<p>Our core strength lies in supporting OEMs across key verticals such as Automotive &amp; Mobility, ProAV &amp; Broadcast, Industrial, and Imaging. From early architecture through to full production, our engineering teams collaborate closely with customers to solve design challenges, accelerate development cycles, and deliver purpose-built systems that optimize performance, scalability, and cost.</p>\r\n<p>With a rich portfolio that includes IP cores, video transport and compression technologies, FPGA expertise, sensor integration, and display customization, Macnica Americas transforms complex requirements into tailored, production-ready solutions. Our Automotive Division further extends this capability with specialized support for vehicle networking, autonomous systems, and in-cabin technologies.</p>\r\n<p>Part of a globally integrated network, Macnica Americas enables customers to access world-class innovation and logistics - locally and internationally. We are headquartered in San Diego, with regional offices and representatives across North America to provide high-touch, high-impact service wherever it's needed.</p>\r\n<p>Macnica Americas: Engineering Tomorrow’s Technology, Today.</p>\r\n",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "jcr:lastModified": "Tue Sep 22 2026 22:01:35 GMT+0000",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+     "isDecorative": "false",
+     "textIsRich": "true",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "1718154328384",
+      "1718154382437",
+      "1783061491236"
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/service/macnica sign jp.jpg",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Tue Sep 22 2026 22:01:35 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    }
+   },
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+    "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+    "jcr:created": "Tue Sep 22 2026 22:08:01 GMT+0000",
+    "jcr:lastModified": "Tue Sep 22 2026 22:08:33 GMT+0000",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:created": "Tue Sep 22 2026 22:05:23 GMT+0000",
+     "jcr:lastModified": "Tue Sep 22 2026 22:05:23 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem_1382977139": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 22:06:04 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 22:06:04 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "heading_3_wrap": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "backgroundColor": "#f7f7f7",
+       "cq:styleIds": [
+        "1717498052331",
+        "1717498053499"
+       ],
+       "heading_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Delivering Quality to You One Box at a Time",
+        "type": "h2",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>As a leading global technology services distributor, Macnica Group takes pride in providing logistics services with quality and agility.</p>\n<p>Macnica&nbsp;Group franchises with more than 200 worldwide suppliers as the primary authorized distributor to serve customers large and small in the Americas, Europe, and Asia Pacific countries.</p>\n<p>Macnica Americas has a distribution warehouse in California with an ISO9001:2015 certified QMS system and uses third-party logistics (3PL) warehouse in Huntsville, AL with an ISO9001:2015 certified QMS system for automotive customers.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 22:05:38 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 22:05:38 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/service/SQA-ISO9001-2015 color_2.png",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:created": "Tue Sep 22 2026 22:05:48 GMT+0000",
+       "alt": "macnica americas iso certificate logo",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Tue Sep 22 2026 22:07:42 GMT+0000",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "",
+        "1726800548797"
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/service/SQA-ISO9001-2015 color_2.png",
+        "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+        "jcr:lastModified": "Tue Sep 22 2026 22:07:42 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:created": "Tue Sep 22 2026 22:05:56 GMT+0000",
+       "text": "<p style=\"text-align: center;\">Macnica Americas, Inc.<br>\r\n2156 Zanker Rd.<br>\r\nSan Jose, CA 95131<br>\r\nISO 9001:2015 w/o Design<br>\r\nCert # 15.093.1</p>\r\n",
+       "jcr:lastModified": "Tue Sep 22 2026 22:06:48 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "download_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "download_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "ISO Certificate of Program 01 24",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/downloads/ISO Certificate of Program - 01-24.pdf",
+     "sling:resourceType": "macnicaglobal2/components/content/download"
+    }
+   },
+   "download_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "download_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "macnica americas standard terms and conditions of sale",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/downloads/macnica-americas-standard-terms-and-conditions-of-sale.pdf",
+     "sling:resourceType": "macnicaglobal2/components/content/download"
+    }
+   },
+   "container_botoes": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_861351158": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "cq:featuredimage": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/about-us/gettyimages-1416784188.jpeg",
+  "sling:resourceType": "macnicaglobal2/components/content/image"
+ }
+}

@@ -1,0 +1,245 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "Mpression FPGA Boards and Interface Cards (HSMC/FMC)",
+ "manufacturer": "mai:manufacturer/mpression",
+ "businessCategories": "mai:business-categories/boards-modules",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 02 2026 13:57:43 GMT+0000",
+ "cq:lastModified": "Tue Sep 22 2026 01:18:57 GMT+0000",
+ "jcr:description": "Check Macnica Americas' Mpression FPGA boards and interface daughter cards. Mpression strives to provide superior solutions with expertise in key technologies",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/mpression",
+ "pageTitle": "Mpression",
+ "cq:tags": "mai:business-categories/boards-modules",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "Mpression",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_titulo": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "container_1632532424": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>FPGA Base Boards and Interface Daughter Cards (HSMC/FMC)</h3>\r\n<p><span style=\"letter-spacing: 0px;\">The Mpression brand showcases solutions and technologies that the Macnica Group develops for its customers worldwide.</span></p>\r\n<p><span style=\"letter-spacing: 0px;\">Mpression strives to provide a superior package of solutions leveraging expertise in key technologies such as FPGAs, processors, and interface devices, together with system-level technologies such as power and clock trees. Mpression completes the offering with expertise in signal integrity, intellectual property, and software support.</span></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_1671975706": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title_table": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Machine Vision Development Kit",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "table": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table height=\"100%\" width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><th>P/N</th>\r\n<th>Description</th>\r\n<th>Images</th>\r\n</tr><tr><td><b>Luminous Platform</b></td>\r\n<td><p>Macnica's latest imaging and vision product evaluation and development environment.&nbsp;</p>\r\n<p>The <b>Macnica Luminous Platform</b> is an innovative environment designed to help imaging and vision product developers efficiently evaluate Sony image sensors and Macnica's SLVS-EC IP core package using FPGA development kits.</p>\r\n<p>&nbsp;</p>\r\n<p><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/luminous-platform/\">More info</a></b></p>\r\n</td>\r\n<td><img width=\"223\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/luminous-imx537-slvs-ec-sensor-board.jpg\"></td>\r\n</tr><tr><td width=\"30%\" valign=\"top\"><p><b>EasyMVC</b></p>\r\n<p><b>$ ASK</b></p>\r\n<p>&nbsp;</p>\r\n<p><b><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\">Contact</a></b></p>\r\n</td>\r\n<td><p>Macnica’s modular Machine Vision Camera Development Kit, EasyMVC, enables streamlined evaluation and development of machine vision cameras&nbsp; based on Sony image sensors and Altera FPGAs, with support for multiple machine vision network interfaces including USB3 Vision and HDMI 2.0.</p>\r\n<p>&nbsp;</p>\r\n<p><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/easymvc/\">More info</a></b></p>\r\n</td>\r\n<td valign=\"top\"><img width=\"223\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/easyMVC_CXP20_1200_1.png\"></td>\r\n</tr></tbody></table>",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    }
+   },
+   "container_1069044739": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title_table": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "SoC FPGA Base Boards",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "table": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table height=\"100%\" width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><th>P/N</th>\r\n<th>Description</th>\r\n<th>Images</th>\r\n</tr><tr><td width=\"30%\" valign=\"top\"><p><b>Mpression <i>Borax - </i>System On Module with Altera Cyclone V SoC FPGA</b></p>\r\n<p>There are multiple configurations of this product. Please refer to the ordering info page: <b><a href=\"https://www.m-pression.com/solutions/boards/fpga-eval-dev/borax-som\">Ordering Info</a></b></p>\r\n</td>\r\n<td><p>Borax SOM is a system on module card integrating an Altera Cyclone® V SoC and necessary memory, power and external interfaces on a very small size card.</p>\r\n<p>&nbsp;</p>\r\n<p>The modules are available in different configurations to meet your production requirements. A base board that interfaces to the SOM for development is also available.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;<b><a href=\"https://www.m-pression.com/solutions/boards/fpga-eval-dev/borax-som\">More Info</a></b></p>\r\n</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/Borax SOM 1.jpg\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/Borax board 1.jpg\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression <i>Sodia - </i>Cyclone V ST SoC FPGA Evaluation Board</b></p>\r\n<p><b>&nbsp;$980.00</b></p>\r\n</td>\r\n<td><p>The Mpression Sodia board is a development platform for embedded system designs with Altera Cyclone V ST SoC FPGAs featuring 6.144 Gbps transceivers. The Sodia FPGA board is an upward-compatible superset of the Mpression Helio Kit allowing Helio Kit users to easily upgrade their development environment with more functionality.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;<a href=\"https://www.m-pression.com/solutions/boards/fpga-eval-dev/sodia-board\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/images/products/Sodia%20board%20(300).jpg\"></td>\r\n</tr></tbody></table>",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    }
+   },
+   "container_1327218927": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title_table_916582687": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Interface Daughter Cards",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "table_916582687": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th>P/N</th>\r\n<th>Description</th>\r\n<th>Images</th>\r\n</tr><tr><td width=\"30%\" valign=\"top\"><p><b>Mpression USB 3.0 HSMC Daughter Card</b></p>\r\n<p><b>$650</b></p>\r\n</td>\r\n<td><p>The Mpression USB 3.0 Interface Board with a Cypress USB3.0 controller &quot;EZ-USB ®FX3™&quot; and an Altera High-Speed Mezzanine Connector (HSMC), allows this board to work with various Altera development kits via HSMC. By using this USB 3.0 Interface Board, customers can enable USB 3.0 transmission in their system.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/usb-30-hsmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img src=\"https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/images/products/USB%203.0%20SV%20(300).png\" alt=\"\" width=\"258\" height=\"NaN\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression 10/100M Ethernet Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>The 10/100M Ethernet Card is a daughter card to use with base boards with Altera FPGAs to attain 10/100MbitEthernet. This daughter card uses Micrel's Ethernet PHY, LDO, clock device and a HSMC connector. By connecting with an Altera FPGA based base board, FPGA designers can quickly start designs and evaluations using 10/100Mbit Ethernet interface.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/10100m-ethernet-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/100mether-0.png\" alt=\"\" width=\"258\" height=\"NaN\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression Gigabit Ethernet Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>The Gigabit Ethernet Card is a daughter card to use with base boards with Altera FPGAs to attain Gigabit Ethernet. This daughter card uses Micrel's Ethernet PHY, LDO, clock device and a HSMC connector. By connecting with an Altera FPGA based base board, FPGA designers can quickly start designs and evaluations using Gigabit Ethernet interface.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/gigabit-ethernet-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/GbitEther_0.jpg\" alt=\"\" width=\"258\" height=\"NaN\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression HDMI 2.0 FMC/HSMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>The HDMI 2.0 FMC Card is an FPGA Mezzanine Connector (FMC) daughter card that complies with FMC (Altera LPC+) standard. It provides HDMI 2.0 interfaces to FPGA evaluation boards with FMC such as Altera Arria®10 GX FPGA Development Kit. This card has been verified connectivity with Altera Arria®10 GX FPGA Development Kit.</p>\r\n<p>&nbsp;</p>\r\n<p>The HDMI 2.0 HSMC Card has the same functionality but with HSMC connector to connect with development kits with Altera's low-cost FPGAs such as Cyclone or Max series.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/hdmi-20-fmchsmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><p><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/HDMI_FMC_1s_350.png\" alt=\"\" width=\"258\" height=\"NaN\"></p>\r\n<p><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/HDMI_HSMC_1s_350.png\" alt=\"\" width=\"258\" height=\"NaN\"></p>\r\n</td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression 12G-SDI FMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><b><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\">Contact</a></b></p>\r\n</td>\r\n<td><p>The 12G-SDI FMC Card is a daughter card to provide 4 channels of multi-rate SDI interface (SD-SDI/HD-SDI/3G-SDI/6G-SDI/12G-SDI). These expansions are possible by combining Altera's Arria® 10 GX FPGA Development Kit and other FPGA boards compliant with the FPGA Mezzanine Card (FMC) Standard.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/node/193\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/12G-SDI_3d_0.png\" alt=\"\" width=\"258\" height=\"NaN\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression 3G-SDI FMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>The 3G-SDI FMA Card is an FMC daughter card supporting Altera's LPC+ FMC standard.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/3g-sdi-fmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/3GSDI_Card_T.png\" alt=\"\" width=\"258\" height=\"NaN\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression SFP+ x4 FMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>The SFP+ x4 FMC Card is an FPGA Mezzanine Connector (FMC) daughter card with four cages of SFP+ interface.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/sfp-x4-fmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/SFPplusx4_FMC_T.png\" alt=\"\" width=\"258\" height=\"NaN\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression Vx1 FMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>Vx1 FMC Card is an FMC daughter card to support V-by-One HS standard with FPGA base boards with FMC connectors. Mpression offers <a href=\"/content/macnicaglobal2/americas/mai/en/products/ip-software/v-by-oner-hs-ip/\">V-by-One HS IP (both Tx IP and Rx IP)</a>. The V-by-One®HS is a high speed interface standard developed and specified by THine Electronics, Inc., initially for flat panel display markets and now used for various data transfer functions in many applications across markets.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/v-one-hs-fmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/Vx1 FMC Daughter Card.png\" alt=\"\" width=\"258\" height=\"NaN\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression Vx1 HS HSMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>V-by-One® HS is a leading-edge high-speed interface technology for flat panel display market developed by THine Electronics, Inc.</p>\r\n<p><br>\r\nThis daughter card can be used to verify V-by-One® HS Interface by connecting to HSMC connector of Altera FPGA development board with V-by-One® HS Tx/Rx IP implemented.</p>\r\n<p><br>\r\nIn addition to V-by-One® HS Tx/Rx IP, you can also verify transceivers built in FPGA.<br>\r\nFor your V-by-One® HS verification, in addition to preparing the Altera FPGA Development Board, you need to obtain a license (for evaluation or production) of <a href=\"https://www.m-pression.com/solutions/hardware/v-by-one-hs-fpga-solution\">Macnica V-by-One® HS Tx/Rx IP</a> in advance.</p>\r\n<p><br>\r\nThe development board verified by Macnica for connection with this card is <a href=\"https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=139&amp;No=745\">Altera Cyclone IV GX FPGA Development Kit</a>.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/v-one-hs-hsmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/Vx1HS_HSMC_top_400.jpg\" alt=\"\" width=\"258\" height=\"NaN\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression MMC+ Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>MMC + Card is the eMMC evaluatuion card of the Multimedia plus card type. This card is mounted a Micron 4GByte eMMC (embedded Multi Media Card). This card is able to evaluate the various FPGA and SoC evaluation board with MMC or SD interface slot.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/mmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><p><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/mmcplus-front.png\" alt=\"\" width=\"258\" height=\"NaN\"></p>\r\n<p><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/mmcplus-back.png\" alt=\"\" width=\"258\" height=\"NaN\"></p>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression SMP FMC Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a><br>\r\n</p>\r\n</td>\r\n<td><p>FMC daughter card with SMP connector for evaluation of High Speed Serial Transceivers in FPGA. This card is an FPGA Mezzanine Connector (FMC) daughter card that complies with HPC standard. By inserting this card into an FPGA evaluation board, you can evaluate high-speed serial transceivers of the FPGA by utilizing a variety of FPGA functions.</p>\r\n<p>&nbsp;</p>\r\n<p>The evaluation board which has been verified to connect with this card so far is the Altera Arria® 10 GX FPGA development kit.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Note:</b> Altera Arria® 10 GX FPGA Development Kit can be purchased separately.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/smp-fmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td><p><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/smp-fmc-card-t.png\" alt=\"\" width=\"258\" height=\"NaN\"><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/smp-fmc-card-b.png\" alt=\"\" width=\"258\" height=\"NaN\"></p>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression TI GE PHY HSMC Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td>HSMC daughter card for Gigabit Ethernet evaluation equipped with Texas Instruments 1000Base-T Ethernet PHY. This card is a function expansion daughter card compliant with the High Speed Mezzanine Card standard. This card is equipped with a <a href=\"http://www.ti.com/product/DP83867IR\">1000Base-T Ethernet PHY manufactured by Texas Instruments</a>. By inserting it into the evaluation board, you can evaluate the Gigabit Ethernet using various FPGA functions. The evaluation board that has been verified for connection with this card is the <a href=\"https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=167&amp;No=843\">Altera Cyclone® V GT FPGA Development Kit</a>.</td>\r\n<td valign=\"top\"><img src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/TI_GE_PHY_HSMC_CARD_front_t.png\" alt=\"\" width=\"258\" height=\"NaN\"></td>\r\n</tr></tbody></table>",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "title_table": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "FPGA Base Boards",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "table": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table height=\"100%\" width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><th>P/N</th>\r\n<th>Description</th>\r\n<th>Images</th>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression <i>Nitro </i>- Cyclone V GX I/O Expansion Base Board</b></p>\r\n<p><b>$2150.00</b></p>\r\n<p>&nbsp;</p>\r\n</td>\r\n<td><p>The Mpression Nitro board is an evaluation board developed by Macnica for the Altera Cyclone V GX FPGA. The Mpression Nitro board has components such as an Altera Cyclone V GX FPGA, DDR3 memories and clock ICs, and the three HSMC connectors. Users can be quickly prototyping FPGA-based multi-input/output applications in combination with various I/O daughter cards.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/fpga-eval-dev/nitro-expansion-base-board\"><b>More Info</b></a><br>\r\n</p>\r\n</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/Nitro front.png\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression <i>Beryll</i> - Cyclone V GX FPGA Base Board</b></p>\r\n<p><b>$348.00</b></p>\r\n<p>&nbsp;</p>\r\n</td>\r\n<td><p>The Mpression Beryll board is an evaluation board developed by Macnica for the Altera Cyclone V GX FPGA.&nbsp; Users can evaluate the various features of the Cyclone V GX FPGA before developing their own embedded systems. Additionally, there are a variety of interfaces and expansion mezzanine connectors on the Beryll board.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/fpga-eval-dev/beryll-board\"><b>More Info</b></a><br>\r\n</p>\r\n</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/images/products/Beryll%20board%20(300).png\"></td>\r\n</tr></tbody></table>",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "table_499373802": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table height=\"100%\" width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\r\n<tbody><tr><th>P/N</th>\r\n<th>Description</th>\r\n<th>Images</th>\r\n</tr><tr><td valign=\"top\" width=\"30%\"><p><b>Mpression USB 3.0 HSMC Daughter Card</b></p>\r\n<p><b>$650</b></p>\r\n</td>\r\n<td><p>The Mpression USB 3.0 Interface Board with a Cypress USB3.0 controller &quot;EZ-USB ®FX3™&quot; and Altera's High-Speed Mezzanine Connector (HSMC), allows this board to work with various Altera development kits via HSMC. By using this USB 3.0 Interface Board, customers can enable USB 3.0 transmission in their system.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/usb-30-hsmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/images/products/USB%203.0%20SV%20(300).png\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression 10/100M Ethernet Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>The 10/100M Ethernet Card is a daughter card to use with base boards with Altera FPGAs to attain 10/100Mbit Ethernet. This daughter card uses Micrel's Ethernet PHY, LDO, clock device and a HSMC connector. By connecting with an Altera FPGA-based base board, FPGA designers can quickly start designs and evaluations using 10/100Mbit Ethernet interface.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/10100m-ethernet-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/100mether-0.png\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression Gigabit Ethernet Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>The Gigabit Ethernet Card is a daughter card to use with base boards with Altera FPGAs to attain Gigabit Ethernet. This daughter card uses Micrel's Ethernet PHY, LDO, clock device and a HSMC connector. By connecting with an Altera FPGA-based base board, FPGA designers can quickly start designs and evaluations using Gigabit Ethernet interface.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/gigabit-ethernet-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/GbitEther_0.jpg\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression HDMI 2.0 FMC/HSMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>The HDMI 2.0 FMC Card is an FPGA Mezzanine Connector (FMC) daughter card that complies with FMC (Altera PC+) standard. It provides HDMI 2.0 interfaces to FPGA evaluation boards with FMC such as Altera Arria®10 GX FPGA Development Kit. This card has been verified connectivity with Altera Arria®10 GX FPGA Development Kit.</p>\r\n<p>&nbsp;</p>\r\n<p>The HDMI 2.0 HSMC Card has the same functionality but with HSMC connector to connect with development kits with Altera's low-cost FPGAs such as Cyclone or Max series.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/hdmi-20-fmchsmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><p><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/HDMI_FMC_1s_350.png\"></p>\r\n<p><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/HDMI_HSMC_1s_350.png\"></p>\r\n</td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression 12G-SDI FMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><b><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\">Contact</a></b></p>\r\n</td>\r\n<td><p>The 12G-SDI FMC Card is a daughter card to provide 4 channels of multi-rate SDI interface (SD-SDI/HD-SDI/3G-SDI/6G-SDI/12G-SDI). These expansions are possible by combining Altera's Arria® 10 GX FPGA Development Kit and other FPGA boards compliant with the FPGA Mezzanine Card (FMC) Standard.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/node/193\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/12G-SDI_3d_0.png\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression 3G-SDI FMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>The 3G-SDI FMA Card is an FMC daughter card supporting Altera's LPC+ FMC standard.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/3g-sdi-fmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/3GSDI_Card_T.png\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression SFP+ x4 FMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>The SFP+ x4 FMC Card is an FPGA Mezzanine Connector (FMC) daughter card with four cages of SFP+ interface.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/sfp-x4-fmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/SFPplusx4_FMC_T.png\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression Vx1 FMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>Vx1 FMC Card is an FMC daughter card to support V-by-One HS standard with FPGA base boards with FMC connectors. Mpression offers <a href=\"/content/macnicaglobal2/americas/mai/en/products/ip-software/v-by-oner-hs-ip/\">V-by-One HS IP (both Tx IP and Rx IP)</a>. The V-by-One®HS is a high speed interface standard developed and specified by THine Electronics, Inc., initially for flat panel display markets and now used for various data transfer functions in many applications across markets.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/v-one-hs-fmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/Vx1 FMC Daughter Card.png\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression Vx1 HS HSMC Daughter Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>V-by-One® HS is a leading-edge high-speed interface technology for flat panel display market developed by THine Electronics, Inc.</p>\r\n<p><br>\r\nThis daughter card can be used to verify V-by-One® HS Interface by connecting to HSMC connector of Altera FPGA development board with V-by-One® HS Tx/Rx IP implemented.<br>\r\nIn addition to V-by-One® HS Tx/Rx IP, you can also verify transceivers built in FPGA.</p>\r\n<p><br>\r\nFor your V-by-One® HS verification, in addition to preparing the Altera FPGA Development Board, you need to obtain a license (for evaluation or production) of <a href=\"https://www.m-pression.com/solutions/hardware/v-by-one-hs-fpga-solution\">Macnica V-by-One® HS Tx/Rx IP</a> in advance.</p>\r\n<p><br>\r\nThe development board verified by Macnica for connection with this card is <a href=\"https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=139&amp;No=745\">Altera Cyclone IV GX FPGA Development Kit</a>.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/v-one-hs-hsmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/Vx1HS_HSMC_top_400.jpg\"></td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression MMC+ Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td><p>MMC + Card is the eMMC evaluatuion card of the Multimedia plus card type. This card is mounted a Micron 4GByte eMMC (embedded Multi Media Card). This card is able to evaluate the various FPGA and SoC evaluation board with MMC or SD interface slot.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/mmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td valign=\"top\"><p><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/mmcplus-front.png\"></p>\r\n<p><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/mmcplus-back.png\"></p>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression SMP FMC Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a><br>\r\n</p>\r\n</td>\r\n<td><p>FMC daughter card with SMP connector for evaluation of High Speed Serial Transceivers in FPGA. This card is an FPGA Mezzanine Connector (FMC) daughter card that complies with HPC standard. By inserting this card into an FPGA evaluation board, you can evaluate high-speed serial transceivers of the FPGA by utilizing a variety of FPGA functions.</p>\r\n<p>&nbsp;</p>\r\n<p>The evaluation board which has been verified to connect with this card so far is the <a href=\"https://www.mouser.com/new/altera/intel-arria-10-gx-fpga-dev-kit/?srsltid=AfmBOoofdgjcDgsI6ylqGhVI0-CnpuCB4z8JumKmIYEq8qmv1Y4MaU61\">Altera Arria® 10 GX FPGA development kit</a>.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Note:</b> Altera Arria® 10 GX FPGA Development Kit can be purchased separately.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://www.m-pression.com/solutions/boards/daughter-cards/smp-fmc-card\"><b>More Info</b></a></p>\r\n</td>\r\n<td><p><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/smp-fmc-card-t.png\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/smp-fmc-card-b.png\"></p>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr><tr><td valign=\"top\"><p><b>Mpression TI GE PHY HSMC Card</b></p>\r\n<p><b>ASK $</b></p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form/\"><b>Contact</b></a></p>\r\n</td>\r\n<td>HSMC daughter card for Gigabit Ethernet evaluation equipped with Texas Instruments 1000Base-T Ethernet PHY. This card is a function expansion daughter card compliant with the High Speed Mezzanine Card standard. This card is equipped with a <a href=\"http://www.ti.com/product/DP83867IR\">1000Base-T Ethernet PHY manufactured by Texas Instruments</a>. By inserting it into the evaluation board, you can evaluate the Gigabit Ethernet using various FPGA functions. The evaluation board that has been verified for connection with this card is the <a href=\"https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=167&amp;No=843\">Altera Cyclone® V GT FPGA Development Kit</a>.</td>\r\n<td valign=\"top\"><img width=\"258\" alt=\"\" src=\"https://www.macnica.com/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/mpression/TI_GE_PHY_HSMC_CARD_front_t.png\"></td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    }
+   },
+   "container_1869634760": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498056876"
+    ],
+    "list_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "showModificationDate": "false",
+     "tagsMatch": "any",
+     "linkItems": "true",
+     "parentPage": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/mpression",
+     "sortOrder": "asc",
+     "showDescription": "false",
+     "sling:resourceType": "macnicaglobal2/components/content/list",
+     "childDepth": "1",
+     "listFrom": "children",
+     "cq:styleIds": [
+      "1717649397305",
+      "1717648336486"
+     ]
+    }
+   },
+   "container_76488194_c": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title_text": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "For more information:",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "flexcontainer_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_861351158": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Supplier Website",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,828 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "Transcend Memory Products, Memory Modules, SSDs, & More",
+ "manufacturer": "mai:manufacturer/transcend",
+ "businessCategories": "mai:business-categories/boards-modules",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 02 2026 13:57:43 GMT+0000",
+ "cq:lastModified": "Tue Sep 22 2026 01:23:48 GMT+0000",
+ "jcr:description": "Discover Transcend memory modules and solid-state drives (SSDs) for reliable and high-performance storage solutions. See solutions we sell at Macnica Americas!",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend",
+ "pageTitle": "Transcend",
+ "cq:tags": "mai:business-categories/boards-modules",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "Transcend",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_titulo": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "container_273709292": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "embed": {
+       "jcr:primaryType": "nt:unstructured",
+       "url": "https://www.youtube.com/watch?v=8qv_2pIz6s4",
+       "type": "url",
+       "sling:resourceType": "macnicaglobal2/components/content/embed",
+       "cq:styleIds": "1719541568246",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "10"
+        }
+       }
+      }
+     },
+     "flexcontaineritem_45562908": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3>A Global Leader in High-Quality Digital Storage and Memory Solutions</h3>\r\n<p>Transcend is a global leader in digital storage, multimedia, and industrial products, operating 12 offices worldwide. It designs, manufactures, and sells a broad portfolio of 2,000+ products - including memory modules, flash cards, USB drives, SSDs, and industrial-grade solutions - to meet virtually any memory need.</p>\r\n<p>The company is committed to strict Total Quality Control, becoming the first Taiwan-based memory module maker to earn ISO 9001, ISO 14001, and QC080000 certifications. Every product undergoes rigorous testing to ensure reliability and long-term performance.</p>\r\n<p>Transcend delivers world-class embedded SSD and DRAM modules with industry-leading quality and availability.</p>\r\n<p>&nbsp;</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_406860355": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Key Highlights",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>15 high-speed SMT lines; 15 million pcs/month capacity</li>\r\n</ul>\r\n<ul>\r\n<li>Fully automated 35,000 m² factory floor</li>\r\n</ul>\r\n<ul>\r\n<li>In-house R&amp;D and strict BOM control</li>\r\n</ul>\r\n<ul>\r\n<li>Strategic partnership with Macnica Americas for embedded solutions</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_1759409534": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Embedded Applications",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "flexcontainer_1222797221": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800456497",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "container_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": "1717498055877",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/transcend/images/transcend-transport.png",
+        "alt": "Panel car",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": "1717565101174",
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Transportation</h3>\r\n<ul>\r\n<li>In-vehicle infotainment systems</li>\r\n<li>Navigation systems</li>\r\n</ul>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "3"
+       }
+      }
+     },
+     "flexcontaineritem_1775871816": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "container_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": "1717498055877",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/transcend/images/transcend-health.png",
+        "alt": "doctor and a nurse",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1717565101174",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Healthcare</h3>\r\n<ul>\r\n<li>Medical tablets</li>\r\n<li>MRI and ultrasound systems</li>\r\n</ul>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     },
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "cq:responsive": {
+     "jcr:primaryType": "nt:unstructured",
+     "default": {
+      "jcr:primaryType": "nt:unstructured",
+      "offset": "0",
+      "width": "12"
+     }
+    },
+    "flexcontainer_122279": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800456497",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "container_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": "1717498055877",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/transcend/images/transcend-network.png",
+        "alt": "setellites",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1717565101174",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Networking and Telecom</h3>\r\n<ul>\r\n<li>Data center servers</li>\r\n<li>Video streaming servers</li>\r\n</ul>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "3"
+       }
+      }
+     },
+     "flexcontaineritem_1775871816": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "container_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": "1717498055877",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/transcend/images/transcend-automation.png",
+        "alt": "automation computer",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1717565101174",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Automation</h3>\r\n<ul>\r\n<li>Robot controls</li>\r\n<li>Process control units and terminals</li>\r\n</ul>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     },
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "flexcontainer_122279_1002973963": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800456497",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "container_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": "1717498055877",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/transcend/images/transcend-defense.png",
+        "alt": "two soldiers walking by computers",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1717565101174",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Defense</h3>\r\n<ul>\r\n<li>Rugged PCs and laptops</li>\r\n<li>Ground control and communications systems</li>\r\n</ul>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "3"
+       }
+      }
+     },
+     "flexcontaineritem_1775871816": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "container_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": "1717498055877",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/transcend/images/transcend-embedded.png",
+        "alt": "hardware",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1717565101174",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Embedded Computing</h3>\r\n<ul>\r\n<li>Industrial and panel PCs</li>\r\n<li>Fanless PCs</li>\r\n</ul>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     },
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "flexcontainer_122279_875720610": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800456497",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "container_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": "1717498055877",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/transcend/images/transcend-gaming.png",
+        "alt": "gaming machines",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1717565101174",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Gaming</h3>\r\n<ul>\r\n<li>Slot machines</li>\r\n<li>VR/AR gaming machines</li>\r\n</ul>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "3"
+       }
+      }
+     },
+     "flexcontaineritem_1775871816": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "container_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": "1717498055877",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/transcend/images/transcend-iot.png",
+        "alt": "city with tecnological logos",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1717565101174",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>AIoT</h3>\r\n<ul>\r\n<li>Smart manufacturing factories</li>\r\n<li>Self-service stores</li>\r\n</ul>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        }
+       }
+      }
+     },
+     "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+       "jcr:primaryType": "nt:unstructured",
+       "offset": "0",
+       "width": "12"
+      }
+     }
+    },
+    "container_797504348": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498055877"
+     ],
+     "container": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498055877",
+       "1717498056876"
+      ],
+      "title_copy_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Product Portfolio",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      }
+     },
+     "tabs": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/tabs",
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 1",
+       "cq:panelTitle": "Core Embedded SSDs",
+       "layout": "responsiveGrid",
+       "id": "view-transcend-memory-product-portfolio-id",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "",
+        "",
+        ""
+       ],
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Core Embedded SSDs",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table width=\"100%\" cellpadding=\"1\" cellspacing=\"0\" border=\"1\">\r\n<tbody><tr><th>Type</th>\r\n<th>With DRAM</th>\r\n<th>DRAM-less</th>\r\n</tr><tr><td width=\"33%\" style=\"text-align: center;\">M.2 PCIe<br>\r\nGen4CIe<br>\r\nGen4</td>\r\n<td width=\"33%\" style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend/transcend-mte720t-mte720t-i-industrial-nvme-ssds/\">MTE720T (2280)</a><br>\r\n<a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend/transcend-mte712a-mte712a-i-pcie-m-2-ssds/\">MTE712A (2280)</a></td>\r\n<td width=\"33%\" style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend/transcend-mte760t-mte760t-i-industrial-nvme-ssds/\">MTE760T (2280)</a><br>\r\n<a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend/transcend-mte480t-mte480t-i-pcie-m-2-ssds/\">MTE480T (2242)</a><br>\r\nMTE380T (2230)</td>\r\n</tr><tr><td style=\"text-align: center;\">M.2 PCIe<br>\r\nGen3</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">MTE672A (2280)<br>\r\nMTE470A (2242)<br>\r\nMTE460T (2242)<br>\r\nMTE370T (2230)</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\n2.5”</td>\r\n<td style=\"text-align: center;\">SSD470K<br>\r\nSSD472K<br>\r\nSSD470N</td>\r\n<td style=\"text-align: center;\">SSD460K</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\nM.2</td>\r\n<td style=\"text-align: center;\">MTS970T (2280)<br>\r\nMTS570T (2242)</td>\r\n<td style=\"text-align: center;\">MTS960T (2280)<br>\r\nMTS560T (2242)</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\nmSATA</td>\r\n<td style=\"text-align: center;\">MSA470T</td>\r\n<td style=\"text-align: center;\">MSA460T</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\nHalf-Slim</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">HSD460I</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 2",
+       "cq:panelTitle": "TCG Opal SSDs",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "TCG Opal SSDs",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\" width=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Type</th>\r\n<th style=\"text-align: center;\">With DRAM</th>\r\n<th style=\"text-align: center;\">DRAM-less</th>\r\n</tr><tr><td width=\"33%\" style=\"text-align: center;\">PCIe M.2<br>\r\nGen4</td>\r\n<td width=\"33%\" style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend/transcend-mte712a-mte712a-i-pcie-m-2-ssds/\">MTE712A (2280)</a><br>\r\nMTE712P (2280)<br>\r\nMTE560I (2280)<br>\r\nMTE560P (2280)</td>\r\n<td width=\"33%\" style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend/transcend-mte760t-mte760t-i-industrial-nvme-ssds/\">MTE760T</a><br>\r\n<a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend/transcend-mte480t-mte480t-i-pcie-m-2-ssds/\">MTE480T</a><br>\r\nMTE380T<br>\r\nMTE672A<br>\r\nMTE470A</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\n2.5”</td>\r\n<td style=\"text-align: center;\">SSD470A<br>\r\nSSD475P</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\nM.2</td>\r\n<td style=\"text-align: center;\">MTS970A (2280)<br>\r\nMTS570A (2242)</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\nmSATA</td>\r\n<td style=\"text-align: center;\">MSA470A</td>\r\n<td>&nbsp;</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "item_1787866117171": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "Power Loss Protection SSDs",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Power Loss Protection SSDs",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       },
+       "table": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\" width=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Type</th>\r\n<th style=\"text-align: center;\">MLC (WD-15)</th>\r\n<th style=\"text-align: center;\">3D TLC (WD BiCS4)</th>\r\n<th style=\"text-align: center;\">3D TLC (WD BiCS5)</th>\r\n</tr><tr><td width=\"25%\" style=\"text-align: center;\">PCIe<br>\r\n</td>\r\n<td width=\"25%\" style=\"text-align: center;\">&nbsp;</td>\r\n<td width=\"25%\" style=\"text-align: center;\">MTE662P (M.2 2280)<br>\r\n</td>\r\n<td width=\"25%\" style=\"text-align: center;\">MTE712P (M.2 2280)<br>\r\nMTE730P (M.2 22110)<br>\r\nUTE210T (U.2 2.5”)<br>\r\nETD410T (Enterprise Grade)</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\n2.5”</td>\r\n<td style=\"text-align: center;\">SSD420P</td>\r\n<td style=\"text-align: center;\">SSD452P</td>\r\n<td style=\"text-align: center;\">SSD470P<br>\r\nSSD475P<br>\r\nETD210T (Enterprise Grade)</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\nM.2</td>\r\n<td style=\"text-align: center;\">MTS400P</td>\r\n<td style=\"text-align: center;\">MTS952P (2280)</td>\r\n<td style=\"text-align: center;\">MTS970P (2280)<br>\r\nMTS570P (2242)</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\nmSATA</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">MSA452P</td>\r\n<td style=\"text-align: center;\">MSA470P</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "item_1787866119089": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "SLC Mode Products",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "SLC Mode Products - High Endurance Applications",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       },
+       "table": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\" width=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Type</th>\r\n<th style=\"text-align: center;\">MLC (WD-15)</th>\r\n<th style=\"text-align: center;\">3D TLC (WD BiCS5)</th>\r\n</tr><tr><td width=\"33%\" style=\"text-align: center;\">PCIe M.2<br>\r\nGen4</td>\r\n<td width=\"33%\" style=\"text-align: center;\">&nbsp;</td>\r\n<td width=\"33%\" style=\"text-align: center;\">MTE560I (2280)<br>\r\nMTE560P (2280, SLC mode + PLP)</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\n2.5”</td>\r\n<td style=\"text-align: center;\">SSD510K</td>\r\n<td style=\"text-align: center;\">SSD550I</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\nM.2</td>\r\n<td style=\"text-align: center;\">MTS862K (2280)<br>\r\nMTS462K (2242)</td>\r\n<td style=\"text-align: center;\">MTS260I (2280)<br>\r\nMTS250I (2280)<br>\r\nMTS210I (2242)<br>\r\nMTS200I (2242)</td>\r\n</tr><tr><td style=\"text-align: center;\">SATA III<br>\r\nmSATA</td>\r\n<td style=\"text-align: center;\">MSA510I</td>\r\n<td style=\"text-align: center;\">MSA520I</td>\r\n</tr><tr><td style=\"text-align: center;\">Memory Cards<br>\r\nUSB Flash Drives</td>\r\n<td style=\"text-align: center;\">CF180I (CF)</td>\r\n<td style=\"text-align: center;\">JetFlash 180I (USB)</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "item_1787866120848": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "DRAM Products",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "DRAM Product Lineup",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       },
+       "table": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table width=\"100%\" cellpadding=\"1\" cellspacing=\"0\" border=\"1\">\r\n<tbody><tr><th style=\"text-align: center;\">Core Technology</th>\r\n<th style=\"text-align: center;\">Module Type</th>\r\n<th style=\"text-align: center;\">Speed</th>\r\n<th style=\"text-align: center;\">Operating Temperature</th>\r\n<th style=\"text-align: center;\">Capacities</th>\r\n<th style=\"text-align: center;\">Chip Brand</th>\r\n</tr><tr><td width=\"10%\" rowspan=\"5\" style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend/transcend-ddr5-dram-modules/\">DDR5</a></td>\r\n<td style=\"text-align: center;\">U-DIMM</td>\r\n<td rowspan=\"5\" style=\"text-align: center;\">6400MHz<br>\r\n5600MHz<br>\r\n4800MHz</td>\r\n<td rowspan=\"5\" style=\"text-align: center;\">Standard Temp:&nbsp; -20 ~ 95° C<br>\r\nIndustrial Temp: -40 ~ 95° C</td>\r\n<td rowspan=\"5\" style=\"text-align: center;\">8GB<br>\r\n16GB<br>\r\n32GB<br>\r\n48GB<br>\r\n64GB</td>\r\n<td rowspan=\"5\" style=\"text-align: center;\">Primary: Samsung<br>\r\nSecondary: Micron</td>\r\n</tr><tr><td style=\"text-align: center;\">SO DIMM</td>\r\n</tr><tr><td style=\"text-align: center;\">U-DIMM w/ ECC</td>\r\n</tr><tr><td style=\"text-align: center;\">SO DIMM w/ ECC</td>\r\n</tr><tr><td style=\"text-align: center;\">Server R-DIMM</td>\r\n</tr><tr><td rowspan=\"5\" style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend/transcend-ddr4-dram-modules/\">DDR4</a></td>\r\n<td style=\"text-align: center;\">U-DIMM</td>\r\n<td rowspan=\"5\" style=\"text-align: center;\">3200MHz<br>\r\n2666MHz<br>\r\n2400MHz<br>\r\n2133MHz</td>\r\n<td rowspan=\"5\" style=\"text-align: center;\">Standard Temp:&nbsp; -20 ~ 95° C<br>\r\nIndustrial Temp: -40 ~ 95° C</td>\r\n<td rowspan=\"5\" style=\"text-align: center;\">2GB<br>\r\n4GB<br>\r\n8GB<br>\r\n16GB<br>\r\n32GB<br>\r\n64GB</td>\r\n<td rowspan=\"5\" style=\"text-align: center;\">Primary: Micron<br>\r\nSecondary: Samsung</td>\r\n</tr><tr><td style=\"text-align: center;\">SO DIMM</td>\r\n</tr><tr><td style=\"text-align: center;\">U-DIMM w/ ECC</td>\r\n</tr><tr><td style=\"text-align: center;\">SO DIMM w/ ECC</td>\r\n</tr><tr><td style=\"text-align: center;\">Server R-DIMM</td>\r\n</tr><tr><td rowspan=\"5\" style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend/transcend-ddr3-dram-modules/\">DDR3</a></td>\r\n<td style=\"text-align: center;\">U-DIMM</td>\r\n<td rowspan=\"5\" style=\"text-align: center;\">1866MHz<br>\r\n1600MHz<br>\r\n1333MHz<br>\r\n1066MHz</td>\r\n<td rowspan=\"4\" style=\"text-align: center;\">Standard Temp:&nbsp; 0 ~ 85° C<br>\r\nIndustrial Temp: -40 ~ 85° C</td>\r\n<td rowspan=\"5\" style=\"text-align: center;\">1GB<br>\r\n2GB<br>\r\n4GB<br>\r\n8GB<br>\r\n16GB</td>\r\n<td rowspan=\"5\" style=\"text-align: center;\">Primary: Samsung&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>\r\n</tr><tr><td style=\"text-align: center;\">SO DIMM</td>\r\n</tr><tr><td style=\"text-align: center;\">U-DIMM w/ ECC</td>\r\n</tr><tr><td style=\"text-align: center;\">SO DIMM w/ ECC</td>\r\n</tr><tr><td style=\"text-align: center;\">Server R-DIMM</td>\r\n<td style=\"text-align: center;\">Standard Temp: 0 ~ 85° C</td>\r\n</tr></tbody></table>\r\n<p>&nbsp;</p>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      }
+     }
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "0",
+     "width": "12"
+    }
+   },
+   "container_406860355_": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Get Started",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<div>Discover high-reliability embedded SSDs and DRAM with Transcend memory products, engineered for long-term availability and demanding industrial environments. Connect with Macnica Americas to find the right solution for your design needs.</div>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_746606129_": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_861351158": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

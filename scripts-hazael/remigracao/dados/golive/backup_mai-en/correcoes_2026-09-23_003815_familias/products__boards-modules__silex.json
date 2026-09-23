@@ -1,0 +1,455 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "Silex Technology Products, Devices, & Wireless Solutions",
+ "manufacturer": "mai:manufacturer/silex",
+ "businessCategories": "mai:business-categories/boards-modules",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 02 2026 13:57:43 GMT+0000",
+ "cq:lastModified": "Tue Sep 22 2026 00:44:29 GMT+0000",
+ "jcr:description": "Silex Technology delivers high-quality, reliable networking solutions. Visit Macnica Americas to get Silex Technology products and wireless solutions!",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/silex",
+ "pageTitle": "Silex Technology",
+ "cq:tags": "mai:business-categories/boards-modules",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "Silex Technology",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_titulo": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "0",
+     "width": "12"
+    }
+   },
+   "container_273709292_": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "embed": {
+       "jcr:primaryType": "nt:unstructured",
+       "url": "https://www.youtube.com/watch?v=TfVObE9CfF4",
+       "type": "url",
+       "sling:resourceType": "macnicaglobal2/components/content/embed",
+       "cq:styleIds": "1719541568246",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "10"
+        }
+       }
+      }
+     },
+     "flexcontaineritem_45562908": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3>Reliable Wireless Connectivity for Medical and Industrial Systems</h3>\r\n<p>For over 50 years, <b>Silex Technology</b> has been delivering high-quality, reliable networking solutions that keep mission-critical devices connected. As a Muratec Group company with over 20 years of Wi-Fi and Bluetooth engineering experience, Silex designs and manufactures embedded wireless modules, edge-AI platforms, and network system solutions for medical, industrial, and transportation markets. Through long-standing partnerships with Qualcomm and NXP, Silex brings proven wireless performance and long-term support to OEMs requiring medical-grade reliability, global certifications, and robust security compliance. Headquartered in Japan with operations across the U.S., Europe, China, and India, Silex combines local engineering support with world-class manufacturing quality. Checkout Silex Technology products, devices, and wireless solutions below.</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_market": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Market Focus Silex Technology Products",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "table": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Vertical</th>\r\n<th style=\"text-align: center;\">Typical Applications</th>\r\n<th style=\"text-align: center;\">Silex Value</th>\r\n</tr><tr><td width=\"33%\" style=\"text-align: center;\">Medical &amp; Healthcare</td>\r\n<td width=\"33%\" style=\"text-align: center;\">Patient monitors, ECG, infusion pumps, connected beds</td>\r\n<td width=\"33%\" style=\"text-align: center;\">Medical-grade Wi-Fi, low defect rate, FIPS 140-3 roadmap</td>\r\n</tr><tr><td style=\"text-align: center;\">Industrial Automation &amp; Robotics</td>\r\n<td style=\"text-align: center;\">AMRs, AGVs, PLC controllers</td>\r\n<td style=\"text-align: center;\">Fast roaming, rugged connectivity, 15-year longevity</td>\r\n</tr><tr><td style=\"text-align: center;\">Transportation &amp; Logistics</td>\r\n<td style=\"text-align: center;\">Gateways, warehouse systems, fleet networks</td>\r\n<td style=\"text-align: center;\">Global certifications, low-latency Wi-Fi, retrofit bridges</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    }
+   },
+   "container_1559525278": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Core Offerings",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "tabs": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/tabs",
+     "item_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 1",
+      "cq:panelTitle": "Embedded Modules",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": "1717498055877",
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/sylex/images/sylex-chip.png",
+       "imageRatio": "40",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "alt": "sylex chip",
+       "text": "<p>Silex’s embedded modules deliver proven reliability, industrial temperature operation, and long-term product availability - combining wireless expertise with global regulatory compliance.</p>\r\n",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Tue Sep 22 2026 00:44:21 GMT+0000",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1783061491236",
+        "1718154328384"
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/sylex/images/sylex-chip.png",
+        "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+        "jcr:lastModified": "Tue Sep 22 2026 00:44:21 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       }
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3>Wi-Fi 7 Modules: Next-Generation Performance</h3>\r\n<p><b>Built on Qualcomm QCA2076 for ultra-high throughput and low-latency operation.</b></p>\r\n<ul>\r\n<li><b><a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/silex/silex-sx-pcebe.pdf\">SX-PCEBE:</a></b> Wi-Fi 7 + Bluetooth 5.3 (PCIe Combo)</li>\r\n</ul>\r\n<ul>\r\n<li><b>SX-PCEBE-AP:</b> Wi-Fi 7 Access Point module</li>\r\n</ul>\r\n<ul>\r\n<li><b>SX-PCEBE-M2 / SMT:</b> Compact form factors for embedded or edge systems</li>\r\n</ul>\r\n<p><b style=\"letter-spacing: 0.0px;\">Ideal for:</b><span style=\"letter-spacing: 0.0px;\"> Edge computing, AI vision, and medical systems requiring the latest 6 GHz capability.</span></p>\r\n<p><b>Highlights:</b> 2.4 / 5 / 6 GHz bands, industrial temperature, PCIe 3.0, WPA3 security, mesh networking.</p>\r\n<p>&nbsp;</p>\r\n<h3>Wi-Fi 6 / 6E Modules: Industrial Reliability</h3>\r\n<p><b>High-performance connectivity for long-life embedded designs.</b></p>\r\n<ul>\r\n<li><b><a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/silex/silex-sx-sdmax.pdf\">SX-SDMAX</a> / SX-SDMAX6E:</b> Wi-Fi 6 / 6E + Bluetooth 5.3 (SDIO Combo)</li>\r\n</ul>\r\n<ul>\r\n<li><b>SX-PCEAX / SX-PCEAX-AP / <a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/silex/silex-sx-pceax-ap-6e.pdf\">SX-PCEAX-AP6E</a>:</b> PCIe modules and AP variants</li>\r\n</ul>\r\n<ul>\r\n<li><b>SX-PCEAX-HMC / SMT:</b> Rugged industrial modules for automation and AMRs</li>\r\n</ul>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "title_textwithimage_224167588": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Intelligent Modules &amp; Bridges: Simplified Integration",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage_224167588": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/sylex/images/wifi-module.png",
+       "imageRatio": "40",
+       "alt": "sylex wifi module",
+       "text": "<p>Ready-to-use Silex Technology devices and solutions that add Wi-Fi connectivity without redesigning existing hardware.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/sylex/images/wifi-module.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       }
+      },
+      "text_1708937029": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "text": "<h3>IM-100 Series: Wi-Fi 6 + Bluetooth Modules</h3>\r\n<ul>\r\n<li><a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/silex/silex-im-100.pdf\">&nbsp;<b>IM-100 (SMT module):</b></a><b> </b>Based on NXP's RW610, the IM-100 is a small, low-power wireless MCU with an integrated MCU and Wi-Fi® 6 + Bluetooth® Low Energy (LE) 5.4 radio. It provides premium wireless connectivity and offloads the host processor by accommodating data processing and other applications on the modules itself.</li>\r\n</ul>\r\n<ul>\r\n<li><b><a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/silex/silex-im-100-rb.pdf\">IM-100-RB (USB dongle):</a> </b>The IM-100-RB is a Wi-Fi lightweight bare-board USB dongle offering plug-and-play Wi-Fi 6. Simply add your enclosure of choice.</li>\r\n</ul>\r\n<ul>\r\n<li><b>IM-100-EB (Ethernet bridge): </b>The IM-100-EB is a driverless Ethernet to Wi-Fi board, offering plug-and-play Wi-Fi 6 to retrofit any Ethernet-based product.&nbsp;</li>\r\n</ul>\r\n<h3>&nbsp;</h3>\r\n<h3>BR-500AC / BR-330AC-LP</h3>\r\n<ul>\r\n<li><b>Wi-Fi 5 Ethernet bridges for retrofits:</b> BR-500AC is the first commercially available 802.11ac wave2 2x2 MU-MIMO dual-band Ethernet to Wi-Fi bridge supporting WPA3-Enterprise Wi-Fi security. Leveraging advanced features of 802.11ac wave2 standard, BR-500AC securely, reliably, and efficiently connects any Ethernet device to your wireless network enabled by a recent Wi-Fi access point.</li>\r\n</ul>\r\n<p><b>Ideal for: </b>Connecting wired systems, industrial equipment, and medical devices without driver integration.</p>\r\n",
+       "jcr:lastModified": "Mon Sep 21 2026 14:59:41 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "item_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 2",
+      "cq:panelTitle": "System-on-Modules & AI Platforms",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/sylex/images/edge-board.png",
+       "imageRatio": "40",
+       "alt": "back sylex board",
+       "text": "<p>Silex’s Edge AI Platforms pair Qualcomm®’s high-performance processors with Silex’s proven wireless expertise to deliver ready-to-deploy foundations for intelligent vision, robotics, and medical systems. As a Qualcomm Embedded Design Center (EDC) partner, Silex provides validated SDKs, optimized drivers, and AI/ML tools that accelerate development while ensuring secure, long-life operation with integrated Wi-Fi 7 connectivity</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/sylex/images/edge-board.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       }
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>&nbsp;</p>\r\n<h3><b><a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/silex/silex-ep-200q.pdf\">EP-200Q (QCS6490 SoM)</a></b></h3>\r\n<p>Octa-core CPU, 12 TOPS NPU, integrated Wi-Fi 7 SDK support, multiple MIPI CSI interfaces. The EP-200Q-CB is a powerhouse SMARC System-on-Module (SoM) that redefines what’s possible at the edge. It seamlessly blends the EP-200Q with the SX-PCEBE - the industry’s first Wi-Fi 7 PCIe + Bluetooth combo module - to deliver blazing-fast, always-on connectivity for vision-powered AI.</p>\r\n<p>&nbsp;</p>\r\n<h3><b><a href=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/silex/silex-ep-200q-cb.pdf\">EP-200Q-CB (SMARC)</a></b></h3>\r\n<p>Carrier board with SX-PCEBE Wi-Fi 7 module for rapid enablement. The EP-200Q-CB is a powerhouse SMARC System-on-Module (SoM) that redefines what’s possible at the edge. It seamlessly blends the EP-200Q with the SX-PCEBE - the industry’s first Wi-Fi 7 PCIe + Bluetooth combo module - to deliver blazing-fast, always-on connectivity for vision-powered AI.<b></b></p>\r\n<p>&nbsp;</p>\r\n<h3><b>Development Support Package</b></h3>\r\n<p>Linux SDK, Yocto manuals, AI/ML guides co-developed with Qualcomm EDC. A comprehensive enablement suite including a Linux SDK, Yocto build environment, hardware reference design, and AI/ML development guides co-created with Qualcomm’s Embedded Design Center (EDC). Provides full documentation and example workflows for rapid prototyping, driver integration, and performance tuning from concept through production.</p>\r\n<p>&nbsp;</p>\r\n<p><b>Applications: </b>Medical imaging systems, AI tablets, machine vision robots, and connected industrial controllers.</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "item_1787869990812": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "Network System Solutions & Services",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/sylex/images/modem.png",
+       "imageRatio": "40",
+       "alt": "sylex modem",
+       "text": "<p>Silex’s Network System Solutions deliver complete end-to-end connectivity management, from high-performance wireless hardware to cloud-based diagnostics and lifecycle protection. Designed for industrial, healthcare, and enterprise environments where uptime and reliability are critical, Silex’s platforms extend wireless visibility, security, and serviceability far beyond the module level.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/sylex/images/modem.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       }
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3>&nbsp;</h3>\r\n<h3>AMC Cloud + WM-100CL</h3>\r\n<p><b>Real-Time Wireless Intelligence&nbsp;</b></p>\r\n<p>The AMC Cloud is Silex’s enterprise-grade monitoring platform that transforms wireless networks into managed, transparent ecosystems. Paired with the WM-100CL edge device, it continuously captures and visualizes real-world RF data to ensure consistent connectivity and fast issue resolution.</p>\r\n<p><b>Key Capabilities</b></p>\r\n<ul>\r\n<li>End-to-end monitoring of wireless performance across all connected devices</li>\r\n</ul>\r\n<ul>\r\n<li>Real-time spectrum analysis for interference detection and channel optimization</li>\r\n</ul>\r\n<ul>\r\n<li>Heatmap visualization and noise mapping of the network environment</li>\r\n</ul>\r\n<ul>\r\n<li>Automated alerts, roaming analytics, and device-level diagnostics</li>\r\n</ul>\r\n<ul>\r\n<li>API access for integration into OEM or enterprise monitoring dashboards</li>\r\n</ul>\r\n<p><b style=\"letter-spacing: 0.0px;\">Use Case Examples</b></p>\r\n<ul>\r\n<li>Remote support and predictive maintenance of hospital or factory networks</li>\r\n</ul>\r\n<ul>\r\n<li>Managed service enablement for system integrators and OEMs</li>\r\n</ul>\r\n<ul>\r\n<li>Wireless optimization for large-scale device deployments (APs, cameras, robots)</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<h3>AMC Protect</h3>\r\n<p><b>Proactive Cybersecurity for WLAN Drivers</b></p>\r\n<p>AMC Protect extends Silex’s hardware reliability into the security domain, offering continuous vulnerability management for Wi-Fi modules and embedded drivers. Through monthly reporting and SBOM (Software Bill of Materials) tracking, it helps OEMs maintain compliance with evolving global cybersecurity regulations.</p>\r\n<p><b>Key Capabilities</b></p>\r\n<ul>\r\n<li>Continuous monitoring of WLAN driver vulnerabilities (Qualcomm and NXP chipsets)</li>\r\n</ul>\r\n<ul>\r\n<li>Early notification and patch advisories from JPCERT and vendor databases</li>\r\n</ul>\r\n<ul>\r\n<li>Monthly security impact reports with mitigation guidance</li>\r\n</ul>\r\n<ul>\r\n<li>Supports ETSI EN 303 645, IEC 62443-4-2, NIST IR8425, and upcoming FIPS 140-3 frameworks</li>\r\n</ul>\r\n<p><b>Use Case Examples</b></p>\r\n<ul>\r\n<li>Reduces risk of field-level exploits</li>\r\n</ul>\r\n<ul>\r\n<li>Accelerates compliance with global IoT security standards</li>\r\n</ul>\r\n<ul>\r\n<li>Simplifies post-deployment maintenance for regulated industries</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<h3>Long-Term Support Programs</h3>\r\n<p>Silex builds products for extended availability, ensuring OEMs can maintain stable production over a decade or more. As part of the NXP 15-Year Longevity Program, modules such as the IW611 (SX-SDMAX) and RW610 (IM-100) are supported through 2038–2039, with proactive component management and global logistics coordination.</p>\r\n<ul>\r\n<li>Lifecycle Support Highlights</li>\r\n</ul>\r\n<ul>\r\n<li>Multi-year supply continuity and EOL (End-of-Life) transition planning</li>\r\n</ul>\r\n<ul>\r\n<li>Secure component storage and replacement forecasting</li>\r\n</ul>\r\n<ul>\r\n<li>Firmware and driver maintenance over product lifetime</li>\r\n</ul>\r\n<ul>\r\n<li>Backward-compatible upgrade paths for Wi-Fi 6 → Wi-Fi 7 transitions</li>\r\n</ul>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_886145960": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Quality & Security Commitment",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Silex Technology products and devices are engineered for long-term performance in industries where reliability, compliance, and lifecycle stability are non-negotiable. From component selection to field deployment, every module is built to exceed industrial and medical-grade standards for quality, uptime, and security.</p>\r\n<p>&nbsp;</p>\r\n<h3><b>Long-Term Reliability</b></h3>\r\n<ul>\r\n<li>Designed for sustained use in critical applications with an industry-leading <b>5-year warranty</b></li>\r\n</ul>\r\n<ul>\r\n<li>Continuous lifecycle and revision management across wireless product families</li>\r\n</ul>\r\n<ul>\r\n<li><b>NXP IW611 and RW610 modules</b> supported through <b>2038–2039</b> as part of NXP’s 15-Year Longevity Program</li>\r\n</ul>\r\n<ul>\r\n<li>Robust quality assurance and traceability processes reduce field failure rates and ensure stable production continuity</li>\r\n</ul>\r\n<h3>&nbsp;</h3>\r\n<h3><b>Cybersecurity &amp; Compliance</b></h3>\r\n<ul>\r\n<li><p>Built-in adherence to global regulatory frameworks including <b>ETSI EN 303 645</b>, <b>IEC 62443-4-2</b>, <b>NIST IR8425</b>, <b>PSTI Act</b>, and <b>FIPS 140-3 (Level 1)</b> for federal healthcare and government applications</p>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li><p>Secure boot, encryption, and authenticated firmware update support designed into every platform</p>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li><p>Hardware-level protection verified against emerging IoT security standards</p>\r\n</li>\r\n</ul>\r\n<h3>&nbsp;</h3>\r\n<h3><b>Ongoing Protection</b></h3>\r\n<ul>\r\n<li><b>AMC Protect Service</b> provides monthly vulnerability reports, SBOM tracking, and advance notifications of WLAN driver and firmware updates</li>\r\n</ul>\r\n<ul>\r\n<li>Ensures continued compliance, faster remediation, and reduced downtime in regulated environments</li>\r\n</ul>\r\n<h3>&nbsp;</h3>\r\n<h3><b>The Result</b></h3>\r\n<p>A proven foundation for OEMs that demand <b>decades of operational stability</b>, <b>cyber-resilient design</b>, and <b>full regulatory readiness</b> across medical, industrial, and connected device markets.</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_1400168640": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Why Macnica + Silex Technology Products?",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "image": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/sylex/images/pipeline.png",
+     "alt": "product pipeline",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/image",
+     "isDecorative": "false",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>Through Macnica Americas, OEMs gain access to Silex’s wireless engineering expertise and global certifications with local design support. Together we help accelerate your connected product from concept to deployment, backed by component-to-solution integration, EVKs, and edge enablement services.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_746606129_": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_861351158": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

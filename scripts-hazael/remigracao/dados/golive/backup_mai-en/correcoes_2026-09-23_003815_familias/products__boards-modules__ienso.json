@@ -1,0 +1,464 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "iENSO Services for System-on-Modules & Embedded Vision Cameras",
+ "manufacturer": "mai:manufacturer/ienso",
+ "businessCategories": "mai:business-categories/boards-modules",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 02 2026 13:57:43 GMT+0000",
+ "cq:lastModified": "Mon Sep 21 2026 20:47:48 GMT+0000",
+ "jcr:description": "Explore the latest System on Modules (SoM) technology with iENSO products and embedded cameras at Macnica Americas. Powerful board modules for your projects.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ienso",
+ "pageTitle": "iENSO + Macnica: CV75 SoM Design Services for Intelligent Vision at the Edge",
+ "cq:tags": "mai:business-categories/boards-modules",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "iENSO",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_titulo": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "cq:responsive": {
+    "jcr:primaryType": "nt:unstructured",
+    "default": {
+     "jcr:primaryType": "nt:unstructured",
+     "offset": "0",
+     "width": "12"
+    }
+   },
+   "container_copy": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>Build Smarter Cameras Faster with iENSO and Macnica Tech</h3>\r\n<p>Develop next generation vision products with iENSO’s Embedded Vision Camera Platform as a Service and Macnica’s imaging ecosystem. The jointly developed CV75 System on Module combines Ambarella AI SoCs, Sony image sensors, and production-proven design services so you can launch intelligent, connected cameras with less risk and shorter time to market.</p>\r\n<ul>\r\n<li>Ambarella CV75 AI SoC with support for CNN and transformer-based models at ultra-low power</li>\r\n</ul>\r\n<ul>\r\n<li>Sony STARVIS and STARVIS 2 sensors for high dynamic range and low-light performance</li>\r\n</ul>\r\n<ul>\r\n<li>EVPaaS platform that connects camera, edge AI, and cloud for full camera to cloud solutions</li>\r\n</ul>\r\n<ul>\r\n<li>Co-developed CV75 SoM and evaluation platform created by iENSO and Macnica Tech engineering teams</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_1737640568": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "tabs": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/tabs",
+     "item_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 1",
+      "cq:panelTitle": "iENSO",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title_textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "iENSO: Your Embedded Vision Camera Design Partner",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/camera.png",
+       "imageRatio": "40",
+       "alt": "camera",
+       "text": "<p>iENSO specializes in embedded vision systems that blend camera hardware, edge AI, and cloud connectivity to help product companies turn devices into vision data platforms. Through its EVPaaS platform, iENSO provides modular Ambarella-based camera modules, SDKs, and cloud tools so customers can deploy and manage intelligent vision solutions at scale.</p>\r\n<p>&nbsp;</p>\r\n<p>iENSO System-on-Modules Highlights:</p>\r\n<ul>\r\n<li>Ambarella solution partner with deep experience on the CV series, including CV28, CV22, CV72, and CV75</li>\r\n<li>End-to-end camera design and customization from image sensor and optics to edge AI integration and cloud services</li>\r\n<li>EVPaaS development framework with SDKs, libraries, and debugging tools</li>\r\n<li>Flexible engagement models that support both low volume custom designs and high-volume production programs</li>\r\n</ul>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/camera.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       }
+      }
+     },
+     "item_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 2",
+      "cq:panelTitle": "CV75 SoM",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title_textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Co-Developed CV75 SoM for Camera to Cloud Intelligence",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/camera_board.png",
+       "imageRatio": "40",
+       "alt": "board camera",
+       "text": "<p>The Joint CV75 SoM Platform</p>\r\n<p>Co-Developed CV75 SoM for Camera to Cloud Intelligence</p>\r\n<p>The CV75 SoM is a production-ready, Ambarella-based platform created through the collaboration between iENSO and Macnica Tech engineering. It serves as both an evaluation kit and a foundation for custom camera design, allowing customers to move smoothly from concept to market.</p>\r\n<p>&nbsp;</p>\r\n<p>Designing a UAV/UAS system?</p>\r\n<p>Learn more about the <a href=\"/content/macnicaglobal2/americas/mai/en/products/macnica-products/macnica-cv75/\">iENSO CV75 System-on-Module</a>, an embedded vision platform integrating ISP, video encoding, and edge AI for UAV/UAS and related applications.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ],
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       },
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/camera_board.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      },
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Learn More",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/products/macnica-products/macnica-cv75/",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      },
+      "container": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Key Features:</h3>\r\n<ul>\r\n<li>Ambarella CV75 AI SoC with dual Arm Cortex A76 cores and CVflow AI engine</li>\r\n<li>Integrated ISP and video pipeline with 4K processing, multi-stream encoding, HDR, stabilization, and dewarping</li>\r\n<li>Optimized support for Sony STARVIS and STARVIS 2 sensors, including IMX664 and IMX678</li>\r\n<li>Connectivity options such as USB 3.2, Ethernet or PoE, Wi-Fi, BLE, SDIO, CAN FD, and expansion interfaces</li>\r\n<li>Full integration with EVPaaS for application development, cloud management, and model deployment</li>\r\n</ul>\r\n<p>A scalable camera platform built on Ambarella CV75, tuned for Sony sensors, and backed by iENSO and Macnica Tech design teams.</p>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "item_1787868062411": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "Eval Kits & Development Path",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title_textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "From Evaluation to Production",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/little_camera.png",
+       "imageRatio": "40",
+       "alt": "board camera",
+       "text": "<p>The CV75 SoM is available as an evaluation kit that functions as both a demo system and a complete development environment.</p>\r\n<p>&nbsp;</p>\r\n<p>Two typical engagement paths:</p>\r\n<p>&nbsp;</p>\r\n<p>1. Out of the box demo</p>\r\n<ul>\r\n<li>Pre-loaded applications for image quality evaluation, streaming tests, and on-board AI analytics</li>\r\n<li>Quick validation of CV75 performance with Sony sensors in real world scenes</li>\r\n</ul>\r\n<p>2. SDK and EVPaaS development</p>\r\n<ul>\r\n<li>Access to the EVPaaS portal, SDK, and development tools</li>\r\n<li>Ability for engineering teams to build camera-level applications and integrate custom CNN or transformer-based models</li>\r\n<li>Engineering support packages available from iENSO and Macnica Tech to accelerate proofs of concept and integration work</li>\r\n</ul>\r\n<p>Macnica Tech and iENSO guide customers through a structured EVT to DVT to PVT and mass production path, covering supply chain planning, firmware QA, and cloud enablement.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/little_camera.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       }
+      }
+     },
+     "item_1787868073385": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "Ambarella & Sony",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title_textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Built on Ambarella, Powered by Sony",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/ambarela_chip.png",
+       "imageRatio": "40",
+       "alt": "ambarella chip",
+       "text": "<p>At the center of the CV75 SoM is the Ambarella CV75 AI SoC, designed for low-power, high-performance computer vision with an integrated ISP, encoder, and dedicated CVflow AI engine.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/ambarela_chip.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       }
+      },
+      "title_textwithimage_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "The platform is tuned for Sony STARVIS and STARVIS 2 sensors, such as:",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/ambarella_back.png",
+       "imageRatio": "40",
+       "alt": "ambarella chip",
+       "text": "<ul>\r\n<li>Sony IMX664, 4 MP</li>\r\n<li>Sony IMX678, 8 MP</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<p>This combination delivers:</p>\r\n<ul>\r\n<li>Excellent low-light performance for security, access control, and outdoor scenes</li>\r\n<li>Wide dynamic range for mixed lighting</li>\r\n<li>Strong support for modern AI workflows that rely on CNNs and transformer-based reasoning</li>\r\n</ul>\r\n<p>Optional expansions include Wi-Fi modules from Infineon, memory from Micron, and thermal cores for multi-sensor fusion.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/ambarella_back.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       }
+      }
+     },
+     "item_1787868081321": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "Apps We Enable",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "title_textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Applications We Enable",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/tablet.png",
+       "imageRatio": "40",
+       "alt": "person holding a tablet at a farm",
+       "text": "<p>The CV75 platform and EVPaaS ecosystem are ideal when you need embedded vision with strong on-device intelligence, tight power budgets, and a path to large scale deployment.</p>",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "1718154328384",
+        "",
+        "1783061491236"
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/ienso/images/tablet.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "11"
+        }
+       }
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3><b>Use cases include:</b></h3>\r\n<h3>&nbsp;</h3>\r\n<h3>Smart access and security</h3>\r\n<ul>\r\n<li>Video intercoms</li>\r\n<li>Smart panels with facial recognition and liveness detection</li>\r\n<li>Privacy aware access control systems</li>\r\n</ul>\r\n<h3>&nbsp;</h3>\r\n<h3>UAVs</h3>\r\n<ul>\r\n<li>Low-latency video links</li>\r\n<li>Target tracking and object detection on lightweight platforms</li>\r\n<li>Multi-sensor visible and thermal payloads</li>\r\n</ul>\r\n<h3>&nbsp;</h3>\r\n<h3>Industrial and AIoT cameras</h3>\r\n<ul>\r\n<li>Vision-based safety monitoring</li>\r\n<li>Quality inspection and anomaly detection</li>\r\n<li>Logistics and smart facility visibility</li>\r\n</ul>\r\n<h3>&nbsp;</h3>\r\n<h3>Robotics and mobile systems</h3>\r\n<ul>\r\n<li>Perception for navigation and obstacle avoidance</li>\r\n<li>Multi-camera SLAM and sensor fusion</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<h3>Automotive aftermarket, construction, and agriculture</h3>\r\n<ul>\r\n<li>Dashcams and DMS systems as part of <a href=\"/content/macnicaglobal2/americas/mai/en/services/automotive/\">automotive technology solutions</a></li>\r\n<li>Rugged outdoor cameras</li>\r\n<li>Environmental and equipment monitoring</li>\r\n</ul>\r\n<p>Customers can begin with the standard CV75 SoM and work with iENSO and Macnica Tech to customize sensors, optics, enclosures, AI models, and cloud integration.</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_706044185": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<h3>Why Work with iENSO and Macnica Tech?</h3>\r\n<h3>From Component to Full Solution</h3>\r\n<p>The iENSO and Macnica Tech partnership provides everything needed for the complete camera lifecycle.</p>\r\n<p><b>Benefits include:</b></p>\r\n<ul>\r\n<li>Design services plus platform, combining iENSO’s engineering and cloud tools with Macnica Tech’s imaging ecosystem and technical support</li>\r\n<li>Faster time to market by starting from a mature Ambarella CV75 platform tuned for Sony sensors</li>\r\n<li>Lower total cost of ownership through efficient edge AI that reduces cloud load and bandwidth requirements</li>\r\n<li>Single point of accountability from system architecture to deployment and volume production</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_535675944": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>Whether you are updating an existing camera, adding vision to connected devices, or creating a new Edge AI product line, the iENSO CV75 SoM platform and Macnica Tech design services provide a fast and low risk path to success.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "image": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/sylex/images/pipeline.png",
+     "alt": "product pipeline",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/image",
+     "isDecorative": "false",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    },
+    "text_1940103331": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>&nbsp;</p>\r\n<p>Contact Macnica today to discuss your CV75 design.</p>\r\n<p>&nbsp;</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_746606129_": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_861351158": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,718 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "Connect Tech Production Solutions | Connect Tech Boards & Modules",
+ "manufacturer": "mai:manufacturer/connect-tech",
+ "businessCategories": "mai:business-categories/boards-modules",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 02 2026 13:57:43 GMT+0000",
+ "cq:lastModified": "Tue Sep 22 2026 00:40:27 GMT+0000",
+ "jcr:description": "Connect Tech builds deploy-ready boards and systems for edge AI, vision, and networking. Macnica is your go-to Connect Tech distributor for product solutions.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/connect-tech",
+ "pageTitle": "Connect Tech",
+ "cq:tags": "mai:business-categories/boards-modules",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "Connect Tech ",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_titulo": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "flexcontainer_copy": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+    "cq:styleIds": [
+     "1719484596357"
+    ],
+    "flexcontaineritem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+     "embed": {
+      "jcr:primaryType": "nt:unstructured",
+      "url": "https://www.youtube.com/watch?v=yvrcgtAT7JM",
+      "type": "url",
+      "sling:resourceType": "macnicaglobal2/components/content/embed",
+      "cq:styleIds": "1719541568246",
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "1",
+        "width": "10"
+       }
+      }
+     }
+    },
+    "flexcontaineritem_45562908": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+     "container": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Tue Sep 22 2026 00:39:57 GMT+0000",
+      "jcr:lastModified": "Tue Sep 22 2026 00:39:57 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3>Connect Tech at a Glance</h3>\r\n<p>Connect Tech builds deploy-ready boards and rugged systems for edge AI, vision, and networking. The Connect Tech products portfolio spans NVIDIA® Jetson carriers, camera platforms, embedded Ethernet switches, COM-HPC and COM Express carriers, plus accessories and thermal solutions. Macnica Americas distributes and supports Connect Tech solutions with local engineering, supply chain scale, and custom design services.</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_falcon": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title_textwithimage": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Falcon Vehicle System",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "textwithimage": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/connect-tech/images/car.png",
+     "imageRatio": "40",
+     "alt": "an off-road car",
+     "text": "<p>The Falcon Vehicle System is a production-ready, IP67-rated edge AI compute platform powered by NVIDIA Jetson Orin NX - purpose-built for agriculture, construction, and mining vehicles. Fanless and fully sealed, Falcon mounts directly on heavy equipment and supports up to four GMSL2 cameras, dual T1 Ethernet, and CAN interfaces for seamless vehicle integration. Launched at CONExpo 2026 and named Best-in-Show at embedded world Germany 2026 in AI and Machine Learning, Falcon is market-validated and ready for deployment.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/connect-tech/connect-tech-falcon-vehicle-system-ip67-edge-ai-for-heavy-equipment/\">Learn more</a></p>",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+     "isDecorative": "false",
+     "textIsRich": "true",
+     "altValueFromDAM": "false",
+     "cq:styleIds": [
+      "1718154328384",
+      "",
+      ""
+     ],
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/dhw/pt/connect-tech/images/car.png",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    }
+   },
+   "container_326214469": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Why Connect Tech Solutions with Macnica?",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<div><span style=\"font-size: 13.125px;\">&nbsp;</span></div>\r\n<ul>\r\n<li>Fast path from dev kit to deployable hardware across Jetson Thor, AGX Orin, Orin NX, and legacy modules</li>\r\n</ul>\r\n<ul>\r\n<li>Vision-first I/O including MIPI CSI-2, FPD-Link III, GMSL, SDI, and HDMI capture</li>\r\n</ul>\r\n<ul>\r\n<li>Rugged options for harsh environments, IP-rated designs, locking I/O</li>\r\n</ul>\r\n<ul>\r\n<li>Embedded Ethernet from 1 GbE to managed 10 GbE</li>\r\n</ul>\r\n<ul>\r\n<li>Software support with CTI-L4T BSPs aligned to NVIDIA JetPack</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<h3>Where It Fits</h3>\r\n<p>Robotics, AMR, inspection, traffic and smart city, defense ISR, agriculture, construction, and autonomous machines</p>\r\n<h3>Get Started</h3>\r\n<p>Tell us your module target, camera stack, and I/O needs. We will align a carrier or system, plus thermal, cabling, and BSP.</p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_654932871": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Connect Tech Product Catalog by Category",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "tabs": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/tabs",
+     "item_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 1",
+      "cq:panelTitle": "NVIDIA Jetson",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/connect-tech/gauntlet-carrier-for-nvidia-jetson-thor/\">NVIDIA Jetson Thor</a></h3>\r\n<p><b>Carrier Boards: </b>Gauntlet, Thor</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "table": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" height=\"100%\">\r\n<tbody><tr><th>Product</th>\r\n<th>Type</th>\r\n<th>Dimensions</th>\r\n<th>Networking</th>\r\n<th>Camera add-ons</th>\r\n<th>Notes</th>\r\n</tr></tbody><tbody><tr><td>Gauntlet</td>\r\n<td>Carrier board</td>\r\n<td>155 × 125 mm</td>\r\n<td>High-speed Ethernet via Thor I/O</td>\r\n<td>Compatible with FPD-Link III, HDMI, SDI, MIPI kits</td>\r\n<td>Full-featured Thor carrier for high sensor count edge AI</td>\r\n</tr></tbody></table>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      },
+      "text_1724108017": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3>&nbsp;</h3>\r\n<h3>NVIDIA Jetson AGX Orin</h3>\r\n<p><b>Carrier Boards:</b> Forge, Rogue, Rogue-RX</p>\r\n<p><b>Systems and Servers:</b> Anvil-RX, Sentry-X2, AGX Orin Inference Server</p>\r\n<p><b>Vision Add-Ons: </b>HDMI Camera Platform (JCB010), SDI Vision Platform (JCB003), Allied Vision MIPI board, FPD-Link III board</p>\r\n<p>&nbsp;</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "container": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498055877",
+        "1717498056876"
+       ],
+       "title_text_1489460070": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Carrier Boards",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table_1693902924": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Focus</th>\r\n<th style=\"text-align: center;\">Dimensions</th>\r\n<th style=\"text-align: center;\">Networking</th>\r\n<th style=\"text-align: center;\">Notable I/O</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">Forge</td>\r\n<td style=\"text-align: center;\">Commercial-deployable</td>\r\n<td style=\"text-align: center;\">155 × 125 mm</td>\r\n<td style=\"text-align: center;\">Up to dual 10GBASE-T plus dual GbE</td>\r\n<td style=\"text-align: center;\">DisplayPort, NVMe, USB 3.x</td>\r\n<td style=\"text-align: center;\">Compact AGX Orin and Industrial support</td>\r\n</tr><tr><td style=\"text-align: center;\">Rogue</td>\r\n<td style=\"text-align: center;\">High-I/O</td>\r\n<td style=\"text-align: center;\">Compact</td>\r\n<td style=\"text-align: center;\">Dual 10GbE</td>\r\n<td style=\"text-align: center;\">Multiple USB 3.x, HDMI, camera expansion header</td>\r\n<td style=\"text-align: center;\">Full-featured, production ready</td>\r\n</tr><tr><td style=\"text-align: center;\">Rogue-RX</td>\r\n<td style=\"text-align: center;\">Ruggedized</td>\r\n<td style=\"text-align: center;\">92 × 108.2 mm</td>\r\n<td style=\"text-align: center;\">Dual 10GBASE-T with locking</td>\r\n<td style=\"text-align: center;\">USB 3.2 Gen2, HDMI, rugged pin headers</td>\r\n<td style=\"text-align: center;\">Built for harsh environments</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "container_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498055877",
+        "1717498056876"
+       ],
+       "title_text_1489460070": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Systems and Servers",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table_1693902924": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Class</th>\r\n<th style=\"text-align: center;\">Protection</th>\r\n<th style=\"text-align: center;\">I/O highlights</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">Anvil-RX</td>\r\n<td style=\"text-align: center;\">Rugged edge system</td>\r\n<td style=\"text-align: center;\">IP67</td>\r\n<td style=\"text-align: center;\">Sealed M12 I/O, power filtering</td>\r\n<td style=\"text-align: center;\">Outdoor and vehicle deployments</td>\r\n</tr><tr><td style=\"text-align: center;\">Sentry-X2</td>\r\n<td style=\"text-align: center;\">MIL-focused system</td>\r\n<td style=\"text-align: center;\">MIL-oriented design</td>\r\n<td style=\"text-align: center;\">SDI in and out, mixed-speed Ethernet</td>\r\n<td style=\"text-align: center;\">Tactical edge compute</td>\r\n</tr><tr><td style=\"text-align: center;\">AGX Orin Inference Server</td>\r\n<td style=\"text-align: center;\">2U deep learning server</td>\r\n<td style=\"text-align: center;\">Rackmount</td>\r\n<td style=\"text-align: center;\">Managed 10G uplinks, OOB management</td>\r\n<td style=\"text-align: center;\">Multi-module, low-wattage cluster</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "container_copy_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498055877",
+        "1717498056876"
+       ],
+       "title_text_1489460070": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Vision Add-Ons",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table_1693902924": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Add-On</th>\r\n<th style=\"text-align: center;\">Inputs</th>\r\n<th style=\"text-align: center;\">Works with</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">HDMI Camera Platform (JCB010)</td>\r\n<td style=\"text-align: center;\">HDMI to CSI-2</td>\r\n<td style=\"text-align: center;\">Rogue and Forge</td>\r\n<td style=\"text-align: center;\">Dual micro HDMI plus dual 30-pin headers</td>\r\n</tr><tr><td style=\"text-align: center;\">SDI Vision Platform (JCB003)</td>\r\n<td style=\"text-align: center;\">SDI to CSI-2</td>\r\n<td style=\"text-align: center;\">Selected AGX carriers and systems</td>\r\n<td style=\"text-align: center;\">Ultra-low latency ingest</td>\r\n</tr><tr><td style=\"text-align: center;\">Allied Vision MIPI board</td>\r\n<td style=\"text-align: center;\">Up to 6 MIPI</td>\r\n<td style=\"text-align: center;\">Rogue, Rogue-X, Forge</td>\r\n<td style=\"text-align: center;\">For Alvium sensors, device tree support</td>\r\n</tr><tr><td style=\"text-align: center;\">FPD-Link III board</td>\r\n<td style=\"text-align: center;\">Multi-camera over coax</td>\r\n<td style=\"text-align: center;\">Rogue, Rogue-X, Forge</td>\r\n<td style=\"text-align: center;\">Power over coax, long cable runs</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "text_1854220041": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/connect-tech/nvidia-jetson-orin-nx-and-orin-nano/\">NVIDIA Jetson Orin NX and Orin Nano</a></h3>\r\n<p><b>Carrier Boards:</b> Hadron-DM, Super Hadron-DM, Lepton, Boson-22</p>\r\n<p><b>Systems and Servers:</b> Polaris, Rudi-NX</p>\r\n<p><b>Vision Add-Ons: </b>Photon AI Camera Platform</p>\r\n<p>&nbsp;</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "container_copy_copy_": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498055877",
+        "1717498056876"
+       ],
+       "title_text_1489460070": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Carrier Boards",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table_1693902924": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Focus</th>\r\n<th style=\"text-align: center;\">Camera I/O</th>\r\n<th style=\"text-align: center;\">Networking</th>\r\n<th style=\"text-align: center;\">Expansion and notes</th>\r\n</tr><tr><td style=\"text-align: center;\">Hadron-DM</td>\r\n<td style=\"text-align: center;\">Ultra-small, rugged</td>\r\n<td style=\"text-align: center;\">Dual MIPI CSI-2</td>\r\n<td style=\"text-align: center;\">1 × GbE</td>\r\n<td style=\"text-align: center;\">Compact SODIMM-class carrier</td>\r\n</tr><tr><td style=\"text-align: center;\">Super Hadron-DM</td>\r\n<td style=\"text-align: center;\">Ultra-small with Super Mode</td>\r\n<td style=\"text-align: center;\">2 × 4-lane MIPI</td>\r\n<td style=\"text-align: center;\">1 × GbE</td>\r\n<td style=\"text-align: center;\">Adds Super Mode, M.2 NVMe 2242</td>\r\n</tr><tr><td style=\"text-align: center;\">Lepton</td>\r\n<td style=\"text-align: center;\">FPD-Link III hub</td>\r\n<td style=\"text-align: center;\">4 × FPD-Link III</td>\r\n<td style=\"text-align: center;\">Dual GbE</td>\r\n<td style=\"text-align: center;\">4 × USB 3.0, HDMI, NVMe and M.2</td>\r\n</tr><tr><td style=\"text-align: center;\">Boson-22</td>\r\n<td style=\"text-align: center;\">Compact vision carrier</td>\r\n<td style=\"text-align: center;\">4 × 22-pin MIPI</td>\r\n<td style=\"text-align: center;\">Dual GbE</td>\r\n<td style=\"text-align: center;\">Dual USB, NVMe, 9–36 V input</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "container_copy_copy__74455897": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498055877",
+        "1717498056876"
+       ],
+       "title_text_1489460070": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Systems and Servers",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table_1693902924": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Class</th>\r\n<th style=\"text-align: center;\">Protection</th>\r\n<th style=\"text-align: center;\">I/O highlights</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">Polaris</td>\r\n<td style=\"text-align: center;\">Rugged edge system</td>\r\n<td style=\"text-align: center;\">IP67</td>\r\n<td style=\"text-align: center;\">Vision-heavy I/O set</td>\r\n<td style=\"text-align: center;\">Robotics and smart city</td>\r\n</tr><tr><td style=\"text-align: center;\">Rudi-NX</td>\r\n<td style=\"text-align: center;\">Compact system</td>\r\n<td style=\"text-align: center;\">Compact chassis</td>\r\n<td style=\"text-align: center;\">Dual GbE, camera options</td>\r\n<td style=\"text-align: center;\">Scales with Orin NX performance</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "container_copy_copy__289938250": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498055877",
+        "1717498056876"
+       ],
+       "title_text_1489460070": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Vision Add-Ons",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table_1693902924": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Add-on</th>\r\n<th style=\"text-align: center;\">Works with</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">Photon AI Camera Platform</td>\r\n<td style=\"text-align: center;\">Orin NX</td>\r\n<td style=\"text-align: center;\">PoE-PD uplink, smart-camera builds</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "text_1098323651": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3>NVIDIA Jetson Xavier NX</h3>\r\n<p><b>Carrier Boards: </b>Quark<b><br>\r\nSystems and Servers: </b>Rudi-NX<b><br>\r\nVision Add-Ons: </b>Photon AI Camera Platform</p>\r\n<p>&nbsp;</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "container_copy_copy__1807206904": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498055877",
+        "1717498056876"
+       ],
+       "title_text_1489460070": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Carrier Boards",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table_1693902924": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Focus</th>\r\n<th style=\"text-align: center;\">Networking</th>\r\n<th style=\"text-align: center;\">Camera I/O</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">Quark</td>\r\n<td style=\"text-align: center;\">Ultra-small SODIMM carrier</td>\r\n<td style=\"text-align: center;\">Dual GbE</td>\r\n<td style=\"text-align: center;\">2 × MIPI CSI-2</td>\r\n<td style=\"text-align: center;\">Compatible with TX2 NX, Nano, Xavier NX</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "container_copy_copy__1325660293": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498055877",
+        "1717498056876"
+       ],
+       "title_text_1489460070": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Systems and Vision",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table_1693902924": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Class</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">Rudi-NX</td>\r\n<td style=\"text-align: center;\">Compact system</td>\r\n<td style=\"text-align: center;\">About 21 TOPS, rich I/O and storage</td>\r\n</tr><tr><td style=\"text-align: center;\">Photon AI Camera Platform</td>\r\n<td style=\"text-align: center;\">Smart-camera carrier</td>\r\n<td style=\"text-align: center;\">PoE-PD uplink, housing-friendly layout</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "text_1981762888": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/connect-tech/nvidia-jetson-tx2-tx2i-and-jetson-nano/\">NVIDIA Jetson TX2, TX2i, and Jetson Nano</a></h3>\r\n<p><b>Carrier Boards: </b>Orbitty, Spacely, Sprocket, Quasar, TX2, TX2i, Nano</p>\r\n<p>&nbsp;</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "container_copy_copy__1123762262": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498055877",
+        "1717498056876"
+       ],
+       "text_1489460070": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><p>Carrier Boards</p>\r\n</p>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "table_1693902924": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Focus</th>\r\n<th style=\"text-align: center;\">Dimensions</th>\r\n<th style=\"text-align: center;\">Camera I/O</th>\r\n<th style=\"text-align: center;\">Notable I/O</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">Orbitty</td>\r\n<td style=\"text-align: center;\">Tiny, general-purpose</td>\r\n<td style=\"text-align: center;\">87 × 50 mm</td>\r\n<td style=\"text-align: center;\">Single MIPI option</td>\r\n<td style=\"text-align: center;\">HDMI, GbE, USB 3.0, microSD</td>\r\n<td style=\"text-align: center;\">Robotics and UGV-friendly</td>\r\n</tr><tr><td style=\"text-align: center;\">Spacely</td>\r\n<td style=\"text-align: center;\">Multi-camera</td>\r\n<td style=\"text-align: center;\">Compact</td>\r\n<td style=\"text-align: center;\">Up to 6 × MIPI CSI-2</td>\r\n<td style=\"text-align: center;\">GPS or GNSS expansion</td>\r\n<td style=\"text-align: center;\">Situational awareness builds</td>\r\n</tr><tr><td style=\"text-align: center;\">Sprocket</td>\r\n<td style=\"text-align: center;\">Lowest-profile</td>\r\n<td style=\"text-align: center;\">Very compact</td>\r\n<td style=\"text-align: center;\">1 × 4-lane MIPI</td>\r\n<td style=\"text-align: center;\">USB OTG, UART, I²C, GPIO</td>\r\n<td style=\"text-align: center;\">Space-constrained payloads</td>\r\n</tr><tr><td style=\"text-align: center;\">Quasar</td>\r\n<td style=\"text-align: center;\">Orbitty with more I/O</td>\r\n<td style=\"text-align: center;\">187 × 50 mm</td>\r\n<td style=\"text-align: center;\">1 × 4-lane MIPI</td>\r\n<td style=\"text-align: center;\">2 × USB 3.0, CAN, SATA, HDMI 2.0</td>\r\n<td style=\"text-align: center;\">More storage and expansion</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      }
+     },
+     "item_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Tab 2",
+      "cq:panelTitle": "COM-HPC",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3>COM-HPC</h3>\r\n<p><b>Carrier Boards: </b>COM-HPC Carrier, COM-HPC Mini Carrier</p>\r\n<p>&nbsp;</p>\r\n",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "container_copy_copy_": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498055877",
+        "1717498056876"
+       ],
+       "title_text_1489460070": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Carrier Boards",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table_1693902924": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Standard</th>\r\n<th style=\"text-align: center;\">I/O highlights</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">COM-HPC Carrier</td>\r\n<td style=\"text-align: center;\">Client A, B, C</td>\r\n<td style=\"text-align: center;\">2 × 2.5 GbE, USB-C 3.2, multiple M.2, mini DisplayPort</td>\r\n<td style=\"text-align: center;\">Small form factor, extended temperature options</td>\r\n</tr><tr><td style=\"text-align: center;\">COM-HPC Mini Carrier</td>\r\n<td style=\"text-align: center;\">COM-HPC Mini</td>\r\n<td style=\"text-align: center;\">4 × 2.5 GbE, 4 × USB 3.2, M.2 M and E, serial, CAN</td>\r\n<td style=\"text-align: center;\">Rugged locking connectors</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      }
+     },
+     "item_1787872275551": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "COM Express",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "item_1_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 1",
+       "cq:panelTitle": "NVIDIA Jetson",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>COM Express</h3>\r\n<p><b>Carrier Boards: </b>COM Express Type 7 Carrier, COM Express Type 7 plus GPU System</p>\r\n<p>&nbsp;</p>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "title_text_1489460070_copy": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Carrier Boards",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Standard</th>\r\n<th style=\"text-align: center;\">Networking</th>\r\n<th style=\"text-align: center;\">Expansion</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">Type 7 Carrier Board</td>\r\n<td style=\"text-align: center;\">COM Express Type 7</td>\r\n<td style=\"text-align: center;\">Dual 10GbE SFP+ plus 2 × GbE</td>\r\n<td style=\"text-align: center;\">M.2 NVMe, USB 3.0, mini PCIe</td>\r\n<td style=\"text-align: center;\">Enterprise-class edge compute</td>\r\n</tr><tr><td style=\"text-align: center;\">Type 7 plus GPU System</td>\r\n<td style=\"text-align: center;\">COM Express Type 7 with GPU</td>\r\n<td style=\"text-align: center;\">High-speed backplane</td>\r\n<td style=\"text-align: center;\">High-end NVIDIA GPUs</td>\r\n<td style=\"text-align: center;\">Rugged small form factor system</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      }
+     },
+     "item_1787872284845": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": " Qseven",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "item_1_copy_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 1",
+       "cq:panelTitle": "NVIDIA Jetson",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Qseven</h3>\r\n<p><b>Carrier Boards: </b>PCIe/104 Qseven Carrier, PCI-104 Qseven Carrier, Ultra-Lite and Lite Qseven carriers</p>\r\n<p>&nbsp;</p>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "title_text_1489460070_copy": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Carrier Boards",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Form factor</th>\r\n<th style=\"text-align: center;\">Key I/O</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">PCIe/104 Qseven Carrier</td>\r\n<td style=\"text-align: center;\">PC/104 (PCIe/104)</td>\r\n<td style=\"text-align: center;\">SATA, USB, GbE, LVDS, VGA, serial</td>\r\n<td style=\"text-align: center;\">Integrates most Qseven modules</td>\r\n</tr><tr><td style=\"text-align: center;\">PCI-104 Qseven Carrier</td>\r\n<td style=\"text-align: center;\">PC/104 (PCI-104)</td>\r\n<td style=\"text-align: center;\">PCI-104 expansion</td>\r\n<td style=\"text-align: center;\">Same I/O family as above</td>\r\n</tr><tr><td style=\"text-align: center;\">Ultra-Lite and Lite Qseven</td>\r\n<td style=\"text-align: center;\">Compact</td>\r\n<td style=\"text-align: center;\">Mini PCIe, SIM options</td>\r\n<td style=\"text-align: center;\">Low cost, flexible carriers</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      }
+     },
+     "item_1787872295525": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "SMARC",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "item_1_copy_copy_cop": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 1",
+       "cq:panelTitle": "NVIDIA Jetson",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>SMARC</h3>\r\n<p><b>Carrier Boards: </b>SMARC 2.0 Carrier, SMARC/SL</p>\r\n<p>&nbsp;</p>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "title_text_1489460070_copy": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Carrier Boards",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Standard</th>\r\n<th style=\"text-align: center;\">Key I/O</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">SMARC 2.0 Carrier</td>\r\n<td style=\"text-align: center;\">SMARC 2.0</td>\r\n<td style=\"text-align: center;\">2 × HDMI, 2 × GbE, USB 3.0 and 2.0, dual CSI-2</td>\r\n<td style=\"text-align: center;\">Small layout, wide temperature options</td>\r\n</tr><tr><td style=\"text-align: center;\">SMARC/SL</td>\r\n<td style=\"text-align: center;\">SMARC 1.1 and 2.0</td>\r\n<td style=\"text-align: center;\">mPCIe and mSATA, GbE, HDMI, CSI</td>\r\n<td style=\"text-align: center;\">Very small footprint, extended temperature</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      }
+     },
+     "item_1787872299366": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:panelTitle": "VPX",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "item_1_copy_copy_cop": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 1",
+       "cq:panelTitle": "NVIDIA Jetson",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>VPX</h3>\r\n<p><b>Carrier Boards: </b>Graphite VPX 3U VPX SBC, GraphiteVPX/GbE switch</p>\r\n<p>&nbsp;</p>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "title_text_1489460070_copy": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Carrier Boards",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "table": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><th style=\"text-align: center;\">Product</th>\r\n<th style=\"text-align: center;\">Standard</th>\r\n<th style=\"text-align: center;\">Key I/O</th>\r\n<th style=\"text-align: center;\">Notes</th>\r\n</tr><tr><td style=\"text-align: center;\">SMARC 2.0 Carrier</td>\r\n<td style=\"text-align: center;\">SMARC 2.0</td>\r\n<td style=\"text-align: center;\">2 × HDMI, 2 × GbE, USB 3.0 and 2.0, dual CSI-2</td>\r\n<td style=\"text-align: center;\">Small layout, wide temperature options</td>\r\n</tr><tr><td style=\"text-align: center;\">SMARC/SL</td>\r\n<td style=\"text-align: center;\">SMARC 1.1 and 2.0</td>\r\n<td style=\"text-align: center;\">mPCIe and mSATA, GbE, HDMI, CSI</td>\r\n<td style=\"text-align: center;\">Very small footprint, extended temperature</td>\r\n</tr></tbody></table>\r\n",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      }
+     }
+    },
+    "cq:responsive": {
+     "jcr:primaryType": "nt:unstructured",
+     "default": {
+      "jcr:primaryType": "nt:unstructured",
+      "offset": "0",
+      "width": "12"
+     }
+    }
+   },
+   "container_49143770": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Connect Tech Solutions, Services, and Support",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title",
+     "cq:styleIds": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    "text": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<ul>\r\n<li>Custom carrier and system design, conformal coating, programming and flashing services</li>\r\n<li>CTI-L4T BSPs and resource center for manuals and drivers</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_746606129_": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "1718800458698",
+      "1719484596357"
+     ],
+     "flexcontaineritem": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_861351158": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

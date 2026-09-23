@@ -1,0 +1,822 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "Renesas Products | Renesas Automotive Microcontrollers",
+ "manufacturer": "mai:manufacturers/renesas",
+ "businessCategories": [
+  "mai:business-categories/semiconductors"
+ ],
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "pd_modelName": "Renesas (Automotive only)",
+ "pd_isModelNameLinkToPage": "true",
+ "jcr:created": "Mon Sep 21 2026 17:28:06 GMT+0000",
+ "cq:lastModified": "Mon Sep 21 2026 18:22:32 GMT+0000",
+ "jcr:description": "Providing leading-edge semiconductor solutions. Visit Macnica Americas to shop for leading edge Renesas products including Renesas automotive microcontrollers.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/renesas",
+ "pageTitle": "Renesas (Automotive only)",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "Renesas (Automotive only)",
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/logos/renesas-180x50.png",
+  "sling:resourceType": "core/wcm/components/image/v3/image"
+ },
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "container_1": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498052331"
+    ],
+    "title_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "flexcontainer_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "",
+      "1719484596357"
+     ],
+     "flexcontaineritem_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "embed_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "layout": "responsive",
+       "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+       "type": "embeddable",
+       "youtubeVideoId": "Fxq4Xp37q6Y",
+       "sling:resourceType": "macnicaglobal2/components/content/embed"
+      }
+     },
+     "flexcontaineritem_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>Renesas Electronics Corporation</b> offers a wide variety of cutting-edge technologies and embedded solutions that combine high-performance analog, power, and sensor products centered on microcontrollers, which have the world's top-class market share, in the automotive, industrial, infrastructure, and IoT fields. We provide for customer base and end market support for Renesas automotive microcontrollers &amp; products.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_2": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Renesas Products and Services",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "anchorlink_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+     "cq:styleIds": [
+      "",
+      "1718861445028"
+     ],
+     "anchor": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+       "jcr:primaryType": "nt:unstructured",
+       "linkId": "1",
+       "text": "Analog Connectivity"
+      },
+      "item1": {
+       "jcr:primaryType": "nt:unstructured",
+       "linkId": "2",
+       "text": "Renesas Automotive Microcontrollers/Processors"
+      },
+      "item2": {
+       "jcr:primaryType": "nt:unstructured",
+       "linkId": "3",
+       "text": "Microcontrollers/Processors"
+      },
+      "item3": {
+       "jcr:primaryType": "nt:unstructured",
+       "linkId": "4",
+       "text": "Power"
+      }
+     }
+    }
+   },
+   "container_3": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "",
+     "1717498052331"
+    ],
+    "title_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Analog Connectivity",
+     "id": "1",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>With a wide range of Renesas products in our portfolio, we provide optimal solutions to solve our customers' problems.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_4": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "",
+     "1717498056876"
+    ],
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\n<li>Clock</li>\n<li>Sensor</li>\n<li>Memory</li>\n<li>OpticaOptical</li>\n<li>RF</li>\n<li>CMIC (GreenPAK)</li>\n<li>CMIC (ForgeFPGA)</li>\n<li>Load Switch (GFET)</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<ul>\n<li>Wireless</li>\n<li>Audio Codec</li>\n<li>Video (VSP, AHL)</li>\n<li>Haptics</li>\n<li>Interface (RS485)</li>\n<li>Photocupler</li>\n<li>OPAMP</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   },
+   "container_5": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498052331"
+    ],
+    "title_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Renesas Automotive Microcontrollers/Processors",
+     "id": "2",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>We provide automotive microcontroller products that combine high-speed processing with low power consumption, as well as processor products that support automotive applications such as autonomous driving.</p>\n<p>Equipped with functional safety and security features, our Renesas products have a proven track record of widespread adoption in <a href=\"/content/macnicaglobal2/americas/mai/en/services/automotive.html\">automotive technology solutions</a>.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_6": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "flexcontainer_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "",
+      "1719484596357"
+     ],
+     "flexcontaineritem_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-rl78-f12.jpg",
+       "alt": "Automotive MCU FL78/F Series",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3 style=\"margin-left: 40.0px;\">Automotive MCU RL78/F Series</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The RL78/Fx series microcontrollers are a family of 16-bit microcontrollers for automotive applications that combine low power consumption with high performance.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-rh850.jpg",
+       "alt": "Automotive MCU RH850 Series",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3 style=\"margin-left: 40.0px;\">Automotive MCU RH850 Series</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The RH850 family is a high-performance, low-power, high-quality 32-bit microcontroller for automotive use.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "flexcontaineritem_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-r-car.jpg",
+       "alt": "In-vehicle MPU R-Car Series",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">In-vehicle MPU R-Car Series</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">The R-Car family of automotive SoCs are intelligent devices designed for applications such as Autonomous (AD/ADAS), Connected (Car Server/CoGW), and Cockpit (IVI/Cluster).</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   },
+   "container_7": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498052331"
+    ],
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<hr />",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "container_8": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "",
+     "1717498056876"
+    ],
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Microcontrollers/Processors",
+      "id": "3",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>We offer a wide variety of microcontrollers and processors, from 8-bit low-power microcontrollers to 64-bit AI processors, including proprietary cores, ARM cores, and RISC-V.</p>\n<p style=\"margin-top:0\"><br>\nA wide range of memory, pin count and peripheral options are available to suit any application.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   },
+   "container_9": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "",
+     "1717498056876"
+    ],
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876",
+      "1717498055877"
+     ],
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-ra-arm-cortex.jpg",
+      "imageRatio": "15",
+      "alt": "Arm Cortex-M MCU RA Series",
+      "text": "<h3 style=\"margin-left: 40.0px;\">Arm Cortex-M MCU RA Series</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Renesas RA microcontrollers are 32-bit MCUs featuring Arm® Cortex®-M33, M23, M4, or M85 cores.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876",
+      "1717498055877"
+     ],
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-rz-g2l.jpg",
+      "imageRatio": "15",
+      "alt": "32/64-bit MPU RZ Series",
+      "text": "<h3 style=\"margin-left: 40.0px;\">32/64-bit MPU RZ Series</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The RZ family of microprocessors is a 32/64-bit MPU equipped with Arm® Corex®-R and Cortex®-A cores.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false"
+     }
+    },
+    "container_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876",
+      "1717498055877"
+     ],
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-rx140.jpg",
+      "imageRatio": "15",
+      "alt": "32-bit MCU RX Series",
+      "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">32-bit MCU RX Series</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">The RX family is a 32-bit microcontroller equipped with Renesas' original RX core.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false"
+     }
+    }
+   },
+   "container_10": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "rgb(247,247,247)",
+    "cq:styleIds": [
+     "",
+     "1717498056876"
+    ],
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876",
+      "1717498055877"
+     ],
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-rl78-g15.jpg",
+      "imageRatio": "15",
+      "alt": "8/16-bit MCU RL78 Series",
+      "text": "<h3 style=\"margin-left: 40.0px;\">8/16-bit MCU RL78 Series</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The RL78 microcontroller is a compact 8-16 bit microcontroller that uses Renesas' unique core architecture.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false"
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876",
+      "1717498055877"
+     ],
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/reality-ai-logo.jpg",
+      "imageRatio": "15",
+      "alt": "Renesas - Reality AI",
+      "text": "<h3 style=\"margin-left: 40.0px;\">Reality AI Software</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Reality AI is a development environment for developing edge AI software that combines signal processing, machine learning, and anomaly detection that can be run on Renesas MCU/MPU cores.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false"
+     }
+    },
+    "container_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   },
+   "container_11": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "",
+     "1717498056876"
+    ],
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Power",
+      "id": "4",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>We offer a wide range of products from general-purpose products to automotive-compatible products, supporting high-speed load response, low self-consumption current, high power density, high efficiency, and reduced external components.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-ac-dc.jpg",
+        "alt": "AC/DC",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">AC/DC</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">We provide a wide range of products worldwide, from general-purpose/small-sized power supplies under 75W to special topologies that configure kW-class power supplies.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-dc-dc.jpg",
+        "alt": "DC/DC",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">DC/DC</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Renesas offers a wide lineup ranging from low voltage products for 5V lines to medium to high voltage products that can be used on 12V, 24V, and 48V lines.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-ldo.jpg",
+        "alt": "LDOs",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">LDOs</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">Renesas offers a wide range of single and dual LDOs with the following features: high PSRR, low noise LDO, maximum 3A high current LDO, and high-voltage LDO capable of inputting up to 40V.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_4": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-pmic.jpg",
+        "alt": "PMIC",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">PMIC</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">Renesas offers a lineup of SYSTEM PMICs that supply power to the main power supply system, and SUB PMICs that supply power to SoCs, CPUs, and GPUs.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-digital-multiphase.jpg",
+        "alt": "Digital Multiphase",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">Digital Multiphase</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Computing power products extensively verified in customer designs, with fast load transient response, precise current balance, and excellent stability.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-usb-pd.jpg",
+        "alt": "BMS (USB PD, Charger, FGIC)",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">BMS (USB PD, Charger, FGIC)</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">As of Fall 2024, demand for USB PD is accelerating around the world, and Renesas' products are able to provide solutions that comply with this standard.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-discrete-power.jpg",
+        "alt": "Discrete Power",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">Discrete Power</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">Due to their advanced technology and high reliability, Renesas MOSFETs have an overwhelming share of the market in both the industrial and automotive fields and continue to support powertrains around the world.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_4": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/renesas/images/renesas-gate-driver.jpg",
+        "alt": "Gate Driver",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">Gate Driver</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">Renesas' half-bridge, full-bridge, low-side, and synchronous buck MOSFET drivers can handle up to 100V, with industry-leading gate rise and fall times.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498055877"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   },
+   "container_12": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "flexcontainer_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": [
+      "",
+      "1719484596357"
+     ],
+     "flexcontaineritem_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Supplier Website",
+       "linkURL": "https://www.renesas.com",
+       "linkTarget": "_blank",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote",
+       "linkTarget": "_blank",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Technical Support",
+       "linkURL": "https://community.renesas.com/",
+       "linkTarget": "_blank",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

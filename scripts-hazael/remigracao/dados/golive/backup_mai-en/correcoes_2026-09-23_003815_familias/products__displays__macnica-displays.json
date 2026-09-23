@@ -1,0 +1,206 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+ "jcr:title": "LCD Displays Wholesale | Industrial LCD Display Manufacturer | Macnica",
+ "manufacturer": "mai:manufacturers/macnica-displays",
+ "businessCategories": "mai:business-categories/displays",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "pd_modelName": "MACNICA-DISPLAYS",
+ "pd_isModelNameLinkToPage": "true",
+ "jcr:created": "Tue Sep 22 2026 11:56:26 GMT+0000",
+ "cq:lastModified": "Tue Sep 22 2026 12:14:51 GMT+0000",
+ "jcr:description": "Get a quote on cost-effective LCD display readily available for product projects with tight timeframes. Macnica America's is an industrial LCD manufacturer.",
+ "keywords": "macnica, TFT LCD, LCD Display, Display Module, PCAP",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/displays/macnica-displays",
+ "hideInNav": "true",
+ "pageType": "productManufacturerLandingPage",
+ "pageTitle": "Macnica Displays",
+ "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+ "pd_description": "Get a quote on cost-effective LCD display readily available for product projects with tight timeframes. Macnica America's is an industrial LCD manufacturer.",
+ "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+ "navTitle": "Macnica Displays",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498056876"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "LCD Displays Wholesale | Industrial LCD Display Manufacturer | Macnica",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Cost-effective LCD Displays Available Quickly",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "textwithimage_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "textwithimage_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/products/white-label-for-consumer-market-3.png",
+     "imageRatio": "40",
+     "text": "<p>If you need a cost-effective industrial LCD display that’s readily available for a product development project with tight timeframes, consider a Macnica display.</p>\r\n<p>&nbsp;</p>\r\n<p>As an industrial LCD display manufacturer, Macnica is a global leader in supplying manufacturers with electronic components, software, and various services, including warehousing and distribution.</p>\r\n<p>&nbsp;</p>\r\n<p>Our displays are available in small to very large quantities, bringing you high-quality LCDs with quick shipping at extremely competitive prices and low MOQs (minimum order quantities).</p>\r\n",
+     "displayPopupTitle": "true",
+     "linkTarget": "_self",
+     "titleValueFromDAM": "true",
+     "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+     "isDecorative": "false",
+     "textIsRich": "true",
+     "altValueFromDAM": "false",
+     "cq:styleIds": "1718154328384",
+     "spImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/products/white-label-for-consumer-market-3.png",
+      "sling:resourceType": "macnicaglobal2/components/content/image"
+     }
+    }
+   },
+   "section_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Macnica displays are:</p>\r\n<ul>\r\n<li>Available in sizes from 1.33” to 15.6” diagonal</li>\r\n<li>Very high quality, with high contrast, high resolution, great color and low power consumption</li>\r\n<li>Able to be customized based on client requirements</li>\r\n<li>Supported by Macnica technical support based in the United States</li>\r\n</ul>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Additionally, Macnica offers <a href=\"/content/macnicagwi/americas/mai/en/products/displays/macnica-displays-customization.html\">customization options</a> to meet specific project needs, ensuring our displays align perfectly with your design goals. Backed by U.S.-based technical support, Macnica ensures you receive top-quality products with exceptional customer service, all while maintaining fast and efficient shipping. Whether you need displays for consumer electronics, industrial applications, or specialized projects, Macnica’s LCD modules deliver the quality, affordability, and speed you require.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://youtu.be/CnX9A5tf0sI\">Click to watch a short video of our Optical Bonding process.</a></p>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "image_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/products/macnica-displays-3-300x214.jpg",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    },
+    "image_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/products/macnica-displays-4-300x191.jpg",
+     "sling:resourceType": "macnicaglobal2/components/content/image"
+    },
+    "text_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "text": "<p>As an industrial LCD display manufacturer, Macnica offers a variety of services to enhance our LCD displays, including <b>OPTICAL BONDING</b>, <b>TOUCH SCREEN</b> and <b>COVER GLASS OPTIONS</b>, and <b>CUSTOMIZED WAREHOUSING AND LOGISTICS.</b></p>\r\n",
+     "jcr:lastModified": "Mon Sep 21 2026 14:11:08 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "section_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Macnica Display Part Number List",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "table_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\r\n<tbody><tr><th>Part Number</th>\r\n<th>Size</th>\r\n<th>Resolution</th>\r\n<th>Interface</th>\r\n<th>Technology</th>\r\n<th>Remarks</th>\r\n<th>Format</th>\r\n</tr><tr><td>COM15H1N42OLC</td>\r\n<td>1.5&quot;</td>\r\n<td>240 x 240</td>\r\n<td>SPI</td>\r\n<td>Blanview-R</td>\r\n<td>Q4, 2024</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM20H2R04OLC</td>\r\n<td>2&quot;</td>\r\n<td>240 x 320</td>\r\n<td>CPU</td>\r\n<td>Blanview-R</td>\r\n<td>Q4, 2024</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM20T2P98ILC</td>\r\n<td>2&quot;</td>\r\n<td>240 x 320</td>\r\n<td>RGB</td>\r\n<td>Transmissive</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM22H2P84ULC</td>\r\n<td>2.2&quot;</td>\r\n<td>240 x 320</td>\r\n<td>CPU</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM24H2P71ULC</td>\r\n<td>2.4&quot;</td>\r\n<td>240 x 320</td>\r\n<td>RGB</td>\r\n<td>Blanview-G</td>\r\n<td>Wide Range</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM24H2P94ULC</td>\r\n<td>2.4&quot;</td>\r\n<td>240 x 320</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM24H2P96ULC</td>\r\n<td>2.4&quot;</td>\r\n<td>240 x 320</td>\r\n<td>CPU</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM27H2P86ULC</td>\r\n<td>2.7&quot;</td>\r\n<td>240 x 320</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM27H2P88UTC</td>\r\n<td>2.7&quot;</td>\r\n<td>240 x 320</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM27H2R06ULC</td>\r\n<td>2.7&quot;</td>\r\n<td>240 x 320</td>\r\n<td>SPI</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM27H2P90ULC</td>\r\n<td>2.7&quot;</td>\r\n<td>240 x 320</td>\r\n<td>CPU</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM27H2P92UTC</td>\r\n<td>2.7&quot;</td>\r\n<td>240 x 320</td>\r\n<td>CPU</td>\r\n<td>Blanview-2</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM32H3P71ULC</td>\r\n<td>3.2&quot;</td>\r\n<td>480 x 800</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM32H3P68ULC</td>\r\n<td>3.2&quot;</td>\r\n<td>480 x 800</td>\r\n<td>MIPI</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM35H3R08ULC</td>\r\n<td>3.5&quot;</td>\r\n<td>240 x 320</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM35H3R10UTC</td>\r\n<td>3.5&quot;</td>\r\n<td>240 x 320</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM35H3R25ULC</td>\r\n<td>3.5&quot;</td>\r\n<td>240 x 320</td>\r\n<td>SPI</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM35H3R12ULC</td>\r\n<td>3.5&quot;</td>\r\n<td>480 x 640</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM35H3R14UTC</td>\r\n<td>3.5&quot;</td>\r\n<td>480 x 640</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM35H3R29ULC</td>\r\n<td>3.5&quot;</td>\r\n<td>480 x 640</td>\r\n<td>MIPI</td>\r\n<td>Blanview-2</td>\r\n<td>Q4, 2024</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM35H3R07ULC</td>\r\n<td>3.5&quot;</td>\r\n<td>640 x 960</td>\r\n<td>MIPI</td>\r\n<td>Blanview-3</td>\r\n<td>&nbsp;</td>\r\n<td>Portait</td>\r\n</tr><tr><td>COM40H4P25ULC</td>\r\n<td>4&quot;</td>\r\n<td>480 x 800</td>\r\n<td>MIPI</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM43H4N66ULC</td>\r\n<td>4.3&quot;</td>\r\n<td>480 x 800</td>\r\n<td>MIPI</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM43H4N90ULC</td>\r\n<td>4.3&quot;</td>\r\n<td>480 x 800</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM43H4N91UTC</td>\r\n<td>4.3&quot;</td>\r\n<td>480 x 800</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM48H4P03ULC</td>\r\n<td>4.8&quot;</td>\r\n<td>720 x 1280</td>\r\n<td>MIPI</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM48H4P07ULC</td>\r\n<td>4.8&quot;</td>\r\n<td>720 x 1280</td>\r\n<td>MIPI</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM50H5N17ULC</td>\r\n<td>5&quot;</td>\r\n<td>720 x 1280</td>\r\n<td>MIPI</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Portrait</td>\r\n</tr><tr><td>COM35H3R16ULC</td>\r\n<td>3.5&quot;</td>\r\n<td>320 x 240</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM35H3R18UTC</td>\r\n<td>3.5&quot;</td>\r\n<td>320 x 240</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM35H3P58ULC</td>\r\n<td>3.5&quot;</td>\r\n<td>320 x 240</td>\r\n<td>RGB</td>\r\n<td>Blanview-G</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM41H4P21ULC</td>\r\n<td>4.1&quot;</td>\r\n<td>320 x 240</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM41H4P23UTC</td>\r\n<td>4.1&quot;</td>\r\n<td>320 x 240</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM43T4N95VLS</td>\r\n<td>4.3&quot;</td>\r\n<td>480 x 272</td>\r\n<td>RGB</td>\r\n<td>Transmissive</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM43T4N96VTS</td>\r\n<td>4.3&quot;</td>\r\n<td>480 x 272</td>\r\n<td>RGB</td>\r\n<td>Transmissive</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM43H4N44ULC</td>\r\n<td>4.3&quot;</td>\r\n<td>480 x 272</td>\r\n<td>RGB</td>\r\n<td>Blanview-G</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM43H4P09UTC</td>\r\n<td>4.3&quot;</td>\r\n<td>480 x 272</td>\r\n<td>RGB</td>\r\n<td>Blanview-2</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM50H5N25ULC</td>\r\n<td>5&quot;</td>\r\n<td>800 x 480</td>\r\n<td>LVDS</td>\r\n<td>Blanview-G</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM50H5N15ULC</td>\r\n<td>5&quot;</td>\r\n<td>800 x 480</td>\r\n<td>LVDS</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM50H5N23UTC</td>\r\n<td>5&quot;</td>\r\n<td>800 x 480</td>\r\n<td>LVDS</td>\r\n<td>Blanview-2</td>\r\n<td>PCAP / Air Gap</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM57H5N27XLC</td>\r\n<td>5.7&quot;</td>\r\n<td>640 x 480</td>\r\n<td>RGB</td>\r\n<td>Blanview-1</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM57H5N28XTC</td>\r\n<td>5.7&quot;</td>\r\n<td>640 x 480</td>\r\n<td>RGB</td>\r\n<td>Blanview-1</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM57H5N32XSC</td>\r\n<td>5.7&quot;</td>\r\n<td>640 x 480</td>\r\n<td>RGB</td>\r\n<td>Blanview-1</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM57H5N33XRC</td>\r\n<td>5.7&quot;</td>\r\n<td>640 x 480</td>\r\n<td>RGB</td>\r\n<td>Blanview-1</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM57T5N07RSS</td>\r\n<td>5.7&quot;</td>\r\n<td>640 x 480</td>\r\n<td>RGB</td>\r\n<td>Transmissive</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM57T5N19RRS</td>\r\n<td>5.7&quot;</td>\r\n<td>640 x 480</td>\r\n<td>RGB</td>\r\n<td>Transmissive</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM70T7M35ZLC</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>RGB</td>\r\n<td>Transmissive</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM70T7M36ZTC</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>RGB</td>\r\n<td>Transmissive</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM70H7M24ULC</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>LVDS</td>\r\n<td>Blanview-G</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM70H7M40ULC</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>LVDS</td>\r\n<td>Blanview-2</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM70H7M58UTC</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>LVDS</td>\r\n<td>Blanview-2</td>\r\n<td>PCAP / Air Gap</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM70H7M60UTC</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>LVDS</td>\r\n<td>Blanview-2</td>\r\n<td>Resistive Touch Panel</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM70H7M44UTC</td>\r\n<td>7&quot;</td>\r\n<td>800 x 480</td>\r\n<td>LVDS</td>\r\n<td>Blanview-2</td>\r\n<td>PCAP / Direct Bond</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM84T8M02SSS</td>\r\n<td>8.4&quot;</td>\r\n<td>1024 x 768</td>\r\n<td>LVDS</td>\r\n<td>Transmissive</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM104H9M25SSS</td>\r\n<td>10.4&quot;</td>\r\n<td>800 x 600</td>\r\n<td>LVDS</td>\r\n<td>LVDS</td>\r\n<td>Q4, 2024</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM104H9M26SRS</td>\r\n<td>10.4&quot;</td>\r\n<td>800 x 600</td>\r\n<td>LVDS</td>\r\n<td>Blanview-F</td>\r\n<td>Q4, 2024, PCAP / Direct Bond</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM104H9M28SRS</td>\r\n<td>10.4&quot;</td>\r\n<td>800 x 600</td>\r\n<td>LVDS</td>\r\n<td>Blanview-F</td>\r\n<td>Q4, 2024, Resistive Touch Panel</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM121T9M14CSS</td>\r\n<td>12.1&quot;</td>\r\n<td>800 x 600</td>\r\n<td>LVDS</td>\r\n<td>Transmissive</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM121H9M18SSS</td>\r\n<td>12.1&quot;</td>\r\n<td>800 x 600</td>\r\n<td>LVDS</td>\r\n<td>Blanview-F</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM121H9M21SSS</td>\r\n<td>12.1&quot;</td>\r\n<td>1024 x 768</td>\r\n<td>LVDS</td>\r\n<td>Blanview-F</td>\r\n<td>&nbsp;</td>\r\n<td>Landscape</td>\r\n</tr><tr><td>COM121H9M22SRS</td>\r\n<td>12.1&quot;</td>\r\n<td>1024 x 768</td>\r\n<td>LVDS</td>\r\n<td>Blanview-F</td>\r\n<td>PCAP / Direct Bond</td>\r\n<td>Landscape</td>\r\n</tr></tbody></table>\r\n",
+     "sling:resourceType": "macnicaglobal2/components/content/table",
+     "textIsRich": "true"
+    }
+   },
+   "contact_block_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498053499",
+     "1717498052331"
+    ],
+    "text_intro": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "text": "<p style=\"text-align: center;\"><i>For more information:</i></p>\r\n",
+     "jcr:lastModified": "Mon Sep 21 2026 14:11:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    },
+    "flexcontainer": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+     "cq:styleIds": "1718800458698",
+     "flexcontaineritem_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for More Information",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "linkURL": "/content/macnicagwi/americas/mai/en/contact.html",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Mon Sep 21 2026 14:11:41 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717669229626"
+       ]
+      }
+     },
+     "flexcontaineritem_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+      "button": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "linkURL": "/content/macnicagwi/americas/mai/en/contact.html",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Mon Sep 21 2026 14:11:51 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "manufacturerlogo": {
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/logos/macnica/macnica_Brand_LOGO_RGB_1.png",
+  "sling:resourceType": "core/wcm/components/image/v3/image",
+  "altValueFromDAM": "false"
+ }
+}

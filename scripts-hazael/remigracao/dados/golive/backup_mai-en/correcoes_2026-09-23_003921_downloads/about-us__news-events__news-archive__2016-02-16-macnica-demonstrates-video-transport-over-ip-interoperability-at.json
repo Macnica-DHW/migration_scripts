@@ -1,0 +1,110 @@
+{
+ "jcr:primaryType": "cq:PageContent",
+ "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+ "jcr:title": "Macnica Demonstrates Video Transport Over IP Interoperability at VidTrans16",
+ "showInLists": "true",
+ "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+ "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+ "cq:lastModified": "Wed Sep 23 2026 01:50:13 GMT+0000",
+ "jcr:description": "New Interop Demonstration of RFC4175 Active Video Transport Extends Macnica’s Industry- Leading Video IP Portfolio SAN DIEGO, CA February 16, 2016 – Macnica Americas today announced that it will be demonstrating several key features of its industry-leading SMPTE 2022 - based video solutions at VidTrans16 on February 23- 25, 2016 in New Orleans, LA. System interop demos will be shown for RFC4175 active video transport and SMPTE 2022-7 hitless diversity solutions, as well as a demo of the Sony Network Media Interface IP solution.",
+ "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2016-02-16-macnica-demonstrates-video-transport-over-ip-interoperability-at",
+ "hideInNav": "true",
+ "pageTitle": "Macnica Demonstrates Video Transport Over IP Interoperability at VidTrans16",
+ "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+ "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+ "navTitle": "Macnica Demonstrates Video Transport Over IP Interoperability at VidTrans16",
+ "root": {
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "wcm/foundation/components/responsivegrid",
+  "container": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "macnicaglobal2/components/content/container",
+   "title_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "cq:styleIds": [
+     "1717498056876",
+     "1717498053499"
+    ],
+    "title": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Macnica Demonstrates Video Transport Over IP Interoperability at VidTrans16",
+     "type": "h1",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "heading_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f0f0f0",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "About Macnica Americas",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>Macnica Americas is a fully franchised semiconductor distributor covering North America with expertise in design services, IP, applications support, and logistics. Macnica Americas is a division of Macnica Inc, a $3.2B global leader in semiconductor distribution and design services. The Macnica Americas IP portfolio includes solutions for high speed networking, broadcast video, DSP and embedded applications.</p>\n<p>Find out more about Macnica Americas products and design services at <a href=\"/content/macnicaglobal2/americas/mai/en\" target=\"_self\" rel=\"noopener noreferrer\">www.macnica-na.com</a></p>\n<p style=\"\ttext-align: left;\n\">The Macnica Americas logo is a trademark of Macnica, Inc.. Other trademarks are the property of their respective owners.</p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   },
+   "heading_2_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "Downloads",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    }
+   },
+   "download_1_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "download_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "PR VidTrans 2016 (final)",
+     "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/downloads/PR - VidTrans 2016 (final).pdf",
+     "sling:resourceType": "macnicaglobal2/components/content/download"
+    }
+   },
+   "heading_3_wrap": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "backgroundColor": "#f7f7f7",
+    "cq:styleIds": [
+     "1717498052331",
+     "1717498053499"
+    ],
+    "heading_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:title": "New Interop Demonstration of RFC4175 Active Video Transport Extends Macnica’s Industry- Leading Video IP Portfolio",
+     "type": "h2",
+     "sling:resourceType": "macnicaglobal2/components/content/title"
+    },
+    "text_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "text": "<p>SAN DIEGO, CA February 16, 2016 – Macnica Americas today announced that it will be demonstrating several key features of its industry-leading SMPTE 2022 - based video solutions at VidTrans16 on February 23- 25, 2016 in New Orleans, LA. System interop demos will be shown for RFC4175 active video transport and SMPTE 2022-7 hitless diversity solutions, as well as a demo of the Sony Network Media Interface IP solution.</p>\n<p>“Macnica is pleased to add support for RFC4175 active video transport using RTP over UDP/IP to our portfolio of high performance video IP,” said Marc Levy, Chief Technical Officer of Macnica Americas. “This capability further extends our video transport offering, which is already one of the most full-featured and flexible in the industry.”</p>\n<p>The Macnica RFC4175 solution allows FPGA users to design products capable of transporting uncompressed active video over IP networks using RTP over UDP/IP. As an alternative to SMPTE 2022-6 framing which transports an entire SDI bitstream including audio, ancillary data, and blanking (also fully supported by Macnica IP), the RFC4175 solution transport only active video, allowing additional flexibility for sourcing, routing, and processing of video streams.</p>\n<p>When RFC4175 is used, separate streams/protocols are used to transport non video data. For example, each channel of audio is transported using AES67. This can quickly lead to requirements for many logical streams. Macnica’s IP is uniquely positioned to handle this situation and can support up to 256 data streams.</p>\n<p>Macnica is also demonstrating their SMPTE 2022-7 hitless diversity switch feature, which transmits data over redundant network links and on the receive side, selects the best data from both links to ensure the most reliable video transport. This use of redundancy protects data better than just switching from one link to another if a fault is detected. The Macnica SMPTE 2022-7 solution can be used with or without forward error correction (FEC), but if enabled allows for even greater protection against data loss.</p>\n<p>Macnica’s FPGA IP core also supports implementation of Sony Network Media Interface, and when combined with SMPTE 2059 time sync IP and Sony’s Low Latency Video Codec (LLVC) IP, gives end equipment manufacturers the flexibility to support Sony’s Network Media Interface on an FPGA. Additionally, implementation on FPGAs enables flexible implementations, field upgrades, and even feature enhancements after deployment.</p>\n<p>Macnica Americas is demonstrating its video solutions at VidTrans 2016 in the Macnica booth. For further information or to contact Macnica Americas, visit the 10G Video web page at <a href=\"https://www2.macnica.com/10g\" target=\"_blank\" rel=\"noopener noreferrer\">www.macnica-na.com/10g- video.</a></p>",
+     "sling:resourceType": "macnicaglobal2/components/content/text",
+     "textIsRich": "true"
+    }
+   }
+  }
+ }
+}
