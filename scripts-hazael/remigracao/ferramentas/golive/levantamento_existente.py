@@ -52,7 +52,7 @@ IGNORAR = {"sling:resourceType", "sling:resourceSuperType", "jcr:primaryType", "
            "cq:lastModifiedBy", "jcr:lastModifiedBy", "jcr:uuid", "cq:lastReplicatedBy", "cq:lastReplicationAction", "cq:policy"}
 ATTR = re.compile(r'\b(href|src|data-src|poster|action)\s*=\s*(["\'])(.*?)\2', re.I | re.S)
 PROPS = ("jcr:path jcr:createdBy jcr:created jcr:content/jcr:title jcr:content/cq:lastModified jcr:content/cq:lastModifiedBy "
-         "jcr:content/cq:lastReplicationAction jcr:content/cq:template jcr:content/deleted jcr:content/deletedBy "
+         "jcr:content/cq:lastReplicationAction jcr:content/cq:lastReplicationAction_publish jcr:content/cq:template jcr:content/deleted jcr:content/deletedBy "
          "jcr:content/cq:redirectTarget jcr:content/hideInNav jcr:content/cq:canonicalUrl")
 
 
@@ -210,7 +210,7 @@ def main():
         for rel in sorted(pg):
             h = pg[rel]
             flags = [f for f, ok in (("SOFT-DELETED", c(h, "deleted")), ("redirect", c(h, "cq:redirectTarget")),
-                                     ("PUBLICADA", c(h, "cq:lastReplicationAction") == "Activate"), ("hideInNav", c(h, "hideInNav")),
+                                     ("PUBLICADA", "Activate" in (c(h, "cq:lastReplicationAction"), c(h, "cq:lastReplicationAction_publish"))), ("hideInNav", c(h, "hideInNav")),
                                      ("canonical", c(h, "cq:canonicalUrl"))) if ok]
             print(f"  {rel:48} cri={h.get('jcr:createdBy', '?').split('@')[0]:14} {h.get('jcr:created', '')[4:20]:16} "
                   f"mod={c(h, 'cq:lastModified')[4:25]:21} por={c(h, 'cq:lastModifiedBy').split('@')[0]:14} "

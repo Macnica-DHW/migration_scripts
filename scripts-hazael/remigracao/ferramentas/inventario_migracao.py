@@ -79,7 +79,7 @@ def ler(s, auth, base, caminho):
         "template": str(jc.get("cq:template", "")).rsplit("/", 1)[-1],
         "modificado": str(jc.get("cq:lastModified", ""))[4:21],
         "por": str(jc.get("cq:lastModifiedBy", "")).split("@")[0],
-        "publicada": jc.get("cq:lastReplicationAction", ""),
+        "publicada": jc.get("cq:lastReplicationAction") or jc.get("cq:lastReplicationAction_publish", ""),
         "deleted": bool(jc.get("deleted") or jc.get("deletedBy")),
         "redirect": jc.get("cq:redirectTarget") or jc.get("redirectTarget") or "",
         "comps": comps, "chars": chars, "imgs": imgs,

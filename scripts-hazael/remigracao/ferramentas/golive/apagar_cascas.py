@@ -50,7 +50,7 @@ def main():
         if agora != era["modificada"]: motivos.append(f"modificada depois da lista: {agora}")
         if DIR.componentes_de_conteudo(jc) != era["componentes"]: motivos.append("nº de componentes mudou")
         if filhas: motivos.append(f"tem página-filha: {filhas}")
-        if jc.get("cq:lastReplicationAction") == "Activate": motivos.append("está PUBLICADA")
+        if "Activate" in (jc.get("cq:lastReplicationAction"), jc.get("cq:lastReplicationAction_publish")): motivos.append("está PUBLICADA")
         if motivos:
             print(f"  [PULADA — não é mais o que foi aprovado] {p[len(DIR.MAI):]}: {'; '.join(motivos)}"); continue
         print(f"  {'apagar' if executar else '[dry-run] apagaria'} {p[len(DIR.MAI):]:58} {era['componentes']:3} componentes, {agora}")

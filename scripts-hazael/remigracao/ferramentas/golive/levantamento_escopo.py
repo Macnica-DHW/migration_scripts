@@ -82,7 +82,7 @@ def resumo(path):
             "criado": no.get("jcr:created", ""), "titulo": jc.get("jcr:title", ""), "pageTitle": jc.get("pageTitle", ""),
             "mod": jc.get("cq:lastModified", ""), "por": jc.get("cq:lastModifiedBy", ""),
             "template": str(jc.get("cq:template", "")).rsplit("/", 1)[-1], "deleted": bool(jc.get("deleted")),
-            "redirect": jc.get("cq:redirectTarget", ""), "publicada": jc.get("cq:lastReplicationAction", ""),
+            "redirect": jc.get("cq:redirectTarget", ""), "publicada": jc.get("cq:lastReplicationAction") or jc.get("cq:lastReplicationAction_publish", ""),
             "hideInNav": jc.get("hideInNav", ""), "canonical": jc.get("cq:canonicalUrl", ""),
             "conteudo": cont, "estrutura": estr, "_jc": jc}
 
