@@ -10,15 +10,28 @@ a página do global2 fora do editor, o editor, ou a original do GWI (grafia do G
 texto (os botões abrem só as linhas visíveis); "reviewed" por linha fica no localStorage do navegador.
 
     python3 lista_migradas_mai_en.py        # -> dados/mapas/global2_migradas_mai-en.html
+
+`--revisao` (pedido do Hazael, 23/09): a MESMA lista para quem vai revisar as páginas finais, no estilo do
+`global2_link_map.html` (CSS e filtro do lista_links.py): só o link do global2 fora do editor, sem marcas
+("new page", "shell filled", redirect), sem números da migração, sem descrição de grupo e sem rodapé — nada de
+GWI, editor ou autor. Mesmos grupos, cada um em árvore (landing e filhas); ao lado de cada grupo, links que abrem
+as páginas em abas novas, N por vez (N escolhível na barra; só as visíveis quando há filtro).
+
+    python3 lista_migradas_mai_en.py --revisao   # -> dados/mapas/global2_link_map_mai-en.html
 """
+import argparse
+import datetime
+import html
 import json
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import golive_mai_en as g  # noqa: E402
+import lista_links as ll  # noqa: E402  — CSS/JS e link() do global2_link_map
 
 SAIDA = Path(__file__).resolve().parents[2] / "dados" / "mapas" / "global2_migradas_mai-en.html"
+SAIDA_REVISAO = SAIDA.with_name("global2_link_map_mai-en.html")
 
 
 def dados():
@@ -283,11 +296,165 @@ render();
 """
 
 
+# ---------------------------------------------------------------- --revisao: estilo do global2_link_map.html
+
+# Os mesmos grupos (e a mesma ordem) da página de conferência; a 1ª regra que casa decide o grupo.
+GRUPOS_REVISAO = (
+    ("contact", "Contact", lambda r: r in ("contact", "contact-us") or r.startswith("contact/")),
+    ("top", "Top-level pages", lambda r: "/" not in r and r != "about-us"),
+    ("partner", "Partner with Macnica", lambda r: r.startswith("about-us/partner-with-macnica")),
+    ("news", "News archive", lambda r: r.startswith("about-us/news-events/news-archive")),
+    ("newsletter", "Newsletter", lambda r: r == "about-us/newsletter" or r.startswith("about-us/newsletter/")),
+    ("events", "Events archive", lambda r: r.startswith("about-us/news-events/events-archive")),
+    ("about", "About Us", lambda r: r == "about-us" or r.startswith("about-us/")),
+)
+ORDEM_REVISAO = ("contact", "top", "about", "partner", "news", "newsletter", "events")
+
+CSS_REVISAO = """
+.barra nav{display:flex;flex-wrap:wrap;row-gap:4px;min-width:0}
+.sets{font-size:12px;font-weight:400;color:var(--mut);margin-left:14px}
+.sets a{margin-left:8px;white-space:nowrap}
+.sets a.feito,.sets a.feito:visited{color:var(--mut)}
+.sets a.feito::after{content:" \\2713"}
+.aviso{font-size:12px;font-weight:400;color:var(--mut);margin-left:10px}
+.aviso.bloq{color:#b3261e}
+.tam{color:var(--mut);font-size:14px;white-space:nowrap}
+.tam select{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--lin);border-radius:6px;padding:6px 4px;margin-left:4px}
+"""
+
+JS_REVISAO = """
+// a barra fixa tem 1 a 4 linhas conforme a largura: o salto para um grupo desconta a altura real dela
+const barra=document.querySelector('.barra');
+const folga=()=>{document.documentElement.style.scrollPaddingTop=(barra.offsetHeight+8)+'px'};
+folga();addEventListener('resize',folga);
+const tam=document.getElementById('tam');
+try{const v=localStorage.getItem('g2-mai-en-map:tam');if(v!==null&&[...tam.options].some(o=>o.value===v))tam.value=v}catch(e){}
+function conjunto(txt,part){const a=document.createElement('a');a.href='#';a.textContent=txt;a._part=part;return a}
+function conjuntos(){
+  const n=+tam.value;
+  document.querySelectorAll('details[data-grupo]').forEach(d=>{
+    const box=d.querySelector('.sets'),av=d.querySelector('.aviso');
+    box.textContent='';av.textContent='';av.classList.remove('bloq');
+    const links=[...d.querySelectorAll('a.pg')].filter(x=>!x.closest('.oculto'));
+    if(!links.length)return;
+    const s=n||links.length;
+    if(s>=links.length){box.append(conjunto(`open ${links.length===1?'':'all '+links.length+' '}in new tab${links.length===1?'':'s'}`,links));return}
+    box.append('open in new tabs:');
+    for(let i=0;i<links.length;i+=s){const part=links.slice(i,i+s);box.append(conjunto(`${i+1}\\u2013${i+part.length}`,part))}
+  });
+}
+document.addEventListener('click',ev=>{
+  const a=ev.target.closest('.sets a');if(!a)return;
+  ev.preventDefault();ev.stopPropagation();
+  let bloq=0;for(const x of a._part){const w=window.open(x.href,'_blank');if(!w)bloq++;else try{w.opener=null}catch(e){}}
+  const av=a.closest('summary').querySelector('.aviso');
+  av.classList.toggle('bloq',bloq>0);
+  av.textContent=bloq?`${bloq} of ${a._part.length} blocked \\u2014 allow pop-ups for this page (icon at the right of the address bar) and click again`:`${a._part.length} opened`;
+  if(!bloq)a.classList.add('feito');
+});
+tam.addEventListener('change',()=>{try{localStorage.setItem('g2-mai-en-map:tam',tam.value)}catch(e){}conjuntos()});
+document.getElementById('q').addEventListener('input',conjuntos);
+conjuntos();
+"""
+
+
+def _grupos_revisao(d):
+    """{id: [itens]} — páginas + os 2 redirects extras; nenhuma pode ficar sem grupo."""
+    grupos = {gid: [] for gid, _, _ in GRUPOS_REVISAO}
+    for it in d["pages"] + d["extras"]:
+        gid = next((gid for gid, _, teste in GRUPOS_REVISAO if teste(it["rel"])), None)
+        assert gid, f"sem grupo: {it['rel']}"
+        grupos[gid].append({"rel": it["rel"], "titulo": it["title"], "path": f"{d['G']}/{it['rel']}"})
+    return grupos
+
+
+def _arvore_revisao(itens):
+    """(árvore, prefixo): árvore pelo caminho inteiro, sem o prefixo comum que não é página do grupo
+    (news-archive começa na própria landing, não em about-us/news-events)."""
+    raiz = {}
+    for e in itens:
+        no = raiz
+        for parte in e["rel"].split("/"):
+            no = no.setdefault(parte, {})
+        no["_"] = e
+    prefixo = ""
+    while len(raiz) == 1:
+        (nome, filho), = raiz.items()
+        if "_" in filho:                                   # a landing do grupo: fica como 1º item da árvore
+            break
+        raiz, prefixo = filho, f"{prefixo}/{nome}" if prefixo else nome
+    return raiz, prefixo
+
+
+def _li_revisao(e, rel_exibido, filhos=""):
+    busca = html.escape(f"{e['titulo']} {rel_exibido}".lower(), quote=True)
+    return (f'<li data-t="{busca}"><a class="pg" href="{html.escape(ll.link(e["path"]), quote=True)}" target="_blank" '
+            f'rel="noopener">{html.escape(e["titulo"])}</a><span class="p">/{html.escape(rel_exibido)}</span>{filhos}</li>')
+
+
+def _ul_revisao(no, caminho):
+    out = ["<ul>"]
+    for nome in sorted(k for k in no if k != "_"):
+        filho, rel = no[nome], f"{caminho}/{nome}" if caminho else nome
+        sub = _ul_revisao(filho, rel) if any(k != "_" for k in filho) else ""
+        e = filho.get("_")
+        if e:
+            out.append(_li_revisao(e, rel, sub))
+        else:
+            out.append(f'<li data-t="{html.escape(rel.lower(), quote=True)}"><span class="sem">{html.escape(nome)}</span>'
+                       f'<span class="p">/{html.escape(rel)}</span>{sub}</li>')
+    out.append("</ul>")
+    return "".join(out)
+
+
+def pagina_revisao(d, quando):
+    grupos = _grupos_revisao(d)
+    nomes = {gid: nome for gid, nome, _ in GRUPOS_REVISAO}
+    corpo, nav = [], []
+
+    def cartao(gid, nome, n, lista):
+        nav.append(f'<a href="#g-{gid}">{html.escape(nome)} ({n})</a>')
+        corpo.append(f'<details open id="g-{gid}" data-grupo><summary>{html.escape(nome)}<span class="n">{ll._n(n)}</span>'
+                     f'<span class="sets"></span><span class="aviso" aria-live="polite"></span></summary>{lista}</details>')
+
+    for gid in ORDEM_REVISAO:
+        itens = grupos[gid]
+        if itens:
+            arv, prefixo = _arvore_revisao(itens)
+            cartao(gid, nomes[gid], len(itens), _ul_revisao(arv, prefixo))
+    xf = {"titulo": "Event Meeting Request Form", "path": d["xf"]}
+    cartao("xf", "Experience fragment", 1, f"<ul>{_li_revisao(xf, d['xf'].lstrip('/'))}</ul>")
+    total = sum(len(v) for v in grupos.values())
+    return f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Macnica global2 — About Us &amp; Contact link map</title><style>{ll.CSS}{CSS_REVISAO}</style></head><body><main>
+<h1>Macnica global2 — About Us &amp; Contact link map</h1>
+<p class="sub">Americas / MAI / EN — About Us, Contact and top-level pages. {total} pages and 1 experience fragment. Links open
+the page as a visitor sees it (outside the editor) in a new tab; the links beside each group open its pages in new tabs, one set
+at a time (the browser may ask you to allow pop-ups the first time). You must be logged in to the AEM author. Generated {quando}.</p>
+<div class="barra"><input id="q" type="search" placeholder="Filter by title or path…" autocomplete="off">
+<label class="tam">Open in sets of<select id="tam"><option>5</option><option selected>10</option><option>20</option><option value="0">all</option></select></label>
+<nav>{''.join(nav)}</nav></div>
+{''.join(corpo)}
+</main><script>{ll.JS}{JS_REVISAO}</script></body></html>
+"""
+
+
 def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--revisao", action="store_true", help=f"versão para quem revisa as páginas finais -> {SAIDA_REVISAO.name}")
+    a = ap.parse_args()
     d = dados()
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
-    SAIDA.write_text(PAGINA.replace("__DADOS__", json.dumps(d, ensure_ascii=False).replace("</", "<\\/")))
-    print(f"{len(d['pages'])} páginas + {len(d['extras'])} redirects extras + 1 XF -> {SAIDA}")
+    if not a.revisao:
+        SAIDA.write_text(PAGINA.replace("__DADOS__", json.dumps(d, ensure_ascii=False).replace("</", "<\\/")))
+        print(f"{len(d['pages'])} páginas + {len(d['extras'])} redirects extras + 1 XF -> {SAIDA}")
+        return
+    quando = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    SAIDA_REVISAO.write_text(pagina_revisao(d, quando), encoding="utf-8")
+    for gid, itens in _grupos_revisao(d).items():
+        print(f"    {len(itens):4d}  {gid}")
+    print(f"{len(d['pages'])} páginas + {len(d['extras'])} redirects extras + 1 XF -> {SAIDA_REVISAO}")
 
 
 if __name__ == "__main__":
