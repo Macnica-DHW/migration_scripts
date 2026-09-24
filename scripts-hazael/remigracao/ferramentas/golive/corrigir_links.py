@@ -93,6 +93,15 @@ CONSERTOS = [
       "de": "/content/macnicagwi/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-qoriqr-layerscape/starterkit-stkls1028a.html",
       "para": f"{TQ}/tq-embedded-qoriqr-layerscape/starterkit-stkls1028a.html"}),
 
+    # E = correção de um conserto nosso (24/09, pergunta do Hazael sobre domínio fixo): o GWI linka https://www.macnica.com/mep100,
+    # que dá 302 -> /mep100/ -> 404 em produção (a vanity de verdade é /americas/mep100, da página macnica-mep-100); o A acima
+    # copiou o link morto. Destino certo: a página do MEP100 no global2, sem domínio fixo.
+    ("E", f"{NEWS}/macnica-americas-introduces-100-gbps-mep100-smartnic-with-mac-compatibility",
+     "root/container/heading_2_wrap/text_3", "href",
+     {"txt": "https://www.macnica.com/mep100", "de": "https://www.macnica.com/mep100",
+      "para": f"{M}/products/macnica-products/macnica-mep-100.html",
+      "por_que": "went to the site’s root; the GWI’s own URL (www.macnica.com/mep100) is dead in production (404), "
+                 "so it now opens the MEP100 page"}),
     ("B", f"{NEWS}/macnica-ships-mep100-smartnic-solution-as-ibc2024-approaches", "root/container/heading_1_wrap/heading_1",
      "prop", {"prop": "linkURL", "de": None, "para": "https://macnicatech.com/wp-content/uploads/2024/08/MEP100-2-pager-202408a.pdf"}),
     ("B", "products/boards-modules/iei/iei-intelligent-body-temperature-monitoring-solution",
@@ -333,7 +342,7 @@ def verificar(pasta, quando):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--grupos", nargs="+", default=["A", "B", "C", "D"], choices=["A", "B", "C", "D"])
+    ap.add_argument("--grupos", nargs="+", default=["A", "B", "C", "D"], choices=["A", "B", "C", "D", "E"])
     ap.add_argument("--executar", action="store_true", help="grava (sem isto: só GET)")
     ap.add_argument("--verificar", metavar="PASTA", help="só GET: compara as páginas de hoje com o backup (backup_links_<data>)")
     ap.add_argument("--testar-comparador", type=int, metavar="N", default=0,

@@ -76,8 +76,8 @@ def itens(execucao, backup):
         elif x["tipo"] == "href":
             d = abc[(x["pagina"], x["no"], x["para"])].pop(0)
             t = next(iter(textos_do_href(x["antes"], d["de"])))
-            por[rel].append({"tipo": "wrong", "txt": t, "antes": d["de"], "depois": x["para"], "motivo": motivo(d["de"], x["para"]),
-                             "vezes": 1})
+            por[rel].append({"tipo": "wrong", "txt": t, "antes": d["de"], "depois": x["para"],
+                             "motivo": d.get("por_que") or motivo(d["de"], x["para"]), "vezes": 1})
         else:                                                   # linkURL de botão: o rótulo vem do nó no backup
             nod = no_do_backup(backup[rel], x["no"])
             t = C.texto(nod.get("jcr:title") or nod.get("alt") or "") or "(button)"
@@ -117,15 +117,36 @@ CSS_EXTRA = """
 """
 
 
-def main():
-    pastas = sorted(DADOS.glob("backup_links_*/comparacao.json"))
-    pasta = Path(sys.argv[1]) if len(sys.argv) > 1 else pastas[-1].parent
+def uma_execucao(pasta):
     quando = pasta.name[len("backup_links_"):]
     execucao = [x for x in map(json.loads, (DADOS / "manifesto_links.jsonl").read_text(encoding="utf-8").splitlines())
                 if x.get("quando") == quando and x.get("status") == "gravado"]
     backup = json.loads((pasta / "jcr_content.json").read_text(encoding="utf-8"))
     comp = {x["pagina"]: x["comparacao"] for x in json.loads((pasta / "comparacao.json").read_text(encoding="utf-8"))}
-    por = itens(execucao, backup)
+    return quando, itens(execucao, backup), backup, comp
+
+
+def main():
+    """Todas as execuções do dia, em ordem: um link que uma execução posterior trocou de novo sai com o destino FINAL
+    (o 'antes' continua o original); a página só ganha o selo se todas as comparações dela deram iguais."""
+    pastas = [p.parent for p in sorted(DADOS.glob("backup_links_*/comparacao.json"))]
+    if len(sys.argv) > 1:
+        pastas = [Path(a) for a in sys.argv[1:]]
+    por, backup, comp, horas = collections.defaultdict(list), {}, {}, []
+    for pasta in pastas:
+        q, novos, bk, cp = uma_execucao(pasta)
+        horas.append(q)
+        for p, its in novos.items():
+            backup.setdefault(p, bk[p])
+            comp.setdefault(p, {"jcr": [], "render": None})
+            comp[p] = {"jcr": comp[p]["jcr"] + cp[p]["jcr"], "render": comp[p]["render"] or cp[p]["render"]}
+            for it in its:
+                ant = next((x for x in por[p] if x["depois"] == it["antes"] and x["txt"] == it["txt"]), None)
+                if ant:                                         # a mesma âncora trocada de novo: fica o destino final
+                    ant.update(depois=it["depois"], motivo=it["motivo"] or ant["motivo"])
+                else:
+                    por[p].append(it)
+    quando = horas[0]
 
     todos = [it for v in por.values() for it in v]
     n = collections.Counter()
@@ -169,7 +190,7 @@ def main():
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>global2 link fixes</title><style>{LV.CSS}{CSS_EXTRA}</style></head><body><main>
 <h1>global2 link fixes</h1>
-<p class="sub">Links corrected on the macnicaglobal2 pages (Americas / MAI / EN) on {data} (local time). Each change only replaced
+<p class="sub">Links corrected on the macnicaglobal2 pages (Americas / MAI / EN) on {data} (local time){(f", with {len(horas) - 1} later correction{'s' if len(horas) > 2 else ''} at " + ", ".join(h[11:13] + ":" + h[13:15] for h in horas[1:])) if len(horas) > 1 else ""}. Each change only replaced
 where an existing link goes: no text, image, block or layout was added, moved or removed. Paths are relative to
 <code>{M}</code>; “After” links open the destination in the AEM author (you must be logged in).</p>
 <div class="resumo">
@@ -182,7 +203,7 @@ where an existing link goes: no text, image, block or layout was added, moved or
 <h2 id="como">How it was done and checked<span class="n"></span></h2>
 <ol class="passos">
 <li><b>Backup first.</b> Before the first change, the full stored content and the rendered HTML of all {len(por)} pages were saved
-(<span class="p">scripts-hazael/remigracao/dados/golive/backup_links_{quando}</span>); any page can be restored from it.</li>
+(<span class="p">scripts-hazael/remigracao/dados/golive/{", ".join("backup_links_" + h for h in horas)}</span>); any page can be restored from it.</li>
 <li><b>One property per change.</b> Each change rewrote a single existing property (the text that holds the link, or the button’s
 link). The property was re-read right before saving and again after, and nothing else in that component changed.</li>
 <li><b>Whole-page comparison.</b> After all changes, every page was compared with its backup: the stored content differs only in the
