@@ -253,6 +253,10 @@ def plano_d(lista_abc):
 
 # ---------------------------------------------------------------- antes x depois (pedido do Hazael, 24/09)
 DL_RE = re.compile(r"""\sdata-cmp-data-layer=(["']).*?\1""", re.S)      # JSON do data layer: tem repo:modifyDate e o html
+# qualquer edição faz o AEM carimbar a PÁGINA (cq:lastModified[By] do jcr:content) e a data aparece no data layer da página
+# (repo:modifyDate, dentro de <script>, escapada com \x22/\u002D) — medido na 1ª verificação de 24/09: 52/52 só com isso
+MODIFY_RE = re.compile(r"(repo:modifyDate.{0,24}?)\d{4}(?:\\u002D|-)\d{2}(?:\\u002D|-)\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z", re.S)
+CARIMBO_PAGINA = {("", "cq:lastModified"), ("", "cq:lastModifiedBy")}
 
 
 def retrato(pag):
@@ -280,6 +284,7 @@ def achatar(no, cam="", out=None):
 def normalizar(h):
     """O render sem o que um link muda: tags <a>/</a> (e o href dentro delas) e o JSON do data layer."""
     h = DL_RE.sub("", h)
+    h = MODIFY_RE.sub(r"\1<data>", h)
     h = re.sub(r"<a\b[^>]*>|</a\s*>", "", h, flags=re.I)
     return re.sub(r"\s+", " ", h).strip()
 
@@ -288,6 +293,8 @@ def comparar_pagina(antes, depois, escritos):
     """Diferenças que NÃO deviam existir. `escritos` = {(nó rel ao jcr:content, prop)} gravados nesta página."""
     ja, jd = achatar(antes[0]), achatar(depois[0])
     permitidas = set(escritos) | {(no, k) for no, _ in escritos for k in ("jcr:lastModified", "jcr:lastModifiedBy")}
+    if escritos:
+        permitidas |= CARIMBO_PAGINA
     jcr = sorted(f"{no}.{k}" for no, k in set(ja) | set(jd) if ja.get((no, k)) != jd.get((no, k)) and (no, k) not in permitidas)
     na, nd = normalizar(antes[1]), normalizar(depois[1])
     render = None
@@ -299,13 +306,43 @@ def comparar_pagina(antes, depois, escritos):
     return jcr, render, trocados
 
 
+def verificar(pasta, quando):
+    """Página inteira de hoje x backup `pasta`; o que foi gravado vem do manifesto (linhas com esse `quando`)."""
+    jcr_antes = json.loads((pasta / "jcr_content.json").read_text(encoding="utf-8"))
+    render_antes = json.loads((pasta / "render.json").read_text(encoding="utf-8"))
+    escritos = {}
+    for linha in (DADOS / "manifesto_links.jsonl").read_text(encoding="utf-8").splitlines():
+        x = json.loads(linha)
+        if x.get("quando") == quando and x.get("status") == "gravado":
+            escritos.setdefault(x["pagina"][len(M) + 1:], set()).add((x["no"], x["prop"]))
+    out, problemas = [], 0
+    print("\n== antes x depois (página inteira) ==")
+    for p in sorted(jcr_antes):
+        jcr, render, trocados = comparar_pagina((jcr_antes[p], render_antes[p]), retrato(f"{M}/{p}"), escritos.get(p, set()))
+        ok = not jcr and not render
+        problemas += not ok
+        print(f"{'OK ' if ok else 'DIFERENÇA'} /{p}: {len(escritos.get(p, ()))} propriedade(s) gravada(s); "
+              f"hrefs que mudaram no render: {len(trocados)}" + (f"\n     JCR fora do previsto: {jcr}" if jcr else "")
+              + (f"\n     render: {render}" if render else ""))
+        out.append({"pagina": p, "gravadas": sorted(map(list, escritos.get(p, ()))),
+                    "comparacao": {"jcr": jcr, "render": render, "hrefs_render": trocados}})
+    print(f"{len(jcr_antes) - problemas}/{len(jcr_antes)} páginas iguais ao backup fora dos links")
+    (pasta / "comparacao.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--grupos", nargs="+", default=["A", "B", "C", "D"], choices=["A", "B", "C", "D"])
     ap.add_argument("--executar", action="store_true", help="grava (sem isto: só GET)")
+    ap.add_argument("--verificar", metavar="PASTA", help="só GET: compara as páginas de hoje com o backup (backup_links_<data>)")
     ap.add_argument("--testar-comparador", type=int, metavar="N", default=0,
                     help="só GET: tira o retrato de N páginas do plano duas vezes e compara (tem de dar zero diferença)")
     a = ap.parse_args()
+    if a.verificar:
+        pasta = Path(a.verificar)
+        verificar(pasta, pasta.name[len("backup_links_"):])
+        return
     lista = plano(set(a.grupos) - {"D"})
     sem_alvo = []
     if "D" in a.grupos:
@@ -321,17 +358,17 @@ def main():
             print(f"{'OK ' if not (jcr or render or trocados) else 'DIF'} /{p}  jcr={jcr[:3]} render={render} links={trocados[:3]}")
         return
 
-    antes = {}
+    retratos = {}
     if a.executar:                                              # backup ANTES de qualquer escrita: jcr:content + render
         pasta = DADOS / f"backup_links_{agora}"
         pasta.mkdir(parents=True)
         for p in paginas:
-            antes[p] = retrato(f"{M}/{p}")
-        (pasta / "jcr_content.json").write_text(json.dumps({p: v[0] for p, v in antes.items()}, ensure_ascii=False),
+            retratos[p] = retrato(f"{M}/{p}")
+        (pasta / "jcr_content.json").write_text(json.dumps({p: v[0] for p, v in retratos.items()}, ensure_ascii=False),
                                                 encoding="utf-8")
-        (pasta / "render.json").write_text(json.dumps({p: v[1] for p, v in antes.items()}, ensure_ascii=False),
+        (pasta / "render.json").write_text(json.dumps({p: v[1] for p, v in retratos.items()}, ensure_ascii=False),
                                            encoding="utf-8")
-        print(f"backup: {len(antes)} páginas (jcr:content inteiro + render) -> {pasta}\n")
+        print(f"backup: {len(retratos)} páginas (jcr:content inteiro + render) -> {pasta}\n")
 
     resumo, saida = {"muda": 0, "pula": 0, "gravado": 0, "falhou": 0}, []
     pagina_ant = None
@@ -387,21 +424,7 @@ def main():
                                ensure_ascii=False) + "\n")
 
     if a.executar:                                              # depois: página inteira contra o backup
-        escritos = {}
-        for x in saida:
-            if x["status"] == "gravado":
-                escritos.setdefault(x["pagina"][len(M) + 1:], set()).add((x["no"], x["prop"]))
-        problemas = 0
-        print("\n== antes x depois (página inteira) ==")
-        for p in paginas:
-            jcr, render, trocados = comparar_pagina(antes[p], retrato(f"{M}/{p}"), escritos.get(p, set()))
-            ok = not jcr and not render
-            problemas += not ok
-            print(f"{'OK ' if ok else 'DIFERENÇA'} /{p}: {len(escritos.get(p, ()))} propriedade(s) gravada(s); "
-                  f"hrefs que mudaram no render: {len(trocados)}" + (f"\n     JCR fora do previsto: {jcr}" if jcr else "")
-                  + (f"\n     render: {render}" if render else ""))
-            saida.append({"pagina": p, "comparacao": {"jcr": jcr, "render": render, "hrefs_render": trocados}})
-        print(f"{len(paginas) - problemas}/{len(paginas)} páginas iguais ao backup fora dos links")
+        saida += verificar(DADOS / f"backup_links_{agora}", agora)
 
     if sem_alvo:
         print(f"\nD: {len(sem_alvo)} href sem .html cujo alvo NÃO existe no global2 (não mexidos): " +

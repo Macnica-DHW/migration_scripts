@@ -8,8 +8,8 @@
 # nenhum link errado, faltando ou morto nestas 32.
 # FORA, apesar das 3 marcas: .../ibase/embedded-computing/mb991 — falta o bloco de newsletter
 # ("Stay up to date ... Sign up") que o GWI mostra; aguarda decisão.
-# FORA (tirada em 24/09, depois): .../hitek-systems/hitek-systems-fpga-boards — 6 links de TEXTO com barra final
-# (sem .html) dão 403 no author ao clicar; a comparação com o GWI não pegava isso (confere alvo, não o clique).
+# hitek-systems-fpga-boards saiu às 19:40 (6 links de TEXTO com barra final = 403 no clique) e VOLTOU às 20:10, depois
+# do conserto (corrigir_links.py, backup_links_2026-09-24_195300: só os hrefs mudaram, render idêntico, links 200).
 
 /content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/digital-signage
 /content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/embedded-computing
@@ -42,3 +42,4 @@
 /content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-100gbps-mep100-smartnic-and-partner-innovations-on-display-throughout-ibc2025
 /content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-americas-adds-toppan-tof-cameras-and-modules-to-imaging-portfolio
 /content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-announces-production-ready-me10-soc-for-embedded-devices
+/content/macnicaglobal2/americas/mai/en/products/boards-modules/hitek-systems/hitek-systems-fpga-boards
