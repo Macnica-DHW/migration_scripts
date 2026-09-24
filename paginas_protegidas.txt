@@ -8,8 +8,9 @@
 # nenhum link errado, faltando ou morto nestas 32.
 # FORA, apesar das 3 marcas: .../ibase/embedded-computing/mb991 — falta o bloco de newsletter
 # ("Stay up to date ... Sign up") que o GWI mostra; aguarda decisão.
+# FORA (tirada em 24/09, depois): .../hitek-systems/hitek-systems-fpga-boards — 6 links de TEXTO com barra final
+# (sem .html) dão 403 no author ao clicar; a comparação com o GWI não pegava isso (confere alvo, não o clique).
 
-/content/macnicaglobal2/americas/mai/en/products/boards-modules/hitek-systems/hitek-systems-fpga-boards
 /content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/digital-signage
 /content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/embedded-computing
 /content/macnicaglobal2/americas/mai/en/products/semiconductors/4-helio-view-hardware
