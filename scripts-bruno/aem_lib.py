@@ -27,7 +27,7 @@ import sys
 import time
 from collections import Counter
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import parse_qsl, unquote, urljoin, urlsplit
 
 import requests
 
@@ -260,8 +260,127 @@ def build_session(prompt_if_missing=True, verbose=True):
     for key, value in cookies.items():
         session.cookies.set(key, value)
     session.headers.update({"Accept": "application/json"})
+    travar_session(session)
 
     return session, {"fails": 0, "threshold": CONFIG["auth_fail_threshold"]}
+
+
+# ============================================================
+# Páginas protegidas (revisadas e aprovadas à mão) e o GWI
+# ============================================================
+# A trava fica na PRÓPRIA Session: vale para todo script que usa build_session(), inclusive os que chamam
+# session.post() direto (a maioria das ferramentas de scripts-hazael). Só leitura passa (GET/HEAD/OPTIONS).
+#   - GWI: nada que não seja leitura em URL com `macnicagwi` (REGRA MESTRA do Hazael, 21/09/2026).
+#   - paginas_protegidas.txt (pasta do projeto, ao lado do .env): a página e o jcr:content dela não recebem
+#     escrita; a página e os ancestrais não podem ser apagados/movidos; nada é copiado/movido para dentro nem
+#     para fora dela. Páginas-filhas de uma protegida NÃO estão protegidas (têm de estar na lista).
+PROTEGIDAS_PATH = Path(__file__).resolve().parent.parent / "paginas_protegidas.txt"
+LEITURA = {"GET", "HEAD", "OPTIONS"}
+
+
+class EscritaProibida(RuntimeError):
+    """Escrita barrada pela trava da Session (página protegida ou GWI)."""
+
+
+def carregar_protegidas(path=PROTEGIDAS_PATH):
+    if not Path(path).exists():
+        return ()
+    out = []
+    for linha in Path(path).read_text(encoding="utf-8").splitlines():
+        linha = linha.split("#", 1)[0].strip().rstrip("/")
+        if linha:
+            out.append(re.sub(r"\.html$", "", linha))
+    return tuple(out)
+
+
+def _no_conteudo(caminho, pagina):
+    """`caminho` é a própria página ou algo dentro do jcr:content dela (filha NÃO conta)."""
+    return caminho == pagina or caminho.startswith(pagina + "/jcr:content")
+
+
+def _ancestral_ou_ela(caminho, pagina):
+    return caminho == pagina or pagina.startswith(caminho.rstrip("/") + "/")
+
+
+def _pares(data):
+    if isinstance(data, dict):
+        return [(str(k), v) for k, v in data.items()]
+    if isinstance(data, (list, tuple)):
+        return [(str(k), v) for k, v in data]
+    if isinstance(data, (str, bytes)):
+        try:
+            return parse_qsl(data.decode() if isinstance(data, bytes) else data, keep_blank_values=True)
+        except Exception:                                      # noqa: BLE001
+            return []
+    return []
+
+
+def _valores(pares, chave):
+    out = []
+    for k, v in pares:
+        if k == chave:
+            out += [str(x) for x in (v if isinstance(v, (list, tuple)) else [v])]
+    return out
+
+
+def motivo_bloqueio(metodo, url, data=None, protegidas=None):
+    """None se a requisição pode sair; senão, o motivo. Não faz rede — testável offline."""
+    if metodo.upper() in LEITURA:
+        return None
+    if "macnicagwi" in unquote(url):
+        return f"{metodo} em URL do GWI (REGRA MESTRA: nunca gravar no GWI): {url}"
+    protegidas = carregar_protegidas() if protegidas is None else protegidas
+    if not protegidas:
+        return None
+    caminho = unquote(urlsplit(url).path).rstrip("/")
+    sem_ext = re.sub(r"(/[^/.]+)\.[A-Za-z0-9.]+$", r"\1", caminho)     # /x/pagina.html -> /x/pagina
+    alvos = {caminho, sem_ext}
+    pares = _pares(data)
+    ops = {v.lower() for v in _valores(pares, ":operation")}
+    for p in protegidas:
+        for c in alvos:
+            if _no_conteudo(c, p):
+                return f"{metodo} em página protegida: {c}"
+            if ops & {"delete", "move"} and _ancestral_ou_ela(c, p):
+                return f":operation={'/'.join(sorted(ops))} em {c} apagaria/moveria a página protegida {p}"
+        for x in _valores(pares, ":applyTo"):
+            if ops & {"delete", "move"} and _ancestral_ou_ela(x.rstrip("/"), p):
+                return f":applyTo={x} apagaria/moveria a página protegida {p}"
+        for d in _valores(pares, ":dest"):
+            destino = d if d.startswith("/") else caminho.rsplit("/", 1)[0] + "/" + d
+            if destino.endswith("/"):
+                destino += caminho.rsplit("/", 1)[-1]
+            if _no_conteudo(destino.rstrip("/"), p):
+                return f":dest={d} grava dentro da página protegida {p}"
+        for k, v in pares:
+            if k.endswith("@MoveFrom") and any(_no_conteudo(str(x).rstrip("/"), p) or _ancestral_ou_ela(str(x), p)
+                                               for x in (v if isinstance(v, (list, tuple)) else [v])):
+                return f"{k}={v} tira conteúdo da página protegida {p}"
+            if "/" in k.split("@", 1)[0]:                      # propriedade relativa: jcr:content/x/prop
+                pai = (caminho + "/" + k.split("@", 1)[0].lstrip("./")).rsplit("/", 1)[0]
+                if _no_conteudo(pai, p):
+                    return f"propriedade {k} grava dentro da página protegida {p}"
+        if caminho.startswith("/bin/"):                        # wcmcommand, replicate…
+            for chave in ("path", "srcPath", "destPath"):
+                for x in _valores(pares, chave):
+                    if _no_conteudo(x.rstrip("/"), p) or _ancestral_ou_ela(x.rstrip("/"), p):
+                        return f"{caminho} com {chave}={x} mexe na página protegida {p}"
+    return None
+
+
+def travar_session(session):
+    """Põe a trava em `session.request` (post/put/delete/patch passam por ele)."""
+    original = session.request
+
+    def request(method, url, *args, **kwargs):
+        motivo = motivo_bloqueio(method, url, kwargs.get("data", args[1] if len(args) > 1 else None))
+        if motivo:
+            print(f"\n[ABORTADO] {motivo}", file=sys.stderr)
+            raise EscritaProibida(motivo)
+        return original(method, url, *args, **kwargs)
+
+    session.request = request
+    return session
 
 
 # ============================================================
