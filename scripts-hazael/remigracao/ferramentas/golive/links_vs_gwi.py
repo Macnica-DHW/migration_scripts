@@ -25,9 +25,13 @@ Mesmo alvo: página -> o par no global2 da página do GWI (nome normalizado + AL
 dois lados; DAM -> mesmo nome de arquivo ou mapa_assets.csv; externo -> mesma URL (http=https, www e barra final
 ignorados); âncora comparada à parte (#tabs-… ignorada: o id da aba muda no global2).
 
+ESCOPO = as páginas do mapa de links final (dados/mapas/global2_link_map_complete_*.html, o mais novo), não a árvore
+inteira — "you only need to check the links in our final link map" (Hazael, 24/09). A listagem das duas árvores
+(querybuilder, ~15 GETs) serve só para achar o par de cada ALVO de link; só as páginas do mapa são lidas.
+
     python3 links_vs_gwi.py                    # coleta ao vivo (cache em dados/links) + relatório
     python3 links_vs_gwi.py --do-cache         # refaz o relatório do cache, sem rede
-    python3 links_vs_gwi.py --raiz /content/macnicaglobal2/americas/mai/en
+    python3 links_vs_gwi.py --mapa dados/mapas/global2_link_map_complete_2026-09-23.html
 """
 import argparse
 import collections
@@ -131,14 +135,25 @@ def xfs_de(no, out):
     return out
 
 
-def coletar(raiz_g2):
+def escopo_do_mapa(arq):
+    """Caminhos (sem .html) dos links do author no HTML do mapa, na ordem do mapa."""
+    s = Path(arq).read_text(encoding="utf-8")
+    out = []
+    for h in re.findall(r'href="(https://author-[^"]+)"', s):
+        p = re.sub(r"\.html$", "", unquote(re.sub(r"^https://[^/]+", "", html.unescape(h)).split("?")[0]))
+        if p not in out:
+            out.append(p)
+    return out
+
+
+def coletar(escopo, mapa):
     print("listando páginas…", file=sys.stderr)
     g2 = paginas(G2)
     gw = paginas(GW)
     bruto = {"quando": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-             "g2": g2, "gw": gw, "jcr": {}, "xf": {}}
+             "mapa": Path(mapa).name, "escopo": escopo, "g2": g2, "gw": gw, "jcr": {}, "xf": {}}
     idx = Indice(bruto)
-    pares = idx.pares(raiz_g2)
+    pares = idx.pares(escopo)
     alvos = sorted({p for par in pares for p in par})
     print(f"{len(pares)} pares; lendo {len(alvos)} jcr:content…", file=sys.stderr)
 
@@ -149,6 +164,7 @@ def coletar(raiz_g2):
             bruto["jcr"][p] = j if j is not None else st
             if i % 100 == 0:
                 print(f"  {i}/{len(alvos)}", file=sys.stderr)
+    complementos(bruto)
     xfs = set()
     for j in bruto["jcr"].values():
         if isinstance(j, dict):
@@ -159,6 +175,39 @@ def coletar(raiz_g2):
             bruto["xf"][p] = j if j is not None else st
     CACHE.write_bytes(pickle.dumps(bruto))
     return bruto
+
+
+DAM_G2 = "/content/dam/macnicaglobal2/americas/mai/en"
+
+
+def complementos(bruto):
+    """O que o cache precisa além das páginas (só GET): vanity do GWI, nomes do DAM do global2 (para dizer onde está
+    o arquivo que o link do GWI abre) e o jcr:content de par que ainda não está no cache. Devolve True se mudou."""
+    mudou = False
+    if "vanity" not in bruto:
+        r = get("/bin/querybuilder.json", params={"path": GW, "type": "cq:PageContent", "property": "sling:vanityPath",
+                "property.operation": "exists", "p.limit": "-1", "p.hits": "selective",
+                "p.properties": "jcr:path sling:vanityPath"})
+        assert r.status_code == 200, r.status_code
+        bruto["vanity"], mudou = r.json()["hits"], True
+    if "dam_g2" not in bruto:
+        out, off = [], 0
+        while True:
+            r = get("/bin/querybuilder.json", params={"path": DAM_G2, "type": "dam:Asset", "p.limit": "1000",
+                    "p.offset": str(off), "p.hits": "selective", "p.properties": "jcr:path", "orderby": "path"})
+            assert r.status_code == 200, r.status_code
+            hits = r.json()["hits"]
+            out += [h["jcr:path"] for h in hits]
+            off += len(hits)
+            if len(hits) < 1000:
+                break
+        bruto["dam_g2"], mudou = out, True
+    for par in Indice(bruto).pares(bruto["escopo"]):
+        for p in par:
+            if p not in bruto["jcr"]:
+                j, st = fundo(f"{p}/jcr:content")
+                bruto["jcr"][p], mudou = (j if j is not None else st), True
+    return mudou
 
 
 # ---------------------------------------------------------------- índice das duas árvores
@@ -195,6 +244,28 @@ class Indice:
             w = self.par_gwi(p)
             if w and w not in self.rev:
                 self.rev[w] = p
+        self.vanity = {}                                           # /mep100 -> página do GWI (sling:vanityPath)
+        for h in bruto.get("vanity", []):
+            for v in (h["sling:vanityPath"] if isinstance(h["sling:vanityPath"], list) else [h["sling:vanityPath"]]):
+                k = re.sub(r"^(?:https?:)?//(?:www\.)?macnica\.com", "", v.strip(), flags=re.I).strip("/").lower()
+                self.vanity.setdefault(k, h["jcr:path"].rsplit("/jcr:content", 1)[0])
+        self.dam = collections.defaultdict(list)                   # nome normalizado -> assets do DAM do global2
+        for p in bruto.get("dam_g2", []):
+            self.dam[nome_arquivo(p)].append(p)
+        self.por_titulo = {}
+        for p in bruto.get("escopo", []):                          # renomeada no global2: mesmo pai + mesmo título
+            if p in self.g2 and not self.par_gwi(p):
+                w = self._par_titulo(p)
+                if w:
+                    self.por_titulo[p] = w
+                    self.rev[w] = p
+
+    def _par_titulo(self, p):
+        pai = self.gw_n.get(para_gwi(nrel(p[len(G2) + 1:].rsplit("/", 1)[0])))
+        t = self.titulo(p, "g2").lower()
+        achados = [w for w in self.gw if w.rsplit("/", 1)[0] == pai and w not in self.rev
+                   and self.titulo(w, "gw").lower() == t]
+        return achados[0] if len(achados) == 1 else None
 
     @staticmethod
     def _morta(h):
@@ -204,18 +275,15 @@ class Indice:
         n = nrel(p[len(G2) + 1:])
         return self.gw_n.get(para_gwi(n)) or self.gw_n.get(n)
 
-    def pares(self, raiz):
-        out = []
-        for p, h in sorted(self.g2.items()):
-            if (p == raiz or p.startswith(raiz + "/")) and not self._morta(h):
-                w = self.par_gwi(p)
-                if w:
-                    out.append((p, w))
-        return out
+    def par(self, p):
+        return self.par_gwi(p) or self.por_titulo.get(p)
 
-    def sem_par(self, raiz):
-        return sorted(p for p, h in self.g2.items()
-                      if (p == raiz or p.startswith(raiz + "/")) and not self._morta(h) and not self.par_gwi(p))
+    def pares(self, escopo):
+        return [(p, self.par(p)) for p in escopo if p in self.g2 and self.par(p)]
+
+    def sem_par(self, escopo):
+        """Páginas do escopo fora da comparação: XF, página que não está (mais) no global2, sem par no GWI."""
+        return [p for p in escopo if p not in self.g2 or not self.par(p)]
 
     def redir(self, p, lado):
         pags = self.g2 if lado == "g2" else self.gw
@@ -232,6 +300,7 @@ HREF_RE = re.compile(r"""\bhref\s*=\s*(["'])(.*?)\1""", re.I | re.S)
 ALT_RE = re.compile(r"""<img\b[^>]*?\balt\s*=\s*(["'])(.*?)\1""", re.I | re.S)
 TAG_RE = re.compile(r"<[^>]+>")
 PROP_LINK = re.compile(r"(link|url|href)$", re.I)
+VIDEO = re.compile(r"embed|video|youtube|vimeo", re.I)
 URLISH = re.compile(r"^(/|#|https?://|//|www\.|mailto:|tel:)", re.I)
 FORA = {"cq:canonicalUrl", "sling:vanityPath", "fileReference", "fragmentVariationPath", "fragmentPath", "pages",
         "parentPage", "searchIn", "rootPath", "tagsSearchRoot", "directory", "action", "redirect",
@@ -275,14 +344,15 @@ def links_de(no, caminho, out, censo, xf_links=None, via=""):
                     t = texto(inner)
                     if not t:
                         alt = ALT_RE.search(inner)
-                        t = f"(image) {texto(alt.group(2))}".strip() if alt else "(no text)"
+                        t = (f"(image) {texto(alt.group(2))}".strip() if alt else
+                             "(image)" if "<img" in inner.lower() else "(invisible link — no text)")
                     out.append({"txt": t[:200], "href": h.group(2), "no": caminho, "prop": k, "comp": rt, "via": via})
                     censo[(rt, k, "<a>")] += 1
             elif k == "cq:redirectTarget" and caminho == "jcr:content":
                 out.append({"txt": "(page redirect)", "href": s, "no": caminho, "prop": k, "comp": rt, "via": via})
                 censo[(rt, k, "redirect")] += 1
             elif (k not in FORA and PROP_LINK.search(k) and URLISH.match(s.strip()) and "\n" not in s
-                  and len(s) < 1000):
+                  and len(s) < 1000 and not VIDEO.search(rt)):             # url do embed = o vídeo, não um link
                 t = f"(page property {k})" if caminho == "jcr:content" else _rotulo(no, k)
                 out.append({"txt": t, "href": s, "no": caminho, "prop": k, "comp": rt, "via": via})
                 censo[(rt, k, "prop")] += 1
@@ -328,7 +398,7 @@ def alvo(href):
     caminho = unquote(caminho)
     if caminho.startswith("/content/dam/"):
         dono = caminho.split("/")[3] if caminho.count("/") > 3 else ""
-        return dict(a, kind="dam", site=dono, rel=caminho, chave=caminho.rsplit("/", 1)[-1].lower())
+        return dict(a, kind="dam", site=dono, rel=caminho, chave=nome_arquivo(caminho))
     if caminho.startswith("/content/experience-fragments/"):
         return dict(a, kind="xf", rel=caminho, chave=caminho)
     caminho = re.sub(r"\.html?(/.*)?$", "", caminho, flags=re.I).rstrip("/")
@@ -336,6 +406,13 @@ def alvo(href):
         _, _, site, *resto = caminho.split("/") + [""]
         caminho = "/" + "/".join(resto)
     return dict(a, kind="pagina", site=site or "relativo", rel=caminho.strip("/"), frag=frag)
+
+
+def nome_arquivo(caminho):
+    """sakura-main-panel-24x36-v02.pdf == Sakura Main Panel_24x36_v02.pdf: o DAM do global2 normaliza os nomes."""
+    nome = unquote(caminho.rsplit("/", 1)[-1])
+    base, ponto, ext = nome.rpartition(".")
+    return f"{normalize_name(base)}.{ext.lower()}" if ponto else normalize_name(nome)
 
 
 def _frag(f):
@@ -368,6 +445,9 @@ class Comparador:
         if k not in self._esp:
             n = nrel(w["rel"])
             cad = [] if w["site"] == "macnicaglobal2" else self._cadeia(n, "gw")
+            v = self.idx.vanity.get(w["rel"].strip("/").lower()) if not cad else None
+            if v:
+                cad = self._cadeia(nrel(v[len(GW) + 1:]), "gw")
             cands, mostra, nota = [], None, ""
             for i, p in enumerate(cad):
                 g = self.idx.rev.get(p)
@@ -378,6 +458,8 @@ class Comparador:
             cands.append(para_g2(n))
             if mostra is None:
                 mostra = self.idx.g2_n.get(para_g2(n))
+            if mostra is None and not cad and w["site"] == "publico":   # www.macnica.com/, /mep100: fora do AEM
+                mostra, nota = w["raw"], "public URL, keep it as on the GWI"
             if mostra is None:
                 mostra = f"{G2}/{_alias_cru(cad[0][len(GW) + 1:] if cad else w['rel'])}"
                 nota = "not in global2 yet" if cad else "no such page in the GWI either"
@@ -398,7 +480,8 @@ class Comparador:
         if d["kind"] == "pagina":
             if d["site"] in ("macnicagwi", "copia-teste"):
                 return False, True
-            ok = bool(set(self.atual(d)) & set(self.esperado(w)[0]))
+            cands, mostra, _ = self.esperado(w)
+            ok = bool(set(self.atual(d)) & set(cands)) or (d["raw"] == mostra and d["site"] == "publico")
             return ok, _frag(d["frag"]) == _frag(w["frag"])
         if d["kind"] == "dam":
             if d["site"] in ("macnicagwi", "copia-teste"):
@@ -411,13 +494,20 @@ class Comparador:
 
     def deveria(self, w):
         """(href para exibir, nota) do que o link do global2 deveria ser."""
+        if w["raw"].startswith("#"):
+            return w["raw"], "anchor on the same page"
         if w["kind"] == "pagina":
             _, mostra, nota = self.esperado(w)
             f = _frag(w["frag"])
             return mostra + (f"#{f}" if f else ""), nota
         if w["kind"] == "dam":
             m = self.assets.get(w["rel"])
-            return (m, "") if m else (w["rel"], "same file as the GWI; not mapped to the global2 DAM")
+            if m:
+                return m, ""
+            achados = self.idx.dam.get(w["chave"], [])
+            if achados:
+                return achados[0], (f"{len(achados)} copies in the global2 DAM" if len(achados) > 1 else "")
+            return w["rel"], "not in the global2 DAM yet; this is the GWI file"
         return w["raw"], ""
 
     def padrao(self, d, w, mesmo_alvo):
@@ -504,7 +594,7 @@ def _alias_cru(rel):
     return rel.strip("/")
 
 
-def comparar(bruto, raiz_g2):
+def comparar(bruto):
     idx = Indice(bruto)
     cmp = Comparador(idx)
     censo = {"g2": collections.Counter(), "gw": collections.Counter()}
@@ -519,7 +609,7 @@ def comparar(bruto, raiz_g2):
         return f
 
     res, erros = [], []
-    for p, w in idx.pares(raiz_g2):
+    for p, w in idx.pares(bruto["escopo"]):
         jd, jw = bruto["jcr"].get(p), bruto["jcr"].get(w)
         if not isinstance(jd, dict) or not isinstance(jw, dict):
             erros.append({"g2": p, "gw": w, "st": [jd if not isinstance(jd, dict) else 200,
@@ -527,9 +617,16 @@ def comparar(bruto, raiz_g2):
             continue
         ds = links_de(jd, "jcr:content", [], censo["g2"], xf_links("g2"))
         ws = links_de(jw, "jcr:content", [], censo["gw"], xf_links("gw"))
-        for x in ds + ws:
-            x["a"] = alvo(x["href"])
+        for lado, pag, site, xs in (("g2", p, G2, ds), ("gw", w, GW, ws)):
+            for x in xs:
+                x["a"] = alvo(x["href"])
+                if x["a"]["kind"] == "ancora":                  # #kit == /…/easymvc#kit na própria página
+                    x["a"] = dict(x["a"], kind="pagina", site=site.rsplit("/", 1)[-1], rel=pag[len(site) + 1:])
         div, ok, novos, falt = casar(cmp, ds, ws)
+        # sobra só conta se o DESTINO não está do outro lado: o XF signup-and-contact do GWI tem o bloco duas vezes
+        # (variantes de layout: Sign up/Get in touch e Sign up/Contact us) e a página do global2, uma
+        falt = [j for j in falt if not any(cmp.mesmo(d["a"], ws[j]["a"])[0] for d in ds)]
+        novos = [i for i in novos if not any(cmp.mesmo(ds[i]["a"], g["a"])[0] for g in ws)]
         itens = []
         for i, j, txt_dif in div:
             d, g = ds[i], ws[j]
@@ -541,9 +638,10 @@ def comparar(bruto, raiz_g2):
         res.append({"g2": p, "gw": w, "titulo": idx.titulo(p, "g2"), "n_g2": len(ds), "n_gw": len(ws), "ok": len(ok),
                     "div": itens,
                     "novos": [{"txt": ds[i]["txt"], "href": ds[i]["a"]["raw"], "via": ds[i]["via"]} for i in novos],
-                    "faltando": [{"txt": ws[j]["txt"], "href": ws[j]["a"]["raw"], "via": ws[j]["via"]} for j in falt],
+                    "faltando": [dict(zip(("deveria", "nota"), cmp.deveria(ws[j]["a"])), txt=ws[j]["txt"],
+                                      href=ws[j]["a"]["raw"], via=ws[j]["via"]) for j in falt],
                     "editor": ((idx.g2[p].get("jcr:content") or {}).get("cq:lastModifiedBy") or "")})
-    return res, erros, idx.sem_par(raiz_g2), censo
+    return res, erros, idx.sem_par(bruto["escopo"]), censo
 
 
 # ---------------------------------------------------------------- HTML
@@ -559,6 +657,7 @@ PADROES = {  # chave: (rótulo, explicação) — em ordem de gravidade para o r
     "anchor": ("Right page, different anchor", "Same target page, but the #anchor differs or was dropped."),
     "mail": ("Different e-mail or phone", "The mailto:/tel: address differs."),
     "other": ("Other", ""),
+    "missing": ("Missing on global2", "The GWI page has this link; the global2 page has no link with this text or to this destination."),
 }
 
 
@@ -607,21 +706,23 @@ a{color:var(--acc);text-decoration:none;overflow-wrap:anywhere}a:hover{text-deco
 display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .barra input[type=search]{flex:1 1 260px;padding:8px 10px;border:1px solid var(--lin);border-radius:6px;background:var(--card);color:var(--fg);font:inherit}
 .barra label{font-size:13px;color:var(--mut);white-space:nowrap}
-.barra nav{flex-basis:100%;font-size:14px}.barra nav a{margin-right:12px;white-space:nowrap}
-h2{font-size:20px;margin:36px 0 6px;scroll-margin-top:110px;overflow-wrap:anywhere}
-h2 .n,summary .n{color:var(--mut);font-weight:400;font-size:14px;margin-left:6px}
+.barra nav{flex-basis:100%;font-size:14px;line-height:1.7}.barra nav a{margin-right:12px;white-space:nowrap}
+h2{font-size:22px;margin:44px 0 4px;scroll-margin-top:160px;overflow-wrap:anywhere;border-bottom:2px solid var(--lin);padding-bottom:6px}
+h3{font-size:17px;margin:26px 0 6px;scroll-margin-top:160px;overflow-wrap:anywhere}
+.intro{color:var(--mut);margin:0 0 8px}
+h2 .n,h3 .n,summary .n{color:var(--mut);font-weight:400;font-size:14px;margin-left:6px}
 details{background:var(--card);border:1px solid var(--lin);border-radius:8px;margin:10px 0;padding:0 14px}
 summary{cursor:pointer;padding:11px 0;font-weight:600}
 details[open]>summary{border-bottom:1px solid var(--lin)}
 .abre{font-size:13px;margin:8px 0 2px;color:var(--mut)}.abre a{margin-right:14px}
 .p{color:var(--mut);font:12px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow-wrap:anywhere}
 .lk{border-top:1px solid var(--lin);padding:10px 0}.lk:first-of-type{border-top:0}
-.lk .t{font-weight:600;margin-bottom:4px}
+.lk .t{font-weight:600;margin-bottom:4px;overflow-wrap:anywhere}
 .lk dl{display:grid;grid-template-columns:120px 1fr;gap:2px 10px;margin:0;font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 .lk dt{color:var(--mut);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .lk dd{margin:0;overflow-wrap:anywhere}
 .agora a{color:var(--bad)}.dev a{color:var(--ok)}
-.nota{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--warn);background:var(--warnbg);border-radius:4px;padding:0 6px;margin-left:6px;font-size:12px}
+.nota{display:inline-block;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--warn);background:var(--warnbg);border-radius:4px;padding:0 6px;margin-left:6px;font-size:12px}
 .tag{display:inline-block;font-size:12px;font-weight:500;background:var(--tag);border-radius:10px;padding:1px 8px;margin-left:8px;vertical-align:1px}
 .tag.cut,.tag.gwi,.tag.copia,.tag.empty{background:var(--badbg);color:var(--bad)}
 .via{font-size:12px;color:var(--mut);font-weight:400}
@@ -631,7 +732,7 @@ th{color:var(--mut);font-weight:500}
 td.num{text-align:right;font-variant-numeric:tabular-nums}
 .oculto{display:none}
 footer{margin-top:48px;color:var(--mut);font-size:13px;border-top:1px solid var(--lin);padding-top:12px}
-@media (max-width:600px){.lk dl{grid-template-columns:1fr}.lk dt{margin-top:4px}}
+@media (max-width:600px){.lk dl{grid-template-columns:1fr}.lk dt{margin-top:4px}.barra{position:static}}
 """
 
 JS = """
@@ -654,97 +755,130 @@ q.addEventListener('input',filtra);box.forEach(b=>b.addEventListener('change',fi
 
 def _item(it):
     tag = PADROES[it["padrao"]][0]
-    via = f' <span class="via">from experience fragment {html.escape(it["via"])}</span>' if it["via"] else ""
-    txt_gwi = (f"<dt>GWI link text</dt><dd>{html.escape(it['txt_gwi'])}</dd>") if it["txt_gwi"] else ""
+    via = (f' <span class="via">from {"GWI " if it["padrao"] == "missing" else ""}experience fragment '
+           f'{html.escape(it["via"].split("/site/")[-1])}</span>') if it["via"] else ""
+    txt_gwi = (f"<dt>GWI link text</dt><dd>{html.escape(it['txt_gwi'])}</dd>") if it.get("txt_gwi") else ""
     nota = f'<span class="nota">{html.escape(it["nota"])}</span>' if it["nota"] else ""
+    agora = (_alink(it["agora"]) if it["agora"] else "(empty)") if it["padrao"] != "missing" else "(no such link)"
     busca = html.escape(f"{it['txt']} {it['agora']} {it['deveria']} {it['gwi']}".lower(), quote=True)
     return (f'<div class="lk" data-p="{it["padrao"]}" data-s="{busca}"><div class="t">“{html.escape(it["txt"])}”'
             f'<span class="tag {it["padrao"]}">{html.escape(tag)}</span>{via}</div><dl>{txt_gwi}'
-            f'<dt>Points to now</dt><dd class="agora">{_alink(it["agora"]) if it["agora"] else "(empty)"}</dd>'
+            f'<dt>Points to now</dt><dd class="agora">{agora}</dd>'
             f'<dt>Should point to</dt><dd class="dev">{_alink(it["deveria"])}{nota}</dd>'
             f'<dt>GWI link</dt><dd>{_alink(it["gwi"])}</dd></dl></div>')
 
 
-def montar_html(res, erros, sem_par, quando, raiz):
-    com = [r for r in res if r["div"]]
-    todos = [it for r in com for it in r["div"]]
-    por_padrao = collections.Counter(it["padrao"] for it in todos)
-    pags_padrao = collections.Counter(p for r in com for p in {it["padrao"] for it in r["div"]})
-    n_links = sum(r["n_g2"] for r in res)
+def _nome_fora(p):
+    if p.startswith("/content/experience-fragments/"):
+        return "the " + p.split("/site/")[-1].rsplit("/master", 1)[0] + " experience fragment"
+    return p.rsplit("/", 1)[-1]
 
-    resumo = [f'<div><b>{len(res)}</b><span>pages compared with their GWI page</span></div>',
-              f'<div><b>{n_links}</b><span>links on those global2 pages</span></div>',
-              f'<div><b>{len(com)}</b><span>pages with at least one link that differs</span></div>',
-              f'<div><b>{len(todos)}</b><span>links that differ</span></div>']
-    linhas = "".join(f'<tr><td><span class="tag {k}">{html.escape(PADROES[k][0])}</span></td><td>{html.escape(PADROES[k][1])}</td>'
-                     f'<td class="num">{por_padrao[k]}</td><td class="num">{pags_padrao[k]}</td></tr>'
-                     for k in PADROES if por_padrao[k])
-    caixas = "".join(f'<label><input type="checkbox" value="{k}" checked> {html.escape(PADROES[k][0])} ({por_padrao[k]})</label>'
-                     for k in PADROES if por_padrao[k])
 
+def _parte(paginas, chave, prefixo, nav):
+    """Seções (por área do site) com um <details> por página; `chave` = lista de itens da página."""
     secoes = collections.defaultdict(list)
-    for r in com:
+    for r in paginas:
         secoes[_secao(r["g2"][len(G2) + 1:])].append(r)
-    nav, corpo = [], []
+    corpo = []
     for sec in sorted(secoes):
         rs = sorted(secoes[sec], key=lambda r: r["g2"])
-        idr = re.sub(r"[^a-z0-9]+", "-", sec.lower())
-        n = sum(len(r["div"]) for r in rs)
-        nav.append(f'<a href="#{idr}">{html.escape(sec)} ({len(rs)})</a>')
-        corpo.append(f'<section class="sec"><h2 id="{idr}">{html.escape(sec)}<span class="n">{len(rs)} page'
-                     f'{"s" if len(rs) != 1 else ""}, {n} link{"s" if n != 1 else ""}</span></h2>')
+        idr = prefixo + re.sub(r"[^a-z0-9]+", "-", sec.lower())
+        n = sum(len(r[chave]) for r in rs)
+        nav.append(f'<a href="#{idr}">{html.escape(sec.split("/", 3)[-1])} ({n})</a>')
+        corpo.append(f'<section class="sec"><h3 id="{idr}">{html.escape(sec)}<span class="n">{len(rs)} page'
+                     f'{"s" if len(rs) != 1 else ""}, {n} link{"s" if n != 1 else ""}</span></h3>')
         for r in rs:
-            ordem = sorted(r["div"], key=lambda it: list(PADROES).index(it["padrao"]))
-            corpo.append(f'<details class="pg" open><summary>{html.escape(r["titulo"])}<span class="n">{len(r["div"])} '
-                         f'link{"s" if len(r["div"]) != 1 else ""}</span></summary>'
+            ordem = sorted(r[chave], key=lambda it: list(PADROES).index(it["padrao"]))
+            corpo.append(f'<details class="pg" open><summary>{html.escape(r["titulo"])}<span class="n">{len(ordem)} '
+                         f'link{"s" if len(ordem) != 1 else ""}</span></summary>'
                          f'<div class="abre">{_alink(r["g2"] + ".html?wcmmode=disabled", "global2 page")}'
                          f'{_alink(r["gw"] + ".html?wcmmode=disabled", "GWI page")}'
                          f'<span class="p">{html.escape(r["g2"])}</span></div>'
                          + "".join(_item(it) for it in ordem) + "</details>")
         corpo.append("</section>")
+    return corpo
+
+
+def montar_html(res, erros, sem_par, quando, n_escopo):
+    for r in res:                                               # faltando no mesmo formato dos divergentes
+        r["falt"] = [{"txt": x["txt"], "agora": "", "deveria": x["deveria"], "nota": x["nota"], "gwi": x["href"],
+                      "padrao": "missing", "via": x["via"]} for x in r["faltando"]]
+    errados = [r for r in res if r["div"]]
+    faltam = [r for r in res if r["falt"]]
+    todos = [it for r in res for it in r["div"] + r["falt"]]
+    por_padrao = collections.Counter(it["padrao"] for it in todos)
+    pags_padrao = collections.Counter(p for r in res for p in {it["padrao"] for it in r["div"] + r["falt"]})
+    n_div, n_falt = len([it for r in errados for it in r["div"]]), len([it for r in faltam for it in r["falt"]])
+
+    resumo = [f'<div><b>{len(res)}</b><span>pages compared with the same page in the GWI</span></div>',
+              f'<div><b>{sum(r["n_g2"] for r in res)}</b><span>links on those global2 pages</span></div>',
+              f'<div><b>{n_div}</b><span>links that point to the wrong place, on {len(errados)} pages</span></div>',
+              f'<div><b>{n_falt}</b><span>GWI links missing on global2, on {len(faltam)} pages</span></div>']
+    linhas = "".join(f'<tr><td><span class="tag {k}">{html.escape(PADROES[k][0])}</span></td><td>{html.escape(PADROES[k][1])}</td>'
+                     f'<td class="num">{por_padrao[k]}</td><td class="num">{pags_padrao[k]}</td></tr>'
+                     for k in PADROES if por_padrao[k])
+    caixas = " ".join(f'<label><input type="checkbox" value="{k}" checked> {html.escape(PADROES[k][0])} ({por_padrao[k]})</label>'
+                     for k in PADROES if por_padrao[k])
+    nav1, nav2 = [], []
+    corpo1 = _parte(errados, "div", "w-", nav1)
+    corpo2 = _parte(faltam, "falt", "m-", nav2)
+    fora = ", ".join(_nome_fora(p) for p in sem_par)
 
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>global2 links vs GWI</title><style>{CSS}</style></head><body><main>
 <h1>global2 links that differ from the GWI</h1>
-<p class="sub">Every link on the macnicaglobal2 pages under <code>{html.escape(raiz)}</code> that have a counterpart page in the
-GWI, compared with the matching link on the GWI page. The GWI is the source of truth: “Should point to” is the global2
-page (or file) that corresponds to where the GWI link goes. Links open in the AEM author in a new tab; you must be
-logged in. Generated {quando}.</p>
+<p class="sub">Every link on the {len(res)} pages of the macnicaglobal2 link map (Americas / MAI / EN), compared with the
+matching link on the same page in the GWI. The GWI is the source of truth: “Should point to” is the global2 page (or
+file) that corresponds to where the GWI link goes. Links open in the AEM author in a new tab; you must be logged in.
+Generated {quando}.</p>
 <div class="resumo">{''.join(resumo)}</div>
 <table><thead><tr><th>What is wrong</th><th>Meaning</th><th class="num">Links</th><th class="num">Pages</th></tr></thead>
 <tbody>{linhas}</tbody></table>
-<div class="barra"><input id="q" type="search" placeholder="Filter by link text or path…" autocomplete="off">{caixas}
-<nav>{''.join(nav)}</nav></div>
-{''.join(corpo)}
+<div class="barra"><input id="q" type="search" placeholder="Filter by link text or path…" autocomplete="off"> {caixas}
+<nav><a href="#parte1"><b>Wrong place</b></a> {' '.join(nav1)}</nav>
+<nav><a href="#parte2"><b>Missing</b></a> {' '.join(nav2)}</nav></div>
+<h2 id="parte1">1. Links that point to the wrong place<span class="n">{n_div} links on {len(errados)} pages</span></h2>
+<p class="intro">The global2 page has the link, but it goes somewhere other than the GWI link.</p>
+{''.join(corpo1)}
+<h2 id="parte2">2. GWI links missing on global2<span class="n">{n_falt} links on {len(faltam)} pages</span></h2>
+<p class="intro">The GWI page has the link; the global2 page has no link with the same text or to the same destination
+(for example, a heading, image or button that is no longer clickable).</p>
+{''.join(corpo2)}
 <footer><p><b>How links were matched.</b> Read from the authored content of each page and of the experience fragments it
 embeds (not from the rendered page). A global2 link is paired with the GWI link that has the same text; when the text
 was edited, with the GWI link that goes to the same place or has similar text. Two links go to the same place when the
 global2 target is the global2 counterpart of the GWI target (same path, allowing for the known moves: technology →
 solutions, europe → eu, sony-image-sensors → sony/sony-image-sensors), also through page redirects; files match by file
-name; external URLs match ignoring http/https, www and a trailing slash. Lists built automatically from the page tree,
-images and form settings are not included. Only GET requests were made; nothing was changed in either site.</p>
-<p>{len(sem_par)} global2 pages under this root have no GWI page at the same path and were not compared.
-{len(erros)} pages could not be read.</p></footer>
+name (the global2 DAM renames “Sakura Main Panel_24x36.pdf” to “sakura-main-panel-24x36.pdf”); external URLs match
+ignoring http/https, www and a trailing slash. Lists built automatically from the page tree, images, videos and form
+settings are not included. Only GET requests were made; nothing was changed in either site.</p>
+<p>The link map has {n_escopo} entries: {len(res)} pages were compared{f"; {len(sem_par)} ({html.escape(fora)}) has no GWI counterpart and was not compared" if sem_par else ""}{f"; {len(erros)} could not be read" if erros else ""}.</p></footer>
 </main><script>{JS}</script></body></html>
 """
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--raiz", default=G2, help="só as páginas do global2 abaixo daqui (padrão: %(default)s)")
+    mapas = sorted(MAPAS.glob("global2_link_map_complete_*.html"))
+    ap.add_argument("--mapa", default=str(mapas[-1]) if mapas else None,
+                    help="HTML do mapa de links final — o escopo (padrão: o mais novo, %(default)s)")
     ap.add_argument("--do-cache", action="store_true", help="não vai à rede: usa o cache da última coleta")
     ap.add_argument("--saida", default=f"global2_links_vs_gwi_{datetime.date.today().isoformat()}",
                     help="nome (sem extensão) em dados/mapas")
     a = ap.parse_args()
-    raiz = a.raiz.rstrip("/")
-    bruto = pickle.loads(CACHE.read_bytes()) if a.do_cache else coletar(raiz)
-    res, erros, sem_par, censo = comparar(bruto, raiz)
+    if a.do_cache:
+        bruto = pickle.loads(CACHE.read_bytes())
+        if complementos(bruto):                                 # cache de versão anterior: só o que falta (GET)
+            CACHE.write_bytes(pickle.dumps(bruto))
+    else:
+        bruto = coletar(escopo_do_mapa(a.mapa), a.mapa)
+    res, erros, sem_par, censo = comparar(bruto)
 
     MAPAS.mkdir(parents=True, exist_ok=True)
-    (MAPAS / f"{a.saida}.html").write_text(montar_html(res, erros, sem_par, bruto["quando"], raiz), encoding="utf-8")
+    (MAPAS / f"{a.saida}.html").write_text(montar_html(res, erros, sem_par, bruto["quando"], len(bruto["escopo"])), encoding="utf-8")
     (MAPAS / f"{a.saida}.json").write_text(json.dumps(
-        {"quando": bruto["quando"], "raiz": raiz, "paginas": res, "erros": erros, "sem_par": sem_par},
+        {"quando": bruto["quando"], "mapa": bruto["mapa"], "paginas": res, "erros": erros, "sem_par": sem_par},
         ensure_ascii=False, indent=1), encoding="utf-8")
 
     com = [r for r in res if r["div"]]
@@ -754,6 +888,8 @@ def main():
         print(f"  {n:5d}  {k}")
     print(f"faltando (GWI sem par): {sum(len(r['faltando']) for r in res)}; novos (global2 sem par): "
           f"{sum(len(r['novos']) for r in res)}")
+    for lado in ("g2", "gw"):                                     # de onde vieram os links (conferir a extração)
+        print(f"censo {lado}: " + "; ".join(f"{c}.{p}[{t}]={n}" for (c, p, t), n in censo[lado].most_common(25)))
     print(f"-> {MAPAS / (a.saida + '.html')}")
 
 
