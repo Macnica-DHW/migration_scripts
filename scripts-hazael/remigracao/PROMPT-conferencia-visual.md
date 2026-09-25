@@ -10,7 +10,7 @@ a conferência visual está em 67 de 136 (remigracao/CONFERIDAS.md lista as 69 q
 FEITAS. Revisor NUNCA manda o cookie do AEM para host externo (está no ROTEIRO).
 
 LEIA PRIMEIRO, nesta ordem:
-  scripts-hazael/remigracao/HANDOFF.md            estado, próximo passo, método, armadilhas
+  scripts-hazael/remigracao/notas/HANDOFF.md      estado, próximo passo, método, armadilhas
   scripts-hazael/remigracao/REGRAS-disposicao.md  R1–R41 + tabela "Aberto" (I, K, L, M, N) + pontos cegos do comparador
   scripts-hazael/remigracao/ROTEIRO-revisor.md    o roteiro que cada revisor (subagente) recebe
 

@@ -22,3 +22,23 @@ instruções_tq_systems.docx
 
 # Cache de JCR das ferramentas offline (cmp_motor, vaos_estruturais, conf_texto) — recriável
 jcr_cache*.pkl
+
+# ── Saídas das ferramentas (mapas, relatórios, coletas, prints, conferências): só no disco, nunca no git ──
+# (Hazael, 25/09/2026: "Mapas shouldn't be on git, nor the handoffs or other ephemeral session-to-session documents")
+scripts-hazael/remigracao/dados/*
+# ...exceto as ENTRADAS que o código lê
+!scripts-hazael/remigracao/dados/fundo_cinza_paginas.txt
+!scripts-hazael/remigracao/dados/arquetipos.json
+# ...e os backups do AEM (o estado de cada página antes da nossa gravação) + o livro de gravações: ponto de retorno
+!scripts-hazael/remigracao/dados/backups_aem/
+!scripts-hazael/remigracao/dados/golive/
+scripts-hazael/remigracao/dados/golive/**
+!scripts-hazael/remigracao/dados/golive/**/
+!scripts-hazael/remigracao/dados/golive/manifesto*.jsonl
+!scripts-hazael/remigracao/dados/golive/*backup*.json
+!scripts-hazael/remigracao/dados/golive/*backup*.json.gz
+!scripts-hazael/remigracao/dados/golive/backup_*/**/*.json
+scripts-hazael/remigracao/dados/golive/**/render.json
+
+# ── Documentos de sessão para sessão (handoffs, onde parei, planos, registros de rodada, listas de lote) ──
+scripts-hazael/remigracao/notas/
