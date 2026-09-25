@@ -1,0 +1,144 @@
+{
+ "quando": "2026-09-25T20:14:58",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Altera Agilex 9 FPGA and SoC | Agilex 9 Performance Overview",
+  "manufacturer": "mai:manufacturers/altera",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Altera Agilex 9 FPGA and SoC Overview",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:46 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:26 GMT+0000",
+  "jcr:description": "Discover the advanced features of Altera Agilex 9 FPGAs and SoCs. Learn how Agilex 9 offers next-generation performance for data-centric applications.",
+  "keywords": "Altera Agilex 9 FPGAs, high-performance, FPGA technology, advanced features, industry applications, customizable solutions, versatile, innovation, data center, networking, automotive, aerospace, telecommunications, AI acceleration, signal processing, power efficiency.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview",
+  "pageTitle": "Altera Agilex 9 FPGA and SoC Overview",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Altera Agilex 9 FPGA and SoC Overview",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Altera Agilex 9 FPGA and SoC is an FPGA with some enhanced functions for special applications.&nbsp;For example, the Direct RF Series​ ​integrates industry-leading wideband data converters with sample rates up to 64Gsps and mid-band data converters with high-fidelity performance into the FPGA. Ideal for applications such as defense, radar, high-end test, and wireless solutions. Targets those applications that demand ultra-low power consumption yet require high channel density packages to address difficult size constraints.&nbsp;Pushing beyond the limits of mainstream programmable logic - these FPGAs provide unprecedented capabilities and optimization for their target applications.</p>\n<p>The Direct RF Series is optimized for synthesis of complex digital, mixed-signal and DSP algorithms. Synchronous products with up to 64Gsps sample rate are available in chiplet based configurations - providing a common front-end, flexible compute, connectivity and frequency agility.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Features",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Security",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Hardened 200G Crypto IP core</li>\n<li>Supports 128-bit AES encryption/decryption</li>\n<li>64-bit MACsec IP to secure network traffic</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "DSP Performance",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>High-efficiency GPU engine with up to 25 tera floating point operations per second (TFLOPS)</li>\n<li>Digital signal processing (DSP) performance (FP16)</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "2nd Gen Hyperflex Architecture",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><p>Enables design optimization capabilities to deliver significant fmax performance compared to previous generation high-end Altera FPGAs</p>\n</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}
