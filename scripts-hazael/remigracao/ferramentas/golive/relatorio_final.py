@@ -33,21 +33,21 @@ SUGESTAO = {  # decisões em aberto: o que eu sugeri ao Hazael (25/09) — ele n
         "Keep global2 as it is (the GWI link is clearly wrong: “macnica-na.com” is the Americas site).",
     "about-us/news-events/news-archive/2018-02-13-macnica-americas-expands-value-added-services-for-displays":
         "Keep global2 as it is (the GWI's destination does not exist; the Displays page is the closest live page).",
-    "about-us/news-events/news-archive/ienso-to-showcase-generative-ai-at-the-edge-ces2025":
-        "Leave it without a link (the event is over and the GWI's destination is a test page).",
 }
-NOVOS = [   # achados da varredura final (varredura_pendencias.py + conferência à mão), NÃO mexidos
-    ("about-us/news-events/news-archive/ienso-to-showcase-generative-ai-at-the-edge-ces2025", "Content missing",
-     "The body of the press release is missing: global2 only has the “Request a Demo” invitation and “About iENSO” "
-     "(1,101 characters of text against 3,987 on the GWI). Missing: “TORONTO, December 17, 2024 – iENSO … today announced "
-     "it will demonstrate …”, the list of what the demonstrations highlight, and the quote. Adding it adds blocks to the page."),
+NOVOS = []  # achados da varredura final (varredura_pendencias.py + conferência à mão) ainda NÃO mexidos
+RESOLVIDOS = [   # achados da varredura final de 25/09 já resolvidos: (página, o quê, detalhe, como)
     ("products/boards-modules/tq-systems", "Images served from the GWI",
-     "The four tab images (Embedded Modules, Evaluation Kits, Single Board Computers, Box PCs) point to the GWI's DAM "
-     "(/content/dam/macnicagwi/…/images/products/). They show today only because the GWI is still live; they are not in "
-     "the global2 DAM. Fix: copy the four files into the global2 DAM and point the images at the copies (no layout change)."),
+     "The four tab images (Embedded Modules, Evaluation Kits, Single Board Computers, Box PCs) pointed to the GWI's DAM "
+     "(/content/dam/macnicagwi/…/images/products/). They showed only because the GWI is still live.",
+     "Fixed on 25/09 — see “Content added or corrected”. Every tab is pixel-identical to before."),
+    ("about-us/news-events/news-archive/ienso-to-showcase-generative-ai-at-the-edge-ces2025", "Content missing",
+     "The body of the press release was missing: global2 only had the “Request a Demo” invitation and “About iENSO” "
+     "(1,101 characters of text against 3,987 on the GWI).",
+     "Fixed on 25/09 — see “Content added or corrected”."),
     ("products/boards-modules/terasic/terasic-apollo-agilex-som", "Empty image (cleanup)",
-     "In the “Layout” block there is an empty image component between the two layout images. It shows nothing on the "
-     "page (the GWI has the same two images), so nothing is missing; it only needs removing."),
+     "In the “Layout” block there was an empty image component between the two layout images. It showed nothing on the "
+     "page (the GWI has the same two images), so nothing was missing.",
+     "Fixed by hand by Hazael on 25/09 (checked: the empty image is gone; the block has its title and the two layout images)."),
 ]
 JS = LV.JS.replace("document.querySelectorAll('.lk')", "document.querySelectorAll('#links .lk')") \
           .replace("document.querySelectorAll('details.pg')", "document.querySelectorAll('#links details.pg')") \
@@ -106,14 +106,15 @@ def main():
     outros = [c for c in PL.CATS if c not in ("decide", "fora") and por.get(c)]
     novos = "".join(f'<tr><td><a href="{html.escape(LV._u(f"{M}/{p}.html?wcmmode=disabled") or "#", quote=True)}" target="_blank" '
                     f'rel="noopener">{html.escape(titulo_de(b, p))}</a><div class="p">/{html.escape(p)}</div></td>'
-                    f'<td><span class="tag">{html.escape(t)}</span></td><td>{html.escape(d)}</td></tr>' for p, t, d in NOVOS)
+                    f'<td><span class="tag">{html.escape(t)}</span></td><td>{html.escape(d)}</td><td>{html.escape(como)}</td></tr>'
+                    for p, t, d, como in [(p, t, d, "Not changed.") for p, t, d in NOVOS] + RESOLVIDOS)
     listas = "".join(f'<tr><td><a href="{html.escape(LV._u(f"{M}/{p}.html?wcmmode=disabled") or "#", quote=True)}" target="_blank" '
                      f'rel="noopener">{html.escape(titulo_de(b, p))}</a><div class="p">/{html.escape(p)}</div></td>'
                      f'<td>{html.escape(re.sub(r"^[^:]*: ", "", d))}</td></tr>' for p, d in varr["achados"].get("lista_deletadas", []))
     fora_html = "".join(f"<li>/{html.escape(p)} — “{html.escape(it['txt'][:70])}”: {html.escape(it['nota'])}</li>"
                         for p, it in sorted(fora, key=lambda x: x[0]))
     achados = [a for a in RT.ACHADOS if not a[0].startswith("Soft-deleted")]
-    n_pend = len({p for p in por.get("decide", {})} | {p for p, _, _ in NOVOS[:2]}
+    n_pend = len({p for p in por.get("decide", {})} | {p for p, _, _ in NOVOS}
                  | {p for p, _ in varr["achados"].get("lista_deletadas", [])})
 
     css = LV.CSS + RC.CSS_EXTRA + RT.CSS + """
@@ -179,10 +180,10 @@ of the changed area. Grids follow the Suppliers/Partners grid of the Imaging &am
 <div class="tabela"><table class="tabv"><thead><tr><th>Page</th><th>Link</th><th>Situation</th><th>Suggestion</th></tr></thead>
 <tbody>{"".join(dec)}</tbody></table></div>
 {"" if not outros else "<p><b>Other link problems:</b> " + ", ".join(f"{html.escape(PL.CATS[c][0])} ({sum(len(v) for v in por[c].values())})" for c in outros) + "</p>"}
-<h3>4.2 Found in the final check<span class="n">{len(NOVOS)} pages</span></h3>
+<h3>4.2 Found in the final check<span class="n">{len(NOVOS) + len(RESOLVIDOS)} pages, {len(NOVOS)} still open</span></h3>
 <p class="intro">Not visible to the link comparison; found by a sweep of all {len(rel["paginas"])} map pages (images, empty
-components, lists, tabs, amount of text against the GWI) and checked by hand. Not changed.</p>
-<div class="tabela"><table class="tabv"><thead><tr><th>Page</th><th>What</th><th>Detail</th></tr></thead><tbody>{novos}</tbody></table></div>
+components, lists, tabs, amount of text against the GWI) and checked by hand.{" All of them have since been fixed." if not NOVOS else ""}</p>
+<div class="tabela"><table class="tabv"><thead><tr><th>Page</th><th>What</th><th>Detail</th><th>Status</th></tr></thead><tbody>{novos}</tbody></table></div>
 <h3>4.3 Product lists that show soft-deleted pages<span class="n">{len(varr["achados"].get("lista_deletadas", []))} pages</span></h3>
 <p class="intro">A product list shows every child page, including pages that were soft-deleted (hidden in the console, still in
 the repository) — they appear as duplicates on the author. None of them has been published. Fix: delete the soft-deleted pages

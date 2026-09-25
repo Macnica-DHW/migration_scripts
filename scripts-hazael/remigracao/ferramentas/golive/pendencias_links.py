@@ -72,8 +72,9 @@ CLASSES = [
     ("decide", f"{NEWS}/2018-02-13-macnica-americas-expands-value-added-services-for-displays", r"valueadd",
      "The GWI’s destination (macnica-value-add-services-for-displays) does not exist in the GWI either; global2 opens the "
      "Displays page."),
-    ("decide", f"{NEWS}/ienso-to-showcase-generative-ai-at-the-edge-ces2025", r"submit your request",
-     "The GWI links to a test page (/test-folder/CES-2025); in global2 the sentence is part of a title."),
+    ("fora", f"{NEWS}/ienso-to-showcase-generative-ai-at-the-edge-ces2025", r"submit your request",
+     "differs from the GWI on purpose: the GWI links to a test page (/test-folder/CES-2025); global2 links to the Contact Us "
+     "form (Hazael's decision, 25/09)"),
     ("fora", "about-us/privacy-policy/privacy-policy-for-california-residents", r"zipteam",
      "the domain is inside the heading “Zipteam service ( www.zipteam.com )”; the whole heading now links to "
      "https://www.zipteam.com/ (25/09)"),

@@ -1,0 +1,86 @@
+[
+ {
+  "pagina": "products/boards-modules/tq-systems",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 3,
+   "igual_antes_do_1o": 3124,
+   "igual_depois_do_ultimo": 452,
+   "texto_saiu": "",
+   "texto_entrou": "",
+   "tags_saiu": [
+    "img"
+   ],
+   "tags_entrou": [
+    "img"
+   ],
+   "links_saiu": [],
+   "links_entrou": [],
+   "imgs_entrou": [
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/_jcr_content/root/container/container_2023615685/tabs_copy/item_1787731444341/textwithimage.coreimg.jpeg/1788198106602/mba6ulxl.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/_jcr_content/root/container/container_2023615685/tabs_copy/item_1787731460034/textwithimage.coreimg.jpeg/1788338393434/mbox-advanced-boxpc.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/_jcr_content/root/container/container_2023615685/tabs_copy/item_2/textwithimage.coreimg.jpeg/1788348838679/tqmx110eb-com-express--basic-type-6-module.jpeg"
+   ]
+  },
+  "prints": {
+   "altura": [
+    5303,
+    5303
+   ],
+   "igual_no_topo_ate": 5303,
+   "igual_no_fim_px": 5303,
+   "miolo_antes": [
+    5303,
+    0
+   ],
+   "miolo_depois": [
+    5303,
+    0
+   ]
+  }
+ },
+ {
+  "pagina": "about-us/news-events/news-archive/ienso-to-showcase-generative-ai-at-the-edge-ces2025",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 3,
+   "igual_antes_do_1o": 2508,
+   "igual_depois_do_ultimo": 303,
+   "texto_saiu": "iENSO and Macnica at CES 2025 Request a Demo Invitation Demonstrations will take place at Ambarella’s invitation-only exhibition during CES 2025 in Las Vegas, Nevada. To request a demonstration for you and your group, submit your request here . About iENSO",
+   "texto_entrou": "iENSO to Showcase Generative AI at the Edge in Embedded Vision Systems during CES® 2025 TORONTO, December 17, 2024 - iENSO, a leading provider of intelligent embedded vision systems based on its Embedded Vision Platform as a Service (EVPaaS) technology, today announced it will demonstrate the breakthrough Generative AI capabilities of its latest Ambarella-based embedded vision solutions during CES® 2025. These advancements, developed in collaboration with Ambarella and Macnica, showcase the power of Generative AI at the Edge to revolutionize IoT, surveillance, access control, consumer electronics and other applications. Demonstration attendees will experience firsthand how iENSO’s latest camera SoMs, based on Ambarella’s 5nm CV75S family of AI systems-on-chip (SoCs), leverage the latest multi-modal vision-language models (VLMs) and vision-transformer networks to enable real-time, on-device transformer network processing that delivers new customer experiences. These demonstrations will highlight: The power of Generative AI VLM-based user experiences Advanced zero-shot object detection and scene understanding/context Natural language interactions with visual data “Our partnership with Ambarella and Macnica marks an exciting step forward in expanding product and service possibilities,” said Vlad Kardashov, President of iENSO. “Integrating Generative AI capabilities into the EVPaaS platform empowers our customers to develop intelligent, context-aware products while safeguarding data privacy and minimizing cloud-related AI processing expenses.” The integration of Gen AI capabilities into iENSO's embedded vision solutions offers significant performance benefits for a range of embedded vision applications and services, including: Lower total cost of ownership from reduced cloud processing costs Reduced bandwidth requirements Enhanced data privacy and security Improved real-time decision-making capabilities Longer device battery life compared to cloud-based alternatives “iENSO’s implementation of edge GenAI with our CV75S AI SoCs provides a compelling example of the transformative potential for on-device VLM processing,” said Chris Day, VP of marketing and business development at Ambarella. “These demonstrations at our exhibition during CES will showcase the power of intelligent, real-time decision-making capabilities in embedded vision systems for practical applications.” \"At Macnica, we believe true innovation emerges from blending technical expertise with strategic business conditions. By collaborating with leading technology providers like Ambarella and Sony, and leveraging the expertise of solution integrators such as iENSO, we empower our customers to succeed and expand their market presence. Our approach delivers next-generation AI imaging products and solutions, all underpinned by flexible, industry-leading business conditions designed to drive growth, worldwide competitiveness, and innovation.\" said Sebastien Dignard, President of Macnica Americas. Request a Demo Invitation Demonstrations will take place at Ambarella’s invitation-only exhibition during CES 2025 in Las Vegas, Nevada. To request a demonstration for you and your group, submit your request here . About iENSO",
+   "tags_saiu": [
+    "div",
+    "h2"
+   ],
+   "tags_entrou": [
+    "a",
+    "b",
+    "br",
+    "li",
+    "p",
+    "ul"
+   ],
+   "links_saiu": [],
+   "links_entrou": [
+    "/content/macnicaglobal2/americas/mai/en/contact/form.html"
+   ],
+   "imgs_entrou": []
+  },
+  "prints": {
+   "altura": [
+    2129,
+    2395
+   ],
+   "igual_no_topo_ate": 244,
+   "igual_no_fim_px": 0,
+   "miolo_antes": [
+    244,
+    2129
+   ],
+   "miolo_depois": [
+    244,
+    2395
+   ]
+  }
+ }
+]

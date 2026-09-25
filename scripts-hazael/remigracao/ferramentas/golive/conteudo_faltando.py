@@ -188,6 +188,34 @@ IMG_IEI = (f"{GWI_DAM}/images/products/", f"{G2_DAM}/products/boards-modules/iei
 IMG_MB = f"{G2_DAM}/products/boards-modules/ibase/images"
 PDF_ROB = f"{G2_DAM}/downloads/robotics-solution-brief.pdf"
 PDF_MBA = f"{G2_DAM}/images/pdfs/EMB_Whitepaper_MBa8MP-RAS314_EN_Rev0101.pdf"
+ABAS_TQ = "root/container/container_2023615685/tabs_copy"
+TQ_X86, TQ_ARM = f"{G2_DAM}/products/boards-modules/tq-systems/x86-modules/images", f"{G2_DAM}/products/boards-modules/tq-systems/arm-modules"
+IMGS_TQ = [   # aba, arquivo do GWI, arquivo do global2 com o MESMO sha1 (25/09; o da TQMa8MxML lá tem "%0A" literal no nome)
+    ("item_1", "emb-tqma8mxml-0.jpg", f"{G2_DAM}/images/products/emb-tqma8mxml-0.jpg"),               # copiado
+    ("item_2", "EMB_TQMx110EB.jpg", f"{TQ_X86}/TQMx110EB COM Express® Basic Type 6 Module.jpeg"),
+    ("item_1787731444341", "emb-mba6ulxl.jpg", f"{TQ_ARM}/MBa6ULxL.jpeg"),
+    ("item_1787731460034", "EMB_MBox-Advanced.jpg", f"{TQ_X86}/MBox-Advanced BoxPC.jpeg"),
+]
+IENSO = "about-us/news-events/news-archive/ienso-to-showcase-generative-ai-at-the-edge-ces2025"
+W_IENSO = f"{GWI}/about-us/news-events/news-archive/iENSO-to-Showcase-Generative-AI-at-the-edge-CES2025"
+IENSO_H2 = ("Request a Demo Invitation Demonstrations will take place at Ambarella’s invitation-only exhibition during CES 2025 "
+            "in Las Vegas, Nevada. To request a demonstration for you and your group, submit your request here . About iENSO")
+
+
+def ienso_texto():
+    """O press release inteiro do GWI (um text só), como o global2 guarda o fim dele hoje: sem os parágrafos vazios, sem
+    o <br><br><b></b> solto no fim da citação, macnica.com em https; 'submit your request here' (página de teste do GWI)
+    -> formulário de contato (Hazael, 25/09). Só do GWI: a conferência final compara este valor com o JCR depois."""
+    st, jc = C.ler(f"{W_IENSO}/jcr:content", ".infinity.json")   # o valor CRU: o .json do próprio nó devolve HTML filtrado (<br />, &#34;)
+    assert st == 200 and "macnicagwi" in W_IENSO, st
+    h = jc["root"]["container"]["container"]["container"]["text"]["text"].replace("\r\n", "\n")   # o global2 guarda \n
+    h = re.sub(r"<p>(?:&nbsp;|\xa0)</p>\s*", "", h)
+    h = re.sub(r"<br\s*/?>\s*<br\s*/?>\s*<b></b></p>", "</p>", h)
+    h = h.replace('href="http://www.macnica.com/"', 'href="https://www.macnica.com/"')
+    h = troca(h, f"{GWI}/test-folder/CES-2025.html", f"{M}/contact/form.html").strip()
+    atual = de_g2(f"{M}/{IENSO}/jcr:content/root/container/text_1_wrap/text_1", "text")
+    assert h.endswith(atual) or "TORONTO" in atual, "o fim (About iENSO + About Macnica) tem de sair IGUAL ao que o global2 já tem"
+    return h
 
 
 # ---------------------------------------------------------------- páginas (lista fechada)
@@ -458,6 +486,47 @@ PAGINAS = {
              [("", "jcr:title", "Contact Us for More Information"),
               ("", "linkURL", "https://www.macnica.com/americas/mai/en/contact/form/")]),
             ("criar", "root/container/container_498772245/experiencefragment", xf("products-contact-block")),
+        ],
+    },
+    TQ: {
+        "feito": "25/09 10:25, backup_conteudo_2026-09-25_102458",
+        "gwi": f"{GWI}/{TQ}",
+        "o_que": "as 4 imagens das abas vinham do DAM do GWI -> 3 arquivos IGUAIS (sha1) que já estão no DAM do global2 nas pastas "
+                 "da TQ (os das páginas de produto) + emb-tqma8mxml-0.jpg copiado para images/products/ (decisão do Hazael, "
+                 "25/09: 'Reuse 3 + copy 1'); alt e spImage (vazio) não mudam",
+        "achado": "The four tab images (Embedded Modules, Evaluation Kits, Single Board Computers, Box PCs) pointed to the GWI's "
+                  "DAM (/content/dam/macnicagwi/…/images/products/). They showed only because the GWI is still live.",
+        "mudanca": "Pointed each tab image at a file in the global2 DAM that is byte-for-byte the GWI's (same checksum): three "
+                   "were already there, in the TQ folders used by the product pages (TQMx110EB, MBa6ULxL, MBox-Advanced); the "
+                   "fourth (emb-tqma8mxml-0.jpg) was copied from the GWI into the global2 DAM (its existing twin there has a "
+                   "broken file name). Alt texts unchanged; every tab looks the same as before.",
+        "assets": [(f"{GWI_DAM}/images/products/emb-tqma8mxml-0.jpg", IMGS_TQ[0][2])],
+        "ops": [("props", f"{ABAS_TQ}/{aba}/textwithimage", {"fileReference": novo},
+                 {"fileReference": f"{GWI_DAM}/images/products/{antigo}", "altValueFromDAM": "false"})
+                for aba, antigo, novo in IMGS_TQ],
+    },
+    IENSO: {
+        "feito": "25/09 10:25, backup_conteudo_2026-09-25_102458",
+        "gwi": W_IENSO,
+        "o_que": "corpo do press release (TORONTO… até a citação do Dignard) que faltava + o h2 quebrado ('Request a Demo "
+                 "Invitation … About iENSO' num title) -> UM text como no GWI, negrito só em TORONTO…/Request a Demo Invitation/"
+                 "About iENSO/About Macnica (decisão do Hazael, 25/09); 'submit your request here' -> contact/form (4.1); "
+                 "h1 'iENSO and Macnica at CES 2025' -> pageTitle do GWI",
+        "achado": "The body of the press release was missing: the text started at “Request a Demo Invitation”, and that "
+                  "paragraph together with “About iENSO” was one large heading (h2). The main heading was the short navigation "
+                  "title “iENSO and Macnica at CES 2025” instead of the press release's title. On the GWI, “submit your request "
+                  "here” links to a GWI test page.",
+        "mudanca": "Rebuilt the text as on the GWI: one text with the whole press release (dateline, both lists, the three "
+                   "quotes, Request a Demo Invitation, About iENSO, About Macnica), bold only on “TORONTO, December 17, 2024”, "
+                   "“Request a Demo Invitation”, “About iENSO” and “About Macnica”; removed the broken heading. The main heading "
+                   "is now the GWI's “iENSO to Showcase Generative AI at the Edge in Embedded Vision Systems during CES® 2025”. "
+                   "“submit your request here” now links to the Contact Us form (the GWI's target is a test page).",
+        "ops": [
+            ("props", "root/container/title_wrap/title", {"jcr:title": de_gwi(f"{W_IENSO}/jcr:content", "pageTitle")},
+             {"jcr:title": "iENSO and Macnica at CES 2025", "type": "h1"}),
+            ("remover", "root/container/text_1_wrap/title_text_1", [("", "jcr:title", IENSO_H2)]),
+            ("props", "root/container/text_1_wrap/text_1", {"text": ienso_texto()},
+             {"text": ("contém", "iENSO delivers embedded vision solutions")}),
         ],
     },
 }

@@ -33,7 +33,11 @@ JANELAS = {
         ("depois", 11880, 12700, "Surgical Monitors section (new)"),
         ("depois", 14780, 15500, "Second Ordering Information table, now the surgical monitors' one")],
     "products/boards-modules/ibase/embedded-computing/mb991": [("ambos", 2750, 3400, "Bottom of the page: the newsletter block replaces the two buttons")],
+    "about-us/news-events/news-archive/ienso-to-showcase-generative-ai-at-the-edge-ces2025": [
+        ("depois", 1250, 1820, "End of the press release: Request a Demo Invitation (now linked to the Contact Us form), About iENSO, About Macnica")],
 }
+# página com abas: print de CADA aba (antes/depois, só o componente tabs) em <backup>/abas_antes|abas_depois/<arq>__abaN.png
+ABAS = {"products/boards-modules/tq-systems": ["Embedded Modules", "Evaluation Kits", "Single Board Computers", "Box PCs"]}
 CURTO = {   # coluna "What was wrong" da tabela do topo
     "products": "The four category cards were blank; the banner was missing",
     "products/boards-modules/tq-systems/tq-embedded-x86-modules": "Wrong heading and product list (an unfinished copy of the Layerscape page); contact buttons missing",
@@ -47,10 +51,15 @@ CURTO = {   # coluna "What was wrong" da tabela do topo
     "solutions/broadcast-proav-solutions/st-2110-at-scale-resources": "Second contact block (with “Request Evaluation Kit”) missing",
     "about-us/privacy-policy/privacy-policy-for-california-residents": "www.zipteam.com not linked (the domain is inside a heading)",
     "products/boards-modules": "Supplier grid (11 logos) missing; “Request a Quote” missing; contact button pointed to a hard-coded domain",
+    "products/boards-modules/tq-systems": "The four tab images were served from the GWI's DAM",
+    "about-us/news-events/news-archive/ienso-to-showcase-generative-ai-at-the-edge-ces2025": "Press release body missing; a paragraph shown as a large heading; short title as the main heading",
 }
 NOTAS = {   # conferência extra, feita à parte
     "solutions/robotics-amrs": "Compared with the page before any change: the only difference is the new download button (plus the "
                                "page's last-modified stamp); the Contact Us button is identical and in its original place.",
+    "products/boards-modules/tq-systems": "Each of the four tabs was opened and captured before and after the change: all four are "
+                                          "pixel-identical (same image, same size 480×321, same alt text). No reference to the "
+                                          "GWI is left on the page.",
 }
 ACHADOS = [  # encontrado e NÃO mexido
     ("Soft-deleted pages show up in product lists",
@@ -69,6 +78,10 @@ ACHADOS = [  # encontrado e NÃO mexido
     ("Last editor changed on pages edited by Bruno",
      "Every save stamps the page with the account of the session used (Valter Toffolo): MB991 and MBa8MP-RAS314 were last "
      "edited by Bruno Jaques before these changes."),
+    ("TQ Systems: two tabs are indented differently",
+     "In the tabs of the TQ Systems page, the text and table of “Single Board Computers” and “Box PCs” start 20px further left "
+     "than in “Embedded Modules” and “Evaluation Kits”: those two tab panels have no container style, the first two do. It was "
+     "already like this before the image fix (the screenshots of every tab are identical before and after)."),
 ]
 
 
@@ -138,8 +151,11 @@ def secoes(pos=None):
                 ent = [u for u in rr["links_entrou"] if not re.search(r"/icons/|/experience-fragments/", u)]
                 itens.append("Links added: " + (", ".join(f"<code>{html.escape(u.replace(M, '…'))}</code>" for u in ent) or "none")
                              + (("; removed: " + ", ".join(f"<code>{html.escape(u)}</code>" for u in rr["links_saiu"])) if rr["links_saiu"] else ""))
-            itens.append(f"Screenshot (1400px): identical above the change (first {pr['igual_no_topo_ate']} px); "
-                         f"the page is {abs(desl)} px {'longer' if desl >= 0 else 'shorter'}.")
+            if pr["igual_no_topo_ate"] >= max(pr["altura"]):
+                itens.append("Screenshot (1400px): identical (the whole page).")
+            else:
+                itens.append(f"Screenshot (1400px): identical above the change (first {pr['igual_no_topo_ate']} px); "
+                             f"the page is {abs(desl)} px {'longer' if desl >= 0 else 'shorter'}.")
             d_, h_ = bk.name.replace("backup_conteudo_", "").split("_")
             conf.append(f"<li><b>{'Pass ' + str(n) + ' · ' if len(pas) > 1 else ''}{d_[8:10]}/{d_[5:7]} {h_[:2]}:{h_[2:4]}</b><ul>"
                         + "".join(f"<li>{i}</li>" for i in itens) + "</ul></li>")
@@ -150,9 +166,14 @@ def secoes(pos=None):
         t = c0["prints"]["igual_no_topo_ate"]
         a_png, d_png = b0 / "prints_antes" / f"{arq}.png", bn / "prints_depois" / f"{arq}.png"
         if a_png.exists() and d_png.exists():
-            figs.append(figura("Where the change starts", recorte(a_png, t - 150, t + 650), recorte(d_png, t - 150, t + 950)))
+            if t < max(c0["prints"]["altura"]):              # print inteiro igual (ex.: só abas fechadas mudaram) = sem recorte
+                figs.append(figura("Where the change starts", recorte(a_png, t - 150, t + 650), recorte(d_png, t - 150, t + 950)))
             for tipo, y0, y1, rot in JANELAS.get(pag, []):
                 figs.append(figura(rot, recorte(a_png, y0, y1) if tipo == "ambos" else None, recorte(d_png, y0, y1)))
+        for n, rot in enumerate(ABAS.get(pag, []), 1):
+            aa, dd = bn / "abas_antes" / f"{arq}__aba{n}.png", bn / "abas_depois" / f"{arq}__aba{n}.png"
+            if aa.exists() and dd.exists():
+                figs.append(figura(f"Tab “{rot}”", recorte(aa, 0, 620), recorte(dd, 0, 620)))
         w = principal.get("gwi")
         mud = "".join(f"<p>{html.escape(cfg['mudanca'])}</p>" for _, cfg in ents if cfg.get("mudanca"))
         corpo.append(
