@@ -20,12 +20,15 @@ macnicaglobal2 são SOMENTE LEITURA.
 REGRAS DO HAZAEL (25/09/2026), na trava da Session de build_session():
 nunca gravar no GWI; nunca gravar em página da blacklist do
 site-migration-tracker (GET fresco em toda Session; sem ela, nada grava);
-XF/template/componente só com permissão explícita, caminho a caminho.
+XF/template/componente só com permissão explícita, caminho a caminho;
+backup automático do jcr:content de cada página antes da 1ª escrita nela
+(dados/backups_aem/auto/); sem backup, nada grava.
 """
 
 import csv
 import getpass
 import html
+import json
 import os
 import re
 import sys
@@ -476,10 +479,60 @@ def motivo_bloqueio(metodo, url, data=None, protegidas=None, autorizados=()):
     return None
 
 
+# REGRA 6 do Hazael (25/09/2026): backup da página SEMPRE antes de mudá-la. A trava faz sozinha: no 1º não-GET
+# da Session em cada página, salva o jcr:content inteiro (delete/move: a subárvore inteira) em BACKUP_AUTO; se o
+# backup falhar, a escrita não sai. Página que ainda não existe fica registrada como inexistente.
+BACKUP_AUTO = Path(__file__).resolve().parent.parent / "scripts-hazael" / "remigracao" / "dados" / "backups_aem" / "auto"
+
+
+def _pagina_de(caminho):
+    c = re.sub(r"(/[^/.]+)\.[A-Za-z0-9.]+$", r"\1", caminho.rstrip("/"))
+    return c.split("/jcr:content", 1)[0]
+
+
+def paginas_da_escrita(url, data=None, metodo="POST"):
+    """{página: subárvore?} — o que uma escrita muda e precisa de backup antes. Subárvore = delete/move do
+    próprio nó da página (ou pasta); delete de componente dentro do jcr:content só precisa do jcr:content."""
+    caminho = unquote(urlsplit(url).path).rstrip("/")
+    pares = _pares(data)
+    apaga = bool({v.lower() for v in _valores(pares, ":operation")} & {"delete", "move"}) or metodo.upper() == "DELETE"
+    out = {}
+    for c in _tocados(caminho, {caminho}, pares):
+        if c.startswith("/content/"):
+            p = _pagina_de(c)
+            out[p] = out.get(p, False) or (apaga and "/jcr:content" not in c)
+    return out
+
+
+def _fazer_backup(session, get, url, pagina, subarvore):
+    base = "{0.scheme}://{0.netloc}".format(urlsplit(url))
+    alvo = f"{base}{pagina}.infinity.json" if subarvore else f"{base}{pagina}/jcr:content.infinity.json"
+    r = get("GET", alvo, timeout=120)
+    if r.status_code == 404 and not subarvore:
+        r2 = get("GET", f"{base}{pagina}.infinity.json", timeout=120)      # nó fora de página (pasta, asset)
+        r = r2 if r2.status_code != 404 else r
+    if r.status_code == 404:
+        conteudo = {"inexistente": True}
+    elif r.status_code == 200:
+        conteudo = r.json()
+    else:
+        raise EscritaProibida(f"backup de {pagina} impossível (HTTP {r.status_code} em {alvo}): sem backup, "
+                              f"não grava (REGRA 6 do Hazael)")
+    if session.backup_dir is None:
+        session.backup_dir = BACKUP_AUTO / f"{time.strftime('%Y-%m-%d_%H%M%S')}_{os.getpid()}"
+    session.backup_dir.mkdir(parents=True, exist_ok=True)
+    arq = session.backup_dir / (pagina.strip("/").replace("/", "__") + ".json")
+    arq.write_text(json.dumps({"quando": time.strftime("%Y-%m-%dT%H:%M:%S"), "pagina": pagina, "url": alvo,
+                               "http": r.status_code, "jcr_content": conteudo}, ensure_ascii=False, indent=1),
+                   encoding="utf-8")
+    return arq
+
+
 def travar_session(session, blacklist=None):
     """Põe a trava em `session.request` (post/put/delete/patch passam por ele)."""
     original = session.request
     session.blacklist = blacklist or Blacklist()
+    session.backups, session.backup_dir = {}, None
 
     def request(method, url, *args, **kwargs):
         motivo = None
@@ -494,6 +547,16 @@ def travar_session(session, blacklist=None):
             if not motivo and bl is None:
                 motivo = (f"{method} sem blacklist fresca do tracker ({session.blacklist.erro}): "
                           f"nenhuma escrita sem ela (REGRA do Hazael, 25/09/2026)")
+            if not motivo:
+                try:
+                    for pagina, subarvore in paginas_da_escrita(url, data, method).items():
+                        if pagina not in session.backups or (subarvore and not session.backups[pagina][1]):
+                            session.backups[pagina] = (_fazer_backup(session, original, url, pagina, subarvore),
+                                                       subarvore)
+                except EscritaProibida as e:
+                    motivo = str(e)
+                except Exception as e:                         # noqa: BLE001
+                    motivo = f"backup falhou ({e}): sem backup, não grava (REGRA 6 do Hazael)"
         if motivo:
             print(f"\n[ABORTADO] {motivo}", file=sys.stderr)
             raise EscritaProibida(motivo)
