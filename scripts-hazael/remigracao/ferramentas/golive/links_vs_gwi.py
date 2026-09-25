@@ -680,6 +680,24 @@ def _alink(path, rotulo=None):
     return f'<a href="{html.escape(u, quote=True)}" target="_blank" rel="noopener">{html.escape(rotulo or path)}</a>'
 
 
+def _revisar(g2, gw=None):
+    """Os 3 links para revisar uma página à mão (Hazael, 25/09): o global2 como o visitante vê, o par no GWI e o editor."""
+    ed = BASE + "/editor.html" + quote(unquote(g2), safe="/:") + ".html"
+    return (_alink(f"{g2}.html?wcmmode=disabled", "global2 page")
+            + (_alink(f"{gw}.html?wcmmode=disabled", "GWI page") if gw else '<span class="na">no GWI page</span> ')
+            + f'<a href="{html.escape(ed, quote=True)}" target="_blank" rel="noopener">global2 editor</a>')
+
+
+_INDICE = []
+
+
+def indice_cache():
+    """Indice da última coleta (o cache), para achar o par no GWI de uma página do global2 sem ir à rede."""
+    if not _INDICE:
+        _INDICE.append(Indice(pickle.loads(CACHE.read_bytes())))
+    return _INDICE[0]
+
+
 def _secao(rel):
     p = rel.split("/")
     base = 3 if len(p) > 3 else len(p)                     # americas/mai/en, eu/atd-europe/en

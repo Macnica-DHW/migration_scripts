@@ -179,9 +179,7 @@ def secoes(pos=None):
         corpo.append(
             f'<details class="pg" open id="{html.escape(arq)}"><summary>{html.escape(titulo)}'
             f'<span class="n">{len(pas)} pass{"es" if len(pas) > 1 else ""}</span></summary>'
-            f'<div class="abre">{LV._alink(f"{M}/{pag}.html?wcmmode=disabled", "global2 page")}'
-            + (LV._alink(f"{w}.html?wcmmode=disabled", "GWI page") if w else "")
-            + f'<span class="p">/{html.escape(pag)}</span></div>'
+            f'<div class="abre">{LV._revisar(f"{M}/{pag}", w)}<span class="p">/{html.escape(pag)}</span></div>'
             f'<h4>What was wrong</h4><p>{html.escape(principal.get("achado", ""))}</p>'
             f'<h4>What was changed</h4>{mud}'
             + (f'<h4>Files copied from the GWI into the global2 DAM</h4><ul>' + "".join(

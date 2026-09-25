@@ -65,6 +65,13 @@ def titulo_de(b, pag):
     return re.sub(r"\s+", " ", jc.get("pageTitle") or jc.get("jcr:title") or pag.rsplit("/", 1)[-1] or "Home").strip()
 
 
+def celula(b, idx, pag):
+    """Célula da página: título, caminho e os 3 links para revisar à mão (global2, o par no GWI, editor)."""
+    g2 = f"{M}/{pag}" if pag else M
+    return (f'<span class="t">{html.escape(titulo_de(b, pag))}</span><div class="p">/{html.escape(pag)}</div>'
+            f'<div class="abre">{LV._revisar(g2, idx.par(g2))}</div>')
+
+
 def main():
     col = Path(sys.argv[1])
     rel, b, idx, por, fora = PL.classificar_coleta(col)
@@ -83,8 +90,7 @@ def main():
         prob = "; ".join(r["no_lugar"] + [f"changed outside the fix: {x}" for x in r["fora_do_declarado"]]
                          + [f"link not in page: {x}" for x in r["links_fora_do_html"]] + r["alvos_mortos"])
         linhas_v.append(
-            f'<tr><td><a href="{html.escape(LV._u(f"{M}/{pag}.html?wcmmode=disabled") or "#", quote=True)}" target="_blank" '
-            f'rel="noopener">{html.escape(titulo_de(b, pag))}</a><div class="p">/{html.escape(pag)}</div>'
+            f'<tr><td>{celula(b, idx, pag)}'
             + (f'<div class="nota">{html.escape(prob)}</div>' if prob else "") + f'</td><td>{", ".join(grupos)}</td>'
             f'<td class="c">{nao if r["no_lugar"] else sim}</td><td class="c">{nao if r["fora_do_declarado"] else sim}</td>'
             f'<td class="c">{nao if r["editada_depois"] else sim}</td>'
@@ -98,20 +104,18 @@ def main():
     dec = []
     for pag, its in sorted(por.get("decide", {}).items()):
         for it in its:
-            dec.append(f'<tr><td><a href="{html.escape(LV._u(f"{M}/{pag}.html?wcmmode=disabled") or "#", quote=True)}" '
-                       f'target="_blank" rel="noopener">{html.escape(titulo_de(b, pag))}</a><div class="p">/{html.escape(pag)}</div></td>'
+            dec.append(f'<tr><td>{celula(b, idx, pag)}</td>'
                        f'<td>“{html.escape(it["txt"][:70])}”<div class="p">global2 now: {html.escape(curto(it["agora"]) or "(not a link)")}'
                        f'<br>GWI: {html.escape(curto(it["gwi"] or ""))}</div></td>'
                        f'<td>{html.escape(it.get("nota", ""))}</td><td>{html.escape(SUGESTAO.get(pag, ""))}</td></tr>')
     outros = [c for c in PL.CATS if c not in ("decide", "fora") and por.get(c)]
-    novos = "".join(f'<tr><td><a href="{html.escape(LV._u(f"{M}/{p}.html?wcmmode=disabled") or "#", quote=True)}" target="_blank" '
-                    f'rel="noopener">{html.escape(titulo_de(b, p))}</a><div class="p">/{html.escape(p)}</div></td>'
+    novos = "".join(f'<tr><td>{celula(b, idx, p)}</td>'
                     f'<td><span class="tag">{html.escape(t)}</span></td><td>{html.escape(d)}</td><td>{html.escape(como)}</td></tr>'
                     for p, t, d, como in [(p, t, d, "Not changed.") for p, t, d in NOVOS] + RESOLVIDOS)
-    listas = "".join(f'<tr><td><a href="{html.escape(LV._u(f"{M}/{p}.html?wcmmode=disabled") or "#", quote=True)}" target="_blank" '
-                     f'rel="noopener">{html.escape(titulo_de(b, p))}</a><div class="p">/{html.escape(p)}</div></td>'
+    listas = "".join(f'<tr><td>{celula(b, idx, p)}</td>'
                      f'<td>{html.escape(re.sub(r"^[^:]*: ", "", d))}</td></tr>' for p, d in varr["achados"].get("lista_deletadas", []))
-    fora_html = "".join(f"<li>/{html.escape(p)} — “{html.escape(it['txt'][:70])}”: {html.escape(it['nota'])}</li>"
+    fora_html = "".join(f"<li>/{html.escape(p)} — “{html.escape(it['txt'][:70])}”: {html.escape(it['nota'])}"
+                        f'<div class="abre">{LV._revisar(f"{M}/{p}", idx.par(f"{M}/{p}"))}</div></li>'
                         for p, it in sorted(fora, key=lambda x: x[0]))
     achados = [a for a in RT.ACHADOS if not a[0].startswith("Soft-deleted")]
     n_pend = len({p for p in por.get("decide", {})} | {p for p, _, _ in NOVOS}
@@ -119,7 +123,7 @@ def main():
 
     css = LV.CSS + RC.CSS_EXTRA + RT.CSS + """
 .y{color:var(--ok);font-weight:700}.x{color:var(--bad);font-weight:700}.na{color:var(--mut)}
-td.c{text-align:center;white-space:nowrap}.tabv td{vertical-align:top}.tabv td:first-child{min-width:220px}
+td.c{text-align:center;white-space:nowrap}.t{font-weight:600}td .abre,.fora .abre{margin:3px 0 0;line-height:1.7}.abre a{white-space:nowrap}.tabv td{vertical-align:top}.tabv td:first-child{min-width:220px}
 .tabela{overflow-x:auto;margin:0 0 12px}.tabela table{min-width:640px}
 nav.toc{margin:4px 0 18px;display:flex;flex-wrap:wrap;gap:4px 16px}nav.toc a{white-space:nowrap}
 h2{scroll-margin-top:12px}#links h2,#links h3{scroll-margin-top:160px}
@@ -132,7 +136,9 @@ h2{scroll-margin-top:12px}#links h2,#links h3{scroll-margin-top:160px}
 verification of all of it, and what is still pending. Only the AEM author was changed: nothing was published and nothing was
 written to the GWI (the old site), which was only read. Every change followed the same steps: back up the whole page (stored
 content, rendered HTML, and for layout changes a 1400px screenshot), make the change, then compare the whole page with the backup.
-Links open in the AEM author; you must be logged in.</p>
+Every page listed has three links for reviewing it by hand: <b>global2 page</b> (as visitors see it), <b>GWI page</b> (the
+same page on the old site — open the two side by side) and <b>global2 editor</b>. Links open in the AEM author; you must be
+logged in.</p>
 <div class="resumo">
 <div><b>{len(ver["paginas"])}</b><span>pages changed</span></div>
 <div><b>{sum(lk["n"].values())}</b><span>links corrected on {len(lk["por"])} pages (24/09)</span></div>
@@ -144,7 +150,8 @@ Links open in the AEM author; you must be logged in.</p>
 <a href="#links">3. Links corrected</a><a href="#pendente">4. Still pending</a><a href="#achados">5. Found, not changed</a></nav>
 
 <h2 id="verificacao">1. Final verification<span class="n">{quando_ver}, {n_ok} of {len(ver["paginas"])} pages OK</span></h2>
-<p class="intro">Every page changed on 24–25/09 was checked again at the end, against the backups:</p>
+<p class="intro">Every page changed on 24–25/09 was checked again at the end, against the backups. This table is also the
+review list: all {len(ver["paginas"])} pages, each with its global2, GWI and editor links.</p>
 <ul class="passos">
 <li><b>In place</b> — each recorded change is still there (link, button, text, table, image, component added/removed/moved).</li>
 <li><b>Nothing else changed</b> — the page's stored content now differs from the backup taken before its first change of the day

@@ -224,7 +224,7 @@ def montar(args=()):
             k = sum(it["vezes"] for it in its)
             corpo.append(f'<details class="pg" open><summary>{html.escape(titulo)}<span class="n">{k} link'
                          f'{"s" if k != 1 else ""}</span>{selo}</summary>'
-                         f'<div class="abre">{LV._alink(f"{M}/{p}.html?wcmmode=disabled", "open page")}'
+                         f'<div class="abre">{LV._revisar(f"{M}/{p}", LV.indice_cache().par(f"{M}/{p}"))}'
                          f'<span class="p">/{html.escape(p)}</span></div>' + "".join(_item(it) for it in its) + "</details>")
         corpo.append("</section>")
 
