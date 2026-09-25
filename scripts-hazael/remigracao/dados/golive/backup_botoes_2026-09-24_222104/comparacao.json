@@ -1,0 +1,427 @@
+[
+ {
+  "ev": "2015-09-12-ibc-2015",
+  "ok": true,
+  "jcr_fora": [],
+  "render_igual": true,
+  "prints": {
+   "acima_igual": true,
+   "cima": null,
+   "abaixo_px": 77,
+   "abaixo_caixas": [
+    [
+     1015,
+     1021,
+     184,
+     1189,
+     70
+    ],
+    [
+     1682,
+     1682,
+     153,
+     217,
+     7
+    ]
+   ],
+   "cauda_lisa": true,
+   "cauda_px": 97,
+   "altura": [
+    2129,
+    2129
+   ]
+  },
+  "elemento": [
+   [
+    315,
+    315,
+    0
+   ],
+   [
+    315,
+    412,
+    97
+   ]
+  ],
+  "ok_final": true,
+  "nota": "conferido a olho (24/09, ampliado): as diferenças abaixo do botão são serrilhado de deslocamento fracionário (~11.x px) nas setas e bordas dos botões Contact/RaQ e nos ícones do rodapé (Global Portal, YouTube); conteúdo igual"
+ },
+ {
+  "ev": "2016-04-19-nab-show-2016",
+  "ok": true,
+  "jcr_fora": [],
+  "render_igual": true,
+  "prints": {
+   "acima_igual": true,
+   "cima": null,
+   "abaixo_px": 71,
+   "abaixo_caixas": [
+    [
+     905,
+     915,
+     542,
+     1176,
+     66
+    ],
+    [
+     1551,
+     1551,
+     210,
+     217,
+     5
+    ]
+   ],
+   "cauda_lisa": true,
+   "cauda_px": 11,
+   "altura": [
+    2129,
+    2129
+   ]
+  },
+  "elemento": [
+   [
+    360,
+    446,
+    86
+   ],
+   [
+    360,
+    457,
+    97
+   ]
+  ],
+  "ok_final": true,
+  "nota": "conferido a olho (24/09, ampliado): as diferenças abaixo do botão são serrilhado de deslocamento fracionário (~11.x px) nas setas e bordas dos botões Contact/RaQ e nos ícones do rodapé (Global Portal, YouTube); conteúdo igual"
+ },
+ {
+  "ev": "2016-08-18-intel-isdf-2016",
+  "ok": false,
+  "jcr_fora": [],
+  "render_igual": true,
+  "prints": {
+   "acima_igual": true,
+   "cima": null,
+   "abaixo_px": 226,
+   "abaixo_caixas": [
+    [
+     674,
+     684,
+     542,
+     1176,
+     66
+    ],
+    [
+     1247,
+     1259,
+     1229,
+     1240,
+     52
+    ],
+    [
+     1322,
+     1340,
+     153,
+     186,
+     108
+    ]
+   ],
+   "cauda_lisa": true,
+   "cauda_px": 11,
+   "altura": [
+    2129,
+    2129
+   ]
+  },
+  "elemento": [
+   [
+    315,
+    401,
+    86
+   ],
+   [
+    315,
+    412,
+    97
+   ]
+  ],
+  "ok_final": true,
+  "nota": "conferido a olho (24/09, ampliado): as diferenças abaixo do botão são serrilhado de deslocamento fracionário (~11.x px) nas setas e bordas dos botões Contact/RaQ e nos ícones do rodapé (Global Portal, YouTube); conteúdo igual"
+ },
+ {
+  "ev": "2016-09-10-ibc-2016",
+  "ok": false,
+  "jcr_fora": [],
+  "render_igual": true,
+  "prints": {
+   "acima_igual": true,
+   "cima": null,
+   "abaixo_px": 226,
+   "abaixo_caixas": [
+    [
+     689,
+     699,
+     542,
+     1176,
+     66
+    ],
+    [
+     1262,
+     1274,
+     1229,
+     1240,
+     52
+    ],
+    [
+     1337,
+     1355,
+     153,
+     186,
+     108
+    ]
+   ],
+   "cauda_lisa": true,
+   "cauda_px": 11,
+   "altura": [
+    2129,
+    2129
+   ]
+  },
+  "elemento": [
+   [
+    390,
+    476,
+    86
+   ],
+   [
+    390,
+    487,
+    97
+   ]
+  ],
+  "ok_final": true,
+  "nota": "conferido a olho (24/09, ampliado): as diferenças abaixo do botão são serrilhado de deslocamento fracionário (~11.x px) nas setas e bordas dos botões Contact/RaQ e nos ícones do rodapé (Global Portal, YouTube); conteúdo igual"
+ },
+ {
+  "ev": "2017-09-16-ibc-2017",
+  "ok": false,
+  "jcr_fora": [],
+  "render_igual": true,
+  "prints": {
+   "acima_igual": true,
+   "cima": null,
+   "abaixo_px": 335,
+   "abaixo_caixas": [
+    [
+     745,
+     765,
+     176,
+     1197,
+     170
+    ],
+    [
+     1322,
+     1334,
+     1229,
+     1240,
+     52
+    ],
+    [
+     1395,
+     1415,
+     153,
+     217,
+     113
+    ]
+   ],
+   "cauda_lisa": true,
+   "cauda_px": 11,
+   "altura": [
+    2129,
+    2129
+   ]
+  },
+  "elemento": [
+   [
+    390,
+    476,
+    86
+   ],
+   [
+    390,
+    487,
+    97
+   ]
+  ],
+  "ok_final": true,
+  "nota": "conferido a olho (24/09, ampliado): as diferenças abaixo do botão são serrilhado de deslocamento fracionário (~11.x px) nas setas e bordas dos botões Contact/RaQ e nos ícones do rodapé (Global Portal, YouTube); conteúdo igual"
+ },
+ {
+  "ev": "2019-02-06-ise-2019",
+  "ok": false,
+  "jcr_fora": [],
+  "render_igual": true,
+  "prints": {
+   "acima_igual": true,
+   "cima": null,
+   "abaixo_px": 226,
+   "abaixo_caixas": [
+    [
+     674,
+     684,
+     542,
+     1176,
+     66
+    ],
+    [
+     1247,
+     1259,
+     1229,
+     1240,
+     52
+    ],
+    [
+     1322,
+     1340,
+     153,
+     186,
+     108
+    ]
+   ],
+   "cauda_lisa": true,
+   "cauda_px": 11,
+   "altura": [
+    2129,
+    2129
+   ]
+  },
+  "elemento": [
+   [
+    315,
+    401,
+    86
+   ],
+   [
+    315,
+    412,
+    97
+   ]
+  ],
+  "ok_final": true,
+  "nota": "conferido a olho (24/09, ampliado): as diferenças abaixo do botão são serrilhado de deslocamento fracionário (~11.x px) nas setas e bordas dos botões Contact/RaQ e nos ícones do rodapé (Global Portal, YouTube); conteúdo igual"
+ },
+ {
+  "ev": "2019-04-09-nab-show-2019",
+  "ok": false,
+  "jcr_fora": [],
+  "render_igual": true,
+  "prints": {
+   "acima_igual": true,
+   "cima": null,
+   "abaixo_px": 226,
+   "abaixo_caixas": [
+    [
+     794,
+     804,
+     542,
+     1176,
+     66
+    ],
+    [
+     1367,
+     1379,
+     1229,
+     1240,
+     52
+    ],
+    [
+     1442,
+     1460,
+     153,
+     186,
+     108
+    ]
+   ],
+   "cauda_lisa": true,
+   "cauda_px": 11,
+   "altura": [
+    2129,
+    2129
+   ]
+  },
+  "elemento": [
+   [
+    315,
+    401,
+    86
+   ],
+   [
+    315,
+    412,
+    97
+   ]
+  ],
+  "ok_final": true,
+  "nota": "conferido a olho (24/09, ampliado): as diferenças abaixo do botão são serrilhado de deslocamento fracionário (~11.x px) nas setas e bordas dos botões Contact/RaQ e nos ícones do rodapé (Global Portal, YouTube); conteúdo igual"
+ },
+ {
+  "ev": "2019-06-12-infocomm-2019",
+  "ok": false,
+  "jcr_fora": [],
+  "render_igual": true,
+  "prints": {
+   "acima_igual": true,
+   "cima": null,
+   "abaixo_px": 324,
+   "abaixo_caixas": [
+    [
+     734,
+     744,
+     542,
+     1176,
+     66
+    ],
+    [
+     751,
+     765,
+     179,
+     1194,
+     98
+    ],
+    [
+     1307,
+     1319,
+     1229,
+     1240,
+     52
+    ],
+    [
+     1382,
+     1400,
+     153,
+     186,
+     108
+    ]
+   ],
+   "cauda_lisa": true,
+   "cauda_px": 11,
+   "altura": [
+    2129,
+    2129
+   ]
+  },
+  "elemento": [
+   [
+    315,
+    401,
+    86
+   ],
+   [
+    315,
+    412,
+    97
+   ]
+  ],
+  "ok_final": true,
+  "nota": "conferido a olho (24/09, ampliado): as diferenças abaixo do botão são serrilhado de deslocamento fracionário (~11.x px) nas setas e bordas dos botões Contact/RaQ e nos ícones do rodapé (Global Portal, YouTube); conteúdo igual"
+ }
+]

@@ -29,6 +29,8 @@ TIPOS = {
     "wrong": ("Pointed to the wrong place", "The link went somewhere other than the matching link on the GWI page."),
     "added": ("Link added", "The text, title or image was on the page but not clickable; the GWI links it. It now links to the "
               "same place as on the GWI (nothing else about the element changed)."),
+    "button": ("Event website button", "A broken in-page jump menu (it pointed to “#https://…”) was replaced by a button in the "
+               "same place, with the GWI’s text and link; it opens in a new tab."),
     "ext": ("Did not open", "A link inside text saved without “.html”: on the author, clicking it gave an error (403). "
             "Now the same destination with “.html”."),
 }
@@ -122,7 +124,7 @@ def _item(it):
 
 
 CSS_EXTRA = """
-.tag.wrong{background:var(--badbg);color:var(--bad)}.tag.ext{background:var(--warnbg);color:var(--warn)}.tag.added{background:var(--okbg);color:var(--ok)}
+.tag.wrong{background:var(--badbg);color:var(--bad)}.tag.ext{background:var(--warnbg);color:var(--warn)}.tag.added{background:var(--okbg);color:var(--ok)}.tag.button{background:var(--tag);color:var(--fg)}
 .agora{color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
 .ok{display:inline-block;font-size:12px;background:var(--okbg);color:var(--ok);border-radius:10px;padding:1px 8px;margin-left:8px;font-weight:500}
 .nota{background:none;color:var(--mut);padding:0;margin-left:8px;font-weight:400}
@@ -160,13 +162,36 @@ def main():
                     ant.update(depois=it["depois"], motivo=it["motivo"] or ant["motivo"])
                 else:
                     por[p].append(it)
+    # botões de evento (botao_evento.py): um nó trocado por outro — conferência própria (JCR, render sem o bloco, prints)
+    EVP = "about-us/news-events/events-archive"
+    manif = [json.loads(l) for l in (DADOS / "manifesto_links.jsonl").read_text(encoding="utf-8").splitlines()]
+    for pasta in sorted(p.parent for p in DADOS.glob("backup_botoes_*/comparacao.json")):
+        q = pasta.name[len("backup_botoes_"):]
+        horas.append(q)
+        bk = json.loads((pasta / "jcr_content.json").read_text(encoding="utf-8"))
+        cp = {c["ev"]: c for c in json.loads((pasta / "comparacao.json").read_text(encoding="utf-8"))}
+        for x in manif:
+            if x.get("tipo") != "botao" or x.get("quando") != q or x.get("status") != "gravado":
+                continue
+            ev = x["pagina"].rsplit("/", 1)[-1]
+            rel = f"{EVP}/{ev}"
+            item0 = next((v for v in ((x.get("saiu") or {}).get("anchor") or {}).values() if isinstance(v, dict)), None)
+            por[rel].append({"tipo": "button", "txt": x["txt"], "antes": ("#" + item0["linkId"]) if item0 else "",
+                             "depois": x["para"], "vezes": 1,
+                             "motivo": (f"replaced the jump menu “{item0['text']}”" if item0 else
+                                        "no jump menu here; added above the event details")})
+            backup.setdefault(rel, bk[ev])
+            comp[rel] = {"jcr": [], "render": None, "botao": cp[ev].get("ok_final", cp[ev].get("ok"))}
+    horas = sorted(horas)
     quando = horas[0]
 
     todos = [it for v in por.values() for it in v]
     n = collections.Counter()
     for it in todos:
         n[it["tipo"]] += it["vezes"]
-    iguais = sum(1 for p in por if not comp[p]["jcr"] and not comp[p]["render"])
+    com_botao = [p for p in por if "botao" in comp[p]]
+    iguais = sum(1 for p in por if p not in com_botao and not comp[p]["jcr"] and not comp[p]["render"])
+    botoes_ok = sum(1 for p in com_botao if comp[p]["botao"])
     editor = sum(1 for p in por if backup[p].get("cq:lastModifiedBy") != "valter.toffolo@macnicadhw.com.br")
     data = f"{quando[:10]} {quando[11:13]}:{quando[13:15]}"
 
@@ -185,8 +210,12 @@ def main():
             jc = backup[p]
             titulo = re.sub(r"\s+", " ", jc.get("pageTitle") or jc.get("jcr:title") or p.rsplit("/", 1)[-1]).strip()
             c = comp[p]
-            ok = (not c["jcr"] and not c["render"])
-            selo = '<span class="ok">✓ renders identically</span>' if ok else '<span class="tag wrong">differs — see JSON</span>'
+            if "botao" in c:
+                selo = ('<span class="ok">✓ only the button changed</span>' if c["botao"] else
+                        '<span class="tag wrong">differs — see JSON</span>')
+            else:
+                ok = (not c["jcr"] and not c["render"])
+                selo = '<span class="ok">✓ renders identically</span>' if ok else '<span class="tag wrong">differs — see JSON</span>'
             its = sorted(por[p], key=lambda it: (it["tipo"] != "wrong", it["txt"].lower()))
             k = sum(it["vezes"] for it in its)
             corpo.append(f'<details class="pg" open><summary>{html.escape(titulo)}<span class="n">{k} link'
@@ -205,19 +234,22 @@ def main():
 <title>global2 link fixes</title><style>{LV.CSS}{CSS_EXTRA}</style></head><body><main>
 <h1>global2 link fixes</h1>
 <p class="sub">Links corrected on the macnicaglobal2 pages (Americas / MAI / EN) on {data} (local time){(f" and in {len(horas) - 1} later round{'s' if len(horas) > 2 else ''} (" + ", ".join(h[11:13] + ":" + h[13:15] for h in horas[1:]) + ")") if len(horas) > 1 else ""}. Each change only set where an
-existing link, text, title, image or button goes: no text, image, block or layout was added, moved or removed. Paths are relative to
+existing link, text, title, image or button goes — except on {len(com_botao)} event pages, where a broken jump menu was replaced by
+a button in the same place. No other text, image, block or layout was added, moved or removed. Paths are relative to
 <code>{M}</code>; “After” links open the destination in the AEM author (you must be logged in).</p>
 <div class="resumo">
 <div><b>{sum(n.values())}</b><span>links corrected</span></div>
 <div><b>{len(por)}</b><span>pages changed</span></div>
-<div><b>{iguais}/{len(por)}</b><span>pages render identically to before, apart from the links</span></div>
+<div><b>{iguais}/{len(por) - len(com_botao)}</b><span>pages render identically to before, apart from the links</span></div>
+<div><b>{botoes_ok}/{len(com_botao)}</b><span>event pages where only the new button changed</span></div>
 <div><b>0</b><span>links that failed to save</span></div></div>
 <table><thead><tr><th>Change</th><th>Meaning</th><th class="num">Links</th><th class="num">Pages</th></tr></thead>
 <tbody>{linhas}</tbody></table>
 <h2 id="como">How it was done and checked<span class="n"></span></h2>
 <ol class="passos">
 <li><b>Backup first.</b> Before the first change, the full stored content and the rendered HTML of all {len(por)} pages were saved
-(<span class="p">scripts-hazael/remigracao/dados/golive/{", ".join("backup_links_" + h for h in horas)}</span>); any page can be restored from it.</li>
+(<span class="p">scripts-hazael/remigracao/dados/golive/backup_links_* and backup_botoes_*</span>, one folder per round); any
+page can be restored from it.</li>
 <li><b>One property per change.</b> Each change rewrote a single existing property (the text that holds the link, or the button’s
 link). The property was re-read right before saving and again after, and nothing else in that component changed.</li>
 <li><b>Whole-page comparison.</b> After all changes, every page was compared with its backup: the stored content differs only in the
@@ -225,18 +257,21 @@ changed link properties, and the rendered page is identical once the links thems
 each page (the “last modified” date; on {editor} pages the “last modified by” now shows the account that made the change).</li>
 <li><b>Files.</b> The two PDFs that were linked from the GWI (the Macnica Americas linecard and the IEI
 networking brochure) were copied into the global2 DAM first; the copies are identical to the GWI files (same checksum).</li>
-<li><b>The new links open.</b> Every internal destination was requested on the author and opens (HTTP 200). The 3 external
-destinations are the same URLs the GWI uses (www.macnica.com, www.macnica.com/mep100, www.m-pression.com) and were not opened.</li>
+<li><b>Event buttons.</b> On each event page the stored content differs from the backup only by the jump menu that left and the
+button that took its place (same position); the rendered page is identical once those two blocks are set aside; screenshots at
+1400px are identical above the button and, below it, identical after the page moves down 11px, apart from sub-pixel smoothing
+on a few icon edges (checked enlarged). Each button renders with the GWI’s text and link and opens in a new tab.</li>
+<li><b>The new links open.</b> Every internal destination was requested on the author and opens (HTTP 200). External
+destinations are the same URLs the GWI uses and were not opened.</li>
 </ol>
 <div class="barra"><input id="q" type="search" placeholder="Filter by link text or path…" autocomplete="off"> {caixas}
 <nav><b>Sections</b> {' '.join(nav)}</nav></div>
 <h2 id="lista">Changes by page<span class="n">{sum(n.values())} links on {len(por)} pages</span></h2>
 {''.join(corpo)}
-<footer><p><b>Not included in this change</b> (they need new content, a new clickable element or a decision): links that must be
-added to an element that is not clickable today (6), event website links on 9 event pages, 4 links whose destination does not exist
-in global2 yet (a blog post, a Sony IMX711 page, the linecard PDF and an IEI brochure), 4 links that are also wrong on the GWI, and
-content missing from some pages (for example the category cards on /products). Only the author was changed; nothing was written to
-the GWI.</p></footer>
+<footer><p><b>Still open</b>: 4 links that are wrong on the GWI too or need a decision (VidTrans16 “www.macnica-na.com”, the 2018
+“valueadd” link, iENSO’s “submit your request here”, Zipteam), the Sony IMX711 link in the June 2026 newsletter (the page is not
+in global2’s Americas site yet), and content missing from some pages (for example the category cards on /products). Only the author
+was changed; nothing was written to the GWI.</p></footer>
 </main><script>{LV.JS}</script></body></html>
 """
     saida = C.DADOS.parent / "mapas" / f"global2_link_fixes_{quando[:10]}.html"

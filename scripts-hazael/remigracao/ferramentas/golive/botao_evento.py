@@ -36,6 +36,7 @@ M = C.M
 EV = "about-us/news-events/events-archive"
 DADOS = C.DADOS
 POS = C.DADOS.parent / "mapas" / "global2_links_vs_gwi_2026-09-24_pos.json"
+LIMITE_SERRILHADO = 200                              # px abaixo do botão aceitos como serrilhado (piloto: 71, conferidos um a um)
 ESTILO = ["1723033446255", "1717669229626"]          # Width: Fit to Text; Display Position: Center (policy do button)
 EVENTOS = {  # rel do evento -> bloco onde fica (o do anchorlink; IBC 2015 não tem)
     "2015-04-14-nab-show-2015": "container_evento", "2015-09-12-ibc-2015": "container_evento",
@@ -127,6 +128,10 @@ def prints(pags, pasta, url_botao=None):
 
 
 def compara_prints(antes, depois):
+    """Acima do elemento: igual pixel a pixel. Abaixo: alinhado pelo elemento seguinte, na altura comum; o que sobra no
+    fim da página mais comprida tem de ser uma faixa lisa (o fundo que absorve a diferença — piloto NAB 2015). Pixels
+    diferentes abaixo são CONTADOS: deslocamento fracionário deixa serrilhado em borda de letra (piloto: 71 px)."""
+    import numpy as np
     from PIL import Image, ImageChops
     (pa, ma), (pd, md) = antes, depois
     ia, idp = Image.open(pa).convert("RGB"), Image.open(pd).convert("RGB")
@@ -135,11 +140,23 @@ def compara_prints(antes, depois):
     topo_d, prox_d = md[0], md[1]
     topo = min(topo_a, topo_d)
     cima = ImageChops.difference(ia.crop((0, 0, W, topo)), idp.crop((0, 0, W, topo))).getbbox()
-    resto_a, resto_d = ia.height - prox_a, idp.height - prox_d
-    baixo = "alturas diferentes" if resto_a != resto_d else \
-        ImageChops.difference(ia.crop((0, prox_a, W, ia.height)), idp.crop((0, prox_d, W, idp.height))).getbbox()
-    return {"acima_igual": cima is None, "abaixo_igual": baixo is None, "cima": cima, "baixo": baixo,
-            "altura": (ia.height, idp.height), "elemento": (ma, md)}
+    n = min(ia.height - prox_a, idp.height - prox_d)
+    dif = np.array(ImageChops.difference(ia.crop((0, prox_a, W, prox_a + n)), idp.crop((0, prox_d, W, prox_d + n)))).sum(axis=2)
+    ys, xs = np.nonzero(dif)
+    maior = ia if ia.height - prox_a > n else idp
+    base = prox_a if maior is ia else prox_d
+    cauda = maior.crop((0, base + n, W, maior.height))
+    cauda_lisa = cauda.height == 0 or len(cauda.getcolors(4) or [1, 2, 3, 4, 5]) == 1
+    caixas = []
+    for y in sorted(set(ys.tolist())):
+        if caixas and y - caixas[-1][1] <= 5:
+            caixas[-1][1] = y
+        else:
+            caixas.append([y, y])
+    caixas = [(prox_a + y0, prox_a + y1, int(xs[(ys >= y0) & (ys <= y1)].min()), int(xs[(ys >= y0) & (ys <= y1)].max()),
+               int(((ys >= y0) & (ys <= y1)).sum())) for y0, y1 in caixas]
+    return {"acima_igual": cima is None, "cima": cima, "abaixo_px": int(len(ys)), "abaixo_caixas": caixas,
+            "cauda_lisa": cauda_lisa, "cauda_px": cauda.height, "altura": (ia.height, idp.height), "elemento": (ma, md)}
 
 
 # ---------------------------------------------------------------- plano e gravação
@@ -175,11 +192,12 @@ def main():
         dep = prints(evs, pasta / "prints_depois_2", url_botao=lambda ev: urls[ev])
         for c in comp:
             pr = compara_prints((pasta / "prints_antes" / f"{c['ev']}.png", c["elemento"][0]), dep[c["ev"]])
-            print(f"{c['ev']}: acima {'igual' if pr['acima_igual'] else pr['cima']}; abaixo {'igual' if pr['abaixo_igual'] else pr['baixo']}; "
-                  f"elemento antes {pr['elemento'][0]} depois {pr['elemento'][1]}; altura {pr['altura']}")
+            print(f"{c['ev']}: acima {'igual' if pr['acima_igual'] else pr['cima']}; abaixo {pr['abaixo_px']} px {pr['abaixo_caixas'][:4]}; "
+                  f"fim {'liso' if pr['cauda_lisa'] else 'COM CONTEÚDO'}; elemento antes {pr['elemento'][0]} depois {pr['elemento'][1]}")
             c["prints"] = {k: v for k, v in pr.items() if k != "elemento"}
             c["elemento"] = pr["elemento"]
-            c["ok"] = not c["jcr_fora"] and c["render_igual"] and pr["acima_igual"] and pr["abaixo_igual"]
+            c["ok"] = (not c["jcr_fora"] and c["render_igual"] and pr["acima_igual"] and pr["cauda_lisa"]
+                       and pr["abaixo_px"] <= LIMITE_SERRILHADO)
         (pasta / "comparacao.json").write_text(json.dumps(comp, ensure_ascii=False, indent=1, default=str), encoding="utf-8")
         return
     lista = plano(set(a.so))
@@ -253,10 +271,11 @@ def main():
         rd = C.normalizar(sem_botao(html_d, x["url"]))
         render_igual = ra == rd
         pr = compara_prints(p_antes[ev], p_depois[ev])
-        ok = no_ok and not fora and render_igual and pr["acima_igual"] and pr["abaixo_igual"]
+        ok = no_ok and not fora and render_igual and pr["acima_igual"] and pr["cauda_lisa"] and pr["abaixo_px"] <= LIMITE_SERRILHADO
         print(f"{'OK ' if ok else 'DIFERENÇA'} /{EV}/{ev}: JCR fora do previsto {fora or 'nada'}; render sem o bloco "
-              f"{'igual' if render_igual else 'DIFERENTE'}; print acima {'igual' if pr['acima_igual'] else pr['cima']}, "
-              f"abaixo {'igual' if pr['abaixo_igual'] else pr['baixo']} (altura {pr['altura'][0]} -> {pr['altura'][1]})")
+              f"{'igual' if render_igual else 'DIFERENTE'}; print acima {'igual' if pr['acima_igual'] else pr['cima']}; "
+              f"abaixo {pr['abaixo_px']} px diferentes {pr['abaixo_caixas'][:4]}; fim da página "
+              f"{'liso' if pr['cauda_lisa'] else 'COM CONTEÚDO'} ({pr['cauda_px']} px); bloco {pr['elemento'][0][2]} -> {pr['elemento'][1][2]} px")
         if not render_igual:
             i = next((i for i in range(min(len(ra), len(rd))) if ra[i] != rd[i]), min(len(ra), len(rd)))
             print(f"     render: …{ra[max(0, i - 100):i + 150]}…\n          ≠ …{rd[max(0, i - 100):i + 150]}…")

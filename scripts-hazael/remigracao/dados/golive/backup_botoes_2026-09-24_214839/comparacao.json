@@ -6,9 +6,40 @@
   "render_igual": true,
   "prints": {
    "acima_igual": true,
-   "abaixo_igual": false,
    "cima": null,
-   "baixo": "alturas diferentes",
+   "abaixo_px": 4763,
+   "abaixo_caixas": [
+    [
+     486,
+     551,
+     1361,
+     1402,
+     2678
+    ],
+    [
+     905,
+     915,
+     542,
+     1176,
+     66
+    ],
+    [
+     947,
+     1002,
+     1347,
+     1411,
+     2014
+    ],
+    [
+     1551,
+     1551,
+     210,
+     217,
+     5
+    ]
+   ],
+   "cauda_lisa": true,
+   "cauda_px": 11,
    "altura": [
     2129,
     2129
@@ -25,6 +56,8 @@
     457,
     97
    ]
-  ]
+  ],
+  "ok_final": true,
+  "nota": "conferido a olho (24/09): abaixo do botão as diferenças são o botão de telefone e o Page Top (presos à janela; visíveis no print 'antes', escondidos no 'depois') e 71 px de serrilhado nas setas dos botões Contact/RaQ e num ícone do rodapé; conteúdo igual"
  }
 ]
