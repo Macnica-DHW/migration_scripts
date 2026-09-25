@@ -1,0 +1,128 @@
+{
+ "quando": "2026-09-25T20:16:22",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Altera® Agilex FPGA Development Kits",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Mon Sep 21 2026 17:27:46 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:47 GMT+0000",
+  "jcr:description": "Browse semiconductor development kits from the Agilex™ series at Macnica Americas. From hardware to software, we've got you covered in computer tools.",
+  "keywords": "Altera Development Kits, FPGA Prototyping, High-Performance Computing, Embedded Systems Design, Intel Quartus Prime, PCIe Gen4, DDR4 Memory Support, High-Speed Transceivers, Intellectual Property Cores, Real-Time Processing, Custom Module Integration, Productivity Enhancement, Prototype Testing, Agilex FPGA, Connectivity Options.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits",
+  "pageTitle": "Altera Agilex™ Development Kits",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Agilex Development Kits",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Altera® Agilex FPGA Development Kits",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Agilex™ 7 Development Kit",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The Agilex 7 FPGA Development Kit is a comprehensive platform designed to accelerate the prototyping and development of high-speed and complex applications. It is centered around the Altera Agilex 7 FPGA I-Series, offering up to 2700K logic elements for robust computational capabilities. This development kit supports advanced connectivity options, including PCIe 5.0 x16, CXL, and 400G Ethernet, making it ideal for next-generation computing, networking, and storage solutions. With features like DDR4 memory sockets for enhanced data throughput and QSFP-DD cages for high-speed networking, the kit facilitates the development of applications requiring substantial bandwidth and processing power. Additionally, it includes an array of connectors and adapters, such as MCIO x8 connectors and an active fan for cooling, ensuring reliable operation during development. Embedded software support, including a one-year license for Altera's Quartus Prime Pro Edition, rounds out this development kit, providing engineers with a robust set of tools for design, simulation, and debugging.</p><p style=\"margin-top:0\">&nbsp;</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\">\n<tbody><tr><th style=\"white-space:nowrap\">M-Series</th>\n<th style=\"white-space:nowrap\">I-Series</th>\n</tr><tr><td width=\"50%\">Optimized for power and size for intelligent applications at the edge, embedded, and more</td>\n<td width=\"50%\">Optimized for performance and power efficiency - ideal for various applications across multiple markets</td>\n</tr><tr><td>HPS Enabled (HW &amp; SW)</td>\n<td>2x DDR4 DIMMs sockets</td>\n</tr><tr><td>2 x40 DIMM sockets supporting DDR5-5600</td>\n<td>2x 8GB SR DDR4 Component</td>\n</tr><tr><td>1 x40 DDR5-5600 component each for HPS processor memory and for fabric I/O memory</td>\n<td>Form Factor: PCIe, ¾ length, full height, dual width</td>\n</tr><tr><td>Up to PCIe 4.0 x4 and 10/25GbE x6 Hard IP</td>\n<td>Interfaces: R-Tile: PCIe 5.0 x16, edge fingers &amp; MCIO; F-Tile: 2x QSFPDD, 2x 28/56G</td>\n</tr><tr><td>DDR4 @ 2,667 Mbps, DDR5 @ 3,600 Mbps, LPDDR4/5 @ 3,733 Mbps</td>\n<td>&nbsp;</td>\n</tr><tr><td>2x 16 LPDDR5 component</td>\n<td>&nbsp;</td>\n</tr><tr><td>Form Factor: Tabletop</td>\n<td>&nbsp;</td>\n</tr><tr><td>Interfaces: F-Tile:&nbsp;2x QSFPDD optical module, 1x QSFPDD 800 optical module,&nbsp;FMC+ connector; R-Tile: PCIe 5.0 x16 through MCIO connector</td>\n<td>&nbsp;</td>\n</tr><tr><td><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilexr-7-fpga-m-series.html\">Product Overview</a></b></td>\n<td><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilex-7-i-series.html\">Product Overview</a></b></td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Agilex™ 5 Development Kit",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The Agilex 5 Development Kits are tailored to provide engineers with a powerful and flexible environment for designing cutting-edge embedded and high-performance computing applications. Built around the Altera Agilex 5 FPGA, these kits offer a rich set of features to accommodate a wide range of development needs, including advanced signal processing, data analytics, and machine learning algorithms. They support high-speed data interfaces such as PCIe Gen4, enabling fast data transfer rates essential for real-time processing applications. The development kits also feature versatile memory configurations with DDR4 support, ensuring ample bandwidth and storage for complex computations. Furthermore, they include comprehensive connectivity options with multiple high-speed transceiver links and I/O expansion capabilities, facilitating the integration of custom and third-party modules. Embedded developers can leverage the included software tools and intellectual property cores to streamline the development process, from initial design to prototype testing, enhancing productivity and accelerating time to market.</p><p style=\"margin-top:0\">&nbsp;</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th><u>E-Series Premium</u></th>\n<th style=\"white-space:nowrap\">E-Series</th>\n</tr><tr><td width=\"50%\">HPS Enabled (HW &amp; SW)</td>\n<td width=\"50%\">HPS Enabled (HW &amp; SW)</td>\n</tr><tr><td>LPDDR4, DDR4, HPS DDR4 up to 2667 Mbps (component soldered) DDR Memory.</td>\n<td>DDR4, HPS DDR4 up to 2667 Mbps (component soldered) DDR Memory.</td>\n</tr><tr><td>2Gb CFG QSPI FLASH Memory</td>\n<td>2Gb CFG QSPI FLASH Memory</td>\n</tr><tr><td>Form Factor: Tabletop</td>\n<td>Form Factor: PCIe</td>\n</tr><tr><td>Interfaces: FMC+ x 1; QSFP x 2; SFP+ x 2 ; SGMII x 2; RGMII x 1; TX/RX SMA x2; IO48; USB type C and&nbsp; USB2.0; PCIe 4.0 x8 through FMC+ connector</td>\n<td>Interfaces: FMC+ x 1; SFP+ x 1; RJ45 x 2; HDMI 2.1; DP 2.0; USB 2/3.1; TX/RX SMA x2 (TSN); IO48, MIPI; PCIe 4.0 x8 edge connector</td>\n</tr><tr><td><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilextm-5-fpga-e-series-premium.html\">Product Overview</a></b></td>\n<td><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilex-5-e-series-065b-development-kit.html\">Product Overview</a></b></td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      },
+      "list_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "linkItems": "true",
+       "pages": [
+        "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilex-5-e-series-065b-development-kit",
+        "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilex-7-i-series",
+        "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilexr-7-fpga-m-series",
+        "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilextm-5-fpga-e-series-premium"
+       ],
+       "sling:resourceType": "macnicaglobal2/components/content/list",
+       "listFrom": "static"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}
