@@ -1,0 +1,38 @@
+[
+ {
+  "pagina": "products",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 1,
+   "igual_antes_do_1o": 2519,
+   "igual_depois_do_ultimo": 398,
+   "texto_saiu": "",
+   "texto_entrou": "",
+   "tags_saiu": [
+    "div"
+   ],
+   "tags_entrou": [
+    "div"
+   ],
+   "links_saiu": [],
+   "links_entrou": [],
+   "imgs_entrou": []
+  },
+  "prints": {
+   "altura": [
+    2129,
+    2129
+   ],
+   "igual_no_topo_ate": 840,
+   "igual_no_fim_px": 424,
+   "miolo_antes": [
+    840,
+    1705
+   ],
+   "miolo_depois": [
+    840,
+    1705
+   ]
+  }
+ }
+]

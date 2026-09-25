@@ -1,0 +1,58 @@
+[
+ {
+  "pagina": "products",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 6,
+   "igual_antes_do_1o": 2496,
+   "igual_depois_do_ultimo": 287,
+   "texto_saiu": "",
+   "texto_entrou": "Semiconductors Boards & Modules Displays IP and Software",
+   "tags_saiu": [
+    "div"
+   ],
+   "tags_entrou": [
+    "a",
+    "b",
+    "div",
+    "img",
+    "p"
+   ],
+   "links_saiu": [],
+   "links_entrou": [
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules.html",
+    "/content/macnicaglobal2/americas/mai/en/products/displays.html",
+    "/content/macnicaglobal2/americas/mai/en/products/ip-software.html",
+    "/content/macnicaglobal2/americas/mai/en/products/semiconductors.html"
+   ],
+   "imgs_entrou": [
+    "/content/macnicaglobal2/americas/mai/en/products/_jcr_content/root/container/container/flexcontainer_1/flexcontaineritem_1/image_1.coreimg.jpeg/1790111068087/istock-1773543830.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/_jcr_content/root/container/container/flexcontainer_1/flexcontaineritem_1/image_1.coreimg{.width}.jpeg/1790111068087/istock-1773543830.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/_jcr_content/root/container/container/flexcontainer_1/flexcontaineritem_2/image_1.coreimg.jpeg/1790111056507/boards-generic.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/_jcr_content/root/container/container/flexcontainer_1/flexcontaineritem_2/image_1.coreimg{.width}.jpeg/1790111056507/boards-generic.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/_jcr_content/root/container/container/flexcontainer_1/flexcontaineritem_3/image_1.coreimg.jpeg/1790111062113/touchdisplay-generic.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/_jcr_content/root/container/container/flexcontainer_1/flexcontaineritem_3/image_1.coreimg{.width}.jpeg/1790111062113/touchdisplay-generic.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/_jcr_content/root/container/container/flexcontainer_1/flexcontaineritem_4/image_1.coreimg.jpeg/1790111068128/ip-software.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/_jcr_content/root/container/container/flexcontainer_1/flexcontaineritem_4/image_1.coreimg{.width}.jpeg/1790111068128/ip-software.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/_jcr_content/root/container/image.coreimg.jpeg/1787918195770/products-banner.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/_jcr_content/root/container/image.coreimg{.width}.jpeg/1787918195770/products-banner.jpeg"
+   ]
+  },
+  "prints": {
+   "altura": [
+    2129,
+    2129
+   ],
+   "igual_no_topo_ate": 301,
+   "igual_no_fim_px": 464,
+   "miolo_antes": [
+    301,
+    1665
+   ],
+   "miolo_depois": [
+    301,
+    1665
+   ]
+  }
+ }
+]

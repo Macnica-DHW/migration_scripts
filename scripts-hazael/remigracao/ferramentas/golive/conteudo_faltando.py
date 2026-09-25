@@ -10,13 +10,14 @@ flexcontainer "1 Column" (empilha só no celular) > 4 flexcontaineritem por linh
 Mudança ESTRUTURAL (nós entram e saem), então PILOTO em 1 página e mostrar ao Hazael antes das outras. Cada página é
 uma lista fechada de operações (PAGINAS abaixo), com precondição conferida no dry-run E relida antes de gravar:
   asset   cópia do DAM do GWI para o do global2 (`<nome>@CopyFrom` com POST só na pasta do global2; sha1 e GET conferidos)
-  props   grava propriedades num nó que existe
+  props   grava propriedades num nó que existe (4º elemento opcional: valores que o nó TEM de ter agora)
   criar   cria um nó que não existe (na ordem dada; `:order` quando precisa de posição)
   apagar  apaga um nó que existe e está VAZIO (sem fileReference/linkURL/text/jcr:title) — placeholder
 Conferência depois, a página inteira contra o backup:
   JCR     só mudam os nós declarados (e o carimbo da página);
   render  HTML normalizado idêntico ANTES da 1ª e DEPOIS da última diferença; o miolo é listado (texto que saiu/entrou);
   print   1400px, animação desligada, fixed/sticky escondidos: igual acima da mudança e igual no fim alinhado pelo rodapé.
+Entrada com "feito" já foi gravada (fica como registro); "pagina" quando a chave não é o caminho (2ª passada).
 Backup (jcr:content inteiro + render + print) ANTES de gravar, em dados/golive/backup_conteudo_<data>/. Trava da Session vale.
 
     python3 conteudo_faltando.py                          # dry-run: operações e precondições de cada página
@@ -79,6 +80,7 @@ def grade(base, cards, por_linha=4):
 # ---------------------------------------------------------------- páginas (lista fechada)
 PAGINAS = {
     "products": {
+        "feito": "piloto 24/09 23:45, backup_conteudo_2026-09-24_234543",
         "gwi": "/content/macnicagwi/americas/mai/en/products",
         "o_que": "4 cards de categoria (em branco: 4 image sem imagem, larguras 2/2+1/3+4/2) -> grade de 4 (texto-link + foto "
                  "linkada), coluna 8+2 como o resto da página; banner (image vazio) -> products-banner.jpg do GWI",
@@ -97,6 +99,13 @@ PAGINAS = {
             card_produto("Displays", "products/displays", "TouchDisplay-generic.jpg", "Displays"),
             card_produto("IP and Software", "products/ip-software", "IP-Software.jpg", "IP & Software"),
         ]),
+    },
+    "products#padding": {
+        "pagina": "products",
+        "o_que": "piloto: o container da grade volta ao padding vertical PADRÃO (50px, o que tinha antes); fica só o 'sem "
+                 "padding lateral', que alinha a grade com o texto. O 'Small' (30px) encolheu o vão até o rodapé (28px; GWI ~80)",
+        "ops": [("props", "root/container/container", {"cq:styleIds": [S_CONT_PAD_W0]},
+                 {"cq:styleIds": [S_CONT_PAD_SMALL, S_CONT_PAD_W0]})],
     },
 }
 
@@ -122,6 +131,8 @@ def conferir(pag, cfg, jc):
         no, pai = no_de(jc, rel), no_de(jc, rel.rsplit("/", 1)[0]) if "/" in rel else jc
         if tipo == "props" and no is None and rel.rsplit("/", 1)[0] not in criados:
             prob.append(f"props: {rel} não existe")
+        elif tipo == "props" and len(op) > 3:
+            prob += [f"props: {rel}.{k} = {no.get(k)!r}, esperado {v!r}" for k, v in op[3].items() if no.get(k) != v]
         elif tipo == "criar":
             if no is not None:
                 prob.append(f"criar: {rel} já existe")
@@ -279,7 +290,7 @@ def main():
     ap.add_argument("--testar-comparador", action="store_true", help="só GET: 2 leituras de cada página têm de dar 0 diferença")
     a = ap.parse_args()
     if a.testar_comparador:
-        pags = [p for p in PAGINAS if not a.so or p in a.so]
+        pags = sorted({cfg.get("pagina", ch) for ch, cfg in PAGINAS.items() if not a.so or ch in a.so})
         pasta = Path(os.environ.get("CF_TESTE", "/tmp")) / f"teste_comparador_{datetime.datetime.now():%H%M%S}"
         r1 = {p: C.retrato(f"{M}/{p}") for p in pags}
         p1 = prints(pags, pasta / "1")
@@ -292,13 +303,16 @@ def main():
             print(f"{'OK ' if ok else 'DIFERENÇA'} /{p}: JCR {fora or 'igual'}; render {rr['blocos']} trechos; print {pr}")
         return
     lista = []
-    for pag, cfg in PAGINAS.items():
-        if a.so and pag not in a.so:
+    for chave, cfg in PAGINAS.items():
+        if a.so and chave not in a.so:
             continue
+        pag = cfg.get("pagina", chave)
+        if cfg.get("feito"):
+            print(f"## {chave}: já gravado ({cfg['feito']})"); continue
         st, jc = C.ler(f"{M}/{pag}/jcr:content", ".infinity.json")
         assert st == 200, (pag, st)
         prob = conferir(pag, cfg, jc)
-        print(f"## /{pag}  (última edição {jc.get('cq:lastModified', '')[:24]} por {jc.get('cq:lastModifiedBy', '')})\n   {cfg['o_que']}")
+        print(f"## {chave} -> /{pag}  (última edição {jc.get('cq:lastModified', '')[:24]} por {jc.get('cq:lastModifiedBy', '')})\n   {cfg['o_que']}")
         for origem, destino in cfg.get("assets", []):
             print(f"   asset  {origem[len(GWI_DAM):]} -> {destino[len(G2_DAM):]}")
         for op in cfg["ops"]:
@@ -310,6 +324,7 @@ def main():
         print("   PULA: " + "; ".join(prob) if prob else "   precondições OK")
         if not prob:
             lista.append((pag, cfg, jc))
+    assert len({x[0] for x in lista}) == len(lista), "a mesma página duas vezes na rodada: rodar as passadas separadas"
     if not a.executar:
         print(f"\n{len(lista)} páginas prontas (DRY-RUN: nada gravado)")
         return
