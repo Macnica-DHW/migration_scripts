@@ -1,0 +1,127 @@
+{
+ "quando": "2026-09-25T20:37:46",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Altera® Cyclone® 10 FPGAs | Intel Cyclone 10 Solutions",
+  "manufacturer": "mai:manufacturers/altera",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Altera® Cyclone® 10 FPGA",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:46 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:29 GMT+0000",
+  "jcr:description": "Explore the power of Altera Cyclone 10 FPGAs with cutting-edge technology. Elevate your projects with groundbreaking innovation. Contact us for more info!",
+  "keywords": "Altera Cyclone FPGAs, field-programmable gate arrays, FPGA solutions, low-power FPGAs, customizable hardware, embedded memory, digital signal processing, industrial automation, automotive applications, edge devices, IoT devices, FPGA features, FPGA applications",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga",
+  "pageTitle": "Altera® Cyclone® 10 FPGA",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Altera® Cyclone® 10 FPGA",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Altera Cyclone 10 is a family of field-programmable gate arrays (FPGAs) offering a low-power, cost-effective solution for various applications. The Cyclone 10 family includes two device families, Cyclone 10 LP, and Cyclone 10 GX, each optimized for different use cases.</p>\n<p>The Cyclone 10 LP family is designed for low-power, cost-sensitive applications that require a balance of power and bandwidth. It features up to 220K logic elements, 6.4 Gbps transceivers, and 1,600 Mbps DDR3 memory support. It also offers integrated intellectual property (IP) such as ARM Cortex-M1 processor, analog-to-digital converter (ADC), and digital signal processing (DSP) blocks.</p>\n<p>The Cyclone 10 GX family is optimized for high-performance applications that require higher bandwidth. It features up to 220K logic elements, 12.5 Gbps transceivers, and 2,666 Mbps DDR4 memory support. Altera Cyclone 10 also offers advanced processing capabilities with up to two ARM Cortex-A9 processors, hard floating-point DSP blocks, and a range of configurable I/O standards.</p>\n<p>Overall, Altera Cyclone 10 FPGAs offer a versatile and flexible solution for various applications such as industrial automation, smart vision, and automotive. They provide low-power, cost-effective, and high-performance options that can be customized to meet specific requirements.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "table_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th>Altera® Cyclone® 10 GX FPGA</th>\n<th>Altera® Cyclone® 10 LP FPGA</th>\n</tr><tr><td width=\"50%\"><p>Altera Cyclone 10 GX FPGAs are designed to deliver high-bandwidth performance for applications such as machine vision, video connectivity, and smart vision cameras.</p>\n</td>\n<td width=\"50%\"><p>Altera Cyclone 10 LP FPGAs are optimized for low power consumption and cost-sensitive applications.</p>\n</td>\n</tr><tr><td><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-gx-fpga.html\"><b>Product Overview</b></a></td>\n<td><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-lp-fpga.html\"><b>Product Overview</b></a></td>\n</tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "1722939215525"
+      ]
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Altera® Cyclone® 10 LP FPGAs Product Table",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "table_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td colspan=\"7\"><span style=\"white-space:nowrap\">PRODUCT</span> LINE</td>\n<td style=\"white-space:nowrap\">10CL006</td>\n<td style=\"white-space:nowrap\">10CL010</td>\n<td style=\"white-space:nowrap\">10CL016</td>\n<td style=\"white-space:nowrap\">10CL025</td>\n<td style=\"white-space:nowrap\">10CL040</td>\n<td style=\"white-space:nowrap\">10CL055</td>\n<td style=\"white-space:nowrap\">10CL080</td>\n<td style=\"white-space:nowrap\">10CL120</td>\n</tr><tr><td rowspan=\"5\" style=\"white-space:nowrap\"> Resources</td>\n<td colspan=\"6\">Logic <span style=\"white-space:nowrap\">elements</span> (LEs)1</td>\n<td style=\"white-space:nowrap\">6,000</td>\n<td style=\"white-space:nowrap\">10,000</td>\n<td style=\"white-space:nowrap\">16,000</td>\n<td style=\"white-space:nowrap\">25,000</td>\n<td style=\"white-space:nowrap\">40,000</td>\n<td style=\"white-space:nowrap\">55,000</td>\n<td style=\"white-space:nowrap\">80,000</td>\n<td style=\"white-space:nowrap\">120,000</td>\n</tr><tr><td colspan=\"6\">M9K <span style=\"white-space:nowrap\">memory</span> <span style=\"white-space:nowrap\">blocks</span></td>\n<td style=\"white-space:nowrap\">30</td>\n<td style=\"white-space:nowrap\">46</td>\n<td style=\"white-space:nowrap\">56</td>\n<td style=\"white-space:nowrap\">66</td>\n<td style=\"white-space:nowrap\">126</td>\n<td style=\"white-space:nowrap\">260</td>\n<td style=\"white-space:nowrap\">305</td>\n<td style=\"white-space:nowrap\">432</td>\n</tr><tr><td colspan=\"6\">M9K <span style=\"white-space:nowrap\">memory</span> size (Kb)</td>\n<td style=\"white-space:nowrap\">270</td>\n<td style=\"white-space:nowrap\">414</td>\n<td style=\"white-space:nowrap\">504</td>\n<td style=\"white-space:nowrap\">594</td>\n<td style=\"white-space:nowrap\">1,134</td>\n<td style=\"white-space:nowrap\">2,340</td>\n<td style=\"white-space:nowrap\">2,745</td>\n<td style=\"white-space:nowrap\">3,888</td>\n</tr><tr><td colspan=\"6\">DSP <span style=\"white-space:nowrap\">Blocks</span> (18 x 18 <span style=\"white-space:nowrap\">multipliers</span>)</td>\n<td style=\"white-space:nowrap\">15</td>\n<td style=\"white-space:nowrap\">23</td>\n<td style=\"white-space:nowrap\">56</td>\n<td style=\"white-space:nowrap\">66</td>\n<td style=\"white-space:nowrap\">126</td>\n<td style=\"white-space:nowrap\">156</td>\n<td style=\"white-space:nowrap\">244</td>\n<td style=\"white-space:nowrap\">288</td>\n</tr><tr><td colspan=\"6\">Phase-<span style=\"white-space:nowrap\">locked</span> loops (PLL)</td>\n<td>2</td>\n<td>2</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n</tr><tr><td rowspan=\"3\"> I/O and <span style=\"white-space:nowrap\">Architectural</span> <span style=\"white-space:nowrap\">Features</span></td>\n<td colspan=\"6\"><span style=\"white-space:nowrap\">Global</span> clock <span style=\"white-space:nowrap\">networks</span></td>\n<td style=\"white-space:nowrap\">10</td>\n<td style=\"white-space:nowrap\">10</td>\n<td style=\"white-space:nowrap\">20</td>\n<td style=\"white-space:nowrap\">20</td>\n<td style=\"white-space:nowrap\">20</td>\n<td style=\"white-space:nowrap\">20</td>\n<td style=\"white-space:nowrap\">20</td>\n<td style=\"white-space:nowrap\">20</td>\n</tr><tr><td colspan=\"6\"><span style=\"white-space:nowrap\">Maximum</span> user I/O pins</td>\n<td style=\"white-space:nowrap\">176</td>\n<td style=\"white-space:nowrap\">176</td>\n<td style=\"white-space:nowrap\">340</td>\n<td style=\"white-space:nowrap\">150</td>\n<td style=\"white-space:nowrap\">325</td>\n<td style=\"white-space:nowrap\">321</td>\n<td style=\"white-space:nowrap\">423</td>\n<td style=\"white-space:nowrap\">525</td>\n</tr><tr><td colspan=\"6\"><span style=\"white-space:nowrap\">Maximum</span> LVDS <span style=\"white-space:nowrap\">channels</span></td>\n<td style=\"white-space:nowrap\">65</td>\n<td style=\"white-space:nowrap\">65</td>\n<td style=\"white-space:nowrap\">137</td>\n<td style=\"white-space:nowrap\">52</td>\n<td style=\"white-space:nowrap\">124</td>\n<td style=\"white-space:nowrap\">132</td>\n<td style=\"white-space:nowrap\">178</td>\n<td style=\"white-space:nowrap\">230</td>\n</tr><tr><td colspan=\"15\"><span style=\"white-space:nowrap\">Package</span> <span style=\"white-space:nowrap\">Options</span> and I/O Pins: <span style=\"white-space:nowrap\">General</span>-<span style=\"white-space:nowrap\">Purpose</span> I/O (GPIO) Count, LVDS Pairs</td>\n</tr><tr><td colspan=\"7\">M164 pin (8 mm x 8 mm, 0.5 mm pitch)</td>\n<td>&nbsp;</td>\n<td style=\"white-space:nowrap\">101,26</td>\n<td>87, 22</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td colspan=\"7\">U256 pin (14 mm x 14 mm, 0.8 mm pitch)</td>\n<td>176, 65&nbsp;</td>\n<td>176, 65</td>\n<td>162, 53</td>\n<td>150, 52</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td colspan=\"7\">U484 pin (19 mm x 19 mm, 0.8 mm pitch)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>340, 137</td>\n<td>&nbsp;</td>\n<td>325, 124</td>\n<td>321, 132</td>\n<td>289, 110</td>\n<td>&nbsp;</td>\n</tr><tr><td colspan=\"7\">E144 pin (22 mm x 22mm, 0.5 mm pitch)</td>\n<td>88, 22</td>\n<td>88, 22</td>\n<td>78, 19</td>\n<td>76, 18</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td colspan=\"7\">F484 pin (23 mm x 23 mm, 1.0 mm pitch)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>340, 137</td>\n<td>&nbsp;</td>\n<td>325, 124</td>\n<td>321, 132</td>\n<td>289, 110</td>\n<td>277, 103</td>\n</tr><tr><td colspan=\"7\">F780 pin (29 mm x 29 mm, 1.0 mm pitch)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>423, 178</td>\n<td>525, 230</td>\n</tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "1722939215525"
+      ]
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p style=\"margin-top:0\">&nbsp;</p><p style=\"margin-top:0\">Numbers indicate GPIO count, LVDS pairs</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "list_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "linkItems": "true",
+      "pages": [
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-gx-fpga",
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-lp-fpga"
+      ],
+      "sling:resourceType": "macnicaglobal2/components/content/list",
+      "listFrom": "static"
+     }
+    },
+    "container_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "experiencefragment_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    }
+   }
+  }
+ }
+}

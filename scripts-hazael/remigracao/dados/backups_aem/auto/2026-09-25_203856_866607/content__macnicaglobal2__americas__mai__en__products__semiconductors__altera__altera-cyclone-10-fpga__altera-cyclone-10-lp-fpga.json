@@ -1,0 +1,77 @@
+{
+ "quando": "2026-09-25T20:38:56",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-lp-fpga",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-lp-fpga/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Altera® Cyclone® LP FPGAs Solutions",
+  "manufacturer": "mai:manufacturers/altera",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Altera® Cyclone® 10 LP FPGA",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:46 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:31 GMT+0000",
+  "jcr:description": "Discover the powerful Cyclone 10 LP FPGA with advanced architecture including embedded memory blocks and interconnects for seamless connectivity.",
+  "keywords": "altera, cyclone 10, fpga, semiconductor, semiconductors",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-cyclone-10-fpga/altera-cyclone-10-lp-fpga",
+  "pageTitle": "Altera® Cyclone® 10 LP FPGA",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Altera® Cyclone® 10 LP FPGA",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>The Altera Cyclone 10 FPGA's sea of gates, which serves as the logic and routing core fabric, is flanked by I/O elements on both sides, with a phase-locked loop (PLL) in each corner. The architecture includes vertical columns of embedded memory blocks (M9K) and 18 x 18 bit multiplier blocks.</p>\n<p>In addition, the Altera Cyclone 10 FPGA features highly efficient interconnects and low-skew clock networks that facilitate connectivity between logic structures for clock and data signals.</p><p style=\"margin-top:0\">&nbsp;</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "table_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>Product Name</b></td>\n<td><b>Logic Elements (LE)</b></td>\n<td><b>Digital Signal Processing (DSP) Blocks</b></td>\n<td><b>Maximum Embedded Memory</b></td>\n<td><b>Maximum User I/O Count'</b></td>\n<td><b>Package Options</b></td>\n</tr><tr><td>Altera® Cyclone® 10 10CL006 FPGA</td>\n<td style=\"white-space:nowrap\">6000</td>\n<td style=\"white-space:nowrap\">15</td>\n<td>270 Kb</td>\n<td style=\"white-space:nowrap\">176</td>\n<td>U256, E144</td>\n</tr><tr><td>Altera® Cyclone® 10 10CL010 FPGA</td>\n<td style=\"white-space:nowrap\">10000</td>\n<td style=\"white-space:nowrap\">23</td>\n<td>414 Kb</td>\n<td style=\"white-space:nowrap\">176</td>\n<td>M164, U256, E144</td>\n</tr><tr><td>Altera® Cyclone® 10 10CL016 FPGA</td>\n<td style=\"white-space:nowrap\">16000</td>\n<td style=\"white-space:nowrap\">56</td>\n<td>504 Kb</td>\n<td style=\"white-space:nowrap\">340</td>\n<td>M164, U256, U484, E144, F484</td>\n</tr><tr><td>Altera® Cyclone® 10 10CL025 FPGA</td>\n<td style=\"white-space:nowrap\">25000</td>\n<td style=\"white-space:nowrap\">66</td>\n<td>594 Kb</td>\n<td style=\"white-space:nowrap\">150</td>\n<td>U256, E144</td>\n</tr><tr><td>Altera® Cyclone® 10 10CL040 FPGA</td>\n<td style=\"white-space:nowrap\">40000</td>\n<td style=\"white-space:nowrap\">126</td>\n<td>1.134 Kb</td>\n<td style=\"white-space:nowrap\">325</td>\n<td>U256, E144</td>\n</tr><tr><td>Altera® Cyclone® 10 10CL080 FPGA</td>\n<td style=\"white-space:nowrap\">80000</td>\n<td style=\"white-space:nowrap\">244</td>\n<td>2.745 Kb</td>\n<td style=\"white-space:nowrap\">423</td>\n<td>U484, F484, F780</td>\n</tr><tr><td>Altera® Cyclone® 10 10CL120 FPGA</td>\n<td style=\"white-space:nowrap\">120000</td>\n<td style=\"white-space:nowrap\">288</td>\n<td>3.888 Mb</td>\n<td style=\"white-space:nowrap\">525</td>\n<td>F484, F780</td>\n</tr><tr><td>Altera® Cyclone® 10 10CL055 FPGA</td>\n<td style=\"white-space:nowrap\">55000</td>\n<td style=\"white-space:nowrap\">156</td>\n<td>2.34 Mb</td>\n<td style=\"white-space:nowrap\">321</td>\n<td>U484, F484</td>\n</tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "1722939215525"
+      ]
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "experiencefragment_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    }
+   }
+  }
+ }
+}
