@@ -1,0 +1,279 @@
+{
+ "quando": "2026-09-25T20:46:14",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-questa-fpga-edition",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-questa-fpga-edition/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Questa, Altera FPGA Edition",
+  "manufacturer": "mai:manufacturers/altera",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "QUESTA-FPGA-EDITION",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:46 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:37 GMT+0000",
+  "jcr:description": "Questa is a Siemens EDA Questa Core based simulator tailored for Altera FPGA and MAX CPLD development. It supports mixed-language verification across Verilog, SystemVerilog, and VHDL, and integrates with Quartus Prime through NativeLink so teams can launch simulation directly from the Quartus environment.  Questa Altera FPGA Edition includes precompiled libraries tailored for Altera devices, enabling faster setup and more consistent simulation results across teams. ",
+  "keywords": "altera, questa, siemens, fpga, max cpld, verilog, vhdl",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-questa-fpga-edition",
+  "pageTitle": "Questa, Altera FPGA Edition",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Questa, Altera FPGA Edition",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Mixed-language simulation and debug for Altera FPGA and CPLD designs, with push-button integration into Quartus Prime.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Overview",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Questa is a Siemens EDA Questa Core based simulator tailored for Altera FPGA and MAX CPLD development. It supports mixed-language verification across Verilog, SystemVerilog, and VHDL, and integrates with Quartus Prime through NativeLink so teams can launch simulation directly from the Quartus environment.</p>\n<p>Questa Altera FPGA Edition includes precompiled libraries tailored for Altera devices, enabling faster setup and more consistent simulation results across teams.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Key Features",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>Mixed-language simulation</b> across Verilog, SystemVerilog, and VHDL in a unified environment</li>\n</ul>\n<ul>\n<li><b>Precompiled libraries</b> for Altera devices to minimize setup and improve reproducibility</li>\n</ul>\n<ul>\n<li><b>NativeLink integration with Quartus Prime</b> to launch simulations directly from Quartus</li>\n</ul>\n<ul>\n<li><b>Behavioral and gate-level simulation</b> to validate functionality and timing behavior across the design lifecycle</li>\n</ul>\n<ul>\n<li><b>HDL testbench support</b> for functional coverage and verification workflows</li>\n</ul>\n<ul>\n<li><b>Waveform debugging and GUI</b> to analyze signals and accelerate root-cause analysis</li>\n</ul>\n<ul>\n<li><b>Mixed language support including SystemC</b> (Altera notes this for both Edition and Starter)</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Benefits",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Questa Altera FPGA Edition Software",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>Performance uplift vs ModelSim FPGA Edition:</b> Altera notes up to 2.5x and 1.25x faster Verilog and VHDL simulations in Siemens EDA testing, with results dependent on design</li>\n</ul>\n<ul>\n<li><b>Included with purchase of Quartus Prime,</b> and also available for separate purchase</li>\n</ul>\n<ul>\n<li><b>No line limitations</b> (per Altera notes)</li>\n</ul>\n<ul>\n<li><b>License renewal model:</b> Altera notes the license expires 12 months after purchase and must be regenerated annually in the Self Service Licensing Center for the specific purchased version</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Questa Altera FPGA Starter Edition",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>Free one-year license</b> available through the Self Service Licensing Center, renewable annually</li>\n</ul>\n<ul>\n<li><b>No line limitations</b> (per Altera notes)</li>\n</ul>\n<ul>\n<li>Altera notes <b>average performance at 40 percent of the full Edition</b></li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Editions and sizing guidance",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Altera positions the Starter Edition for entry-level use, while the full Edition supports larger designs <b>up to 5,000 instances</b>, excluding instances from precompiled libraries.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Compatibility and support",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Compatible with <b>Quartus Prime Lite, Standard, and Pro,</b> and also supports Altera flows including HLS Compiler, oneAPI, and DSP Builder</li>\n</ul>\n<ul>\n<li>Supported on <b>64-bit Windows and Linux</b> operating systems</li>\n</ul>\n<ul>\n<li>Intended for <b>Altera FPGAs and MAX CPLDs</b></li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why Macnica?",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Help selecting the right simulator option for your workflow, Starter versus full Edition, plus license planning and renewal approach</li>\n</ul>\n<ul>\n<li>Setup guidance for Quartus NativeLink integration, simulation directory conventions, and team-wide reproducibility using precompiled libraries</li>\n</ul>\n<ul>\n<li>Practical verification planning, including when to use behavioral simulation versus gate-level simulation, and how to structure testbenches for coverage and debug</li>\n</ul>\n<ul>\n<li>Guidance aligning simulation to platform workflows when your project spans RTL, embedded software, and system validation</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Typical Use Cases",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Mixed-language RTL projects that combine vendor IP, legacy VHDL, and newer SystemVerilog blocks</li>\n</ul>\n<ul>\n<li>Verification pipelines that need faster debug with waveforms, GUI tooling, and scripting</li>\n</ul>\n<ul>\n<li>Projects that need consistent results across multiple engineers using shared, precompiled Altera libraries</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Get Started",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/common/images/macnica-workflow-diagram.jpg",
+       "alt": "Macnica workflow diagram",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Share your Altera device family, preferred Quartus edition, OS, and verification goals. Macnica can recommend the right Questa edition, confirm compatibility, and help you stand up a repeatable simulation flow for your team.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

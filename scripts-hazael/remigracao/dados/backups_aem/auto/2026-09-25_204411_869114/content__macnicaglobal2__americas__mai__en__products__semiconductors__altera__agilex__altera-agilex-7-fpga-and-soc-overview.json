@@ -1,0 +1,447 @@
+{
+ "quando": "2026-09-25T20:44:11",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Altera Agilex 7 FPGA and SoC Overview",
+  "manufacturer": "mai:manufacturers/altera",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Altera Agilex 7 FPGA and SoC Overview",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:46 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:25 GMT+0000",
+  "jcr:description": "Macnica Americas provides an in-depth overview of the Altera Agilex 7 FPGA & SoC capabilities. Discover the possibilities that this solution brings to your designs.",
+  "keywords": "Altera Agilex 7 FPGAs, high-performance, FPGA technology, versatile applications, industry solutions, data center, networking, automotive, aerospace, telecommunications, signal processing, AI acceleration, power efficiency, customizable designs",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview",
+  "pageTitle": "Altera Agilex 7 FPGA and SoC Overview",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Altera Agilex 7 FPGA and SoC Overview",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>The Altera Agilex 7 devices include the industry’s highest performance FPGAs providing a range of premium features for the most demanding applications, including the F-Series, I-Series, and M-Series. This tier offers the industry’s highest data rate transceivers - up to 116 Gbps - the first PCIe 5.0 and CXL support, and options to integrate in-package HBM2E memory delivering the industry’s highest memory bandwidth (over 1 TBps). These capabilities enable customized connectivity and acceleration for the most compute, bandwidth, and memory-intensive use cases in communications, data center, defense, high-performance computing, video, high-end test/measurement/medical, and more.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th>F-Series FPGAs and SoCs</th>\n<th>I-Series FPGAs and SoCs</th>\n<th>M-Series FPGAs and SoCs</th>\n</tr><tr><td>F-Series devices are general purpose FPGAs built on Altera 10 nm SuperFin process technology. With features including transceiver rates up to 58 Gbps, advanced digital signal processing (DSP) blocks supporting multiple precisions of fixed-point and floating-point operations.</td>\n<td>I-Series devices offer the highest performance I/O interfaces to address bandwidth-intensive applications. Manufactured on Altera 10 nm SuperFin process technology, this series builds upon the F-Series device features offering transceiver rates up to 116 Gbps, PCIe 5.0 support, and cache- and memory-coherent attach to processors with CXL.</td>\n<td>M-Series devices are optimized for compute and memory-intensive applications. Leveraging Altera 7 process technology, this series builds upon I-Series device features offering an extensive memory hierarchy including integrated high-bandwidth memory (HBM) and high-efficiency interfaces&nbsp;</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Highlights",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Performance and Efficiency",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Industry-leading FPGA architecture</li>\n<li>Advanced 7 nm process technology</li>\n<li>Enhanced logic fabric performance</li>\n<li>Power-efficient design options</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Versatile Connectivity",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>High-speed transceivers up to 116Gbps</li>\n<li>PCIe 5.0 and Compute Express Link (CXL) support</li>\n<li>Integrated Arm-based processors</li>\n<li>Broad range of I/O interfaces</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Infrastructure Offload",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Optimized Architecture",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Infrastructure Processing Unit (IPU)</li>\n<li>vRouter</li>\n<li>Security</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Small Form Factor and Low Power",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Wide range of servers</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Infrastructure Acceleration",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Network</li>\n<li>Security</li>\n<li>Remote memory access</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Application Acceleration",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Artificial Intelligence (AI)</li>\n<li>Search</li>\n<li>Video transcode</li>\n<li>Database</li>\n<li>38 TFLOPs of DSP performance</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Storage Acceleration",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Compression</li>\n<li>Decompression</li>\n<li>Encryption</li>\n<li>Memory hierarchy management</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Custom Logic Continuum",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "FPGA Flexibility",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>High flexibility</li>\n<li>Short time to market</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Rapid Altera eASIC Device Optimization",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Wide range of servers</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Full Custom ASIC Optimization",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Best power</li>\n<li>Best performance</li>\n<li>Best cost</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_4": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Application-Specific Tile Options",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Data converter</li>\n<li>Vector engine</li>\n<li>Custom compute</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Acceleration and Analytics",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>In-line protocol acceleration</li>\n<li>Look-aside application acceleration</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Safety and Security",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Secure boot</li>\n<li>Encryption</li>\n<li>Authentication</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Customized Connectivity",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Time-sensitive networks</li>\n<li>Flexible I/O</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_4": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th colspan=\"2\" style=\"white-space:nowrap;text-align: center;\">Feature</th>\n<th colspan=\"2\" style=\"white-space:nowrap\"><b>Description</b></th>\n</tr><tr><td colspan=\"2\" valign=\"top\" style=\"white-space:nowrap\">Packaging</td>\n<td colspan=\"2\" valign=\"top\"><ul>\n<li>Altera Embedded Multi-die Interconnect Bridge (EMIB) packaging technology</li>\n<li>Multiple devices with identical package footprints allow seamless migration across different device densities</li>\n<li>Mixture of ball pitch FBGA packages, 1,025 mm, 0.92 mm, and several mixed pitch packages</li>\n</ul>\n</td>\n</tr><tr><td colspan=\"2\" valign=\"top\">High performance core fabric</td>\n<td colspan=\"2\" valign=\"top\"><ul>\n<li>Second Generation&nbsp;Altera® Hyperflex™&nbsp;core architecture with Hyper-Registers throughout the interconnect routing and at the inputs of all functional blocks</li>\n<li>Enhanced adaptive logic module (ALM)</li>\n<li>Improved multi-track routing architecture reduces congestion and improves compile times</li>\n<li>Hierarchical core clocking architecture with programmable clock tree synthesis</li>\n<li>Fine-grained partial reconfiguration</li>\n</ul>\n</td>\n</tr><tr><td colspan=\"2\" rowspan=\"2\" valign=\"top\">Internal memory blocks</td>\n<td colspan=\"2\" valign=\"top\"><ul>\n<li>Multi-level on-chip memory hierarchy</li>\n<li>M20K - 20 kilobits with hard error correction code (ECC) support</li>\n<li>MLAB - 640-bit distributed LUTRAM</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\" width=\"15%\"><p>F-Series</p>\n<p style=\"margin-top:0\">I-Series</p>\n</td>\n<td valign=\"top\">eSRAM - 18 Mb embedded memory block with hard ECC support</td>\n</tr><tr><td colspan=\"2\" valign=\"top\">Variable precision DSP blocks</td>\n<td colspan=\"2\" valign=\"top\"><ul>\n<li>Variable precision DSP blocks with hard&nbsp;IEEE 754-compliant floating-point units, including support for:<ul>\n<li>Single-precision FP32 (32-bit arithmetic)</li>\n<li>Half-precision FP16 (16-bit arithmetic) floating point modes</li>\n<li>Tensor floating point FP19 (19-bit arithmetic) floating point modes</li>\n<li>BFLOAT16 floating-point format</li>\n</ul>\n</li>\n<li>Supports signal processing with precision ranging from 9×9 up to 54×54</li>\n<li>Native 27×27, 18×19, and 9×9 multiplication modes</li>\n<li>64-bit accumulator and cascade for systolic finite impulse response (FIR) filters</li>\n<li>Internal coefficient memory banks</li>\n<li>Pre-adder/subtractor improves efficiency</li>\n<li>2× additional pipeline register increases performance and reduces power consumption</li>\n</ul>\n</td>\n</tr><tr><td colspan=\"2\" rowspan=\"3\" valign=\"top\">Core clock networks</td>\n<td colspan=\"2\" valign=\"top\"><ul>\n<li>Programmable clock tree synthesis - backwards compatible with global, regional and peripheral clock networks</li>\n<li>Synthesize clocks where needed only - minimizes dynamic power</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\">F-Series<p>I-Series</p>\n</td>\n<td valign=\"top\"><ul>\n<li>800 MHz LVDS interface clocking - supports&nbsp;1,600 Mbps&nbsp;LVDS interface through the&nbsp;1.5 V&nbsp;True Differential Signaling (TDS) standard compatible with LVDS, RSDS,&nbsp;mini-LVDS, and&nbsp;LVPECL standards</li>\n<li>1,600 MHz external memory interface clocking, supports&nbsp;3,200 Mbps&nbsp;DDR4 interface</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\">M-Series</td>\n<td valign=\"top\"><ul>\n<li>800 MHz LVDS interface clocking-- supports&nbsp;1,600 Mbps&nbsp;LVDS interface through the&nbsp;1.3 V&nbsp;TDS standard compatible with LVDS, RSDS,&nbsp;mini-LVDS, and&nbsp;LVPECL standards</li>\n<li>2,800 MHz external memory interface clocking, supports&nbsp;5,600 Mbps&nbsp;DDR5 interface</li>\n</ul>\n</td>\n</tr><tr><td rowspan=\"5\" valign=\"top\">General purpose I/Os</td>\n<td rowspan=\"3\" valign=\"top\" style=\"white-space:nowrap\">General</td>\n<td colspan=\"2\" valign=\"top\"><ul>\n<li>Over 700 total GPIOs available</li>\n<li>On-chip termination (OCT)</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\"><p>F-Series</p>\n<p style=\"margin-top:0\">I series</p>\n</td>\n<td valign=\"top\"><ul>\n<li>1.6 Gbps 1.5 V TDS compatible with LVDS, RSDS,&nbsp;mini-LVDS, and&nbsp;LVPECL standards</li>\n<li>1.2 V single-ended LVCMOS/LVTTL interfacing</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>M-Series</p>\n</td>\n<td valign=\"top\"><ul>\n<li>1.6 Gbps 1.3 V TDS compatible with LVDS, RSDS,&nbsp;mini-LVDS, and&nbsp;LVPECL standards</li>\n<li>1.05 V,&nbsp;1.1 V, and&nbsp;1.2 V&nbsp;single-ended single-ended LVCMOS/LVTTL interfacing</li>\n</ul>\n</td>\n</tr><tr><td rowspan=\"2\" valign=\"top\"><p>External memory interface</p>\n<p style=\"margin-top:0\">(Hard IP)</p>\n</td>\n<td valign=\"top\"><p>F-Series</p>\n<p style=\"margin-top:0\">I-Series</p>\n</td>\n<td valign=\"top\">1,600 MHz (3,200 Mbps) DDR4 external memory interface</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\"><p>M-Series</p>\n</td>\n<td valign=\"top\"><ul>\n<li>1,600 MHz (3,200 Mbps) DDR4 external memory interface</li>\n<li>2,800 MHz (5,600 Mbps) DDR5 external memory interface</li>\n<li>2,750 MHz (5,500 Mbps) LPDDR5 external memory interface</li>\n</ul>\n</td>\n</tr><tr><td rowspan=\"2\" valign=\"top\">Phase locked loops (PLL)</td>\n<td valign=\"top\">I/O PLL</td>\n<td colspan=\"2\" valign=\"top\"><ul>\n<li>Integer PLLs adjacent to general purpose I/Os</li>\n<li>Precision frequency synthesis</li>\n<li>Clock delay compensation</li>\n<li>Zero-delay buffering</li>\n<li>Support external memory and LVDS-compatible interface</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\"><p>Transmit PLLs</p>\n<p style=\"margin-top:0\">(TX PLLs)</p>\n</td>\n<td colspan=\"2\" valign=\"top\"><ul>\n<li>Precise fractional synthesis</li>\n<li>Ultra low jitter with LC tank-based PLL</li>\n<li>Supports transceiver interfaces</li>\n</ul>\n</td>\n</tr><tr><td colspan=\"2\" rowspan=\"3\" valign=\"top\">Memory controller support</td>\n<td colspan=\"2\" valign=\"top\">Multiple hard IP instantiations in each device</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\">F-Series<p>I-Series</p>\n</td>\n<td valign=\"top\"><ul>\n<li>DDR4 hard memory controller</li>\n<li>QDR IV using soft memory controller</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\">M-Series</td>\n<td valign=\"top\"><ul>\n<li>DDR5/LPDDR5/DDR4 hard memory controller</li>\n<li>QDRIV support using soft memory controller</li>\n<li>Hard memory network-on-chip (NoC)</li>\n</ul>\n</td>\n</tr><tr><td colspan=\"2\" valign=\"top\">High-bandwidth memory</td>\n<td valign=\"top\" style=\"white-space:nowrap\">M-Series</td>\n<td valign=\"top\"><ul>\n<li>In-package HBM2E memory options</li>\n</ul>\n<ul>\n<li>Up to&nbsp;32 GB&nbsp;of high bandwidth memory</li>\n</ul>\n</td>\n</tr><tr><td colspan=\"2\" valign=\"top\">Memory NoC</td>\n<td valign=\"top\" style=\"white-space:nowrap\">M-Series</td>\n<td valign=\"top\"><ul>\n<li>Hardened memory network-on-chip (NoC) enabling high bandwidth data flow between the FPGA fabric and the NoC-attached memories without using FPGA resources</li>\n<li>Supports over&nbsp;1&nbsp;TBps&nbsp;of aggregate memory bandwidth</li>\n</ul>\n</td>\n</tr><tr><td colspan=\"2\" valign=\"top\">High-performance crypto blocks</td>\n<td colspan=\"2\" valign=\"top\"><ul>\n<li>Supports AES and SM4 encryption standards</li>\n<li>Supports GCM and XTS modes of operation</li>\n</ul>\n</td>\n</tr><tr><td rowspan=\"4\" valign=\"top\" style=\"white-space:nowrap\">Transceivers</td>\n<td rowspan=\"2\" valign=\"top\" style=\"white-space:nowrap\">PCIe*</td>\n<td valign=\"top\" style=\"white-space:nowrap\">P-Tile<p>F-Tile</p>\n</td>\n<td valign=\"top\">PCIe*&nbsp;rates up to&nbsp;PCIe*&nbsp;4.0, 16 Gbps NRZ</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\">R-Tile</td>\n<td valign=\"top\"><ul>\n<li>PCIe*&nbsp;rates up to&nbsp;PCIe*&nbsp;5.0, 32 Gbps NRZ</li>\n<li>Compute Express Link*&nbsp;(&nbsp;CXL*&nbsp;) support</li>\n</ul>\n</td>\n</tr><tr><td rowspan=\"2\" valign=\"top\" style=\"white-space:nowrap\">Networking</td>\n<td valign=\"top\" style=\"white-space:nowrap\">E-Tile</td>\n<td valign=\"top\"><ul>\n<li>Continuous operating range of 1 Gbps to 28.9 Gbps NRZ and&nbsp;2 Gbps&nbsp;to 58 Gbps PAM4</li>\n<li>Insertion loss compliant to 802.3bj,&nbsp;CEI 25G-LR, and&nbsp;CEI 56G-LR</li>\n<li>Oversampling capability for data rates below&nbsp;1 Gbps</li>\n<li>ATX transmit PLLs (LC-PLL) with user-configurable fractional synthesis capability</li>\n<li>XFP, QSFP-DD, OSFP, QSFP or QSFP28, QSFP56, SFP+, SFP28, SFP56, and CFP or CFP2 or CFP4 optical module support</li>\n<li>Adaptive linear and decision feedback equalization</li>\n<li>Transmit pre-emphasis and de-emphasis</li>\n<li>Dynamic partial reconfiguration of individual transceiver channels</li>\n<li>On-chip instrumentation (Eye Viewer non-intrusive data eye monitoring)</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\">F-Tile</td>\n<td valign=\"top\"><ul>\n<li>General purpose transceiver block (FGT) with continuous operating range of 1 Gbps to 32 Gbps NRZ and 20 Gbps to&nbsp;58 Gbps&nbsp;PAM4</li>\n<li>High speed transceiver block (FHT) with operating ranges of:<br>\n<ul>\n<li>24 Gbps to 29 Gbps NRZ and PAM4</li>\n<li>48 Gbps to 58 Gbps NRZ and PAM4</li>\n<li>96 Gbps to 116 Gbps PAM4</li>\n</ul>\n</li>\n<li>The F-Tiles in these devices have the following transceivers:<br>\n<ul>\n<li>I-Series - FHT and FGT transceivers</li>\n<li>M-Series - FHT and FGT transceivers</li>\n<li>F-Series - FGT transceivers only</li>\n</ul>\n</li>\n</ul>\n</td>\n</tr><tr><td rowspan=\"6\" valign=\"top\">Transceiver hard IP</td>\n<td rowspan=\"3\" valign=\"top\" style=\"white-space:nowrap\">PCIe*</td>\n<td colspan=\"2\" valign=\"top\">Multiple hard IP instantiations in each device</td>\n</tr><tr><td valign=\"top\"><p>P-Tile</p>\n<p style=\"margin-top:0\">F-Tile</p>\n</td>\n<td valign=\"top\"><ul>\n<li>Up to&nbsp;PCIe*&nbsp;4.0 ×16 EP and RP</li>\n<li>Port bifurcation support: 2×8 endpoint or 4×4 root port</li>\n<li>TL bypass feature</li>\n<li>Single-root I/O virtualization (SR-IOV): 8 physical functions or 2K virtual functions</li>\n<li>VirtIO support</li>\n<li>Scalable IOV</li>\n<li>Shared virtual memory</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\">R-Tile</td>\n<td valign=\"top\"><ul>\n<li>Up to&nbsp;PCIe*&nbsp;5.0 ×16 EP and RP</li>\n<li>Port bifurcation support: 2×8 endpoint or 4×4 root port</li>\n<li>TL bypass Feature</li>\n<li>SR-IOV: 8 physical functions or 2K virtual functions</li>\n<li>VirtIO support</li>\n<li>Scalable IOV</li>\n<li>Shared Virtual Memory</li>\n<li>PIPE Direct mode</li>\n<li>Precise Time Management</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\">CXL*</td>\n<td valign=\"top\" style=\"white-space:nowrap\">R-Tile</td>\n<td valign=\"top\"><ul>\n<li>Up to&nbsp;PCIe*&nbsp;5.0 ×16 EP</li>\n<li>Selected features support&nbsp;CXL*&nbsp;1.1 and 2.0 specifications</li>\n<li>Soft logic (encrypted) to support&nbsp;CXL*&nbsp;Type 1, Type 2, or Type 3 devices</li>\n<li>Mix and manage different memory types and controllers</li>\n</ul>\n</td>\n</tr><tr><td rowspan=\"2\" valign=\"top\">Other protocols</td>\n<td valign=\"top\" style=\"white-space:nowrap\">E-Tile</td>\n<td valign=\"top\"><ul>\n<li>Ethernet IP configurations:<ul>\n<li>24× 10 or 25 GbE MAC, PCS, and RS-FEC</li>\n<li>4× 100 GbE MAC, PCS, and RS-FEC</li>\n</ul>\n</li>\n<li>CPRI and fibre channel FECs</li>\n<li>CR/KR (AN/LT)</li>\n<li>1588 PTP</li>\n<li>MAC, PCS, and FEC bypass options</li>\n<li>PMA Direct Mode</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\">F-Tile</td>\n<td valign=\"top\"><ul>\n<li>Ethernet IP Configurations:<ul>\n<li>16× 10 or 25 GbE MAC, PCS, and FEC</li>\n<li>8× 50 GbE MAC, PCS, and FEC</li>\n<li>8× 40 GbE MAC, PCS, and FEC</li>\n<li>4× 100 GbE MAC, PCS, and FEC</li>\n<li>1× 400 GbE MAC, PCS, and FEC</li>\n</ul>\n</li>\n<li>KP FEC support</li>\n<li>Flex-O FEC, FlexE PCS and FEC, Ethernet over OTN Mode, SyncE, fibre channel, and CPRI FEC</li>\n<li>CR/KR (AN/LT)</li>\n<li>1588 PTP</li>\n<li>MAC, PCS, and FEC bypass options</li>\n<li>PMA Direct Mode</li>\n</ul>\n</td>\n</tr><tr><td colspan=\"2\" rowspan=\"3\" valign=\"top\" style=\"white-space:nowrap\">Configuration</td>\n<td colspan=\"2\" valign=\"top\"><ul>\n<li>Dedicated SDM</li>\n<li>Software-programmable device configuration</li>\n<li>Fine-grained partial reconfiguration of core fabric - add or remove system logic while the device is operating</li>\n<li>Dynamic reconfiguration of transceivers and PLLs</li>\n<li>PUF service</li>\n<li>Platform attestation</li>\n<li>Anti-tamper features</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\" style=\"white-space:nowrap\">F-Series</td>\n<td valign=\"top\"><ul>\n<li>Serial and parallel flash interface</li>\n<li>Configuration via protocol (CvP) using&nbsp;PCIe*&nbsp;1.0, 2.0, 3.0, or 4.0</li>\n<li>Comprehensive set of security features including AES-256, SHA-256/384, ECDSA-256/384 accelerators, and multi-factor authentication</li>\n</ul>\n</td>\n</tr><tr><td valign=\"top\"><p>I-Series</p>\n<p style=\"margin-top:0\">M-Series</p>\n</td>\n<td valign=\"top\"><ul>\n<li>Serial and parallel flash interface</li>\n<li>Configuration via protocol (CvP) using&nbsp;PCIe*&nbsp;1.0, 2.0, 3.0, 4.0, or 5.0</li>\n<li>Comprehensive set of security features including AES-256, SHA-256/384, ECDSA-256/384 accelerators, and multi-factor authentication</li>\n</ul>\n</td>\n</tr><tr><td colspan=\"2\" valign=\"top\">Software and tools</td>\n<td colspan=\"2\" valign=\"top\"><ul>\n<li>Altera ® Quartus® Prime Pro Edition&nbsp;design suite with new compiler and&nbsp;Hyper-Aware&nbsp;design flow</li>\n<li>New compile innovations in each&nbsp;Altera®&nbsp;oneAPI&nbsp;release</li>\n<li>Transceiver toolkit</li>\n<li>Platform Designer&nbsp;IP integration tool</li>\n<li>Altera®&nbsp;DSP Builder for FPGAs advanced blockset</li>\n<li>Arm* Development Studio for Altera® SoC FPGA (Arm* DS for Altera® SoC FPGA)</li>\n</ul>\n</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "experiencefragment_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    }
+   }
+  }
+ }
+}

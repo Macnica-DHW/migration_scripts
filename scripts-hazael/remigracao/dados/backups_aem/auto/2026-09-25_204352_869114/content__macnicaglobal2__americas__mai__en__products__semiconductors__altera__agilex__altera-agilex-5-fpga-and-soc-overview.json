@@ -1,0 +1,403 @@
+{
+ "quando": "2026-09-25T20:43:52",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Altera Agilex 5 FPGA and SoC Overview",
+  "manufacturer": "mai:manufacturers/altera",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Altera Agilex 5 FPGA and SoC Overview",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:46 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:24 GMT+0000",
+  "jcr:description": "Altera Agilex 5 FPGA and SoC with AI Tensor Block for edge AI and mid-range performance. Compare E-Series and D-Series FPGA options at Macnica Americas.",
+  "keywords": "Altera, Agilex 5 FPGAs, performance, efficiency, FPGA technology, applications, data center, communications, automotive, aerospace, signal processing, power optimization, customizable designs",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview",
+  "pageTitle": "Altera Agilex 5 FPGA & SoC | AI Tensor Block | Macnica Americas",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Altera Agilex 5 FPGA and SoC Overview",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Altera Agilex 5 devices serve a broad range of applications that require high performance, lower power, and smaller form factors. This tier consists of the performance-optimized D-Series FPGAs and the power-optimized E-Series FPGAs. Altera Agilex 5 devices also feature the industry’s first Enhanced DSP with AI Tensor Block, which deliver high-efficiency AI and digital signal processing (DSP) functionality, and the FPGA industry’s first asymmetric applications processor system consisting of dual Arm Cortex-A76 cores and dual Cortex-A55 cores, which enable you to optimize the performance and power efficiency of their workloads. These characteristics make them ideal for midrange FPGA applications across the edge and core including wireless and wireline communications, video and broadcast equipment, industrial applications, test and measurement products, medical electronics, and defense applications.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th>E-Series FPGAs and SoCs</th>\n<th>D-Series FPGAs and SoCs</th>\n</tr><tr><td width=\"50%\">E-Series FPGAs and SoCs are optimized for power and size - with 50% lower power while delivering up to 2.5X better performance as compared to Cyclone V devices, also with features including transceiver rates up to 24x28 Gbps, PCIe 4.0x4, 6x25GbE, 3,600 Mbps DDR5, dual core of A55 and dual core of A76 make it ideal for intelligent applications at the edge, embedded, and more.</td>\n<td width=\"50%\">D-Series FPGAs and SoCs are optimized for performance and power efficiency - with 42% lower power while delivering up to 1.5X better performance as compared to Stratix 10 FPGAs, also with features including transceiver rates up to 32x28 Gbps, PCIe 4.0x8, 16x25GbE, 4,000 Mbps DDR5, dual core of A55 and dual core of A76 make it ideal for various applications across multiple markets.</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>What is the difference between Agilex 5 E-Series and D-Series?</b></p>\n<p style=\"margin-top:0\">E-Series is optimized for power and size: 50% lower power and up to 2.5× better performance than Cyclone V, transceivers to 24×28 Gbps, and PCIe 4.0 x4. D-Series is optimized for performance: 42% lower power and up to 1.5× better performance than Stratix 10, transceivers to 32×28 Gbps, and PCIe 4.0 x8.</p>\n<p><b>What is the AI Tensor Block in Agilex 5?</b></p>\n<p style=\"margin-top:0\">Agilex 5 includes an Enhanced DSP with AI Tensor Block for high-efficiency AI and DSP. Peak INT8 throughput reaches 25.99 TOPS on the E-Series A5E 065A and 56.22 TOPS on the D-Series A5D 064, with variable-precision DSP blocks.</p>\n<p><b>What processors are in the Agilex 5 hard processor system?</b></p>\n<p style=\"margin-top:0\">The SoC uses an asymmetric applications processor: dual Arm Cortex-A76 cores up to 1.8 GHz and dual Cortex-A55 cores up to 1.5 GHz, with up to 2 MB shared L3 cache. That pairing balances performance and power by workload.</p>\n<p><b>Which memory and interface standards does Agilex 5 support?</b></p>\n<p style=\"margin-top:0\">DDR5 to 4,000 Mbps on D-Series and 3,600 Mbps on E-Series, plus DDR4, LPDDR4, and LPDDR5. Connectivity includes PCIe 4.0, up to 6×25GbE on E-Series and 16×25GbE on D-Series, MIPI D-PHY, LVDS at 1.6 Gbps, and TSN.</p>\n<p><b>What applications is the Agilex 5 mid-range FPGA aimed at?</b></p>\n<p style=\"margin-top:0\">Midrange edge and core designs: wireless and wireline communications, video and broadcast, industrial, test and measurement, medical electronics, and defense. Named focus markets are image sensor processing, autonomous mobile robots, and clinical systems, including battery-powered clinical equipment.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Altera Agilex® 5 FPGAs and SoCs E-Series Product Table - Device Group A",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\n<tbody><tr><td colspan=\"5\"><h5>PRODUCT LINE</h5>\n</td>\n<td><p>A5E 013A</p>\n</td>\n<td><p>A5E 028A</p>\n</td>\n<td><p>A5E 043A</p>\n</td>\n<td><p>A5E 052A</p>\n</td>\n<td><p>A5E 065A</p>\n</td>\n</tr><tr><td rowspan=\"11\" style=\"white-space:nowrap\">Resources</td>\n<td colspan=\"4\">Logic elements (LEs)</td>\n<td style=\"white-space:nowrap\">138,060</td>\n<td style=\"white-space:nowrap\">282,256</td>\n<td style=\"white-space:nowrap\">434,240</td>\n<td style=\"white-space:nowrap\">523,920</td>\n<td style=\"white-space:nowrap\">656,080</td>\n</tr><tr><td colspan=\"4\">Adaptive logic modules (ALMs)</td>\n<td style=\"white-space:nowrap\">46,800</td>\n<td style=\"white-space:nowrap\">95,680</td>\n<td style=\"white-space:nowrap\">147,200</td>\n<td style=\"white-space:nowrap\">177,600</td>\n<td style=\"white-space:nowrap\">222,400</td>\n</tr><tr><td colspan=\"4\">ALM registers</td>\n<td style=\"white-space:nowrap\">68,400</td>\n<td style=\"white-space:nowrap\">93,600</td>\n<td style=\"white-space:nowrap\">588,800</td>\n<td style=\"white-space:nowrap\">710,400</td>\n<td style=\"white-space:nowrap\">889,600</td>\n</tr><tr><td colspan=\"4\">M20K memory blocks</td>\n<td style=\"white-space:nowrap\">358</td>\n<td style=\"white-space:nowrap\">716</td>\n<td style=\"white-space:nowrap\">1,050</td>\n<td style=\"white-space:nowrap\">1,288</td>\n<td style=\"white-space:nowrap\">1,611</td>\n</tr><tr><td colspan=\"4\">M20K memory size (Mb)</td>\n<td style=\"white-space:nowrap\">6.99</td>\n<td style=\"white-space:nowrap\">13.98</td>\n<td style=\"white-space:nowrap\">20.51</td>\n<td style=\"white-space:nowrap\">25.16</td>\n<td style=\"white-space:nowrap\">31.46</td>\n</tr><tr><td colspan=\"4\">MLAB memory count</td>\n<td style=\"white-space:nowrap\">2,340</td>\n<td style=\"white-space:nowrap\">4,784</td>\n<td style=\"white-space:nowrap\">6,720</td>\n<td style=\"white-space:nowrap\">8,440</td>\n<td style=\"white-space:nowrap\">11,120</td>\n</tr><tr><td colspan=\"4\">MLAB memory size (Mb)</td>\n<td style=\"white-space:nowrap\">1.0</td>\n<td style=\"white-space:nowrap\">1.8</td>\n<td style=\"white-space:nowrap\">2.4</td>\n<td style=\"white-space:nowrap\">2.8</td>\n<td style=\"white-space:nowrap\">4.3</td>\n</tr><tr><td colspan=\"4\">I/O PLL</td>\n<td>4</td>\n<td>4</td>\n<td>8</td>\n<td>8</td>\n<td>8</td>\n</tr><tr><td colspan=\"4\">Variable-precision digital signal processing (DSP) blocks</td>\n<td style=\"white-space:nowrap\">188</td>\n<td style=\"white-space:nowrap\">376</td>\n<td style=\"white-space:nowrap\">564</td>\n<td style=\"white-space:nowrap\">676</td>\n<td style=\"white-space:nowrap\">846</td>\n</tr><tr><td colspan=\"4\">18 x 19 multipliers</td>\n<td style=\"white-space:nowrap\">376</td>\n<td style=\"white-space:nowrap\">752</td>\n<td style=\"white-space:nowrap\">1,128</td>\n<td style=\"white-space:nowrap\">1,352</td>\n<td style=\"white-space:nowrap\">130</td>\n</tr><tr><td colspan=\"4\">Peak INT8 (TOPS)</td>\n<td style=\"white-space:nowrap\">5.78</td>\n<td style=\"white-space:nowrap\">11.55</td>\n<td style=\"white-space:nowrap\">17.33</td>\n<td style=\"white-space:nowrap\">20.78</td>\n<td style=\"white-space:nowrap\">25.99</td>\n</tr><tr><td rowspan=\"7\">Maximum Available Device Resources</td>\n<td colspan=\"4\">LVDS pairs at 1.6 Gbps</td>\n<td style=\"white-space:nowrap\">96</td>\n<td style=\"white-space:nowrap\">96</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">192</td>\n</tr><tr><td colspan=\"4\">DDR4/5 and LPDDR4/5 interfaces (x32)</td>\n<td>2</td>\n<td>2</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n</tr><tr><td colspan=\"4\">MIPI D-PHY interface</td>\n<td style=\"white-space:nowrap\">14</td>\n<td style=\"white-space:nowrap\">14</td>\n<td style=\"white-space:nowrap\">28</td>\n<td style=\"white-space:nowrap\">28</td>\n<td style=\"white-space:nowrap\">28</td>\n</tr><tr><td colspan=\"4\">Differential (RX or TX) pairs at 28 Gbps</td>\n<td>4</td>\n<td style=\"white-space:nowrap\">12</td>\n<td style=\"white-space:nowrap\">16</td>\n<td style=\"white-space:nowrap\">24</td>\n<td style=\"white-space:nowrap\">24</td>\n</tr><tr><td colspan=\"4\">PCIe 4.0 x4 instance</td>\n<td>1</td>\n<td>3</td>\n<td>4</td>\n<td>6</td>\n<td>6</td>\n</tr><tr><td colspan=\"4\">High-speed I/O (HSIO)</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">384</td>\n</tr><tr><td colspan=\"4\">High-voltage I/O (HVIO)</td>\n<td style=\"white-space:nowrap\">200</td>\n<td style=\"white-space:nowrap\">200</td>\n<td style=\"white-space:nowrap\">120</td>\n<td style=\"white-space:nowrap\">120</td>\n<td style=\"white-space:nowrap\">120</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\">Secure device manager (SDM)</td>\n<td colspan=\"5\">Provides SHA-384 bitstream integrity, ECDSA 256/384 bitstream authentication, AES-256 bitstream encryption, physically unclonable function (PUF) protected key storage, side-channel attack resistance, SPDM attestation, cryptographic services, physical anti-tamper support</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\">Hard processor system</td>\n<td colspan=\"5\">Multi-core with 32-bit/64-bit dual-core Arm Cortex-A55 up to 1.5 GHz with 32 KB I/D cache and 128 KB L2 cache, and dual-core Arm Cortex-A76 up to 1.8 GHz with 64 KB I/D cache and 256 KB L2 cache, and up to 2 MB L3 shared cache, multi-channels direct memory access (DMA), 512 KB on-chip RAM, USB 3.1 x1, USB 2.0 OTG x2, TSN MAC x3, UART x2, SPI M x2, SPI S x2, I3C x2, I2C x5, NAND x1, SDMMC x1, Osc timer x2, SP timer x2, watchdog x5, GPIO x2.</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">Transceiver</td>\n<td colspan=\"5\">PCI Express (PCIe) hard IP up to PCIe 4.0 x4 EP and RP Transceiver channel count: up to 24 channels at 28 Gbps (NRZ) Ethernet IP: up to 6 x10/25 GbE hard IP (MAC, PCS, and FEC)</td>\n</tr><tr><td colspan=\"10\">Package Options3 and I/O Pins4: General-Purpose I/O (GPIO) Count, High-Voltage I/O Count, LVDS Pairs5, and Transceiver Count</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">B23A</td>\n<td style=\"white-space:nowrap\">120/96/4</td>\n<td style=\"white-space:nowrap\">120/96/12</td>\n<td style=\"white-space:nowrap\">120/96/12</td>\n<td style=\"white-space:nowrap\">120/96/12</td>\n<td style=\"white-space:nowrap\">120/96/12</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">B32A</td>\n<td style=\"white-space:nowrap\">200/192/4</td>\n<td style=\"white-space:nowrap\">200/192/12</td>\n<td style=\"white-space:nowrap\">120/384/16</td>\n<td style=\"white-space:nowrap\">120/384/24</td>\n<td style=\"white-space:nowrap\">120/384/24</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Altera Agilex® 5 FPGAs and SoCs E-Series Product Table - Device Group B",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\n<tbody><tr><td colspan=\"5\"><h5><span style=\"white-space:nowrap\">PRODUCT</span> LINE</h5>\n</td>\n<td>A5E 005B</td>\n<td>A5E 007B</td>\n<td>A5E 008B</td>\n<td>A5E 013B</td>\n<td>A5E 028B</td>\n<td>A5E&nbsp;043B</td>\n<td style=\"white-space:nowrap\">A5E052BA</td>\n<td style=\"white-space:nowrap\">A5E065B</td>\n</tr><tr><td rowspan=\"11\" style=\"white-space:nowrap\">Resources</td>\n<td colspan=\"4\">Logic <span style=\"white-space:nowrap\">elements</span> (LEs)</td>\n<td style=\"white-space:nowrap\">50,445</td>\n<td style=\"white-space:nowrap\">69,030</td>\n<td style=\"white-space:nowrap\">85,196</td>\n<td style=\"white-space:nowrap\">138,060</td>\n<td style=\"white-space:nowrap\">282,256</td>\n<td style=\"white-space:nowrap\">434,240</td>\n<td style=\"white-space:nowrap\">523,920</td>\n<td style=\"white-space:nowrap\">656,080</td>\n</tr><tr><td colspan=\"4\"><span style=\"white-space:nowrap\">Adaptive</span> logic <span style=\"white-space:nowrap\">modules</span> (ALMs)</td>\n<td style=\"white-space:nowrap\">17,100</td>\n<td style=\"white-space:nowrap\">23,400</td>\n<td style=\"white-space:nowrap\">28,880</td>\n<td style=\"white-space:nowrap\">46,800</td>\n<td style=\"white-space:nowrap\">95,680</td>\n<td style=\"white-space:nowrap\">147,200</td>\n<td style=\"white-space:nowrap\">177,600</td>\n<td style=\"white-space:nowrap\">222,400</td>\n</tr><tr><td colspan=\"4\">ALM <span style=\"white-space:nowrap\">registers</span></td>\n<td style=\"white-space:nowrap\">68,400</td>\n<td style=\"white-space:nowrap\">93,600</td>\n<td style=\"white-space:nowrap\">115,520</td>\n<td style=\"white-space:nowrap\">187,200</td>\n<td style=\"white-space:nowrap\">382,720</td>\n<td style=\"white-space:nowrap\">588,800</td>\n<td style=\"white-space:nowrap\">710,400</td>\n<td style=\"white-space:nowrap\">889,600</td>\n</tr><tr><td colspan=\"4\">M20K <span style=\"white-space:nowrap\">memory</span> <span style=\"white-space:nowrap\">blocks</span></td>\n<td style=\"white-space:nowrap\">130</td>\n<td style=\"white-space:nowrap\">179</td>\n<td style=\"white-space:nowrap\">229</td>\n<td style=\"white-space:nowrap\">358</td>\n<td style=\"white-space:nowrap\">716</td>\n<td style=\"white-space:nowrap\">1,050</td>\n<td style=\"white-space:nowrap\">1,288</td>\n<td style=\"white-space:nowrap\">1,611</td>\n</tr><tr><td colspan=\"4\">M20K <span style=\"white-space:nowrap\">memory</span> size (Mb)</td>\n<td style=\"white-space:nowrap\">2.54</td>\n<td style=\"white-space:nowrap\">3.50</td>\n<td style=\"white-space:nowrap\">4.47</td>\n<td style=\"white-space:nowrap\">6.99</td>\n<td style=\"white-space:nowrap\">13.98</td>\n<td style=\"white-space:nowrap\">20.51</td>\n<td style=\"white-space:nowrap\">25.16</td>\n<td style=\"white-space:nowrap\">31.46</td>\n</tr><tr><td colspan=\"4\">MLAB <span style=\"white-space:nowrap\">memory</span> count</td>\n<td style=\"white-space:nowrap\">850</td>\n<td style=\"white-space:nowrap\">1,170</td>\n<td style=\"white-space:nowrap\">1,780</td>\n<td style=\"white-space:nowrap\">2,340</td>\n<td style=\"white-space:nowrap\">4,784</td>\n<td style=\"white-space:nowrap\">6,720</td>\n<td style=\"white-space:nowrap\">8,440</td>\n<td style=\"white-space:nowrap\">11,120</td>\n</tr><tr><td colspan=\"4\">MLAB <span style=\"white-space:nowrap\">memory</span> size (Mb)</td>\n<td style=\"white-space:nowrap\">0.52</td>\n<td style=\"white-space:nowrap\">0.71</td>\n<td style=\"white-space:nowrap\">1.09</td>\n<td style=\"white-space:nowrap\">1.43</td>\n<td style=\"white-space:nowrap\">2.92</td>\n<td style=\"white-space:nowrap\">4.10</td>\n<td style=\"white-space:nowrap\">5.13</td>\n<td style=\"white-space:nowrap\">6.79</td>\n</tr><tr><td colspan=\"4\">I/O PLL</td>\n<td>2</td>\n<td>2</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n<td>8</td>\n<td>8</td>\n<td>8</td>\n</tr><tr><td colspan=\"4\"><span style=\"white-space:nowrap\">Variable</span>-<span style=\"white-space:nowrap\">precision</span> <span style=\"white-space:nowrap\">digital</span> <span style=\"white-space:nowrap\">signal</span> <span style=\"white-space:nowrap\">processing</span> (DSP) <span style=\"white-space:nowrap\">blocks</span></td>\n<td style=\"white-space:nowrap\">65</td>\n<td style=\"white-space:nowrap\">94</td>\n<td style=\"white-space:nowrap\">116</td>\n<td style=\"white-space:nowrap\">188</td>\n<td style=\"white-space:nowrap\">376</td>\n<td style=\"white-space:nowrap\">564</td>\n<td style=\"white-space:nowrap\">676</td>\n<td style=\"white-space:nowrap\">846</td>\n</tr><tr><td colspan=\"4\">18 x 19 <span style=\"white-space:nowrap\">multipliers</span></td>\n<td style=\"white-space:nowrap\">130</td>\n<td style=\"white-space:nowrap\">188</td>\n<td style=\"white-space:nowrap\">232</td>\n<td style=\"white-space:nowrap\">376</td>\n<td style=\"white-space:nowrap\">752</td>\n<td style=\"white-space:nowrap\">1,128</td>\n<td style=\"white-space:nowrap\">1,352</td>\n<td style=\"white-space:nowrap\">1,692</td>\n</tr><tr><td colspan=\"4\">Peak INT8 (TOPS)</td>\n<td style=\"white-space:nowrap\">1.7</td>\n<td style=\"white-space:nowrap\">2.46</td>\n<td style=\"white-space:nowrap\">3.05</td>\n<td style=\"white-space:nowrap\">4.93</td>\n<td style=\"white-space:nowrap\">9.85</td>\n<td style=\"white-space:nowrap\">14.78</td>\n<td style=\"white-space:nowrap\">17.72</td>\n<td style=\"white-space:nowrap\">22.17</td>\n</tr><tr><td rowspan=\"7\"><span style=\"white-space:nowrap\">Maximum</span> <span style=\"white-space:nowrap\">Available</span> <span style=\"white-space:nowrap\">Device</span> <span style=\"white-space:nowrap\">Resources</span></td>\n<td colspan=\"4\">LVDS pairs at 1.6 Gbps</td>\n<td style=\"white-space:nowrap\">48</td>\n<td style=\"white-space:nowrap\">48</td>\n<td style=\"white-space:nowrap\">96</td>\n<td style=\"white-space:nowrap\">96</td>\n<td style=\"white-space:nowrap\">96</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">192</td>\n</tr><tr><td colspan=\"4\">DDR4/5 and LPDDR4/5 <span style=\"white-space:nowrap\">interfaces</span> (x32)</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n<td>2</td>\n<td>2</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n</tr><tr><td colspan=\"4\">MIPI D-PHY <span style=\"white-space:nowrap\">interface</span></td>\n<td>7</td>\n<td>7</td>\n<td style=\"white-space:nowrap\">14</td>\n<td style=\"white-space:nowrap\">14</td>\n<td style=\"white-space:nowrap\">14</td>\n<td style=\"white-space:nowrap\">28</td>\n<td style=\"white-space:nowrap\">28</td>\n<td style=\"white-space:nowrap\">28</td>\n</tr><tr><td colspan=\"4\"><span style=\"white-space:nowrap\">Differential</span> (RX or TX) pairs at 28 Gbps</td>\n<td>0</td>\n<td>0</td>\n<td>4</td>\n<td>4</td>\n<td style=\"white-space:nowrap\">12</td>\n<td style=\"white-space:nowrap\">16</td>\n<td style=\"white-space:nowrap\">24</td>\n<td style=\"white-space:nowrap\">24</td>\n</tr><tr><td colspan=\"4\">PCIe 4.0 x4 <span style=\"white-space:nowrap\">instance</span></td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td>3</td>\n<td>4</td>\n<td>6</td>\n<td>6</td>\n</tr><tr><td colspan=\"4\">High-speed I/O (HSIO)</td>\n<td style=\"white-space:nowrap\">96</td>\n<td style=\"white-space:nowrap\">96</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">384</td>\n</tr><tr><td colspan=\"4\">High-<span style=\"white-space:nowrap\">voltage</span> I/O (HVIO)</td>\n<td style=\"white-space:nowrap\">160</td>\n<td style=\"white-space:nowrap\">160</td>\n<td style=\"white-space:nowrap\">200</td>\n<td style=\"white-space:nowrap\">200</td>\n<td style=\"white-space:nowrap\">200</td>\n<td style=\"white-space:nowrap\">120</td>\n<td style=\"white-space:nowrap\">120</td>\n<td style=\"white-space:nowrap\">120</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\"><span style=\"white-space:nowrap\">Secure</span> <span style=\"white-space:nowrap\">device</span> <span style=\"white-space:nowrap\">manager</span> (SDM)</td>\n<td colspan=\"8\"><span style=\"white-space:nowrap\">Provides</span> SHA-384 <span style=\"white-space:nowrap\">bitstream</span> <span style=\"white-space:nowrap\">integrity</span>, ECDSA 256/384 <span style=\"white-space:nowrap\">bitstream</span> <span style=\"white-space:nowrap\">authentication</span>, AES-256 <span style=\"white-space:nowrap\">bitstream</span> <span style=\"white-space:nowrap\">encryption</span>, <span style=\"white-space:nowrap\">physically</span> <span style=\"white-space:nowrap\">unclonable</span> <span style=\"white-space:nowrap\">function</span> (PUF) <span style=\"white-space:nowrap\">protected</span> key <span style=\"white-space:nowrap\">storage</span>, side-<span style=\"white-space:nowrap\">channel</span> <span style=\"white-space:nowrap\">attack</span> <span style=\"white-space:nowrap\">resistance</span>, SPDM <span style=\"white-space:nowrap\">attestation</span>, <span style=\"white-space:nowrap\">cryptographic</span> <span style=\"white-space:nowrap\">services</span>, <span style=\"white-space:nowrap\">physical</span> anti-<span style=\"white-space:nowrap\">tamper</span> <span style=\"white-space:nowrap\">support</span></td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\">Hard <span style=\"white-space:nowrap\">processor</span> <span style=\"white-space:nowrap\">system</span></td>\n<td colspan=\"8\">Multi-core with 32-bit/64-bit dual-core Arm <span style=\"white-space:nowrap\">Cortex</span>-A55 up to 1.5 GHz with 32 KB I/D cache and 128 KB L2 cache, and dual-core Arm <span style=\"white-space:nowrap\">Cortex</span>-A76 up to 1.8 GHz with 64 KB I/D cache and 256 KB L2 cache, and up to 2 MB L3 <span style=\"white-space:nowrap\">shared</span> cache, multi-<span style=\"white-space:nowrap\">channels</span> <span style=\"white-space:nowrap\">direct</span> <span style=\"white-space:nowrap\">memory</span> <span style=\"white-space:nowrap\">access</span> (DMA), 512 KB on-chip RAM, USB 3.1 x1, USB 2.0 OTG x2, TSN MAC x3, UART x2, SPI M x2, SPI S x2, I3C x2, I2C x5, NAND x1, SDMMC x1, Osc timer x2, SP timer x2, <span style=\"white-space:nowrap\">watchdog</span> x5, GPIO x2.</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">Transceiver</td>\n<td colspan=\"8\">PCI <span style=\"white-space:nowrap\">Express</span> (PCIe) hard IP up to PCIe 4.0 x4 EP and RP <span style=\"white-space:nowrap\">Transceiver</span> <span style=\"white-space:nowrap\">channel</span> count: up to 24 <span style=\"white-space:nowrap\">channels</span> at 28 Gbps (NRZ) <span style=\"white-space:nowrap\">Ethernet</span> IP: up to 6 x10/25 GbE hard IP (MAC, PCS, and FEC)</td>\n</tr><tr><td colspan=\"10\"><span style=\"white-space:nowrap\">Package</span> Options3 and I/O Pins4: <span style=\"white-space:nowrap\">General</span>-<span style=\"white-space:nowrap\">Purpose</span> I/O (GPIO) Count, High-<span style=\"white-space:nowrap\">Voltage</span> I/O Count, LVDS Pairs5, and <span style=\"white-space:nowrap\">Transceiver</span> Count</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">B15A</td>\n<td style=\"white-space:nowrap\">80/62</td>\n<td style=\"white-space:nowrap\">80/62</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">M16A</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td style=\"white-space:nowrap\">40/192/4</td>\n<td style=\"white-space:nowrap\">40/192/4</td>\n<td style=\"white-space:nowrap\">40/192/8</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">B18A</td>\n<td style=\"white-space:nowrap\">160/52</td>\n<td style=\"white-space:nowrap\">160/52</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">B23B</td>\n<td style=\"white-space:nowrap\">160/96</td>\n<td style=\"white-space:nowrap\">160/96</td>\n<td style=\"white-space:nowrap\">160/192</td>\n<td style=\"white-space:nowrap\">160/192</td>\n<td style=\"white-space:nowrap\">160/192</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">B23A</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td style=\"white-space:nowrap\">120/96/4</td>\n<td style=\"white-space:nowrap\">120/96/4</td>\n<td style=\"white-space:nowrap\">120/96/12</td>\n<td style=\"white-space:nowrap\">120/96/12</td>\n<td style=\"white-space:nowrap\">120/96/12</td>\n<td style=\"white-space:nowrap\">120/96/12</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">B32A(</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td style=\"white-space:nowrap\">200/192/4</td>\n<td style=\"white-space:nowrap\">200/192/4</td>\n<td style=\"white-space:nowrap\">200/192/12</td>\n<td style=\"white-space:nowrap\">120/384/16</td>\n<td style=\"white-space:nowrap\">120/384/</td>\n<td style=\"white-space:nowrap\">120/384/24</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Altera Agilex® 5 FPGAs and SoCs D-Series Product Table",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\n<tbody><tr><td colspan=\"5\"><h5>PRODUCT LINE</h5>\n</td>\n<td><p>A5D 010</p>\n</td>\n<td><p>A5D 025</p>\n</td>\n<td><p>A5D 031</p>\n</td>\n<td><p>A5D 051</p>\n</td>\n<td><p>A5D 064</p>\n</td>\n</tr><tr><td rowspan=\"11\" style=\"white-space:nowrap\">Resources</td>\n<td colspan=\"4\">Logic elements (LEs)</td>\n<td style=\"white-space:nowrap\">103,250</td>\n<td style=\"white-space:nowrap\">254,054</td>\n<td style=\"white-space:nowrap\">318,600</td>\n<td style=\"white-space:nowrap\">515,070</td>\n<td style=\"white-space:nowrap\">644,280</td>\n</tr><tr><td colspan=\"4\">Adaptive logic modules (ALMs)</td>\n<td style=\"white-space:nowrap\">35,000</td>\n<td style=\"white-space:nowrap\">86,120</td>\n<td style=\"white-space:nowrap\">108,000</td>\n<td style=\"white-space:nowrap\">174,600</td>\n<td style=\"white-space:nowrap\">218,400</td>\n</tr><tr><td colspan=\"4\">ALM registers</td>\n<td style=\"white-space:nowrap\">140,000</td>\n<td style=\"white-space:nowrap\">344,480</td>\n<td style=\"white-space:nowrap\">432,000</td>\n<td style=\"white-space:nowrap\">698,400</td>\n<td style=\"white-space:nowrap\">873,600</td>\n</tr><tr><td colspan=\"4\">M20K memory blocks</td>\n<td style=\"white-space:nowrap\">534</td>\n<td style=\"white-space:nowrap\">1,281</td>\n<td style=\"white-space:nowrap\">1,602</td>\n<td style=\"white-space:nowrap\">2,563</td>\n<td style=\"white-space:nowrap\">3,204</td>\n</tr><tr><td colspan=\"4\">M20K memory size (Mb)</td>\n<td style=\"white-space:nowrap\">10.43</td>\n<td style=\"white-space:nowrap\">25.02</td>\n<td style=\"white-space:nowrap\">31.29</td>\n<td style=\"white-space:nowrap\">50.06</td>\n<td style=\"white-space:nowrap\">62.58</td>\n</tr><tr><td colspan=\"4\">MLAB memory count</td>\n<td style=\"white-space:nowrap\">1780</td>\n<td style=\"white-space:nowrap\">3420</td>\n<td style=\"white-space:nowrap\">5,400</td>\n<td style=\"white-space:nowrap\">8,440</td>\n<td style=\"white-space:nowrap\">10,920</td>\n</tr><tr><td colspan=\"4\">MLAB memory size (Mb)</td>\n<td style=\"white-space:nowrap\">1.09</td>\n<td style=\"white-space:nowrap\">2.09</td>\n<td style=\"white-space:nowrap\">3.30</td>\n<td style=\"white-space:nowrap\">5.15</td>\n<td style=\"white-space:nowrap\">6.67</td>\n</tr><tr><td colspan=\"4\">I/O PLL</td>\n<td>8</td>\n<td>8</td>\n<td>8</td>\n<td>8</td>\n<td>8</td>\n</tr><tr><td colspan=\"4\">Variable-precision digital signal processing (DSP) blocks</td>\n<td style=\"white-space:nowrap\">276</td>\n<td style=\"white-space:nowrap\">736</td>\n<td style=\"white-space:nowrap\">920</td>\n<td style=\"white-space:nowrap\">1,472</td>\n<td style=\"white-space:nowrap\">1,840</td>\n</tr><tr><td colspan=\"4\">18 x 19 multipliers</td>\n<td style=\"white-space:nowrap\">552</td>\n<td style=\"white-space:nowrap\">1,472</td>\n<td style=\"white-space:nowrap\">1,840</td>\n<td style=\"white-space:nowrap\">2,944</td>\n<td style=\"white-space:nowrap\">3,680</td>\n</tr><tr><td colspan=\"4\">Peak INT8 (TOPS)</td>\n<td style=\"white-space:nowrap\">8.48</td>\n<td style=\"white-space:nowrap\">22.61</td>\n<td style=\"white-space:nowrap\">28.26</td>\n<td style=\"white-space:nowrap\">45.22</td>\n<td style=\"white-space:nowrap\">56.22</td>\n</tr><tr><td rowspan=\"7\">Maximum Available Device Resources</td>\n<td colspan=\"4\">LVDS pairs at 1.6 Gbps</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">192</td>\n<td style=\"white-space:nowrap\">192</td>\n</tr><tr><td colspan=\"4\">DDR4/5 and LPDDR4/5 interfaces (x32)</td>\n<td>2</td>\n<td>2</td>\n<td>2</td>\n<td>2</td>\n<td>2</td>\n</tr><tr><td colspan=\"4\">MIPI D-PHY interface</td>\n<td style=\"white-space:nowrap\">28</td>\n<td style=\"white-space:nowrap\">28</td>\n<td style=\"white-space:nowrap\">28</td>\n<td style=\"white-space:nowrap\">28</td>\n<td style=\"white-space:nowrap\">28</td>\n</tr><tr><td colspan=\"4\">Differential (RX or TX) pairs at 28 Gbps</td>\n<td style=\"white-space:nowrap\">16</td>\n<td style=\"white-space:nowrap\">16</td>\n<td style=\"white-space:nowrap\">16</td>\n<td style=\"white-space:nowrap\">24</td>\n<td style=\"white-space:nowrap\">32</td>\n</tr><tr><td colspan=\"4\">PCIe 4.0 x4 instance</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n<td>6</td>\n<td>8</td>\n</tr><tr><td colspan=\"4\">High-speed I/O (HSIO)</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">384</td>\n</tr><tr><td colspan=\"4\">High-voltage I/O (HVIO)</td>\n<td style=\"white-space:nowrap\">60</td>\n<td style=\"white-space:nowrap\">60</td>\n<td style=\"white-space:nowrap\">60</td>\n<td style=\"white-space:nowrap\">60</td>\n<td style=\"white-space:nowrap\">60</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\">Secure device manager (SDM)</td>\n<td colspan=\"5\">Provides SHA-384 bitstream integrity, ECDSA 256/384 bitstream authentication, AES-256 bitstream encryption, physically unclonable function (PUF) protected key storage, side-channel attack resistance, SPDM attestation, cryptographic services, physical anti-tamper support</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\">Hard processor system</td>\n<td colspan=\"5\">Multi-core with 32-bit/64-bit dual-core Arm Cortex-A55 up to 1.5 GHz with 32 KB I/D cache and 128 KB L2 cache, and dual-core Arm Cortex-A76 up to 1.8 GHz with 64 KB I/D cache and 256 KB L2 cache, and up to 2 MB L3 shared cache, multi-channels direct memory access (DMA), 512 KB on-chip RAM, USB 3.1 x1, USB 2.0 OTG x2, TSN MAC x3, UART x2, SPI M x2, SPI S x2, I3C x2, I2C x5, NAND x1, SDMMC x1, Osc timer x2, SP timer x2, watchdog x5, GPIO x2.</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">Transceiver</td>\n<td colspan=\"5\">PCI Express (PCIe) hard IP up to PCIe 4.0 x4 EP and RP Transceiver channel count: up to 24 channels at 28 Gbps (NRZ) Ethernet IP: up to 6 x10/25 GbE hard IP (MAC, PCS, and FEC)</td>\n</tr><tr><td colspan=\"10\">Package Options3 and I/O Pins4: General-Purpose I/O (GPIO) Count, High-Voltage I/O Count, LVDS Pairs5, and Transceiver Count</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">B23A</td>\n<td style=\"white-space:nowrap\">60/192/8</td>\n<td style=\"white-space:nowrap\">60/192/8</td>\n<td style=\"white-space:nowrap\">60/192/8</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td>&nbsp;</td>\n<td colspan=\"4\" style=\"white-space:nowrap\">B32A</td>\n<td style=\"white-space:nowrap\">60/384/16</td>\n<td style=\"white-space:nowrap\">60/384/16</td>\n<td style=\"white-space:nowrap\">60/384/16</td>\n<td style=\"white-space:nowrap\">60/384/24</td>\n<td style=\"white-space:nowrap\">60/384/32</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Altera Agilex® 5 FPGA Focus Markets",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Image Sensor Processing",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Inline image processing",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Pixel defect correction</li>\n<li>Vignette correction</li>\n<li>Adaptive noise reduction</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Customized Connectivity",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>High-definition multimedia interface (HDMI)</li>\n<li>MIPI D-PHY</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Hard Processor System",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Flexible embedded software stack</li>\n<li>Graphical user interface</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Autonomous Mobile Robots",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Flexible I/O",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>MIPI</li>\n<li>HDMI</li>\n<li>Time-Sensitive Networking (TSN)</li>\n<li>LVDS</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "FPGA Acceleration",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Sensor fusion</li>\n<li>Point of cloud processing</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Hard Processor System",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>RTOS</li>\n<li>Hypervisor functions</li>\n<li>Network features</li>\n<li>User application</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Clinical System",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Power-Optimized",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Low-density option</li>\n<li>Battery-powered clinical equipment</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "FPGA Acceleration",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Custom image progressing</li>\n<li>AR/VR innovations</li>\n<li>Deterministic low latency</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Hard Processor System",
+         "type": "h4",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Real-time waveform analysis</li>\n<li>Graphic controls for Human-Machine Interaction (HMI)</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     }
+    },
+    "container_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "experiencefragment_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    }
+   }
+  }
+ }
+}
