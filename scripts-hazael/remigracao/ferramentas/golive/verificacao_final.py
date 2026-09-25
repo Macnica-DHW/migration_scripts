@@ -92,7 +92,9 @@ def permitido(no, k, regs, ops):
 
 
 def norm_html(v):
-    return re.sub(r"\s+", " ", html.unescape(re.sub(r'\s+rel="[^"]*"', "", str(v or "")))).replace("<br />", "<br>").strip()
+    """Sem o que não muda a tela: rel, entidades, <br /> x <br>, espaço (inclusive entre tags — o .json filtrado junta as linhas)."""
+    v = re.sub(r"\s+", " ", html.unescape(re.sub(r'\s+rel="[^"]*"', "", str(v or "")))).replace("<br />", "<br>")
+    return re.sub(r">\s+<", "><", v).strip()
 
 
 def no_lugar(jc, regs, ops):

@@ -55,12 +55,20 @@ _gwi = {}
 
 
 def de_gwi(no, prop="text"):
-    """Propriedade de um nó do GWI — só GET (a fonte do conteúdo que entra)."""
-    if no not in _gwi:
-        st, j = C.ler(no, ".json")
-        assert st == 200 and "macnicagwi" in no, (no, st)
-        _gwi[no] = j
-    return _gwi[no][prop]
+    """Propriedade de um nó do GWI — só GET (a fonte do conteúdo que entra). Lê o valor CRU do jcr:content.infinity.json da
+    página: o `.json` do próprio nó devolve HTML filtrado (junta as linhas, põe rel="noopener noreferrer", &#34;, <br />)
+    — medido em 25/09 na mb991 e na mba8mp."""
+    import links_vs_gwi as LV
+    assert "macnicagwi" in no and "/jcr:content" in no, no
+    pag, _, resto = no.partition("/jcr:content")
+    if pag not in _gwi:
+        j, st = LV.fundo(f"{pag}/jcr:content")
+        assert j is not None, (pag, st)
+        _gwi[pag] = j
+    j = _gwi[pag]
+    for parte in [x for x in resto.split("/") if x]:
+        j = j[parte]
+    return j[prop]
 
 
 def de_g2(no, prop):
