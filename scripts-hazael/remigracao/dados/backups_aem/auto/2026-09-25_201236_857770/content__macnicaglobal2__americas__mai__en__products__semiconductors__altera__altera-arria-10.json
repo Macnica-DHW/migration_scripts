@@ -1,0 +1,217 @@
+{
+ "quando": "2026-09-25T20:12:36",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Altera® Arria® 10 FPGAs and SoCs",
+  "manufacturer": "mai:manufacturers/altera",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Altera® Arria® 10",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:46 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:27 GMT+0000",
+  "jcr:description": "Explore Altera® Arria® 10 FPGAs & SoCs, delivering high performance & low power consumption for advanced applications. Learn more at Macnica Americas.",
+  "keywords": "Altera Arria 10, FPGA, SoC FPGA, higher performance, lower power consumption, advanced features, versatile applications",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10",
+  "pageTitle": "Altera® Arria® 10 FPGAs and SoCs",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Altera® Arria® 10",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>The Altera Arria 10 FPGAs and SoCs offer exceptional performance at 20 nm, surpassing competing products by a full-speed grade. They also consume up to 40% less power than previous-gen FPGAs and SoCs, and feature the industry's unique hard floating-point DSP blocks that can reach speeds of 1,500 giga floating-point operations per second (GFLOPS). These advanced Altera Arria 10 devices are well-suited for a broad spectrum of end-market applications.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Altera® Arria® 10 Product Table",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "table_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td colspan=\"2\"><h5><span style=\"white-space:nowrap\">PRODUCT</span> LINE</h5>\n</td>\n<td><p>GX 160</p>\n<p style=\"margin-top:0\">SX 160</p>\n</td>\n<td><p>GX 220</p>\n<p style=\"margin-top:0\">SX 220</p>\n</td>\n<td><p>GX 220</p>\n<p style=\"margin-top:0\">SX 220</p>\n</td>\n<td><p>GX 320</p>\n<p style=\"margin-top:0\">SX 320</p>\n</td>\n<td><p>GX 480</p>\n<p style=\"margin-top:0\">SX 480</p>\n</td>\n<td><p>GX 570</p>\n<p style=\"margin-top:0\">SX 570</p>\n</td>\n<td><p>GX 660</p>\n<p style=\"margin-top:0\">SX 660</p>\n</td>\n<td>GX 900</td>\n<td>GX 1150</td>\n<td>GT 900</td>\n<td>GT 1150</td>\n</tr><tr><td rowspan=\"14\" style=\"white-space:nowrap\">Resources</td>\n<td>LEs (K)</td>\n<td style=\"white-space:nowrap\">160</td>\n<td style=\"white-space:nowrap\">220</td>\n<td style=\"white-space:nowrap\">270</td>\n<td style=\"white-space:nowrap\">320</td>\n<td style=\"white-space:nowrap\">480</td>\n<td style=\"white-space:nowrap\">570</td>\n<td style=\"white-space:nowrap\">660</td>\n<td style=\"white-space:nowrap\">900</td>\n<td style=\"white-space:nowrap\">1,150</td>\n<td style=\"white-space:nowrap\">900</td>\n<td style=\"white-space:nowrap\">1,150</td>\n</tr><tr><td><span style=\"white-space:nowrap\">System</span> logic <span style=\"white-space:nowrap\">elements</span> (K)</td>\n<td style=\"white-space:nowrap\">210</td>\n<td style=\"white-space:nowrap\">288</td>\n<td style=\"white-space:nowrap\">354</td>\n<td style=\"white-space:nowrap\">419</td>\n<td style=\"white-space:nowrap\">629</td>\n<td style=\"white-space:nowrap\">747</td>\n<td style=\"white-space:nowrap\">865</td>\n<td style=\"white-space:nowrap\">1,180</td>\n<td style=\"white-space:nowrap\">1,506</td>\n<td style=\"white-space:nowrap\">1,180</td>\n<td style=\"white-space:nowrap\">1,506</td>\n</tr><tr><td><span style=\"white-space:nowrap\">Adaptive</span> logic <span style=\"white-space:nowrap\">modules</span> (ALMs)</td>\n<td style=\"white-space:nowrap\">61,510</td>\n<td style=\"white-space:nowrap\">83,730</td>\n<td style=\"white-space:nowrap\">101,620</td>\n<td style=\"white-space:nowrap\">118,730</td>\n<td style=\"white-space:nowrap\">181,790</td>\n<td style=\"white-space:nowrap\">217,080</td>\n<td style=\"white-space:nowrap\">250,540</td>\n<td style=\"white-space:nowrap\">339,620</td>\n<td style=\"white-space:nowrap\">427,200</td>\n<td style=\"white-space:nowrap\">339,620</td>\n<td style=\"white-space:nowrap\">427,200</td>\n</tr><tr><td style=\"white-space:nowrap\">Registers</td>\n<td style=\"white-space:nowrap\">246,040</td>\n<td style=\"white-space:nowrap\">334,920</td>\n<td style=\"white-space:nowrap\">406,480</td>\n<td style=\"white-space:nowrap\">474,920</td>\n<td style=\"white-space:nowrap\">727,160</td>\n<td style=\"white-space:nowrap\">868,320</td>\n<td style=\"white-space:nowrap\">1,002,160</td>\n<td style=\"white-space:nowrap\">1,358,480</td>\n<td style=\"white-space:nowrap\">1,708,800</td>\n<td style=\"white-space:nowrap\">1,358,480</td>\n<td style=\"white-space:nowrap\">1,708,800</td>\n</tr><tr><td>M20K <span style=\"white-space:nowrap\">memory</span> <span style=\"white-space:nowrap\">blocks</span></td>\n<td style=\"white-space:nowrap\">440</td>\n<td style=\"white-space:nowrap\">588</td>\n<td style=\"white-space:nowrap\">750</td>\n<td style=\"white-space:nowrap\">891</td>\n<td style=\"white-space:nowrap\">1,438</td>\n<td style=\"white-space:nowrap\">1,800</td>\n<td style=\"white-space:nowrap\">2,133</td>\n<td style=\"white-space:nowrap\">2,423</td>\n<td style=\"white-space:nowrap\">2,713</td>\n<td style=\"white-space:nowrap\">2,423</td>\n<td style=\"white-space:nowrap\">2,713</td>\n</tr><tr><td>M20K <span style=\"white-space:nowrap\">memory</span> (Mb)</td>\n<td>9</td>\n<td style=\"white-space:nowrap\">11</td>\n<td style=\"white-space:nowrap\">15</td>\n<td style=\"white-space:nowrap\">17</td>\n<td style=\"white-space:nowrap\">28</td>\n<td style=\"white-space:nowrap\">35</td>\n<td style=\"white-space:nowrap\">42</td>\n<td style=\"white-space:nowrap\">47</td>\n<td style=\"white-space:nowrap\">53</td>\n<td style=\"white-space:nowrap\">47</td>\n<td style=\"white-space:nowrap\">53</td>\n</tr><tr><td>MLAB <span style=\"white-space:nowrap\">memory</span> (Mb)</td>\n<td style=\"white-space:nowrap\">1.0</td>\n<td style=\"white-space:nowrap\">1.8</td>\n<td style=\"white-space:nowrap\">2.4</td>\n<td style=\"white-space:nowrap\">2.8</td>\n<td style=\"white-space:nowrap\">4.3</td>\n<td style=\"white-space:nowrap\">5.0</td>\n<td style=\"white-space:nowrap\">5.7</td>\n<td style=\"white-space:nowrap\">9.2</td>\n<td style=\"white-space:nowrap\">12.7</td>\n<td style=\"white-space:nowrap\">9.2</td>\n<td style=\"white-space:nowrap\">12.7</td>\n</tr><tr><td><span style=\"white-space:nowrap\">Hardened</span> <span style=\"white-space:nowrap\">single</span>-<span style=\"white-space:nowrap\">precision</span> <span style=\"white-space:nowrap\">floating</span>-point <span style=\"white-space:nowrap\">multiplers</span>/<span style=\"white-space:nowrap\">adders</span></td>\n<td style=\"white-space:nowrap\">156/156</td>\n<td style=\"white-space:nowrap\">191/191</td>\n<td style=\"white-space:nowrap\">830/830</td>\n<td style=\"white-space:nowrap\">985/985</td>\n<td style=\"white-space:nowrap\">1,368/1,368</td>\n<td style=\"white-space:nowrap\">1,523/1,523</td>\n<td style=\"white-space:nowrap\">1,688/1,688</td>\n<td style=\"white-space:nowrap\">1,518/1,518</td>\n<td style=\"white-space:nowrap\">1,518/1,518</td>\n<td style=\"white-space:nowrap\">1,518/1,518</td>\n<td style=\"white-space:nowrap\">1,518/1,518</td>\n</tr><tr><td>18 x 19 <span style=\"white-space:nowrap\">multipliers</span></td>\n<td style=\"white-space:nowrap\">312</td>\n<td style=\"white-space:nowrap\">382</td>\n<td style=\"white-space:nowrap\">1,660</td>\n<td style=\"white-space:nowrap\">1,970</td>\n<td style=\"white-space:nowrap\">2,736</td>\n<td style=\"white-space:nowrap\">3,046</td>\n<td style=\"white-space:nowrap\">3,376</td>\n<td style=\"white-space:nowrap\">3,036</td>\n<td style=\"white-space:nowrap\">3,036</td>\n<td style=\"white-space:nowrap\">3,036</td>\n<td style=\"white-space:nowrap\">3,036</td>\n</tr><tr><td>Peak fixed-point <span style=\"white-space:nowrap\">performance</span> (GMACS)1</td>\n<td style=\"white-space:nowrap\">343</td>\n<td style=\"white-space:nowrap\">420</td>\n<td style=\"white-space:nowrap\">1,826</td>\n<td style=\"white-space:nowrap\">2,167</td>\n<td style=\"white-space:nowrap\">3,010</td>\n<td style=\"white-space:nowrap\">3,351</td>\n<td style=\"white-space:nowrap\">3,714</td>\n<td style=\"white-space:nowrap\">3,340</td>\n<td style=\"white-space:nowrap\">3,340</td>\n<td style=\"white-space:nowrap\">3,340</td>\n<td style=\"white-space:nowrap\">3,340</td>\n</tr><tr><td>Peak <span style=\"white-space:nowrap\">floating</span>-point <span style=\"white-space:nowrap\">performance</span> (<span style=\"white-space:nowrap\">GFLOPS</span>)</td>\n<td style=\"white-space:nowrap\">140</td>\n<td style=\"white-space:nowrap\">172</td>\n<td style=\"white-space:nowrap\">747</td>\n<td style=\"white-space:nowrap\">887</td>\n<td style=\"white-space:nowrap\">1,231</td>\n<td style=\"white-space:nowrap\">1,371</td>\n<td style=\"white-space:nowrap\">1,519</td>\n<td style=\"white-space:nowrap\">1,366</td>\n<td style=\"white-space:nowrap\">1,366</td>\n<td style=\"white-space:nowrap\">1,366</td>\n<td style=\"white-space:nowrap\">1,366</td>\n</tr><tr><td><span style=\"white-space:nowrap\">Global</span> clock <span style=\"white-space:nowrap\">networks</span></td>\n<td style=\"white-space:nowrap\">32</td>\n<td style=\"white-space:nowrap\">32</td>\n<td style=\"white-space:nowrap\">32</td>\n<td style=\"white-space:nowrap\">32</td>\n<td style=\"white-space:nowrap\">32</td>\n<td style=\"white-space:nowrap\">32</td>\n<td style=\"white-space:nowrap\">32</td>\n<td style=\"white-space:nowrap\">32</td>\n<td style=\"white-space:nowrap\">32</td>\n<td style=\"white-space:nowrap\">32</td>\n<td style=\"white-space:nowrap\">32</td>\n</tr><tr><td><span style=\"white-space:nowrap\">Regional</span> <span style=\"white-space:nowrap\">clocks</span></td>\n<td>8</td>\n<td>8</td>\n<td>8</td>\n<td>8</td>\n<td>8</td>\n<td>8</td>\n<td style=\"white-space:nowrap\">16</td>\n<td style=\"white-space:nowrap\">16</td>\n<td style=\"white-space:nowrap\">16</td>\n<td style=\"white-space:nowrap\">16</td>\n<td style=\"white-space:nowrap\">16</td>\n</tr><tr><td><span style=\"white-space:nowrap\">Maximum</span> LVDS <span style=\"white-space:nowrap\">channels</span> (1.6 G)</td>\n<td style=\"white-space:nowrap\">120</td>\n<td style=\"white-space:nowrap\">120</td>\n<td style=\"white-space:nowrap\">168</td>\n<td style=\"white-space:nowrap\">168</td>\n<td style=\"white-space:nowrap\">222</td>\n<td style=\"white-space:nowrap\">324</td>\n<td style=\"white-space:nowrap\">270</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">312</td>\n<td style=\"white-space:nowrap\">312</td>\n</tr><tr><td rowspan=\"5\"><span style=\"white-space:nowrap\">Clocks</span>, <span style=\"white-space:nowrap\">Maximum</span> I/O Pins, and <span style=\"white-space:nowrap\">Architectural</span> <span style=\"white-space:nowrap\">Features</span></td>\n<td><span style=\"white-space:nowrap\">Maximum</span> user I/O pins</td>\n<td style=\"white-space:nowrap\">288</td>\n<td style=\"white-space:nowrap\">288</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">384</td>\n<td style=\"white-space:nowrap\">492</td>\n<td style=\"white-space:nowrap\">696</td>\n<td style=\"white-space:nowrap\">696</td>\n<td style=\"white-space:nowrap\">768</td>\n<td style=\"white-space:nowrap\">768</td>\n<td style=\"white-space:nowrap\">624</td>\n<td style=\"white-space:nowrap\">624</td>\n</tr><tr><td><span style=\"white-space:nowrap\">Transceiver</span> count (17.4 Gbps)</td>\n<td style=\"white-space:nowrap\">12</td>\n<td style=\"white-space:nowrap\">12</td>\n<td style=\"white-space:nowrap\">24</td>\n<td style=\"white-space:nowrap\">24</td>\n<td style=\"white-space:nowrap\">36</td>\n<td style=\"white-space:nowrap\">48</td>\n<td style=\"white-space:nowrap\">48</td>\n<td style=\"white-space:nowrap\">96</td>\n<td style=\"white-space:nowrap\">96</td>\n<td style=\"white-space:nowrap\">72</td>\n<td style=\"white-space:nowrap\">72</td>\n</tr><tr><td><span style=\"white-space:nowrap\">Transceiver</span> count (25.78 Gbps)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>6</td>\n<td>6</td>\n</tr><tr><td>PCIe* <span style=\"white-space:nowrap\">hardened</span> IP <span style=\"white-space:nowrap\">blocks</span> (Gen3 x8)2</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n<td>2</td>\n<td>2</td>\n<td>2</td>\n<td>2</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n</tr><tr><td><span style=\"white-space:nowrap\">Maximum</span> 3 V I/O pins</td>\n<td style=\"white-space:nowrap\">48</td>\n<td style=\"white-space:nowrap\">48</td>\n<td style=\"white-space:nowrap\">48</td>\n<td style=\"white-space:nowrap\">48</td>\n<td style=\"white-space:nowrap\">48</td>\n<td style=\"white-space:nowrap\">96</td>\n<td style=\"white-space:nowrap\">96</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td colspan=\"13\"><span style=\"white-space:nowrap\">Package</span> Options3 and I/O Pins4: <span style=\"white-space:nowrap\">General</span>-<span style=\"white-space:nowrap\">Purpose</span> I/O (GPIO) Count, High-<span style=\"white-space:nowrap\">Voltage</span> I/O Count, LVDS Pairs5, and <span style=\"white-space:nowrap\">Transceiver</span> Count</td>\n</tr><tr><td style=\"white-space:nowrap\">U19</td>\n<td>U484 pin (19 mm)</td>\n<td>192, 48, 72, 6</td>\n<td>192, 48, 72, 6</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td style=\"white-space:nowrap\">F27</td>\n<td>F672 pin (27 mm)</td>\n<td>240, 48, 96, 12</td>\n<td>240, 48, 96, 12</td>\n<td>240, 48, 96, 12</td>\n<td>240, 48, 96, 12</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td style=\"white-space:nowrap\">F29</td>\n<td>F780 pin (29 mm)</td>\n<td>288, 48, 120, 12</td>\n<td>288, 48, 120, 12</td>\n<td>360, 48, 156, 12</td>\n<td>360, 48, 156, 12</td>\n<td>360, 48, 156, 12</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td style=\"white-space:nowrap\">F34</td>\n<td>F1152 pin (35 mm)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>384, 48, 168, 24</td>\n<td>384, 48, 168, 24</td>\n<td>492, 48, 222, 24</td>\n<td>492, 48, 222, 24</td>\n<td>492, 48, 222, 24</td>\n<td>504, 0, 252, 24</td>\n<td>504, 0, 252, 24</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td style=\"white-space:nowrap\">F35</td>\n<td>F1152 pin (35 mm)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>384, 48, 168, 24</td>\n<td>384, 48, 168, 24</td>\n<td>396, 48, 174, 36</td>\n<td>396, 48, 174, 36</td>\n<td>396, 48, 174, 36</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td style=\"white-space:nowrap\">KF40</td>\n<td>F1517 pin (40 mm)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>696, 96, 324, 36</td>\n<td>696, 96, 324, 36</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td style=\"white-space:nowrap\">NF40</td>\n<td>F1517 pin (40 mm)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>588, 48, 270, 48</td>\n<td>588, 48, 270, 48</td>\n<td>600, 0, 300, 48</td>\n<td>600, 0, 300, 48</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td style=\"white-space:nowrap\">RF40</td>\n<td>F1517 pin (40 mm)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>342, 0, 154, 66</td>\n<td>342, 0, 154, 66</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td style=\"white-space:nowrap\">NF45</td>\n<td>F1932 pin (45 mm)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>768, 0, 384, 48</td>\n<td>768, 0, 384, 48</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr><tr><td style=\"white-space:nowrap\">SF45</td>\n<td>F1932 pin (45 mm)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>624, 0, 312, 72</td>\n<td>624, 0, 312, 72</td>\n<td>624, 0, 312, 72</td>\n<td>624, 0, 312, 72</td>\n</tr><tr><td style=\"white-space:nowrap\">UF45</td>\n<td>F1932 pin (45 mm)</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>480, 0, 240, 96</td>\n<td>480, 0, 240, 96</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "1722939215525"
+      ]
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Altera Arria 10 Applications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/altera/images/wireless-antenna-544581870.jpg",
+       "imageRatio": "36",
+       "alt": "Satellite antenna",
+       "text": "<h2>Wireless</h2><ul>\n<li>Remote radio head</li>\n<li>Mobile backhaul</li>\n<li>Active antenna</li>\n<li>Base station</li>\n<li>4G/Long Term Evolution (LTE) macro eNB</li>\n<li>Wideband Code Division Multiple Access</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876",
+       "1717498055877"
+      ],
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/altera/images/istock-943065362.jpg",
+       "imageRatio": "36",
+       "alt": "Cloud Service and Storage",
+       "text": "<h2>Cloud Service and Storage</h2><ul>\n<li>Flash cache</li>\n<li>Cloud</li>\n<li>Server</li>\n<li>Financial</li>\n<li>Bioscience</li>\n<li>Oil and gas</li>\n<li>Data center server acceleration</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/altera/images/broadcast-proav-1280x720.jpg",
+       "imageRatio": "36",
+       "alt": "Broadcast",
+       "text": "<h2>Broadcast</h2><ul>\n<li>Switcher</li>\n<li>Server</li>\n<li>Encoder/decoder</li>\n<li>Capture cards</li>\n<li>Editing</li>\n<li>Monitors</li>\n<li>Multiviewers</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th>Altera® Arria® 10 GT FPGA</th>\n<th>Altera® Arria® 10 SX Soc FPGA</th>\n</tr><tr><td width=\"50%\"><p>With up to 78 full-duplex transceivers that can handle data rates up to 25.78 Gbps, the Altera® Arria® 10 GT FPGA facilitates high-speed chip-to-chip communication.</p>\n</td>\n<td width=\"50%\"><p>Equipped with up to 48 full-duplex transceivers and a dual-core ARM Cortex-A9 HPS, the Altera® Arria® 10 SX FPGA provides enhanced capabilities.</p>\n</td>\n</tr><tr><td><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-gt-soc-fpga.html\">Product Overview</a></b></td>\n<td><b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-sx-soc-fpga.html\">Product Overview</a></b></td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      },
+      "list_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "linkItems": "true",
+       "pages": [
+        "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-gt-soc-fpga",
+        "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-arria-10/altera-arria-10-sx-soc-fpga"
+       ],
+       "sling:resourceType": "macnicaglobal2/components/content/list",
+       "listFrom": "static"
+      }
+     }
+    },
+    "container_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "experiencefragment_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    }
+   }
+  }
+ }
+}
