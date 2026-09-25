@@ -27,6 +27,8 @@ HREF_RE = re.compile(r"""\bhref\s*=\s*(["'])(.*?)\1""", re.I | re.S)
 
 TIPOS = {
     "wrong": ("Pointed to the wrong place", "The link went somewhere other than the matching link on the GWI page."),
+    "added": ("Link added", "The text, title or image was on the page but not clickable; the GWI links it. It now links to the "
+              "same place as on the GWI (nothing else about the element changed)."),
     "ext": ("Did not open", "A link inside text saved without “.html”: on the author, clicking it gave an error (403). "
             "Now the same destination with “.html”."),
 }
@@ -78,11 +80,22 @@ def itens(execucao, backup):
             t = next(iter(textos_do_href(x["antes"], d["de"])))
             por[rel].append({"tipo": "wrong", "txt": t, "antes": d["de"], "depois": x["para"],
                              "motivo": d.get("por_que") or motivo(d["de"], x["para"]), "vezes": 1})
+        elif x["tipo"] == "wrap":                               # <a> posto em volta de um trecho que já estava no texto
+            d = next(d for _, p, no, t, d in C.CONSERTOS if t == "wrap" and f"{M}/{p}" == x["pagina"] and no == x["no"])
+            href = HREF_RE.search(d["para"]).group(2)
+            por[rel].append({"tipo": "added", "txt": C.texto(d["de"]), "antes": "", "depois": href,
+                             "motivo": "text in the event details", "vezes": 1})
+        elif x["antes"] is None:                                # linkURL novo num título/imagem que já estava na página
+            nod = no_do_backup(backup[rel], x["no"])
+            rt = str(nod.get("sling:resourceType", "")).rsplit("/", 1)[-1]
+            t = C.texto(nod.get("jcr:title") or nod.get("alt") or "") or f"({rt})"
+            por[rel].append({"tipo": "added", "txt": t, "antes": "", "depois": x["para"], "motivo": f"{rt} on the page", "vezes": 1})
         else:                                                   # linkURL de botão: o rótulo vem do nó no backup
             nod = no_do_backup(backup[rel], x["no"])
             t = C.texto(nod.get("jcr:title") or nod.get("alt") or "") or "(button)"
+            d = next((d for _, p, no, t, d in C.CONSERTOS if f"{M}/{p}" == x["pagina"] and no == x["no"] and d.get("para") == x["para"]), {})
             por[rel].append({"tipo": "wrong", "txt": t + " (button)", "antes": x["antes"], "depois": x["para"],
-                             "motivo": motivo(x["antes"], x["para"]), "vezes": 1})
+                             "motivo": d.get("por_que") or motivo(x["antes"], x["para"]), "vezes": 1})
     return por
 
 
@@ -103,12 +116,13 @@ def _item(it):
         mot += f'<span class="nota">× {it["vezes"]} (the same link appears {it["vezes"]} times here)</span>'
     return (f'<div class="lk" data-p="{it["tipo"]}" data-s="{busca}"><div class="t">“{html.escape(it["txt"])}”'
             f'<span class="tag {it["tipo"]}">{html.escape(tag)}</span>{mot}</div><dl>'
-            f'<dt>Before</dt><dd class="agora">{html.escape(_curto(it["antes"]))}</dd>'
-            f'<dt>After</dt><dd class="dev">{depois}</dd></dl></div>')
+            + (f'<dt>Before</dt><dd class="agora">{html.escape(_curto(it["antes"]))}</dd>' if it["antes"] else
+               '<dt>Before</dt><dd>(not a link)</dd>')
+            + f'<dt>After</dt><dd class="dev">{depois}</dd></dl></div>')
 
 
 CSS_EXTRA = """
-.tag.wrong{background:var(--badbg);color:var(--bad)}.tag.ext{background:var(--warnbg);color:var(--warn)}
+.tag.wrong{background:var(--badbg);color:var(--bad)}.tag.ext{background:var(--warnbg);color:var(--warn)}.tag.added{background:var(--okbg);color:var(--ok)}
 .agora{color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
 .ok{display:inline-block;font-size:12px;background:var(--okbg);color:var(--ok);border-radius:10px;padding:1px 8px;margin-left:8px;font-weight:500}
 .nota{background:none;color:var(--mut);padding:0;margin-left:8px;font-weight:400}
@@ -190,8 +204,8 @@ def main():
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>global2 link fixes</title><style>{LV.CSS}{CSS_EXTRA}</style></head><body><main>
 <h1>global2 link fixes</h1>
-<p class="sub">Links corrected on the macnicaglobal2 pages (Americas / MAI / EN) on {data} (local time){(f", with {len(horas) - 1} later correction{'s' if len(horas) > 2 else ''} at " + ", ".join(h[11:13] + ":" + h[13:15] for h in horas[1:])) if len(horas) > 1 else ""}. Each change only replaced
-where an existing link goes: no text, image, block or layout was added, moved or removed. Paths are relative to
+<p class="sub">Links corrected on the macnicaglobal2 pages (Americas / MAI / EN) on {data} (local time){(f" and in {len(horas) - 1} later round{'s' if len(horas) > 2 else ''} (" + ", ".join(h[11:13] + ":" + h[13:15] for h in horas[1:]) + ")") if len(horas) > 1 else ""}. Each change only set where an
+existing link, text, title, image or button goes: no text, image, block or layout was added, moved or removed. Paths are relative to
 <code>{M}</code>; “After” links open the destination in the AEM author (you must be logged in).</p>
 <div class="resumo">
 <div><b>{sum(n.values())}</b><span>links corrected</span></div>
@@ -209,6 +223,8 @@ link). The property was re-read right before saving and again after, and nothing
 <li><b>Whole-page comparison.</b> After all changes, every page was compared with its backup: the stored content differs only in the
 changed link properties, and the rendered page is identical once the links themselves are set aside. AEM also records the edit on
 each page (the “last modified” date; on {editor} pages the “last modified by” now shows the account that made the change).</li>
+<li><b>Files.</b> The two PDFs that were linked from the GWI (the Macnica Americas linecard and the IEI
+networking brochure) were copied into the global2 DAM first; the copies are identical to the GWI files (same checksum).</li>
 <li><b>The new links open.</b> Every internal destination was requested on the author and opens (HTTP 200). The 3 external
 destinations are the same URLs the GWI uses (www.macnica.com, www.macnica.com/mep100, www.m-pression.com) and were not opened.</li>
 </ol>

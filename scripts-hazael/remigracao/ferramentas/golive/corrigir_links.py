@@ -102,6 +102,21 @@ CONSERTOS = [
       "para": f"{M}/products/macnica-products/macnica-mep-100.html",
       "por_que": "went to the site’s root; the GWI’s own URL (www.macnica.com/mep100) is dead in production (404), "
                  "so it now opens the MEP100 page"}),
+    # F = destino que não existia no global2 (pedido do Hazael, 24/09): os 2 PDFs copiados do GWI pelo copiar_asset_gwi.py
+    # e o post do blog, que EXISTE no global2 com outro nome (a Anion usou o título inteiro; o GWI corta em "hospital-eq")
+    ("F", "products", "root/container/text_284935450", "href",
+     {"txt": "Download the Macnica Americas Linecard here",
+      "de": "https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/downloads/macnica-americas-linecard.pdf",
+      "para": "/content/dam/macnicaglobal2/americas/mai/en/downloads/macnica-americas-linecard.pdf",
+      "por_que": "still opened the GWI’s file; the PDF was copied into the global2 DAM"}),
+    ("F", "products/boards-modules/iei/iei-networking-servers", "root/container/container_849791024/button_copy", "prop",
+     {"prop": "linkURL", "de": f"{M}/products/boards-modules/iei/iei-networking-servers",
+      "para": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/pdfs/iei-puzzle-brochure-2024.pdf",
+      "por_que": "opened its own page instead of the brochure; the PDF was copied into the global2 DAM"}),
+    ("F", f"{NL}/macnicas-medical-healthcare-solutions", "root/container/button_1_wrap/button_1", "prop",
+     {"prop": "linkURL", "de": f"{M}/blog",
+      "para": f"{M}/blog/macnica-medical-displays-quality-and-innovation-for-hospital-equipment",
+      "por_que": "was cut off at the blog; the post exists in global2 under a longer name than the GWI’s"}),
     ("B", f"{NEWS}/macnica-ships-mep100-smartnic-solution-as-ibc2024-approaches", "root/container/heading_1_wrap/heading_1",
      "prop", {"prop": "linkURL", "de": None, "para": "https://macnicatech.com/wp-content/uploads/2024/08/MEP100-2-pager-202408a.pdf"}),
     ("B", "products/boards-modules/iei/iei-intelligent-body-temperature-monitoring-solution",
@@ -187,6 +202,13 @@ def novo_valor(tipo, d, atual):
     ini = m.start(1) + h.start(3)
     fim = m.start(1) + h.end(3)
     return atual[:ini] + html.escape(d["para"], quote=True) + atual[fim:], None
+
+
+def normal_aem(v):
+    if not isinstance(v, str):
+        return v
+    v = re.sub(r'\s+rel="noopener noreferrer"', "", v)
+    return re.sub(r"<br\s*/?>", "<br>", v)
 
 
 def trecho(antes, depois, largura=90):
@@ -342,7 +364,7 @@ def verificar(pasta, quando):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--grupos", nargs="+", default=["A", "B", "C", "D"], choices=["A", "B", "C", "D", "E"])
+    ap.add_argument("--grupos", nargs="+", default=["A", "B", "C", "D"], choices=["A", "B", "C", "D", "E", "F"])
     ap.add_argument("--executar", action="store_true", help="grava (sem isto: só GET)")
     ap.add_argument("--verificar", metavar="PASTA", help="só GET: compara as páginas de hoje com o backup (backup_links_<data>)")
     ap.add_argument("--testar-comparador", type=int, metavar="N", default=0,
@@ -423,7 +445,10 @@ def main():
             print(f"         BARRADO: {e}"); resumo["falhou"] += 1; saida.append(dict(linha, status="barrado")); continue
         st2, depois_no = ler(caminho)
         mudou = {k for k in set(nod) | set(depois_no or {}) if (nod.get(k) != (depois_no or {}).get(k))}
-        ok = r.status_code in (200, 201) and depois_no and depois_no.get(prop) == novo and \
+        salvo = (depois_no or {}).get(prop)
+        # o AEM normaliza o HTML ao salvar: rel="noopener noreferrer" em link com target=_blank e <br> -> <br />
+        # (medido em 24/09, grupo B); igual depois disso = gravado como enviado
+        ok = r.status_code in (200, 201) and depois_no and (salvo == novo or normal_aem(salvo) == normal_aem(novo)) and \
             mudou <= {prop, "jcr:lastModified", "jcr:lastModifiedBy"}
         print(f"         {'GRAVADO' if ok else 'FALHOU'}: HTTP {r.status_code}; mudou {sorted(mudou)}")
         resumo["gravado" if ok else "falhou"] += 1

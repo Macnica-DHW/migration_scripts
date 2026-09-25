@@ -1,0 +1,98 @@
+[
+ {
+  "pagina": "about-us/news-events/events-archive/2018-04-10-the-vision-show",
+  "gravadas": [
+   [
+    "root/container/text_1_wrap/title_text_1",
+    "linkURL"
+   ]
+  ],
+  "comparacao": {
+   "jcr": [],
+   "render": null,
+   "hrefs_render": [
+    "https://www.visionshow.org/"
+   ]
+  }
+ },
+ {
+  "pagina": "about-us/news-events/events-archive/2019-06-26-embedded-technologies-expo-conference",
+  "gravadas": [
+   [
+    "root/container/container_evento/text",
+    "text"
+   ]
+  ],
+  "comparacao": {
+   "jcr": [],
+   "render": null,
+   "hrefs_render": [
+    "https://www.embeddedtechconf.com/"
+   ]
+  }
+ },
+ {
+  "pagina": "about-us/news-events/events-archive/2023-03-28-isc-west-2023",
+  "gravadas": [
+   [
+    "root/container/container_evento/text",
+    "text"
+   ]
+  ],
+  "comparacao": {
+   "jcr": [],
+   "render": null,
+   "hrefs_render": [
+    "https://conta.cc/40lSQbT"
+   ]
+  }
+ },
+ {
+  "pagina": "about-us/news-events/news-archive/macnica-ships-mep100-smartnic-solution-as-ibc2024-approaches",
+  "gravadas": [
+   [
+    "root/container/heading_1_wrap/heading_1",
+    "linkURL"
+   ]
+  ],
+  "comparacao": {
+   "jcr": [],
+   "render": null,
+   "hrefs_render": [
+    "https://macnicatech.com/wp-content/uploads/2024/08/MEP100-2-pager-202408a.pdf"
+   ]
+  }
+ },
+ {
+  "pagina": "products/boards-modules/iei/iei-intelligent-body-temperature-monitoring-solution",
+  "gravadas": [
+   [
+    "root/container/container_1810978923/image",
+    "linkURL"
+   ]
+  ],
+  "comparacao": {
+   "jcr": [],
+   "render": null,
+   "hrefs_render": [
+    "https://dls.ieiworld.com/IEIWEB/MARKETING_MATERIAL/2022_brochure/51_Body20Temperature20Monitoring20Solution_EN_20210224.pdf"
+   ]
+  }
+ },
+ {
+  "pagina": "products/boards-modules/iei/iei-smart-healthcare-panel-pcs-terminals-and-computing",
+  "gravadas": [
+   [
+    "root/container/container_596104355/container_1619395209/title_text_1593331769",
+    "linkURL"
+   ]
+  ],
+  "comparacao": {
+   "jcr": [],
+   "render": null,
+   "hrefs_render": [
+    "https://www.ieiworld.com/en/product/items_by_cat.php?CA=5&sub_cat=20&go_mark=c2_20"
+   ]
+  }
+ }
+]

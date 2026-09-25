@@ -1,0 +1,52 @@
+[
+ {
+  "pagina": "about-us/newsletter/macnicas-medical-healthcare-solutions",
+  "gravadas": [
+   [
+    "root/container/button_1_wrap/button_1",
+    "linkURL"
+   ]
+  ],
+  "comparacao": {
+   "jcr": [],
+   "render": null,
+   "hrefs_render": [
+    "/content/macnicaglobal2/americas/mai/en/blog.html",
+    "/content/macnicaglobal2/americas/mai/en/blog/macnica-medical-displays-quality-and-innovation-for-hospital-equipment.html"
+   ]
+  }
+ },
+ {
+  "pagina": "products",
+  "gravadas": [
+   [
+    "root/container/text_284935450",
+    "text"
+   ]
+  ],
+  "comparacao": {
+   "jcr": [],
+   "render": null,
+   "hrefs_render": [
+    "/content/dam/macnicaglobal2/americas/mai/en/downloads/macnica-americas-linecard.pdf",
+    "https://www.macnica.com/content/dam/macnicagwi/americas/mai/public/en/downloads/macnica-americas-linecard.pdf"
+   ]
+  }
+ },
+ {
+  "pagina": "products/boards-modules/iei/iei-networking-servers",
+  "gravadas": [
+   [
+    "root/container/container_849791024/button_copy",
+    "linkURL"
+   ]
+  ],
+  "comparacao": {
+   "jcr": [],
+   "render": null,
+   "hrefs_render": [
+    "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/pdfs/iei-puzzle-brochure-2024.pdf"
+   ]
+  }
+ }
+]
