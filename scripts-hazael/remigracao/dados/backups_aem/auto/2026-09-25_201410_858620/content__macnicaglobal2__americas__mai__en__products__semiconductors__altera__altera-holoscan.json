@@ -1,0 +1,276 @@
+{
+ "quando": "2026-09-25T20:14:10",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-holoscan",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-holoscan/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Altera Holoscan",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Mon Sep 21 2026 17:27:46 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:32 GMT+0000",
+  "jcr:description": "Altera FPGAs connect high speed sensors to NVIDIA GPU compute for real time edge AI. See our Holoscan Sensor Bridge reference designs and available dev kits.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-holoscan",
+  "pageTitle": "Altera Holoscan",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Altera Holoscan",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "image_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/altera/images/altera-holoscan-landingpage-banner.png",
+      "alt": "Altera Holoscan",
+      "sling:resourceType": "macnicaglobal2/components/content/image",
+      "isDecorative": "false",
+      "altValueFromDAM": "false"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Altera Holoscan Sensor Bridge Solutions",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<h3><span style=\"font-weight: normal;\">Edge AI Sensor Aggregation Built for the Camera to GPU Pipeline</span></h3>\n<p>Modern edge AI vision systems demand more than compute power. Before an AI model can process a single frame, that frame has to get from sensor to GPU with minimal latency and zero data loss. Altera FPGAs solve this sensor aggregation challenge, pairing scalable I/O flexibility with deterministic, low latency streaming to feed NVIDIA's Holoscan platform.</p>\n<p>Altera's FPGA based Edge AI sensor solutions combine scalable compute performance, PQC enabled security, and low latency deterministic AI inferencing for real time edge applications. Flexible I/O aggregates audio, video, SoC, and other interfaces for pre processing within the FPGA, then streams to external compute such as GPU or CPU.</p>\n<p>Macnica Americas offers the Altera Agilex 5 development kits used in Altera's own Holoscan Sensor Bridge reference designs, giving your team a direct path from evaluation to production.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why Altera FPGAs for Edge AI Sensor Bridging",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>Scalable Performance Spectrum</b></p>\n<p style=\"margin-top:0\">Altera FPGAs span a broad range of features and performance, enabling Edge AI sensor bridge solutions from 1 to 400 Gbps. Whether the application calls for a single camera or a dense multi sensor array, there is an Agilex or Stratix device sized to fit.</p>\n<p><b>Universal Sensor Interface Support</b></p>\n<p style=\"margin-top:0\">Altera FPGAs support the sensor interfaces Edge AI applications actually use in the field, including MIPI, JESD204, LVDS, SPI, CAN, HDMI, SDI, I2C, GPIO, and SLVS-EC. One FPGA platform, many sensor and video interface types.</p>\n<p><b>Field Upgradeable Flexibility</b></p>\n<p style=\"margin-top:0\">Unlike fixed function ASIC, ASSP, or microcontroller based sensor bridges, an FPGA is field upgradeable. Hardware and software changes remain possible after deployment, protecting your investment as sensor requirements evolve.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Target Applications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Holoscan Sensor Bridge is built to serve any application where high bandwidth sensor data needs to reach GPU compute with minimal latency. Common deployments include:</p>\n<p><b>Robotics &amp; Sensor Fusion</b></p>\n<p style=\"margin-top:0\">Processes data from multiple sensor types, including lidar and radar, in real time, integrating seamlessly with FPGA-based I/O.</p>\n<p><b>Live Media Production</b></p>\n<p style=\"margin-top:0\">Connects live, high-speed camera feeds with AI, enabling software-defined production switching and analysis. A natural fit alongside SMPTE ST 2110 IP-based production workflows.</p>\n<p><b>Industrial Inspection</b></p>\n<p style=\"margin-top:0\">Enables real-time defect detection on production lines and continuous quality monitoring.</p>\n<p><b>Medical Imaging</b></p>\n<p style=\"margin-top:0\">Supports AI-enabled medical devices, assisting with surgical visualization, body pose estimation, and real-time image processing such as enhanced endoscopy feeds.</p>\n<p><b>Radar Signal Processing</b></p>\n<p style=\"margin-top:0\">Accelerates real-time radar data pipelines, including FFT-based processing.</p>\n<p><b>6G &amp; Software-Defined Radio</b></p>\n<p style=\"margin-top:0\">Connects analog sensors to GPU compute for efficient, low-latency signal processing.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Reference Platforms",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/altera/images/10g-sensor-bridge-development-platform.jpg",
+       "imageRatio": "32",
+       "alt": "10G Sensor Bridge Development Platform",
+       "text": "<h3>10G Sensor Bridge Development Platform</h3><p><b>Agilex 5 Holoscan Sensor Bridge, MIPI to 10GbE. </b>This design demonstrates MIPI streaming via Holoscan Sensor Bridge IP over 10G Ethernet, combining a 4K multi sensor camera with the Holoscan Sensor Bridge IP on the Agilex 5 FPGA E-Series Premium Development Kit.</p>\n<p><b>Available now from Macnica Americas: </b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilextm-5-fpga-e-series-premium.html\" target=\"_self\">Altera Agilex 5 FPGA E-Series Premium Development Kit</a></p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "25G Sensor Bridge Development Platform",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>Agilex 5 Holoscan Sensor Bridge, MIPI to 25GbE. </b>This design streams MIPI data via Holoscan Sensor Bridge IP over 25G Ethernet, combining a 4Kp60 multi sensor camera with a new Quartus Platform Designer component for Holoscan Sensor Bridge IP, built on the Agilex 5 FPGA and SoC E-Series Modular Development Kit.&nbsp;</p>\n<p><b>Available now from Macnica Americas: </b><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/development-kits/altera-agilex-5-e-series-065b-development-kit.html\" target=\"_self\">Altera Agilex 5 E-Series 065B Development Kit</a></p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "100G Sensor Bridge Platform",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>Stratix 10 Sensor Processing Kit. </b>A 100G Ethernet sensor interface platform powered by the Stratix 10 TX FPGA, designed to support real time streaming of sensor data directly to GPU memory using NVIDIA Hololink IP and GPUDirect RDMA. Ideal for the most demanding multi camera, high bandwidth deployments.</p>\n<p><b>Available now from Macnica Americas: </b><a rel=\"noopener noreferrer\" target=\"_self\" href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/altera-stratix-10.html\">Altera Stratix 10 Product Family</a></p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Terasic Development Boards",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Terasic builds the development platforms behind Altera's own Holoscan Sensor Bridge reference designs, including the Agilex 5 boards used in the 10G and 25G platforms and the Stratix 10 Sensor Processing Kit used in the 100G platform. The Stratix 10 Sensor Processing Kit pairs an Altera Stratix 10 TX FPGA with dual 100GbE links and a VITA 57.4 FMC+ connector, streaming sensor data directly to GPU memory using NVIDIA Hololink IP and GPUDirect RDMA over RoCE v2. Macnica Americas supplies the full range of Terasic Altera development boards for teams building sensor bridge applications at any bandwidth tier.</p>\n<p><a rel=\"noopener noreferrer\" target=\"_self\" href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic.html\">See Terasic development boards at Macnica Americas</a></p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Heterogeneous Computing in an Edge AI Vision System",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Pairing GPU and FPGA delivers what neither can achieve alone: low latency, rich AI features, high performance, and broad camera compatibility across industrial, retail, medical, and other demanding use cases. In heterogeneous designs like Gidel's FantoVision family, the FPGA is not a passive peripheral. It acts as a Smart I/O Engine, splitting responsibilities between GPU, CPU, and FPGA so each does what it does best.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Get Started",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/altera/images/agilex5-development-kits.png",
+       "imageRatio": "36",
+       "alt": "Agilex 5 development kits",
+       "text": "<p>Macnica Americas stocks the Agilex 5 development kits behind Altera's own Holoscan Sensor Bridge reference designs, along with the full Agilex, Stratix, and Arria portfolio for sensor bridge applications at any bandwidth tier. Our team can help you select the right device, source example designs, and move from proof of concept to production.</p>\n<p><b>Available now from Macnica Americas: </b><a rel=\"noopener noreferrer\" target=\"_self\" href=\"/content/macnicaglobal2/americas/mai/en/contact-us.html\">Contact Macnica Americas to discuss your Edge AI sensor bridge design</a></p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false"
+      },
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us",
+       "linkURL": "/content/macnicaglobal2/americas/mai/en/contact-us",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}
