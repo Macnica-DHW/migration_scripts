@@ -142,12 +142,16 @@ def uma_execucao(pasta):
     return quando, itens(execucao, backup), backup, comp
 
 
-def main():
+CAMPOS = ("corpo", "nav", "caixas", "linhas", "n", "por", "iguais", "com_botao", "botoes_ok", "editor", "data", "horas", "quando", "todos")
+
+
+def montar(args=()):
     """Todas as execuções do dia, em ordem: um link que uma execução posterior trocou de novo sai com o destino FINAL
-    (o 'antes' continua o original); a página só ganha o selo se todas as comparações dela deram iguais."""
+    (o 'antes' continua o original); a página só ganha o selo se todas as comparações dela deram iguais. Devolve as peças
+    do relatório (também usadas pelo relatorio_final.py)."""
     pastas = [p.parent for p in sorted(DADOS.glob("backup_links_*/comparacao.json"))]
-    if len(sys.argv) > 1:
-        pastas = [Path(a) for a in sys.argv[1:]]
+    if args:
+        pastas = [Path(a) for a in args]
     por, backup, comp, horas = collections.defaultdict(list), {}, {}, []
     for pasta in pastas:
         q, novos, bk, cp = uma_execucao(pasta)
@@ -229,6 +233,13 @@ def main():
     linhas = "".join(f'<tr><td><span class="tag {k}">{html.escape(TIPOS[k][0])}</span></td><td>{html.escape(TIPOS[k][1])}</td>'
                      f'<td class="num">{n[k]}</td><td class="num">{sum(1 for p in por if any(i["tipo"] == k for i in por[p]))}</td></tr>'
                      for k in TIPOS if n[k])
+    loc = locals()
+    return {k: loc[k] for k in CAMPOS}
+
+
+def main():
+    d = montar(sys.argv[1:])
+    corpo, nav, caixas, linhas, n, por, iguais, com_botao, botoes_ok, editor, data, horas, quando, todos = (d[k] for k in CAMPOS)
     pagina = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>global2 link fixes</title><style>{LV.CSS}{CSS_EXTRA}</style></head><body><main>

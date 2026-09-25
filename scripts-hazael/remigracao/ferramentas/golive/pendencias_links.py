@@ -74,9 +74,9 @@ CLASSES = [
      "Displays page."),
     ("decide", f"{NEWS}/ienso-to-showcase-generative-ai-at-the-edge-ces2025", r"submit your request",
      "The GWI links to a test page (/test-folder/CES-2025); in global2 the sentence is part of a title."),
-    ("decide", "about-us/privacy-policy/privacy-policy-for-california-residents", r"zipteam",
-     "In global2 the domain is inside a title (“Zipteam service ( www.zipteam.com )”); a link would make the whole line "
-     "clickable, not just the domain."),
+    ("fora", "about-us/privacy-policy/privacy-policy-for-california-residents", r"zipteam",
+     "the domain is inside the heading “Zipteam service ( www.zipteam.com )”; the whole heading now links to "
+     "https://www.zipteam.com/ (25/09)"),
     ("content", "products", r".", "The four category cards (Semiconductors, Boards & Modules, Displays, IP & Software) are "
      "blank: four image components with no image, caption or link."),
     ("content", "products/boards-modules/connect-tech", r"Jetson AGX Xavier",
@@ -122,9 +122,10 @@ def classificar(rel, txt):
     return "new", ""
 
 
-def main():
-    rel_json = Path(sys.argv[1]) if len(sys.argv) > 1 else sorted(LV.MAPAS.glob("global2_links_vs_gwi_*_pos.json"))[-1]
-    rel = json.loads(rel_json.read_text(encoding="utf-8"))
+def classificar_coleta(rel_json):
+    """(rel, cache, índice, {categoria: {página: [itens]}}, [(página, item) conferidos sem ação]) — também usado pelo
+    relatorio_final.py."""
+    rel = json.loads(Path(rel_json).read_text(encoding="utf-8"))
     b = pickle.loads(LV.CACHE.read_bytes())
     assert b["quando"] == rel["quando"], ("o cache não é desta coleta", b["quando"], rel["quando"])
     idx = LV.Indice(b)
@@ -154,9 +155,10 @@ def main():
                                     "extra": "file does not exist in the global2 DAM"}))
 
     # o IMX711 vem só do teste de alvo morto: entra em "dest" com a nota própria
-    CLASSES.insert(0, ("fora", f"{NL}/macnica-technology-update-june-2026", r"IMX711",
-                       "kept as is by decision (24/09): the Sony IMX711 page is not in global2’s Americas site yet; Sony "
-                       "pages are the Anion’s"))
+    if not any(c[2] == r"IMX711" for c in CLASSES):
+        CLASSES.insert(0, ("fora", f"{NL}/macnica-technology-update-june-2026", r"IMX711",
+                           "kept as is by decision (24/09): the Sony IMX711 page is not in global2’s Americas site yet; Sony "
+                           "pages are the Anion’s"))
     por = collections.defaultdict(lambda: collections.defaultdict(list))
     fora, vistos = [], set()
     for p, it in achados:
@@ -171,6 +173,12 @@ def main():
         else:
             por[cat][p].append(it)
 
+    return rel, b, idx, por, fora
+
+
+def main():
+    rel_json = Path(sys.argv[1]) if len(sys.argv) > 1 else sorted(LV.MAPAS.glob("global2_links_vs_gwi_*_pos.json"))[-1]
+    rel, b, idx, por, fora = classificar_coleta(rel_json)
     quando = rel["quando"]
     n_links = {c: sum(len(v) for v in por[c].values()) for c in CATS}
     paginas = {p for c in por for p in por[c]}

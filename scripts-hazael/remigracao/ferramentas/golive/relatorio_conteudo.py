@@ -45,6 +45,7 @@ CURTO = {   # coluna "What was wrong" da tabela do topo
     "products/boards-modules/tq-systems/tq-embedded-arm-modules/mba8mp-ras314-single-board-computer": "Whitepaper paragraph missing (PDF not in global2)",
     "solutions/robotics-amrs": "“Download … Robotics Solutions Brief” button missing (PDF not in global2)",
     "solutions/broadcast-proav-solutions/st-2110-at-scale-resources": "Second contact block (with “Request Evaluation Kit”) missing",
+    "about-us/privacy-policy/privacy-policy-for-california-residents": "www.zipteam.com not linked (the domain is inside a heading)",
     "products/boards-modules": "Supplier grid (11 logos) missing; “Request a Quote” missing; contact button pointed to a hard-coded domain",
 }
 NOTAS = {   # conferência extra, feita à parte
@@ -109,8 +110,9 @@ def figura(titulo, antes, depois):
             f'{cel("After", depois)}</div></div>')
 
 
-def main():
-    pos = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8")) if len(sys.argv) > 1 else None
+def secoes(pos=None):
+    """Peças do relatório: seções por página (com recortes), linhas da tabela do topo, nº de arquivos, páginas e o parágrafo
+    do que sobrou na coleta `pos` — também usadas pelo relatorio_final.py."""
     ps = passadas()
     b = LV.CACHE.exists() and __import__("pickle").loads(LV.CACHE.read_bytes())
     corpo, linhas, n_assets = [], [], 0
@@ -175,7 +177,10 @@ def main():
                  f"({html.escape(pos['quando'])}) finds <b>{falt}</b> GWI link{'s' if falt != 1 else ''} still missing on "
                  f"these pages" + (": " + "; ".join(f"/{html.escape(r['g2'][len(M) + 1:])} “{html.escape(x['txt'][:60])}”"
                                                     for r in rel for x in r["faltando"]) if falt else "") + ".</p>")
-    css = LV.CSS + """
+    return {"corpo": corpo, "linhas": linhas, "n_assets": n_assets, "ordem": ordem, "sobra": sobra}
+
+
+CSS = """
 h4{font-size:14px;margin:14px 0 4px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
 details.pg p{margin:4px 0 8px;overflow-wrap:anywhere}.achado li,.conf li{overflow-wrap:anywhere}.conf{margin:4px 0 10px;padding-left:20px;font-size:14px}.conf ul{padding-left:18px}
 code{font:12px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow-wrap:anywhere}
@@ -185,6 +190,13 @@ figure{margin:0}figcaption{font-size:12px;color:var(--mut);margin:0 0 3px}
 figure img{width:100%;height:auto;border:1px solid var(--lin);border-radius:4px;display:block}
 .achado li{margin:0 0 10px}
 """
+
+
+def main():
+    pos = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8")) if len(sys.argv) > 1 else None
+    d = secoes(pos)
+    corpo, linhas, n_assets, ordem, sobra = d["corpo"], d["linhas"], d["n_assets"], d["ordem"], d["sobra"]
+    css = LV.CSS + CSS
     pagina = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>global2 content fixes</title><style>{css}</style></head><body><main>

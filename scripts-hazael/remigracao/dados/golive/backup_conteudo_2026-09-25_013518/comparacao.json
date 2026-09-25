@@ -1,0 +1,38 @@
+[
+ {
+  "pagina": "about-us/privacy-policy/privacy-policy-for-california-residents",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 2,
+   "igual_antes_do_1o": 2824,
+   "igual_depois_do_ultimo": 898,
+   "texto_saiu": "",
+   "texto_entrou": "",
+   "tags_saiu": [],
+   "tags_entrou": [
+    "a"
+   ],
+   "links_saiu": [],
+   "links_entrou": [
+    "https://www.zipteam.com/"
+   ],
+   "imgs_entrou": []
+  },
+  "prints": {
+   "altura": [
+    9717,
+    9717
+   ],
+   "igual_no_topo_ate": 9717,
+   "igual_no_fim_px": 9717,
+   "miolo_antes": [
+    9717,
+    0
+   ],
+   "miolo_depois": [
+    9717,
+    0
+   ]
+  }
+ }
+]

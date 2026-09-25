@@ -425,6 +425,19 @@ PAGINAS = {
                         ("criar", f"root/container/container_2/container_2/flexcontainer_1/flexcontaineritem_{i}/button",
                          botao(t, f"{M}/{alvo}")))],
     },
+    "about-us/privacy-policy/privacy-policy-for-california-residents": {
+        "feito": "25/09 01:35, backup_conteudo_2026-09-25_013518",
+        "gwi": f"{GWI}/about-us/privacy-policy/privacy-policy-for-california-residents",
+        "o_que": "Zipteam: linkURL https://www.zipteam.com/ no título 'Zipteam service ( www.zipteam.com )' (decisão do Hazael, "
+                 "25/09: 'Link the heading'); o title v2 não tem 'abrir em nova aba' (como os títulos linkados em 24/09)",
+        "achado": "The GWI links the domain www.zipteam.com to https://www.zipteam.com/; in global2 the domain is inside the "
+                  "heading “Zipteam service ( www.zipteam.com )”, not linked.",
+        "mudanca": "Linked the heading to https://www.zipteam.com/ (the whole heading is the link; a linked heading looks the "
+                   "same as an unlinked one). The global2 heading component has no “open in a new tab” option, so it opens in "
+                   "the same tab, like the headings linked on 24/09.",
+        "ops": [("props", "root/container/text_4_wrap/title_text_4", {"linkURL": "https://www.zipteam.com/"},
+                 {"linkURL": None, "jcr:title": "Zipteam service ( www.zipteam.com )"})],
+    },
     "products/boards-modules": {
         "feito": "25/09 00:36, backup_conteudo_2026-09-25_003612",
         "gwi": f"{GWI}/products/boards-modules",
