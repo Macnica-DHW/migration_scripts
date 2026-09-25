@@ -62,9 +62,8 @@ CLASSES = [
     ("add", f"{EV}/2019-06-26-embedded-technologies-expo-conference", r"^Embedded Technologies Expo",
      "The event name is in the event details, without a link."),
     ("add", f"{EV}/2023-03-28-isc-west-2023", r"conta\.cc", "The URL is in the event details, without a link."),
-    ("dest", f"{NL}/macnicas-medical-healthcare-solutions", r"^Learn More",
-     "Should open the blog post “Macnica Medical Displays – Quality and Innovation for Hospital Equipment”, which is not in "
-     "global2; today the button opens the blog’s main page."),
+    ("fora", f"{NL}/macnicas-medical-healthcare-solutions", r"^Learn More",
+     "opens the blog post that exists in global2 under a longer name than the GWI’s (…-hospital-equipment; fixed 24/09)"),
     ("dest", "products", r"Linecard", "The linecard PDF is not in the global2 DAM; the link still opens the GWI’s file."),
     ("dest", "products/boards-modules/iei/iei-networking-servers", r"Networking & Servers Brochure",
      "The brochure PDF is not in the global2 DAM; the button opens its own page."),
@@ -155,9 +154,9 @@ def main():
                                     "extra": "file does not exist in the global2 DAM"}))
 
     # o IMX711 vem só do teste de alvo morto: entra em "dest" com a nota própria
-    CLASSES.insert(0, ("dest", f"{NL}/macnica-technology-update-june-2026", r"IMX711",
-                       "The Sony IMX711 page exists in the GWI and in global2’s Europe site, but not in the Americas site yet "
-                       "(Sony pages are the Anion’s); the link gives an error today."))
+    CLASSES.insert(0, ("fora", f"{NL}/macnica-technology-update-june-2026", r"IMX711",
+                       "kept as is by decision (24/09): the Sony IMX711 page is not in global2’s Americas site yet; Sony "
+                       "pages are the Anion’s"))
     por = collections.defaultdict(lambda: collections.defaultdict(list))
     fora, vistos = [], set()
     for p, it in achados:
@@ -247,7 +246,7 @@ def main():
 <title>global2 link fixes pending</title><style>{css}</style></head><body><main>
 <h1>global2 links still to fix</h1>
 <p class="sub">Pages of the macnicaglobal2 link map (Americas / MAI / EN) that still have link problems after the fixes of 24/09
-(148 links on 52 pages). Based on a fresh comparison of the {len(rel['paginas'])} pages with their GWI pages, {html.escape(quando)}.
+(see global2_link_fixes_<date>.html). Based on a fresh comparison of the {len(rel['paginas'])} pages with their GWI pages, {html.escape(quando)}.
 Links open in the AEM author in a new tab; you must be logged in.</p>
 <div class="resumo">
 <div><b>{sum(n_links.values())}</b><span>links still to fix</span></div>
