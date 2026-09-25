@@ -2,6 +2,8 @@
 # Uma página por linha. Protege a página e o jcr:content dela; páginas-filhas NÃO (têm de ser listadas à parte).
 # Também bloqueia apagar/mover a página ou um ancestral dela, e copiar/mover conteúdo para dentro ou para fora.
 # Tirar da lista só com decisão do Hazael.
+# 25/09/2026 — a trava UNE esta lista com a blacklist do site-migration-tracker (GET fresco em toda Session;
+# sem resposta do tracker, nada grava). A API é a fonte da verdade; este arquivo é complemento local.
 #
 # 24/09/2026 — revisadas e aprovadas à mão: as 3 marcas no global2_link_map_approved_2026-09-24(3).html
 # (estado salvo 24/09 18:21). Links conferidos contra o GWI no mesmo dia (golive/links_vs_gwi.py):

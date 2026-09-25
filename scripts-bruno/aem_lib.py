@@ -16,6 +16,11 @@ nomes, extração de conteúdo do GWI e montagem do payload do GLOBAL2.
 REGRA DE SEGURANÇA: toda escrita passa por assert_target_is_safe(), que
 aborta se o caminho não estiver dentro da área de teste. macnicagwi e
 macnicaglobal2 são SOMENTE LEITURA.
+
+REGRAS DO HAZAEL (25/09/2026), na trava da Session de build_session():
+nunca gravar no GWI; nunca gravar em página da blacklist do
+site-migration-tracker (GET fresco em toda Session; sem ela, nada grava);
+XF/template/componente só com permissão explícita, caminho a caminho.
 """
 
 import csv
@@ -56,10 +61,13 @@ def load_env(path=ENV_PATH):
         key, value = key.strip(), value.strip()
         if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
             value = value[1:-1]
+        if key:
+            CHAVES_DO_ARQUIVO.add(key)
         if key and key not in os.environ:
             os.environ[key] = value
 
 
+CHAVES_DO_ARQUIVO = set()   # chaves presentes no .env (autorização de escrita NUNCA pode vir de lá)
 load_env()
 
 
@@ -262,6 +270,16 @@ def build_session(prompt_if_missing=True, verbose=True):
     session.headers.update({"Accept": "application/json"})
     travar_session(session)
 
+    # REGRA 3 do Hazael (25/09/2026): GET fresco da blacklist ANTES de começar a rodada.
+    bl = session.blacklist.atual()
+    if verbose:
+        if bl is None:
+            print(f"[aviso] blacklist do tracker indisponível ({session.blacklist.erro}):\n"
+                  f"  esta Session NÃO grava nada — só leitura.\n", file=sys.stderr)
+        else:
+            print(f"blacklist do tracker: {len(bl)} páginas protegidas "
+                  f"(GET às {time.strftime('%H:%M:%S')}; + paginas_protegidas.txt)\n")
+
     return session, {"fails": 0, "threshold": CONFIG["auth_fail_threshold"]}
 
 
@@ -271,15 +289,80 @@ def build_session(prompt_if_missing=True, verbose=True):
 # A trava fica na PRÓPRIA Session: vale para todo script que usa build_session(), inclusive os que chamam
 # session.post() direto (a maioria das ferramentas de scripts-hazael). Só leitura passa (GET/HEAD/OPTIONS).
 #   - GWI: nada que não seja leitura em URL com `macnicagwi` (REGRA MESTRA do Hazael, 21/09/2026).
-#   - paginas_protegidas.txt (pasta do projeto, ao lado do .env): a página e o jcr:content dela não recebem
-#     escrita; a página e os ancestrais não podem ser apagados/movidos; nada é copiado/movido para dentro nem
-#     para fora dela. Páginas-filhas de uma protegida NÃO estão protegidas (têm de estar na lista).
+#   - Protegidas = blacklist do site-migration-tracker (REGRAS do Hazael, 25/09/2026: GET fresco antes da
+#     rodada e de novo antes de gravar, se a cópia tiver mais de BLACKLIST_TTL s; sem resposta = nenhuma
+#     escrita) + paginas_protegidas.txt (pasta do projeto, ao lado do .env). A página e o jcr:content dela
+#     não recebem escrita; a página e os ancestrais não podem ser apagados/movidos; nada é copiado/movido para
+#     dentro nem para fora dela. Páginas-filhas de uma protegida NÃO estão protegidas (têm de estar na lista).
+#   - Estruturas compartilhadas (XF, template/policy em /conf, componente em /apps): o header/footer chega a
+#     toda página, inclusive às protegidas. Só com permissão EXPLÍCITA do Hazael caminho a caminho ("You can
+#     edit <caminho>"; "you can proceed" / "all of them" NÃO valem), passada na linha de comando em
+#     AEM_COMPARTILHADO_AUTORIZADO (caminhos exatos separados por ';'; vale para o caminho e o que há dentro).
 PROTEGIDAS_PATH = Path(__file__).resolve().parent.parent / "paginas_protegidas.txt"
 LEITURA = {"GET", "HEAD", "OPTIONS"}
+BLACKLIST_URL = _env("MIGRATION_TRACKER_BLACKLIST_URL", "https://site-migration-tracker.mdhw.dev/api/blacklist")
+BLACKLIST_TTL = _env_float("MIGRATION_TRACKER_TTL", 300)
+COMPARTILHADO = ("/content/experience-fragments", "/conf", "/apps")
 
 
 class EscritaProibida(RuntimeError):
-    """Escrita barrada pela trava da Session (página protegida ou GWI)."""
+    """Escrita barrada pela trava da Session (página protegida, estrutura compartilhada ou GWI)."""
+
+
+class BlacklistIndisponivel(RuntimeError):
+    """Não deu para obter a blacklist fresca do tracker — nada grava."""
+
+
+def baixar_blacklist(timeout=30):
+    """GET fresco da blacklist do tracker; devolve os aem_path. Vai só o token do tracker, NUNCA o cookie do AEM."""
+    token = _env("MIGRATION_TRACKER_TOKEN").strip()
+    if not token:
+        raise BlacklistIndisponivel("MIGRATION_TRACKER_TOKEN vazio no .env")
+    try:
+        r = requests.get(BLACKLIST_URL, timeout=timeout,
+                         headers={"Authorization": f"Bearer {token}", "Accept": "application/json"})
+        r.raise_for_status()
+        d = r.json()
+        paginas = d["pages"]
+        caminhos = tuple(sorted({re.sub(r"\.html$", "", p["aem_path"].strip().rstrip("/")) for p in paginas}))
+    except Exception as e:                                     # noqa: BLE001
+        raise BlacklistIndisponivel(f"GET {BLACKLIST_URL}: {e}") from e
+    if not caminhos or d.get("count", len(paginas)) != len(paginas) \
+            or any(not c.startswith("/content/") for c in caminhos):
+        raise BlacklistIndisponivel(f"resposta suspeita de {BLACKLIST_URL}: count={d.get('count')}, "
+                                    f"{len(caminhos)} caminhos")
+    return caminhos
+
+
+class Blacklist:
+    """Cópia da blacklist com validade de BLACKLIST_TTL s; `atual()` devolve None se o GET falhou."""
+
+    def __init__(self, ttl=BLACKLIST_TTL, baixar=baixar_blacklist):
+        self.ttl, self.baixar = ttl, baixar
+        self.caminhos, self.quando, self.erro = None, 0.0, None
+
+    def atual(self):
+        if self.caminhos is None or time.time() - self.quando > self.ttl:
+            try:
+                self.caminhos, self.quando, self.erro = self.baixar(), time.time(), None
+            except BlacklistIndisponivel as e:
+                self.caminhos, self.erro = None, str(e)
+        return self.caminhos
+
+
+def compartilhado_autorizado():
+    """Caminhos de AEM_COMPARTILHADO_AUTORIZADO — só da linha de comando, nunca do .env."""
+    if "AEM_COMPARTILHADO_AUTORIZADO" in CHAVES_DO_ARQUIVO:
+        raise EscritaProibida("AEM_COMPARTILHADO_AUTORIZADO no .env: autorização é caso a caso, na linha de "
+                              "comando — tirar do .env")
+    out = []
+    for c in _env_list("AEM_COMPARTILHADO_AUTORIZADO"):
+        c = c.rstrip("/")
+        if not any(c.startswith(r + "/") for r in COMPARTILHADO) or c.count("/") < 6:
+            raise EscritaProibida(f"AEM_COMPARTILHADO_AUTORIZADO={c}: tem de ser o caminho de UM XF/template/"
+                                  f"componente específico, não uma pasta")
+        out.append(c)
+    return tuple(out)
 
 
 def carregar_protegidas(path=PROTEGIDAS_PATH):
@@ -323,19 +406,44 @@ def _valores(pares, chave):
     return out
 
 
-def motivo_bloqueio(metodo, url, data=None, protegidas=None):
+def _tocados(caminho, alvos, pares):
+    """Todo caminho que a requisição grava, apaga ou esvazia."""
+    out = set(alvos) | {x.rstrip("/") for x in _valores(pares, ":applyTo")}
+    for d in _valores(pares, ":dest"):
+        out.add((d if d.startswith("/") else caminho.rsplit("/", 1)[0] + "/" + d).rstrip("/"))
+    for k, v in pares:
+        base = k.split("@", 1)[0]
+        if k.endswith("@MoveFrom"):
+            out |= {str(x).rstrip("/") for x in (v if isinstance(v, (list, tuple)) else [v])}
+        if "/" in base:
+            out.add(caminho + "/" + base.lstrip("./"))
+    if caminho.startswith("/bin/"):
+        for chave in ("path", "srcPath", "destPath"):
+            out |= {x.rstrip("/") for x in _valores(pares, chave)}
+    return out
+
+
+def motivo_bloqueio(metodo, url, data=None, protegidas=None, autorizados=()):
     """None se a requisição pode sair; senão, o motivo. Não faz rede — testável offline."""
     if metodo.upper() in LEITURA:
         return None
     if "macnicagwi" in unquote(url):
         return f"{metodo} em URL do GWI (REGRA MESTRA: nunca gravar no GWI): {url}"
-    protegidas = carregar_protegidas() if protegidas is None else protegidas
-    if not protegidas:
-        return None
     caminho = unquote(urlsplit(url).path).rstrip("/")
     sem_ext = re.sub(r"(/[^/.]+)\.[A-Za-z0-9.]+$", r"\1", caminho)     # /x/pagina.html -> /x/pagina
     alvos = {caminho, sem_ext}
     pares = _pares(data)
+    for c in sorted(_tocados(caminho, alvos, pares)):
+        if "macnicagwi" in c:
+            return f"{metodo} mexe em {c} (REGRA MESTRA: nunca gravar no GWI)"
+        if any(c == r or c.startswith(r + "/") for r in COMPARTILHADO) \
+                and not any(c == a or c.startswith(a + "/") for a in autorizados):
+            return (f"{metodo} mexe em estrutura compartilhada {c} (XF/template/componente chega às páginas "
+                    f"protegidas): só com \"You can edit {c.split('/jcr:content', 1)[0]}\" do Hazael, "
+                    f"em AEM_COMPARTILHADO_AUTORIZADO")
+    protegidas = carregar_protegidas() if protegidas is None else protegidas
+    if not protegidas:
+        return None
     ops = {v.lower() for v in _valores(pares, ":operation")}
     for p in protegidas:
         for c in alvos:
@@ -368,12 +476,24 @@ def motivo_bloqueio(metodo, url, data=None, protegidas=None):
     return None
 
 
-def travar_session(session):
+def travar_session(session, blacklist=None):
     """Põe a trava em `session.request` (post/put/delete/patch passam por ele)."""
     original = session.request
+    session.blacklist = blacklist or Blacklist()
 
     def request(method, url, *args, **kwargs):
-        motivo = motivo_bloqueio(method, url, kwargs.get("data", args[1] if len(args) > 1 else None))
+        motivo = None
+        if method.upper() not in LEITURA:
+            bl = session.blacklist.atual()
+            data = kwargs.get("data", args[1] if len(args) > 1 else None)
+            try:
+                motivo = motivo_bloqueio(method, url, data, autorizados=compartilhado_autorizado(),
+                                         protegidas=tuple(set(bl or ()) | set(carregar_protegidas())))
+            except EscritaProibida as e:
+                motivo = str(e)
+            if not motivo and bl is None:
+                motivo = (f"{method} sem blacklist fresca do tracker ({session.blacklist.erro}): "
+                          f"nenhuma escrita sem ela (REGRA do Hazael, 25/09/2026)")
         if motivo:
             print(f"\n[ABORTADO] {motivo}", file=sys.stderr)
             raise EscritaProibida(motivo)
