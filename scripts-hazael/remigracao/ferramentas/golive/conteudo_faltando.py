@@ -13,6 +13,8 @@ uma lista fechada de operações (PAGINAS abaixo), com precondição conferida n
   props   grava propriedades num nó que existe (4º elemento opcional: valores que o nó TEM de ter agora)
   criar   cria um nó que não existe (na ordem dada; `:order` quando precisa de posição)
   apagar  apaga um nó que existe e está VAZIO (sem fileReference/linkURL/text/jcr:title) — placeholder
+  remover apaga um nó COM conteúdo, conferindo antes o que ele tem (lista de (subnó, prop, valor))
+  mover   move um nó (Sling :operation=move) — depois, a subárvore no destino tem de ser igual à de antes
 Conferência depois, a página inteira contra o backup:
   JCR     só mudam os nós declarados (e o carimbo da página);
   render  HTML normalizado idêntico ANTES da 1ª e DEPOIS da última diferença; o miolo é listado (texto que saiu/entrou);
@@ -42,22 +44,86 @@ DADOS = C.DADOS
 G2_DAM = "/content/dam/macnicaglobal2/americas/mai/en"
 GWI_DAM = "/content/dam/macnicagwi/americas/mai/public/en"
 RT = "macnicaglobal2/components/content/"
+GWI = "/content/macnicagwi/americas/mai/en"
 S_FLEX_1COL = "1719484596357"                                    # flexcontainer: 1 Column (sp-flex-direction-column)
+S_FLEX_GAP0, S_FLEX_GAP_LARGE = "1718800458698", "1718800456497"  # flexcontainer: No Spacing / Large (entre itens)
 S_CONT_PAD_SMALL, S_CONT_PAD_W0 = "1717498052331", "1717498055877"   # container: padding Small (altura) / No Padding (largura)
+S_CONT_PAD_H0 = "1717498056876"                                  # container: No Padding (altura)
+S_BTN_MINW, S_BTN_CENTER = "1722936853890", "1717669229626"      # button: Fixed Minimum Width / Center
 sessao = C.sessao
+_gwi = {}
 
 
-def img(ref, alt, link=None):
+def de_gwi(no, prop="text"):
+    """Propriedade de um nó do GWI — só GET (a fonte do conteúdo que entra)."""
+    if no not in _gwi:
+        st, j = C.ler(no, ".json")
+        assert st == 200 and "macnicagwi" in no, (no, st)
+        _gwi[no] = j
+    return _gwi[no][prop]
+
+
+def de_g2(no, prop):
+    st, j = C.ler(no, ".json")
+    assert st == 200, (no, st)
+    return j.get(prop)
+
+
+def troca(h, de, para):
+    """URLs do GWI -> global2 no HTML copiado; sobrar `macnicagwi` é erro."""
+    h = h.replace(de, para)
+    assert "macnicagwi" not in h, h[:200]
+    return h
+
+
+def img(ref, alt, link=None, legenda=None):
     """image do global2 com o alt autoral valendo na tela (R49: altValueFromDAM ausente vale true)."""
     d = {"sling:resourceType": RT + "image", "fileReference": ref, "alt": alt, "altValueFromDAM": "false",
          "isDecorative": "false", "titleValueFromDAM": "false", "displayPopupTitle": "false"}
     if link:
         d.update(linkURL=link, linkTarget="_self")
+    if legenda:
+        d["jcr:title"] = legenda
     return d
 
 
 def texto(h):
     return {"sling:resourceType": RT + "text", "text": h, "textIsRich": "true"}
+
+
+def titulo(t, tipo="h1"):
+    return {"sling:resourceType": RT + "title", "jcr:title": t, "type": tipo}
+
+
+def tabela(h):
+    return {"sling:resourceType": RT + "table", "text": h, "textIsRich": "true"}
+
+
+def botao(t, link, estilos=(S_BTN_MINW, S_BTN_CENTER)):
+    """button do global2: o próprio componente põe o .html em link interno."""
+    return {"sling:resourceType": RT + "button", "jcr:title": t, "linkURL": link, "linkTarget": "_self",
+            "cq:styleIds": list(estilos)}
+
+
+def container(estilos):
+    return {"sling:resourceType": RT + "container", "cq:styleIds": list(estilos)}
+
+
+def flex(estilos=(S_FLEX_1COL,)):
+    return {"sling:resourceType": RT + "flexcontainer", "cq:styleIds": list(estilos)}
+
+
+ITEM = {"sling:resourceType": RT + "flexcontaineritem"}
+
+
+def xf(nome):
+    return {"sling:resourceType": RT + "experiencefragment",
+            "fragmentVariationPath": f"/content/experience-fragments/macnicaglobal2/americas/mai/en/site/{nome}/master"}
+
+
+def centra_celulas(h):
+    """Conversão das tabelas da connect-tech no global2 (medida nas 5 vizinhas: G2 == GWI com isto, e nada mais)."""
+    return re.sub(r"<(th|td)>", r'<\1 style="text-align: center;">', h)
 
 
 def card_produto(nome, alvo, foto, alt):
@@ -69,21 +135,77 @@ def card_produto(nome, alvo, foto, alt):
 
 def grade(base, cards, por_linha=4):
     """flexcontainer 1 Column com `por_linha` flexcontaineritem — o desenho da aba Suppliers/Partners da imaging-and-vision."""
-    ops = [("criar", f"{base}/flexcontainer_1", {"sling:resourceType": RT + "flexcontainer", "cq:styleIds": [S_FLEX_1COL]})]
+    ops = [("criar", f"{base}/flexcontainer_1", flex())]
     for i, filhos in enumerate(cards, 1):
         item = f"{base}/flexcontainer_1/flexcontaineritem_{i}"
-        ops.append(("criar", item, {"sling:resourceType": RT + "flexcontaineritem"}))
+        ops.append(("criar", item, ITEM))
         ops += [("criar", f"{item}/{nome}", props) for nome, props in filhos]
     return ops
 
 
+def grade_logos(base, cards, antes):
+    """Uma linha = container (padding Small, sem padding lateral) > flexcontainer 1 Column > 4 flexcontaineritem com image
+    (logo em tela única 458x240 da R62, legenda = nome, link) — exatamente a aba Suppliers/Partners da imaging-and-vision,
+    inclusive o item vazio que completa a última linha (R61)."""
+    ops = []
+    for n, i in enumerate(range(0, len(cards), 4), 1):
+        linha = f"{base}/container_{n}"
+        ops += [("criar", linha, container((S_CONT_PAD_SMALL, S_CONT_PAD_W0)), f"before {antes}"),
+                ("criar", f"{linha}/flexcontainer_1", flex())]
+        for k in range(4):
+            item = f"{linha}/flexcontainer_1/flexcontaineritem_{k + 1}"
+            ops.append(("criar", item, ITEM))
+            if i + k < len(cards):
+                nome, alvo, arq = cards[i + k]
+                ops.append(("criar", f"{item}/image_1", img(f"{CARDS}/{arq}", nome, f"{M}/{alvo}", legenda=nome)))
+    return ops
+
+
+CARDS = f"{G2_DAM}/about-us/partner-with-macnica/cards"           # logos 458x240 da R62, já no DAM (processados)
+FORNECEDORES_BM = [   # ordem, nome e link do supplierlist do GWI (orderBy productManufacturerRanking), 24/09
+    ("Connect Tech", "products/boards-modules/connect-tech", "card-connect-tech-logo.png"),
+    ("Hitek Systems", "products/boards-modules/hitek-systems", "card-hiteklogo-0.png"),
+    ("IBASE", "products/boards-modules/ibase", "card-ibas-logo.png"),
+    ("IEI", "products/boards-modules/iei", "card-iei.png"),
+    ("iENSO", "products/boards-modules/ienso", "card-ienso-logo.png"),
+    ("Mpression", "products/boards-modules/mpression", "card-mpression.png"),
+    ("Reflex CES", "products/boards-modules/reflex-ces", "card-reflexces-logo-horizontal-nobaseline.png"),
+    ("Silex Technology", "products/boards-modules/silex", "card-silex-logo.png"),
+    ("Terasic", "products/boards-modules/terasic", "card-terasic-technologies.png"),
+    ("TQ Systems", "products/boards-modules/tq-systems", "card-logo-tq-systems-svg.png"),
+    ("Transcend", "products/boards-modules/transcend", "card-transcend-logo-trimmed.png"),
+]
+TQ = "products/boards-modules/tq-systems"
+DHW_LAYERSCAPE = "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape"
+LAYERSCAPE_TIT = "TQ Embedded QorIQ® Layerscape"
+IEI = "products/boards-modules/iei/iei-smart-healthcare-panel-pcs-terminals-and-computing"
+W_IEI = f"{GWI}/{IEI}/jcr:content/root/container/container/container"
+W_CT = f"{GWI}/products/boards-modules/connect-tech/jcr:content/root/container/container/container/tabs/item_1756394056435"
+MB991 = "products/boards-modules/ibase/embedded-computing/mb991"
+W_MB = f"{GWI}/{MB991}/jcr:content/root/container/container"
+MBA8 = f"{TQ}/tq-embedded-arm-modules/mba8mp-ras314-single-board-computer"
+IMG_IEI = (f"{GWI_DAM}/images/products/", f"{G2_DAM}/products/boards-modules/iei/")
+IMG_MB = f"{G2_DAM}/products/boards-modules/ibase/images"
+PDF_ROB = f"{G2_DAM}/downloads/robotics-solution-brief.pdf"
+PDF_MBA = f"{G2_DAM}/images/pdfs/EMB_Whitepaper_MBa8MP-RAS314_EN_Rev0101.pdf"
+
+
 # ---------------------------------------------------------------- páginas (lista fechada)
+# achado/mudanca: em inglês, vão para o relatório (dados/mapas/global2_content_fixes_<data>.html)
 PAGINAS = {
     "products": {
         "feito": "piloto 24/09 23:45, backup_conteudo_2026-09-24_234543",
         "gwi": "/content/macnicagwi/americas/mai/en/products",
         "o_que": "4 cards de categoria (em branco: 4 image sem imagem, larguras 2/2+1/3+4/2) -> grade de 4 (texto-link + foto "
                  "linkada), coluna 8+2 como o resto da página; banner (image vazio) -> products-banner.jpg do GWI",
+        "achado": "The four category cards (Semiconductors, Boards & Modules, Displays, IP & Software) were blank: four image "
+                  "components with no image, caption or link, at uneven widths. The banner under the title was an empty image too.",
+        "mudanca": "Built the four cards as a 4-column grid (the Suppliers/Partners grid of Imaging & Vision): each card is the "
+                   "category name in bold as a link, above the category photo, also linked — as on the GWI. The photos were "
+                   "already in the global2 DAM and have the same proportions, so the cards come out the same size. The grid "
+                   "uses the same column width as the text above. Copied the banner (products-banner.jpg) from the GWI into "
+                   "the global2 DAM and put it in the empty banner image. Kept the GWI's alt text “mo” on the Boards & "
+                   "Modules photo (a GWI typo, migrated as is).",
         "assets": [(f"{GWI_DAM}/banners/products-banner.jpg", f"{G2_DAM}/images/products/products-banner.jpg")],
         "ops": [
             ("props", "root/container/image", img(f"{G2_DAM}/images/products/products-banner.jpg", "Products")),
@@ -102,10 +224,228 @@ PAGINAS = {
     },
     "products#padding": {
         "pagina": "products",
+        "feito": "24/09 23:48, backup_conteudo_2026-09-24_234845",
         "o_que": "piloto: o container da grade volta ao padding vertical PADRÃO (50px, o que tinha antes); fica só o 'sem "
                  "padding lateral', que alinha a grade com o texto. O 'Small' (30px) encolheu o vão até o rodapé (28px; GWI ~80)",
+        "mudanca": "Second pass: restored the grid container's original vertical spacing (the first pass had reduced the gap "
+                   "above the footer to 28px); the gaps are now 57px above the cards and 50px below (GWI: 50 and 48).",
         "ops": [("props", "root/container/container", {"cq:styleIds": [S_CONT_PAD_W0]},
                  {"cq:styleIds": [S_CONT_PAD_SMALL, S_CONT_PAD_W0]})],
+    },
+    f"{TQ}/tq-embedded-x86-modules": {
+        "feito": "25/09 00:23, backup_conteudo_2026-09-25_002342",
+        "gwi": f"{GWI}/{TQ}/tq-embedded-x86-modules",
+        "o_que": "título 'TQ Embedded QorIQ® Layerscape' -> pageTitle; list da DHW Layerscape -> filhos da própria página; "
+                 "os 2 botões de contato nos 2 flexcontaineritem VAZIOS depois da lista (como na irmã Layerscape)",
+        "achado": "The page is a copy of the Layerscape page that was never finished: the heading said “TQ Embedded QorIQ® "
+                  "Layerscape”, the product list showed the 14 Layerscape products of the DHW site instead of this page's "
+                  "own x86 products, and the contact block was missing (its two slots were empty).",
+        "mudanca": "Heading set to the page title “TQ Embedded x86 Modules” (as on the GWI). Product list now lists this "
+                   "page's own products. Added the two contact buttons (Contact Us for More Information, Request a Quote) in "
+                   "the two empty slots after the list, like the sister Layerscape page. Note: the list also shows the 4 "
+                   "soft-deleted duplicate pages under this page on the author (see “Found, not changed”).",
+        "ops": [
+            ("props", "root/container/container/title", {"jcr:title": "TQ Embedded x86 Modules"}, {"jcr:title": LAYERSCAPE_TIT}),
+            ("props", "root/container/container_1214227721/list", {"parentPage": f"{M}/{TQ}/tq-embedded-x86-modules"},
+             {"parentPage": DHW_LAYERSCAPE}),
+            ("criar", "root/container/container_1214227721/flexcontainer_copy/flexcontaineritem/button",
+             botao("Contact Us for More Information", f"{M}/contact/form")),
+            ("criar", "root/container/container_1214227721/flexcontainer_copy/flexcontaineritem_1364030293/button",
+             botao("Request a Quote", f"{M}/request-a-quote")),
+        ],
+    },
+    f"{TQ}/tq-embedded-arm-modules": {
+        "feito": "25/09 00:23, backup_conteudo_2026-09-25_002342",
+        "gwi": f"{GWI}/{TQ}/tq-embedded-arm-modules",
+        "o_que": "título 'TQ Embedded QorIQ® Layerscape' -> pageTitle 'TQ Embedded ARM Modules' (fora da lista de pendências)",
+        "achado": "Not on the pending list, found while checking the x86 page: the heading also said “TQ Embedded QorIQ® "
+                  "Layerscape”.",
+        "mudanca": "Heading set to the page title “TQ Embedded ARM Modules” (as on the GWI).",
+        "ops": [("props", "root/container/container/title", {"jcr:title": "TQ Embedded ARM Modules"}, {"jcr:title": LAYERSCAPE_TIT})],
+    },
+    "products/boards-modules/transcend": {
+        "feito": "25/09 00:23, backup_conteudo_2026-09-25_002342",
+        "gwi": f"{GWI}/products/boards-modules/transcend",
+        "o_que": "botão 'View Transcend's Memory Product Portfolio' -> #productportfolio embaixo do texto da intro; id "
+                 "'productportfolio' no título 'Product Portfolio' (o título do tema já compensa o header fixo: cai em y=85)",
+        "achado": "The “View Transcend's Memory Product Portfolio” button under the introduction was missing.",
+        "mudanca": "Added the button under the introduction text; it jumps to the “Product Portfolio” heading (anchor "
+                   "“productportfolio”, the GWI's name, set on that heading — nothing visible changes there). Tested: the "
+                   "heading lands right under the fixed menu with the tabs visible.",
+        "ops": [
+            ("props", "root/container/container_1759409534/container_797504348/container/title_copy_copy",
+             {"id": "productportfolio"}, {"id": None, "jcr:title": "Product Portfolio"}),
+            ("criar", "root/container/container_273709292/flexcontainer/flexcontaineritem_45562908/button",
+             botao("View Transcend's Memory Product Portfolio", "#productportfolio", (S_BTN_MINW,))),
+        ],
+    },
+    "products/boards-modules/connect-tech": {
+        "feito": "25/09 00:23, backup_conteudo_2026-09-25_002342",
+        "gwi": f"{GWI}/products/boards-modules/connect-tech",
+        "o_que": "seção NVIDIA Jetson AGX Xavier (h3 com link + Carrier Boards + tabela) entre Orin NX e Xavier NX, na aba 1, "
+                 "no mesmo desenho das vizinhas (container sem padding > title h1 + table com células centradas)",
+        "achado": "In the NVIDIA Jetson tab, the whole “NVIDIA Jetson AGX Xavier” section was missing (between Orin NX/Orin "
+                  "Nano and Xavier NX): the heading with its link, the “Carrier Boards” heading and the table (Rogue, Rogue-X).",
+        "mudanca": "Added the section in its place, built like the sections around it (same heading and table styles).",
+        "ops": [
+            ("criar", "root/container/container_654932871/tabs/item_1/text_agx_xavier",
+             texto(troca(de_gwi(f"{W_CT}/text_copy_copy_copy__1793979345"), f"{GWI}/", f"{M}/")), "before text_1098323651"),
+            ("criar", "root/container/container_654932871/tabs/item_1/container_agx_xavier",
+             container((S_CONT_PAD_W0, S_CONT_PAD_H0)), "before text_1098323651"),
+            ("criar", "root/container/container_654932871/tabs/item_1/container_agx_xavier/title_text", titulo("Carrier Boards")),
+            ("criar", "root/container/container_654932871/tabs/item_1/container_agx_xavier/table",
+             tabela(centra_celulas(de_gwi(f"{W_CT}/table_1576245494_cop_1758683425")))),
+        ],
+    },
+    IEI: {
+        "feito": "25/09 00:28, backup_conteudo_2026-09-25_002837",
+        "gwi": f"{GWI}/{IEI}",
+        "o_que": "Fitness Panel PC (título + tabela FIT1) no fim do bloco Point-of-care/Bedside; Surgical Monitors (título + "
+                 "tabela) antes do 2º Ordering Information; a 2ª tabela de Ordering (cópia da 1ª, MMS-21CA) -> a do GWI "
+                 "(MMS-27CH); 6 imagens das tabelas copiadas para products/boards-modules/iei/",
+        "achado": "Two sections were missing: “Fitness Panel PC” (FIT1 table) and “Surgical Monitors” (27\" surgical "
+                  "monitors table). The second “Ordering Information” table was a copy of the first one (endoscopy "
+                  "monitors, MMS-21CA) instead of the surgical monitors' (MMS-27CH).",
+        "mudanca": "Added both sections in their GWI places, with the same heading and table styles as the tables around them; "
+                   "copied their 6 product images from the GWI into the global2 DAM (next to the other IEI images). Replaced "
+                   "the duplicated table with the surgical monitors' ordering table from the GWI.",
+        "assets": [(f"{IMG_IEI[0]}{n}", f"{IMG_IEI[1]}{n}") for n in (
+            "FIT1-W15A-IMX6.png", "FIT1-W15A-IMX6_0.png", "FIT1-W15A-IMX6_1.png", "37.png", "32.png", "31.png")],
+        "ops": [
+            ("criar", "root/container/container_596104355/container_388357440/title_table_fitness", titulo("Fitness Panel PC")),
+            ("criar", "root/container/container_596104355/container_388357440/table_fitness",
+             tabela(troca(de_gwi(f"{W_IEI}/table_1535815130"), *IMG_IEI))),
+            ("criar", "root/container/container_596104355/container_1484924223/title_table_surgical", titulo("Surgical Monitors"),
+             "before title_table_535668141"),
+            ("criar", "root/container/container_596104355/container_1484924223/table_surgical",
+             tabela(troca(de_gwi(f"{W_IEI}/table_128058284"), *IMG_IEI)), "before title_table_535668141"),
+            ("props", "root/container/container_596104355/container_1484924223/table_190094126",
+             {"text": de_gwi(f"{W_IEI}/table_544712201")},
+             {"text": ("sem_espaço", de_g2(f"{M}/{IEI}/jcr:content/root/container/container_596104355/container_1484924223/"
+                                           "table_523589597", "text"))}),   # a 2ª é cópia da 1ª (só quebras de linha diferem)
+        ],
+    },
+    MB991: {
+        "feito": "25/09 00:36, backup_conteudo_2026-09-25_003612",
+        "gwi": f"{GWI}/{MB991}",
+        "o_que": "intro (textwithimage) e Features eram da MI997 -> texto, imagem (MB991.jpeg, já no DAM) e lista da MB991 do "
+                 "GWI; os 2 botões Contact/RaQ (o GWI não tem) -> XF signup-and-contact (o bloco de newsletter do GWI)",
+        "achado": "The introduction, its image and the Features list described a different board (the MI997 Mini-ITX, 12th "
+                  "Gen Intel) — only Specifications and Ordering Information were MB991's. The newsletter block (“Stay up to "
+                  "date on the latest news from Macnica Partners.” / Sign up) was missing; in its place were Contact Us / "
+                  "Request a Quote buttons that the GWI page does not have.",
+        "mudanca": "Replaced the introduction text, the image (the MB991 photo already in the global2 DAM) and the Features "
+                   "list with MB991's from the GWI, keeping the existing layout. Replaced the two buttons with the site's "
+                   "newsletter block (the global2 “SignUp and Contact” fragment, as on the GWI).",
+        "ops": [
+            ("props", "root/container/container/container_525028952/textwithimage",
+             {"text": f"<h3>{de_gwi(f'{W_MB}/heading')}</h3>\r\n" + re.sub(r"<p>(?:&nbsp;|\xa0)</p>\s*", "", de_gwi(f"{W_MB}/text")),   # sem os parágrafos vazios (padrão da mb990)
+              "fileReference": f"{IMG_MB}/MB991.jpeg", "alt": "MB991 board"},
+             {"fileReference": f"{IMG_MB}/MI997.png", "alt": "MI997 board", "text": ("contém", "The MI997 Mini-ITX motherboard")}),
+            ("props", "root/container/container/container_525028952/textwithimage/spImage",
+             {"fileReference": f"{IMG_MB}/MB991.jpeg"}, {"fileReference": f"{IMG_MB}/MI997.png"}),
+            ("props", "root/container/container/container_1107099960/text",
+             {"text": de_gwi(f"{W_MB}/container/imagetext/text")}, {"text": ("contém", "12th Gen Intel® Processor Support")}),
+            ("remover", "root/container/text_3_wrap/flexcontainer_copy",
+             [("flexcontaineritem/button", "jcr:title", "Contact Us for More Information"),
+              ("flexcontaineritem_861351158/button", "jcr:title", "Request a Quote")]),
+            ("criar", "root/container/text_3_wrap/experiencefragment", xf("signup-and-contact-experience-fragment")),
+        ],
+    },
+    MBA8: {
+        "feito": "25/09 00:23, backup_conteudo_2026-09-25_002342",
+        "gwi": f"{GWI}/{MBA8}",
+        "o_que": "parágrafo do whitepaper (link para o PDF) no fim do bloco Features; PDF copiado do GWI para images/pdfs/",
+        "achado": "The paragraph linking to the whitepaper (“Read the whitepaper for prototype transition, support resources, "
+                  "and more information.”) was missing, and the PDF was not in the global2 DAM.",
+        "mudanca": "Copied the PDF from the GWI into the global2 DAM and added the paragraph with its link under the Features "
+                   "list, where the GWI has it.",
+        "assets": [(f"{GWI_DAM}/images/pdfs/EMB_Whitepaper_MBa8MP-RAS314_EN_Rev0101.pdf", PDF_MBA)],
+        "ops": [("criar", "root/container/container_features/text_whitepaper",
+                 texto(troca(de_gwi(f"{W_MB.replace(MB991, MBA8)}/container/text_164081127"),
+                             f"{GWI_DAM}/images/pdfs/", f"{G2_DAM}/images/pdfs/")))],
+    },
+    "solutions/robotics-amrs": {
+        "feito": "25/09 00:28, backup_conteudo_2026-09-25_002837",
+        "gwi": f"{GWI}/technology/robotics-amrs",
+        "o_que": "botão 'Download Macnica’s Robotics Solutions Brief' (PDF copiado para downloads/) ao lado do Contact Us, "
+                 "como no GWI: flexcontainer (No Spacing + 1 Column, o par de botões da casa) com o botão novo e o button_1 "
+                 "MOVIDO (mesmo nó, mesmas propriedades)",
+        "achado": "The “Download Macnica’s Robotics Solutions Brief” button next to “Contact Us” was missing, and the PDF was "
+                  "not in the global2 DAM.",
+        "mudanca": "Copied the PDF from the GWI into the global2 DAM and added the download button; the two buttons now sit "
+                   "side by side as on the GWI (the existing Contact Us button was moved into the pair, unchanged).",
+        "assets": [(f"{GWI_DAM}/downloads/robotics-solution-brief.pdf", PDF_ROB)],
+        "ops": [
+            ("criar", "root/container/container_1/container_2/flexcontainer_1", flex((S_FLEX_GAP0, S_FLEX_1COL)), "before button_1"),
+            ("criar", "root/container/container_1/container_2/flexcontainer_1/flexcontaineritem_1", ITEM),
+            ("criar", "root/container/container_1/container_2/flexcontainer_1/flexcontaineritem_1/button",
+             botao(de_gwi(f"{GWI}/technology/robotics-amrs/jcr:content/root/container/container/resizablecontainer/button",
+                          "jcr:title"), PDF_ROB)),
+            ("criar", "root/container/container_1/container_2/flexcontainer_1/flexcontaineritem_2", ITEM),
+            ("mover", "root/container/container_1/container_2/button_1",
+             "root/container/container_1/container_2/flexcontainer_1/flexcontaineritem_2/button_1"),
+        ],
+    },
+    "solutions/robotics-amrs#empilhar": {
+        "feito": "25/09 00:34, backup_conteudo_2026-09-25_003417",
+        "pagina": "solutions/robotics-amrs",
+        "o_que": "2ª passada: o botão de download do global2 é a variante link-button--download (14px, 51px de altura, ícone) e "
+                 "o normal tem 57px -> lado a lado ficaram 13px desalinhados, e o Contact Us tinha saído do lugar. Contact Us "
+                 "VOLTA para o lugar original (mesmo nó, movido de volta), o par sai, e o Download entra logo ACIMA dele, "
+                 "empilhado e centrado (como os botões de download da company-profile)",
+        "mudanca": "Second pass: the site gives buttons that point to a file a different, shorter design, so side by side the "
+                   "two buttons were 13px out of line. The Contact Us button went back exactly where it was, and the download "
+                   "button now sits just above it, centred — like the other download buttons on the site (e.g. Company Profile).",
+        "ops": [
+            ("mover", "root/container/container_1/container_2/flexcontainer_1/flexcontaineritem_2/button_1",
+             "root/container/container_1/container_2/button_1"),
+            ("remover", "root/container/container_1/container_2/flexcontainer_1",
+             [("flexcontaineritem_1/button", "jcr:title", "Download Macnica’s Robotics Solutions Brief"),
+              ("flexcontaineritem_1/button", "linkURL", PDF_ROB)]),
+            ("criar", "root/container/container_1/container_2/button_download",
+             botao("Download Macnica’s Robotics Solutions Brief", PDF_ROB), "before button_1"),
+        ],
+    },
+    "solutions/broadcast-proav-solutions/st-2110-at-scale-resources": {
+        "feito": "25/09 00:28, backup_conteudo_2026-09-25_002837",
+        "gwi": f"{GWI}/technology/Broadcast-ProAV-Solutions/ST-2110-at-Scale-Resources",
+        "o_que": "2º bloco de contato do GWI (XF products-contact-block/master1, só esta página usa) -> 3 botões NA PÁGINA, "
+                 "depois do bloco atual: Contact Us / Request a Quote / Request Evaluation Kit (flexcontainer Large + 1 Column, "
+                 "como o XF de cima)",
+        "achado": "The GWI shows a second contact block under the first one (Contact Us / Request a Quote / Request "
+                  "Evaluation Kit); global2 had only the first.",
+        "mudanca": "Added the three buttons under the existing contact block, on this page only (the GWI block is used by "
+                   "no other page), with the same button style as the block above.",
+        "ops": [
+            ("criar", "root/container/container_2/container_2/flexcontainer_1", flex((S_FLEX_GAP_LARGE, S_FLEX_1COL))),
+        ] + [op for i, (t, alvo) in enumerate([("Contact Us", "contact/form"), ("Request a Quote", "request-a-quote"),
+                                                ("Request Evaluation Kit", "contact/request-evaluation-kit")], 1)
+             for op in (("criar", f"root/container/container_2/container_2/flexcontainer_1/flexcontaineritem_{i}", ITEM),
+                        ("criar", f"root/container/container_2/container_2/flexcontainer_1/flexcontaineritem_{i}/button",
+                         botao(t, f"{M}/{alvo}")))],
+    },
+    "products/boards-modules": {
+        "feito": "25/09 00:36, backup_conteudo_2026-09-25_003612",
+        "gwi": f"{GWI}/products/boards-modules",
+        "o_que": "grade dos 11 fornecedores do supplierlist do GWI (logos 458x240 já no DAM em partner-with-macnica/cards, "
+                 "legenda = nome, link para a página do fornecedor), 3 linhas de 4 como a imaging-and-vision; o botão único "
+                 "(https://www.macnica.com/…/contact/form/, aba nova) -> XF products-contact-block (Contact + RaQ)",
+        "achado": "The whole supplier grid (11 logo cards: Connect Tech, Hitek Systems, IBASE, IEI, iENSO, Mpression, Reflex "
+                  "CES, Silex Technology, Terasic, TQ Systems, Transcend) was missing — the link comparison could not see it "
+                  "because the GWI builds it from the child pages. The only button, “Contact Us for More Information”, went "
+                  "to https://www.macnica.com/americas/mai/en/contact/form/ (hard-coded domain, new tab); “Request a Quote” "
+                  "was missing.",
+        "mudanca": "Built the supplier grid like the Suppliers/Partners grid of Imaging & Vision: 3 rows of 4 cards, each the "
+                   "supplier's logo (the same-size logo files already in the global2 DAM) with its name as caption, linking "
+                   "to the supplier's page, in the GWI's order. Replaced the single button with the site's standard contact "
+                   "block (Contact Us for More Information + Request a Quote, internal links), as on the GWI.",
+        "ops": grade_logos("root/container/container_498772245", FORNECEDORES_BM, "button") + [
+            ("remover", "root/container/container_498772245/button",
+             [("", "jcr:title", "Contact Us for More Information"),
+              ("", "linkURL", "https://www.macnica.com/americas/mai/en/contact/form/")]),
+            ("criar", "root/container/container_498772245/experiencefragment", xf("products-contact-block")),
+        ],
     },
 }
 
@@ -122,6 +462,15 @@ def no_de(j, rel):
     return j
 
 
+def confere(atual, esperado):
+    """esperado: valor exato, ("contém", trecho) ou ("sem_espaço", valor) — igual tirando espaço/quebra de linha e entidades (&quot; x &#34;)."""
+    if isinstance(esperado, tuple) and esperado[0] == "contém":
+        return esperado[1] in (atual or "")
+    if isinstance(esperado, tuple) and esperado[0] == "sem_espaço":
+        return re.sub(r"\s+", "", html.unescape(atual or "")) == re.sub(r"\s+", "", html.unescape(esperado[1]))
+    return atual == esperado
+
+
 def conferir(pag, cfg, jc):
     """Lista de problemas (vazia = pode gravar) contra o jcr:content lido agora."""
     prob = []
@@ -132,7 +481,21 @@ def conferir(pag, cfg, jc):
         if tipo == "props" and no is None and rel.rsplit("/", 1)[0] not in criados:
             prob.append(f"props: {rel} não existe")
         elif tipo == "props" and len(op) > 3:
-            prob += [f"props: {rel}.{k} = {no.get(k)!r}, esperado {v!r}" for k, v in op[3].items() if no.get(k) != v]
+            prob += [f"props: {rel}.{k} = {str(no.get(k))[:80]!r}, esperado {str(v)[:80]!r}" for k, v in op[3].items()
+                     if not confere(no.get(k), v)]
+        elif tipo == "remover":
+            if no is None:
+                prob.append(f"remover: {rel} não existe")
+            else:
+                prob += [f"remover: {rel}/{sub}.{k} = {(no_de(no, sub) if sub else no or {}).get(k)!r}, esperado {v!r}"
+                         for sub, k, v in op[2] if ((no_de(no, sub) if sub else no) or {}).get(k) != v]
+        elif tipo == "mover":
+            if no is None:
+                prob.append(f"mover: {rel} não existe")
+            if no_de(jc, op[2]) is not None:
+                prob.append(f"mover: destino {op[2]} já existe")
+            if no_de(jc, op[2].rsplit("/", 1)[0]) is None and op[2].rsplit("/", 1)[0] not in criados:
+                prob.append(f"mover: pai do destino {op[2]} não existe")
         elif tipo == "criar":
             if no is not None:
                 prob.append(f"criar: {rel} já existe")
@@ -186,8 +549,10 @@ def copiar_asset(origem, destino):
 def aplicar(pag, op):
     tipo, rel = op[0], op[1]
     alvo = C.url(f"{M}/{pag}/jcr:content/{rel}")
-    if tipo == "apagar":
+    if tipo in ("apagar", "remover"):
         r = sessao.post(alvo, data={":operation": "delete"}, timeout=120)
+    elif tipo == "mover":
+        r = sessao.post(alvo, data={":operation": "move", ":dest": f"{M}/{pag}/jcr:content/{op[2]}"}, timeout=120)
     else:
         d = payload(op[2])
         if tipo == "criar":
@@ -273,12 +638,19 @@ def compara_jcr(ja, jd, cfg):
             return True
         for op in cfg["ops"]:
             rel = op[1]
-            if op[0] in ("criar", "apagar") and (no == rel or no.startswith(rel + "/")):
+            if op[0] in ("criar", "apagar", "remover", "mover") and (no == rel or no.startswith(rel + "/")):
+                return True
+            if op[0] == "mover" and (no == op[2] or no.startswith(op[2] + "/")):
                 return True
             if op[0] == "props" and no == rel and (k in props_de[rel] or k in auto):
                 return True
         return False
     fora = sorted(f"{no}.{k}" for no, k in set(fa) | set(fd) if fa.get((no, k)) != fd.get((no, k)) and not previsto(no, k))
+    for op in cfg["ops"]:                                  # nó movido: a subárvore chega igual (tirando o carimbo do nó)
+        if op[0] == "mover":
+            sub = lambda f, r: {(n[len(r):], k): v for (n, k), v in f.items() if (n == r or n.startswith(r + "/")) and k not in auto}
+            if sub(fa, op[1]) != sub(fd, op[2]):
+                fora.append(f"MOVIDO DIFERENTE: {op[1]} -> {op[2]}")
     return fora, declarados
 
 

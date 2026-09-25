@@ -1,0 +1,268 @@
+[
+ {
+  "pagina": "products/boards-modules/tq-systems/tq-embedded-x86-modules",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 17,
+   "igual_antes_do_1o": 2498,
+   "igual_depois_do_ultimo": 299,
+   "texto_saiu": "TQ Embedded QorIQ® Layerscape LBoxLS1012AL Box PC Starterkit STKLS1028A MBLS1028A-IND Single Board Computer TQMLS1012AL Small Embedded Cortex-A53 module TQMLX2160A Embedded Cortex®-A72 module TQMLS1028A Embedded Cortex®-A72 module TQ Systems TQMLS1046A SOM w/ ARM Cortex A72 Processor TQMLS1043A Embedded Quad Cortex®-A53 Module Embedded Octal Cortex-A53 Module - TQMLS1088A LBoxLS1028A Box PC Starterkit STKLX2160A Starterkit STKLS10xxA Starterkit STKLS102xA MBLS1012AL Single Board Computer",
+   "texto_entrou": "TQ Embedded x86 Modules TQMx130HC COM Express® Compact Type 6 Module TQMx130PC COM Express® Compact Type 6 Module TQMx130UC COM Express® Compact Type 6 Module TQMxE41S SMARC 2.1 Module TQMx120UC COM Express® Compact Type 6 Module TQMx120PC COM Express® Compact Type 6 Module TQMx120HC COM Express® Compact Type 6 Module TQMx110EB COM Express® Basic Type 6 Module TQMxE40M COM Express® Mini Module (Type 10) TQMxE39M COM Express® Mini Modul (Type 10) TQMxE39S SMARC-Module TQMx80UC COM Express® Compact Type 6 Module TQMxE40C1 COM Express® Compact Module (Type 6) TQMx70EB COM Express® Basic 15 TQMxE39C1 COM Express® Compact Module (Type 6) 16 TQMxE40C2 COM Express® Compact Module (Type 6) 17 TQMxE39C2 COM Express® Compact Module (Type 6) 18 TQMxE40S SMARC 2.1 Module 19 TQMx60EB COM Express® Basic 20 TQMx50UC COM Express® Compact Modules (Type 6) 21 TQMxE38C COM Express® Compact 22 TQMxE38M COM Express® Mini Module (Type 10) 23 MBox-VH-E39 Embedded BoxPC 24 MBox-V-E39 Embedded BoxPC 25 MBox-V Embedded BoxPC 26 MBox-VH Embedded BoxPC 27 MBox-R Embedded BoxPC 28 MBox-Advanced BoxPC 29 COMBox-V8 Fanless industrial BoxPC 30 Carrierboard MB-SMARC-1 31 Carrierboard MB-SMARC-2 32 MB-COME10-2 Mini-ITX Carrier Board 33 MB-SMARC-3 Mini-ITX Carrier Board 34 Carrierboard MB-M10-1 35 Carrierboard MB-M10-2 36 Carrierboard MB-COME6-3 37 Carrierboard MB-COME6-2 38 Starterkit STKx80UC 39 Starterkit STKx70EB 40 Starterkit STKxE39M 41 Starterkit STKxE39S 42 Starterkit STKxE39C1 43 Starterkit STKxE39C2 44 Starterkit STKx60EB 45 Starterkit STKx50UC 46 Starterkit STKxE38M 47 TQMxE41M COM Express® Compact Embedded Module 48 TQMxE41S COM Express® Compact Embedded Module 49 TQMxCU1-HPCM COM-HPC® Embedded Module 50 Starterkit SKIT100-E41S 51 Starterkit SKIT100-E41S 52 TQMxCU1-HPCM COM-HPC® Embedded Module 53 TQMxE41M COM Express® Compact Embedded Module 54 TQMxE41S COM Express® Compact Embedded Module Contact Us for More Information Request a Quote",
+   "tags_saiu": [
+    "a"
+   ],
+   "tags_entrou": [
+    "a",
+    "div",
+    "li",
+    "p"
+   ],
+   "links_saiu": [
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/MBLS1012AL-single-board-computer.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/MBLSA1028A-IND-single-board-computer.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/lboxls1012al-box-pc.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/lboxls1028a-box-pc.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/starterkit-stkls1028a.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/starterkit-stkls102xa.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/starterkit-stkls10xxa.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/starterkit-stklx2160a.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/tqmls1012al-small-embedded-cortex.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/tqmls1028a-embedded-cortexr-a72.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/tqmls1043a-embedded-quad-cortexr.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/tqmls1046a-embedded-quad-cortexr.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/tqmls1088a-embedded-octal-cortex.html",
+    "/content/macnicaglobal2/americas/dhw/tq-systems/tq-embedded-qoriqr-layerscape/tqmlx2160a-embedded-cortexr-a72.html"
+   ],
+   "links_entrou": [
+    "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/TQMxCU1-HPCM-embedded-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/TQMxE41M-embedded-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/TQMxE41S-embedded-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/carrierboard-mb-come6-2.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/carrierboard-mb-come6-3.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/carrierboard-mb-m10-1.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/carrierboard-mb-m10-2.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/carrierboard-mb-smarc-1.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/carrierboard-mb-smarc-2.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/combox-v8-fanless-industrial-boxpc.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/mb-come10-2-mini-itx-carrier-board.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/mb-smarc-3-mini-itx-carrier-board.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/mbox-advanced-boxpc.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/mbox-r-embedded-boxpc.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/mbox-v-e39-embedded-boxpc.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/mbox-v-embedded-boxpc.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/mbox-vh-e39-embedded-boxpc.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/mbox-vh-embedded-boxpc.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-SKIT100-E41S.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-skit100-e41s.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkx50uc.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkx60eb.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkx70eb.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkx80uc.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkxe38m.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkxe39c1.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkxe39c2.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkxe39m.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkxe39s.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx110eb-com-expressr-basic-type-6.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx120hc-com-expressr-compact-type-6.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx120pc-com-expressr-compact-type-6.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx120uc-com-expressr-compact-type-6.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx130hc-com-expressr-compact-type-6.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx130pc-com-expressr-compact-type-6.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx130uc-com-expressr-compact-type-6.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx50uc-com-expressr-compact-modules.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx60eb-com-expressr-basic.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx70eb-com-expressr-basic.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx80uc-com-expressr-compact-type-6.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxcu1-hpcm-embedded-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe38c-com-expressr-compact.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe38m-com-expressr-mini-module-type.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe39c1-com-expressr-compact-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe39c2-com-expressr-compact-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe39m-com-expressr-mini-modul-type-10.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe39s-smarc-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe40c1-com-expressr-compact-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe40c2-com-expressr-compact-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe40m-com-expressr-mini-module-type.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe40s-smarc-21-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe41m-embedded-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe41s-embedded-module.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe41s-smarc-21-module.html",
+    "/content/macnicaglobal2/americas/mai/en/request-a-quote.html"
+   ],
+   "imgs_entrou": []
+  },
+  "prints": {
+   "altura": [
+    2409,
+    4466
+   ],
+   "igual_no_topo_ate": 244,
+   "igual_no_fim_px": 700,
+   "miolo_antes": [
+    244,
+    1709
+   ],
+   "miolo_depois": [
+    244,
+    3766
+   ]
+  }
+ },
+ {
+  "pagina": "products/boards-modules/tq-systems/tq-embedded-arm-modules",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 1,
+   "igual_antes_do_1o": 2498,
+   "igual_depois_do_ultimo": 1181,
+   "texto_saiu": "TQ Embedded QorIQ® Layerscape",
+   "texto_entrou": "TQ Embedded ARM Modules",
+   "tags_saiu": [],
+   "tags_entrou": [],
+   "links_saiu": [],
+   "links_entrou": [],
+   "imgs_entrou": []
+  },
+  "prints": {
+   "altura": [
+    5337,
+    5337
+   ],
+   "igual_no_topo_ate": 244,
+   "igual_no_fim_px": 5069,
+   "miolo_antes": [
+    244,
+    268
+   ],
+   "miolo_depois": [
+    244,
+    268
+   ]
+  }
+ },
+ {
+  "pagina": "products/boards-modules/transcend",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 2,
+   "igual_antes_do_1o": 2553,
+   "igual_depois_do_ultimo": 1074,
+   "texto_saiu": "",
+   "texto_entrou": "View Transcend's Memory Product Portfolio",
+   "tags_saiu": [
+    "div"
+   ],
+   "tags_entrou": [
+    "a",
+    "div"
+   ],
+   "links_saiu": [],
+   "links_entrou": [
+    "#productportfolio"
+   ],
+   "imgs_entrou": []
+  },
+  "prints": {
+   "altura": [
+    4742,
+    4839
+   ],
+   "igual_no_topo_ate": 851,
+   "igual_no_fim_px": 673,
+   "miolo_antes": [
+    851,
+    4069
+   ],
+   "miolo_depois": [
+    851,
+    4166
+   ]
+  }
+ },
+ {
+  "pagina": "products/boards-modules/connect-tech",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 1,
+   "igual_antes_do_1o": 3311,
+   "igual_depois_do_ultimo": 1086,
+   "texto_saiu": "",
+   "texto_entrou": "NVIDIA Jetson AGX Xavier Carrier Boards: Rogue, Rogue-X, AGX Xavier Carrier Boards Product Focus Networking Notable I/O Notes Rogue Full-featured Dual Ethernet options Multi-camera, HDMI, expansion header Proven deployable platform Rogue-X High I/O and PCIe Dual Ethernet options PCIe expansion, vision-ready Companion to camera boards",
+   "tags_saiu": [],
+   "tags_entrou": [
+    "a",
+    "b",
+    "div",
+    "h1",
+    "h3",
+    "p",
+    "table",
+    "tbody",
+    "td",
+    "th",
+    "tr"
+   ],
+   "links_saiu": [],
+   "links_entrou": [
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/connect-tech/nvidia-jetson-agx-xavier.html"
+   ],
+   "imgs_entrou": []
+  },
+  "prints": {
+   "altura": [
+    7249,
+    7690
+   ],
+   "igual_no_topo_ate": 4935,
+   "igual_no_fim_px": 2344,
+   "miolo_antes": [
+    4935,
+    4905
+   ],
+   "miolo_depois": [
+    4935,
+    5346
+   ]
+  }
+ },
+ {
+  "pagina": "products/boards-modules/tq-systems/tq-embedded-arm-modules/mba8mp-ras314-single-board-computer",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 1,
+   "igual_antes_do_1o": 2586,
+   "igual_depois_do_ultimo": 580,
+   "texto_saiu": "",
+   "texto_entrou": "Read the whitepaper for prototype transition, support resources, and more information.",
+   "tags_saiu": [],
+   "tags_entrou": [
+    "a",
+    "div",
+    "p"
+   ],
+   "links_saiu": [],
+   "links_entrou": [
+    "/content/dam/macnicaglobal2/americas/mai/en/images/pdfs/EMB_Whitepaper_MBa8MP-RAS314_EN_Rev0101.pdf"
+   ],
+   "imgs_entrou": []
+  },
+  "prints": {
+   "altura": [
+    3839,
+    3869
+   ],
+   "igual_no_topo_ate": 1217,
+   "igual_no_fim_px": 58,
+   "miolo_antes": [
+    1217,
+    3781
+   ],
+   "miolo_depois": [
+    1217,
+    3811
+   ]
+  }
+ }
+]

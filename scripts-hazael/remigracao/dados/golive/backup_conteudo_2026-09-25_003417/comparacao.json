@@ -1,0 +1,38 @@
+[
+ {
+  "pagina": "solutions/robotics-amrs",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 5,
+   "igual_antes_do_1o": 2549,
+   "igual_depois_do_ultimo": 942,
+   "texto_saiu": "",
+   "texto_entrou": "",
+   "tags_saiu": [
+    "div"
+   ],
+   "tags_entrou": [
+    "div"
+   ],
+   "links_saiu": [],
+   "links_entrou": [],
+   "imgs_entrou": []
+  },
+  "prints": {
+   "altura": [
+    7852,
+    7949
+   ],
+   "igual_no_topo_ate": 1031,
+   "igual_no_fim_px": 58,
+   "miolo_antes": [
+    1031,
+    7794
+   ],
+   "miolo_depois": [
+    1031,
+    7891
+   ]
+  }
+ }
+]

@@ -245,8 +245,8 @@ def main():
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>global2 link fixes pending</title><style>{css}</style></head><body><main>
 <h1>global2 links still to fix</h1>
-<p class="sub">Pages of the macnicaglobal2 link map (Americas / MAI / EN) that still have link problems after the fixes of 24/09
-(see global2_link_fixes_2026-09-24.html). Based on a fresh comparison of the {len(rel['paginas'])} pages with their GWI pages, {html.escape(quando)}.
+<p class="sub">Pages of the macnicaglobal2 link map (Americas / MAI / EN) that still have link problems after the fixes of 24–25/09
+(see {' and '.join(sorted(f.name for f in LV.MAPAS.glob('global2_*_fixes_*.html')))}). Based on a fresh comparison of the {len(rel['paginas'])} pages with their GWI pages, {html.escape(quando)}.
 Links open in the AEM author in a new tab; you must be logged in.</p>
 <div class="resumo">
 <div><b>{sum(n_links.values())}</b><span>links still to fix</span></div>

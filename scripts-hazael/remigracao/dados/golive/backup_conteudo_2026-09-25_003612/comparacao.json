@@ -1,0 +1,175 @@
+[
+ {
+  "pagina": "products/boards-modules/ibase/embedded-computing/mb991",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 18,
+   "igual_antes_do_1o": 2530,
+   "igual_depois_do_ultimo": 3,
+   "texto_saiu": "Unleashing the Power of 12th Gen Intel® Core™ in Embedded Computing The MI997 Mini-ITX motherboard by IBASE is engineered to support the latest 12th Gen Intel® Core™, i7/i5/i3, and Celeron® processors, marking a significant leap in performance with its support for DDR5 memory and a hybrid architecture. This board is a testament to IBASE's commitment to advancing embedded computing, offering dual Intel® 2.5G LAN for high-speed networking and multiple display outputs including HDMI 2.0a and DisplayPort 1.4a for enhanced visual applications. With its extensive connectivity options, including USB 3.2 and SATA III, alongside versatile M.2 slots for storage and wireless modules, the MI997 stands out as a robust platform for IoT edge, digital signage, and industrial automation. Additionally, features like Intel Active Management Technology (iAMT 16.0) and a wide DC input range underscore its suitability for remote management and diverse operational environments. 12th Gen Intel® Processor Support: Accommodates the latest Intel® Core™ and Celeron® processors for superior computing power DDR5 Memory Compatibility: Features two DDR5 SO-DIMM sockets, supporting up to 64GB for high-speed data processing Advanced Connectivity: Equipped with dual Intel® 2.5G LAN and multiple USB ports for extensive peripheral integration Multiple Display Outputs: Supports HDMI 2.0a, LVDS, and dual DisplayPort 1.4a for multi-display setups Expansion and Storage: Offers versatile expansion with PCI-E and four M.2 slots, catering to various storage and module configurations Contact Us for More Information Request a Quote",
+   "texto_entrou": "Versatile Micro ATX Motherboard for Embedded Computing Solutions The MB991 Micro ATX motherboard, designed based on the Intel® Q170 chipset, supports a range of processors including the Intel® Xeon® E3 family, 7th and 6th Generation Intel® Core™, Intel® Pentium®, and Celeron® QC/DC processors. Featuring Intel® Gen 9 HD Graphics, it delivers enhanced video performance for stunning visuals and 4K playback. With a rich set of I/O and flexible expansion options, including PCIe slots, SATA III ports, and USB interfaces, this motherboard caters to various applications such as medical equipment, industrial control, and gaming machines. Equipped with dual Gigabit Ethernet, RAID support, TPM (2.0), iAMT (11.6), and iSMART technology, it ensures reliability, security, and environmental efficiency. Intel® Xeon E3/Core™ i7/i5/i3 / Pentium® / Celeron® QC/DC processors support Intel® Gen 9 HD Graphics for enhanced video performance Rich set of I/O and flexible expansion options Dual Gigabit Ethernet and RAID support iSMART technology for environmental efficiency MB991 var dataLayerName = 'adobeDataLayer' || 'adobeDataLayer'; window[dataLayerName] = window[dataLayerName] || []; window[dataLayerName].push({ page: JSON.parse(\"\"), event:'cmp:show', eventInfo: { path: 'page.page\\u002D5a3a2f6d35' } }); Stay up to date on the latest news from Macnica Partners. Sign up For more information: Contact us",
+   "tags_saiu": [
+    "a",
+    "div",
+    "img",
+    "script"
+   ],
+   "tags_entrou": [
+    "a",
+    "b",
+    "body",
+    "div",
+    "head",
+    "html",
+    "img",
+    "link",
+    "meta",
+    "p",
+    "script",
+    "title"
+   ],
+   "links_saiu": [
+    "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+    "/content/macnicaglobal2/americas/mai/en/request-a-quote.html"
+   ],
+   "links_entrou": [
+    "/content/dam/macnicaglobal2/americas/mai/icons/apple-touch-icon-57x57.png",
+    "/content/dam/macnicaglobal2/americas/mai/icons/apple-touch-icon-60x60.png",
+    "/content/dam/macnicaglobal2/americas/mai/icons/apple-touch-icon-72x72.png",
+    "/content/dam/macnicaglobal2/americas/mai/icons/favicon-16x16.png",
+    "/content/dam/macnicaglobal2/americas/mai/icons/favicon-32x32.png",
+    "/content/dam/macnicaglobal2/americas/mai/icons/favicon.ico",
+    "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/signup-and-contact-experience-fragment/master.html",
+    "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+    "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D"
+   ],
+   "imgs_entrou": [
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/embedded-computing/mb991/_jcr_content/root/container/container/container_525028952/textwithimage.coreimg.jpeg/1790273438885/mb991.jpeg",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/embedded-computing/mb991/_jcr_content/root/container/container/container_525028952/textwithimage/spImage.coreimg.jpeg/1790273438885/mb991.jpeg",
+    "/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.lc-652a558c3774088b61b0530c184710d1-lc.min.js",
+    "/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+    "/etc.clientlibs/macnicaglobal2/clientlibs/clientlib-base.lc-6a4a72ea69f6add86305cdab2dc9254c-lc.min.js",
+    "/etc.clientlibs/macnicaglobal2/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+    "/etc.clientlibs/macnicaglobal2/clientlibs/clientlib-site.lc-0ad5766f113cb7bedf64e99d0682bc14-lc.min.js",
+    "https://www.google.com/recaptcha/api.js?render=6LfPRpEpAAAAADSQPCXIrXU_9CEEuZSzabJ0D7HQ"
+   ]
+  },
+  "prints": {
+   "altura": [
+    3928,
+    4015
+   ],
+   "igual_no_topo_ate": 315,
+   "igual_no_fim_px": 671,
+   "miolo_antes": [
+    315,
+    3257
+   ],
+   "miolo_depois": [
+    315,
+    3344
+   ]
+  }
+ },
+ {
+  "pagina": "products/boards-modules",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 4,
+   "igual_antes_do_1o": 2516,
+   "igual_depois_do_ultimo": 3,
+   "texto_saiu": "",
+   "texto_entrou": "Connect Tech Hitek Systems IBASE IEI iENSO Mpression Reflex CES Silex Technology Terasic TQ Systems Transcend Industrial Motherboards & Modules var dataLayerName = 'adobeDataLayer' || 'adobeDataLayer'; window[dataLayerName] = window[dataLayerName] || []; window[dataLayerName].push({ page: JSON.parse(\"{\\x22page\\u002Dbee4afdf7c\\x22:{\\x22@type\\x22:\\x22macnicaglobal2\\/components\\/page\\x22,\\x22repo:modifyDate\\x22:\\x22 \\x22,\\x22dc:title\\x22:\\x22Industrial Motherboards \\x26 Modules\\x22,\\x22xdm:template\\x22:\\x22\\/conf\\/macnicaglobal2\\/settings\\/wcm\\/templates\\/mai\\u002Dpage\\u002Dcontent\\x22,\\x22xdm:language\\x22:\\x22en\\x22,\\x22xdm:tags\\x22:[],\\x22repo:path\\x22:\\x22\\/content\\/macnicaglobal2\\/americas\\/mai\\/en\\/products\\/boards\\u002Dmodules.html\\x22}}\"), event:'cmp:show', eventInfo: { path: 'page.page\\u002Dbee4afdf7c' } }); Request a Quote",
+   "tags_saiu": [
+    "a",
+    "div",
+    "script"
+   ],
+   "tags_entrou": [
+    "a",
+    "body",
+    "data",
+    "div",
+    "head",
+    "html",
+    "img",
+    "link",
+    "meta",
+    "script",
+    "span",
+    "title"
+   ],
+   "links_saiu": [
+    "https://www.macnica.com/americas/mai/en/contact/form/"
+   ],
+   "links_entrou": [
+    "/content/dam/macnicaglobal2/americas/mai/icons/apple-touch-icon-57x57.png",
+    "/content/dam/macnicaglobal2/americas/mai/icons/apple-touch-icon-60x60.png",
+    "/content/dam/macnicaglobal2/americas/mai/icons/apple-touch-icon-72x72.png",
+    "/content/dam/macnicaglobal2/americas/mai/icons/favicon-16x16.png",
+    "/content/dam/macnicaglobal2/americas/mai/icons/favicon-32x32.png",
+    "/content/dam/macnicaglobal2/americas/mai/icons/favicon.ico",
+    "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master.html",
+    "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/connect-tech.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/hitek-systems.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ienso.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/mpression.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/silex.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems.html",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend.html",
+    "/content/macnicaglobal2/americas/mai/en/request-a-quote.html"
+   ],
+   "imgs_entrou": [
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_1/flexcontainer_1/flexcontaineritem_1/image_1.coreimg.png/1790138880595/card-connect-tech-logo.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_1/flexcontainer_1/flexcontaineritem_1/image_1.coreimg{.width}.png/1790138880595/card-connect-tech-logo.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_1/flexcontainer_1/flexcontaineritem_2/image_1.coreimg.png/1790138880423/card-hiteklogo-0.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_1/flexcontainer_1/flexcontaineritem_2/image_1.coreimg{.width}.png/1790138880423/card-hiteklogo-0.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_1/flexcontainer_1/flexcontaineritem_3/image_1.coreimg.png/1790138880280/card-ibas-logo.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_1/flexcontainer_1/flexcontaineritem_3/image_1.coreimg{.width}.png/1790138880280/card-ibas-logo.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_1/flexcontainer_1/flexcontaineritem_4/image_1.coreimg.png/1790138868059/card-iei.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_1/flexcontainer_1/flexcontaineritem_4/image_1.coreimg{.width}.png/1790138868059/card-iei.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_2/flexcontainer_1/flexcontaineritem_1/image_1.coreimg.png/1790138880343/card-ienso-logo.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_2/flexcontainer_1/flexcontaineritem_1/image_1.coreimg{.width}.png/1790138880343/card-ienso-logo.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_2/flexcontainer_1/flexcontaineritem_2/image_1.coreimg.png/1790138867918/card-mpression.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_2/flexcontainer_1/flexcontaineritem_2/image_1.coreimg{.width}.png/1790138867918/card-mpression.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_2/flexcontainer_1/flexcontaineritem_3/image_1.coreimg.png/1790138868023/card-reflexces-logo-horizontal-nobaseline.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_2/flexcontainer_1/flexcontaineritem_3/image_1.coreimg{.width}.png/1790138868023/card-reflexces-logo-horizontal-nobaseline.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_2/flexcontainer_1/flexcontaineritem_4/image_1.coreimg.png/1790138879267/card-silex-logo.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_2/flexcontainer_1/flexcontaineritem_4/image_1.coreimg{.width}.png/1790138879267/card-silex-logo.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_3/flexcontainer_1/flexcontaineritem_1/image_1.coreimg.png/1790138879810/card-terasic-technologies.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_3/flexcontainer_1/flexcontaineritem_1/image_1.coreimg{.width}.png/1790138879810/card-terasic-technologies.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_3/flexcontainer_1/flexcontaineritem_2/image_1.coreimg.png/1790138879310/card-logo-tq-systems-svg.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_3/flexcontainer_1/flexcontaineritem_2/image_1.coreimg{.width}.png/1790138879310/card-logo-tq-systems-svg.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_3/flexcontainer_1/flexcontaineritem_3/image_1.coreimg.png/1790138879406/card-transcend-logo-trimmed.png",
+    "/content/macnicaglobal2/americas/mai/en/products/boards-modules/_jcr_content/root/container/container_498772245/container_3/flexcontainer_1/flexcontaineritem_3/image_1.coreimg{.width}.png/1790138879406/card-transcend-logo-trimmed.png",
+    "/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.lc-652a558c3774088b61b0530c184710d1-lc.min.js",
+    "/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+    "/etc.clientlibs/macnicaglobal2/clientlibs/clientlib-base.lc-6a4a72ea69f6add86305cdab2dc9254c-lc.min.js",
+    "/etc.clientlibs/macnicaglobal2/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+    "/etc.clientlibs/macnicaglobal2/clientlibs/clientlib-site.lc-0ad5766f113cb7bedf64e99d0682bc14-lc.min.js",
+    "https://www.google.com/recaptcha/api.js?render=6LfPRpEpAAAAADSQPCXIrXU_9CEEuZSzabJ0D7HQ"
+   ]
+  },
+  "prints": {
+   "altura": [
+    2129,
+    2161
+   ],
+   "igual_no_topo_ate": 571,
+   "igual_no_fim_px": 0,
+   "miolo_antes": [
+    571,
+    2129
+   ],
+   "miolo_depois": [
+    571,
+    2161
+   ]
+  }
+ }
+]

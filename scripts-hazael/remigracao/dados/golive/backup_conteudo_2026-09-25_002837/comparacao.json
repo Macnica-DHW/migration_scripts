@@ -1,0 +1,140 @@
+[
+ {
+  "pagina": "products/boards-modules/iei/iei-smart-healthcare-panel-pcs-terminals-and-computing",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 16,
+   "igual_antes_do_1o": 2987,
+   "igual_depois_do_ultimo": 363,
+   "texto_saiu": "MMS-21CA-R11 21.5\", White, 1920x1080, VGA/DVI-D/Component/CVBS/S-Video input, 100~240 VAC to 12V DC power adapter MMS-21CAH-R11 21.5\", White, 1920x1080, VGA/DVI-D/Component/CVBS/S-Video/HDMI input, 100~240 VAC to 12V DC power adapter MMS-21CAS-R11 21.5\", White, 1920x1080, VGA/DVI-D/Component/CVBS/S-Video/3G SDI input, 100~240 VAC to 12V DC power adapter MMS-21CAHS-R11 21.5\", White, 1920x1080, VGA/DVI-D/Component/CVBS/S-Video/HDMI/3G SDI input, 100~240 VAC to 12V DC power adapter",
+   "texto_entrou": "Fitness Panel PC CPU / Chipset Display I/O Features FIT1-W10A-IMX6 Freescale™ i.MX6 Cortex™-A9 quad-core 1.0 GHz LCD Size: 10.1\" Resolution: 1280(W) x 800(H) 1 x Ethernet 1 x Csafe 2 x Hand Pulse 1 x TV 1 x HDMI In 1 x Keypad 1 x USB 2.0 1 x LCB (Ready for ODM / OEM) Supports Android 5.1 OS Flexible ID Design (Open Frame) IEI Customer Reference Board (10.1\"/15.6\"/18.5\" share the same main board) Waterproof : IPX5 (For customized ID) Supports BLE / ANT+ / NFC Supports ATSC / DVBT TV Dongle FIT1-W15A-IMX6 Freescale™ i.MX6 Cortex™-A9 quad-core 1.0 GHz LCD Size: 15.6\" Resolution: 1366(W) x 768(H) 1 x Ethernet 1 x Csafe 2 x Hand Pulse 1 x TV 1 x HDMI In 1 x Keypad 1 x USB 2.0 1 x LCB (Ready for ODM / OEM) Supports Android 5.1 OS Flexible ID Design (Open Frame) IEI Customer Reference Board (10.1\"/15.6\"/18.5\" share the same main board) Waterproof : IPX5 (For customized ID) Supports BLE / ANT+ / NFC Supports ATSC / DVBT TV Dongle FIT1-W18A-IMX6 Freescale™ i.MX6 Cortex™-A9 quad-core 1.0 GHz LCD Size: 18.5\"\" Resolution: 1366(W) x 768(H) 1 x Ethernet 1 x Csafe 2 x Hand Pulse 1 x TV 1 x HDMI In 1 x Keypad 1 x USB 2.0 1 x LCB (Ready for ODM / OEM) Supports Android 5.1 OS Flexible ID Design (Open Frame) IEI Customer Reference Board (10.1\"/15.6\"/18.5\" share the same main board) Waterproof : IPX5 (For customized ID) Supports BLE / ANT+ / NFC Supports ATSC / DVBT TV Dongle Surgical Monitors 27\" FHD Surgical Monitor w/ HDMI Input 27\" Surgical Monitor w/ Analog Inputs 27\" Surgical Monitor w/ VGA & DVI Inputs LCD size (inch) 27\"(16:9) 27\"(16:9) 27\"(16:9) LCD size (inch) 27\"(16:9) 27\"(16:9) 27\"(16:9) Resolution 1920 (W) x 1080 (H) pixels 1920 (W) x 1080 (H) pixels 1920 (W) x 1080 (H) pixels Brightness (cd/m2) 700 (typical) 700 (typical) 700 (typical) Contrast ratio 178°/178° (typical) 1000:1 (typical) 178°/178° (typical) Viewing angle 178°/178° (typical) 178°/178° (typical) 178°/178° (typical) Gamma Correction Factory-calibrated gamma 2.0 & DICOM Factory-calibrated gamma 2.0 & DICOM Factory-calibrated gamma 2.0 & DICOM Color Temperature Factory-calibrated 5500K, 6500K, 7500K, 9300K Factory-calibrated 5500K, 6500K, 7500K, 9300K Factory-calibrated 5500K, 6500K, 7500K, 9300K Power Requirement Medical-grade power adapter: input: 100~240V AC 50~60Hz; output: 12V DC/7.5A Medical-grade power adapter: input: 100~240V AC 50~60Hz; output: 12V DC/7.5A Medical-grade power adapter: input: 100~240V AC 50~60Hz; output: 12V DC/7.5A Function Keys 1 x MENU 1 x Input source 1 x Custom input 1 x Backlight up/+ 1 x backlight down/- 1 x Image size adjustment 1 x MENU 1 x Input source 1 x Custom input 1 x Backlight up/+ 1 x backlight down/- 1 x Image size adjustment 1 x MENU 1 x Input source 1 x Custom input 1 x Backlight up/+ 1 x backlight down/- 1 x Image size adjustment Dimensions (L x W x H) 657 x 399 x 59.5 mm 657 x 399 x 59.5 mm 657 x 399 x 59.5 mm Weight 10.5 kg 10.5 kg 10.5 kg Operating Temperature 0°C~40°C 0°C~40°C 0°C~40°C Storage Temperature -20°C ~60°C -20°C ~60°C -20°C ~60°C Medical Certifications ANSI/AAMI ES60601-1,EN60601-1,CAN/CSA C22.2 No. 60601, FCC Class B part 18 ANSI/AAMI ES60601-1,EN60601-1,CAN/CSA C22.2 No. 60601, FCC Class B part 18 ANSI/AAMI ES60601-1,EN60601-1,CAN/CSA C22.2 No. 60601, FCC Class B part 18 VGA (DB-15) Input: 1 Input: 1 Input: 1 DVI-D Input: 1 Input: 1 Input: 1 Component N/A Input: BNC x 1 (Y/Pb/Pr, R/Gs/B, R/G/B/C-Sync, R/G/B/H-Sync/V-Sync) Output (loop through):BNC x 1 (Y/Pb/Pr, R/Gs/B, R/G/B/C-Sync, R/G/B/H-Sync/V-Sync) N/A CVBS N/A Input: BNC x 1 (NTSC, PAL) Output (loop through): BNC x 1 (NTSC, PAL) N/A S-Video N/A Input: 1 Output (loop through): 1 N/A Audio Input: Phone jack x 1 Output: 0.8W x 2 Input: Phone jack x 1 Output: 0.8W x 2 Input: Phone jack x 1 Output: 0.8W x 2 HDMI 1.4 (optional) Input: 1 Output (loop through): 1 Input: 1 Output (loop through): 1 *Only for MMS-27CAH-R10 & MMS-27CAHS-R10 models N/A 3G-SDI (Optional) Input: 1 Output (loop through): 1 *Only for MMS-27CHS-R10 & MMS-27CAHS-R10 models Input: 1 Output (loop through): 1 *Only for MMS-27CAS-R10 & MMS-27CAHS-R10 models Input: 1 Output (loop through): 1 *Only for MMS-27CS-R10 model Touch screen (optional) N/A N/A N/A MMS-27CH-R10 27\" Full HD color monitor, VGA, DVI-D, 100~240 VAC to 12V DC power adapter MMS-27CAH-R10 27” 1920x1080 color monitor, VGA/DVI-D/Component/CVBS/S-Video/HDMI input, 100-240V AC to 12V DC power adapter MMS-27CHS-R10 27” 1920x1080 color monitor, VGA/DVI-D/HDMI/3G SDI input, 100~240 VAC to 12V DC power adapter MMS-27CAHS-R10 27” 1920x1080 color monitor, VGA/DVI-D/Component/CVBS/S-Video/HDMI/3G SDI input, 100~240 VAC to 12V DC power adapter",
+   "tags_saiu": [
+    "td"
+   ],
+   "tags_entrou": [
+    "a",
+    "br",
+    "div",
+    "h1",
+    "img",
+    "p",
+    "table",
+    "tbody",
+    "td",
+    "th",
+    "tr"
+   ],
+   "links_saiu": [],
+   "links_entrou": [
+    "https://www.britemed.com.tw/en/product/model.php?II&#61;31",
+    "https://www.britemed.com.tw/en/product/model.php?II&#61;32",
+    "https://www.britemed.com.tw/en/product/model.php?II&#61;37",
+    "https://www.ieiworld.com/en/product/model.php?II&#61;535",
+    "https://www.ieiworld.com/en/product/model.php?II&#61;536",
+    "https://www.ieiworld.com/en/product/model.php?II&#61;537"
+   ],
+   "imgs_entrou": [
+    "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/31.png",
+    "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/32.png",
+    "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/37.png",
+    "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/FIT1-W15A-IMX6.png",
+    "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/FIT1-W15A-IMX6_0.png",
+    "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/FIT1-W15A-IMX6_1.png"
+   ]
+  },
+  "prints": {
+   "altura": [
+    12128,
+    16557
+   ],
+   "igual_no_topo_ate": 6015,
+   "igual_no_fim_px": 41,
+   "miolo_antes": [
+    6015,
+    12087
+   ],
+   "miolo_depois": [
+    6015,
+    16516
+   ]
+  }
+ },
+ {
+  "pagina": "solutions/robotics-amrs",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 3,
+   "igual_antes_do_1o": 2549,
+   "igual_depois_do_ultimo": 942,
+   "texto_saiu": "",
+   "texto_entrou": "Download Macnica’s Robotics Solutions Brief",
+   "tags_saiu": [
+    "div"
+   ],
+   "tags_entrou": [
+    "a",
+    "div"
+   ],
+   "links_saiu": [],
+   "links_entrou": [
+    "/content/dam/macnicaglobal2/americas/mai/en/downloads/robotics-solution-brief.pdf"
+   ],
+   "imgs_entrou": []
+  },
+  "prints": {
+   "altura": [
+    7838,
+    7852
+   ],
+   "igual_no_topo_ate": 1031,
+   "igual_no_fim_px": 722,
+   "miolo_antes": [
+    1031,
+    7116
+   ],
+   "miolo_depois": [
+    1031,
+    7130
+   ]
+  }
+ },
+ {
+  "pagina": "solutions/broadcast-proav-solutions/st-2110-at-scale-resources",
+  "jcr_fora": [],
+  "render": {
+   "blocos": 1,
+   "igual_antes_do_1o": 2717,
+   "igual_depois_do_ultimo": 279,
+   "texto_saiu": "",
+   "texto_entrou": "Contact Us Request a Quote Request Evaluation Kit",
+   "tags_saiu": [],
+   "tags_entrou": [
+    "a",
+    "div"
+   ],
+   "links_saiu": [],
+   "links_entrou": [
+    "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+    "/content/macnicaglobal2/americas/mai/en/contact/request-evaluation-kit.html",
+    "/content/macnicaglobal2/americas/mai/en/request-a-quote.html"
+   ],
+   "imgs_entrou": []
+  },
+  "prints": {
+   "altura": [
+    2129,
+    2144
+   ],
+   "igual_no_topo_ate": 1407,
+   "igual_no_fim_px": 0,
+   "miolo_antes": [
+    1407,
+    2129
+   ],
+   "miolo_depois": [
+    1407,
+    2144
+   ]
+  }
+ }
+]
