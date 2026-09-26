@@ -1,0 +1,276 @@
+{
+ "quando": "2026-09-25T21:39:58",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Altera Agilex FPGA & SoC Portfolio | Agilex 3, 5 & 9 Series",
+  "manufacturer": "mai:manufacturers/altera",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Altera Agilex™ FPGAs",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:46 GMT+0000",
+  "cq:lastModified": "Fri Sep 25 2026 23:45:00 GMT+0000",
+  "jcr:description": "Explore the Altera Agilex SoC & FPGA family, including Agilex 3, 5, and 9 series: offering advanced performance. Find Altera development kits and support tools.",
+  "keywords": "Agilex™ FPGAs, advanced technologies, Hyperflex FPGA Architecture, AI Tensor Blocks, versatile features, applications, performance, power efficiency.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex",
+  "pageTitle": "Altera Agilex™  FPGAs",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Altera Agilex™ FPGAs",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Altera® Agilex 3, 5, & 9 FPGAs and SoCs",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Agilex™ 3 FPGAs and SoCs",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The Agilex® 3 FPGA is designed to deliver a blend of low power consumption, high performance, and small form factors, catering to various applications. This series stands out for its ease of use, making it an attractive option for designers familiar with Cyclone and MAX FPGAs. The Agilex 3 family includes B-Series and C-Series devices, each tailored for specific use cases. B-Series FPGAs are ideal for board-, platform-, and system-level management applications, such as power sequencing and system monitoring, whereas C-Series devices are designed to meet the broader and more demanding needs of industrial, medical, data center, and telecommunication applications. This range allows for versatile deployment in environments that require the latest in FPGA architecture, with a focus on AI capabilities in compact and power-efficient packages.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "uXQ275gqFOI",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      },
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Product Overview",
+       "linkURL": "https://www2.macnica.com/americas/web/products/semiconductors/altera/agilex/agilex-3-fpga-and-soc-overview",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Agilex™ 5 FPGAs and SoCs",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Altera Agilex 5 FPGAs offer enhanced performance and power efficiency, featuring industry-first AI Tensor Blocks, Arm Cortex-A76/A55 cores, and second-gen Hyperflex FPGA Architecture. They provide up to 2.5X performance and 50% lower power compared to Cyclone V FPGAs. With transceivers up to 28.1 Gbps, PCIe 4.0 x8, and DDR5 support, they cater to midrange FPGA applications in various markets like communication, video, industry, medical, data centers, and defense.</p><p style=\"margin-top:0\">&nbsp;</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "table_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th style=\"white-space:nowrap\">E-Series</th>\n<th style=\"white-space:nowrap\">D-Series</th>\n</tr><tr><td>Optimized for power and size for intelligent applications at the edge, embedded, and more</td>\n<td>Optimized for performance and power efficiency - ideal for various applications across multiple markets</td>\n</tr><tr><td>50K - 656K LEs</td>\n<td>103K - 644K LEs</td>\n</tr><tr><td>Package size as small as 15 mm x 15 mm</td>\n<td>Package size as small as 23 mm x 23 mm</td>\n</tr><tr><td>Up to 24 x 28G transceivers</td>\n<td>Up to 32 x 28G transceivers</td>\n</tr><tr><td>Up to PCIe 4.0 x4 and 10/25GbE x6 Hard IP</td>\n<td>Up to PCIe 4.0 x8 and 25GbE x16 Hard IP</td>\n</tr><tr><td>DDR4 @ 2,667 Mbps, DDR5 @ 3,600 Mbps, LPDDR4/5 @ 3,733 Mbps</td>\n<td>DDR4 @ 3,200 Mbps, DDR5 @ 4,000 Mbps, LPDDR4/4x/5 @ 4,267 Mbps, QDR IV @ 2,132 Mbps</td>\n</tr><tr><td>Peak TOPS INT8 up to 26</td>\n<td>Peak TOPS INT8 up to 56</td>\n</tr><tr><td>18x19 Multipliers up to 1,692</td>\n<td>18x19 Multipliers up to3,680</td>\n</tr><tr><td colspan=\"2\">Multi-core Arm processors of Dual-core A55 @ 1.5 GHz and Dual-core A76 @ 1.8GHz</td>\n</tr><tr><td colspan=\"2\">MIPI D-PHY v2.5 at up to 3.5 Gbps per lane</td>\n</tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "1722939215525"
+      ]
+     },
+     "button_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Product Overview",
+      "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview",
+      "linkTarget": "_self",
+      "sling:resourceType": "macnicaglobal2/components/content/button",
+      "cq:styleIds": [
+       "",
+       "1722936853890",
+       "1717669229626"
+      ]
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Agilex™ 7 FPGAs and SoCs",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Altera Agilex 7 Series FPGAs combine 10 nm and 20 nm technologies, offering flexibility for tailored designs. Featuring Hyperflex Architecture, they provide PCIe 5.0 and Compute Express Link support ideal for data centers and networking, Agilex 7 FPGAs balance performance and power efficiency for practical applications.</p><p style=\"margin-top:0\">&nbsp;</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "table_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\">\n<tbody><tr><th>&nbsp;</th>\n<th style=\"white-space:nowrap\">F-Series</th>\n<th style=\"white-space:nowrap\">I-Series</th>\n<th style=\"white-space:nowrap\">M-Series</th>\n</tr><tr><td><b>Logic Elements</b></td>\n<td>573K-2.7M LE</td>\n<td>up to 4.0M LE</td>\n<td>up to 3.9M LE</td>\n</tr><tr><td style=\"white-space:nowrap\"><b>PCIe</b></td>\n<td>PCIe 4.0</td>\n<td>PCIe 5.0</td>\n<td>PCIe 5.0</td>\n</tr><tr><td><b>Memory Support</b></td>\n<td style=\"white-space:nowrap\">DDR4</td>\n<td style=\"white-space:nowrap\">DDR4</td>\n<td>LPDDR5 / DDR5/ DDR4</td>\n</tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "1722939215525"
+      ]
+     },
+     "button_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Product Overview",
+      "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview",
+      "linkTarget": "_self",
+      "sling:resourceType": "macnicaglobal2/components/content/button",
+      "cq:styleIds": [
+       "",
+       "1722936853890",
+       "1717669229626"
+      ]
+     }
+    },
+    "container_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Agilex™ 9 FPGAs and SoCs",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Altera Agilex Series 9 FPGAs embody a significant advancement in FPGA technology, combining cutting-edge 7nm process technology with a wealth of integrated features. With their versatile architecture, these FPGAs are engineered to excel across diverse applications, from data centers to networking and beyond. The fusion of high-performance processors, adaptable transceivers, and sophisticated processing capabilities results in a potent platform for addressing the challenges of modern computing and communication systems. This series empowers engineers with a tool to create highly optimized, power-efficient solutions, enabling innovation across a spectrum of industries.</p><p style=\"margin-top:0\">&nbsp;</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "table_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th>&nbsp;</th>\n<th>Direct RF-Series SoC FPGA<br>\nAGRW014</th>\n<th>Direct RF-Series SoC FPGA<br>\nAGRW027</th>\n<th>Direct RF-Series SoC FPGA<br>\nAGRM027</th>\n</tr><tr><td><b>Logic Elements (kLE)</b></td>\n<td style=\"white-space:nowrap\">1437</td>\n<td style=\"white-space:nowrap\">2693</td>\n<td style=\"white-space:nowrap\">2693</td>\n</tr><tr><td><b>18x19 Multipliers</b></td>\n<td style=\"white-space:nowrap\">9020</td>\n<td style=\"white-space:nowrap\">17056</td>\n<td style=\"white-space:nowrap\">17056</td>\n</tr><tr><td><b># of ADC/DAC</b></td>\n<td style=\"white-space:nowrap\">4/4</td>\n<td style=\"white-space:nowrap\">8/8</td>\n<td style=\"white-space:nowrap\">20/16</td>\n</tr><tr><td><b>Sample Rate (Gsps)</b></td>\n<td style=\"white-space:nowrap\">64/64</td>\n<td style=\"white-space:nowrap\">64/64</td>\n<td style=\"white-space:nowrap\">4/12</td>\n</tr><tr><td><b># of Bits Resolution</b></td>\n<td style=\"white-space:nowrap\">10/10</td>\n<td style=\"white-space:nowrap\">10/10</td>\n<td style=\"white-space:nowrap\">14/14</td>\n</tr><tr><td><b>Embedded Memory (Mb)</b></td>\n<td style=\"white-space:nowrap\">190</td>\n<td style=\"white-space:nowrap\">2878</td>\n<td style=\"white-space:nowrap\">287</td>\n</tr><tr><td><b>Quad Core ARM</b></td>\n<td style=\"white-space:nowrap\">Yes</td>\n<td style=\"white-space:nowrap\">Yes</td>\n<td style=\"white-space:nowrap\">Yes</td>\n</tr><tr><td style=\"white-space:nowrap\"><b>XCVR's</b></td>\n<td>58G PAM-4, 32G NRZ</td>\n<td>58G PAM-4, 32G NRZ</td>\n<td>58G PAM-4, 32G NRZ</td>\n</tr><tr><td style=\"white-space:nowrap\"><b>PCIe</b></td>\n<td style=\"white-space:nowrap\">4.0</td>\n<td style=\"white-space:nowrap\">4.0</td>\n<td style=\"white-space:nowrap\">4.0</td>\n</tr><tr><td style=\"white-space:nowrap\"><b>Package</b></td>\n<td style=\"white-space:nowrap\">45x32</td>\n<td style=\"white-space:nowrap\">52.5x42.5</td>\n<td style=\"white-space:nowrap\">56.45</td>\n</tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "1722939215525"
+      ]
+     },
+     "button_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Product Overview",
+      "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview",
+      "linkTarget": "_self",
+      "sling:resourceType": "macnicaglobal2/components/content/button",
+      "cq:styleIds": [
+       "",
+       "1722936853890",
+       "1717669229626"
+      ]
+     }
+    },
+    "container_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "list_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "linkItems": "true",
+      "pages": [
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/agilex-3-fpga-and-soc-overview",
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-5-fpga-and-soc-overview",
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-7-fpga-and-soc-overview",
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera/agilex/altera-agilex-9-fpga-and-soc-overview"
+      ],
+      "sling:resourceType": "macnicaglobal2/components/content/list",
+      "listFrom": "static"
+     }
+    },
+    "container_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "experiencefragment_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    }
+   }
+  }
+ }
+}
