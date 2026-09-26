@@ -1,0 +1,98 @@
+{
+ "quando": "2026-09-25T22:21:56",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c814",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c814/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "i-Chips IP00C814 - Video Processor with 4K Input & Output",
+  "manufacturer": "mai:manufacturers/i-chips",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "i-Chips IP00C814",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:53 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:22:19 GMT+0000",
+  "jcr:description": "Upgrade to the i-Chips IP00C814, a 4K video processor featuring dual input & PiP support, integrated scalers, & warping. It is ideal for multi-screen setups.",
+  "keywords": "IP00C814, image processing LSI, scaler, de-interlace, warping engine, 4K input, 4K output, multi-functional, embedded CPU, JPEG codec, HDMI Rx, high-speed ADC, video decoder, LVDS, V-by-One® Tx, HDR, 3DLUT, color management, edge-blending, multi-screen systems, projectors.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c814",
+  "pageTitle": "i-Chips IP00C814",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "i-Chips IP00C814",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "title_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "4K Dual Input PiP De-interlacer/Scaler/Warping LSI",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ip00c814.png",
+      "imageRatio": "21",
+      "alt": "4K Dual Input PiP De-interlacer/Scaler/Warping LSI",
+      "text": "<p>The IP00C814 is an enhanced multi-functional image processing LSI with integrated 2-channel scaler and de-interlace cores as well as a 1-channel warping engine. This video processor can accept 4K dual input images with 2K PiP/PoP output images and a single 4K input image with a 4K output image. This device has an embedded CPU, and peripherals such as JPEG codec, HDMI Rx, high-speed ADC, video decoder, and LVDS/<a href=\"/content/macnicaglobal2/eu/atd-europe/en.html\" target=\"_self\" rel=\"noopener noreferrer\">V-by-One®</a> Tx. In addition, high-performance functions such as HDR, 3DLUT for color management, and edge-blending required for multi-screen systems with multiple projectors are also integrated.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>Image input (2 systems)</b></p>\n<ul>\n<li>RGB 30bit / YUV4:4:4 30bit/ YUV4:2:2 20bit/ YUV4:2:2 10bit/YUV4:2:0 30bit</li>\n<li>HDMI x2 / LV-CMOS x2 / Analog RGB / CVBS</li>\n</ul>\n<p><b>Image output (2 lines)</b></p>\n<ul>\n<li>RGB 30bit / YUV4:4:4 30bit / YUV4:2:2 20bit / YUV4:2:2 10bit / YUV4:2:0 / 30bit</li>\n<li>LVDS (2-phase output) x2 / V-by-One® HS</li>\n</ul>\n<p><b>Input/output image size</b></p>\n<ul>\n<li>Horizontal sync signal interval: 16,384 pixels</li>\n<li>Horizontal image effective area: 2,176 pixels</li>\n</ul>\n<p><b>External DDR3-SDRAM</b></p>\n<ul>\n<li>Scaler image memory: 32bit PC1600 (4G/2G/1Gx16) x2</li>\n<li>Arm® main memory: 16bit PC1600 (4G/2G/1Gx16) x1</li>\n</ul>\n<p><b>External/internal synchronization</b></p>\n<ul>\n<li>Output sync signal only supports internal sync signal</li>\n</ul>\n<p><b>I/O synchronous/asynchronous operation</b></p>\n<ul>\n<li>Frame rate conversion</li>\n<li>Overtaking control</li>\n<li>External forced synchronization</li>\n<li>Genlock</li>\n</ul>\n<p><b>Built-in HDMI Rx</b></p>\n<ul>\n<li>HDMI2.0b and HDCP2.3 compatible (DVI1.0 compatible)</li>\n<li>Built-in HDCP Key</li>\n<li>Audio Interface Supports L-PCM and Compressed Audio Data</li>\n</ul>\n<p><b>Built-in high-speed AD converter</b></p>\n<ul>\n<li>Maximum operating frequency 165MHz</li>\n<li>Hsync/Vsync separate input support</li>\n<li>Supports clock phase adjustment (32 steps)</li>\n<li>Supports Sync on Green input</li>\n</ul>\n<p><b>Built-in video decoder</b></p>\n<ul>\n<li>NTSC-M, JPN, 4.43/ PAL-B, D, G, H, I, N, M, Combination N, 60/ SECAM compatible</li>\n<li>VBI (Closed Caption/CGMS/WSS) data extraction function</li>\n<li>Supports clamp pulse output</li>\n</ul>\n<p><b>Built-in CPU</b></p>\n<ul>\n<li>Arm Cortex®-A9 (660MHz)</li>\n<li>Cache L1: Instruction 32KB Data 32KB L2: 128KB</li>\n<li>Boot device Serial flash/eMMC/EEPROM (I2C Ch4) selectable</li>\n<li>Work RAM (128KB)</li>\n<li>8-bit parallel/4-wire serial for external CPU</li>\n</ul>\n<p><b>CPU peripheral function</b></p>\n<ul>\n<li>Ethernet (10/100/1000Mbps)</li>\n<li>USB2.0 (Host/Device 2ch)</li>\n<li>SD Card/eMMC</li>\n<li>JPEG codec</li>\n<li>DMA (8ch)/UART (5ch)/I2C (4ch)/Timer (4ch)/IR remote controller (3ch)/10bitADC (8ch,MUX)/10bitDAC (3ch)</li>\n</ul>\n<p><b>External interface</b></p>\n<ul>\n<li>External interrupt (4 lines)</li>\n<li>Serial flash interface</li>\n</ul>\n<p><b>Motion adaptive interpolation IP conversion</b></p>\n<ul>\n<li>Supports YUV4:2:2</li>\n<li>Supports multi-cadence</li>\n<li>Equipped with a high-performance motion detection filter (YUV compatible)</li>\n</ul>\n<p><b>Resolution conversion</b></p>\n<ul>\n<li>Expansion/reduction Equipped with 6-symbol interpolation filter</li>\n<li>Built-in coefficient ROM (64 sets)</li>\n</ul>\n<p><b>Image distortion correction</b></p>\n<ul>\n<li>RGB independent image distortion correction</li>\n<li>Correction coordinate table reference method</li>\n<li>Built-in correction coordinate table generator (keystone correction, pincushion correction)</li>\n<li>Loaded from external serial flash or external CPU</li>\n<li>Horizontal/vertical lines can be corrected up to 45 degrees</li>\n</ul>\n<p><b>Noise reduction</b></p>\n<ul>\n<li>3DNR (H/V/Temporal)</li>\n<li>MPEG-NR (Mosquito/Block)</li>\n<li>Chroma bug canceller</li>\n</ul>\n<p><b>Image correction function</b></p>\n<ul>\n<li>Edge blending (RGB independent gamma correction, white peaking supported)</li>\n<li>Up/down/left/right flip</li>\n<li>90° rotation</li>\n<li>Overlay</li>\n<li>Alpha blend</li>\n<li>Chroma key</li>\n</ul>\n<p><b>Image quality adjustment function</b></p>\n<ul>\n<li>3DLUT</li>\n<li>Static HDR (PQ and HLG)/Dynamic HDR (SMPTE2094-10,40)</li>\n<li>Uniformity correction</li>\n<li>Horizontal/vertical edge enhancement (9 symbols)</li>\n<li>16-bit gamma correction (7 sets can be set)</li>\n<li>Error diffusion</li>\n<li>Brightness and contrast correction</li>\n</ul>\n<p><b>Bitmap OSD</b></p>\n<ul>\n<li>Supports 256 colors and 64K colors (high color)</li>\n<li>Font data expansion function (65536 characters)</li>\n<li>4 transparent colors, blink function</li>\n<li>90° rotation</li>\n<li>Scroll function</li>\n<li>Bitmap transfer from serial flash possible</li>\n</ul>\n<p><b>Power supply</b></p>\n<ul>\n<li>3.3V/2.5V/1.5V/1.2V/1.1V power supply</li>\n</ul>\n<p><b>Package</b></p>\n<ul>\n<li>840-pin plastic BGA</li>\n<li>Ball pitch 0.8mm, 31mm × 31mm</li>\n</ul>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "experiencefragment_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    }
+   }
+  }
+ }
+}

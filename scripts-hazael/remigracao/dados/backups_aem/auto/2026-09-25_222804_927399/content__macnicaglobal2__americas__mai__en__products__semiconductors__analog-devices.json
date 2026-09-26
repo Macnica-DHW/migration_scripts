@@ -1,0 +1,196 @@
+{
+ "quando": "2026-09-25T22:28:04",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Analog Devices Products, Components & Semiconductors Suppliers",
+  "showInLists": "true",
+  "manufacturer": "mai:manufacturers/analog-devices",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Analog Devices",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:50 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 03:38:26 GMT+0000",
+  "jcr:description": "Find Analog Devices (ADI) products & components for sale at Macnica Americas. Semiconductor supplies for healthcare, automotive, & communications industries.",
+  "keywords": "Analog Devices",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices",
+  "pageTitle": "Shop Various Types of Analog Devices Products & Components",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Analog Devices",
+  "manufacturerlogo": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/logos/adi-logo-cmyk-fullcolor-140x1001.png",
+   "sling:resourceType": "core/wcm/components/image/v3/image"
+  },
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "title_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Leader in mixed signal and analog IC",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>Analog Devices, Inc. (NASDAQ:&nbsp;<a href=\"https://apc01.safelinks.protection.outlook.com/?url=http%3A%2F%2Ffinance.yahoo.com%2Fq%3Fs%3DADI&amp;data=05%7C02%7CCarl.Dahlberg%40macnica.com%7C81edca398ac649b849d908dce6e103b0%7C88dda3740f00471ea2ad1727d0c0ffb6%7C0%7C0%7C638639101398311039%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=GnCxUzJ4G%2BSQBks%2F9gnJntnkOYbDlHj%2BCg4Xe7VGCiI%3D&amp;reserved=0\">ADI</a>) is a global semiconductor leader that bridges the physical and digital worlds to enable breakthroughs at the Intelligent Edge. ADI combines analog, digital, and software technologies into solutions that help drive advancements in digitized factories, mobility, and digital healthcare, combat climate change, and reliably connect humans and the world. With revenue of more than $12 billion in FY23 and approximately 26,000 people globally working alongside 125,000 global customers, ADI ensures today’s innovators stay Ahead of What’s Possible. Learn more&nbsp;&nbsp;Analog Devices products, componenents, and semiconductors at&nbsp;<a href=\"https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.analog.com%2Fen%2Findex.html&amp;data=05%7C02%7CCarl.Dahlberg%40macnica.com%7C81edca398ac649b849d908dce6e103b0%7C88dda3740f00471ea2ad1727d0c0ffb6%7C0%7C0%7C638639101398327836%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9TBQk25vyTQlz2MmpOinl961AAUhOmvEWjFZB4vxQbc%3D&amp;reserved=0\">www.analog.com</a>&nbsp;and on&nbsp;<a href=\"https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fanalog-devices&amp;data=05%7C02%7CCarl.Dahlberg%40macnica.com%7C81edca398ac649b849d908dce6e103b0%7C88dda3740f00471ea2ad1727d0c0ffb6%7C0%7C0%7C638639101398337718%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3wLjJoJ%2BaCH4Y6ERK6upgmqSrjy6XFbHmxYtiJk5F1M%3D&amp;reserved=0\">LinkedIn</a> and&nbsp;<a href=\"https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftwitter.com%2FADI_News&amp;data=05%7C02%7CCarl.Dahlberg%40macnica.com%7C81edca398ac649b849d908dce6e103b0%7C88dda3740f00471ea2ad1727d0c0ffb6%7C0%7C0%7C638639101398347909%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9G5uAk%2Ffi8alFf0kDUQHeWyD36%2FCbOd09YetAX90Z%2FA%3D&amp;reserved=0\">Twitter (X)</a>.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "embed_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "layout": "responsive",
+        "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+        "type": "embeddable",
+        "youtubeVideoId": "UuOo3hgFLtg",
+        "sling:resourceType": "macnicaglobal2/components/content/embed"
+       }
+      }
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "experiencefragment_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "table_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td>&nbsp;</td>\n<td style=\"text-align: center;\"><p><img src=\"/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/images/streamlined-inventory-management-black.png\" alt=\"\"></p>\n</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n</tr><tr><td colspan=\"7\"><p style=\"text-align: center;\"><b>Streamlined Inventory Management​</b><br>\nOur tailored programs, like just-in-time delivery, align with your schedules and ensure 99.9% on-time delivery while reducing costs.</p>\n</td>\n</tr></tbody></table>",
+         "sling:resourceType": "macnicaglobal2/components/content/table",
+         "textIsRich": "true",
+         "cq:styleIds": [
+          "1722937999485",
+          "1722858778108",
+          "1722939215525",
+          "1722858697098"
+         ]
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "table_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td>&nbsp;</td>\n<td style=\"text-align: center;\"><p><img src=\"/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/images/flexible-financing-black.png\" alt=\"\"></p>\n</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n</tr><tr><td colspan=\"7\"><p style=\"text-align: center;\"><b>Flexible Financing​<br>\n</b>Customized payment options for improved cash flow.</p>\n</td>\n</tr></tbody></table>",
+         "sling:resourceType": "macnicaglobal2/components/content/table",
+         "textIsRich": "true",
+         "cq:styleIds": [
+          "1722937999485",
+          "1722858778108",
+          "1722939215525",
+          "1722858697098"
+         ]
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "table_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td>&nbsp;</td>\n<td style=\"text-align: center;\"><p><img src=\"/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/images/quality-assurance-black.png\" alt=\"\"></p>\n</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n</tr><tr><td colspan=\"7\"><p style=\"text-align: center;\"><b>Quality Assurance​</b><br>\nCertified to ISO9001:2015 and TS14949, we guarantee precision in fulfillment of authentic components that meet the highest industry quality standards.​</p>\n</td>\n</tr></tbody></table>",
+         "sling:resourceType": "macnicaglobal2/components/content/table",
+         "textIsRich": "true",
+         "cq:styleIds": [
+          "1722937999485",
+          "1722858778108",
+          "1722939215525",
+          "1722858697098"
+         ]
+        }
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Macnica and Analog Devices",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: justify;\">Our strong collaboration with Analog Devices allows us to deliver customized supply chain and technology support tailored to various industry needs.</p>\n<ul>\n<li style=\"text-align: justify;\"><b style=\"color: rgb(122,33,128);\">Authorized ADI Distributor</b>: As one of ADI's primary volume distributors, Macnica offers a wide range of ADI products, including those from Maxim Integrated and Linear Technology.​</li>\n<li style=\"text-align: justify;\"><b style=\"color: rgb(122,33,128);\">Supply Chain Excellence</b>: We utilize advanced warehouse management systems and logistics expertise to ensure effective inventory management, quality assurance, and supply chain optimization.​</li>\n<li style=\"text-align: justify;\"><b style=\"color: rgb(122,33,128);\">Technical Expertise</b>: Macnica provides comprehensive technical support, assisting customers with product integration, application development, and specialized topics such as LTspice®&nbsp;and power supply circuit design.</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    }
+   }
+  }
+ }
+}

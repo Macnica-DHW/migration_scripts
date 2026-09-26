@@ -1,0 +1,182 @@
+{
+ "quando": "2026-09-25T22:15:05",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c734",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c734/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "i-Chips IP00C734 4k60Hz Up/down Scaler",
+  "manufacturer": "mai:manufacturers/i-chips",
+  "businessCategories": "mai:business-categories/semiconductors",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "i-Chips IP00C734",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:53 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:22:11 GMT+0000",
+  "jcr:description": "Experience superior video scaling with the i-Chips IP00C734 4k60Hz up/down scaler. A cutting-edge solution for smooth upscaling and downscaling of 4K videos.",
+  "keywords": "IP00C734, image processing, 4 independent channels, 4 input ports, 4 output ports, 166 MHz, UHDTV, 4K@60Hz, de-interlacers, scaler, image quality control, gamma correction, uniformity correction, exceptional image quality, LVDS output, single-chip solution, 4K monitor",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c734",
+  "pageTitle": "i-Chips IP00C734",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "i-Chips IP00C734",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "title_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Quad Input/Output De-Interlacer/Scaler for 4K LSI",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ip00c734.png",
+      "imageRatio": "21",
+      "alt": "i-Chips IP00C734",
+      "text": "<p>The IP00C734 is an exceptional 4K60Hz up/down scaler that brings a host of impressive capabilities to the table. Designed with a user-friendly interface and advanced features, it is a versatile solution for high-quality 4K video processing.</p>\n<p>With its four input ports, each supporting up to 4K60Hz signals, and two output ports of the same impressive resolution, the IP00C734 provides the freedom to work with multiple 4K sources simultaneously. Its ability to independently scale each source to any desired size and position on a composite 4K60Hz output opens up limitless possibilities for creative video manipulation.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>The IP00C734 up/down scaler is a powerful image processing solution featuring 4 independent channels, each equipped with 4 input ports and 4 output ports operating at 166 MHz. It supports UHDTV/4K@60Hz format and incorporates 4 independent de-interlacers, along with scaler and image quality control features like gamma correction and uniformity correction, to deliver exceptional image quality. With its LVDS output, the IP00C734 is an ideal single-chip solution for 4K monitors.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "i-Chips Technical Demo",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "spnQSsnwyEw",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Block Diagram",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ip00c734-0.png",
+       "alt": "Block Diagram",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Specifications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>Input/Output</b></p>\n<ul>\n<li>(4-channel) 30-bit RGB/YUV4:4:4, 20-bit YUV4:2:2, 10-bit YUV4:2:2/YUV4:2:0 @166MHz LV-CMOS</li>\n</ul>\n<p><b>Dual type Input/Output, DDR Input</b></p>\n<ul>\n<li>Up to 16384 pixels/line with 2176 pixels of active video</li>\n</ul>\n<p><b>Input I/F</b></p>\n<ul>\n<li>LVCMOS 4CH input (DDR input, Dual input)</li>\n</ul>\n<p><b>Output I/F</b></p>\n<ul>\n<li>LVDS 4CH output (no CMOS output)</li>\n</ul>\n<p><b>Color Support</b></p>\n<ul>\n<li>xvYCC/Bt.2020</li>\n</ul>\n<p><b>Scaling</b></p>\n<ul>\n<li>6 symbol filter with FIR filter</li>\n<li>Coefficent, ROM (64sets)</li>\n<li>Independent vertical/horizontal magnification &amp; panoramic view</li>\n</ul>\n<p><b>De-interlacer</b></p>\n<ul>\n<li>Motion adaptive de-interlacer, YUV4:2:2, 22/23 pull-down, multi-cadence</li>\n<li>High-performance motion detection filter</li>\n</ul>\n<p><b>Image Quality Control</b></p>\n<ul>\n<li>Gamma correction</li>\n<li>Uniformity correction (dot by dot correction also available)</li>\n<li>3x3 color conversion matrix</li>\n<li>Bias, Gain, Gamma correction</li>\n<li>Horizontal edge enhancement (9 symbols)</li>\n<li>Error diffusion (12-&gt;10, 10-&gt;8)</li>\n</ul>\n<p><b>Image Manipulation</b></p>\n<ul>\n<li>4-channel overlay</li>\n<li>Alpha blending</li>\n<li>Color key blending</li>\n<li>Mirror/flip/90-degree image rotation</li>\n</ul>\n<p><b>CPU I/F</b></p>\n<ul>\n<li>8-bit parallel/4-wire serial</li>\n</ul>\n<p><b>External Memory</b></p>\n<ul>\n<li>DDR2-SDRAM 64bit PC800 (2G/1G/512M bit x16) x4</li>\n</ul>\n<p><b>Input/Output Sync</b></p>\n<ul>\n<li>Frame rate conversion</li>\n<li>Tearing protection</li>\n<li>External force synchronization</li>\n<li>Genlock (external VCXO)</li>\n</ul>\n<p><b>Bitmap OSD</b></p>\n<ul>\n<li>256 colors</li>\n<li>Font data development function (65536 characters)</li>\n<li>Support for blinking and semi-transparent (4-color) OSD</li>\n<li>90-degree rotation</li>\n<li>Scroll function</li>\n<li>4 independent</li>\n<li>Serial flash to bitmap</li>\n</ul>\n<p><b>Power Supply</b></p>\n<ul>\n<li>3.3V/1.8V/1.2V</li>\n</ul>\n<p><b>Package</b></p>\n<ul>\n<li>768-pin BGA(0.8mm pitch), 27mm x 27mm</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

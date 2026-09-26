@@ -1,0 +1,75 @@
+{
+ "quando": "2026-09-25T22:29:30",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/analog-devices-smartmesh-ip-starter-kit",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/analog-devices-smartmesh-ip-starter-kit/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Analog Devices DC9021B | SmartMesh IP Starter Kit",
+  "manufacturer": "mai:manufacturers/analog-devices",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Analog Devices SmartMesh IP Starter Kit",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:50 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:22:01 GMT+0000",
+  "jcr:description": "The DC9021B SmartMesh IP™ Starter Kit provides all the tools for evaluating SmartMesh® network performance. Request a quote today at Macnica Americas.",
+  "keywords": "DC9021B SmartMesh",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/analog-devices-smartmesh-ip-starter-kit",
+  "pageTitle": "Analog Devices SmartMesh IP Starter Kit",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Analog Devices SmartMesh IP Starter Kit",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "title_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "DC9021B",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/images/dc9021b-dc9021b-v2-contents-96dpi.jpg",
+      "imageRatio": "31",
+      "alt": "DC9021B",
+      "text": "<p>The DC9021B SmartMesh IP™ Starter Kit provides all the tools for evaluating SmartMesh® network performance with respect to your application needs, including high reliability, ultralow power, scalability, and ease of installation. This accelerates device integration and application software development.</p>\n<p>The DC9021B SmartMesh IP Starter Kit includes five motes, or nodes (DC9018B-B), to enable you to quickly deploy a multi-hop mesh network in the RF environment specific to your application.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>The command line interface allows you to quickly see the list of mesh nodes in the network, as well as key performance statistics such as data reliability and latency.</p>\n<p>The DC9018B-B Evaluation/Development Mote Modules feature easy-to-probe signal pins. In addition, the starter kit provides access to both manager and mote software application programming interfaces (APIs) over USB to enable application software development.</p>\n<p>The DC2274A-A USB Embedded Network Manager comes factory-configured as an embedded network manager, where both the wireless-to-wired access point function and the network management algorithms run on board.</p>\n<p>The DC2274A-B USB Access Point Mote enables customers to evaluate VManager, which supports thousands of nodes.</p>\n<p>SmartMesh IP Starter Kit – includes the following items:</p>\n<ul>\n<li>One USB Embedded Network Manager (DC2274A-A)</li>\n<li>One USB Access Point Mote (DC2274A-B)</li>\n<li>Five Evaluation / Development Motes (DC9018B-B)</li>\n<li>One Eterna Interface Card (DC9006A), which includes a DC9004 adapter card</li>\n<li>One Eterna QuikEval Adapter (DC9005A)</li>\n<li>Additional CR2032 batteries</li>\n<li>USB Cables</li>\n</ul>\n<p><a href=\"https://www.analog.com/en/resources/media-center/videos/5579266084001.html\" target=\"_blank\" rel=\"noopener noreferrer\">Watch the SmartMesh IP Starter kit Video</a></p>\n<p>The DC9021B Starter Kit operates in the 2.4000GHz to 2.4835GHz international license-free frequency band. Starter kits and demo boards are for evaluation purposes only. It remains the customer’s responsibility to verify proper and reliable operation in the actual end application.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "experiencefragment_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    }
+   }
+  }
+ }
+}
