@@ -1,0 +1,888 @@
+{
+ "quando": "2026-09-25T23:37:02",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Ambarella Products: SoCs, CPUs, Chipsets, and More",
+  "showInLists": "true",
+  "manufacturer": "mai:manufacturers/ambarella",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Ambarella",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:48 GMT+0000",
+  "cq:lastModified": "Sat Sep 26 2026 02:07:01 GMT+0000",
+  "jcr:description": "Ambarella SoCs and CVflow AI processors for edge AI, ADAS, robotics, and security cameras. Explore low-power computer vision solutions from Macnica today.",
+  "keywords": "Ambarella",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella",
+  "pageTitle": "Ambarella SoCs & CVflow AI Processors | Edge AI | Macnica",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Ambarella",
+  "manufacturerlogo": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/logos/ambarella-logo-transparent-300.png",
+   "sling:resourceType": "core/wcm/components/image/v3/image"
+  },
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "rCRyoARrcJ4",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+         "text": "<p>Ambarella’s technologies make cameras smarter - enabling features like person detection, object classification, analytics, and more - performing complex data analysis in real time, delivering breathtaking imagery, and preserving vital system resources such as power and network bandwidth. Ambarella specializes in the development of deployable, scalable designs for intelligent cameras, offering a proven path to mass production. Check out our Ambarella products, SoCs, CPUs, chipsets, and more.</p>",
+         "jcr:lastModified": "Sat Sep 26 2026 02:06:05 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+       "text": "<p><b>What is Ambarella CVflow architecture?</b></p>\r\n<p>CVflow is Ambarella’s computer vision chip architecture. Unlike a general-purpose CPU or GPU, it uses a dedicated vision processing engine programmed with a high-level algorithm description. That design scales performance to trillions of operations per second at very low power.</p>\r\n<p><b>Which neural network frameworks do Ambarella SoCs support?</b></p>\r\n<p>Customers map CNNs trained with industry-standard tools such as Caffe, TensorFlow, and PyTorch onto Ambarella processors. The CNN toolkit also covers ONNX. Detection, classification, and related CNN/DNN tasks run on-chip.</p>\r\n<p><b>Which Ambarella SoCs are used for ADAS?</b></p>\r\n<p style=\"margin-top: 0;\">CV2FS is for front-facing stereovision ADAS cameras and computer-vision ECUs at L2+ and higher, with CVflow AI and ASIL C compliance. CV22FS targets forward-facing monocular ADAS cameras and similar ECUs, also with ASIL C. Ambarella uses ISO 26262 processes for functional safety–certified products used in ADAS and autonomous driving.</p>\r\n<p><b>What makes Ambarella a low-power edge AI SoC choice?</b></p>\r\n<p style=\"margin-top: 0;\">The SoCs and CPUs are built for embedded edge platforms such as battery-powered cameras. They can outperform competing solutions on power efficiency, sometimes by 5× or more, while matching or beating results. Compression also cuts bandwidth and storage.</p>\r\n<p><b>What does stereovision add for robotics?</b></p>\r\n<p style=\"margin-top: 0;\">Stereo processing turns a 2D view into a 3D scene and can detect generic obstacles the system was not trained to recognize. CV2 is positioned for accurate 3D environmental modeling, real-time neural network performance, advanced robotics, and industrial autonomous robots.</p>\r\n",
+       "jcr:lastModified": "Sat Sep 26 2026 02:07:01 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ambarella N1 Family - Edge GenAI Is Here",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Ambarella’s N1 family of Edge GenAI SoCs delivers the processing power needed to run multimodal large language models (LLMs), vision-language models (VLMs), and traditional CNN networks locally, without cloud dependency. Designed for autonomous mobile robots, on-premise AI boxes, smart city security, industrial automation, and intelligent healthcare, the N1 series sets a new benchmark for AI performance per watt at the edge.</p>\n<p>As an authorized Ambarella distributor and value-added engineering partner, Macnica Americas provides component supply, design-in support, and technical consulting to help you bring your next N1-based design to production.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "button_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Explore the Ambarella N1 Family",
+      "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/ambarella-n1-soc",
+      "linkTarget": "_self",
+      "sling:resourceType": "macnicaglobal2/components/content/button",
+      "cq:styleIds": [
+       "",
+       "1722936853890",
+       "1717669229626"
+      ]
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "anchorlink_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+      "cq:styleIds": [
+       "",
+       "1718861445028"
+      ],
+      "anchor": {
+       "jcr:primaryType": "nt:unstructured",
+       "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkId": "1",
+        "text": "Why Choose Ambarella Products?"
+       },
+       "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkId": "2",
+        "text": "Ambarella SoCs"
+       },
+       "item2": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkId": "3",
+        "text": "Key Features of Ambarella SoC Products"
+       }
+      }
+     }
+    },
+    "container_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Why Choose Ambarella Products?",
+      "id": "1",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cvflow-0.png",
+      "imageRatio": "36",
+      "alt": "Ambarella CV Flow",
+      "text": "<h3>CVflow® Chip Architecture</h3>\n<p style=\"margin-top:0\">Ambarella CVflow®&nbsp;chip architecture is based on a deep understanding of core computer vision algorithms. Unlike general-purpose CPUs and GPUs, CVflow includes a dedicated vision processing engine programmed with a high-level algorithm description, allowing Ambarella architecture to scale performance to trillions of operations per second with extremely low power consumption.</p>\n<p>With CVflow, customers can efficiently map their own CNN networks trained with industry-standard tools (e.g., Caffe, TensorFlow, PyTorch)&nbsp;to run on Ambarella processors.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_6": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-stereovision-lidar.png",
+      "imageRatio": "36",
+      "alt": "Stereovision vs. LIDAR",
+      "text": "<h3>Stereovision</h3>\n<p style=\"margin-top:0\">Stereo processing transforms the world from a flat 2D plane into a full 3D environment. This not only provides a richer, denser representation of the target scene, but also allows the detection of generic obstacles that the system hasn’t been trained to recognize, making navigation safer and more effective for warehouse robots, autonomous vehicles, and more.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_8": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/571236-fig-01.jpg",
+      "imageRatio": "36",
+      "alt": "Low Power",
+      "text": "<h3>Low Power</h3>\n<p style=\"margin-top:0\">Ambarella technology products are designed to be deployed in embedded platforms on the edge (e.g., battery-powered cameras), where power consumption is a critical concern. Ambarella SoCs and CPUs consistently outperform competitive solutions in power efficiency - sometimes by 5x or more - while delivering equal or superior results.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_9": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_10": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/bandwidth-storage.jpg",
+      "imageRatio": "36",
+      "alt": "Reduce Bandwidth & Storage Costs",
+      "text": "<h3>Reduce Bandwidth &amp; Storage Costs</h3>\n<p style=\"margin-top:0\">Ambarella compression technologies dramatically reduce data transmission size, slashing storage costs and bandwidth usage with Ambarella products.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_11": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_12": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/lens-blue-background.jpg",
+      "imageRatio": "36",
+      "alt": "Image Quality",
+      "text": "<h3>Image Quality</h3>\n<p style=\"margin-top:0\">One of the hallmarks of Ambarella processors is our image processing pipeline. Encompassing everything from HDR to EIS to dewarping, our state-of-the-art ISP ensures that every frame of every video is exquisite, improving safety and enhancing the viewing experience.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_13": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_14": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/robotics-1280x720.jpeg",
+      "imageRatio": "36",
+      "alt": "Autonomy",
+      "text": "<h3>Autonomy</h3>\n<p style=\"margin-top:0\">From drones to robots, from taxis to long-haul semi trucks, Ambarella’s vision processors were designed to revolutionize the way we work and travel. Our hardware platforms deliver the flexibility required to implement all levels of automation, including partial, conditional, high, and full autonomy.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_15": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_16": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/automotive-1024x683.png",
+      "imageRatio": "36",
+      "alt": "Functional Safety",
+      "text": "<h3>Functional Safety</h3>\n<p style=\"margin-top:0\">As an AI silicon company offering SoCs for applications such as ADAS and autonomous driving, Ambarella has implemented an array of internal processes and procedures to ensure that their functional safety-certified products comply with ISO 26262. These strict processes and procedures touch every aspect of the work Ambarella does - from technical documentation to software engineering to VLSI - and have become an inextricable part of Ambarella culture, from top to bottom.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_17": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<hr />",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_18": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ambarella SoCs",
+      "id": "2",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cv72s.jpg",
+        "alt": "Ambarella CV72S",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">CV72S</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The Ambarella CV72S SoC's combination of high performance and low power consumption makes it an ideal solution for various applications, including automotive, security cameras, drones, and other intelligent vision systems.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cv2.jpg",
+        "alt": "Ambarella CV2",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">CV2</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Designed for accurate 3D environmental modeling and real-time neural network performance, the CV2 chip enables advanced robotics and industrial applications, including autonomous robots.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cv2fs.jpg",
+        "alt": "Ambarella CV2FS",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">CV2FS</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">Designed for front-facing stereovision ADAS cameras, as well as computer vision ECUs for L2+ and higher levels of autonomy, the CV2FS chip features CVflow® AI processing and ASIL C compliance to enable safety-critical applications.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_19": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cv20aq.jpg",
+        "alt": "Ambarella CV20AQ",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">CV20AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Featuring CVflow® AI processing, the CV20AQ chip targets stereo-camera advanced driver assistance systems (ADAS), multi-camera L2+ systems, multi-camera driver monitoring systems (DMS) and occupancy monitoring solutions (OMS), multi-channel electronic mirrors with blind spot detection, and intelligent parking assistance systems.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cv22.jpg",
+        "alt": "Ambarella CV22",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">CV22</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Ambarella’s CV22 SoC combines advanced image processing with our powerful CVflow® computer vision architecture to deliver the next generation of intelligent robotics and industrial applications.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cv22aq.jpg",
+        "alt": "Ambarella CV22AQ",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">CV22AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">The CV22AQ delivers next-generation image processing, 12MP30 video encoding, and CVflow® computer vision performance in an optimized, low-power design.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_20": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cv22fs.jpg",
+        "alt": "Ambarella CV22FS",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">CV22FS</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Featuring CVflow®&nbsp;AI processing and ASIL C compliance to enable safety-critical applications, the CV22FS chip targets forward-facing monocular ADAS cameras, as well as computer vision ECUs for L2+ and higher levels of autonomy.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cv25.jpg",
+        "alt": "Ambarella CV25",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">CV25</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The CV25 chip combines advanced image processing and real-time CVflow®&nbsp;computer vision performance for intelligent industrial/robotics applications.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cv25aq.jpg",
+        "alt": "Ambarella CV25AQ",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">CV25AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">With the lowest power consumption in the CVflow®&nbsp;family, the CV25AQ combines advanced image processing, 6MP30 video encoding, and CVflow computer vision performance.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_21": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cv28aq.jpg",
+        "alt": "Ambarella CV28AQ",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">CV28AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Ambarella’s AEC-Q100 qualified CV28AQ SoC combines image processing, 6MP30 video encoding/decoding, and CVflow®&nbsp;computer vision processing in a single, low-power design, making it an ideal choice to power the next generation of intelligent automotive.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-cv28m.jpg",
+        "alt": "Ambarella CV28M",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">CV28M</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Our CV28M SoC is designed for intelligent applications at the edge, including smart home security, retail monitoring, consumer robotics, and occupancy monitoring. The chip’s high-performance CVflow®&nbsp;architecture provides deep neural network (DNN) computer vision processing and 4KP30 video encoding, enabling an array of computer vision-based devices.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-h22aq.jpg",
+        "alt": "Ambarella H22AQ",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px; text-align: left;\">H22AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px; text-align: left;\">An industry-leading combination of low power and high performance, the H22AQ SoC delivers image/video processing and 8MP30 video encoding/decoding in a single design.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_22": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-h32aq.jpg",
+        "alt": "Ambarella H32AQ",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">H32AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">The H32AQ SoC combines 6MP30 video encoding, image/video processing, and a quad-core processor in a single, low-power design.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/ambarella-a12aq.jpg",
+        "alt": "Ambarella A12AQ",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false"
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3 style=\"margin-left: 40.0px;\">A12AQ</h3>\n<p style=\"margin-top:0;margin-left: 40.0px;\">Engineered for electronic mirrors and automotive video recording systems, the A12AQ processor provides superior visibility even in low-light or high-contrast environments, delivering a combination of advanced image processing, high dynamic range (HDR), 3D noise filtering, smart auto exposure, and high-resolution encode performance.</p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+      }
+     }
+    },
+    "container_23": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Key Features of Ambarella SoC Products",
+       "id": "3",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>CNN / DNN-based processing: detection, classification, and more</li>\n<li>CNN toolkit for easy porting of neural networks implemented in Caffe, TensorFlow, PyTorch, or ONNX frameworks</li>\n<li>8KP30 video performance</li>\n<li>Enhanced secure boot with TrustZone® and secure memory, TRNG, OTP, Arm TBSA compliance, DRAM scrambling, and virtualization</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "list_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "linkItems": "true",
+       "pages": [
+        "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/ambarella-cv72s-soc",
+        "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/ambarella-n1-soc"
+       ],
+       "sling:resourceType": "macnicaglobal2/components/content/list",
+       "listFrom": "static"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Supplier Website",
+         "linkURL": "https://www.ambarella.com/",
+         "linkTarget": "_blank",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "",
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Request a Quote",
+         "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote",
+         "linkTarget": "_blank",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "",
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
