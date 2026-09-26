@@ -1,0 +1,282 @@
+{
+ "quando": "2026-09-25T22:50:43",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-clock-generators",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-clock-generators/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "SiTime Clock Generators",
+  "manufacturer": "mai:manufacturers/sitime",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "SiTime Clock Generators",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:28:09 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:22:35 GMT+0000",
+  "jcr:description": "SiTime’s programmable MEMS clock generators support wide frequency synthesis and superior jitter performance across multiple outputs. Perfect for high-speed FPGA, SoC, and ASIC applications, these devices simplify clock tree design with unmatched programmability.",
+  "keywords": "sitime, mems, clock generators, emi conditions, clock generators, industrial robotics",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-clock-generators",
+  "pageTitle": "SiTime Clock Generators",
+  "cq:tags": [
+   "mai:business-categories/semiconductors"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "SiTime Clock Generators",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/images/sitime-clock-generators.jpg",
+      "imageRatio": "29",
+      "alt": "SiTime clock generators",
+      "text": "<h3><b>Flexible, Multi-Output MEMS Clock Generators</b></h3>\n<p style=\"margin-top:0\">SiTime’s programmable MEMS clock generators support wide frequency synthesis and superior jitter performance across multiple outputs. Perfect for high-speed FPGA, SoC, and ASIC applications, these devices simplify clock tree design with unmatched programmability.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ]
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Products",
+       "id": "keyfeatures",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Cascade™",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Industry’s most versatile MEMS clock generator",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>SiT95141:</b>&nbsp;Quad PLL, 10-output MEMS clock generator</li>\n</ul>\n<ul>\n<li><b>SiT95145 / SiT95148:</b>&nbsp;10-output programmable jitter cleaner + generator</li>\n</ul>\n<ul>\n<li><b>SiT95312 / SiT95315 / SiT95316 / SiT95317:</b>&nbsp;Advanced Cascade II MEMS clock generators with differential outputs and jitter cleaning</li>\n</ul>\n<ul>\n<li><b>SiT95147:</b>&nbsp;Network-synchronized version of Cascade (with integrated holdover and IEEE 1588 support)</li>\n</ul>\n<ul>\n<li><b>Use Cases:&nbsp;</b>Data center switching, telecom base stations, FPGA/SoC clock trees, timing-sensitive Ethernet &amp; PCIe applications</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Chorus™",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Low-noise, application-tuned programmable clocks",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>SiT95210 / SiT95211:</b>&nbsp;Low jitter MEMS clock generators</li>\n</ul>\n<ul>\n<li><b>SiT95314:&nbsp;</b>Dual-PLL with output skew control (good fit for Chorus-type deployment)</li>\n</ul>\n<ul>\n<li><b>SiT5801:&nbsp;</b>Also featured in low-noise applications as a jitter cleaner for 5G and PCIe Gen6</li>\n</ul>\n<ul>\n<li><b>SiT5376 / SiT5377:</b>&nbsp;Used in conjunction with Chorus-type architectures for SerDes applications</li>\n</ul>\n<ul>\n<li><b>Use Cases:&nbsp;</b>Optical modules, 100/400/800GbE links, SerDes reference clocks, PCIe Gen 4/5/6 signal integrity</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Atna™",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Compact, cost-effective solutions for networking and industrial",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>SiT9501:&nbsp;</b>Compact, differential output MEMS clock generator</li>\n</ul>\n<ul>\n<li><b>SiT91281 / SiT91283 / SiT91285 / SiT91288:</b>&nbsp;Automotive-grade, low-output count clock generators</li>\n</ul>\n<ul>\n<li><b>SiT30100:</b>&nbsp;Small-footprint clock generator with integrated resonator and temp sensor (ideal for handheld and mobile)</li>\n</ul>\n<ul>\n<li><b>Use Cases:&nbsp;</b>Industrial automation, embedded compute, networking cards, mobile/consumer electronics</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Key Capabilities",
+         "id": "sitimebufferproductlineup",
+         "type": "h2",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Multiple outputs (up to 12)</li>\n<li>Up to 1 GHz frequency synthesis</li>\n<li>Sub-100 fs jitter performance</li>\n<li>Programmable rise/fall times</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Applications",
+         "type": "h2",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>FPGA clock trees</li>\n<li>Automotive Ethernet</li>\n<li>5G base stations</li>\n<li>PCIe</li>\n<li>SerDes</li>\n<li>High-speed storage</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Similar Products",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       "1718280237031"
+      ]
+     },
+     "list_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "linkItems": "true",
+      "pages": [
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-oscillators",
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers",
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-mems-resonator-technology"
+      ],
+      "sling:resourceType": "macnicaglobal2/components/content/list",
+      "listFrom": "static"
+     }
+    }
+   }
+  }
+ }
+}

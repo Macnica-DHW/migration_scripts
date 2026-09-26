@@ -1,0 +1,506 @@
+{
+ "quando": "2026-09-25T22:46:53",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/macnica-and-adi",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/macnica-and-adi/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Authorized Volume Distributor of ADI Components",
+  "manufacturer": "mai:manufacturers/analog-devices",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "MACNICA-AND-ADI",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:50 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:22:02 GMT+0000",
+  "jcr:description": "Macnica Americas, an authorized volume distributor of ADI components, provides reliable solutions for cash flow and quality assurance. Contact us now.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/macnica-and-adi",
+  "pageTitle": "Your Trusted Analog Devices and ADI Distributor",
+  "cq:tags": [
+   "mai:manufacturers/analog-devices",
+   "mai:business-categories/semiconductors"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Authorized Volume Distributor of ADI Components",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "image_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/images/macnica-adi-campaign-landing-page-banner-with-cta-940x420.jpg",
+      "alt": "Your Trusted Analog Devices Distributor",
+      "linkURL": "#contact-form",
+      "sling:resourceType": "macnicaglobal2/components/content/image",
+      "isDecorative": "false",
+      "altValueFromDAM": "false"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>​&nbsp;</p>\n<p style=\"margin-top:0;text-align: justify;\">Macnica Americas is an authorized volume distributor of ADI and Analog Devices, offering a comprehensive range of high-performance analog, data converters, mixed-signal, and digital signal processing components. ​</p>\n<p style=\"margin-top:0;text-align: justify;\">​&nbsp;</p>\n<p style=\"margin-top:0;text-align: justify;\">We provide customized solutions to address key challenges such as inventory management, cash flow optimization, and quality assurance. Whether you're a large OEM looking to optimize operations, an EMS in need of dependable component sourcing, or a growing company ready to scale production, Macnica has the expertise to help you achieve your objectives efficiently.<br>\n<br>\n</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why Engage Macnica for Your ADI Component Needs​",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "table_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td>&nbsp;</td>\n<td style=\"text-align: center;\"><p><img src=\"/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/images/streamlined-inventory-management-black.png\" alt=\"\"></p>\n</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n</tr><tr><td colspan=\"7\"><p style=\"text-align: center;\"><b>Streamlined Inventory Management​</b><br>\nOur tailored programs, like just-in-time delivery, align with your schedules and ensure 99.9% on-time delivery while reducing costs.</p>\n</td>\n</tr></tbody></table>",
+         "sling:resourceType": "macnicaglobal2/components/content/table",
+         "textIsRich": "true",
+         "cq:styleIds": [
+          "1722937999485",
+          "1722858778108",
+          "1722939215525",
+          "1722858697098"
+         ]
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "table_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td>&nbsp;</td>\n<td style=\"text-align: center;\"><p><img src=\"/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/images/flexible-financing-black.png\" alt=\"\"></p>\n</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n</tr><tr><td colspan=\"7\"><p style=\"text-align: center;\"><b>Flexible Financing​<br>\n</b>Customized payment options for improved cash flow.</p>\n</td>\n</tr></tbody></table>",
+         "sling:resourceType": "macnicaglobal2/components/content/table",
+         "textIsRich": "true",
+         "cq:styleIds": [
+          "1722937999485",
+          "1722858778108",
+          "1722939215525",
+          "1722858697098"
+         ]
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "table_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td>&nbsp;</td>\n<td style=\"text-align: center;\"><p><img src=\"/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/images/quality-assurance-black.png\" alt=\"\"></p>\n</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n</tr><tr><td colspan=\"7\"><p style=\"text-align: center;\"><b>Quality Assurance​</b><br>\nCertified to ISO9001:2015 and TS14949, we guarantee precision in fulfillment of authentic components that meet the highest industry quality standards.​</p>\n</td>\n</tr></tbody></table>",
+         "sling:resourceType": "macnicaglobal2/components/content/table",
+         "textIsRich": "true",
+         "cq:styleIds": [
+          "1722937999485",
+          "1722858778108",
+          "1722939215525",
+          "1722858697098"
+         ]
+        }
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote",
+       "linkURL": "#contact-form",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Who We Serve​",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: justify;\">From full service high-volume complex supply chain engagements to tailored solutions for small and medium-sized enterprises, Macnica serves a diverse range of customers. Our expertise extends to:</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p><b style=\"color: rgb(122,33,128);\">Global OEMs: ​</b></p>\n<p style=\"margin-top:0;text-align: left;\">We support multi-regional purchasing and supply chain optimization for large-scale operations​.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p><b style=\"color: rgb(122,33,128);\">EMS Providers and CMs: ​</b></p>\n<p style=\"margin-top:0\">We offer component sourcing, inventory management, and technical know-how.​&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p><b style=\"color: rgb(122,33,128);\">Small and Medium-sized Companies:</b></p>\n<p style=\"margin-top:0\">We provide scalable solutions and flexible finance options to support growth.</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p><b style=\"color: rgb(122,33,128);\">Industrial and Automotive <br>\n Manufacturers:</b></p>\n<p style=\"margin-top:0\">We supply specialized components required for demanding applications.​</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<p><b style=\"color: rgb(122,33,128);\">Telecommunications and Networking Companies:</b></p>\n<p style=\"margin-top:0\">We deliver cutting-edge hardware and software solutions for next-generation systems.​</p>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "button_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Submit a Quote​ Request",
+         "linkURL": "#contact-form",
+         "linkTarget": "_self",
+         "sling:resourceType": "macnicaglobal2/components/content/button",
+         "cq:styleIds": [
+          "",
+          "1722936853890",
+          "1717669229626"
+         ]
+        }
+       }
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Macnica and Analog Devices",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"text-align: justify;\">Our strong collaboration with Analog Devices allows us to deliver customized supply chain and technology support tailored to various industry needs.</p>\n<ul>\n<li style=\"text-align: justify;\"><b style=\"color: rgb(122,33,128);\">Authorized ADI Distributor</b>: As one of ADI's primary volume distributors, Macnica offers a wide range of ADI products, including those from Maxim Integrated and Linear Technology.​</li>\n<li style=\"text-align: justify;\"><b style=\"color: rgb(122,33,128);\">Supply Chain Excellence</b>: We utilize advanced warehouse management systems and logistics expertise to ensure effective inventory management, quality assurance, and supply chain optimization.​</li>\n<li style=\"text-align: justify;\"><b style=\"color: rgb(122,33,128);\">Technical Expertise</b>: Macnica provides comprehensive technical support, assisting customers with product integration, application development, and specialized topics such as LTspice®&nbsp;and power supply circuit design.</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/images/trevor-bingham-with-quote.jpg",
+       "alt": "Macnica and Analog Devices",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "button_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contact Us for a Quote​",
+       "linkURL": "#contact-form",
+       "linkTarget": "_self",
+       "sling:resourceType": "macnicaglobal2/components/content/button",
+       "cq:styleIds": [
+        "",
+        "1722936853890",
+        "1717669229626"
+       ]
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "About Macnica Americas​",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>Parent Company</b>: North American division of Macnica Fuji Electronics Holdings, Inc.​</p>\n<p style=\"margin-top:0\"><b>Global Presence</b>: Part of a $10 Billion global leader in technology product distribution​</p>\n<p style=\"margin-top:0\"><b>Americas Headquarters</b>: San Diego​</p>\n<p style=\"margin-top:0\"><b>Additional Offices</b>: San Jose, Dallas, Chicago, and Ottawa ​</p>\n<p style=\"margin-top:0\"><b>Distribution Centers</b>:</p>\n<p style=\"margin-top:0\">- California: ISO9001:2015 certified QMS system<br>\n- McAllen, TX: Third-party logistics (3PL) warehouse with ISO9001:2015 certified QMS system for automotive customers​</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "text_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><a id=\"contact-form\" name=\"contact-form\"></a></p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Request a Quote or Get in Touch",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "container_form_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "macnicadefault_subject": "Macnica and ADI Inquiry",
+       "errorFragmentPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/popups/form-error/master",
+       "macnicadefault_mailto": [
+        "digital@anionmarketing.com",
+        "marketing.mai@macnica.com",
+        "Carl.Dahlberg@macnica.com",
+        "adi-quote.mai@macnica.com"
+       ],
+       "successFragmentPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/popups/form-success/master",
+       "sling:resourceType": "macnicaglobal2/components/form/container",
+       "actionType": "macnicaglobal2/components/form/actions/macnicadefault",
+       "macnicadefault_includePageTitle": "false",
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "First/Given Name",
+        "constraintMessage": "Please Enter First Name",
+        "required": "true",
+        "usePlaceholder": "true",
+        "name": "fullName",
+        "rows": "2",
+        "type": "text",
+        "sling:resourceType": "macnicaglobal2/components/form/text",
+        "helpMessage": "First Name"
+       },
+       "text_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Last/Family Name",
+        "constraintMessage": "Please Enter Last Name",
+        "required": "true",
+        "usePlaceholder": "true",
+        "name": "lastName",
+        "rows": "2",
+        "type": "text",
+        "sling:resourceType": "macnicaglobal2/components/form/text",
+        "helpMessage": "Last Name"
+       },
+       "text_3": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Company",
+        "constraintMessage": "Please Enter Company Name",
+        "required": "true",
+        "usePlaceholder": "true",
+        "name": "company",
+        "rows": "2",
+        "type": "text",
+        "sling:resourceType": "macnicaglobal2/components/form/text",
+        "helpMessage": "Company"
+       },
+       "text_4": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Title",
+        "constraintMessage": "Please Enter Title",
+        "usePlaceholder": "true",
+        "name": "title",
+        "rows": "2",
+        "type": "text",
+        "sling:resourceType": "macnicaglobal2/components/form/text",
+        "helpMessage": "Title"
+       },
+       "text_5": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Email Address",
+        "constraintMessage": "Please Enter Valid Email",
+        "required": "true",
+        "usePlaceholder": "true",
+        "name": "email",
+        "rows": "2",
+        "type": "email",
+        "sling:resourceType": "macnicaglobal2/components/form/text",
+        "helpMessage": "Email Address"
+       },
+       "text_6": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Phone Number",
+        "constraintMessage": "Please Enter Phone Number",
+        "required": "true",
+        "usePlaceholder": "true",
+        "name": "phoneNumber",
+        "rows": "2",
+        "type": "text",
+        "sling:resourceType": "macnicaglobal2/components/form/text",
+        "helpMessage": "Phone Number"
+       },
+       "text_7": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "City",
+        "constraintMessage": "Please Enter City",
+        "required": "true",
+        "usePlaceholder": "true",
+        "name": "City",
+        "rows": "2",
+        "type": "text",
+        "sling:resourceType": "macnicaglobal2/components/form/text",
+        "helpMessage": "City"
+       },
+       "text_8": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "State/Province",
+        "constraintMessage": "Please Enter State Province",
+        "required": "true",
+        "usePlaceholder": "true",
+        "name": "State/Province",
+        "rows": "2",
+        "type": "text",
+        "sling:resourceType": "macnicaglobal2/components/form/text",
+        "helpMessage": "State/Province"
+       },
+       "text_9": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Message",
+        "constraintMessage": "Please Enter Valid Email",
+        "required": "true",
+        "usePlaceholder": "true",
+        "name": "Message",
+        "rows": "4",
+        "type": "textarea",
+        "sling:resourceType": "macnicaglobal2/components/form/text",
+        "helpMessage": "Please provide a brief message regarding your inquiry."
+       },
+       "button_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Send message",
+        "type": "submit",
+        "sling:resourceType": "macnicaglobal2/components/form/button"
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

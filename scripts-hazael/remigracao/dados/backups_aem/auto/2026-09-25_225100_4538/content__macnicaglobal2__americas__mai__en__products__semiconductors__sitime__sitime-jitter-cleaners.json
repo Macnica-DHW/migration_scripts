@@ -1,0 +1,392 @@
+{
+ "quando": "2026-09-25T22:51:00",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-jitter-cleaners",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-jitter-cleaners/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "SiTime Jitter Cleaners",
+  "manufacturer": "mai:manufacturers/sitime",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "SiTime Jitter Cleaners",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:28:09 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:22:36 GMT+0000",
+  "jcr:description": "SiTime’s jitter attenuators and phase noise filters are designed for systems demanding the highest signal integrity. Optimized for timing-sensitive high-speed links (PCIe Gen 5/6, 100GbE, etc.), these solutions offer industry-leading power supply noise rejection and stability.",
+  "keywords": "sitime, mems, jitter cleaners, emi conditions, clock generators, industrial robotics",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-jitter-cleaners",
+  "pageTitle": "SiTime Jitter Cleaners",
+  "cq:tags": [
+   "mai:business-categories/semiconductors"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "SiTime Jitter Cleaners",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/images/sitime-jitter-cleaners.png",
+      "imageRatio": "23",
+      "alt": "SiTime jitter cleaners",
+      "text": "<h3><b>MEMS Jitter Cleaners for Ultra-Low Phase Noise</b></h3>\n<p style=\"margin-top:0\">SiTime’s jitter attenuators and phase noise filters are designed for systems demanding the highest signal integrity. Optimized for timing-sensitive high-speed links (PCIe Gen 5/6, 100GbE, etc.), these solutions offer industry-leading power supply noise rejection and stability.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ]
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Products",
+       "id": "keyfeatures",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Epoch™",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Ultra-Low Jitter for PCIe Gen 6 and High-Speed Systems",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>The Epoch™ platform is SiTime’s highest-performance jitter cleaner, engineered for:</b></p>\n<ul>\n<li>PCIe Gen 5/6, 100/200/400/800 GbE</li>\n<li>Optical modules, edge routers, and coherent optics</li>\n<li>Replacing bulky quartz-based jitter attenuators with programmable MEMS timing</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiT5801",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>Integrated Phase Jitter:</b> &lt;100 fs typical</li>\n<li><b>Supported Inputs:</b> LVCMOS, differential</li>\n<li><b>Outputs:</b> 2 differential</li>\n<li><b>Frequencies:</b> 100 MHz, 156.25 MHz, 212.5 MHz, 312.5 MHz, 400 MHz</li>\n<li><b>Target Standards:</b> PCIe Gen 5/6, IEEE 802.3, CPRI, eCPRI</li>\n<li><b>Applications:</b> Optical transceivers, switches/routers, base stations</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Key Features:",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Best-in-class PSNR (Power Supply Noise Rejection)</li>\n<li>Dual-output, programmable jitter cleaner</li>\n<li>AEC-Q100 grade options available for automotive/industrial</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Chorus™",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Low Jitter Programmable Clock + Jitter Cleaning",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Chorus-branded devices include integrated PLLs with jitter attenuation, phase noise filtering, and support for multiple outputs, combining low-jitter synthesis and clean distribution in a compact<b> </b>footprint<b>.</b></p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiT95210 / SiT95211",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>&nbsp;Up to 4 differential outputs</li>\n<li>Programmable frequencies (up to 2.1 GHz)</li>\n<li>Supports LVPECL, LVDS, HCSL, LVCMOS</li>\n<li>Designed for jitter cleaning and generation in systems like:<ul>\n<li>10/25/40/100/400 GbE, PCIe Gen 4/5</li>\n<li>SATA, SAS, XAUI, Fibre Channel</li>\n</ul>\n</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiT95314",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>&nbsp;Dual PLL, 8-output jitter cleaner</li>\n<li>On-chip hitless switching, skew alignment, frequency translation</li>\n<li>Flexible PLL configuration for clock redundancy and cleaning</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiT5376 / SiT5377",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>&nbsp;MEMS-based, ultra-low jitter differential oscillators</li>\n<li>Often used in Chorus-style configurations for SerDes and FPGA reference clocks</li>\n<li>Compatible with PCIe, Ethernet, JESD204B/C</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Key Features:",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Programmable PLL configuration</li>\n<li>Industry-leading low phase noise</li>\n<li>Seamless integration into existing FPGA/SoC clock architectures</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Product Summary",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n<tbody><tr><th style=\"white-space:nowrap\">Platform</th>\n<th style=\"white-space:nowrap\">Products</th>\n<th>Key Features</th>\n<th style=\"white-space:nowrap\">Applications</th>\n</tr><tr><td style=\"white-space:nowrap\">Epoch™</td>\n<td style=\"white-space:nowrap\">SiT5801</td>\n<td>&lt;100 fs jitter, dual outputs, PTP/PCIe Gen 6 support</td>\n<td>Optical transceivers, high-speed comms</td>\n</tr><tr><td style=\"white-space:nowrap\">Chorus™</td>\n<td>SiT95210, SiT95211, SiT95314, SiT5376</td>\n<td>Multi-output jitter cleaners, ultra-low phase noise</td>\n<td>Networking, PCIe, FPGA clocking</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Features",
+         "id": "sitimebufferproductlineup",
+         "type": "h2",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Supports integrated PLL with jitter attenuation</li>\n<li>Compliant with industry standards (PCIe, Ethernet, IEEE 1588)</li>\n<li>Fast start-up, low power, and compact footprint</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "title_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "Applications",
+         "type": "h2",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "text_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "<ul>\n<li>Hyperscale data centers</li>\n<li>5G RRHs</li>\n<li>Optical modules</li>\n<li>Enterprise switches</li>\n<li>Satellite comms</li>\n</ul>",
+         "sling:resourceType": "macnicaglobal2/components/content/text",
+         "textIsRich": "true"
+        }
+       }
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Similar Products",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       "1718280237031"
+      ]
+     },
+     "list_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "linkItems": "true",
+      "pages": [
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-oscillators",
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers",
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-mems-resonator-technology"
+      ],
+      "sling:resourceType": "macnicaglobal2/components/content/list",
+      "listFrom": "static"
+     }
+    }
+   }
+  }
+ }
+}

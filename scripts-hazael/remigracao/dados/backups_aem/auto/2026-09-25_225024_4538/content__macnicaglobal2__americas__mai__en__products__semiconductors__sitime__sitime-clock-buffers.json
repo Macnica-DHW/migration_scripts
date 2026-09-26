@@ -1,0 +1,473 @@
+{
+ "quando": "2026-09-25T22:50:24",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-clock-buffers",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-clock-buffers/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "SiTime Clock Buffers - Low Skew, MEMS-Enhanced Signal Distribution",
+  "manufacturer": "mai:manufacturers/sitime",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "SiTime Clock Buffers",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:28:09 GMT+0000",
+  "cq:lastModified": "Thu Sep 24 2026 15:35:44 GMT+0000",
+  "jcr:description": "In advanced electronic systems, precision timing doesn't stop at the oscillator. It must be cleanly and consistently distributed across multiple clock domains. SiTime’s MEMS-based clock buffers provide high fan-out, low additive jitter, and robust performance under demanding environmental and EMI conditions.\r\nDesigned to work seamlessly with SiTime’s programmable oscillators and clock generators, these buffers maintain signal integrity across harsh environments while reducing design complexity. From 5G radios to industrial robotics, SiTime's buffers are the glue that holds your timing tree together.",
+  "keywords": "sitime, mems, clock buffers, emi conditions, clock generators, industrial robotics",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-clock-buffers",
+  "pageTitle": "SiTime Clock Buffers",
+  "cq:tags": [
+   "mai:business-categories/semiconductors"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "navTitle": "SiTime Clock Buffers",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/images/sitime-buffers.png",
+      "imageRatio": "29",
+      "alt": "SiTime buffers",
+      "text": "<h3><b>Reliable Signal Distribution for Precision Timing Architectures</b></h3>\n<p style=\"margin-top:0\">In advanced electronic systems, precision timing doesn't stop at the oscillator. It must be <b>cleanly and consistently distributed</b> across multiple clock domains. SiTime’s <b>MEMS-based clock buffers</b> provide high fan-out, low additive jitter, and robust performance under demanding environmental and EMI conditions.&nbsp;Designed to work seamlessly with SiTime’s programmable oscillators and clock generators, these buffers maintain signal integrity across harsh environments while reducing design complexity. From 5G radios to industrial robotics, SiTime's buffers are the glue that holds your timing tree together.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "1783061491236"
+      ]
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "anchorlink_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+      "cq:styleIds": [
+       "",
+       "1718861445028"
+      ],
+      "anchor": {
+       "jcr:primaryType": "nt:unstructured",
+       "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkId": "keyfeatures",
+        "text": "Key Features"
+       },
+       "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkId": "sitimebufferproductlineup",
+        "text": "SiTime Buffer Product Lineup"
+       },
+       "item2": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkId": "applications",
+        "text": "Applications"
+       },
+       "item3": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkId": "whysitimebuffers",
+        "text": "Why SiTime Buffers?"
+       },
+       "item4": {
+        "jcr:primaryType": "nt:unstructured",
+        "linkId": "getstarted",
+        "text": "Get Started"
+       }
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Key Features",
+       "id": "keyfeatures",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>Ultra-Low Additive Jitter</b><br>\nEnsures minimal degradation of signal quality in high-speed systems - critical for PCIe, SerDes, and high-speed networking</li>\n</ul>\n<ul>\n<li><b>Flexible Output Options</b><br>\nSupports both single-ended (LVCMOS) and differential (LVPECL, LVDS, HCSL) outputs</li>\n</ul>\n<ul>\n<li><b>Rugged Performance</b><br>\nDesigned for high EMI environments, vibration-prone conditions, and wide operating temperatures - including automotive-grade options</li>\n</ul>\n<ul>\n<li><b>Pin-Compatible and Drop-In</b><br>\nCompatible with industry-standard footprints and ideal for quartz buffer replacement or MEMS-enhanced designs</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiTime Buffer Product Lineup",
+       "id": "sitimebufferproductlineup",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiT92208 - 1:8 Differential Fan-Out Buffer",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>8 differential outputs</li>\n<li>Low additive jitter (&lt;50 fs RMS typical)</li>\n<li>Supports LVPECL, LVDS, HCSL</li>\n<li>Operates from 1.8V to 3.3V supply</li>\n<li>Ideal for clock tree distribution in switches, routers, and test equipment</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiT92211 - 1:10 Low Jitter Clock Buffer",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>10 LVCMOS outputs</li>\n<li>Sub-nanosecond output skew</li>\n<li>Integrated OE/standby controls</li>\n<li>Automotive-qualified (AEC-Q100) variant available</li>\n<li>Perfect for distributed clock topologies in automotive and industrial networks</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiT92216 - High Drive 1:6 Differential Buffer",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>6 differential outputs with selectable formats</li>\n<li>Drives long PCB traces or high-capacitance loads</li>\n<li>Additive jitter &lt;40 fs</li>\n<li>Compact QFN package</li>\n<li>Designed for PCIe Gen 4/5, Ethernet PHYs, and FPGA boards</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiT92182 - Automotive 1:2 LVCMOS Buffer",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Ultra-low power and EMI-optimized</li>\n<li>Extended temp range (-40 °C to +125 °C)</li>\n<li>Small package size for ADAS and infotainment modules</li>\n<li>Low output-to-output skew</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiT92184 - Rugged 1:4 Automotive Buffer",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>4 single-ended LVCMOS outputs</li>\n<li>Designed for synchronization of multiple domains within zonal and body ECUs</li>\n<li>Excellent power supply rejection and low EMI profile</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Applications",
+       "id": "applications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>5G Base Stations and Fronthaul Gateways</b><br>\nDistribute synchronized clock signals across RF and digital domains</li>\n</ul>\n<ul>\n<li><b>Automotive (ADAS, Zonal, Telematics)</b><br>\nRugged buffers with AEC-Q100 support for harsh conditions</li>\n</ul>\n<ul>\n<li><b>FPGA / SoC-Based Systems</b><br>\nClean clock delivery to high-speed interfaces, SerDes blocks, and peripherals</li>\n</ul>\n<ul>\n<li><b>Test &amp; Measurement Equipment</b><br>\nEnsures repeatable, precise timing for signal analysis and compliance testing</li>\n</ul>\n<ul>\n<li><b>Industrial and Robotics</b><br>\nLow skew and jitter for motor control, real-time sensors, and vision systems</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_13": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why SiTime Buffers?",
+       "id": "whysitimebuffers",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n<tbody><tr><th style=\"white-space:nowrap\">Feature</th>\n<th>Traditional Buffer ICs</th>\n<th>SiTime MEMS Buffers</th>\n</tr><tr><td width=\"33%\">Additive Jitter</td>\n<td width=\"33%\">~100 fs – 1 ps</td>\n<td width=\"33%\">&lt;50 fs typical</td>\n</tr><tr><td>Vibration Tolerance</td>\n<td style=\"white-space:nowrap\">Low</td>\n<td>100,000 g MEMS core</td>\n</tr><tr><td>Automotive Grade Options</td>\n<td style=\"white-space:nowrap\">Limited</td>\n<td>AEC-Q100 qualified</td>\n</tr><tr><td>Integration with Timing Tree</td>\n<td>Manual tuning</td>\n<td>Seamless with SiTime clocks</td>\n</tr><tr><td>EMI Robustness</td>\n<td style=\"white-space:nowrap\">Average</td>\n<td style=\"white-space:nowrap\">Excellent</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     }
+    },
+    "container_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Get Started",
+       "id": "getstarted",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/common/images/macnica-workflow-diagram.jpg",
+       "alt": "Macnica + Toppan",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Macnica Americas offers full support to help you evaluate and integrate SiTime’s buffer solutions into your timing architecture. Whether you’re designing for rugged automotive applications or high-speed networking equipment, we’re here to assist with product selection, samples, and integration guidance.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    },
+    "container_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Similar Products",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       "1718280237031"
+      ]
+     },
+     "list_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "showModificationDate": "false",
+      "tagsMatch": "any",
+      "linkItems": "true",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "sortOrder": "asc",
+      "pages": [
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-oscillators",
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers",
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-mems-resonator-technology"
+      ],
+      "showDescription": "false",
+      "jcr:lastModified": "Thu Sep 24 2026 15:35:44 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/list",
+      "childDepth": "1",
+      "listFrom": "static",
+      "cq:styleIds": [
+       "",
+       "1717648336486"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

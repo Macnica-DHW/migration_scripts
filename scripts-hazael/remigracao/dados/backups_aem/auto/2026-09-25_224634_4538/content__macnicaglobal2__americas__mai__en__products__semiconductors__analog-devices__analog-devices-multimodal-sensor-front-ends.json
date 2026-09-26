@@ -1,0 +1,205 @@
+{
+ "quando": "2026-09-25T22:46:34",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/analog-devices-multimodal-sensor-front-ends",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/analog-devices-multimodal-sensor-front-ends/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Analog Devices ADPD4100 & ADPD4101 Multimodal Sensors",
+  "manufacturer": "mai:manufacturers/analog-devices",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Multimodal Sensor Front Ends",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:50 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:59 GMT+0000",
+  "jcr:description": "The ADPD4100 & ADPD4101 multimodal sensors are designed for advanced biometric sensing applications. Contact our sales team today & request a quote.",
+  "keywords": "ADPD4100",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/analog-devices-multimodal-sensor-front-ends",
+  "pageTitle": "Multimodal Sensor Front Ends",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Multimodal Sensor Front Ends",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "ADPD4100/ADPD4101",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/images/adpd4100.png",
+       "imageRatio": "29",
+       "alt": "adpd4100",
+       "text": "<p>The ADPD4100/ADPD4101 operate as a complete multimodal sensor front end, stimulating up to eight light-emitting diodes (LEDs) and measuring the return signal on up to eight separate current inputs. Twelve time slots are available, enabling 12 separate measurements per sampling period.</p>\n<p>The data output and functional configuration utilize an I2C interface on the ADPD4101 or a serial port interface (SPI) on the ADPD4100. The control circuitry includes flexible LED signaling and synchronous detection. The devices use a 1.8 V analog core and 1.8 V/3.3 V compatible digital input/output (I/O).</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The analog front end (AFE) rejects signal offsets and corruption from asynchronous modulated interference, typically from ambient light, eliminating the need for optical filters or externally controlled dc cancellation circuitry. Multiple operating modes are provided, enabling the ADPD4100/ADPD4101 to be a sensor hub for synchronous measurements of photodiodes, biopotential electrodes, resistance, capacitance, and temperature sensors. The multiple operation modes accommodate various sensor measurements, including, but not limited to, photoplethysmography (PPG), electrocardiography (ECG), electrodermal activity (EDA), impedance, capacitance, temperature, gas detection, smoke detection, and aerosol detection for various healthcare, industrial, and consumer applications.</p>\n<p>The ADPD4100/ADPD4101 are available in a 3.11 mm × 2.14 mm, 0.4 mm pitch, 33-ball WLCSP and 35-ball WLCSP.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Features",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Multimodal sensor analog front end</li>\n<li>8 input channels with multiple operation modes for various sensor measurements</li>\n<li>Dual-channel processing with simultaneous sampling</li>\n<li>12 programmable time slots for synchronized sensor measurements</li>\n<li>Flexible input multiplexing to support differential and single-ended sensor measurements<ul>\n<li>8 LED drivers, 4 of which can be driven simultaneously</li>\n</ul>\n</li>\n<li>Flexible sampling rate from 0.004Hz to 9kHz using internal oscillators</li>\n<li>On-chip digital filtering</li>\n<li>SNR of transmit and receive signal chain: 100dB</li>\n<li>AC ambient light rejection: 60dB up to 1kHz</li>\n<li>400mA total LED peak drive current</li>\n<li>Total system power dissipation<ul>\n<li>30µW (combined LED and AFE power)</li>\n<li>Continuous PPG measurement at 75dB SNR, 25Hz ODR, 100nA/mA CTR</li>\n</ul>\n</li>\n<li>Interface<ul>\n<li>ADPD4100: SPI</li>\n<li>ADPD4101: I2C&nbsp;</li>\n</ul>\n</li>\n<li>512-byte FIFO size</li>\n<li>Package options<ul>\n<li>WLCSP-33</li>\n<li>WLCSP-35</li>\n</ul>\n</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Applications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Wearable health and fitness monitors:<ul>\n<li>Heart Rate Monitors (HRMs)</li>\n<li>Heart Rate Variability (HRV)</li>\n<li>Stress</li>\n<li>Blood pressure estimation</li>\n<li>Spot Oxygen saturation (SpO2)</li>\n<li>Hydration</li>\n<li>Body composition</li>\n</ul>\n</li>\n<li>Industrial monitoring:<ul>\n<li>CO, CO2, smoke, and aerosol detection</li>\n</ul>\n</li>\n<li>Home patient monitoring</li>\n<li>Different sensor measurements:<ul>\n<li>Photoplethysmography (PPG)</li>\n<li>Electrocardiography (ECG)</li>\n<li>Electrodermal activity (EDA)</li>\n<li>Impedance</li>\n<li>Capacitance</li>\n<li>Temperature</li>\n</ul>\n</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Specifications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>0.004Hz to 9kHz flexible sampling rate using internal oscillators</li>\n<li>100dB SNR of transmit and receive signal chain</li>\n<li>60dB up to 1kHz AC ambient light rejection</li>\n<li>400mA total LED peak drive current</li>\n<li>512-byte FIFO size</li>\n<li>30µW total system power dissipation (combined LED and AFE power)</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Block Diagram",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices/images/adpd4100-adpd4101-fbl.png",
+       "alt": "Block Diagram",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

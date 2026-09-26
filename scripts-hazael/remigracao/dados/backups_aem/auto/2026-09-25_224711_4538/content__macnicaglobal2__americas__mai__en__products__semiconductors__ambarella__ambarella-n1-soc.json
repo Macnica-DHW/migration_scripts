@@ -1,0 +1,548 @@
+{
+ "quando": "2026-09-25T22:47:11",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/ambarella-n1-soc",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/ambarella-n1-soc/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Ambarella N1 SoC | Edge GenAI for Robotics, AIoT and Industrial Automation",
+  "manufacturer": "mai:manufacturers/ambarella",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "Ambarella N1 SoC",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:48 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:55 GMT+0000",
+  "jcr:description": "The Ambarella N1 family brings genuine generative AI processing to power- and cost-constrained edge environments. These SoCs run multimodal large language models (LLMs) and vision-language models (VLMs) locally, on the device rather than in the cloud, delivering the privacy, latency, and total cost of ownership advantages that demanding robotics and AIoT applications require.",
+  "keywords": "Ambarella, ambarella n1, soc, llm, vlm, aiot, robotics, industrial automation",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/ambarella-n1-soc",
+  "pageTitle": "Ambarella N1 SoC ",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Ambarella N1 SoC",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella/images/banner-ambarella-n1.jpg",
+       "alt": "GenAI at the Edge. No Cloud Required.",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The Ambarella N1 family brings genuine generative AI processing to power- and cost-constrained edge environments. These SoCs run multimodal large language models (LLMs) and vision-language models (VLMs) locally, on the device rather than in the cloud, delivering the privacy, latency, and total cost of ownership advantages that demanding robotics and AIoT applications require.</p>\n<p>Macnica Americas is an authorized Ambarella distributor and value-added engineering partner. Our team provides component supply, technical support, and design-in services to help engineers, R&amp;D teams, and contract manufacturers get from evaluation to production efficiently.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876",
+       "1717498055877"
+      ],
+      "anchorlink_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/anchorlink",
+       "cq:styleIds": [
+        "",
+        "1718861445028"
+       ],
+       "anchor": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "then1familyataglance",
+         "text": "Features"
+        },
+        "item1": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "n1655genai",
+         "text": "N1-655 GenAI"
+        },
+        "item2": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "then1theflagshipplatform",
+         "text": "Flagship Platform"
+        },
+        "item3": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "whyedgeai",
+         "text": "Why Edge AI?"
+        },
+        "item4": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "targetmarketsandapplications",
+         "text": "Target Applications"
+        },
+        "item5": {
+         "jcr:primaryType": "nt:unstructured",
+         "linkId": "macnicaamericassupport",
+         "text": "Macnica Americas Support"
+        }
+       }
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "The N1 Family At-a-Glance",
+       "id": "then1familyataglance",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The N1 product family is Ambarella’s third-generation CVflow® Edge AI SoC platform, purpose-built for applications that go beyond what a camera or single sensor can handle on its own. Both current family members process GenAI models locally, improving data privacy while reducing reliance on cloud infrastructure.</p><p style=\"margin-top:0\">&nbsp;</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table height=\"100%\" width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody><tr><th style=\"white-space:nowrap\">Feature</th>\n<th style=\"white-space:nowrap\">N1-655</th>\n<th style=\"white-space:nowrap\">N1</th>\n</tr><tr><td><b>Process Node</b></td>\n<td>5nm Samsung</td>\n<td>5nm Samsung</td>\n</tr><tr><td style=\"white-space:nowrap\"><b>CPU</b></td>\n<td>8x Arm® Cortex®-A78AE</td>\n<td>16x Arm® Cortex®-A78AE</td>\n</tr><tr><td><b>Key Processors</b></td>\n<td>Neural Vector Processor (NVP)</td>\n<td>NVP + General Vector Processor (GVP) + GPU</td>\n</tr><tr><td><b>Video Decode</b></td>\n<td>12x simultaneous 1080p30 streams on-chip</td>\n<td>Multi-camera AI processing hub</td>\n</tr><tr><td><b>Power Envelope</b></td>\n<td>Under 20W</td>\n<td>Higher performance tier</td>\n</tr><tr><td><b>AI Model Support</b></td>\n<td>VLMs, LLMs, CNNs (Phi, Gemma, LLaVA, Llama)</td>\n<td>VLMs, LLMs, CNNs + radar / optical flow</td>\n</tr><tr><td><b>Primary Use Cases</b></td>\n<td>AMRs, on-premise AI boxes, smart city NVRs</td>\n<td>Industrial robotics, smart cities, healthcare imaging, edge AI servers, fleet telematics</td>\n</tr><tr><td style=\"white-space:nowrap\"><b>Availability</b></td>\n<td>Samples available now</td>\n<td>Contact Macnica Americas*</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      },
+      "text_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p style=\"margin-top:0\">&nbsp;</p><p style=\"text-align: center;\"><i>*N1 power envelope and full specification details are available upon request.</i></p>\n<p style=\"margin-top:0;text-align: center;\"><i>Contact Macnica Americas for current availability and design-in support.</i></p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Leading the Family: Ambarella N1-655",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "High-Performance Edge GenAI Under 20 Watts",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Announced at CES 2025, the N1-655 is Ambarella’s answer to the growing demand for on-premise AI processing that operates without a data center or a continuous cloud connection. It delivers 10 to 100 times lower power consumption compared to cloud processors while supporting the most widely used multimodal VLMs and LLMs available today.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "What Makes the N1-655 Different",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Decodes 12 simultaneous 1080p30 video streams on-chip while concurrently running multiple VLMs and CNNs</li>\n</ul>\n<ul>\n<li>Runs Phi, Gemma, LLaVA-OneVision, and Llama natively, without cloud dependency</li>\n</ul>\n<ul>\n<li>Neural Vector Processor (NVP) delivers industry-leading AI performance per watt</li>\n</ul>\n<ul>\n<li>Supports multimodal inputs including vision, speech, and other sensor data processed together</li>\n</ul>\n<ul>\n<li>Built on 5nm Samsung process technology</li>\n</ul>\n<ul>\n<li>Backed by the Ambarella Cooper™ Developer Platform, including the Cooper Pro developer kit</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "What Makes the N1-655 Different",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Autonomous Mobile Robots (AMRs) requiring real-time scene understanding and navigation</li>\n</ul>\n<ul>\n<li>On-premise AI boxes for enterprise security, retail analytics, and industrial monitoring</li>\n</ul>\n<ul>\n<li>Smart city video recorders processing multiple camera feeds locally</li>\n</ul>\n<ul>\n<li>Edge AI inference where data privacy or connectivity constraints rule out cloud processing</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "The N1: The Flagship Platform",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Maximum Performance for the Most Demanding Edge AI Designs",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The original N1 SoC is the high-performance foundation of the family, designed for applications that require the broadest combination of AI processing, classical computer vision, and sensor fusion in a single chip.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Key Capabilities",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Neural Vector Processor (NVP) with industry-leading AI performance per watt</li>\n</ul>\n<ul>\n<li>General Vector Processor (GVP) for offloading classical computer vision, radar processing, and floating-point intensive algorithms</li>\n</ul>\n<ul>\n<li>Dedicated GPU for graphics and parallel compute workloads</li>\n</ul>\n<ul>\n<li>16x Arm® Cortex®-A78AE CPUs</li>\n</ul>\n<ul>\n<li>Dense stereo vision and optical flow engine built in</li>\n</ul>\n<ul>\n<li>Supports multimodal LLMs, VLMs, and traditional CNN networks</li>\n</ul>\n<ul>\n<li>Fabricated on 5nm process technology</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Target Applications",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Industrial robotics with multi-sensor perception spanning vision, radar, and LiDAR</li>\n</ul>\n<ul>\n<li>Smart city infrastructure requiring centralized multi-camera AI processing</li>\n</ul>\n<ul>\n<li>Intelligent healthcare imaging and diagnostic systems</li>\n</ul>\n<ul>\n<li>Edge AI servers running multimodal LLMs on-premise</li>\n</ul>\n<ul>\n<li>Autonomous fleet telematics with real-time decision-making</li>\n</ul>\n<ul>\n<li>Multi-camera AI processing hubs</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why Edge AI? The Case for Local Processing",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Cloud-based AI inference is facing real headwinds: bandwidth costs, ongoing service fees, latency constraints, data privacy regulations, and connectivity limitations in the field. The Ambarella N1 family is purpose-built for the shift toward edge-native AI, where the intelligence lives in the device rather than in a remote data center.</p>\n<p>Ambarella’s CVflow® architecture and fine-tuning techniques, including QLoRA-based model compression, make it possible to run production-grade GenAI models in power-and-cost-constrained enclosures. The result is a new class of intelligent edge device that responds faster, costs less to operate, and is more secure by design.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Target Markets and Applications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Autonomous Mobile Robots (AMRs)",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The N1-655’s combination of multi-channel video decode, VLM support, and sub-20W power envelope makes it well suited for AMRs that need to interpret complex environments, respond to natural language commands, and operate continuously without a cloud connection.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Industrial Automation and Smart Factory",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>From AI visual inspection to collaborative robots on the production line, the N1 family supports the multi-sensor, real-time processing that modern manufacturing requires. Both SoCs integrate naturally into AIoT architectures where data stays on the factory floor.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Smart City and Public Security",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Process multiple camera feeds simultaneously, run object detection, classification, and tracking alongside VLM-based scene understanding, all within a single manageable power budget. Eliminate recurring cloud processing costs for large-scale deployments.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "On-Premise AI Boxes and Edge Servers",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>For enterprises that cannot or will not send sensitive video and sensor data to the cloud, the N1 family enables full-featured GenAI inference to run locally in a standard rack, an industrial enclosure, or an edge appliance.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Intelligent Healthcare",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>High-resolution imaging, real-time diagnostics support, and patient data that never leaves the facility. The N1’s processing depth and sensor fusion capabilities address the demanding requirements of edge medical AI.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Contract Manufacturers",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Macnica Americas works directly with CMs supporting OEM robotics, industrial, and AIoT programs. We provide component forecasting, supply chain coordination, BOM support, and technical resources to keep your programs on schedule.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "How Macnica Americas Supports Your N1 Design",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Macnica Americas is more than a component distributor. As a value-added engineering partner, we support your team across the full development lifecycle.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" height=\"100%\">\n<tbody><tr><th>Design &amp; Supply Chain</th>\n<td>Component supply, demand forecasting, and inventory management from prototype quantities through volume production, including contract manufacturer coordination.</td>\n</tr><tr><th>Value-Added Engineering</th>\n<td>Technical support consulting, schematic review, and design-in assistance from engineers who know the Ambarella platform.</td>\n</tr><tr><th>COTS Solutions</th>\n<td>Access to development platforms and reference designs including the Ambarella Cooper Pro developer kit to accelerate evaluation and reduce time to first prototype.</td>\n</tr><tr><th>Development &amp; Production</th>\n<td>Support through the transition from engineering builds to production, including quality planning and supply chain continuity.</td>\n</tr><tr><th>Macnica Solutions</th>\n<td>Development kits and access to Macnica's broader ecosystem of complementary technologies including Sony image sensors, Altera Agilex FPGAs, and AIoT platform solutions.</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     }
+    },
+    "container_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Ready to Start Your Next Robotics or Edge AI Design?",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Whether you are designing an AMR from the ground up, adding edge GenAI capabilities to an existing AIoT platform, or sourcing components for a contract manufacturing program, Macnica Americas has the product access, engineering depth, and supply chain support to move your project forward.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

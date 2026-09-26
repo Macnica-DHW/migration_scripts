@@ -1,0 +1,240 @@
+{
+ "quando": "2026-09-25T22:51:18",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-mems-resonator-technology",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-mems-resonator-technology/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "SiTime MEMS Resonator Technology | SiTime MEMS Suppliers",
+  "manufacturer": "mai:manufacturers/sitime",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "SiTime MEMS Resonator Technology",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:28:10 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:22:37 GMT+0000",
+  "jcr:description": "Visit us to learn about SiTime's MEMS resonator technology, a leading innovation in the semiconductor industry. We are a trusted SiTime MEMS supplier.",
+  "keywords": "sitime, mems, mems resonators, emi conditions, clock generators, industrial robotics",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-mems-resonator-technology",
+  "pageTitle": "SiTime MEMS Resonator Technology",
+  "cq:tags": [
+   "mai:business-categories/semiconductors"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "SiTime MEMS Resonator Technology",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/images/sitime-mems-resonator.png",
+      "imageRatio": "23",
+      "alt": "SiTime MEMS resonators",
+      "text": "<h3><b>Revolutionize Timing with MEMS Resonator Technology</b></h3>\n<p style=\"margin-top:0\">SiTime’s MEMS resonators deliver unmatched robustness, performance, and programmability over legacy quartz. As the only silicon MEMS resonators qualified for automotive, industrial, and aerospace-grade applications,&nbsp;SiTime MEMS resonator technology is redefining how systems synchronize in size, power, and precision.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ]
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Key Features",
+       "id": "keyfeatures",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>Shock and Vibration-Resistant:&nbsp;</b>Operate reliably in extreme environments (up to 100,000 g)</li>\n<li><b>Unmatched MTBF:</b>&nbsp;Up to 2.2 billion hours</li>\n<li><b>Small Size, Big Flexibility:</b>&nbsp;QFN, CSP, and wafer-level packaging</li>\n<li><b>Temperature-Resilient:</b>&nbsp;Excellent thermal performance with tight coupling</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiTime MEMS Resonator Technology Products",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Elite Platform Oscillators",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Industry’s most robust, high-performance MEMS resonators with ICs for demanding use cases",
+       "type": "h4",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>Part Numbers:</b> SiT8008, SiT8021, SiT8924, SiT8925, SiT9396, SiT9397</li>\n<li><b>Specifications:</b> Frequencies up to ~725 MHz; ±0.1 ppm stability; wide temperature range (-55 °C to +125 °C); ultra-low jitter</li>\n<li><b>Key Features:</b><ul>\n<li>100× better resilience to shock, vibration, and aging than quartz</li>\n<li>Exceptional frequency stability for mission-critical applications</li>\n<li>Available in ultra-small packages with low power options</li>\n<li>Field-programmable for custom frequency, stability, and voltage needs</li>\n</ul>\n</li>\n<li><b>Use Cases:</b><span> 5G infrastructure, aerospace and defense, industrial IoT, precision networking, high-reliability automotive systems</span></li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Titan Platform Resonators",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>Part Numbers</b>: SiT11100, SiT11101, SiT11102, SiT11103, SiT11104</li>\n<li><b>Specifications</b>: Frequencies in the ~32‑76.8 MHz range; very small footprint; ultra‑low power; high shock/vibration tolerance</li>\n<li><b>Key Features</b>:<ul>\n<li>4× to 7× smaller than the smallest quartz resonators; enables tighter board layouts</li>\n<li>Excellent stability vs temperature and aging</li>\n<li>Rugged MEMS structure: high shock and vibration resilience</li>\n</ul>\n</li>\n<li><b>Use Cases</b>: Embedded sensors, IoT edge devices, medical wearables, any design where size and stability are critical</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<hr />",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "SiTime MEMS Applications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>ADAS, space and defense electronics, industrial automation, and ruggedized communications systems</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Similar Products",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       "1718280237031"
+      ]
+     },
+     "list_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "linkItems": "true",
+      "pages": [
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-oscillators",
+       "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime/sitime-network-synchronizers"
+      ],
+      "sling:resourceType": "macnicaglobal2/components/content/list",
+      "listFrom": "static"
+     }
+    }
+   }
+  }
+ }
+}
