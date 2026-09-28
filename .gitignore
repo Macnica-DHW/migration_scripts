@@ -12,8 +12,9 @@ __pycache__/
 .venv/
 venv/
 
-# Config local do Claude Code (específica de máquina)
-.claude/
+# Claude Code: .claude/ (skills, settings.json) É versionado — deixa o Claude consistente entre todos os
+# usuários do repositório (Hazael, 28/09/2026). Só as permissões pessoais ficam fora.
+.claude/settings.local.json
 
 # Material de referência pessoal / não destinado ao repositório
 migration-tracking/

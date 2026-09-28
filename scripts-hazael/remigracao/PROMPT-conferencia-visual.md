@@ -1,7 +1,7 @@
 Continuar a remigração de `semiconductors` no AEM da Macnica — CONFERÊNCIA VISUAL
 página a página (5ª sessão). Você não tem memória das sessões anteriores: tudo o
 que precisa está no repositório.
-Repositório: ~/projects/migration_scripts   (branch migration/semiconductors-remigration)
+Repositório: ~/projects/migration_scripts   (branch migration)
 
 ATENÇÃO — ESTE PROMPT É DA 5ª SESSÃO E FICOU DESATUALIZADO NO MEIO DELA (19/09/2026). O que vale agora está no
 TOPO do HANDOFF.md: servidor = motor no HEAD (lote 10 GRAVADO e conferido em 19/09),
