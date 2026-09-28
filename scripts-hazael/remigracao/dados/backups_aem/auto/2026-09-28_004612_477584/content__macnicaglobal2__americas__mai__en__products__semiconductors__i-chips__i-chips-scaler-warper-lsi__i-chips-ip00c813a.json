@@ -1,0 +1,180 @@
+{
+ "quando": "2026-09-28T00:46:12",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c813a",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c813a/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "i-Chips IP00C813A - Versatile Video Device",
+  "manufacturer": "mai:manufacturers/i-chips",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "i-Chips IP00C813A",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:53 GMT+0000",
+  "cq:lastModified": "Sat Sep 26 2026 01:20:44 GMT+0000",
+  "jcr:description": "Enhance your AV projects with the i-Chips IP00C813A, a versatile video device that integrates advanced de-interlacing and scaling capabilities. Get a quote.",
+  "keywords": "i-Chips, De-Interlacer, Scaler, Warping, Edge blending, Video processing, Image correction, Color distortion correction, Picture-in-Picture, Picture-by-Picture, Geometry correction, Interlaced format, Progressive format, Video decoder, ARM9 CPU, LVDS output, Ethernet interface, USB interface, Resolution, Image rotation, Mirror image, Color distortion, Edge blending function, Multiple video inputs, Frame rate conversion, OSD (On-Screen Display), Embedded CPU, Ethernet connectivity, USB connectivity, ADC, DAC, IP00C813A",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-warper-lsi/i-chips-ip00c813a",
+  "pageTitle": "i-Chips IP00C813A",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "i-Chips IP00C813A",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "title_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Dual Input/Output De-interlacer/Scaler with Warping LSI",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ip00c813a-2.png",
+      "imageRatio": "15",
+      "alt": "Dual Input/Output De-interlacer/Scaler with Warping LSI",
+      "text": "<p>The IP00C813A is an advanced i-Chips product that combines a de-interlacer and scaler into a single device, offering dual-input and dual-output capabilities. It includes a built-in video decoder, ARM9 CPU, LVDS output, and Ethernet/USB interfaces.</p>\n<p>This versatile video device supports a wide range of input and output formats, including interlaced and progressive formats up to 1080P/WUXGA/2K1K, accommodating both SD and HD content. With its two independent de-interlacer/scaler blocks, featuring full 10-bit internal processing, the IP00C813A ensures exceptional image quality.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>The IP00C813A can be configured in various ways to meet different application needs. In single-output mode, it enables Picture-in-Picture and Picture-by-Picture output. In dual-output mode, it generates separate outputs at any resolution. Notably, it excels at correcting geometry distortion through a user-programmable &quot;warp table&quot; stored in an external CPU or Flash memory. This enables precise adjustment of image shape and rotation, including 90-degree rotation and mirror image.</p>\n<p>Additionally, the IP00C813A addresses color distortion with its powerful brightness and contrast adjustment system. This system is programmable for each 64x64 pixel region in the image, ensuring accurate color reproduction.</p>\n<p>The video device's state-of-the-art edge blending function allows for seamless tiling of multiple images, making it ideal for applications such as video walls and large-scale projections. It ensures a smooth transition between blended images, creating a visually stunning and cohesive display.</p>\n<p>With its comprehensive features, the IP00C813A caters to diverse requirements in the AV industry, including multimedia presentations, digital signage, video conferencing, and more. It eliminates the need for additional components, making it a cost-effective solution.&nbsp;</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "i-Chips Technology Demo",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "spnQSsnwyEw",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Block Diagram",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ip00c813a-1-1.png",
+       "alt": "Block Diagram",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Specifications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>Input</b></p>\n<ul>\n<li>30-bit RGB/30-bit YUV4:4:4/20-bit YUV4:2:2/10-bit YUV4:2:2 @166MHz</li>\n<li>60-bit RGB/60-bit YUV4:4:4/40-bit YUV4:2:2 @166MHz (Parallel)</li>\n<li>Analog: CVBS/S-Video</li>\n<li>2176 pixels of active video</li>\n</ul>\n<p><b>Output</b></p>\n<ul>\n<li>30-bit RGB/30-bit YUV4:4:4/20-bit YUV4:2:2 @166MHz</li>\n<li>Compatible with FPD link (2x2 only, no CMOS) @135MHz/each</li>\n<li>2176 pixels of active video</li>\n</ul>\n<p><b>De-Interlacing</b></p>\n<ul>\n<li>3D/MPEG/mosquito/block noise reduction</li>\n<li>2:2, 2:3 and multi cadence detection</li>\n<li>Chroma bug canceller</li>\n</ul>\n<p><b>Scaling</b></p>\n<ul>\n<li>6symbol filter (horizontal only-8symbol) with FIR filter</li>\n<li>Independent H and V scaling ratios (aspect ratio correction)</li>\n<li>Coefficient filter ROM embedded (64set)</li>\n<li>90-degree image rotation (image and OSD)</li>\n<li>Vertical keystone correction</li>\n</ul>\n<p><b>Video Decoder</b></p>\n<ul>\n<li>NTSC-M, JPN, 4.43 PAL-B, D, G, H, I, CombinationN, 60, &amp;SECAM</li>\n<li>VBI (Closed caption/CGMS/WSS) data extraction</li>\n<li>Clamp Pulse output, raw data output</li>\n</ul>\n<p><b>PiP &amp; PoP Functions</b></p>\n<ul>\n<li>Two (2) fully independent video inputs</li>\n<li>Frame rate conversion with frame tear protection</li>\n</ul>\n<p><b>Bitmap OSD</b></p>\n<ul>\n<li>256 colors/High color OSD (RGB565) compatible</li>\n<li>Embedded font engine (65536 words)</li>\n<li>Support for blinking and semi-transparent (4 color) OSD</li>\n</ul>\n<p><b>Embedded CPU</b></p>\n<ul>\n<li>ARM926EJ-S core with 16KB instruction, 16KB data</li>\n<li>Work RAM (64KB)</li>\n<li>Ethernet, USB2.0 (host, function)</li>\n<li>DMAC (2ch)/UART (4ch)/I2C (master/slave)</li>\n<li>Timer (4ch)/Interruption control/IR remote control/RTC</li>\n<li>10-bit ADC (8ch)/10-bit DAC (6ch)</li>\n</ul>\n<p><b>Warping</b></p>\n<ul>\n<li>Coordinated look-up table</li>\n<li>Correction up to a 25-degree angle both horizontal and vertical</li>\n<li>Rotation angle up to 25 degrees</li>\n<li>Edge-blending</li>\n</ul>\n<p><b>External CPU Interface</b></p>\n<ul>\n<li>8-bit parallel, 4-line serial (with external CPU)</li>\n<li>External connection to Flash/SRAM/SDRAM</li>\n<li>Address: 23-bit/Data: 16-bit</li>\n<li>External interruption input (4 line)</li>\n</ul>\n<p><b>Image Quality Control</b></p>\n<ul>\n<li>12-bit gamma correction with interpolation (up to 7 LUTs available)</li>\n<li>12-bit color gamma correction table x2 (2, 7, or 31set) x2</li>\n<li>H and V edge enhancement function (9 symbols)</li>\n<li>Bias x3, Gain x2, CSC equipped for RGB &lt;-&gt; YUV</li>\n<li>Color management function</li>\n<li>Fully compatible with xvYCC</li>\n<li>Uniformity correction</li>\n<li>Input image detection of APL, Histogram, Min/Max, edge strength/position measurement, etc.</li>\n</ul>\n<p><b>External Memory</b></p>\n<ul>\n<li>Memory-bus 64-bit 800MHz</li>\n<li>DDR3-SDRAM PC800 (1G/512M/bit x16) x4</li>\n</ul>\n<p><b>Power Supply</b></p>\n<ul>\n<li>3.3V, 1.5V and 1.2V</li>\n<li>Separate power consumption (Scaler and CPU)</li>\n</ul>\n<p><b>Package</b></p>\n<ul>\n<li>900-pin BGA, 35mm x 35mm (1mm pitch)</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

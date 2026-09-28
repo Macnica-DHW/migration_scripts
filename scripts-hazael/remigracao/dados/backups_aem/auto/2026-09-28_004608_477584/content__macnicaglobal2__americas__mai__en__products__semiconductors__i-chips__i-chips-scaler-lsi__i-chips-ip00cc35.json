@@ -1,0 +1,350 @@
+{
+ "quando": "2026-09-28T00:46:08",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00cc35",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00cc35/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "i-Chips IP00C335",
+  "manufacturer": "mai:manufacturers/i-chips",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "i-Chips IP00C335",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:53 GMT+0000",
+  "cq:lastModified": "Sat Sep 26 2026 01:19:07 GMT+0000",
+  "jcr:description": "The IP00C335 from i-Chips is a multi-functional image processing LSI that integrates scaling, de-interlacing, and multi-window video processing with embedded frame memory. It is designed to process up to four independent 4K60 video streams in real time, enabling compact system architectures for advanced display, broadcast, and ProAV applications. ",
+  "keywords": "IP00C335, de-interlacer, scaler, image processing, video decoder, ARM9 CPU, LVDS output, Ethernet, USB, 3-D display, image signal receiver, FPGA, video channels, board space, programming, cost-effective solution",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00cc35",
+  "pageTitle": "i-Chips IP00C335",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "i-Chips IP00C335",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "title_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "4K Multi-Input / Multi-Output De-Interlacer and Scaler LSI with Embedded Memory",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ichips-ip00c335-b.jpg",
+      "imageRatio": "15",
+      "alt": "i-Chips IP00C335",
+      "text": "<p>A high-performance video processing solution designed for multi-stream 4K pipelines, enabling scaling, de-interlacing, overlay, and advanced display control in a single chip.</p>\n<p>The IP00C335 from i-Chips is a multi-functional image processing LSI that integrates scaling, de-interlacing, and multi-window video processing with embedded frame memory. It is designed to process up to four independent 4K60 video streams in real time, enabling compact system architectures for advanced display, broadcast, and ProAV applications.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Overview",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>The i-Chips IP00C335</b> is a high-performance 4K video processing LSI designed for systems that require multi-input handling, flexible display composition, and real-time image processing.</p>\n<p>By integrating scaling, de-interlacing, overlay, and memory into a single device, the IP00C335 enables designers to build compact and efficient video processing architectures. The device can process up to four 4K60 inputs simultaneously and generate dual 4K outputs, making it ideal for applications such as video walls, broadcast multi-viewers, and advanced display systems.</p>\n<p>Its internal architecture includes multiple independent scaler and de-interlacer engines, enabling simultaneous processing of multiple video streams with low latency and high image quality.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Key Features",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>Multi-Stream 4K Processing:</b> Process up to four independent 4K60 video streams in a single device for multi-display and multi-window systems</li>\n</ul>\n<ul>\n<li><b>Integrated Scaling and De-Interlacing:</b> Includes 8 scaler engines and 4 de-interlacer cores for high-speed image processing at 333 MHz</li>\n</ul>\n<ul>\n<li><b>Embedded Frame Memory:</b> Built-in LPDDR3 memory eliminates the need for external frame memory, simplifying system design</li>\n</ul>\n<ul>\n<li><b>Advanced Display Functions:</b> Supports PiP and PoP overlay, independent zoom and shrink, and flexible image composition</li>\n</ul>\n<ul>\n<li><b>HDR Support:</b> Supports PQ and Hybrid Log-Gamma (HLG) for modern HDR display applications</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Core Capabilities",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Multi-Input / Multi-Output Processing",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Up to 4 × 4K60 input streams</li>\n<li>Dual 4K60 output channels</li>\n<li>Supports higher input formats including 4K120 and 8K60 (YUV420)</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "High-Performance Image Processing",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>8-channel scaler architecture</li>\n<li>4-channel motion-adaptive de-interlacer</li>\n<li>Independent processing per input stream</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Advanced Image Composition",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Picture-in-picture (PiP) and picture-over-picture (PoP)</li>\n<li>Overlay and alpha blending</li>\n<li>Independent zoom and shrink per input</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Synchronization and Control",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>Frame rate conversion</li>\n<li>Genlock and external synchronization</li>\n<li>Tearing protection for stable display output</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Image Quality and HDR",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>PQ (HDR10) and HLG support</li>\n<li>Motion-adaptive processing</li>\n<li>High-quality scaling and filtering</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Technical Specifications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\" width=\"100%\">\n<tbody><tr><th style=\"white-space:nowrap\">Feature</th>\n<td width=\"60%\" style=\"white-space:nowrap\">Specification</td>\n</tr><tr><th style=\"white-space:nowrap\">Input</th>\n<td>Up to 4 × 4K60Hz inputs</td>\n</tr><tr><th style=\"white-space:nowrap\">Output</th>\n<td>Up to 2 × 4K60Hz outputs</td>\n</tr><tr><th>Max Input Formats</th>\n<td>4K120Hz, 8K60Hz (YUV420)</td>\n</tr><tr><th>Video Formats</th>\n<td>RGB, YUV 4:4:4 / 4:2:2 / 4:2:0</td>\n</tr><tr><th>Processing Engines</th>\n<td>8 scalers, 4 de-interlacers</td>\n</tr><tr><th style=\"white-space:nowrap\">Memory</th>\n<td>Embedded LPDDR3 (2Gbit)</td>\n</tr><tr><th style=\"white-space:nowrap\">Interface</th>\n<td>V-by-One HS (Tx/Rx)</td>\n</tr><tr><th>HDR Support</th>\n<td>PQ (ST2084), HLG</td>\n</tr><tr><th>Key Functions</th>\n<td>Scaling, de-interlacing, PiP/PoP, overlay</td>\n</tr><tr><th>Sync Features</th>\n<td>Frame rate conversion, Genlock</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Typical Applications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>Video Wall Controllers: </b>Multi-input display processing and tiled display systems</li>\n</ul>\n<ul>\n<li><b>Broadcast Multi-Viewer Systems:</b> Simultaneous monitoring and processing of multiple video feeds</li>\n</ul>\n<ul>\n<li><b>Professional AV Systems:</b> Switchers, processors, and presentation systems</li>\n</ul>\n<ul>\n<li><b>Medical and Industrial Displays:</b> High-resolution visualization and multi-source display systems</li>\n</ul>\n<ul>\n<li><b>UI/UX Multi-Display Interfaces:</b> On-screen display and multi-channel interface rendering</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Where IP00C335 Fits",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The IP00C335 sits at the core of advanced video processing pipelines, managing multiple input sources and delivering optimized output to displays such as video walls, monitors, and UI systems.</p>\n<p>It is particularly well suited for designs where multiple video sources must be combined, processed, and displayed in real time with high image quality and low latency.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why Work with Macnica Americas?",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Macnica Americas provides access to i-Chips solutions along with technical support to help engineering teams evaluate and integrate video processing LSIs into their systems.</p>\n<p><b>Our team can assist with:</b></p>\n<ul>\n<li>Device selection based on system requirements</li>\n<li>Video pipeline architecture design</li>\n<li>Integration with broader display and processing systems</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/common/images/macnica-workflow-diagram.jpg",
+       "alt": "Macnica workflow diagram",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

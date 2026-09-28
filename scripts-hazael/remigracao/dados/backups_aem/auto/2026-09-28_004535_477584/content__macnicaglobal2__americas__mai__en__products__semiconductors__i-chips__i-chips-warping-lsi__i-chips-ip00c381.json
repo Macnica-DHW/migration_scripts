@@ -1,0 +1,180 @@
+{
+ "quando": "2026-09-28T00:45:35",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c381",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c381/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "i-Chips IP00C381 - HD Video Processor",
+  "manufacturer": "mai:manufacturers/i-chips",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "i-Chips IP00C381",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:53 GMT+0000",
+  "cq:lastModified": "Sat Sep 26 2026 01:23:31 GMT+0000",
+  "jcr:description": "Enhance your projects with the i-Chips IP00C381 HD video processor. With 4K input and output, it ensures superior image quality and flexible performance.",
+  "keywords": "i-Chips IP00C381, Warping and Edge Blending Solution, 4K60Hz Input/Output, Distortion Correction, Image Quality Control, Visual Processing, Seamless Visual Experiences, All-in-One Image Processor, Application Uses, Enhanced Image Performance",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c381",
+  "pageTitle": "i-Chips IP00C381",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "i-Chips IP00C381",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "title_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "4K Quad Input De-interlacer/Scaler/Warping LSI",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ichips-ip00c381.png",
+      "imageRatio": "21",
+      "alt": "4K Quad Input De-interlacer/Scaler/Warping LSI",
+      "text": "<p>The i-Chips IP00C381 is a versatile all-in-one HD video processor for warping and edge-blending, designed to deliver exceptional image quality and performance. With its impressive maximum 1,333Mpixel/sec signal processing capability, it supports 4K (up to 4096×2400) 60Hz input and output, as well as additional formats like WQXGA (2560×1600) 120Hz.</p>\n<p>One of its standout features is the embedded warp table generator, enabling real-time image processing for horizontal and vertical keystone correction and pin-cushion correction. This capability, combined with edge-blending for precise per-pixel correction and white peaking, ensures superior image quality and outstanding results.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>The IP00C381 offers remarkable flexibility with 4K60Hz input/output, allowing for any angle rotation, making it suitable for a wide range of applications. Whether it's for immersive display setups, image stabilization, or creating visually stunning effects, the IP00C381 delivers reliable and advanced warping and edge-blending performance.</p>\n<p>With its support for HV-Keystone, Pincushion, and Center shift cascade features, the IP00C381 opens up new possibilities in image processing. This HD video processor supports various input formats, including RGB and YUV with different bit depths, and features extensive correction and control options, such as distortion correction, uniformity correction, image mirroring, 90-degree rotation, and OSD capabilities.</p>\n<p>Backed by a comprehensive feature set and a compact 684-pin BGA package, the IP00C381 is a powerful solution for professionals seeking high-quality warping, edge-blending, and image control in their applications.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "i-Chips Technology Demo",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "Rfxo9bWyjGQ",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Block Diagram",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ip00c381.png",
+       "alt": "Block Diagram",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Specifications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>Input (2-port)</b></p>\n<ul>\n<li>RGB 30bit / YUV 4:4:4 30bit / YUV 4:2:2 20bit / YUV 4:2:2 10bit (BT656) 166MHz LV-CMOS (2-port) supporting dual (EVEN/ODD) and DDR inputs</li>\n<li>Analog input: CVBS (NTSC, PAL, SECAM)</li>\n</ul>\n<p><b>Output (1-port)</b></p>\n<ul>\n<li>RGB 30bit / YUV4:4:4 30bit / YUV4:2:2 20bit / YUV4:2:2 10bit (BT656) 166MHz high speed LVDS/83MHz x2 LVDS</li>\n</ul>\n<p><b>Input &amp; Output Image Size</b></p>\n<ul>\n<li>Up to 16384 pixels/line with 2048 of horizontal active video</li>\n</ul>\n<p><b>External Memory</b></p>\n<ul>\n<li>DDR3-SDRAM 16bit PC1600 (4G/2G/1G bit x16) x1</li>\n</ul>\n<p><b>Input/Output Sync</b></p>\n<ul>\n<li>Frame rate conversion</li>\n<li>Tearing protection</li>\n<li>External force synchronization</li>\n</ul>\n<p><b>Video Decoder</b></p>\n<ul>\n<li>NTSC-M, JPN, 4.43 PAL-B, D, G, H, I, CombinationM, 60, SECAM</li>\n<li>VBI (Closed Caption/CGMS/CGMS/WSS) data extraction</li>\n<li>Clamp pulse output</li>\n</ul>\n<p><b>De-Interlacer</b></p>\n<ul>\n<li>Motion adaptive filter based on Y, U, V</li>\n<li>All major cadences supported</li>\n<li>YUV4:2:2</li>\n</ul>\n<p><b>Scaler</b></p>\n<ul>\n<li>6 symbol filter with FIR filter (10 bit/pixel), embedded ROM (64sets)</li>\n</ul>\n<p><b>Noise Reduction</b></p>\n<ul>\n<li>3D (H,V,Temporal) / Mosquito / Block NR, chroma error filter</li>\n</ul>\n<p><b>Bit Map OSD</b></p>\n<ul>\n<li>256 colors/High color OSD (64K colors)</li>\n<li>Embedded font engine (65536 words)</li>\n<li>Blinking and semi-transparent (4 colors OSD)</li>\n<li>90-degree rotation, OSD scroll</li>\n<li>Serial flash to bitmap</li>\n</ul>\n<p><b>Image Quality Control</b></p>\n<ul>\n<li>Edge-blending (RGB independent gamma correction, white peaking, by region and per pixel correction)</li>\n<li>Color management (full color gamma)</li>\n<li>Uniformity correction (by region and per pixel available</li>\n<li>Bias/Gain/Gamma correction</li>\n<li>H/V edge enhancement (9 symbols)</li>\n<li>Dithering for 10, 8, and 6 bits output</li>\n</ul>\n<p><b>Image Manipulation</b></p>\n<ul>\n<li>Warping (coordinate correction look up table, embedded warp table generator for key stone correction)</li>\n<li>Any angle rotation (up to 45 degree rotation + 90 degree rotation)</li>\n<li>Mirror / flip / 90-degree rotation</li>\n<li>2-ch overlay, alpha blending, color key blending</li>\n</ul>\n<p><b>Embedded CPU</b></p>\n<ul>\n<li>ARM926EJ-S equivalent (ARM V5TE except for jazelle and ETM9)</li>\n<li>Cache (16KB Instruction, 16KB data)</li>\n<li>Work RAM (128KB)</li>\n<li>8-bit parallel / 4-wire serial when external CPU is in use</li>\n</ul>\n<p><b>CPU Interface</b></p>\n<ul>\n<li>Direct connection with external parallel or serial flash / SRAM / SDRAM</li>\n<li>Address / data width 26bit / 16bit</li>\n</ul>\n<p><b>CPU Peripherals</b></p>\n<ul>\n<li>Ethernet, USB2.0, SD Card</li>\n<li>DMAC (8ch) / UART (3ch) / 12C (master/slave 3ch)</li>\n<li>Timer (6ch) / Interruption control / IR remote control</li>\n<li>10bit ADC (8ch, MUX) / 10bit DAC (3ch)</li>\n</ul>\n<p><b>xvYCC/Bt.2020 are fully supported</b></p>\n<p><b>Power Supply</b><br>\n</p>\n<ul>\n<li>3.3V/2.5V/1.5V/1.0V</li>\n</ul>\n<p><b>Package</b></p>\n<ul>\n<li>684-pin BGA (0.8mm pitch), 27mm x 27mm</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

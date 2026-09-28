@@ -1,0 +1,329 @@
+{
+ "quando": "2026-09-28T00:42:43",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-fpga-evaluation-board",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-fpga-evaluation-board/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "i-Chips iEB-KXU2",
+  "manufacturer": "mai:manufacturers/i-chips",
+  "businessCategories": [
+   "mai:business-categories/boards-modules"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "i-Chips iEB-KXU2",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:53 GMT+0000",
+  "cq:lastModified": "Sat Sep 26 2026 01:12:30 GMT+0000",
+  "jcr:description": "The iEB-KXU2 from i-Chips is a high-resolution FPGA development board designed for real-time image processing and video system prototyping. It supports up to four channels of 4K60 HDMI input and output, enabling engineers to rapidly develop and validate multi-stream video processing architectures. Built on an AMD Kintex UltraScale FPGA and equipped with DDR4 frame memory, the iEB-KXU2 provides a flexible platform for implementing scaling, warping, compositing, and other advanced video processing functions.",
+  "keywords": "iEB-KXU2, fpga board, de-interlacer, scaler, image processing, video decoder, ARM9 CPU, LVDS output, Ethernet, USB, 3-D display, image signal receiver, FPGA, video channels, board space, programming, cost-effective solution",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-fpga-evaluation-board",
+  "pageTitle": "i-Chips iEB-KXU2",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "i-Chips iEB-KXU2",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "title_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "4K60 HDMI Input/Output FPGA Development Board for Real-Time Video Processing",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ichips-ieb-kxu2.jpg",
+      "imageRatio": "17",
+      "alt": "i-Chips iEB-KXU2",
+      "text": "<p>The iEB-KXU2 from i-Chips is a high-resolution FPGA development board designed for real-time image processing and video system prototyping. It supports up to four channels of 4K60 HDMI input and output, enabling engineers to rapidly develop and validate multi-stream video processing architectures.</p>\n<p>Built on an AMD Kintex UltraScale FPGA and equipped with DDR4 frame memory, the iEB-KXU2 provides a flexible platform for implementing scaling, warping, compositing, and other advanced video processing functions.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Key Features",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>4K60 Multi-Channel HDMI I/O:</b>&nbsp;Supports 4 × HDMI 2.0 inputs and 4 × HDMI 2.0 outputs, each up to 4K60 resolution.</li>\n</ul>\n<ul>\n<li><b>High-Performance FPGA Platform:</b>&nbsp;Powered by AMD Kintex UltraScale FPGA for high-speed image processing and custom video pipeline development.</li>\n</ul>\n<ul>\n<li><b>Integrated Frame Memory:</b> On-board DDR4 memory enables temporal image processing and buffering for advanced video applications.</li>\n</ul>\n<ul>\n<li><b>Flexible Control Options:</b> Supports control via external PC (USB) or on-board microcontroller, selectable via DIP switch.</li>\n</ul>\n<ul>\n<li><b>Simplified Development Environment:</b> Includes register compiler and control tools to accelerate development without needing to build peripheral interfaces.</li>\n</ul>\n<p>The iEB-KXU2 is designed as a flexible development platform for engineers building advanced video processing systems. It enables rapid prototyping of real-time image processing circuits using a high-performance FPGA architecture combined with multi-channel HDMI interfaces.</p>\n<p>By integrating video input/output, frame memory, and control logic on a single board, the iEB-KXU2 allows developers to focus on implementing core processing algorithms such as scaling, warping, compositing, and format conversion without needing to design supporting hardware.</p>\n<p>This makes it an ideal platform for early-stage system development, proof-of-concept validation, and evaluation of i-Chips video processing architectures.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Core Capabilities",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "title_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Multi-Channel Video Processing",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>4 × HDMI 2.0 input channels (up to 4K60)</li>\n<li>4 × HDMI 2.0 output channels (up to 4K60)</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "FPGA-Based Custom Processing",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>AMD Kintex UltraScale FPGA (XCKU115)</li>\n<li>LVDS interface between FPGA and HDMI Tx/Rx</li>\n<li>Fully-programmable video processing pipeline</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Memory and Data Handling",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>DDR4 frame memory for temporal processing</li>\n<li>High-speed memory bandwidth for multi-stream video</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Control and Configuration",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>USB interface for PC-based control (SPI)</li>\n<li>On-board microcontroller for standalone operation</li>\n<li>Register-level programming support</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Development Tools",
+       "type": "h3",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li>WREG2400 register configuration software</li>\n<li>Register compiler for FPGA control integration</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Technical Specifications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "table_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\" width=\"100%\">\n<tbody><tr><th style=\"white-space:nowrap\">FPGA</th>\n<td width=\"60%\">AMD Kintex UltraScale XCKU115</td>\n</tr><tr><th style=\"white-space:nowrap\">Input</th>\n<td>4 × HDMI 2.0 (up to 4K60)</td>\n</tr><tr><th style=\"white-space:nowrap\">Output</th>\n<td>4 × HDMI 2.0 (up to 4K60)</td>\n</tr><tr><th>Video Interface</th>\n<td>HDMI 2.0 (Non-HDCP)</td>\n</tr><tr><th>Internal Interface</th>\n<td style=\"white-space:nowrap\">LVDS</td>\n</tr><tr><th style=\"white-space:nowrap\">Memory</th>\n<td>DDR4 SDRAM (up to 2400 Mbps)</td>\n</tr><tr><th>Control Interfaces</th>\n<td>USB (SPI), I2C, RS-232C</td>\n</tr><tr><th style=\"white-space:nowrap\">Microcontrollers</th>\n<td>Dual NXP LPC1769</td>\n</tr><tr><th>USB Interface</th>\n<td>FTDI FT2232H</td>\n</tr><tr><th>Power Supply</th>\n<td>+12V (4A max)</td>\n</tr><tr><th>Board Size</th>\n<td>250mm × 250mm</td>\n</tr><tr><th style=\"white-space:nowrap\">Software</th>\n<td>WREG2400 register tool</td>\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "1722939215525"
+       ]
+      }
+     },
+     "container_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Typical Applications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<ul>\n<li><b>Video Processing Development:</b> Prototype and validate custom video processing pipelines.</li>\n</ul>\n<ul>\n<li><b>Projection and Display Systems:</b> Evaluate warping, scaling, and edge blending architectures.</li>\n</ul>\n<ul>\n<li><b>Broadcast and ProAV Systems:</b> Develop multi-input, multi-output video processing solutions.</li>\n</ul>\n<ul>\n<li><b>Video Wall and Multi-Display Systems:</b> Test multi-stream display composition and control.</li>\n</ul>\n<ul>\n<li><b>Embedded Vision and UI Systems:</b> Develop real-time display pipelines for embedded applications.</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Where iEB-KXU2 Fits",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>The iEB-KXU2 sits at the development stage of the video pipeline, enabling engineers to prototype and validate image processing architectures before committing to production hardware.</p>\n<p>It bridges the gap between concept and deployment, allowing developers to test multi-channel video input, processing, and output in a controlled and flexible environment.</p>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Why Work with Macnica Americas?",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p>Macnica Americas helps engineering teams accelerate development by providing access to evaluation platforms like the iEB-KXU2 alongside technical guidance for video system design.</p>\n<p><b>Our team supports:</b></p>\n<ul>\n<li>Evaluation and prototyping strategy</li>\n<li>FPGA-based video pipeline development</li>\n<li>Transition from prototype to production using i-Chips LSIs</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/common/images/macnica-workflow-diagram.jpg",
+       "alt": "Macnica workflow diagram",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

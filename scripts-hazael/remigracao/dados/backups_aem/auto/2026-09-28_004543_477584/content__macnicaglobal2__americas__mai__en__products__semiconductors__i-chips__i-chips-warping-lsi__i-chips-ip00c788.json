@@ -1,0 +1,174 @@
+{
+ "quando": "2026-09-28T00:45:43",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c788",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c788/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "i-Chips IP00C788 - Image Signal Processor Chip",
+  "manufacturer": "mai:manufacturers/i-chips",
+  "businessCategories": [
+   "mai:business-categories/semiconductors"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "i-Chips IP00C788",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:53 GMT+0000",
+  "cq:lastModified": "Sat Sep 26 2026 01:27:15 GMT+0000",
+  "jcr:description": "Optimize your display systems with the i-Chips IP00C788 image signal processor chip. It offers advanced edge-blending and image correction capabilities.",
+  "keywords": "IP00C788, warping chip, edge-blending, affordable, high resolution, pin-cushion correction, keystone correction, de-interlacing, image scaling, image processing, picture quality, distortion correction, image stabilization, i-Chips, compact design, advanced features.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-warping-lsi/i-chips-ip00c788",
+  "pageTitle": "i-Chips IP00C788",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "i-Chips IP00C788",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "title_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "2K Warping/Edge-blending LSI",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ip00c788.png",
+      "imageRatio": "21",
+      "alt": "2K Warping/Edge-blending LSI",
+      "text": "<p>The IP00C788, an affordable yet refined i-Chips solution designed for superior warping and edge-blending. With support for resolutions up to 2K, this image signal processor chip revolutionizes image geometry corrections with its embedded warp table generator. Experience seamless pin-cushion and keystone corrections, delivering high-speed processing for stunning visuals. Elevate picture quality with edge-blending, including white peaking, while the de-interlacing function expands application possibilities, making it ideal for camera input systems. Additionally, this versatile chip doubles as a single input and output scaler. Its compact package enables limitless product designs. Explore the future of immersive visuals with the IP00C788 image signal processor chip.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "i-Chips Technical Demo",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "Rfxo9bWyjGQ",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Block Diagram",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ip00c788-1.png",
+       "alt": "Block Diagram",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Specifications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>Input (4K60Hz 4-port）</b></p>\n<ul>\n<li>RGB 30bit / YUV4:4:4 30bit / YUV4:2:0 30bit / YUV4:2:2 20bit / YUV4:2:2 10bit (BT656)</li>\n<li>@V-by-One® HS 4Gbps, 8 lane 2-port</li>\n<li>@LV-CMOS 166MHz, supporting dual (EVEN/ODD) and DDR inputs 4-port</li>\n<li>4K60Hz input up to 4-port</li>\n<li>4K120Hz input supported</li>\n</ul>\n<p><b>Output (4K60Hz 2-port）</b></p>\n<ul>\n<li>RGB 30bit / YUV4:4:4 30bit / YUV4:2:2 20bit / YUV4:2:2 10bit (BT656) @V-by-One® HS 4Gbps, 8 lane 2-port</li>\n<li>4K60Hz dual output (all the time, fully independent)</li>\n<li>4K120Hz output supported</li>\n</ul>\n<p><b>Input &amp; Output</b></p>\n<ul>\n<li>Horizontal sync signal 16,384 pixels (max) ＠1ch</li>\n<li>Horizontal image active area 2,176 pixels (max) ＠1ch</li>\n</ul>\n<p><b>External Memory</b></p>\n<ul>\n<li>DDR3-SDRAM 64bit PC1600 (4G/2G/1G x16) x4</li>\n</ul>\n<p><b>External/Internal Sync</b></p>\n<ul>\n<li>Output sync is compatible only with internal signal</li>\n</ul>\n<p>Independent sync mode is available at each input &amp; output port</p>\n<p><b>Input/Output Sync/Asynchronous Behavior</b></p>\n<ul>\n<li>Frame rate conversion</li>\n<li>Tearing protection</li>\n<li>External force synchronization</li>\n<li>Genlock</li>\n</ul>\n<p><b>De-Interlacer</b></p>\n<ul>\n<li>Motion adaptive filter based on Y, U, V, YUV 4:2:2</li>\n<li>All major cadences supported</li>\n<li>Low latency processing (4-port)</li>\n</ul>\n<p><b>Scaler</b></p>\n<ul>\n<li>Zoom/shrink 6-symbol programable FIR filter (10bit/pixel)</li>\n<li>Embedded ROM (64set)</li>\n</ul>\n<p><b>Noise Reduction</b></p>\n<ul>\n<li>3DNR (H,V,Temporal)</li>\n<li>MPEG-NR (Mosquito/Block)</li>\n<li>Chroma error filter</li>\n</ul>\n<p><b>Bit Map OSD</b></p>\n<ul>\n<li>256 colors/High color OSD (64K colors)</li>\n<li>Embedded font engine (65536 words)</li>\n<li>Blinking and semi-transparent (4 colors OSD)</li>\n<li>90-degree rotation, OSD scroll</li>\n<li>Serial flash to bitmap</li>\n</ul>\n<p><b>Image Quality Control</b></p>\n<ul>\n<li>Color management (full color gamma)</li>\n<li>3DLUT (4K60Hz 2-input supported)</li>\n<li>Uniformity correction (by region and per-pixel)</li>\n<li>Bias/Gain/Gamma correction</li>\n<li>H edge enhancement (9symbol), V edge enhancement (5 to 9symbol)</li>\n<li>Dithering for 10 or 8 bit output</li>\n</ul>\n<p><b>Image Manipulation</b></p>\n<ul>\n<li>Mirror/flip/90-degree image</li>\n<li>Vertical keystone</li>\n<li>4-ch overlay, alpha blending, color key blending</li>\n</ul>\n<p><b>CPU Interface</b></p>\n<ul>\n<li>8-bit parallel/4-wire serial</li>\n</ul>\n<p><b>xvYCC/Bt.2020</b></p>\n<ul>\n<li>Fully supported</li>\n</ul>\n<p><b>HDR Standard</b></p>\n<ul>\n<li>SMPTE ST2084 (PQ) and HLG both methods supported (RGB 10-bit each)</li>\n</ul>\n<p><b>Power Supply</b></p>\n<ul>\n<li>3.3V/1.5V/1.1V</li>\n</ul>\n<p><b>Package</b></p>\n<ul>\n<li>684-pin BGA (0.8mm pitch), 27mm x 27mm</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}

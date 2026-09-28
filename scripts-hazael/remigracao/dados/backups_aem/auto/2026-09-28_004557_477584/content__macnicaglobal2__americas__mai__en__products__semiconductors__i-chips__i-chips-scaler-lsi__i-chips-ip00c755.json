@@ -1,0 +1,178 @@
+{
+ "quando": "2026-09-28T00:45:57",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c755",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c755/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "i-Chips IP00C755 | Dual Input De-interlacer/Scaler",
+  "manufacturer": "mai:manufacturers/i-chips",
+  "businessCategories": "mai:business-categories/semiconductors",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "i-Chips IP00C755",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Mon Sep 21 2026 17:27:53 GMT+0000",
+  "cq:lastModified": "Sat Sep 26 2026 01:16:19 GMT+0000",
+  "jcr:description": "Experience superior video quality with i-Chips IP00C755, the Dual Input De-interlacer/Scaler LSI, designed to optimize multimedia applications. Contact us now.",
+  "keywords": "i-Chips, IP00C755, image processing, de-interlacer, scaler, image blending, embedded frame memory, downscaling scaler, image manipulation, video walls, digital signage, monitors",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/i-chips-scaler-lsi/i-chips-ip00c755",
+  "pageTitle": "i-Chips IP00C755",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "i-Chips IP00C755",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "title_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Dual Input De-interlacer/Scaler with Built-in Memory LSI",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ip00c755-0.jpg",
+      "imageRatio": "22",
+      "alt": "Dual Input De-interlacer/Scaler with Built-in Memory LSI",
+      "text": "<p>The IP00C755, developed by i-Chips, is a powerful image processing solution with advanced functionalities such as de-interlacer, scaler, and image blending. With its 2 independent channels of de-interlacer and scaler, the IP00C755 offers PiP output capabilities, allowing for versatile display configurations.</p>\n<p>One notable feature of this device is the embedded frame memory function, which simplifies overall design implementation and reduces space requirements. It also serves as a reliable downscaling scaler, enabling seamless conversion from 4K to 1080P resolution.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ]
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>The IP00C755 supports various image quality control features, including color management, uniformity correction (by region and per-pixel), bias/gain/gamma adjustments, and H/V edge enhancement. Additionally, it offers noise reduction capabilities, such as 3D, mosquito, and block noise reduction, along with chroma error filtering.</p>\n<p>Image manipulation is made easy with the IP00C755, thanks to features like mirror/flip/90-degree image rotation, vertical keystone correction, 2-channel overlay, alpha blending, and color key blending.</p>\n<p>Other notable aspects of the IP00C755 include support for xvYCC/Bt.2020 color spaces, versatile CPU interface options (8-bit parallel/4-wire serial), integrated DDR2-SDRAM frame memory (1Gbit) eliminating the need for external memory, and a bitmap OSD with 256 colors, OSD rotation, and scrolling capabilities.</p>\n<p>Operating at 3.3V/1.8V/1.2V power supply, the IP00C755 is packaged in a compact 496-pin BGA (1.0mm pitch), measuring 27mm x 27mm.</p>\n<p>The IP00C755 is an exceptional solution suitable for a wide range of applications, including video walls, digital signage, converters, and monitors, delivering enhanced image processing and seamless integration into display systems.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "rgb(247,247,247)",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "i-Chips Technical Demo",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "flexcontainer_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+       "cq:styleIds": [
+        "",
+        "1719484596357"
+       ],
+       "flexcontaineritem_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+        "embed_1": {
+         "jcr:primaryType": "nt:unstructured",
+         "layout": "responsive",
+         "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+         "type": "embeddable",
+         "youtubeVideoId": "spnQSsnwyEw",
+         "sling:resourceType": "macnicaglobal2/components/content/embed"
+        }
+       },
+       "flexcontaineritem_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+       }
+      }
+     },
+     "container_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Block Diagram",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "image_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips/images/ip00c755-2.png",
+       "alt": "Block Diagram",
+       "sling:resourceType": "macnicaglobal2/components/content/image",
+       "isDecorative": "false",
+       "altValueFromDAM": "false"
+      }
+     }
+    },
+    "container_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498056876"
+     ],
+     "container_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498055877"
+      ],
+      "title_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Specifications",
+       "type": "h2",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "text_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<p><b>Dual Input (2 out of 4 ports)</b></p>\n<ul>\n<li>30-bit RGB/YUV4:4:4, 20-bit YUV4:2:2, 10-bit YUV4:2:2 (BT656) @166MHz LV-CMOS (2-port) supporting dual (EVEN/ODD) and DDR input @160MHz high speed LVDS (2-port)/83MHz x2 LVDS (1-port)</li>\n</ul>\n<p><b>Single Output (2 ports)</b></p>\n<ul>\n<li>30-bit RGB/YUV4:4:4, 20-bit YUV4:2:2, 10-bit YUV4:2:2 (BT656) @166MHz LV-CMOS (1-port)/166MHz high speed LVDS (2-ports)/83MHz x2 LVDS (1-port)</li>\n</ul>\n<p><b>Scaling</b></p>\n<ul>\n<li>Zoom/Shrink: Polyphase, 10bit/pixel, embedded ROM (64 sets)</li>\n</ul>\n<p><b>De-interlacer</b></p>\n<ul>\n<li>All major cadences supported, motion adaptive filter based on Y, U, V</li>\n</ul>\n<p><b>Image Quality Control</b></p>\n<ul>\n<li>Color management</li>\n<li>Uniformity correction (by region and per-pixel)</li>\n<li>Bias/Gain/Gamma</li>\n<li>H/V edge enhancement (9 symbol)</li>\n<li>Dithering for 10 or 8-bit output</li>\n</ul>\n<p><b>Horizontal Active Pixels</b></p>\n<ul>\n<li>2048 pixels</li>\n</ul>\n<p><b>Noise Reduction</b></p>\n<ul>\n<li>3D (H, V, Temporal)/Mosquito/Block NR, chroma error filter</li>\n</ul>\n<p><b>Image Manipulation</b></p>\n<ul>\n<li>Mirror/flip/90-degree image, vertical keystone, 2-ch overlay, alpha blending, color key blending</li>\n</ul>\n<p><b>xvYCC/Bt.2020</b></p>\n<ul>\n<li>Fully supported</li>\n</ul>\n<p><b>CPU I/F</b></p>\n<ul>\n<li>8-bit parallel/4-wire serial</li>\n</ul>\n<p><b>Frame Memory</b></p>\n<ul>\n<li>DDR2-SDRAM 1Gbit embedded. No external memory</li>\n</ul>\n<p><b>Bitmap OSD</b></p>\n<ul>\n<li>256 colors, OSD 90-degree rotation, OSD scroll</li>\n</ul>\n<p><b>Power Supply</b></p>\n<ul>\n<li>3.3V/1.8V/1.2V</li>\n</ul>\n<p><b>Package</b></p>\n<ul>\n<li>496-pin BGA(1.0mm pitch), 27mm x 27mm</li>\n</ul>",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      },
+      "experiencefragment_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+       "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+      }
+     }
+    }
+   }
+  }
+ }
+}
