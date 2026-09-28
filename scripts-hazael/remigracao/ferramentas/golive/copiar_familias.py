@@ -10,7 +10,7 @@ Tira um retrato de TODAS as páginas de G antes e depois e compara: o que já ex
 nem ter sido modificado por nós. Retratos e diferença em dados/golive/.
 """
 import json, sys
-from _comum import DADOS, G, NOSSO_USUARIO, STG, copiar, familias, ler, retrato_global2
+from _comum import DADOS, G, NOSSAS, STG, copiar, eh_nossa, familias, ler, retrato_global2
 from staging import paginas
 
 
@@ -34,8 +34,8 @@ def main():
     print(f"\n  global2 depois: {len(depois)} páginas; novas {len(novas)} (esperado {len(paginas(STG))}); novas FORA das nossas famílias: {fora}")
     print(f"  páginas que já existiam e SUMIRAM: {sumiram}")
     for p, a, d in mudaram:
-        print(f"  mudou durante a janela: {p[len(G):]}  por {d[2]}" + ("   <-- FOMOS NÓS?!" if d[2] == NOSSO_USUARIO else "  (edição de outra pessoa, em paralelo)"))
-    ruim = bool(sumiram or fora or [m for m in mudaram if m[2][2] == NOSSO_USUARIO] or len(novas) != len(paginas(STG)))
+        print(f"  mudou durante a janela: {p[len(G):]}  por {d[2]}" + ("   <-- FOMOS NÓS?!" if eh_nossa(d[2], NOSSAS) else "  (edição de outra pessoa, em paralelo)"))
+    ruim = bool(sumiram or fora or [m for m in mudaram if eh_nossa(m[2][2], NOSSAS)] or len(novas) != len(paginas(STG)))
     print("  RESULTADO:", "CONFERIR" if ruim else "só acréscimos, dentro das nossas famílias")
     sys.exit(1 if ruim else 0)
 

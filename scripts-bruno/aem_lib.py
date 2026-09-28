@@ -26,6 +26,7 @@ backup automático do jcr:content de cada página antes da 1ª escrita nela
 """
 
 import csv
+import datetime
 import getpass
 import html
 import json
@@ -235,10 +236,12 @@ def parse_cookie_string(raw):
     return cookies
 
 
-def build_session(prompt_if_missing=True, verbose=True):
+def build_session(prompt_if_missing=True, verbose=True, bloquear_editadas_min=None):
     """Monta a Session autenticada e o auth_tracker.
 
     Usa AEM_COOKIES do .env/ambiente; se estiver vazia, cai no getpass.
+    `bloquear_editadas_min`: recusa gravar em página editada nos últimos N minutos (ver travar_session);
+    None = AEM_BLOQUEAR_EDITADAS_MIN do ambiente (0/ausente = desligado).
     Retorna (session, auth_tracker).
     """
     raw = os.environ.get("AEM_COOKIES", "").strip()
@@ -271,7 +274,7 @@ def build_session(prompt_if_missing=True, verbose=True):
     for key, value in cookies.items():
         session.cookies.set(key, value)
     session.headers.update({"Accept": "application/json"})
-    travar_session(session)
+    travar_session(session, bloquear_editadas_min=bloquear_editadas_min)
 
     # REGRA 3 do Hazael (25/09/2026): GET fresco da blacklist ANTES de começar a rodada.
     bl = session.blacklist.atual()
@@ -282,6 +285,9 @@ def build_session(prompt_if_missing=True, verbose=True):
         else:
             print(f"blacklist do tracker: {len(bl)} páginas protegidas "
                   f"(GET às {time.strftime('%H:%M:%S')}; + paginas_protegidas.txt)\n")
+        if session.bloquear_editadas_min:
+            print(f"trava de edição recente: não grava em página editada nos últimos "
+                  f"{session.bloquear_editadas_min:g} min\n")
 
     return session, {"fails": 0, "threshold": CONFIG["auth_fail_threshold"]}
 
@@ -485,6 +491,111 @@ def motivo_bloqueio(metodo, url, data=None, protegidas=None, autorizados=()):
 BACKUP_AUTO = Path(__file__).resolve().parent.parent / "scripts-hazael" / "remigracao" / "dados" / "backups_aem" / "auto"
 
 
+# ------------------------------------------------------------
+# Contas do AEM que são "nossas"
+# ------------------------------------------------------------
+# Só estas duas contas têm acesso ao AEM para este trabalho. Scripts rodam com cookie/token de qualquer uma e pessoas
+# editam à mão com elas; qualquer outra conta (Anion etc.) NÃO é nossa. Quem chama escolhe uma, a outra ou as duas:
+# contas_nossas("valter"), contas_nossas("bruno"), contas_nossas() (padrão: as duas) — ou, na linha de comando,
+# AEM_CONTAS_NOSSAS=valter|bruno|ambas (ou e-mails completos separados por vírgula).
+CONTAS_NOSSAS = {"valter": "valter.toffolo@macnicadhw.com.br", "bruno": "bruno.jaques@macnicadhw.com.br"}
+_TODAS = {"ambas", "both", "todas", "all", "*"}
+
+
+def contas_nossas(quais=None):
+    """frozenset dos e-mails escolhidos. `quais`: None (-> AEM_CONTAS_NOSSAS; ausente = as duas), 'valter', 'bruno',
+    'ambas', 'valter,bruno', lista/tupla, ou e-mails completos. Nome desconhecido = erro (não vira 'nenhuma')."""
+    if quais is None:
+        quais = _env("AEM_CONTAS_NOSSAS", "").strip() or "ambas"
+    itens = [quais] if isinstance(quais, str) else list(quais)
+    itens = [x.strip().lower() for i in itens for x in str(i).split(",") if x.strip()]
+    out = set()
+    for x in itens:
+        if x in _TODAS:
+            out |= set(CONTAS_NOSSAS.values())
+        elif x in CONTAS_NOSSAS:
+            out.add(CONTAS_NOSSAS[x])
+        elif "@" in x or "." in x:
+            e = next((v for v in CONTAS_NOSSAS.values() if v == x or v.split("@")[0] == x), None)
+            if e is None:
+                raise ValueError(f"conta {x!r} não é nossa (nossas: {', '.join(CONTAS_NOSSAS.values())})")
+            out.add(e)
+        else:
+            raise ValueError(f"conta desconhecida {x!r}: use {', '.join(CONTAS_NOSSAS)}, 'ambas' ou o e-mail")
+    if not out:
+        raise ValueError("nenhuma conta escolhida")
+    return frozenset(out)
+
+
+def eh_nossa(conta, quais=None):
+    """True se `conta` (e-mail, ou só o usuário antes do @) está entre as contas escolhidas (padrão: as duas)."""
+    c = str(conta or "").strip().lower()
+    return bool(c) and any(c == e or c == e.split("@")[0] for e in contas_nossas(quais))
+
+
+# ------------------------------------------------------------
+# Trava opcional: página editada nos últimos N minutos
+# ------------------------------------------------------------
+# Pessoas editam à mão (com as mesmas contas dos scripts) enquanto as sessões rodam. Com a trava ligada, a 1ª escrita
+# da Session numa página relê o jcr:content inteiro (o mesmo GET do backup) e recusa se QUALQUER nó tiver
+# cq:lastModified / jcr:lastModified / jcr:created mais novo que N minutos — seja de quem for. As escritas da própria
+# Session não contam (só a 1ª escrita em cada página confere). Desligada por padrão; quem chama liga com
+# build_session(bloquear_editadas_min=N), session.bloquear_editadas_min = N ou AEM_BLOQUEAR_EDITADAS_MIN=N.
+_CARIMBOS = (("cq:lastModified", "cq:lastModifiedBy"), ("jcr:lastModified", "jcr:lastModifiedBy"),
+             ("jcr:created", "jcr:createdBy"))
+
+
+def quando_jcr(valor):
+    """datetime com fuso de um carimbo do JCR ('Mon Sep 21 2026 16:41:01 GMT+0000' ou ISO 8601); None se não der."""
+    s = str(valor or "").strip()
+    m = re.match(r"^[A-Z][a-z]{2} [A-Z][a-z]{2} \d{1,2} \d{4} \d{2}:\d{2}:\d{2} GMT[+-]\d{4}", s)
+    try:
+        if m:
+            return datetime.datetime.strptime(m.group(0), "%a %b %d %Y %H:%M:%S GMT%z")
+        d = datetime.datetime.fromisoformat(s.replace("Z", "+00:00"))
+        return d if d.tzinfo else None
+    except ValueError:
+        return None
+
+
+def ultima_edicao(arvore, caminho=""):
+    """(quando, quem, onde) do carimbo mais novo em qualquer nó de `arvore` (JSON do .infinity.json); None se não houver."""
+    melhor = None
+    pilha = [(caminho, arvore)]
+    while pilha:
+        onde, no = pilha.pop()
+        if not isinstance(no, dict):
+            continue
+        for chave, chave_por in _CARIMBOS:
+            q = quando_jcr(no.get(chave))
+            if q and (melhor is None or q > melhor[0]):
+                melhor = (q, no.get(chave_por) or "?", f"{onde or '.'} ({chave})")
+        pilha.extend((f"{onde}/{k}", v) for k, v in no.items() if isinstance(v, dict))
+    return melhor
+
+
+def _minutos(valor):
+    if valor is None:
+        valor = _env_float("AEM_BLOQUEAR_EDITADAS_MIN", 0)
+    return max(0.0, float(valor or 0))
+
+
+def _conferir_edicao_recente(session, pagina, conteudo):
+    n = getattr(session, "bloquear_editadas_min", 0) or 0
+    if not n or not isinstance(conteudo, dict) or conteudo.get("inexistente"):
+        return
+    u = ultima_edicao(conteudo)
+    if not u:
+        return
+    quando, quem, onde = u
+    idade = (datetime.datetime.now(datetime.timezone.utc) - quando).total_seconds() / 60
+    if idade < n:
+        raise EscritaProibida(
+            f"{pagina} foi editada há {max(idade, 0):.0f} min ({quando.astimezone():%d/%m %H:%M} por {quem}, em {onde}) "
+            f"— alguém pode estar trabalhando nela. Com a trava de {n:g} min a escrita não sai: conferir com a "
+            f"equipe, esperar, ou rodar de novo com um limite menor se a edição foi desta mesma rodada.")
+
+
 def _pagina_de(caminho):
     c = re.sub(r"(/[^/.]+)\.[A-Za-z0-9.]+$", r"\1", caminho.rstrip("/"))
     return c.split("/jcr:content", 1)[0]
@@ -518,6 +629,7 @@ def _fazer_backup(session, get, url, pagina, subarvore):
     else:
         raise EscritaProibida(f"backup de {pagina} impossível (HTTP {r.status_code} em {alvo}): sem backup, "
                               f"não grava (REGRA 6 do Hazael)")
+    _conferir_edicao_recente(session, pagina, conteudo)      # antes de salvar: página barrada não vira backup
     if session.backup_dir is None:
         session.backup_dir = BACKUP_AUTO / f"{time.strftime('%Y-%m-%d_%H%M%S')}_{os.getpid()}"
     session.backup_dir.mkdir(parents=True, exist_ok=True)
@@ -528,11 +640,14 @@ def _fazer_backup(session, get, url, pagina, subarvore):
     return arq
 
 
-def travar_session(session, blacklist=None):
-    """Põe a trava em `session.request` (post/put/delete/patch passam por ele)."""
+def travar_session(session, blacklist=None, bloquear_editadas_min=None):
+    """Põe a trava em `session.request` (post/put/delete/patch passam por ele).
+    `bloquear_editadas_min`: N > 0 recusa a 1ª escrita numa página editada nos últimos N minutos; None = ambiente
+    (AEM_BLOQUEAR_EDITADAS_MIN); 0 = desligado. Dá para mudar depois: session.bloquear_editadas_min = N."""
     original = session.request
     session.blacklist = blacklist or Blacklist()
     session.backups, session.backup_dir = {}, None
+    session.bloquear_editadas_min = _minutos(bloquear_editadas_min)
 
     def request(method, url, *args, **kwargs):
         motivo = None

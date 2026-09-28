@@ -22,7 +22,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _comum import DADOS, NOSSO_USUARIO, XF_G2, alterar, ler, sessao, url
+from _comum import DADOS, NOSSAS, XF_G2, alterar, eh_nossa, ler, sessao, url
 
 XF = f"{XF_G2}/products-contact-block/master"
 S_FIXEDMIN, S_CENTER, S_RIGHT = "1722936853890", "1717669229626", "1717669230937"
@@ -40,8 +40,8 @@ def main():
     if st != 200 or not isinstance(jc, dict) or "root" not in jc:
         sys.exit(f"[erro] HTTP {st} lendo {XF}/jcr:content — nada feito")
     print(f"  criado por {jc.get('jcr:createdBy')}; último editor {jc.get('cq:lastModifiedBy')} em {jc.get('cq:lastModified')}")
-    if jc.get("cq:lastModifiedBy") != NOSSO_USUARIO:
-        print("  [ATENÇÃO] o último editor não é o nosso usuário — conferir com o Hazael antes de gravar")
+    if not eh_nossa(jc.get("cq:lastModifiedBy"), NOSSAS):
+        print(f"  [ATENÇÃO] o último editor não é uma das nossas contas ({', '.join(sorted(NOSSAS))}) — conferir antes de gravar")
         if executar:
             sys.exit(1)
     flex = jc["root"].get("containerpy", {}).get("flexcontainer")

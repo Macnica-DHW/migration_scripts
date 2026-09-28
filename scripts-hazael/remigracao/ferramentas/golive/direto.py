@@ -28,7 +28,7 @@ from urllib.parse import quote, unquote
 _RAIZ = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(_RAIZ / "scripts-hazael"))
 sys.path.insert(0, str(_RAIZ / "scripts-bruno"))
-from aem_lib import CONFIG, normalize_name  # noqa: E402
+from aem_lib import CONFIG, contas_nossas, normalize_name  # noqa: E402
 
 DADOS = Path(__file__).resolve().parents[2] / "dados" / "golive"
 MANIFESTO = DADOS / "manifesto_direto.jsonl"
@@ -40,7 +40,9 @@ DAM_GWI = "/content/dam/macnicagwi"
 DAM_MAI = "/content/dam/macnicaglobal2/americas/mai/en"
 XF_GWI = "/content/experience-fragments/macnicagwi/americas/mai/en/site"
 XF_G2 = "/content/experience-fragments/macnicaglobal2/americas/mai/en/site"
-NOSSO_USUARIO = "valter.toffolo@macnicadhw.com.br"
+# Contas "nossas" (aem_lib.CONTAS_NOSSAS: valter.toffolo e bruno.jaques). Padrão: as duas; quem roda escolhe na
+# linha de comando com AEM_CONTAS_NOSSAS=valter|bruno|ambas.
+NOSSAS = contas_nossas()
 # o que trocar o prefixo não resolve (o global2 tem outra árvore) — mesma tabela do go-live
 FIXOS = [(f"{MAI}/contact/form", f"{MAI}/contact-us"),
          ("/content/macnicaglobal2/europe/atd-europe", "/content/macnicaglobal2/eu/atd-europe"),

@@ -48,7 +48,7 @@ from urllib.parse import quote, unquote
 _RAIZ = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(_RAIZ / "scripts-hazael"))
 sys.path.insert(0, str(_RAIZ / "scripts-bruno"))
-from aem_lib import CONFIG, build_session  # noqa: E402
+from aem_lib import CONFIG, build_session, contas_nossas, eh_nossa  # noqa: E402
 
 DADOS = Path(__file__).resolve().parents[2] / "dados" / "golive"
 NOME_PADRAO = "global2_link_map"
@@ -62,7 +62,9 @@ SOLTAS = ("products",)                                            # landings avu
 ANTIGO = {"solutions": "technology"}                              # nome da seção no GWI e nos manifestos
 MANIFESTOS = (DADOS / "manifesto.jsonl", DADOS / "manifesto_direto.jsonl")
 OPS_PAGINA = {"pagina-nova", "pagina-preenchida", "copy", "create"}   # o que nos manifestos é página nossa
-NOSSOS = ("valter.toffolo@", "bruno.jaques@")
+# Contas "nossas" (aem_lib.CONTAS_NOSSAS: valter.toffolo e bruno.jaques). Padrão: as duas; quem roda escolhe na
+# linha de comando com AEM_CONTAS_NOSSAS=valter|bruno|ambas.
+NOSSAS = contas_nossas()
 PROPS = ("jcr:path jcr:createdBy jcr:content/jcr:title jcr:content/cq:lastModifiedBy "
          "jcr:content/cq:lastModified jcr:content/deleted")
 
@@ -99,7 +101,7 @@ def norm(rel):
 
 
 def _nosso(usuario):
-    return bool(usuario) and usuario.startswith(NOSSOS)
+    return eh_nossa(usuario, NOSSAS)
 
 
 def _titulo(h):

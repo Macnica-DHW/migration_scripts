@@ -13,6 +13,9 @@ ficam fora; só entram as famílias que não existem no global2. Por isso toda e
   4. nunca manda `:replace` — o próprio Sling recusa (412) sobrescrever.
 
 Tudo que é criado vai para dados/golive/manifesto.jsonl: é a lista do que desfazer.
+
+A Session é a travada do aem_lib: AEM_BLOQUEAR_EDITADAS_MIN=N na linha de comando recusa gravar em página
+editada nos últimos N minutos (alguém trabalhando nela).
 """
 import datetime
 import json
@@ -24,7 +27,7 @@ from urllib.parse import quote, unquote
 _RAIZ = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(_RAIZ / "scripts-hazael"))
 sys.path.insert(0, str(_RAIZ / "scripts-bruno"))
-from aem_lib import CONFIG, build_session  # noqa: E402
+from aem_lib import CONFIG, build_session, contas_nossas, eh_nossa  # noqa: E402,F401
 
 DADOS = Path(__file__).resolve().parents[2] / "dados" / "golive"
 MANIFESTO = DADOS / "manifesto.jsonl"
@@ -37,7 +40,9 @@ DAM_G2 = "/content/dam/macnicaglobal2/americas/mai/en/products/semiconductors"
 XF_T = "/content/experience-fragments/copia-teste/americas/mai/en/site"
 XF_G2 = "/content/experience-fragments/macnicaglobal2/americas/mai/en/site"
 
-NOSSO_USUARIO = "valter.toffolo@macnicadhw.com.br"
+# Contas "nossas" (aem_lib.CONTAS_NOSSAS: valter.toffolo e bruno.jaques). Padrão: as duas; quem roda escolhe na
+# linha de comando com AEM_CONTAS_NOSSAS=valter|bruno|ambas, e quem importa pode chamar contas_nossas(...).
+NOSSAS = contas_nossas()
 SEGURAR = {"canon", "design-gateway"}                 # da Anion — não entram
 TESTE = {"/ambarella/test-277-gwi-base-page", "/ambarella/test-277-product-detail-page",
          "/ambarella/test-autogenerate-list-ambarella-n1-soc-html", "/ambarella/test-fixed-list-ambarella-n1-soc"}

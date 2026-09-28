@@ -33,12 +33,14 @@ from urllib.parse import quote
 _RAIZ = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(_RAIZ / "scripts-hazael"))
 sys.path.insert(0, str(_RAIZ / "scripts-bruno"))
-from aem_lib import CONFIG, build_session, post_node  # noqa: E402
+from aem_lib import CONFIG, build_session, contas_nossas, post_node  # noqa: E402
 
 DADOS = Path(__file__).resolve().parents[2] / "dados" / "golive"
 BACKUPS = DADOS / "backup_canonical"
 MAI = "/content/macnicaglobal2/americas/mai/en"
-NOS = {"valter.toffolo@macnicadhw.com.br", "bruno.jaques@macnicadhw.com.br"}
+# Contas "nossas" (aem_lib.CONTAS_NOSSAS: valter.toffolo e bruno.jaques). Padrão: as duas; quem roda escolhe na
+# linha de comando com AEM_CONTAS_NOSSAS=valter|bruno|ambas.
+NOS = contas_nossas()
 # páginas cujo último editor virou `reference-adjustment-service` no move /technology -> /solutions (21/09/2026);
 # antes do move o editor era o Valter (dados desta sessão: technology_paginas.json + árvore impressa)
 EXCECOES = {f"{MAI}/solutions": "casca do ohashi preenchida pelo Valter (direto.py); editor virou reference-adjustment-service no move",

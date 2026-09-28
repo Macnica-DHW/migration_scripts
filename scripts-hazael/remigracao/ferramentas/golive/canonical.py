@@ -21,7 +21,7 @@ import csv
 import re
 from concurrent.futures import ThreadPoolExecutor
 
-from _comum import BASE, DADOS, G, NOSSO_USUARIO, alterar, ler, manifesto, retrato_global2, sessao, url
+from _comum import BASE, DADOS, G, NOSSAS, alterar, eh_nossa, ler, manifesto, retrato_global2, sessao, url
 
 PROPS = ("jcr:path jcr:createdBy jcr:content/cq:canonicalUrl jcr:content/cq:lastModified "
          "jcr:content/cq:lastModifiedBy jcr:content/cq:lastReplicationAction")
@@ -85,7 +85,7 @@ def main():
     for l in gravar:
         p = l["pagina"]
         st, jc = ler(p + "/jcr:content")                                   # relido AO VIVO antes de gravar
-        if st != 200 or (jc or {}).get("jcr:createdBy") != NOSSO_USUARIO:
+        if st != 200 or not eh_nossa((jc or {}).get("jcr:createdBy"), NOSSAS):
             l["acao"] = f"PULADA (HTTP {st}, criada por {(jc or {}).get('jcr:createdBy')})"
             print("  ", l["acao"], p)
             continue
