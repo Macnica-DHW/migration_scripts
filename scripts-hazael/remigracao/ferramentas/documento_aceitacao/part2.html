@@ -1,0 +1,301 @@
+<h2 id="s4" class="pb">4. Page acceptance guidelines</h2>
+<p>Each guideline gives the criterion a page must meet (<b>Pass when</b>), how a reviewer checks it, the global2 setting that produces it, and where it comes from. Pictures show accepted and not accepted results wherever words alone could be read in more than one way. All measurements follow R7 (view mode, 1,400px page area).</p>
+<p><span class="status st-conf">Migration principle</span> marks a guideline that follows from Section 2. <span class="status st-conf">From review</span> marks a guideline that restates what Anion's review comments ask for. <span class="status st-prop">Proposed</span> marks a measurement or a choice that we propose and ask you to confirm (Section 6).</p>
+
+<h3 id="s4a">A. Content</h3>
+
+<section class="g" id="g1">
+  <h4><span class="gid">G1</span> Content matches the original GWI page <span class="status st-conf">Migration principle · question M1</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>Every text block, image, link, table, video and download shown on the GWI page is on the global2 page, with the same words, and the blocks are in the same order.</li>
+    <li>Nothing that GWI does not show is added, except the differences listed below.</li>
+    <li>The page title and page description in the page properties are those of the GWI page.</li>
+    <li>On a page with tabs, each tab holds what the matching GWI tab holds.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">Allowed differences</div><div class="v"><ul>
+    <li>Changes that another guideline requires, with the words, images and links of each block unchanged: an image placed on the left of its text (G10) or beside it (G11), a video paired with its text (G12), heading levels (G5), end-of-page contact buttons shown through the Experience Fragment with the same labels and links (G14).</li>
+    <li>Empty lines that GWI uses only as spacing are removed. A GWI download box becomes a download button with GWI's label (G4). An in-page menu that only links to an event's website becomes a button with GWI's text and address.</li>
+    <li>Links decided in question M4.</li>
+    <li>Image and Title links open in the same tab: the author dialog of these components offers no <q>open in a new tab</q> option.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">Open both pages (R1, R3) and read them block by block; open every tab on both (R4).</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">The migration principle (Section 2, P1). Anion's comments about content are listed in question A10, with the other comments that need a block named, so that each block can be compared with its GWI page.</div></div>
+</section>
+
+<section class="g" id="g2">
+  <h4><span class="gid">G2</span> Links <span class="status st-conf">Migration principle</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>Every link has the same destination as on GWI, except the links decided in question M4. Links to other Macnica Americas pages open the global2 page.</li>
+    <li>Every link opens without an error when clicked in view mode.</li>
+    <li>A link in a Text, Button or Text with Image opens in a new tab only where GWI opens it in a new tab.</li>
+    <li>No link is written with a full author address (<code>https://author-…adobeaemcloud.com/…</code>) or with <code>editor.html</code>, and none points to a GWI page (<code>/content/macnicagwi</code>) or to a file stored on GWI. While pages are reviewed on the author, internal links open on the author: that is expected.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">Not counted</div><div class="v">A link to a Macnica page that is outside this migration and not yet on global2: it is kept as on GWI.</div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">Click each link in view mode and compare its destination with the same link on GWI.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">The link field of Text, Title, Button, Image and Text with Image. Text, Button and Text with Image links have an <q>open in a new tab</q> option.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">The migration principle (Section 2, P1): every link as on GWI, pointing to the global2 page.</div></div>
+</section>
+
+<section class="g" id="g3">
+  <h4><span class="gid">G3</span> Images <span class="status st-conf">From review · limits proposed</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>Every image loads, shows the whole picture (nothing cut off) and is stored in the global2 asset library (DAM), not on GWI.</li>
+    <li>An image is never shown wider than its file, except an image that fills the content width under G11 or an image in a row or grid under the next point, each enlarged at most 1.5 times its file width.</li>
+    <li>Images side by side in one row or grid have the same displayed width: each uses <q>Size: Expand to Fit Width</q> in equal Flex Container items. Where a file would have to be enlarged more than 1.5 times, the images are shown at their file widths, centred in equal columns. Heights match only when the files have the same proportions.</li>
+    <li>The alternative text is the GWI image's alternative text. Where GWI has none: as decided in question M3.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">Not counted</div><div class="v">Card List images, which the Card List always crops to a 2:1 frame (G16).</div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode. Right-click the image, <q>Inspect</q>: the browser shows its displayed size and the file's own size. In the author, the image's <q>Alternative Text</q> field, with <q>Get alternative text from DAM</q> unchecked so that the page's own text is used.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Image and Text with Image components. Images in a row: equal Flex Container items with the same Image settings. The Image style <q>Size: Expand to Fit Width</q> only where G11 applies.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 23 Sep: <q>Images are bigger in size, no alignment</q> (IBASE IB836, EC-7100; IEI AFL3-W19C-ULT5, FLEX AIoT Developer Kit Gen II, KINO-DH420).</div></div>
+  {{fig:fig-image-row}}
+</section>
+
+<section class="g" id="g4">
+  <h4><span class="gid">G4</span> Downloads <span class="status st-conf">From review</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>Each downloadable document shows its title: either the button or link text names the document, or the document's title is the line directly above the button (G14).</li>
+    <li>A single-file download is a download button placed as described in G14.</li>
+    <li>Files are stored in the global2 asset library (DAM).</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode: read the label of each download, or the line directly above it.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">A Button linked to a file takes the download style by itself. A table of document names and links. The Download List component for a folder of documents, only where the files' titles in the DAM match GWI's labels.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 23 Sep: <q>PDF titles missing</q>; 28 Sep: <q>Missing titles for pdfs</q> (NVIDIA Jetson AGX Xavier). Download buttons: see G14.</div></div>
+</section>
+
+<h3 id="s4b">B. Page structure</h3>
+
+<section class="g" id="g5">
+  <h4><span class="gid">G5</span> Headings <span class="status st-conf">From review · levels in question A2</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>The page has exactly one H1: the page title, at the top of the content.</li>
+    <li>A title that sits directly in a top-level section is an H2. A title inside a card, a Flex Container item or a tab panel under an H2, or a title that follows an H2 in the same section and introduces part of its content, is an H3; below that, H4. A tab-panel title is one level below the nearest heading above the tab bar. A section title stays an H2 when it sits in a Flex Container item beside a video (G12) or opens a Text with Image (question A3).</li>
+    <li>No level is skipped going down: H1 directly followed by H3 fails.</li>
+    <li>A section title is always a heading. A paragraph whose whole text is bold, stands on its own line and introduces the text below it is a title, and it is formatted as a heading.</li>
+    <li>No empty headings.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">Not counted</div><div class="v">Headings in the site header and footer (R5).</div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">In the author: the heading level set on each Title component (a Title whose level was never set is an H1), and the paragraph format (Heading 2, Heading 3…) of headings typed inside Text or Text with Image. In view mode, right-click a title, <q>Inspect</q>: the tag shows its level (h1, h2…).</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Title component (heading level H1 to H6); paragraph formats Heading 1 to Heading 6 in Text and Text with Image. Our reading of the review comment and the size of headings: question A2. A title placed beside an image: question A3.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 27 Sep: <q>Subtitles should not be H1. Only main title should be H1.</q> (MB991). Anion, 28 Sep: <q>only main title should be h1/h2, remaining titles should not be h1</q> (Hitek pages, news items, IEI Embedded Systems, IBASE MB995, SiTime Clock Buffers, Japan Innovation Showcase, Contact download page, error page); <q>Titles are kept as para</q> (IBASE IB836); <q>Title issue</q> (EC-7100, AFL3-W19C-ULT5).</div></div>
+  {{fig:fig-headings}}
+</section>
+
+<section class="g" id="g6">
+  <h4><span class="gid">G6</span> Text formatting <span class="status st-conf">From review</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>Body text uses the default paragraph format. No body text is enlarged or reduced with the Text <q>Font Size</q> styles (the size of titles: question A2).</li>
+    <li>Bold, italic and lists are as on GWI.</li>
+    <li>Lines that GWI shows with no blank space between them (an address, a phone and e-mail block) are one paragraph with line breaks. Lines that GWI separates with a blank space are separate paragraphs.</li>
+    <li>No empty paragraph between a title and its text, or between two paragraphs.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode, side by side with GWI. In the author's text editor, Shift+Enter makes a line break (lines 30px apart); Enter starts a new paragraph (a paragraph gap is added).</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Text and Text with Image editors: paragraph format <q>Paragraph</q>; Shift+Enter for a line break.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 27 Sep: <q>there’s gap between title and description. Press Shift+Enter after Title to avoid space.</q> (MB991); <q>Fonts are not consistent</q> (Terms &amp; Conditions); <q>Spaces</q> (Tariff Pass-Through Policy Notification). Anion, 28 Sep: <q>Spaces at content in paragraphs</q> (FLEX AIoT Developer Kit Gen II).</div></div>
+  {{fig:fig-text-lines}}
+</section>
+
+<section class="g" id="g7">
+  <h4><span class="gid">G7</span> Page width and side padding <span class="status st-prop">Proposed · question A1</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>Content uses the full window width; no section uses the fixed 1,000px column.</li>
+    <li>Every top-level section has the left and right padding decided in question A1. <b>Recommended:</b> 50px each side (<q>Padding - Left/Right: Large</q>), which leaves the content 1,300px wide in a 1,400px page area.</li>
+    <li>No text, image or table touches the window edge.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">Not counted</div><div class="v">Content inside the end-of-page contact Experience Fragment, which brings its own padding and starts 25px further in.</div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode: the text, images and tables of every section start and end at the chosen distance from the window edges (measure the content, not the grey band).</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Container style <q>Padding - Left/Right</q> on each top-level section: Large 50px, Medium (the default) 25px, Small 15px, No Padding 0. Tab panels and containers nested inside a section use <q>No Padding</q>, so the section's padding applies once. The <q>1000px</q> width style is not used.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 27 Sep: <q>Need to give Padding Left/Right for all Altera, Anlog, microchip, on-semiconductor, sitime pages</q>. Anion, 28 Sep: <q>L/R Padding - should be large</q> (Smart City &amp; Mobility, Terasic Apollo S10 SOM, Transcend).</div></div>
+  {{fig:fig-side-padding}}
+</section>
+
+<section class="g" id="g8">
+  <h4><span class="gid">G8</span> Vertical spacing <span class="status st-prop">Proposed · numbers to confirm</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>Title to the first line of its text, with no empty line between them: <b>45px or less</b> when a Title component is followed by a Text; <b>70px or less</b> when the text is in a Text with Image, either typed as its first line or placed below a Title component (the Text with Image adds 30px above itself, and the editor adds a paragraph gap after a heading).</li>
+    <li>Paragraph to paragraph: the standard paragraph gap only (30px between line boxes). No empty paragraphs used as spacers.</li>
+    <li>Block to next block, inside a section or between sections: <b>125px or less</b>.</li>
+    <li>Above the end-of-page contact buttons: <b>150px or less</b>, because about 90px of that space is part of the Experience Fragment itself.</li>
+    <li>Blocks never touch: <b>at least 20px</b> between an image, table or button and the next block.</li>
+    <li>Bottom of the tab labels to the first line of the tab's content: <b>60px or less</b> (G15).</li>
+  </ul></div></div>
+  <div class="row"><div class="k">Not counted</div><div class="v">The space below a form, which the form component sets.</div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">R7, on the whole page in view mode. As a quick reference, lines of body text are 30px apart.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Vertical space comes from Container padding (<q>Padding - Top/Bottom</q>: Large 70px, Medium (the default) 50px, Small 30px, No Padding 0) plus the fixed spacing of each component (Title: H1 and H2 about 12px above and below, H3 20px below only; Table 20px; Text with Image 30px; Button 40px above it; List 55px; video 24px above it). There is no setting for the space between two components. Two default sections in a row leave 100px between their contents (50px + 50px); where a gap passes 125px, one of the two sections uses Small. An Image and a Button have no space below them: when another block follows, it starts in a new Container with Small.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 21 Sep: <q>white space</q>. Anion, 23 Sep: <q>Spacing issues</q> (IBASE MB995). Anion, 27 Sep: <q>Spacing b/w section to section</q>, <q>Spacing issue</q>. Anion, 28 Sep: <q>Spacing in the content</q> (Design Services, Broadcast &amp; ProAV), <q>Lots of spaces in page for images and content.</q> (Luminous Comet A65), <q>Padding issue for Features section</q> (TQMLS1028A).</div></div>
+  {{fig:fig-spacing}}
+</section>
+
+<section class="g" id="g9">
+  <h4><span class="gid">G9</span> Background bands <span class="status st-prop">Proposed · question A6</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>The page title and the introduction (everything between the H1 and the first H2) are on white.</li>
+    <li>A grey band starts at an H2 and ends before the next white section or before the end-of-page buttons. It holds at least two blocks and is at least 200px tall, from its top grey edge to its bottom grey edge. Which H2 sections are grey is chosen per page.</li>
+    <li>Text and images inside a band never touch its edge: 30px to 60px of grey above the first block and below the last.</li>
+    <li>Only one grey is used: <code>rgb(247, 247, 247)</code>.</li>
+    <li>Contact buttons at the end of the page are always on white.</li>
+    <li>Pages with no image, video or table (legal notices, policies, glossary) have no grey band, and neither do news, press and event items.</li>
+    <li>A page is not rejected for having, or not having, a band when it meets these points.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode, full page; R7 for the 30px to 60px and the 200px.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Container background colour on a top-level section, so that it spans the full window width. The grey is typed as <code>rgb(247,247,247)</code> (it is not one of the colour picker's swatches). A band section uses <q>Padding - Top/Bottom: Small</q> (30px); a list at the end of a band goes in its own grey section with <q>No Padding</q>, because the list adds 55px of its own.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 27 Sep: <q>No need of BG color</q> (Tariff Pass-Through Policy Notification, Glossary); <q>Adjust BG color</q> (eight news items).</div></div>
+  {{fig:fig-bands}}
+</section>
+
+<h3 id="s4c">C. Components</h3>
+
+<section class="g" id="g10">
+  <h4><span class="gid">G10</span> Image beside its text (Text with Image) <span class="status st-conf">From review · numbers proposed</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>An image placed beside its text (G11 decides which images) is in one Text with Image, image on the left.</li>
+    <li>The empty space between the image and the text is <b>60px or less</b>: the component's fixed 40px plus half of any unused part of the image column (the image is centred in its column).</li>
+    <li>The image is at most <b>60px or a quarter of the text's height</b> taller than the text, whichever is larger. Text height runs from the top of the first line's letters (a heading typed in the text included) to the bottom of the last line's letters.</li>
+    <li>Wrap is set when the text would otherwise be taller than the image by more than <b>120px or half the image's height</b>, whichever is larger. With Wrap, the two points above do not apply.</li>
+    <li>Text with Image blocks that follow each other with only a title between them, or that sit in tabs of the same tab bar, use the same <q>Image Width (%)</q>.</li>
+    <li>The image is never shown wider than its file (G3).</li>
+    <li>When these points conflict, they apply in this order: never wider than the file; the 60px space; the same width in a series; the heights. If the text needs Wrap but the file is wider than the width wanted for the image, Wrap is not used and the heights point is not counted.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode, R7. In the author: <q>Image Width (%)</q> in the Text with Image dialog, and the styles <q>Image Position: Left</q> and <q>Text Wrapping: Wrap</q>.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Text with Image, the component the review comments call <q>image with text</q>. <q>Image Width (%)</q> sets the width of the image column; <q>Left</q> places the image on the left; <q>Wrap</q> lets the text continue under the image, and the image then keeps its own file width, up to 48% of the block, so Wrap is used only when the file is no wider than the width wanted for the image. The component never enlarges an image: a small file in a wide column leaves empty space, so the width is chosen to fit the file.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 22 Sep (Slack): <q>Yeah we have to use text wrap if you see lot of white space</q>. Anion, 23 Sep: <q>Lot of white space around the image – convert them into image with text</q>; <q>We see images were very big and used flex containers instead of flex conteianer use image with text component.</q> (AIoT, Design Services); <q>Use image with text component for</q> (three Hitek pages; Anion confirmed on 28 Sep: <q>mentioned fixes are done</q>).</div></div>
+  {{fig:fig-twi}}
+</section>
+
+<section class="g" id="g11">
+  <h4><span class="gid">G11</span> Where each image goes <span class="status st-prop">Proposed · question A5</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><p style="margin-bottom:4pt">Images in a row or grid follow G3: equal Flex Container items, each image centred in its item. Every other image is placed by the first rule that applies:</p><ol>
+    <li>A diagram, chart or screenshot is shown as large as the page allows: at its file width, aligned left with the text of its section, or at the content width if its file is wider. It is not placed in a Text with Image.</li>
+    <li>An image whose file is <b>at least 900px wide</b> fills the content width (enlarged at most 1.5 times).</li>
+    <li>An image that GWI shows directly above, below or beside a paragraph of the same section, with no other block between them, sits beside that paragraph in a Text with Image, image on the left (G10).</li>
+    <li>Any other image is shown at its file width, aligned left with the text of its section.</li>
+  </ol><p>An image is never left alone in the middle of the page with wide empty space on both sides.</p></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode. Right-click the image, <q>Inspect</q>: the browser shows the file's own width and the displayed width.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Image style <q>Size: Expand to Fit Width</q> (fills its column) and <q>Display Position: Left</q>; Text with Image for rule 3.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 28 Sep: <q>image component - make image to full width to avoid space left and right</q> (Japan Innovation Showcase). Anion, 23 Sep: <q>Lot of white space around the image</q> (AIoT).</div></div>
+  {{fig:fig-standalone-image}}
+</section>
+
+<section class="g" id="g12">
+  <h4><span class="gid">G12</span> Videos <span class="status st-conf">From review · layout proposed</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>A video never spans the full width. It sits in one of two Flex Container items, side by side, with <q>Spacing Between Items: Medium</q> (the default). The items are always equal, so the video is 637px wide with side padding Large (A1, option A), or 662px with the default padding.</li>
+    <li>The other item holds the title and paragraph that sit directly above, below or beside the video on GWI, with no other block between them: on the side where GWI puts them, or in GWI's reading order when GWI stacks them.</li>
+    <li>Where GWI has no text for the video, the other item holds the next video or stays empty, and the video keeps the same width.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode: the video and its text are side by side. Right-click the video, <q>Inspect</q>: the browser shows its width.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Flex Container with two Flex Container Items; Embed (style <q>YouTube</q>) in one of them.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 23 Sep: <q>Youtube video is completely occupied</q> (Broadcast &amp; ProAV Solutions).</div></div>
+  {{fig:fig-video}}
+</section>
+
+<section class="g" id="g13">
+  <h4><span class="gid">G13</span> Tables <span class="status st-conf">From review · format in question A4</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>When the first row of a table holds column labels, it is a header row (header cells). Where the GWI table has no row of labels, no header row is added.</li>
+    <li>Every table on a page uses the format decided in question A4.</li>
+    <li>Tables use the full content width. On phones a table scrolls inside its own box.</li>
+    <li>The text in the cells is as on GWI.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode. In the author: the table editor's cell properties (header cell) and the table's Styles.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Table component: header cells through cell properties; cell alignment set cell by cell; styles <q>No Rounded Corner</q>, <q>Black</q>, <q>No Background</q>, <q>No Frame</q>. A table's width and its column widths cannot be set.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 28 Sep: <q>Tables are not formatted</q> (TQMLS1028A), <q>table headers issue</q> (IEI AFL3-W19C-ULT5), <q>table formatting</q> (IEI KINO-DH420).</div></div>
+  {{fig:fig-tables}}
+</section>
+
+<section class="g" id="g14">
+  <h4><span class="gid">G14</span> Buttons <span class="status st-conf">From review</span></h4>
+  <div class="row"><div class="k">End of page</div><div class="v"><ul class="pass">
+    <li>A page ends with contact buttons where its GWI page does (question M2).</li>
+    <li>A page that ends with <q>Contact Us for More Information</q> and <q>Request a Quote</q> uses the Experience Fragment <q>products-contact-block</q>; one that ends with <q>Sign up</q> and <q>Contact us</q> uses <q>signup-and-contact-experience-fragment</q>. Any other ending (a single Request a Quote, an event's Register button, a supplier's website) stays as buttons on the page, with GWI's labels.</li>
+    <li>End-of-page buttons sit on white; each button of a pair is centred in its half of the row.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">Other buttons</div><div class="v"><ul class="pass">
+    <li>A button is in the same container as the sentence that introduces it, directly below it, with no other block between them. The button's own spacing then applies.</li>
+    <li>The buttons of one group are in one container and share one alignment. Two buttons side by side use <q>Center</q> in each Flex Container item.</li>
+    <li>A single <q>Request a Quote</q> button uses <q>Fixed Minimum Width</q> and <q>Center</q>.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">Download buttons</div><div class="v"><ul class="pass">
+    <li>Left-aligned, directly below their title or the line that introduces them, in the same container, with no other block between them; stacked when there are several.</li>
+    <li>Never on the same row as another button (a download button is 51px tall, a contact button 57px).</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode: the background behind the end buttons, their position in the row, and what sits directly above each button. Right-click a button, <q>Inspect</q>, to see which container holds it.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Experience Fragment component; the section that holds it uses <q>Padding - Top/Bottom: No Padding</q>, because the fragment brings its own space. Button styles: <q>Width</q> (Fixed Minimum Width, Fit to Text) and <q>Display Position</q> (Center; none means left). <q>Right</q> is not used for buttons.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 28 Sep: <q>buttons are not aligned</q> (IBASE ET875, ET876, EC-7100; IEI AFL3-W19C-ULT5), <q>button alignment issue</q> (IEI KINO-DH420); <q>download button -align button to left</q>, <q>add downloads title and button in same container to avoid space</q>, <q>add 2 buttons and title should be in same container to avoid space</q> (news items). Anion, 27 Sep: <q>CTAs at bottom not required</q>, <q>bottom CTAs are not required</q> (news items). Anion, 23 Sep: <q>CTAs are missing</q> (IBASE).</div></div>
+  {{fig:fig-buttons-end}}
+  {{fig:fig-buttons-download}}
+</section>
+
+<section class="g" id="g15">
+  <h4><span class="gid">G15</span> Tabs and in-page menus <span class="status st-conf">From review · pages in question A7</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>A page whose GWI version has a menu of links to its own sections uses Sticky Tabs (question A7 sets which pages). Pages that use Tabs (panels) keep Tabs.</li>
+    <li>Each Sticky Tabs item, when clicked, scrolls the page to its section.</li>
+    <li>From the bottom of the lowest row of tab labels to the first line of content: <b>60px or less</b>. Not counted: a List or a Button as the first block of a tab.</li>
+    <li>Every tab holds the same content as the matching GWI tab (G1).</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode, because section links do not scroll inside the page editor (R1). Click every menu item and every tab.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Sticky Tabs is placed at the top of the container that holds all the sections it links to, and stays visible while that container is on screen. Each item points to the ID of its section's Title. Tab panels use <q>Padding - Top/Bottom: No Padding</q> and <q>Padding - Left/Right: No Padding</q>; the section around the tabs gives the space above and below them and the side padding of G7.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 28 Sep: <q>Tabs are not visible, tabs should be sticky like in below page.</q> (Smart City &amp; Mobility, pointing to the Europe Imaging and Vision page); <q>Tabs are not visible once clicked they should be sticky.</q> (Medical &amp; Healthcare Solutions). Anion, 27 Sep: <q>Space b/w tabs and content</q> (Glossary). Anion, 23 Sep: <q>Tabs are not working</q> (Smart City &amp; Mobility), <q>No Proper alignment of content in tabs</q> (Broadcast &amp; ProAV Solutions).</div></div>
+  {{fig:fig-tabs}}
+</section>
+
+<section class="g" id="g16">
+  <h4><span class="gid">G16</span> Lists of child pages <span class="status st-conf">From review · fields in question A8</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>About Us, News &amp; Events, and the news, events and newsletter archives list their child pages with a Card List whose source is the child pages. Partner with Macnica: as decided in question A8.3.</li>
+    <li>Each card shows the fields chosen in question A8.1. Cards are two per row, in the order the Card List gives.</li>
+    <li>Every child page that GWI lists appears, and no other page does.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode; count the cards against the list on GWI.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Card List: <q>List settings</q> set to child pages; <q>Item settings</q> for the fields shown. A child page appears only when <q>Show in lists</q> is set in its page properties. A card's image is the child page's featured image, cropped to a 2:1 frame; two cards per row is the component's own layout.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 28 Sep: <q>add a card list component, and select child pages dropdown under &quot;list settings&quot;, select appropriate options which needs to display for the child pages under &quot;item settings&quot;</q> (About Us, News &amp; Events, Partner with Macnica). Anion, 27 Sep: <q>Tags were missed in al news pages. Like “Year”. “ Article date”</q>.</div></div>
+  {{fig:fig-cardlist}}
+</section>
+
+<h3 id="s4d">D. Alignment and page settings</h3>
+
+<section class="g" id="g17">
+  <h4><span class="gid">G17</span> Alignment <span class="status st-prop">Proposed</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>In each section, titles, text, tables, left-aligned images (Image with <q>Display Position: Left</q>) and left-aligned buttons start at the same left edge (within 2px).</li>
+    <li>Only these are centred: the end-of-page contact buttons, a single Request a Quote button, the buttons of a pair (each in its half), an image inside a Flex Container item, the image of a Text with Image within its column, and the tab labels.</li>
+    <li>Blocks side by side (Flex Container items; the image and the text of a Text with Image) start at the same top: the top of the image or video and the top of the text's first line box, as shown by Inspect, are level within 2px. Not counted: the space components add above their content (about 10px above a line of text, about 24px above a heading typed in the text, 24px above a video, 6px above a Wrap image).</li>
+    <li>Buttons in one row have their tops on one line (within 2px).</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">View mode, R7; a vertical or horizontal guide line on a screenshot shows the shared edge.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">One side padding per section (G7), nested containers with <q>No Padding</q>, Text with Image with the default top alignment, Button and Image <q>Display Position</q>.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 23 Sep: <q>Images are bigger in size, no alignment</q>, <q>CTAs are missing and alignment of image</q>, <q>No Proper alignment of content in tabs</q>, <q>No proper alignment of content</q>. Anion, 28 Sep: <q>no content alignment</q>, <q>buttons are not aligned</q>.</div></div>
+  {{fig:fig-alignment}}
+</section>
+
+<section class="g" id="g18">
+  <h4><span class="gid">G18</span> Page properties <span class="status st-conf">From review · page names proposed · navigation in question M5</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>Pages created in the migration have a lowercase name (the last part of the address), with single hyphens between words and no spaces. Existing page names are not changed as part of page acceptance.</li>
+    <li>The page title and description are those of the GWI page (G1).</li>
+    <li>On product pages, <q>Business Categories</q> is the product category of the page's address: <code>/products/boards-modules/…</code> is Boards and Modules, <code>/products/semiconductors/…</code> is Semiconductors.</li>
+    <li>The regional tags under <q>Product Hierarchy Details</q> are the Macnica Americas (MAI) tags.</li>
+    <li>News items carry the <q>Year</q> tag and the article date (question A8.2).</li>
+    <li><q>Hide in Navigation</q> is set as decided in question M5.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">Page Properties in the author.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Page Properties: name, title, description, Business Categories, Product Hierarchy Details tags, Year tag and article date, Hide in Navigation.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 27 Sep: <q>Business categories field should not be empty. It should be Boards and Modules.</q> (MB991); <q>Tags were missed in al news pages</q>. Page title and description: P1.</div></div>
+</section>
+
+<h3 id="s4e">E. Phone view</h3>
+
+<section class="g" id="g19">
+  <h4><span class="gid">G19</span> Phone view <span class="status st-prop">Proposed · question A9</span></h4>
+  <div class="row"><div class="k">Pass when</div><div class="v"><ul class="pass">
+    <li>At 390px wide, no block of the page content is wider than the screen. Only tables scroll, inside their own box (every table is at least 655px wide on phones).</li>
+    <li>Blocks that sit side by side on desktop stack one under the other; grids of logos or cards may show two per row.</li>
+    <li>Images and videos fit the screen width, and no text is cut off or overlapped.</li>
+  </ul></div></div>
+  <div class="row"><div class="k">Not counted</div><div class="v">The site header and footer (R5). Buttons keep their minimum width of 345px.</div></div>
+  <div class="row"><div class="k">How to check</div><div class="v">The browser's responsive mode at 390 × 844, in view mode.</div></div>
+  <div class="row"><div class="k">In global2</div><div class="v">Flex Container style <q>Design for SP: 1 Column</q> stacks its items on phones (<q>2 Columns</q> for logo and card grids). Text with Image stacks by itself. Tables scroll inside their box.</div></div>
+  <div class="row"><div class="k">Basis</div><div class="v basis">Anion, 21 Sep, on the phone view (quoted in Appendix B).</div></div>
+  {{fig:fig-phone}}
+</section>
