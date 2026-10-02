@@ -71,7 +71,8 @@ a trava da Session do aem_lib barra antes do backup.
 
 ## Regras (25/09 — regras, não diretrizes)
 
-- Nunca gravar no GWI. Nunca gravar em página da blacklist do tracker (nem do `paginas_protegidas.txt`).
+- Nunca gravar no GWI. Nunca gravar em página da blacklist do tracker (a única fonte; blacklist vazia = nenhuma
+  protegida; sem resposta do tracker, nada grava).
 - Blacklist fresca antes de cada rodada e de cada página (cada `Pagina()` abre uma Session nova).
 - XF (`/content/experience-fragments`), `/conf` e `/apps` só com "You can edit <caminho exato>" do usuário, na linha
   de comando: `AEM_COMPARTILHADO_AUTORIZADO=<caminho> python3 ...` (nunca no `.env`).

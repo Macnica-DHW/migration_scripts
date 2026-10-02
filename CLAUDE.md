@@ -50,9 +50,9 @@ sign: never work around it.
    (`https://site-migration-tracker.mdhw.dev/api/blacklist`). No write, modify, move or delete on the page or its
    `jcr:content`. Reading is fine. Child pages are not protected unless they are on the list themselves.
 3. **Fetch a FRESH blacklist before every AEM work pass**, and again right before each page in a long run: people
-   approve pages while you work (37 → 86 in three days). Never use an old copy. If the GET fails, write nothing. The
-   write lock also refuses pages listed in `paginas_protegidas.txt`. If that file and the tracker disagree, report
-   it and ask; never edit the file yourself.
+   approve pages while you work (37 → 86 in three days). Never use an old copy. If the GET fails, write nothing.
+   An empty blacklist is a valid answer: no page is protected (on 02/10 the tracker was reset and review restarted
+   from scratch). The tracker is the only list: `paginas_protegidas.txt` was retired on 02/10.
 4. **Shared resources need explicit permission for each path.** Experience fragments, templates and policies
    (`/conf`), components (`/apps`), and anything else a protected page uses count as shared. The header and footer
    XFs reach every page. The only valid approval is *"You can edit \<exact path\>"*. "Go ahead", "you can proceed",
@@ -180,7 +180,7 @@ report.**
 - Commit messages are in Portuguese and say what happened in AEM: **`GRAVADO no AEM (dd/mm)`**,
   **`NO CÓDIGO, nada gravado no AEM`** or **`SOMENTE LEITURA`**.
 - Versioned: code; lasting docs (READMEs, `REGRAS-disposicao.md`, `ROTEIRO-revisor.md`…); tool inputs;
-  `paginas_protegidas.txt`; **all AEM backups** (`dados/backups_aem/`, `dados/golive/backup_*`); write manifests;
+  **all AEM backups** (`dados/backups_aem/`, `dados/golive/backup_*`); write manifests;
   `.claude/` (skills, shared settings).
 - Not versioned: `.env`; tool outputs in `scripts-hazael/remigracao/dados/` (maps, reports, renders, screenshots);
   session docs in `scripts-hazael/remigracao/notas/` (handoffs, plans); `.claude/settings.local.json`. Never

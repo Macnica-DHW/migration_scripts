@@ -38,7 +38,8 @@ from urllib.parse import quote, unquote
 
 _RAIZ = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(_RAIZ / "scripts-bruno"))
-from aem_lib import CONFIG, EscritaProibida, build_session, motivo_bloqueio  # noqa: E402
+import aem_lib  # noqa: E402
+from aem_lib import CONFIG, EscritaProibida, build_session  # noqa: E402
 
 DADOS = Path(__file__).resolve().parents[2] / "dados" / "golive"
 RELATORIO = Path(__file__).resolve().parents[2] / "dados" / "mapas" / "global2_links_vs_gwi_2026-09-24.json"
@@ -141,6 +142,14 @@ EVENTOS_C = ["2015-04-14-nab-show-2015", "2015-09-12-ibc-2015", "2016-04-19-nab-
              "2019-06-12-infocomm-2019"]
 
 sessao, _ = build_session(prompt_if_missing=False, verbose=False)
+
+
+def motivo_bloqueio(metodo, url, data=None):
+    """aem_lib.motivo_bloqueio com a blacklist fresca do tracker (a da Session); sem ela, barra."""
+    bl = sessao.blacklist.atual()
+    if bl is None:
+        return f"sem blacklist fresca do tracker ({sessao.blacklist.erro})"
+    return aem_lib.motivo_bloqueio(metodo, url, data, protegidas=bl)
 
 
 def url(path, sufixo=""):
@@ -249,10 +258,12 @@ def plano_d(lista_abc):
     da coleta (links_vs_gwi); o valor é relido ao vivo na hora. Alvo tem de existir no global2 (lista da coleta)."""
     import pickle
     import links_vs_gwi as LV
-    from aem_lib import carregar_protegidas
     b = pickle.loads(LV.CACHE.read_bytes())
     idx = LV.Indice(b)
-    prot = set(carregar_protegidas())
+    bl = sessao.blacklist.atual()
+    if bl is None:
+        sys.exit(f"blacklist do tracker indisponível ({sessao.blacklist.erro}) — parar")
+    prot = set(bl)
     rel = json.load(open(RELATORIO))
     ja = {(p, no, d["de"]) for _, p, no, t, d in lista_abc if t == "href"}          # A cuida destes
     por_no, sem_alvo = {}, []

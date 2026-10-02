@@ -284,7 +284,7 @@ def build_session(prompt_if_missing=True, verbose=True, bloquear_editadas_min=No
                   f"  esta Session NÃO grava nada — só leitura.\n", file=sys.stderr)
         else:
             print(f"blacklist do tracker: {len(bl)} páginas protegidas "
-                  f"(GET às {time.strftime('%H:%M:%S')}; + paginas_protegidas.txt)\n")
+                  f"(GET às {time.strftime('%H:%M:%S')})\n")
         if session.bloquear_editadas_min:
             print(f"trava de edição recente: não grava em página editada nos últimos "
                   f"{session.bloquear_editadas_min:g} min\n")
@@ -300,14 +300,13 @@ def build_session(prompt_if_missing=True, verbose=True, bloquear_editadas_min=No
 #   - GWI: nada que não seja leitura em URL com `macnicagwi` (REGRA MESTRA do Hazael, 21/09/2026).
 #   - Protegidas = blacklist do site-migration-tracker (REGRAS do Hazael, 25/09/2026: GET fresco antes da
 #     rodada e de novo antes de gravar, se a cópia tiver mais de BLACKLIST_TTL s; sem resposta = nenhuma
-#     escrita) + paginas_protegidas.txt (pasta do projeto, ao lado do .env). A página e o jcr:content dela
-#     não recebem escrita; a página e os ancestrais não podem ser apagados/movidos; nada é copiado/movido para
+#     escrita). É a ÚNICA fonte: o paginas_protegidas.txt foi aposentado em 02/10/2026. A página e o
+#     jcr:content dela não recebem escrita; a página e os ancestrais não podem ser apagados/movidos; nada é copiado/movido para
 #     dentro nem para fora dela. Páginas-filhas de uma protegida NÃO estão protegidas (têm de estar na lista).
 #   - Estruturas compartilhadas (XF, template/policy em /conf, componente em /apps): o header/footer chega a
 #     toda página, inclusive às protegidas. Só com permissão EXPLÍCITA do Hazael caminho a caminho ("You can
 #     edit <caminho>"; "you can proceed" / "all of them" NÃO valem), passada na linha de comando em
 #     AEM_COMPARTILHADO_AUTORIZADO (caminhos exatos separados por ';'; vale para o caminho e o que há dentro).
-PROTEGIDAS_PATH = Path(__file__).resolve().parent.parent / "paginas_protegidas.txt"
 LEITURA = {"GET", "HEAD", "OPTIONS"}
 BLACKLIST_URL = _env("MIGRATION_TRACKER_BLACKLIST_URL", "https://site-migration-tracker.mdhw.dev/api/blacklist")
 BLACKLIST_TTL = _env_float("MIGRATION_TRACKER_TTL", 300)
@@ -336,7 +335,9 @@ def baixar_blacklist(timeout=30):
         caminhos = tuple(sorted({re.sub(r"\.html$", "", p["aem_path"].strip().rstrip("/")) for p in paginas}))
     except Exception as e:                                     # noqa: BLE001
         raise BlacklistIndisponivel(f"GET {BLACKLIST_URL}: {e}") from e
-    if not caminhos or d.get("count", len(paginas)) != len(paginas) \
+    # Lista VAZIA é válida (02/10/2026: tracker zerado, revisão do zero = toda página aberta); o que barra é
+    # não obter a lista — GET falhou ou resposta incoerente.
+    if not isinstance(paginas, list) or d.get("count") != len(paginas) \
             or any(not c.startswith("/content/") for c in caminhos):
         raise BlacklistIndisponivel(f"resposta suspeita de {BLACKLIST_URL}: count={d.get('count')}, "
                                     f"{len(caminhos)} caminhos")
@@ -371,17 +372,6 @@ def compartilhado_autorizado():
             raise EscritaProibida(f"AEM_COMPARTILHADO_AUTORIZADO={c}: tem de ser o caminho de UM XF/template/"
                                   f"componente específico, não uma pasta")
         out.append(c)
-    return tuple(out)
-
-
-def carregar_protegidas(path=PROTEGIDAS_PATH):
-    if not Path(path).exists():
-        return ()
-    out = []
-    for linha in Path(path).read_text(encoding="utf-8").splitlines():
-        linha = linha.split("#", 1)[0].strip().rstrip("/")
-        if linha:
-            out.append(re.sub(r"\.html$", "", linha))
     return tuple(out)
 
 
@@ -433,7 +423,8 @@ def _tocados(caminho, alvos, pares):
 
 
 def motivo_bloqueio(metodo, url, data=None, protegidas=None, autorizados=()):
-    """None se a requisição pode sair; senão, o motivo. Não faz rede — testável offline."""
+    """None se a requisição pode sair; senão, o motivo. Não faz rede — testável offline.
+    `protegidas` = a blacklist do tracker (session.blacklist.atual()); sem ela (None), barra toda escrita."""
     if metodo.upper() in LEITURA:
         return None
     if "macnicagwi" in unquote(url):
@@ -450,7 +441,8 @@ def motivo_bloqueio(metodo, url, data=None, protegidas=None, autorizados=()):
             return (f"{metodo} mexe em estrutura compartilhada {c} (XF/template/componente chega às páginas "
                     f"protegidas): só com \"You can edit {c.split('/jcr:content', 1)[0]}\" do Hazael, "
                     f"em AEM_COMPARTILHADO_AUTORIZADO")
-    protegidas = carregar_protegidas() if protegidas is None else protegidas
+    if protegidas is None:
+        return f"{metodo} sem a blacklist do tracker (passar protegidas=session.blacklist.atual()): {url}"
     if not protegidas:
         return None
     ops = {v.lower() for v in _valores(pares, ":operation")}
@@ -656,7 +648,7 @@ def travar_session(session, blacklist=None, bloquear_editadas_min=None):
             data = kwargs.get("data", args[1] if len(args) > 1 else None)
             try:
                 motivo = motivo_bloqueio(method, url, data, autorizados=compartilhado_autorizado(),
-                                         protegidas=tuple(set(bl or ()) | set(carregar_protegidas())))
+                                         protegidas=tuple(bl or ()))
             except EscritaProibida as e:
                 motivo = str(e)
             if not motivo and bl is None:

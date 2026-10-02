@@ -82,8 +82,8 @@ Read these gotchas before trusting what you read:
 
 1. **GWI:** any non-GET to a URL containing `macnicagwi` raises `EscritaProibida`. So do `@MoveFrom` out of GWI and
    `:operation=copy` with a GWI source.
-2. **Protected pages:** the fresh tracker blacklist (re-fetched when older than 300 s) ∪ `paginas_protegidas.txt`.
-   Blocked: writes to the page or its `jcr:content`, delete/move of the page or an ancestor, `:dest` into it, and
+2. **Protected pages:** the fresh tracker blacklist (re-fetched when older than 300 s), the only list; an empty
+   blacklist protects nothing. Blocked: writes to the page or its `jcr:content`, delete/move of the page or an ancestor, `:dest` into it, and
    `@MoveFrom` out of it. If the tracker fails, **every** write is refused (it fails closed).
 3. **Shared structures:** everything under `/content/experience-fragments`, `/conf` and `/apps` is blocked, unless the
    user said "You can edit \<exact path\>" and you pass it for that single run:

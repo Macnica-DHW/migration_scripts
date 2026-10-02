@@ -11,8 +11,8 @@ tracker.py — blacklist/whitelist do site-migration-tracker, sempre com GET FRE
     python3 remigracao/ferramentas/tracker.py resumo
 
 Caminho: relativo a /content/macnicaglobal2/americas/mai/en (ex.: /about-us) ou absoluto (/content/...).
-Vai SÓ o MIGRATION_TRACKER_TOKEN (do .env) para o tracker — nunca o cookie do AEM. A trava de escrita do aem_lib
-também soma o paginas_protegidas.txt (raiz do projeto): `status` mostra as duas fontes.
+Vai SÓ o MIGRATION_TRACKER_TOKEN (do .env) para o tracker — nunca o cookie do AEM. O tracker é a ÚNICA fonte da
+trava de escrita do aem_lib (o paginas_protegidas.txt foi aposentado em 02/10/2026).
 """
 import argparse
 import collections
@@ -24,7 +24,7 @@ import requests
 
 _RAIZ = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(_RAIZ / "scripts-bruno"))
-from aem_lib import _env, carregar_protegidas  # noqa: E402  (importar o aem_lib carrega o .env)
+from aem_lib import _env  # noqa: E402  (importar o aem_lib carrega o .env)
 
 API = "https://site-migration-tracker.mdhw.dev/api"
 MAI = "/content/macnicaglobal2/americas/mai/en"
@@ -55,10 +55,6 @@ def status(args):
     print(f"tracker às {bl['generated_at']}: blacklist {bl['count']}, whitelist {wl['count']}")
     B = {p["aem_path"]: p for p in bl["pages"]}
     W = {p["aem_path"]: p for p in wl["pages"]}
-    try:
-        locais = set(carregar_protegidas())
-    except Exception:  # noqa: BLE001
-        locais = set()
     for c in map(absoluto, args.caminhos):
         if c in B:
             quem = ", ".join(f"{a['name']} {a['approved_at'][:16]}" for a in B[c].get("approved_by", []))
@@ -67,8 +63,6 @@ def status(args):
             st = "whitelist (não aprovada) — pode gravar, com backup antes"
         else:
             st = "fora do mapa do site (nem blacklist nem whitelist) — perguntar antes de gravar"
-        if c in locais:
-            st += "  + está no paginas_protegidas.txt (a trava do aem_lib barra)"
         print(f"  {c[len(MAI):] if c.startswith(MAI) else c}: {st}")
 
 

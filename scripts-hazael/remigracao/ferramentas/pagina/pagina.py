@@ -5,7 +5,7 @@ A lista de edições é escrita à mão, página a página (look and feel se jul
 REGRAS (25/09/2026: "regras, não sugestões") — várias travadas no código pela Session do aem_lib:
   1. Nunca gravar no GWI: nenhum não-GET em URL com `macnicagwi`. Pagina recusa caminho do GWI no construtor e a
      trava da Session barra de novo em cada requisição.
-  2. Nunca gravar em página da blacklist do site-migration-tracker (nem do paginas_protegidas.txt): Pagina recusa
+  2. Nunca gravar em página da blacklist do site-migration-tracker (a única fonte): Pagina recusa
      no construtor ("PROTEGIDA — parar"), mesmo em dry-run; a trava barra de novo em cada POST.
   3. Blacklist FRESCA: cada Pagina() abre uma Session nova (build_session faz o GET do tracker na hora; a Session
      baixa de novo se a cópia passar de 300 s). Sem resposta do tracker, Pagina não abre e nada grava.
@@ -113,7 +113,7 @@ class Pagina:
             self.s.request = so_leitura
         if self.s.blacklist.caminhos is None:
             raise SystemExit(f"blacklist indisponível ({self.s.blacklist.erro}) — parar")
-        if self.P in set(self.s.blacklist.caminhos) | set(L.carregar_protegidas()):
+        if self.P in set(self.s.blacklist.caminhos):
             raise SystemExit(f"{self.rel} PROTEGIDA — parar")
         self.antes = self.jcr()
         self._avisar_edicao_recente()
@@ -214,7 +214,7 @@ class Pagina:
         bl = self.s.blacklist.atual()                           # GET fresco no tracker se a cópia passou de 300 s
         try:
             motivo = L.motivo_bloqueio("POST", BASE + cam, pares, autorizados=L.compartilhado_autorizado(),
-                                       protegidas=tuple(set(bl or ()) | set(L.carregar_protegidas())))
+                                       protegidas=tuple(bl or ()))
         except L.EscritaProibida as e:
             motivo = str(e)
         if not motivo and bl is None:

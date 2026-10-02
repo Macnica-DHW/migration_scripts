@@ -13,14 +13,19 @@ hand. It is the **source of truth** for which pages are frozen.
 | `GET /api/blacklist` | pages approved (green check) by at least one person | **read only**, never write, move or delete |
 | `GET /api/whitelist` | every other page of the site map, i.e. nobody has approved it yet | work on it, following the rules (backup first…) |
 
-The two lists together are the site map: 533 pages on 28/09 (110 + 423). A page on neither list is outside the
-scope: ask before touching it.
+The two lists together are the site map: 533 pages on 28/09 (110 + 423). On 02/10 the tracker was reset after talks
+with Anion and review restarted from scratch (0 + 533). A page on neither list is outside the scope: ask before
+touching it.
+
+The tracker is the **only** list. `paginas_protegidas.txt`, a local list the write lock used to add on top of the
+tracker, was retired on 02/10: ignore it in old notes and git history.
 
 ## Rules this skill serves (from CLAUDE.md)
 
 - Fetch a **fresh** blacklist before every AEM work pass. Pages get approved during the day (37 → 86 between 25/09
   and 28/09), so fetch again right before each page in a long run. Never reuse a copy from earlier.
-- If the GET fails (tracker down, no token, empty or inconsistent reply), **write nothing**. Reading can continue.
+- If the GET fails (tracker down, no token, inconsistent reply), **write nothing**. Reading can continue. An
+  **empty** blacklist is a valid reply: no page is protected.
 - Approvals can also be **withdrawn**: `altera-soc-courses` left the list on 27/09. Don't assume "once approved,
   always approved". Always use the live list.
 - Child pages don't inherit protection. `news-archive` is approved; the news items under it are not.
@@ -40,16 +45,12 @@ python3 remigracao/ferramentas/tracker.py listar whitelist --prefixo /products/b
 python3 remigracao/ferramentas/tracker.py listar blacklist --json /tmp/bl.json
 ```
 
-`status` also flags pages listed in `paginas_protegidas.txt` (project root). The write lock refuses the **union**
-of the tracker blacklist and that file. If the two disagree (for example, a page the tracker no longer lists is still
-in the file), report it and ask. Never edit that file yourself.
-
 In Python, writes go through the locked Session, which fetches the blacklist by itself:
 
 ```python
 from aem_lib import build_session            # scripts-bruno/aem_lib.py
 s, auth = build_session(prompt_if_missing=False)
-s.blacklist.atual()   # tuple of protected aem_paths, or None if the tracker failed (then the Session refuses every write)
+s.blacklist.atual()   # tuple of protected aem_paths (empty = none protected), or None if the tracker failed (then the Session refuses every write)
 ```
 
 For the whitelist in code, reuse `baixar("whitelist")` from `ferramentas/tracker.py`.
