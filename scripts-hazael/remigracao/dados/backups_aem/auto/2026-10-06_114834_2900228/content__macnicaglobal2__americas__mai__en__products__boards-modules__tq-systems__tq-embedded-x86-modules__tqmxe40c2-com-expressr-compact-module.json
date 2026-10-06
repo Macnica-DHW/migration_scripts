@@ -1,0 +1,226 @@
+{
+ "quando": "2026-10-06T12:10:48",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe40c2-com-expressr-compact-module",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe40c2-com-expressr-compact-module/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "TQMxE40C2 COM Express® Compact Module (Type 6)",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "TQMXE40C2-COM-EXPRESSR-COMPACT-MODULE",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:40 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:35:20 GMT+0000",
+  "jcr:description": "The COM Express® Compact Module TQMxE40C2 offers a powerful computing solution with 6th Generation Intel Atom® processors, featuring dual/quad-core",
+  "keywords": "Intel Atom processors, DDR4 memory, PCIe lanes, triple display support, extended temperature range, COM Express Compact Module, SO-DIMM, DDR4 memory support, high-speed data transfer, 4K resolution, reliable performance",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe40c2-com-expressr-compact-module",
+  "hideInNav": "true",
+  "pageTitle": "TQMxE40C2 COM Express® Compact Module (Type 6)",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "TQMxE40C2 COM Express® Compact Module (Type 6)",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 18:07:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Thu Aug 27 2026 21:09:01 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/TQMxE40C2 COM Express® Compact Module (Type 6).jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": " TQMxE40C2 COM Express® Compact Module (Type 6)",
+      "text": "<h1>Intel Atom® x6000 Series, Pentium® and Celeron® Processors of 6th Generation (&quot;Elkhart Lake&quot;)</h1>\n<p>The COM Express® Compact Module TQMxE40C2 offers a powerful computing solution with 6th Generation Intel Atom® processors, featuring dual/quad-core capabilities with clock speeds of up to 3.0 GHz. It supports up to 32 GB of DDR4 SO-DIMM memory with optional inband ECC for data reliability.</p>\n<p>This module provides enhanced connectivity options, including 8 PCIe lanes (Gen3) and USB 3.1 Gen2 ports for high-speed data transfer. It boasts triple display support, allowing for versatile visual output with up to 4K screen resolution. Furthermore, its extended temperature range of -40°C to +85°C ensures reliable performance in challenging environments.</p>\n<p>The TQMxE40C2 is part of the COM Express® Compact form factor (95 mm x 95 mm), making it suitable for various applications, such as industrial automation, transportation, and medical technology. It also incorporates Intel graphics processors, enabling support for up to three parallel displays.</p>\n<p>With virtualization support and features like Time Coordinated Computing, this module is well-equipped for real-time applications and time-synchronous IoT solutions. The optional eMMC flash memory (up to 256 GB) and flexible assembly options for embedded DisplayPort (eDP) or LVDS offer customization possibilities.</p>\n<p>The module includes an integrated board controller with thermal management and a multi-stage watchdog. With low power consumption and conformal coating options, the TQMxE40C2 is a robust and versatile choice for FPGA engineers seeking high-performance solutions in a compact form factor.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Wed Sep 02 2026 12:29:43 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/TQMxE40C2 COM Express® Compact Module (Type 6).jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Wed Sep 02 2026 12:29:43 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li><b>Dual/Quad-Core Intel Atom® Processors:</b> Powerful processing capabilities for a range of applications.</li>\n<li><b>Up to 32 GB DDR4 SO-DIMM Memory Support:</b> Enhanced memory capacity for data-intensive tasks.</li>\n<li><b>8 PCIe Lanes (Gen3):</b> High-speed data transfer and expandability options.</li>\n<li><b>Triple Display Support with 4K Resolution:</b> Versatile visual output for various display configurations.</li>\n<li><b>Extended Temperature Range:</b> Reliable performance in challenging environmental conditions.</li>\n</ul>",
+      "jcr:lastModified": "Wed Sep 02 2026 12:29:10 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>Intel Atom® x6211E (2-Core, 1.3/3.0 GHz, 1.5 MB, 16 EU, Turbo, 6 W TDP)</li>\n<li>Intel Atom® x6413E (4-Core, 1.5/3.0 GHz, 1.5 MB, 16 EU, Turbo, 9 W TDP)</li>\n<li>Intel Atom® x6425E (4-Core, 2.0/3.0 GHz, 1.5 MB, 32 EU, Turbo, 12 W TDP)</li>\n<li>Intel Atom® x6212RE (2-Core, 1.2 GHz, 1.5 MB, 16 EU, 24/7, RT, 6 W TDP)</li>\n<li>Intel Atom® x6414RE (4-Core, 1.5 GHz, 1.5 MB, 16 EU, 24/7, RT, 9 W TDP)</li>\n<li>Intel Atom® x6425RE (4-Core, 1.9 GHz, 1.5 MB, 32 EU, 24/7, RT, 12 W TDP)</li>\n<li>Intel® Pentium® and Celeron® N and J Series processors on request</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>DDR4 - 8GB, 16 GB, 32GB (1 SO-DIMM)</li>\n<li>EEPROM - 32kbit</li>\n<li>eMMC - 8-256 GB</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>1x eDP (4K @ 60 Hz) or LVDS (18/24 bit)</li>\n<li>2x Digital Display Interface (DDI) for DP (4K @ 60 Hz)</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Ethernet - 1x Gbit Ethernet</li>\n<li>USB - 2x USB 3.1 | 8x USB 2.0</li>\n<li>SATA - 1x&nbsp;&nbsp;SATA 3.0 (up to 6 Gb/s)</li>\n<li>Serial Port - 2x Serial Port</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>PCIe - 8x PCIe 3.0</li>\n<li>LPC - LPC/eSPI</li>\n<li>I2C</li>\n<li>SMBus</li>\n<li>SPI - SPI (for external UEFI BIOS flash)</li>\n<li>Audio - Intel HD Audio</li>\n<li>GPIO - 8x GPIO through TQ-flexiCFG</li>\n<li>SD Card/GPIO - 1 SD Card/8x GPIO</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Dimensions - 95mm x 95mm</li>\n<li>Plug-in System - COM Express Compact, Type 6</li>\n<li>Temperature range - Standard temperature: 0°C…+60°C (HE versions)</li>\n<li>Power supply -&nbsp; Main Voltage: 4.75 V - 20 V / Standby Voltage: 4.75 V - 5.25 V / RTC Battery Voltage: 3 V / Power: typ. 3 - 8 W/max. 14 W / (Green ECO-Off: &lt; 0.1 W)</li>\n<li>Power consumption - typ. 3 - 8 W/max. 14 W (Green ECO-Off: &lt; 0.1 W)</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 12:29:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"width:158px;\"><p><b>TQMxE40C2-AA</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® x6425RE, LVDS, TPM 2.0, -40°C...+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:158px;\"><p><b>TQMxE40C2-AB</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® x6425RE, LVDS, TPM 2.0, -40°C...+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:158px;\"><p><b>TQMxE40C2-AC</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® x6212RE, LVDS, TPM 2.0, -40°C...+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:158px;\"><p><b>TQMxE40C2-AD</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® x6425E, LVDS, TPM 2.0, -40°C...+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:158px;\"><p><b>TQMxE40C2-AE</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® x6413E, LVDS, TPM 2.0, -40°C...+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:158px;\"><p><b>TQMxE40C2-AF</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® x6211E, LVDS, TPM 2.0, -40°C...+85°C</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 12:30:00 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

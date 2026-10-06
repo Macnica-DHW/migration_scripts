@@ -1,0 +1,226 @@
+{
+ "quando": "2026-10-06T12:09:28",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe39m-com-expressr-mini-modul-type-10",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe39m-com-expressr-mini-modul-type-10/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "TQMxE39M COM Express® Mini Modul (Type 10)",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "TQMXE39M-COM-EXPRESSR-MINI-MODUL-TYPE-10",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:39 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:35:18 GMT+0000",
+  "jcr:description": "The TQ TQMxE39M is a versatile COM Express Mini module powered by Intel Atom x5/x7 E3900 processors, belonging to the \"Apollo Lake\" family. This compact module",
+  "keywords": "Intel Atom x5/x7 E3900, COM Express Mini, Apollo Lake processors, DDR3L memory, 4K UHD displays, Gbit Ethernet, PCIe lanes, rugged design, industrial computing, real-time processing",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe39m-com-expressr-mini-modul-type-10",
+  "hideInNav": "true",
+  "pageTitle": "TQMxE39M COM Express® Mini Modul (Type 10)",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "TQMxE39M COM Express® Mini Modul (Type 10)",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 18:07:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Thu Aug 27 2026 21:09:01 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/TQMxE39M COM Express® Mini Modul (Type 10).jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "TQMxE39M COM Express® Mini Modul (Type 10)",
+      "text": "<h1>Intel Atom® x5/x7 E3900</h1>\n<p>The TQ TQMxE39M is a versatile COM Express Mini module powered by Intel Atom x5/x7 E3900 processors, belonging to the &quot;Apollo Lake&quot; family. This compact module brings exceptional computing performance, security features, and multimedia capabilities to a wide range of industries, including real-time computing, industrial automation, surveillance, aviation, healthcare, and retail.</p>\n<p>Complying with the international PICMG standard COM Express Mini (Type 10), the TQMxE39M offers robust connectivity options, including 8 USB ports (including 2 USB 3.0), up to 4 PCIe lanes, and a Gbit Ethernet port. This enables high-speed communication with peripherals and various interfaces on the carrier board.</p>\n<p>The integrated Intel graphics processor delivers outstanding 4K resolution graphics, immersive 3D processing, and enhanced video encoding and playback capabilities. Time-coordinated computing features support synchronized processes within IoT networks and industrial control applications.</p>\n<p>With up to 64 GB of onboard eMMC storage, flexible display options, and the TQMx86 board controller for thermal management and watchdog functionality, the TQMxE39M provides engineers with a highly adaptable and reliable solution. It can operate seamlessly in challenging environments, with temperature support ranging from -40°C to +85°C, making it suitable for rugged applications.</p>\n<p>In summary, the TQMxE39M COM Express Mini module offers exceptional performance and flexibility, making it an ideal choice for FPGA engineers in various industries seeking a robust and compact computing solution.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Wed Sep 02 2026 12:24:54 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/TQMxE39M COM Express® Mini Modul (Type 10).jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Wed Sep 02 2026 12:24:54 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li><b>Processor Versatility</b>: Support for Intel Atom x5/x7 E3900 processors provides a range of dual/quad-core options with clock speeds up to 2.5 GHz.</li>\n<li><b>Robust Connectivity:</b> Offers 8 USB ports (including 2 USB 3.0), up to 4 PCIe lanes, and a Gbit Ethernet port for versatile high-speed communication.</li>\n<li><b>Enhanced Graphics:</b> Integrated Intel graphics processor supports up to three independent displays with 4K UHD resolution and immersive 3D processing.</li>\n<li><b>Storage and Memory Flexibility: </b>Options include up to 64 GB of onboard eMMC storage and support for DDR3L memory, ensuring adaptable configurations.</li>\n<li><b>Rugged Reliability: </b>Operates reliably in harsh environments with an extended temperature range from -40°C to +85°C and protective coating options.</li>\n</ul>",
+      "jcr:lastModified": "Wed Sep 02 2026 12:24:09 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>Intel Atom® x5/x7 E3900 (Apollo Lake-I)</li>\n<li>x5-E3930 2x 1.3/1.8 GHz, 6.5 W</li>\n<li>x5-E3940 4x 1.6/1.8 GHz, 9.5 W</li>\n<li>x7-E3950 4x 1.6/2.0 GHz, 12 W</li>\n<li>Celeron® N3350 2x 1.1/2.4 GHz, 6 W</li>\n<li>Pentium® N4200 4x 1.1/2,5 GHz, 6 W</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>DDR3L - non-ECC, Dual Channel</li>\n<li>EEPROM - 32kbit</li>\n<li>eMMC - 4-64 GB</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>1x Digital Display Interface (DDI) for DP 1.2a, eDP 1.3, HDMI 1.4b</li>\n<li>1x eDP1.4/Single Channel LVDS (also usable for second external monitor)</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Ethernet - 1x Gbit Ethernet&nbsp;</li>\n<li>USB - 2x USB 3.0 | 6x USB 2.0</li>\n<li>Serial Ports: 2x Serial port</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>PCIe - 4x PCIe 2.0</li>\n<li>LPC - LPC/eSPI</li>\n<li>I2C</li>\n<li>SMBus</li>\n<li>SPI - SPI (for external UEFI BIOS flash)</li>\n<li>Audio - Intel HD Audio</li>\n<li>GPIO - 8x GPIO through TQ-flexiCFG</li>\n<li>SD Card - 1x SD Card interface</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Dimensions - 84mm x 55mm</li>\n<li>Plug-in System - COM Express Mini, type 10</li>\n<li>Temperature range - Standard temperature: 0°C…+60°C (HE versions)</li>\n<li>Power supply - Voltage: 4.75 V - 20 V / 4.75 V - 20 V Standby (optional) / 3 V Battery for RTC</li>\n<li>Power consumption - typ. 3 - 8 W/max. 14 W (Green ECO-Off: &lt; 0.1 W)</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 12:25:03 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td width=\"20%\" style=\"width:150px;\"><p><b>TQMxE39M-AA</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® x7-E3950 (4x 1.6/2.0GHz, 2MB Cache, 12 W TDP), 4GB DDR3L, 32 GB eMMC, eDP,<br>\nIndustrial-Temp. -40..+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:150px;\"><p><b>TQMxE39M-AB</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® x5-E3940 (4x 1.6/1.8GHz, 2MB Cache, 9.5 W TDP), 4GB DDR3L, 16 GB eMMC, LVDS,<br>\nIndustrial-Temp. -40..+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:150px;\"><p><b>TQMxE39M-AC</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® x5-E3930 (2x 1.3/1.8GHz, 2MB Cache, 6.5 W TDP), 2GB DDR3L, eDP, Standard-Temp. 0..+60°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:150px;\"><p><b>TQMxE39M-AD</b></p>\n</td>\n<td><ul>\n<li>Intel® Celeron® N3350 (2x 1.1/2.4GHz, 2MB Cache, 6 W TDP), 2GB DDR3L, eDP, Standard-Temp. 0..+60°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:150px;\"><p><b>TQMxE39M-AF</b></p>\n</td>\n<td><ul>\n<li>Intel® Pentium® N4200 (4x 1.1/2.5GHz, 2MB Cache, 6 W TDP), 4GB DDR3L, LVDS, Standard-Temp. 0..+60°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:150px;\"><p><b>MB-COME10-1</b></p>\n</td>\n<td><ul>\n<li>Mainboard for COM Express™ Minimodules, Type 10 Interfaces: DP, eDP/LVDS, 2x Gb Ethernet, 4x USB, 3x COM, audio, mini PCIe, mSATA, 2.5“ SSD, SD card, riser extension with PCIe and USB, fan, debug, 170 mm x 170 mm</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 12:25:11 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

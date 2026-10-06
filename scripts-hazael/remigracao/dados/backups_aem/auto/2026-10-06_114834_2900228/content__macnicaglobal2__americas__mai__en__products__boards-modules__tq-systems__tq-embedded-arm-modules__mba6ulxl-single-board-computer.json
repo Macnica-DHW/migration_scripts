@@ -1,0 +1,210 @@
+{
+ "quando": "2026-10-06T11:56:17",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/mba6ulxl-single-board-computer",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/mba6ulxl-single-board-computer/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "MBa6ULxL Single Board Computer",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "MBA6ULXL-SINGLE-BOARD-COMPUTER",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:45 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:33:56 GMT+0000",
+  "jcr:description": "The Embedded Single Board Computer MBa6ULxL is an ideal platform for IoT and Industry 4.0 gateways, built on the foundation of the TQMa6ULxL CPU module. With",
+  "keywords": "Single Board Computer, MBa6ULxL, IoT, Industry 4.0, TQMa6ULxL, Cortex®-A7, i.MX6UL, i.MX6ULL",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/mba6ulxl-single-board-computer",
+  "hideInNav": "true",
+  "pageTitle": "MBa6ULxL Single Board Computer",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "MBa6ULxL Single Board Computer",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 18:07:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Thu Aug 27 2026 21:09:01 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/MBa6ULxL.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "MBa6ULxL Single Board Computer",
+      "text": "<h1>An ideal platform for IOT and Industry 4.0 Gateways based on TQMa6ULxL</h1>\n<p>The Embedded Single Board Computer MBa6ULxL is an ideal platform for IoT and Industry 4.0 gateways, built on the foundation of the TQMa6ULxL CPU module. With its Arm® Cortex®-A7 technology based on i.MX6UL and i.MX6ULL, this board offers a balanced blend of performance and low power consumption, making it suitable for a wide range of applications. Key features include an extended temperature range, modular expandability, wide voltage input range, and isolated CAN interfaces. The board is well-suited for IoT and Industry 4.0 gateways and incorporates security features. Additionally, it offers expansion options for wireless solutions.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Mon Aug 31 2026 17:51:54 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/MBa6ULxL.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Mon Aug 31 2026 17:51:54 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li>Extended temperature range for versatile applications.</li>\n<li>Low power consumption, typically 2-3 W.</li>\n<li>Modular expandability for customization.</li>\n<li>Wide voltage input range for flexibility.</li>\n<li>Galvanically isolated CAN interfaces.</li>\n</ul>",
+      "jcr:lastModified": "Mon Aug 31 2026 17:50:55 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy_558282354": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title_spec": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "table_spec": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\r\n<tbody><tr><td><b>CPU</b></td>\r\n<td><ul>\r\n<li>i.MX6UL1, MX6UL2, MX6UL3, MX6ULL0, MX6ULL1, MX6ULL2</li>\r\n</ul>\r\n</td>\r\n</tr><tr><td><b>Memory</b></td>\r\n<td><ul>\r\n<li>DDR3L: Up to 1 GB</li>\r\n<li>EEPROM: 0/64-kbit</li>\r\n<li>eMMC: Up to 32 GB</li>\r\n<li>Quad SPI NOR: Up to 256 MB</li>\r\n</ul>\r\n</td>\r\n</tr><tr><td><b>Communications Interfaces</b></td>\r\n<td><ul>\r\n<li>Ethernet: 2x Ethernet 10/100/Mbit</li>\r\n<li>Serial Ports: Up to 2x UART RS232</li>\r\n<li>CAN: Up to 2x CAN 2.0 B</li>\r\n<li>USB:<ul>\r\n<li>1x USB 2.0 OTG</li>\r\n<li>2x USB 2.0 high-speed HOST interface</li>\r\n<li>USB-Debug (RS232)</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr><tr><td><b>Other Interfaces</b></td>\r\n<td><ul>\r\n<li>SD Card: 1x SD-Card</li>\r\n<li>I2C: Up to 1x I2C</li>\r\n<li>GPIO: Up to 8x GPIO</li>\r\n<li>PCIe:<ul>\r\n<li>2x Mini PCIe (only USB)</li>\r\n<li>1x SIM Card (mini PCIe)</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr><tr><td><b>General</b></td>\r\n<td><ul>\r\n<li>Power supply: 8 - 30 V DC</li>\r\n<li>Temperature range:<ul>\r\n<li>Standard temperature range: -25°C…+70°C</li>\r\n<li>Extended temperature: -40°C…+70°C</li>\r\n</ul>\r\n</li>\r\n<li>General: Temperature sensor</li>\r\n<li>Dimensions: 100 x 100 mm</li>\r\n</ul>\r\n</td>\r\n</tr><tr><td><b>OS</b></td>\r\n<td><ul>\r\n<li>Linux</li>\r\n<li>QNX, INTEGRETY on request</li>\r\n</ul>\r\n</td>\r\n</tr></tbody></table>\r\n<p>&nbsp;</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true"
+     },
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td width=\"20%\" style=\"width:145px;\"><b>MBa6UL2L-AA</b></td>\n<td><ul>\n<li>MBa6UL2L-AA with TQMa6UL2L-AA Cortex®-A7/528 MHz, 8GB eMMC Flash, 256 MB DDR3L, 64kB EEPROM, 2x USB 2.0, 1x USB OTG, 2x ETH 10/100, 1x Mini PCIe (only USB + SIM Card), 1x CAN, USB –Debug Interface, RTC, Temperature sensor, Reset-Button, SD-Card interface, -25°C…+70°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:145px;\"><p><b>MBa6UL2L-AB</b></p>\n</td>\n<td><ul>\n<li>MBa6UL2L-AB with TQMa6UL2L-AA Cortex®-A7/528 MHz, 8GB eMMC Flash, 256 MB DDR3L, 64kB EEPROM, 2x USB 2.0, 1x USB OTG, 2x ETH 10/100, Expansion Interface 2,54mm Pin Header (8x GPIO´s, 2x RS232 (RX/TX), 2x I²C, 1x SPI), 2x Mini PCIe (only USB +1x with SIM Card ), 2x CAN, USB –Debug Interface, 1x Graphic Interface (40 pol. Glyn Platform Concept), RTC, Temperature sensor, Reset-Button, SD-Card interface ,-25°C…+70°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:145px;\"><b>Starterkit MBa6UL2L set</b></td>\n<td><ul>\n<li>The MBa6ULxL set is delivered with a TQMa6UL2L module with a Cortex®-A7 CPU from NXP. The components contained in the single board computer constitute a modular system enabling you to develop your own product ideas. To develop your own hardware, you can use the certified and qualified circuit components of this platform in your own designs. Optionally, a display in the range of 3.5 “- 7” can be ordered for this set. For this platform, there is also a housing solution available to enable use as a complete system.</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Mon Aug 31 2026 17:52:25 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

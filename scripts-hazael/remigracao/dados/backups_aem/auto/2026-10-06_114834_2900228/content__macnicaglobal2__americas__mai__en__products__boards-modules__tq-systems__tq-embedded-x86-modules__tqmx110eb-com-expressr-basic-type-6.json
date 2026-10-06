@@ -1,0 +1,226 @@
+{
+ "quando": "2026-10-06T12:09:00",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx110eb-com-expressr-basic-type-6",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx110eb-com-expressr-basic-type-6/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "TQMx110EB COM Express® Basic Type 6 Module",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "TQMX110EB-COM-EXPRESSR-BASIC-TYPE-6",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:39 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:35:06 GMT+0000",
+  "jcr:description": "The TQMx110EB is an embedded module that ushers in a new era of computing and graphics performance. Powered by 11th Generation Intel® Core™ and Intel® Xeon®",
+  "keywords": "TQMx110EB, COM Express® Basic Type 6 Module, 11th Generation Intel® Core™, Intel® Xeon® W-11000E Series Processors, Tiger Lake H (45), Intel® Iris® Xe graphics, DDR4-3200 memory, PCIe Gen4, USB 3.2 Gen2, 10nm manufacturing process, energy-efficient, AI, image processing, FPGA engineers, high-performance processors, high-resolution outputs, system performance, high-speed interfaces, industrial use conditions, expansion options.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmx110eb-com-expressr-basic-type-6",
+  "hideInNav": "true",
+  "pageTitle": "TQMx110EB COM Express® Basic Type 6 Module",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "TQMx110EB COM Express® Basic Type 6 Module",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 18:07:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Thu Aug 27 2026 21:09:01 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/TQMx110EB COM Express® Basic Type 6 Module.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "TQMx110EB COM Express® Basic Type 6 Module",
+      "text": "<h1>11th Generation Intel® Core™ and Intel® Xeon® W-11000E Series Processors</h1>\n<p>The TQMx110EB is an embedded module that ushers in a new era of computing and graphics performance. Powered by 11th Generation Intel® Core™ and Intel® Xeon® W-11000E series processors, this module delivers a high-end computing experience in a compact form factor. With up to 8 cores and 16 threads, turbo speeds of up to 4.7 GHz, and a generous 24 MB cache, it offers formidable processing power for a wide range of applications.</p>\n<p>One standout feature is the exceptional graphics performance driven by Intel® Iris® Xe graphics, capable of handling 8K high-resolution outputs. This makes it ideal for tasks involving gaming, machine vision, virtual reality, medical technology, and industrial automation.</p>\n<p><span style=\"letter-spacing: 0px;\">Efficiency is a key focus, thanks to the energy-efficient 10nm manufacturing process and a power-efficient design with TDP options ranging from 25W to 45W. Additionally, the module supports AI and image processing tasks with the inclusion of the vector neural networks instruction set (VNNI).</span></p>\n<p><span style=\"letter-spacing: 0px;\">The TQMx110EB also boasts impressive expandability with 16 PCIe Gen 4 lanes directly from the CPU and support for up to 64 GB of high-speed DDR4-3200 memory, ensuring robust system performance and ample room for expansion. High-speed peripheral and network interfaces, including USB 3.2 Gen2 and 2.5 Gigabit Ethernet, further enhance its versatility.</span></p>\n<p>In summary, the TQMx110EB is a versatile embedded module that combines cutting-edge processing power, graphics capabilities, and energy efficiency, making it a compelling choice for FPGA engineers tackling demanding applications.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Wed Sep 02 2026 11:52:03 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/TQMx110EB COM Express® Basic Type 6 Module.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Wed Sep 02 2026 11:52:03 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li><p><b>High-Performance Processors:</b> 11th Generation Intel® Core™ and Intel® Xeon® W-11000E series processors, offering up to 8 cores and 16 threads</p>\n</li>\n<li><p><b>Outstanding Graphics:</b> Features Intel® Iris® Xe graphics with support for 8K high-resolution output, making it suitable for applications demanding advanced visual processing and display capabilities.</p>\n</li>\n<li><p><b>Memory and Expansion:</b> Supports up to 64 GB of high-speed DDR4-3200 memory and provides 16 PCIe Gen 4 lanes directly from the CPU</p>\n</li>\n<li><p><b>Efficiency:</b> 10nm manufacturing technology and various TDP options (25W, 35W, and 45W), a balance between performance and power consumption for FPGA applications.</p>\n</li>\n<li><p><b>AI and Image Processing:</b> Vector neural networks instruction set (VNNI) to enhance AI and image processing capabilities</p>\n</li>\n</ul>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:51:28 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>Intel® Core™ i7-11850HE (8-Core, 2.6/4.7 GHz, 24 MB, 32 EU, 35/45 W TDP)</li>\n<li>Intel® Core™ i5-11500HE (6-Core, 2.6/4.5 GHz, 12 MB, 32 EU, 35/45 W TDP)</li>\n<li>Intel® Core™ i3-11100HE (4-Core, 2.4/4.4 GHz, 8 MB, 16 EU, 35/45 W TDP)</li>\n<li>Intel® Xeon® W-11865MRE (8-Core, 2.6/4.7 GHz, 24 MB, 32 EU, ECC, 24/7, RT, eTEMP, 35/45 W TDP)</li>\n<li>Intel® Xeon® W-11555MRE (6-Core, 2.6/4.5 GHz, 12 MB, 32 EU, ECC, 24/7, RT, eTEMP, 35/45 W TDP)</li>\n<li>Intel® Xeon® W-11155MRE (4-Core, 2.4/4.4 GHz, 8 MB, 16 EU, ECC, 24/7, RT, eTEMP, 35/45 W TDP)</li>\n<li>Intel® Xeon® W-11865MLE (8-Core, 1.5/4.5 GHz, 24 MB, 32 EU, ECC, 24/7, RT, 25 W TDP)</li>\n<li>Intel® Xeon® W-11555MLE (6-Core, 1.9/4.4 GHz, 12 MB, 32 EU, ECC, 24/7, RT, 25 W TDP)</li>\n<li>Intel® Xeon® W-11155MLE (4-Core, 1.8/3.1 GHz, 8 MB, 16 EU, ECC, 24/7, RT, 25 W TDP)</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>DDR5-5200 - 64 GB (2 SO-DIMMs)</li>\n<li>EEPROM - 32kbit</li>\n<li>M.2 - Onboard soldered NVMe SSD (PCIe Gen3 x4) up to 1 Tbyte (option)</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>Up to 4 independant displays: 3x Digital Display Interface / DP++ with up to 8K; DisplayPort 1.4a with support for Multi-Stream Transport (MST); 1x Embedded Digital Display Interface (eDP) or dual channel LVDS interface (eDP 1.4b or dual channel LVDS)</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Ethernet - 2.5 Gigabit Ethernet (Intel i226)</li>\n<li>USB - 4x USB 3.2 Gen2 (up to 10 Gb/s) with USB 3.0 compatibility</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>PCIe - CIe Gen4 (up to 16 Gb/s per Lane) (1x16, 2x8 or 2x4+1x8)</li>\n<li>SATA - 4x SATA Gen3 (up to 6 Gb/s)</li>\n<li>LPC - LPC/eSPI</li>\n<li>I2C</li>\n<li>SMBus</li>\n<li>SPI - SPI (for external UEFI BIOS flash)</li>\n<li>UART - 2x UART (Rx/Tx) (4-wire optional)</li>\n<li>GPIO - 8x GPIO through TQ-flexiCFG</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Dimensions - 125 mm x 95 mm</li>\n<li>Plug-in System - COM Express Compact, type 6</li>\n<li>Temperature range - Standard temperature: 0°C…+60°C (HE versions)</li>\n<li>Power supply - 14.5 V...20 V, 5 V Standby (optional), 3 V Battery for RTC</li>\n<li>Power consumption - typ. 30...50 W / max. 200 W (preliminary)</li>\n</ul>\n</td>\n</tr><tr><td><b>OS</b></td>\n<td><ul>\n<li>Windows 10 / Windows 10 IoT Enterprise</li>\n<li>Windows 11 (restricted support)</li>\n<li>Linux</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:52:15 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td width=\"20%\" style=\"width:159px;\"><p><b>TQMx110EB-AA</b></p>\n</td>\n<td><ul>\n<li>Intel® Core™ i7-11800H, no onboard SSD, TPM 2.0</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:159px;\"><p><b>TQMx110EB-AB</b></p>\n</td>\n<td><ul>\n<li>Intel® Core™ i5-11400H, no onboard SSD, no TPM</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:159px;\"><p><b>TQMx110EB-AC</b></p>\n</td>\n<td>IIntel® Core™ i3-11100HE (4-Core, 2.4/4.4 GHz, 8 MB, 16 EU, 35/45 W TDP), HM570E, no onboard SSD, TPM 2.0, C-Temp</td>\n</tr><tr><td style=\"width:159px;\"><p><b>TQMx110EB-AD</b></p>\n</td>\n<td>Intel® Xeon® W-11865MRE (8-Core, 2.6/4.7 GHz, 24 MB, 32 EU, ECC, 24/7, RT, eTEMP, 35/45 W TDP), RM590E, DDR4-ECC-Support, no onboard SSD, TPM 2.0, industrial use conditions with I-Temp</td>\n</tr><tr><td style=\"width:159px;\"><p><b>TQMx110EB-AE</b></p>\n</td>\n<td>Intel® Xeon® W-11555MRE (6-Core, 2.6/4.5 GHz, 12 MB, 32 EU, ECC, 24/7, RT, eTEMP, 35/45 W TDP), RM590E, DDR4-ECC-Support, no onboard SSD, TPM 2.0, industrial use conditions I-Temp</td>\n</tr><tr><td style=\"width:159px;\"><p><b>TQMx110EB-AF</b></p>\n</td>\n<td>Intel® Xeon® W-11155MRE (4-Core, 2.4/4.4 GHz, 8 MB, 16 EU, ECC, 24/7, RT, eTEMP, 35/45 W TDP), RM590E, DDR4-ECC-Support, no onboard SSD, TPM 2.0, industrial use conditions I-Temp</td>\n</tr><tr><td style=\"width:159px;\"><p><b>TQMx110EB-AG</b></p>\n</td>\n<td>Intel® Xeon® W-11865MLE (8-Core, 1.5/4.5 GHz, 24 MB, 32 EU, ECC, 24/7, RT, 25 W TDP), RM590E, DDR4-ECC-Support, no onboard SSD, TPM 2.0, industrial use conditions C-Temp</td>\n</tr><tr><td style=\"width:159px;\"><p><b>TQMx110EB-AH</b></p>\n</td>\n<td>Intel® Xeon® W-11555MLE (6-Core, 1.9/4.4 GHz, 12 MB, 32 EU, ECC, 24/7, RT, 25 W TDP), &nbsp;RM590E,DDR4-ECC-Support, no onboard SSD, TPM 2.0, industrial use conditions C-Temp</td>\n</tr><tr><td style=\"width:159px;\"><p><b>TQMx110EB-AI</b></p>\n</td>\n<td>Intel® Xeon® W-11155MLE (4-Core, 1.8/3.1 GHz, 8 MB, 16 EU, ECC, 24/7, RT, 25 W TDP), RM590E, DDR4-ECC-Support, no onboard SSD, TPM 2.0, industrial use conditions C-Temp</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:52:24 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

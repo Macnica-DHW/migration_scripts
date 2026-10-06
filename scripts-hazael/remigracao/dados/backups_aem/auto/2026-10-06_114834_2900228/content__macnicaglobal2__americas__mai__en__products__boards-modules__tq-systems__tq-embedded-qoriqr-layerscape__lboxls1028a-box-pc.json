@@ -1,0 +1,222 @@
+{
+ "quando": "2026-10-06T12:06:23",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-qoriqr-layerscape/lboxls1028a-box-pc",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-qoriqr-layerscape/lboxls1028a-box-pc/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "LBoxLS1028A Box PC",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "LBOXLS1028A-BOX-PC",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:39 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:34:41 GMT+0000",
+  "jcr:description": "The LBoxLS1028A is an embedded BoxPC designed as a cost-effective and compact solution platform, featuring a high-speed 4-port TSN Gigabit Ethernet switch to",
+  "keywords": "BoxPC, Layerscape LS1028A, TSN Gigabit Ethernet, 3D GPU, real-time computing",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-qoriqr-layerscape/lboxls1028a-box-pc",
+  "hideInNav": "true",
+  "pageTitle": "LBoxLS1028A Box PC",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "LBoxLS1028A Box PC",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap_novo": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/qoriqr/LBoxLS1028A.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "LBoxLS1028A board",
+      "text": "<h1>Powered by the Layerscape LS1028A processor for a cost-effective and small solution platform</h1>\n<p>The LBoxLS1028A is an embedded BoxPC designed as a cost-effective and compact solution platform, featuring a high-speed 4-port TSN Gigabit Ethernet switch to meet real-time requirements. It is powered by the Layerscape LS1028A processor, its features include graphics with 3D GPU and 4K support, an extended temperature range, low power consumption, and safety functions. With extensive memory options, including DDR4-SDRAM and eMMC, this BoxPC offers flexibility and high-performance capabilities. It also includes multiple communication interfaces such as Ethernet, USB, CAN, and SATA, making it suitable for a wide range of applications. The modular design of the LBoxLS1028A allows engineers to integrate and develop custom hardware solutions, making it a versatile choice for embedded computing projects.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Tue Sep 01 2026 10:38:02 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/qoriqr/LBoxLS1028A.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Tue Sep 01 2026 10:38:02 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li>High-speed 4-port TSN Gigabit Ethernet switch</li>\n<li>Graphics with 3D GPU and 4K support</li>\n<li>Wide temperature range</li>\n<li>Low power consumption</li>\n<li>Modular and customizable design</li>\n</ul>",
+      "jcr:lastModified": "Tue Sep 01 2026 10:29:56 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>Layerscape LS1028A</li>\n<li>Layerscape LS1018A</li>\n<li>Layerscape LS1027A</li>\n<li>Layerscape LS1017A</li>\n<li>CPU JTAG interface</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>DDR4: DDR4-SDRAM: Up to 8 GB</li>\n<li>EEPROM: 0/256 kbit</li>\n<li>Quad SPI NOR: Up to 512 MB</li>\n<li>eMMC: Up to 64 GB</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>eDP/DP Phy</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Ethernet:<ul>\n<li>1x 4 Port TSN Ethernet Switch up to 1 Gbit</li>\n<li>1x TSN Ethernet 1 Gbit</li>\n<li>1x Ethernet 1 Gbit</li>\n</ul>\n</li>\n<li>SATA: 1x SATA 3.0 (M.2)</li>\n<li>CAN: 2x CAN</li>\n<li>USB:<ul>\n<li>1x USB 3.0</li>\n<li>1x USB 3.0 OTG</li>\n<li>USB-Debug (RS232)</li>\n</ul>\n</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>PCIe: 1x SIM Card (mini PCIe)</li>\n<li>SD Card:<ul>\n<li>1x Micro SD card socket</li>\n<li>1x SDIO/MMC</li>\n</ul>\n</li>\n<li>SPI: Up to 2x SPI</li>\n<li>I2C: Up to 1x I2C</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Power supply: 16 - 28 V DC</li>\n<li>Temperature sensor</li>\n<li>Temperature range: Extended temperature: -40°C…+70°C</li>\n<li>Dimensions: 170 x 103 x 35 mm</li>\n</ul>\n</td>\n</tr><tr><td><b>OS</b></td>\n<td><ul>\n<li>Linux</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Tue Sep 01 2026 10:38:12 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td width=\"20%\" style=\"width:180px;\"><p><b>LBox-LS1028A-AA</b></p>\n</td>\n<td><ul>\n<li>Prototypes available.<br>\nLBox-LS1028A with MBLS1028A-IND-AA, TQMLS1028A, Dual CortexR-A72/1.3 GHz, 64 MB Q-SPI NOR<br>\nFlash, 1 GB DDR4, 32-kB EEPROM, -40°C…+70°C, 2x USB 3.0, 1x USB 3.0 OTG, 2x ETH 10/100/1000, 1x 4 Port TSN Switch, 1x eDP, 2x CAN, 1x Mini PCIe (SIM-Card), 1x SATA M.2, USB-Debug Interface, JTAG RTC, Temperature sensor, Reset-Button, SD-Card interface</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:180px;\"><p><b>LBox-LS1028A-set</b></p>\n</td>\n<td><ul>\n<li>The LBox-LS1028A set is delivered with the MBLS1028-IND and TQMLS1028A module based on CortexR-A72 CPU from NXP. The components contained in the single board computer constitute a modular system enabling you to develop your own product ideas.</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Tue Sep 01 2026 10:38:22 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

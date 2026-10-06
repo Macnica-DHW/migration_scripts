@@ -1,0 +1,226 @@
+{
+ "quando": "2026-10-06T12:13:44",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/combox-v8-fanless-industrial-boxpc",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/combox-v8-fanless-industrial-boxpc/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "COMBox-V8 Fanless industrial BoxPC",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "COMBOX-V8-FANLESS-INDUSTRIAL-BOXPC",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:42 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:34:54 GMT+0000",
+  "jcr:description": "The COMBox-V8, a fanless industrial BoxPC, is a robust and versatile solution designed for industrial applications, catering to the demands of Smart",
+  "keywords": "8th Generation Intel Core Processor, Quad Core CPU, DDR4 Memory, High-Speed I/O, Fast Data Transfer, High-Resolution Display, Customizable Storage, Industrial BoxPC, Smart Manufacturing, Industrial IoT Solutions",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/combox-v8-fanless-industrial-boxpc",
+  "hideInNav": "true",
+  "pageTitle": "COMBox-V8 Fanless industrial BoxPC",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "COMBox-V8 Fanless industrial BoxPC",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 18:07:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Thu Aug 27 2026 21:09:01 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/COMBox-V8 Fanless industrial BoxPC.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "COMBox-V8",
+      "text": "<h1>8th Generation Intel® Core™ Processor</h1>\n<p><span style=\"letter-spacing: 0px;\">The COMBox-V8, a fanless industrial BoxPC, is a robust and versatile solution designed for industrial applications, catering to the demands of Smart Manufacturing and Industrial IoT. At its core lies the power of the 8th Generation Intel® Core™ Processor, offering exceptional performance with up to Quad Core clock speeds of 4.4 GHz and 8 MB cache. This processing prowess, combined with fast DDR4-2400 Dual-Channel Memory supporting up to 64 GByte, ensures seamless handling of both high-demanding applications and AI-driven solutions.</span></p>\n<p>The COMBox-V8 fanless industrial BoxPC boasts high-speed I/O capabilities, including 2x GBit ETH and 4x USB3.1 Gen 2 (10 GBit/s) ports, facilitating efficient data transfer and connectivity. Its two independent high-resolution display outputs further enhance its versatility. The system also offers flexible storage configurations, accommodating M.2 NVMe and 2.5” SSD options.</p>\n<p>With a fanless design and low power dissipation, the COMBox-V8 is well-suited for challenging industrial environments. Its modular design, expansion options via M.2 and Mini PCIe, and customizable sheet metal chassis provide an optimal platform for tailored configurations and adaptations. Additionally, the integration of Intel Core 8th generation mobile processors ensures high computing and graphics performance, making it suitable for a wide range of industrial applications.</p>\n<p>The COMBox-V8 fanless industrial BoxPC is a dependable choice for FPGA engineers seeking industrial-grade computing solutions, offering reliability, performance, and adaptability for demanding industrial scenarios.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Wed Sep 02 2026 11:11:38 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/COMBox-V8 Fanless industrial BoxPC.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Wed Sep 02 2026 11:11:38 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li><b>Quad Core 4.4 GHz Processor</b>: High-performance 8th Generation Intel® Core™ Processor with quad-core architecture for robust computing.</li>\n<li><b>Up to 64 GByte DDR4 Memory</b>: Dual-channel DDR4-2400 memory support, providing ample memory capacity for data-intensive applications.</li>\n<li><b>High-Speed I/O</b>: Fast data transfer with 2x GBit ETH and 4x USB3.1 Gen 2 (10 GBit/s) ports.</li>\n<li><b>Versatile Display Outputs</b>: Two independent high-resolution DisplayPort outputs for flexible display configurations.</li>\n<li><b>Customizable Storage</b>: Individual mass storage configurations with M.2 NVMe and 2.5” SSD options, accommodating varying storage needs.</li>\n</ul>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:10:57 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>Core™ i7-8565UE (4x 1.7 / 4.4 GHz, 8 M, 15 W)</li>\n<li>Core™ i5-8365UE (4x 1.6/4.1 GHz, 6 MB, 15 W)</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>DDR4 - Dual Channel DDR4-2400 8 GByte, 16 GByte, 32 GByte, 64 GByte, non-ECC</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>2x DisplayPort (DP++) with up to 4K @ 60 Hz resolution</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Ethernet - 2x Gigabit Ethernet (Intel i210)</li>\n<li>USB - 4x USB 3.1 Gen2&nbsp;</li>\n<li>SATA - 2x&nbsp;&nbsp;SATA 3.0 (up to 6 Gb/s)</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>PCIe - 1&nbsp; Mini PCIe full size</li>\n<li>M.2 - M.2 2230 Key E (PCIe and USB)</li>\n<li>SATA - 2.5’’ HDD/SSD socket (mounting kit available)</li>\n<li>Audio - 2x 3.5 mm (headphone out, microphone in)</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Dimensions - 190 x 174 x 68 mm</li>\n<li>Temperature range - Standard temperature: 0°C…+50°C</li>\n<li>Power supply - 12 V DC / Connector type: Phoenix MSTBA2,5/2-G-5,08</li>\n<li>Power consumption - Ptyp. 20 W/max. 80 W</li>\n</ul>\n</td>\n</tr><tr><td><b>OS</b></td>\n<td><ul>\n<li>Windows 10 (64 Bit, Standard and Embedded/IoT)</li>\n<li>Linux (e.g. Ubuntu)</li>\n<li>Others on request</li>\n<li>Custom specific software images can be pre-installed.</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:11:50 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td width=\"20%\" style=\"width:156px;\"><p><b>COMBox-V8-AA</b></p>\n</td>\n<td><ul>\n<li>IntelR Core™ i7-8565UE (4x 1.7 / 4.4 GHz, 8 M, 15 W), 16 GB DDR4, 32 GB eMMC, free slots for mass storage/IO/wireless, no TPM, no OS</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:156px;\"><p><b>COMBox-V8-AB</b></p>\n</td>\n<td><ul>\n<li>IntelR Core™ i5-8365UE (4x 1.6 / 4.1 GHz, 6 M, 15 W), 16 GB DDR4, 32 GB eMMC, free slots for mass storage/IO/wireless, no TPM, no OS</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:11:57 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

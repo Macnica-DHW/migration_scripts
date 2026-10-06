@@ -1,0 +1,257 @@
+{
+ "quando": "2026-10-06T11:57:50",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/starterkit-stka62xx",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/starterkit-stka62xx/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "Starterkit STKa62xx",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": [
+   "mai:business-categories/boards-modules"
+  ],
+  "pwaOrientation": "any",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "STARTERKIT-STKA62XX",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:46 GMT+0000",
+  "pwaDisplay": "standalone",
+  "cq:lastModified": "Mon Sep 21 2026 19:34:02 GMT+0000",
+  "jcr:description": "The Embedded Starterkit STKa62xx serves as an evaluation kit based on the TQMa62xx and TQMa62xxL embedded modules. These modules are rooted in the Texas",
+  "pwaCachestrategy": "staleWhileRevalidate",
+  "keywords": "FPGA, Power-Efficient Architecture, High-Speed I/O, Digital Signal Processing, Reliability, Scalability, Custom",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/starterkit-stka62xx",
+  "hideInNav": "true",
+  "pageTitle": "Starterkit STKa62xx",
+  "cq:tags": [
+   "mai:manufacturers/tq-systems"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Starterkit STKa62xx",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap_novo": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/STKa62xx.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "Starterkit STKa62xx",
+      "text": "<h1>Evaluation kit based on TQMa62xx(L)</h1>\n<p>The Embedded Starterkit STKa62xx serves as an evaluation kit based on the TQMa62xx and TQMa62xxL embedded modules. These modules are rooted in the Texas Instruments AM62xx processor family, offering a range of options, including Quad, Dual, or Single Cortex A53 configurations. The modules are known for their enhanced computing capabilities and scalable graphics performance, making them suitable for diverse applications.</p>\n<p><span style=\"letter-spacing: 0px;\">This kit provides engineers with hands-on experience, allowing them to harness the power of these AM62xx modules effectively. It supports Gigabit Ethernet with Time-Sensitive Networking (TSN) capability, making it versatile for a range of networking scenarios. The kit offers multiple interfaces, including LVDS, CSI camera support, and audio capabilities, ensuring it caters to various requirements.</span></p>\n<p>Furthermore, the kit includes features like USB OTG, USB 2.0 ports, SD-card support, SIM card compatibility, and RS485, expanding its utility across different applications. Notably, it also supports CAN-FD, analog frontends, digital I/O, WiFi, Bluetooth, and mobile network connectivity.</p>\n<p>One of the key advantages of the kit is its low power consumption, typically operating within the 1-2W range. Additionally, it incorporates integrated security functions, enhancing the overall security of the system.</p>\n<p>In summary, the Embedded Starterkit STKa62xx offers FPGA engineers the opportunity to explore and evaluate the capabilities of the TQMa62xx and TQMa62xxL embedded modules powered by Texas Instruments' AM62xx processors in real-world scenarios, making it a valuable tool for developing and testing advanced computing and graphics applications.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Mon Aug 31 2026 23:30:48 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/STKa62xx.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Mon Aug 31 2026 23:30:48 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li><b>Power-Efficient FPGA Architecture: </b>Utilizes a power-efficient FPGA architecture to minimize energy consumption and heat generation.</li>\n<li><b>High-Speed I/O Interfaces: </b>Offers high-speed I/O interfaces, including PCIe, Ethernet, and USB, for seamless data transfer and connectivity.</li>\n<li><b>Advanced DSP Capabilities: </b>Provides advanced digital signal processing capabilities to handle complex algorithms and signal processing tasks.</li>\n<li><b>Robust Design for Reliability:</b> Designed with robust components and features for high reliability in demanding applications.</li>\n<li><b>Scalability and Customization: </b>Allows for scalability and customization, enabling engineers to tailor FPGA solutions to their specific needs</li>\n</ul>",
+      "jcr:lastModified": "Mon Aug 31 2026 23:29:54 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>AM6254</li>\n<li>AM6252</li>\n<li>AM6251</li>\n<li>AM6234</li>\n<li>AM6232</li>\n<li>AM6231</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>LPDDR4-SDRAM: Up to 2GB</li>\n<li>EEPROM: 0/64-kbit</li>\n<li>eMMC: Up to 64 GB</li>\n<li>NOR Flash: Up to 256 MB</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>1x LVDS (4 lanes)</li>\n<li>1x CSI camera sensor</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Ethernet: Up to 2 Gbit-Ethernet (TSN / PoE capable)</li>\n<li>CAN: 2x CAN FD (galv. Isolated)</li>\n<li>USB: Up to 2x USB 2.0 Up to 1x USB 2.0 OTG interface</li>\n<li>Interfaces:<ul>\n<li>8x programmable Analog Input</li>\n<li>4x Digital 24 Output</li>\n<li>4x Digital 24V Input</li>\n</ul>\n</li>\n<li>Serial Ports: Up to 1x RS485</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>SD Card: 1x Micro SD-Card</li>\n<li>SIM: 1x SIM card</li>\n<li>I2C: Up to 6x I2C</li>\n<li>MCSPI: Up to 5x MCSPI</li>\n<li>SPI: Up to 1x OSPI or QSPI</li>\n<li>PWM frequency: Up to 3x PWM</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Power supply: 16 - 26 V</li>\n<li>Dimensions: 170 mm x 170 mm</li>\n<li>Temperature range:<ul>\n<li>Standard temperature range: -25°C…+85°C</li>\n<li>Extended temperature range: -40°C...+85°C</li>\n</ul>\n</li>\n</ul>\n</td>\n</tr><tr><td><b>OS</b></td>\n<td><ul>\n<li>Linux</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Mon Aug 31 2026 23:31:13 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td width=\"20%\" style=\"width:162px;\"><b>STKa62xx(L)-AA Prototypes Q3/2023</b></td>\n<td><ul>\n<li>STKa62xx(L) (Eval Kit) with TQMa62xx / TQMa62xxL + Adapter, Dual Cortex®- A53 / 1GHz, 2x Dual Cortex®-R5F/800 MHz, Cortex®- M4 / 400MHz, 8GB eMMC, 1GB SDRAM, 64 kB EEPROM, RTC, 1x LVDS, 1x CSI, Audio, 1x USB 2.0 OTG, 2x USB 2.0, 1x USB debug, 2x ETH 10/100/1000 (TSN/ POE capable), 2x CAN FD, 1x RS485, 1x Temperature sensor, GPIOs (4x 24V_IN, 4x 24V_OUT, 8x AI_IN), WIFI/ BT, Mobile Network, Reset-Button, SD Card interface, Power Supply, 4 GB SD card, Cables</li>\n</ul>\n</td>\n</tr><tr><td width=\"25%\" style=\"width:162px;\"><b>Starterkit STKa62xx(L) set</b></td>\n<td><ul>\n<li>The core of the STKa62xx(L) set is the TQMa62xx and TQMa62xxL module with a Dual Cortex®-A53 / R5F CPU. The components contained in the starter kit constitute a modular system enabling you to develop your own product ideas. To develop your own hardware you can use the certified and qualified circuit components of the starter kit in your own designs.</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Mon Aug 31 2026 23:31:22 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498054937"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  },
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 01:06:03 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "false"
+  },
+  "manufacturerlogo": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 01:06:03 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "false"
+  },
+  "pd_downloadAsset": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 01:06:03 GMT+0000"
+  },
+  "pd_productFamilyImage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 01:06:03 GMT+0000"
+  },
+  "pd_technologyImage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 01:06:03 GMT+0000"
+  }
+ }
+}

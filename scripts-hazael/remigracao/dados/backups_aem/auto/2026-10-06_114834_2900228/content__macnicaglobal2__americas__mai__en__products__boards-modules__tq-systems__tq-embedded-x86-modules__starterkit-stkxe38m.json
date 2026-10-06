@@ -1,0 +1,226 @@
+{
+ "quando": "2026-10-06T12:17:38",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkxe38m",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkxe38m/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "Starterkit STKxE38M",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "STARTERKIT-STKXE38M",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:43 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:35:03 GMT+0000",
+  "jcr:description": "The Embedded Starterkit STKxE38M is designed as an evaluation kit catering to the needs of embedded computing engineers. It's centered around the TQMxE38M",
+  "keywords": "Embedded Starterkit, TQMxE38M, Intel Atom® E3800, High Reliability, Ultra-Low Power, Customizable Expansion, uEFI BIOS, Robust Design.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkxe38m",
+  "hideInNav": "true",
+  "pageTitle": "Starterkit STKxE38M",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Starterkit STKxE38M",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 18:07:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Thu Aug 27 2026 21:09:01 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/Starterkit STKxE38M.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "Starterkit STKxE38M module",
+      "text": "<h1>Based on TQMxE38M Intel Atom® E3800 Bay Trail-I</h1>\n<p>The Embedded Starterkit STKxE38M is designed as an evaluation kit catering to the needs of embedded computing engineers. It's centered around the TQMxE38M platform, featuring the Intel Atom® E3800 (&quot;Bay Trail-I&quot;) processor. This kit stands out with its 24/7 certification for high reliability, making it optimized for ultra-low power applications. It comes equipped with TQMx86 board controllers that offer customizable expansion options through flexiCFG. With a powerful uEFI BIOS that includes Easy-Config, multi-setup, and touch support, this kit is designed for versatile usage. Its compact and robust design, along with the option for protective coating, extends its usability in rugged industry, railway, and aviation environments. Additionally, the low power consumption and extended temperature support make it suitable for outdoor applications.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Wed Sep 02 2026 11:42:05 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/Starterkit STKxE38M.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Wed Sep 02 2026 11:42:05 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li><b>High Reliability:</b> Achieves 24/7 certification for dependable operation.</li>\n<li><b>Ultra-Low Power</b>: Optimized for applications demanding minimal power consumption.</li>\n<li><b>Customizable Expansion:</b> Utilize TQMx86 board controllers for flexible and customized expansion options.</li>\n<li><b>Powerful uEFI BIOS:</b> Features an advanced uEFI BIOS with Easy-Config, multi-setup, and touch support.</li>\n<li><b>Robust Design:</b> Especially designed for durability and is robust in challenging environments.</li>\n</ul>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:41:29 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>Intel Atom® E3800 (Baytrail-I)</li>\n<li>E3815: 1x 1.46 GHz, 512 KB L2-Cache, 5 W</li>\n<li>E3805: 2x 1.33 GHz, 1 MB L2-Cache, 3 W, without graphics</li>\n<li>E3825: 2x 1.33 GHz, 1 MB L2-Cache, 6 W</li>\n<li>E3826: 2x 1.46 GHz, 1 MB L2-Cache, 7 W</li>\n<li>E3827: 2x 1.75 GHz, 1 MB L2-Cache, 8 W</li>\n<li>E3845: 4x 1.91 GHz, 2 MB L2-Cache, 10 W</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>DDR3L: 2-8 GB</li>\n<li>EEPROM - 32kbit</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>2x Digital Display Interface (DDI) for eDP 1.3, DP 1.1a, DVI, HDMI 1.4a or LVDS (with external converter)</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Ethernet - 1x Gigabit Ethernet (Intel i210)</li>\n<li>USB - 1 USB 3.0 | 3x USB 2.0 | 1 USB 3.0 Device</li>\n<li>Serial Ports - 2x Serial Port</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>PCIe - 3x PCIe 2.0</li>\n<li>LPC - LPC bus</li>\n<li>I2C</li>\n<li>SMBus</li>\n<li>SPI - SPI (for external UEFI BIOS flash)</li>\n<li>Audio - Intel HD Audio</li>\n<li>SATA - 2x SATA 2.0</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Dimensions - 84mm x 55mm</li>\n<li>Plug-in System - COM Express Mini, type 10</li>\n<li>Temperature range - Extended temperature: -40°C…+85°C</li>\n<li>Power supply - 4.75 V - 20 V / 4.75 V - 20 V Standby (optional) / 3 V Battery/GoldCAP (optional)</li>\n<li>Power consumption -&nbsp; typ. 3 - 6 W/max. 12W (Green ECO-Off: &lt; 0.1 W)</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:42:22 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"width:151px;\"><p><b>TQMxE38M-AI</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® E3845 (Quad Core, 1.91 GHz, 2 MB L2-Cache, HD Gfx 542/792 MHz, 10 W), 8GB DDR3L-1333 ECC, TPM 1.2,<br>\nStandard-Temp. 0..+60°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:151px;\"><p><b>TQMxE38M-AA</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® E3845 (Quad Core, 1.91 GHz, 2 MB L2-Cache, HD Gfx 542/792 MHz, 10 W), 4GB DDR3L-1333 ECC, TPM 1.2,<br>\nUSB 3.0 Device Support, Extended-Temp. -40..+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:151px;\"><p><b>TQMxE38M-AG</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® E3845 (Quad Core, 1.91 GHz, 2 MB L2-Cache, HD Gfx 542/792 MHz, 10 W), 4GB DDR3L-1333 ECC, TPM 1.2,<br>\nUSB 3.0 Device Support, Standard-Temp. 0..+60°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:151px;\"><p><b>TQMxE38M-AH</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® E3827 (Dual Core, 1,75 GHz, 1 MB L2-Cache, HD Gfx 542/792 MHz, 8 W), 4GB DDR3L-1333 ECC, Extended-Temp. -40..+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:151px;\"><p><b>TQMxE38M-AB</b></p>\n</td>\n<td><ul>\n<li>Intel Atom® E3827 (Dual Core, 1,75 GHz, 1 MB L2-Cache, HD Gfx 542/792 MHz, 8 W), 4GB DDR3L-1333 ECC, Standard-Temp. 0..+60°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:151px;\"><p><b>Evaluation platform MB-COME10-1</b></p>\n</td>\n<td><ul>\n<li>Mainboard for COM Express™ Minimodules, Type 10 Interfaces: DP, eDP/LVDS, 2x Gb Ethernet, 4x USB, USB device, 3x COM, audio, mini PCIe, mSATA, 2.5“ SSD, SD card, riser extension with PCIe and USB, fan, debug, 170 mm x 170 mm</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:151px;\"><p><b>STKxE38M</b></p>\n</td>\n<td><ul>\n<li>Starterkit Set with Mainboard MB-COME10-1-AA, Module (TQMxE38M-xx) (please specify exact Version), Cooling solution (Heat spreader), Accessories</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:42:32 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

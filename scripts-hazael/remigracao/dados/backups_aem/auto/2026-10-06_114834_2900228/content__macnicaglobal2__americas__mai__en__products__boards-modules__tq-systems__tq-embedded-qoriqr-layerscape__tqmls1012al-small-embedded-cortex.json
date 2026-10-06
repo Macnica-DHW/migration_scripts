@@ -1,0 +1,236 @@
+{
+ "quando": "2026-10-06T12:05:12",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-qoriqr-layerscape/tqmls1012al-small-embedded-cortex",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-qoriqr-layerscape/tqmls1012al-small-embedded-cortex/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "TQMLS1012AL Small Embedded Cortex-A53 module",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "TQMLS1012AL-SMALL-EMBEDDED-CORTEX",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:38 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:34:46 GMT+0000",
+  "jcr:description": "The TQMLS1012A is an embedded module powered by a single Cortex-A53 processor variant, the LS1012A. With a clock speed of up to 1GHz, this module is designed",
+  "keywords": "Embedded Module, Cortex-A53, LS1012A, DDR3L, Communication Interfaces",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-qoriqr-layerscape/tqmls1012al-small-embedded-cortex",
+  "hideInNav": "true",
+  "pageTitle": "TQMLS1012AL Small Embedded Cortex-A53 module",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "TQMLS1012AL Small Embedded Cortex-A53 module",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Wed Aug 26 2026 20:01:46 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "TQMLS1012AL Small Embedded Cortex-A53 module",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h1",
+      "jcr:lastModified": "Wed Aug 26 2026 20:54:26 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_imagem_cop": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/qoriqr/TQMLS1012AL.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "tqmls1012al board",
+      "text": "<h1>Based on a Single Cortex-A53 LS1012A processor</h1>\r\n<p>The TQMLS1012A is an embedded module powered by a single Cortex-A53 processor variant, the LS1012A. With a clock speed of up to 1GHz, this module is designed for applications where a balance between power efficiency and processing capability is crucial. Equipped with up to 1GB of DDR3L memory, it ensures smooth and efficient data handling. It offers an array of communication interfaces, including two 10/100/1000 Mbit Ethernet ports, USB 2.0 and 3.0, UART RS232 ports, I2C, SPI, I2S, SATA 3.0, PCIe, and SDIO/MMC. The module operates in an extended temperature range of -40°C to +85°C, making it suitable for challenging environments.</p>\r\n",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Sep 17 2026 19:24:00 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/qoriqr/TQMLS1012AL.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Thu Sep 17 2026 19:24:00 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features_c": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\r\n<ul>\r\n<li>Single Cortex-A53 LS1012A processor with up to 1GHz clock speed.</li>\r\n<li>1GB DDR3L memory for efficient data handling.</li>\r\n<li>Versatile communication interfaces, including Ethernet, USB, UART RS232, and more.</li>\r\n<li>Extended temperature range for rugged applications.</li>\r\n<li>Compact LGA form factor with a temperature sensor.</li>\r\n</ul>\r\n",
+      "jcr:lastModified": "Thu Sep 17 2026 19:26:32 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_1954232576": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Wed Aug 26 2026 20:02:48 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h4",
+      "jcr:lastModified": "Wed Aug 26 2026 20:09:53 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       "1718280237031"
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table height=\"100%\" width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\n<tbody><tr><td>CPU</td>\n<td><ul>\n<li>CPU/Processor: Single Cortex®-A53 - Up to 1GHz</li>\n<li>CPU variant: LS1012A</li>\n</ul>\n</td>\n</tr><tr><td>Memory</td>\n<td><ul>\n<li>DDR3L: Up to 1 GB</li>\n<li>Quad SPI NOR: Up to 2x QSPI (NOR Flash)<ul>\n<li>Up to 256 MB</li>\n</ul>\n</li>\n<li>EEPROM: 0/64-kbit</li>\n</ul>\n</td>\n</tr><tr><td>Communications Interfaces</td>\n<td><ul>\n<li>Ethernet: Up to 2x Ethernet 10/100/1000 Mbit</li>\n<li>Serial Ports: Up to 2x UART RS232</li>\n<li>USB:<ul>\n<li>1x USB 2.0</li>\n<li>1x USB 3.0</li>\n</ul>\n</li>\n</ul>\n</td>\n</tr><tr><td>Other Interfaces</td>\n<td><ul>\n<li>I2C: Up to 2x I2C</li>\n<li>SPI: Up to 1x SPI</li>\n<li>I2S: Up to 5x I²S</li>\n<li>SATA: Up to 1x SATA 3.0</li>\n<li>PCIe: Up to 1x PCIe</li>\n<li>SD Card: Up to 2x SDIO/MMC</li>\n</ul>\n</td>\n</tr><tr><td>General</td>\n<td><ul>\n<li>Dimensions: 31 mm x 31 mm</li>\n<li>Temperature sensor</li>\n<li>Plug-in System: LGA (Land Grid Array) 155 Pins</li>\n<li>Power supply: 3.3 V</li>\n<li>Temperature range: Extended temperature: -40°C…+85°C</li>\n</ul>\n</td>\n</tr><tr><td>OS</td>\n<td><ul>\n<li>Linux</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Aug 26 2026 20:56:21 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_1013667377": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "- Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h4",
+      "jcr:lastModified": "Wed Aug 26 2026 20:11:24 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_892841596": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"1\">\n<tbody><tr><td width=\"20%\"><p>TQMLS1012AL-AA</p>\n</td>\n<td><ul>\n<li>with LS1012A / Cortex® A53 / 1000 MHz, 64 MB QSPI NOR Flash, 512 MB DDR3L, 64 kB EEPROM, RTC, -40°C...+85°C, with Encryption</li>\n</ul>\n</td>\n</tr><tr><td><p>TQMLS1012AL-AB</p>\n</td>\n<td><ul>\n<li>with LS1012A / Cortex® A53 / 1000 MHz, 64 MB QSPI NOR Flash, 512 MB DDR3L, 64 kB EEPROM, RTC, -40°C...+85°C, without Encryption</li>\n</ul>\n</td>\n</tr><tr><td><p>STKLS1012AL-AA</p>\n</td>\n<td><ul>\n<li>STKLS1012AL-AA, TQMLS1012A, Cortex®A53/1GHz, 64 MB Q-SPI NOR Flash, 512 MB DDR3L, 64 kB EEPROM, -20°C…+70°C, 2x USB 3.0, 5x ETH 10/100/1000, 2x Mini PCIe (1x only USB, SIM-Card), 1x SATA M.2, USB –Debug Interface, JTAG RTC, Temperature sensor, Reset-Button, SD-Card interface, Power Supply, 4 GB SD card, Cables</li>\n</ul>\n</td>\n</tr><tr><td><p>STKLS1012AL-SET</p>\n</td>\n<td><ul>\n<li>The core of the STKLS1012AL set is the TQMLS1012AL module with Cortex®-A53 CPU. The components<br>\ncontained in the starter kit constitute a modular system enabling you to develop your own product<br>\nideas. To develop your own hardware you can use the certified and qualified circuit components of thestarter<br>\nkit in your own designs.</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Aug 26 2026 20:56:45 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065_": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

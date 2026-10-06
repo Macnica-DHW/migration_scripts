@@ -1,0 +1,226 @@
+{
+ "quando": "2026-10-06T12:16:44",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkxe39c1",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkxe39c1/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "Starterkit STKxE39C1",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "STARTERKIT-STKXE39C1",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:43 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:35:03 GMT+0000",
+  "jcr:description": "The Embedded Starterkit STKxE39C1 is an evaluation kit tailored to embedded computing engineers. It's built on the TQMxE39C1 platform, featuring Intel Atom®",
+  "keywords": "Embedded Starterkit, TQMxE39C1, Intel Atom® x5/x7 E3900, Apollo Lake-I, Triple Display Support, Dual/Quad-Core Processors, High-Speed Gigabit Ethernet, Compact Design, Robust Design, Flexible Storage.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/starterkit-stkxe39c1",
+  "hideInNav": "true",
+  "pageTitle": "Starterkit STKxE39C1",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Starterkit STKxE39C1",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 18:07:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Thu Aug 27 2026 21:09:01 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/Starterkit STKxE39C1.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "Starterkit STKxE39C1 module",
+      "text": "<h1>Based on TQMxE39C1 Intel Atom® x5/x7 E3900 Apollo Lake-I</h1>\n<p>The Embedded Starterkit STKxE39C1 is an evaluation kit tailored to embedded computing engineers. It's built on the TQMxE39C1 platform, featuring Intel Atom® x5/x7 E3900 processors (Apollo Lake-I). This kit supports triple display outputs with DP/HDMI (up to 4K UHD) and eDP/LVDS interfaces, delivering impressive visual performance. Powered by dual/quad-core processors capable of speeds up to 2.5 GHz, it is designed for applications in real-time computing, industrial automation, digital surveillance, aviation, medical, and retail. The module follows the international PICMG standard COM Express® Compact (COM.0 R2.1) with type 6 pinout, ensuring compatibility. Additionally, it offers high-resolution graphics output, 3D processing, and robust video encoding and playback, making it suitable for diverse applications.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Wed Sep 02 2026 11:43:37 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/Starterkit STKxE39C1.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Wed Sep 02 2026 11:43:37 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li><b>Triple Display Support</b>: Provides support for up to three displays with DP/HDMI (4K UHD) and eDP/LVDS interfaces.</li>\n<li><b>Dual/Quad-Core Processors</b>: Equipped with powerful processors capable of speeds up to 2.5 GHz.</li>\n<li><b>High-Speed Gigabit Ethernet</b>: Enables efficient high-speed network communication.</li>\n<li><b>Compact and Robust Design</b>: Designed for ruggedized applications, with options for protective coating.</li>\n<li><b>Flexible Storage</b>: Offers onboard eMMC storage options and flexibility for LVDS or native eDP.</li>\n</ul>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:43:01 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>Intel Atom® x5/x7 E3900 (Apollo Lake-I)</li>\n<li>x5-E3930 2x 1.3/1.8 GHz, 6.5 W</li>\n<li>x5-E3940 4x 1.6/1.8 GHz, 9.5 W</li>\n<li>x7-E3950 4x 1.6/2.0 GHz, 12 W</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>DDR3L - 4/8 GB</li>\n<li>EEPROM - 32kbit</li>\n<li>eMMC 8-64 GB</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>2x Digital Display Interface (DDI) for DP 1.2a, HDMI 1.4b</li>\n<li>1x eDP 1.4/Dual Channel LVDS</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Ethernet - 1 Gigabit Ethernet (Intel i210)</li>\n<li>USB - 3x USB 3.0 | 5x USB 2.0</li>\n<li>Serial Ports - 2x Serial port</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>PCIe - 4x PCIe 2.0</li>\n<li>LPC - LPC</li>\n<li>I2C</li>\n<li>SMBus</li>\n<li>SPI - SPI (for external UEFI BIOS flash)</li>\n<li>Audio - Intel HD Audio</li>\n<li>GPIO - 8x GPIO&nbsp;</li>\n<li>SD Card: 1x SD Card</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Dimensions - 95mm x 95mm</li>\n<li>Plug-in System - COM Express Compact, Type 6</li>\n<li>Temperature range - Extended temperature: -40°C…+85°C</li>\n<li>Power supply - 4.75 V - 20 V / 4.75 V - 20 V Standby (optional) / 3 V Battery for RTC</li>\n<li>Power consumption - Power: typ. 3 - 8 W/max. 14 W (Green ECO-Off: &lt; 0.1 W)</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:43:48 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"width:158px;\"><p><b>TQMxE39C1-AA (“Premium“)</b></p>\n</td>\n<td><ul>\n<li>Intel Atom x7-E3950 (4x 1.6/2.0GHz, 2MB Cache, 12W TDP), 8GB DDR3L, ECC, LVDS, 0GB eMMC, SDCard, Industrial-Temp. -40..+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:158px;\"><p><b>TQMxE39C1-AB (“Mainstream“)</b></p>\n</td>\n<td><ul>\n<li>Intel Atom x5-E3940 (4x 1.6/1.8GHz, 2MB Cache, 9.5W TDP), 8GB DDR3L, ECC, LVDS, 0GB eMMC, SDCard, Industrial-Temp. -40..+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:158px;\"><p><b>TQMxE39C1-AC (“Entry“)</b></p>\n</td>\n<td><ul>\n<li>Intel Atom x5-E3930 (2x 1.3/1.8GHz, 2MB Cache, 6.5W TDP), 4GB DDR3L, ECC, eDP, 0GB eMMC, SDCard, Industrial-Temp. -40..+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:158px;\"><p><b>Evaluation platform MB-COME6-1</b></p>\n</td>\n<td><ul>\n<li>Mainboard for COM Express™ Compact/Basic, Type 6 Interfaces: 2x DP++, eDP/LVDS, 2x Gb ethernet, 2x USB 3.0, 3x USB 2.0, 3x COM, audio, mini PCIe, mSATA, 2,5“ SSD, CFast, riser extension with 2x PCIe and USB, fan, debug, 170 mm x 170 mm</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 11:44:11 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

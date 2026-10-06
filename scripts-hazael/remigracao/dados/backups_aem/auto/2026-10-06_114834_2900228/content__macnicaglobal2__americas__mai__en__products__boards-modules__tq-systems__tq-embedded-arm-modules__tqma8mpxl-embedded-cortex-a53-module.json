@@ -1,0 +1,223 @@
+{
+ "quando": "2026-10-06T12:01:48",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma8mpxl-embedded-cortex-a53-module",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma8mpxl-embedded-cortex-a53-module/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "TQMa8MPxL Embedded Cortex®-A53 module",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "TQMA8MPXL-EMBEDDED-CORTEX-A53-MODULE",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Thu Sep 17 2026 15:11:35 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:34:27 GMT+0000",
+  "jcr:description": "The TQMa8MP based on the i.MX 8M Plus supports with many features and an integrated NPU (Neural Processor Unit) with up to 2.3 TOPS and an IPU (Image Processor Unit) with 2x 187 MPix in the implementation of applications where artificial intelligence, machine learning/vision is to be applied.A GPU and several graphic interfaces are available for graphically demanding applications. For real-time and security the CPU is supported by a Cortex M7 controller.",
+  "keywords": "TQMa8MPxL, Cortex-R5F module, Texas Instruments M7, embedded computing, real-time applications, communication interfaces, versatile memory, compact design.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma8mpxl-embedded-cortex-a53-module",
+  "hideInNav": "true",
+  "pageTitle": "TQMa8MPxL Embedded Cortex®-A53 module",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "pd_description": "The TQMa8MP based on the i.MX 8M Plus supports with many features and an integrated NPU (Neural Processor Unit) with up to 2.3 TOPS and an IPU (Image Processor Unit) with 2x 187 MPix in the implementation of applications where artificial intelligence, machine learning/vision is to be applied.A GPU and several graphic interfaces are available for graphically demanding applications. For real-time and security the CPU is supported by a Cortex M7 controller.",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "TQMa8MPxL Embedded Cortex®-A53 module",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap_novo": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/TQMa8MPxL Embedded Cortex®-A53 module%0A.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "TQMa8MPxL board",
+      "text": "<h1>Embedded Cortex®-A53 Module based on i.MX 8M Plus with machine learning hardware support</h1>\n<p>The TQMa8MP based on the i.MX 8M Plus supports with many features and an integrated NPU (Neural Processor Unit) with up to 2.3 TOPS and an IPU (Image Processor Unit) with 2x 187 MPix in the implementation of applications where artificial intelligence, machine learning/vision is to be applied. A GPU and several graphic interfaces are available for graphically demanding applications. For real-time and security the CPU is supported by a Cortex M7 controller.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Tue Sep 01 2026 03:34:27 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/TQMa8MPxL Embedded Cortex®-A53 module%0A.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Tue Sep 01 2026 03:34:27 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li>Arm® Cortex® A53 based on i.MX 8M Plus</li>\n<li>Advanced Audio properties with HiFi4 DSP</li>\n<li>Machine Learning Accelerator 2.3 TOPS</li>\n<li>Integrated Cortex®-M7</li>\n<li>High-speed communication via 2x Gbit Ethernet (1x TSN), 1x PCle and 2x USB 3.0 interface</li>\n<li>Low power consumption (typ. 4 W)</li>\n<li>Integrated security functions</li>\n</ul>",
+      "jcr:lastModified": "Tue Sep 01 2026 03:33:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><p>CPU/Processor:</p>\n<ul>\n<li>Cortex®-A53 - Up to 1,8GHz</li>\n</ul>\n<p>CPU variant:</p>\n<ul>\n<li>i.MX 8M Plus Quad 8 ML/AI</li>\n<li>i.MX 8M Plus Quad 6 Video</li>\n<li>i.MX 8M Plus Quad 4 Lite</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><p>LPDDR4:</p>\n<ul>\n<li>Up to 8 GB</li>\n</ul>\n<p>Quad SPI NOR:</p>\n<ul>\n<li>Up to 256 MB</li>\n</ul>\n<p>eMMC:</p>\n<ul>\n<li>Up to 256 GB</li>\n</ul>\n<p>EEPROM:</p>\n<ul>\n<li>0/64-kbit</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><p>Graphic interface:</p>\n<ul>\n<li>LCD Interface: 1x MIPI DSI (4 Lanes), LVDS (4/8 Lanes), 1x HDMI 2.0a</li>\n</ul>\n<p>Camera interface:</p>\n<ul>\n<li>2x MIPI CSI2 (4 Lanes)</li>\n</ul>\n</td>\n</tr><tr><td><b>Communication interfaces</b></td>\n<td><p>Ethernet:</p>\n<ul>\n<li>Up to 2x Gbit-Ethernet (1x TSN)</li>\n</ul>\n<p>USB:</p>\n<ul>\n<li>Up to 2x USB 3.0</li>\n</ul>\n<p>CAN:</p>\n<ul>\n<li>Up to 2x CAN FD</li>\n</ul>\n<p>Serial Ports:</p>\n<ul>\n<li>Up to 4x UART</li>\n</ul>\n</td>\n</tr><tr><td><b>Other interfaces</b></td>\n<td><p>SD Card:</p>\n<ul>\n<li>Up to 3x SDIO / eMMC</li>\n</ul>\n<p>PCIe:</p>\n<ul>\n<li>Up to 1x PCIe 3.0</li>\n</ul>\n<p>I2C:</p>\n<ul>\n<li>Up to 6x I2C</li>\n</ul>\n<p>SPI:</p>\n<ul>\n<li>Up to 3x SPI</li>\n<li>Up to 1x QSPI</li>\n</ul>\n<p>I2S:</p>\n<ul>\n<li>Up to 18x I²S</li>\n</ul>\n<p>Audio:</p>\n<ul>\n<li>Up to 8x PDM Mic.</li>\n<li>Up to 1x SPDIF</li>\n</ul>\n<p>Debug:</p>\n<ul>\n<li>JTAG</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><p>Dimensions:</p>\n<ul>\n<li>38 x 38 mm</li>\n</ul>\n<p>Temperature range:</p>\n<ul>\n<li>Standard temperature range: -25°C - +85°C</li>\n<li>Extended temperature: -40°C - +85°C</li>\n</ul>\n<p>Plug-in System:</p>\n<ul>\n<li>LGA (Land Grid Array) 366 pins</li>\n</ul>\n<p>Power supply:</p>\n<ul>\n<li>5 V</li>\n</ul>\n</td>\n</tr><tr><td><b>OS</b></td>\n<td><p>OS Support:</p>\n<ul>\n<li>Linux</li>\n<li>Android on request</li>\n<li>Windows 10 IOT on request</li>\n<li>PikeOS™ (on request)</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Tue Sep 01 2026 03:34:38 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"width:175px;\"><b>TQMa8MPQLL-AA</b></td>\n<td><p>TQMa8MPQLL-AA, Quad 4 Lite Cortex®-A53/1.6 GHz, 16 GB eMMC Flash, 2 GB LPDDR4, 64 kB EEPROM, RTC, -25°C - +85°C</p>\n</td>\n</tr><tr><td style=\"width:175px;\"><b>TQMa8MPQL-AA</b></td>\n<td><p>TQMa8MPQL-AA, Quad 6 Video Cortex®-A53/1.6 GHz, 16 GB eMMC Flash, 2 GB LPDDR4, 64 kB EEPROM, RTC, -25°C - +85°C</p>\n</td>\n</tr><tr><td style=\"width:175px;\"><b>TQMa8MPQL-AB</b></td>\n<td><p>TQMa8MPQL-AB, Quad 8 ML/AI Cortex®-A53/1.6 GHz, 16 GB eMMC Flash, 2 GB LPDDR4, 64 kB EEPROM, RTC, -25°C - +85°C</p>\n</td>\n</tr><tr><td style=\"width:175px;\"><b>STKa8MPxL-AA</b></td>\n<td><p>STKa8MPxL (Eval Kit) with TQMa8MPxL-Ax, Quad Cortex®-A53/1.6 GHz, 2 GB LPDDR4, 16 GB eMMC Flash, 64 kB EEPROM, RTC, 2x USB 3.0 HOST, 1x USB 3.0 OTG, 2x ETH 10/100/1000, 2x CAN FD, 1x HDMI, 1x DP, 1x Dual LVDS, 2x MIPI CSI, 1x PCIe M.2 + SIM Card, Audio, GPIOs (4x 24V_IN, 4x 24V_OUT, 2x AI_IN) Temperature sensor, Reset-Button, Micro SD</p>\n</td>\n</tr><tr><td colspan=\"2\" style=\"width:175px;\"><b>Other configurations on request</b></td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Tue Sep 01 2026 03:34:46 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Wed Sep 16 2026 12:46:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

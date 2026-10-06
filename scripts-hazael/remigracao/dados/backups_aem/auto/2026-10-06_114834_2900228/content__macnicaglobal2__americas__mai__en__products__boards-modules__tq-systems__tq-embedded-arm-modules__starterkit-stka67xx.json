@@ -1,0 +1,195 @@
+{
+ "quando": "2026-10-06T12:00:09",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/starterkit-stka67xx",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/starterkit-stka67xx/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Starterkit STKa67xx",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "STARTERKIT-STKA67XX",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Thu Sep 17 2026 15:10:25 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:34:04 GMT+0000",
+  "jcr:description": "The evaluation kit STKa67xx based on the embedded module TQMa67xx and TQMa67xxL offers the latest processor family AM67xx (Quad /Dual Cortex A53 with up to 1.4GHz) from Texas Instruments. Whether connector or LGA module, both modules can be put into operation on the MBa67xx and their software development can be started. The modules are ideal for applications that require extended computing power and scalable graphics performance. Optional features such as AI, Vision ISP and a 3D GPU allow maximum flexibility for your application.The AM67x CPUs offer a variety of industrial interfaces, which are provided on the MBa67xx. These include 2x Gigabit Ethernet 1x Single Pair Ethernet 1000 Base-T1. In addition, the MBa67xx has various interfaces such as 1x LVDS, 1x Displayport, 1x DSI via FPC, 4x CSI camera (2xFPC 1x Dual MIPI CSI), 2x USB3.0, 2x CAN-FD, UART and MPCIe and much more. This makes the STKa67xx the ideal basis for your software development.",
+  "keywords": "FPGA, Power-Efficient Architecture, High-Speed I/O, Digital Signal Processing, Reliability, Scalability, Custom",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/starterkit-stka67xx",
+  "hideInNav": "true",
+  "pageTitle": "Starterkit STKa67xx",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "pd_description": "The evaluation kit STKa67xx based on the embedded module TQMa67xx and TQMa67xxL offers the latest processor family AM67xx (Quad /Dual Cortex A53 with up to 1.4GHz) from Texas Instruments. Whether connector or LGA module, both modules can be put into operation on the MBa67xx and their software development can be started. The modules are ideal for applications that require extended computing power and scalable graphics performance. Optional features such as AI, Vision ISP and a 3D GPU allow maximum flexibility for your application.The AM67x CPUs offer a variety of industrial interfaces, which are provided on the MBa67xx. These include 2x Gigabit Ethernet 1x Single Pair Ethernet 1000 Base-T1. In addition, the MBa67xx has various interfaces such as 1x LVDS, 1x Displayport, 1x DSI via FPC, 4x CSI camera (2xFPC 1x Dual MIPI CSI), 2x USB3.0, 2x CAN-FD, UART and MPCIe and much more. This makes the STKa67xx the ideal basis for your software development.",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Starterkit STKa67xx",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap_novo": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/STKa67xx.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "Starterkit STKa67xx",
+      "text": "<h1>Embedded Cortex®-A53 module based on TI AM67xx with AI, Vision ISP and 3D GPU for applications with enhanced computing &amp; scalable graphics performanc &amp; scalable graphics performance</h1>\n<p>The evaluation kit STKa67xx based on the embedded module TQMa67xx and TQMa67xxL offers the latest processor family AM67xx (Quad /Dual Cortex A53 with up to 1.4GHz) from Texas Instruments. Whether connector or LGA module, both modules can be put into operation on the MBa67xx and their software development can be started. The modules are ideal for applications that require extended computing power and scalable graphics performance. Optional features such as AI, Vision ISP and a 3D GPU allow maximum flexibility for your application. The AM67x CPUs offer a variety of industrial interfaces, which are provided on the MBa67xx. These include 2x Gigabit Ethernet 1x Single Pair Ethernet 1000 Base-T1. In addition, the MBa67xx has various interfaces such as 1x LVDS, 1x Displayport, 1x DSI via FPC, 4x CSI camera (2xFPC 1x Dual MIPI CSI), 2x USB3.0, 2x CAN-FD, UART and MPCIe and much more. This makes the STKa67xx the ideal basis for your software development.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Mon Aug 31 2026 23:35:20 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/STKa67xx.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Mon Aug 31 2026 23:35:20 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li>2x GBit Ethernet</li>\n<li>1x Single Pair Ethernet (1000 Base-T1)</li>\n<li>3x Display via LVDS, DP oder FPC</li>\n<li>4x CSI camera (2x FPC &amp; 1x MIPI CSI (dual))</li>\n<li>2x USB3.0, 2x CAN-FD, RS485, 1x MPCIe</li>\n<li>WIFI + BT, 1x SIM Card, SD Card</li>\n<li>Low power dissipation (typ. 3-5W)</li>\n</ul>",
+      "jcr:lastModified": "Mon Aug 31 2026 23:34:40 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy_558282354": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td width=\"20%\" style=\"width:130px;\"><b>STKa67xx(L)</b></td>\n<td>STKa67xx(L) (Eval Kit) with TQMa67xx / TQMa67xxL + Adapter, Quad Cortex®- A53 / 1,4GHz, Cortex®-R5F/800 MHz, 8GB eMMC, 2GB SDRAM, 64 kB EEPROM, RTC, 1x LVDS, 1x DP, 1x DSI, 4x CSI Kamera 2x CSI via FPC, 1x MIPI-CSI Dual, Audio, 1x USB 2.0 OTG, 2x USB 3.0, 1x USB debug, &nbsp;2x ETH 10/100/1000, 1x SPE (1000 Base-T1) 2x CAN FD, 1x RS485, 1x Temperature sensor, GPIOs, WIFI/ BT, Mobile Network, Reset-Button, SD Card interface, Power Supply, 4 GB SD card, Cables</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Mon Aug 31 2026 23:35:35 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,195 @@
+{
+ "quando": "2026-10-06T12:01:23",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma67xx-embedded-cortex-a53-module",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma67xx-embedded-cortex-a53-module/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "TQMa67xx Embedded Cortex®-A53 module",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "TQMA67XX-EMBEDDED-CORTEX-A53-MODULE",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Thu Sep 17 2026 15:11:24 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:34:23 GMT+0000",
+  "jcr:description": "The TQMa67xx embedded module is based on the AM67xx (Quad /Dual Cortex A53) processor family from Texas Instruments. This module is designed in such a way that the pin-compatible processors are used on one module design. The TQMa67xx is ideal for applications that require extended computing power and scalable graphics performance or artificial intelligence. The AM67xx family offers Artificial Intelligence, Vision ISP and a 3D GPU as well as a variety of industrial interfaces. These include 2x Gigabit Ethernet switches with TSN support. They also have various interfaces such as USB2.0, CAN-FD, UART and 4x CSI for connecting up to 4 cameras. Multidisplay with up to 3 displays is possible and up to 2x SerDes for (PCIe/ USB + SGMII) round off this powerful CPU family.",
+  "keywords": "TQMa67xx, Cortex-R5F module, Texas Instruments AM67xx, embedded computing, real-time applications, communication interfaces, versatile memory, compact design.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma67xx-embedded-cortex-a53-module",
+  "hideInNav": "true",
+  "pageTitle": "TQMa67xx Embedded Cortex®-A53 module",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "pd_description": "The TQMa67xx embedded module is based on the AM67xx (Quad /Dual Cortex A53) processor family from Texas Instruments. This module is designed in such a way that the pin-compatible processors are used on one module design. The TQMa67xx is ideal for applications that require extended computing power and scalable graphics performance or artificial intelligence. The AM67xx family offers Artificial Intelligence, Vision ISP and a 3D GPU as well as a variety of industrial interfaces. These include 2x Gigabit Ethernet switches with TSN support. They also have various interfaces such as USB2.0, CAN-FD, UART and 4x CSI for connecting up to 4 cameras. Multidisplay with up to 3 displays is possible and up to 2x SerDes for (PCIe/ USB + SGMII) round off this powerful CPU family.",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "TQMa67xx Embedded Cortex®-A53 module",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap_novo": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/TQMa67xx Embedded Cortex®-A53 module%0A.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "TQMa67xx Embedded Cortex®-A53 module",
+      "text": "<h1>Embedded Cortex®-A53 module based on the AM67xx MPU from TI. With AI, Vision ISP and 3D GPU.</h1>\n<p>The TQMa67xx embedded module is based on the AM67xx (Quad /Dual Cortex A53) processor family from Texas Instruments. This module is designed in such a way that the pin-compatible processors are used on one module design. The TQMa67xx is ideal for applications that require extended computing power and scalable graphics performance or artificial intelligence. The AM67xx family offers Artificial Intelligence, Vision ISP and a 3D GPU as well as a variety of industrial interfaces. These include 2x Gigabit Ethernet switches with TSN support. They also have various interfaces such as USB2.0, CAN-FD, UART and 4x CSI for connecting up to 4 cameras. Multidisplay with up to 3 displays is possible and up to 2x SerDes for (PCIe/ USB + SGMII) round off this powerful CPU family.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Tue Sep 01 2026 01:38:41 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/TQMa67xx Embedded Cortex®-A53 module%0A.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Tue Sep 01 2026 01:38:41 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li>Quad / Dual Cortex A53 up to 1.4 GHz</li>\n<li>3x Display LVDS, DSI &amp; RGB</li>\n<li>Featuring AI, Vision ISP &amp; 3D GPU</li>\n<li>High-speed communication via 2x Gbit Ethernet switch (TSN), 4 x CAN FD, 2x USB 2.0</li>\n<li>Up to 2x SERDES (PCIe and USB shared with SGMII)</li>\n<li>Integrated security functions</li>\n<li>Low power consumption (3-5 Watt)</li>\n</ul>",
+      "jcr:lastModified": "Tue Sep 01 2026 01:38:10 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><p>CPU/Processor:</p>\n<ul>\n<li>AM67x</li>\n</ul>\n<p>CPU variant:</p>\n<ul>\n<li>AM67Ax</li>\n<li>AM67Dx</li>\n<li>AM67x</li>\n</ul>\n<p>Max. CPU frequency:</p>\n<ul>\n<li>1.4GHz</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><p>LPDDR4:</p>\n<ul>\n<li>Up to 8 GB</li>\n</ul>\n<p>NOR Flash:</p>\n<ul>\n<li>Up to 256 MB (TBD)</li>\n</ul>\n<p>eMMC:</p>\n<ul>\n<li>Up to 128 GB (256 GB 3D NAND)</li>\n</ul>\n<p>EEPROM:</p>\n<ul>\n<li>0/64-kbit</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><p>Display:</p>\n<ul>\n<li>1x DSI</li>\n<li>1x RGB (24 bit)</li>\n<li>1x LVDS</li>\n</ul>\n<p>Graphic interface:</p>\n<ul>\n<li>3D GPU (8G FLOPFS)</li>\n</ul>\n<p>Camera interface:</p>\n<ul>\n<li>1x CSI (Rx 4x4L, Tx 1x4L)</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><p>Ethernet:</p>\n<ul>\n<li>Up to 2x Gbit-Ethernet switch (TSN)</li>\n</ul>\n<p>USB:</p>\n<ul>\n<li>Up to 2x USB 2.0 interface</li>\n</ul>\n<p>CAN:</p>\n<ul>\n<li>Up to 4x CAN FD</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><p>PCIe:</p>\n<ul>\n<li>Up to 2x SerDes shared with PCIe, USB 3.0 or SGMII</li>\n</ul>\n<p>SD Card:</p>\n<ul>\n<li>Up to 2x SDIO</li>\n</ul>\n<p>I2C:</p>\n<ul>\n<li>Up to 6x I2C</li>\n</ul>\n<p>SPI:</p>\n<ul>\n<li>Up to 5x SPI</li>\n<li>Up to 1x OSPI</li>\n</ul>\n<p>GPMC:</p>\n<ul>\n<li>Up to 1x GPMC</li>\n</ul>\n<p>PWM:</p>\n<ul>\n<li>Up to 3x PWM</li>\n</ul>\n<p>Audio:</p>\n<ul>\n<li>5x McASP</li>\n</ul>\n<p>UART:</p>\n<ul>\n<li>Up to 9x UART</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><p>Dimensions:</p>\n<ul>\n<li>64 x 34 mm</li>\n</ul>\n<p>Power supply:</p>\n<ul>\n<li>3.3 V</li>\n</ul>\n<p>Power consumption:</p>\n<ul>\n<li>3 - 5 Watt</li>\n</ul>\n<p>Temperature range:</p>\n<ul>\n<li>Standard temperature range: -25°C - +85°C</li>\n<li>Extended temperature: -40°C - +85°C</li>\n</ul>\n<p>Plug-in System:</p>\n<ul>\n<li>Board-to-board plug-in system 440 pins 0.5 mm Pitch</li>\n</ul>\n</td>\n</tr><tr><td><b>OS</b></td>\n<td><p>OS Support:</p>\n<ul>\n<li>Linux</li>\n<li>Others on request</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Tue Sep 01 2026 01:38:53 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,234 @@
+{
+ "quando": "2026-10-06T12:15:37",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/carrierboard-mb-come6-2",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/carrierboard-mb-come6-2/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "Carrierboard MB-COME6-2",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "CARRIERBOARD-MB-COME6-2",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:42 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:34:50 GMT+0000",
+  "jcr:description": "The COM Express mainboard (carrier board) MB-COME6-2, designed for use with standard COM Express Type 6 modules, offers FPGA engineers a versatile and compact",
+  "keywords": "FPGA, COM Express, Carrier Board, Embedded PC, Mini ITX, Modular Design, FPGA Integration, Medical-Grade Isolation, USB 3.0, 4K UHD, SATA, M.2, PCIe, Compact Form Factor, Operating Temperature, FPGA Development, Customization, Embedded Systems, Versatile Platform, Industrial Applications",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/carrierboard-mb-come6-2",
+  "hideInNav": "true",
+  "pageTitle": "Carrierboard MB-COME6-2",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Carrierboard MB-COME6-2",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 18:07:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Thu Aug 27 2026 21:09:01 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/Carrierboard MB-COME6-2%0A.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": " Carrierboard MB-COME6-2",
+      "text": "<h1>COM Express Type 6 (Compact+Basic)</h1>\n<p>The COM Express mainboard (carrier board) MB-COME6-2, designed for use with standard COM Express Type 6 modules, offers FPGA engineers a versatile and compact hardware solution. With its modular design and consistent mechanical dimensions and interfaces, this board provides a flexible platform that can be tailored to meet the specific requirements of various applications.</p>\n<p>This mainboard features a range of connectivity options, including dual Gbit Ethernet ports with medical-grade isolation, USB 3.0/2.0 interfaces, and multiple display outputs supporting up to 4K UHD resolution. It also offers various storage choices, including support for 2.5&quot; HDD/SSD, SATA connections, and M.2 slots for SSDs, ensuring data storage and retrieval versatility.</p>\n<p>Engineers can easily expand and customize the system with Mini PCIe and PCIe x16 slots, allowing for the integration of additional functionalities and specialized hardware components. The board's compact Mini ITX form factor makes it ideal for space-efficient integration into FPGA-based systems.</p>\n<p>With an operating temperature range from -20°C to +85°C, the MB-COME6-2 is suitable for a wide range of environments, providing reliability, durability, and long-term availability. It also includes features like power and reset buttons, a cooling fan, and internal connectors for IO extension, making it a robust and adaptable solution for FPGA engineers working on diverse embedded applications</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Wed Sep 02 2026 08:41:42 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/Carrierboard MB-COME6-2%0A.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Wed Sep 02 2026 08:41:42 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "12"
+       }
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li><b>Compact Form Factor:</b> Space-efficient Mini ITX design for versatile integration into FPGA-based systems.</li>\n<li><b>Robust Connectivity:</b> Dual Gbit Ethernet ports with medical-grade isolation and USB 3.0/2.0 interfaces.</li>\n<li><b>Display Options:</b> Multiple display options with support for 4K UHD resolution via DisplayPort (DP++) and dual HDMI outputs.</li>\n<li><b>Storage Versatility:</b> Various storage choices, including 2.5&quot; HDD/SSD support, SATA connections, and M.2 slots for SSDs.</li>\n<li><b>Expansion Capabilities:</b> Mini PCIe and PCIe x16 slots allow for easy customization and expansion.</li>\n</ul>",
+      "jcr:lastModified": "Wed Sep 02 2026 08:40:56 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>1x DisplayPort (DP++) with up to 4K UHD resolution</li>\n<li>2x HDMI with up to 4K</li>\n<li>1x Dual channel LVDS + backlight, control/power</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Ethernet - 2x Gigabit Ethernet, 4 kV isolation</li>\n<li>USB -<ul>\n<li>4x USB 3.0 (with USB 2.0 backward compatibility)</li>\n<li>1x USB 2.0</li>\n<li>3x USB 2.0 (via internal USB hub)</li>\n</ul>\n</li>\n<li>Serial Ports = 1x RS-232</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>PCIe -&nbsp;<ul>\n<li>1x Mini PCIe full-size (PCIe &amp; USB), with micro SIM socket</li>\n<li>PCIe x16 (alt. x8/x8) on goldfinger contacts to be used with adapters (support depends on CPU module PEG-port configuration)</li>\n</ul>\n</li>\n<li>M.2 -&nbsp;<ul>\n<li>1x M.2 2230 Key E socket (PCIe x1 and USB 2.0) for IO</li>\n<li>1x M.2 2280 Key M socket (PCIe x4 and SATA) for SSD</li>\n</ul>\n</li>\n<li>SATA -&nbsp;<ul>\n<li>1x 2.5’’ HDD/SSD socket (mounting kit available)</li>\n<li>2x SATA (with 5 V power connector)</li>\n</ul>\n</li>\n<li>Audio -&nbsp;<ul>\n<li>1x 3.5 mm (headphone out, microphone in)</li>\n<li>Speaker out R+L (2x 1.4 W)</li>\n</ul>\n</li>\n<li>SPI - SPI BIOS flash socket</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Dimensions - 170mm x 170mm&nbsp;</li>\n<li>Plug-in System - COM Express Compact/Basic Type 6</li>\n<li>Temperature range - Operation temperature: -20°C...+85°C</li>\n<li>Power supply - 8.5 ... 20 V, 5 V Standby (optional), 3 V Battery for RTC12 V DC / Connector type: Phoenix MSTBA2,5/2-G-5,08</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 08:41:57 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td width=\"20%\" style=\"width:188px;\"><p><b>MB-COME6-2-EVAL</b></p>\n</td>\n<td><ul>\n<li>Carrierboard for COM Express Type 6 compact/basic modules. Standard version including Dual Channel LVDS, 3x int. USB, RS-232, 2x SATA, audio amplifier for speaker, 3-pin fan connector, SPI BIOS flash socket and back side USB (Type A) connector.</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:188px;\"><p><b>MB-COME6-2-EDP</b></p>\n</td>\n<td><ul>\n<li>Carrierboard for COM Express Type 6 compact/basic modules. Standard version including eDP, 3x int. USB, RS-232, 2x SATA, audio amplifier for speaker, 3-pin fan connector, SPI BIOS flash socket and back side USB (Type A) connector.</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 08:42:09 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

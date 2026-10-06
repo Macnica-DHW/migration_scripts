@@ -1,0 +1,226 @@
+{
+ "quando": "2026-10-06T12:11:16",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe40s-smarc-21-module",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe40s-smarc-21-module/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "TQMxE40S SMARC 2.1 Module",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "TQMXE40S-SMARC-21-MODULE",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:41 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 19:35:22 GMT+0000",
+  "jcr:description": "The TQMxE40S is a versatile SMARC 2.1 module featuring Intel Atom® x6000 Series, Pentium®, and Celeron® processors from the 6th generation, codenamed \"Elkhart",
+  "keywords": "Intel Atom® x6000 Series, Pentium® processors, Celeron® processors, 6th Generation, Elkhart Lake, LPDDR4x memory, PCIe Gen 3, Dual Display, eMMC Flash, Extended Temperature, SMARC 2.1, Industrial Automation, Embedded Computing, Real-time Applications, PCIe Lanes, USB 3.1 Gen2, IoT Solutions, Industrial Reliability, FPGA Integration, Processor Options, Compact Design, Gigabit Ethernet, DP++, LVDS, Inband ECC, Smart Battery, Intel Graphics Processor, Time Coordinated Computing, Compact Size, USB Connectivity, CPU Computing Power",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-x86-modules/tqmxe40s-smarc-21-module",
+  "hideInNav": "true",
+  "pageTitle": "TQMxE40S SMARC 2.1 Module",
+  "cq:tags": "mai:manufacturers/tq-systems",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "TQMxE40S SMARC 2.1 Module",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_copy_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 18:07:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Thu Aug 27 2026 21:09:01 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/TQMxE40S SMARC 2.1 Module.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "TQMxE40S SMARC 2.1 Module",
+      "text": "<h1>Intel Atom® x6000 Series, Pentium® and Celeron® Processors of 6th Generation (&quot;Elkhart Lake&quot;)</h1>\n<p>The TQMxE40S is a versatile SMARC 2.1 module featuring Intel Atom® x6000 Series, Pentium®, and Celeron® processors from the 6th generation, codenamed &quot;Elkhart Lake.&quot; This compact module packs dual/quad-core computing power with clock speeds of up to 3.0 GHz, making it suitable for a wide range of industrial applications. It offers up to 16 GB of LPDDR4x memory with inband ECC support and comes with dual Gbit Ethernet interfaces for robust network connectivity.</p>\n<p>In terms of expansion, the TQMxE40S offers four PCIe lanes (Gen3) and a variety of USB ports, including two high-speed USB 3.1 Gen2 ports. The module supports triple display output with two DP++ (4K) interfaces and eDP (4K)/LVDS (Dual Channel) support. It also includes up to 256 GB of soldered eMMC Flash memory.</p>\n<p><span style=\"letter-spacing: 0px;\">The module is designed with industrial applications in mind, boasting an extended temperature range from -40°C to +85°C. It comes in a compact SMARC form factor measuring 82 mm x 50 mm, making it suitable for space-constrained environments. The integrated board controller supports features like thermal management and a multi-stage watchdog for added reliability.</span></p>\n<p><span style=\"letter-spacing: 0px;\">With impressive graphics and video processing capabilities, as well as support for virtualization and real-time applications, the TQMxE40S is an ideal choice for industries such as industrial automation, medical technology, aviation, and more. Its combination of performance, compactness, and extended temperature support makes it a versatile solution for various embedded computing needs.</span></p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Wed Sep 02 2026 12:33:48 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/x86-modules/images/TQMxE40S SMARC 2.1 Module.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Wed Sep 02 2026 12:33:48 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li><p><b>Enhanced Computing Power:</b> Intel Atom® x6000 Series processors, offering dual/quad-core computing capabilities with clock speeds of up to 3.0 GHz.</p>\n</li>\n<li><p><b>Robust Memory and Storage</b>: 16 GB of LPDDR4x memory and up to 256 GB of soldered eMMC Flash memory</p>\n</li>\n<li><p><b>Versatile Display Options:</b> Triple display output, including 4K resolution, with two DP++ interfaces and eDP/LVDS support</p>\n</li>\n<li><p><b>Industrial-Grade Reliability: </b>Designed for industrial use, it operates reliably within an extended temperature range of -40°C to +85°C,&nbsp;</p>\n</li>\n<li><p><b>Expansion and Connectivity:</b> Multiple USB ports, four PCIe lanes (Gen3), dual Gbit Ethernet interfaces, and support s a versatile connectivity options for diverse applications.</p>\n</li>\n</ul>",
+      "jcr:lastModified": "Wed Sep 02 2026 12:33:12 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>Intel Atom® x6211E (2-Core, 1.3/3.0 GHz, 1.5 MB, 16 EU, Turbo, 6 W TDP)</li>\n<li>Intel Atom® x6413E (4-Core, 1.5/3.0 GHz, 1.5 MB, 16 EU, Turbo, 9 W TDP)</li>\n<li>Intel Atom® x6425E (4-Core, 2.0/3.0 GHz, 1.5 MB, 32 EU, Turbo, 12 W TDP)</li>\n<li>Intel Atom® x6212RE (2-Core, 1.2 GHz, 1.5 MB, 16 EU, 24/7, RT, 6 W TDP)</li>\n<li>Intel Atom® x6414RE (4-Core, 1.5 GHz, 1.5 MB, 16 EU, 24/7, RT, 9 W TDP)</li>\n<li>Intel Atom® x6425RE (4-Core, 1.9 GHz, 1.5 MB, 32 EU, 24/7, RT, 12 W TDP)</li>\n<li>Intel® Pentium® and Celeron® N and J Series processors on request</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>LPDDR4X - 4,, 8, 16 GB with IBECC</li>\n<li>eMMC - 8-256 GB</li>\n<li>EEPROM - 32kbit</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>2x DP++ (4K @ 60Hz)</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Ethernet - 2x Gbit Ethernet, IEEE 1588</li>\n<li>USB - 2x USB 3.1 Gen2 , 4x USB 2.0</li>\n<li>CAN - 2x</li>\n<li>Serial Ports - 4x Serial port (4x Rx/Tx, 2x RTS/CTS)</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>SATA - 1x SATA 3.0</li>\n<li>PCIe - 4s PCIe 3.0</li>\n<li>I2C</li>\n<li>SMBus</li>\n<li>SPI - SPI (for external UEFI BIOS flash)</li>\n<li>Audio - 1x INtel HD audio | 1x 12s</li>\n<li>GPIO - 14x GPIO</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Dimensions - 82mm x 50mm</li>\n<li>Plug-in System - SMARC 2.1</li>\n<li>Temperature range - Standard temperature: 0°C…+60°C</li>\n<li>Power supply - 4.75 V - 5.25 V / Standby Voltage: 4.75 V - 5.25 V / RTC Battery Voltage: 3 V</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 12:34:00 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"width:148px;\"><p><b>TQMxE40S-AA</b></p>\n</td>\n<td><ul>\n<li>Intel Atom x6425RE ,16 GB LPDDR4x, 8 GB eMMC, eDP, -40°C – 85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:148px;\"><p><b>TQMxE40S-AB</b></p>\n</td>\n<td><ul>\n<li>Intel Atom x6414RE, 8 GB LPDDR4x, 32 GB eMMC, LVDS, TPM 2.0, -40°C – 85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:148px;\"><p><b>TQMxE40S-AC</b></p>\n</td>\n<td><ul>\n<li>Intel Atom x6212RE, 4 GB LPDDR4x, 16 GB eMMC, LVDS, TPM 2.0, -40°C – 85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:148px;\"><p><b>TQMxE40S-AD</b></p>\n</td>\n<td><ul>\n<li>Intel Atom x6425E, 16 GB LPDDR4x, LVDS, TPM 2.0, -40°C – 85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:148px;\"><p><b>TQMxE40S-AE</b></p>\n</td>\n<td><ul>\n<li>Intel Atom x6413E, 8 GB LPDDR4x, LVDS, TPM 2.0, -40°C – 85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:148px;\"><p><b>TQMxE40S-AF</b></p>\n</td>\n<td><ul>\n<li>Intel Atom x6211E, 4 GB LPDDR4x, 32 GB eMMC, LVDS, TPM 2.0, -40°C – 85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:148px;\"><p><b>TQMxE40S-AG</b></p>\n</td>\n<td><ul>\n<li>Intel Atom x6425RE , 8 GB LPDDR4x, 32 GB eMMC, LVDS, TPM 2.0, -40°C – 85°C</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Wed Sep 02 2026 12:34:07 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

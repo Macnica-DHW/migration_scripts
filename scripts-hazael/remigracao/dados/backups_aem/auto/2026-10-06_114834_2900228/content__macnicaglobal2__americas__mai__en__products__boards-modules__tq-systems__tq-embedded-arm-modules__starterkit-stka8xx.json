@@ -1,0 +1,258 @@
+{
+ "quando": "2026-10-06T11:55:37",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/starterkit-stka8xx",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/starterkit-stka8xx/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "Starterkit STKa8Xx",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": [
+   "mai:business-categories/boards-modules"
+  ],
+  "pwaOrientation": "any",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "STARTERKIT-STKA8XX",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:44 GMT+0000",
+  "pwaDisplay": "standalone",
+  "cq:lastModified": "Mon Sep 21 2026 19:34:10 GMT+0000",
+  "jcr:description": "The Embedded Starterkit STKa8Xx is tailored for embedded computing engineers and is based on the TQMa8Xx platform, leveraging the power of the Arm Cortex-A35",
+  "pwaCachestrategy": "staleWhileRevalidate",
+  "keywords": "Embedded Starterkit, Evaluationkit, TQMa8Xx, Arm Cortex-A35, NXP, 4K Graphics, Security Functions, Cortex-M4, Low Power Consumption, Audio Processing.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/starterkit-stka8xx",
+  "hideInNav": "true",
+  "pageTitle": "Starterkit STKa8Xx",
+  "cq:tags": [
+   "mai:manufacturers/tq-systems"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Starterkit STKa8Xx",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap_novo": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/Starterkit STKa8Xx.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "Starterkit STKa8Xx",
+      "text": "<h1>Arm® Cortex®-A35 based on i.MX8X</h1>\n<p>The Embedded Starterkit STKa8Xx is tailored for embedded computing engineers and is based on the TQMa8Xx platform, leveraging the power of the Arm Cortex-A35 processor from NXP's i.MX8X series. This kit excels in graphics performance, offering 4K support, making it a great fit for applications with high display requirements. It's also equipped with a DSP for audio processing, providing advanced sound capabilities. Furthermore, the kit incorporates essential security functions and an integrated Cortex-M4 CPU, ensuring real-time and security applications run smoothly. Despite its powerful features, it maintains low power consumption, typically around 4 watts.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Tue Sep 01 2026 00:00:06 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/Starterkit STKa8Xx.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Tue Sep 01 2026 00:00:06 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li><b>Graphics with 4K Support:</b> Perfect for applications demanding high-quality graphics with 4K resolution.</li>\n<li><b>Security Functions</b>: Enhanced data security with integrated security functions.</li>\n<li><b>Integrated Cortex-M4 CPU:</b> Features a Cortex-M4 CPU for real-time and security applications.</li>\n<li><b>Low Power Consumption:</b> Maintains low power usage, typically around 4 watts.</li>\n<li><b>DSP for Audio Processing:</b> Equipped with a DSP for advanced audio processing and sound capabilities.</li>\n</ul>",
+      "jcr:lastModified": "Mon Aug 31 2026 23:59:31 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>Cortex®-A35 Technology</li>\n<li>i.MX8X Dual Plus</li>\n<li>i.MX8X Quad Plus</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>DDR3L-SDRAM: Up to 2 GB with ECC protection</li>\n<li>Quad SPI NOR: Up to 256 MB</li>\n<li>Up to 64 GB eMMC Flash</li>\n<li>EEPROM: 0/64-kbit</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>Dual LVDS Interface / 2xMIPI DSI</li>\n<li>1x MIPI CSI</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Up to 2x Ethernet 10/100/1000 Mbit</li>\n<li>Up to 1x USB 3.0 OTG interface</li>\n<li>Up to 2x USB 2.0 OTG interface</li>\n<li>Up to 4x UART</li>\n<li>Up to 3x CAN FD</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>1x SDIO/MMC</li>\n<li>1x PCIe</li>\n<li>Up to 8x I²C</li>\n<li>Up to 4x SPI</li>\n<li>Up to 2 Q-SPI</li>\n<li>Up to 2x SPDIF</li>\n<li>Up to 4x ESAI</li>\n<li>Up to 32 GPIO</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Power supply 3.3 V</li>\n<li>Ambient conditions<ul>\n<li>Standard temperature range: -25°C…+85°C</li>\n<li>Extended temperature range: -40°C…+85°C</li>\n<li>Dimensions 55 mm x 44 mm</li>\n</ul>\n</li>\n<li>Plug-in system Board-to-board plug-in system 280 pins</li>\n</ul>\n</td>\n</tr><tr><td><b>OS</b></td>\n<td><ul>\n<li>Linux</li>\n<li>PikeOS</li>\n<li>QNX on request</li>\n<li>Android on request</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Tue Sep 01 2026 00:00:16 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"width:151px;\"><h5>TQMa8XDP-AA</h5>\n</td>\n<td><ul>\n<li>i.MX8X Dual Plus/typ 1.0 GHz/max 1.2 GHz, 8 GB eMMC Flash, 1 GB DDR3L w ECC, 64 kB EEPROM, RTC, -25°C…+85°</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:151px;\"><h5>TQMa8XQP-AA</h5>\n</td>\n<td><ul>\n<li>i.MX8X Quad Plus/typ 1.0 GHz/max 1.2 GHz, 8 GB eMMC Flash, 1 GB DDR3L w ECC, 64 kB EEPROM, RTC, -25°C…+85°</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:151px;\"><h5>TQMa8XQP-AB</h5>\n</td>\n<td><ul>\n<li>i.MX8X Quad Plus/typ 1.0 GHz/max 1.2 GHz, 8 GB eMMC Flash, 64 MB SPI NOR Flash, 1 GB DDR3L w ECC, 64 kB EEPROM, RTC, -40°C…+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:151px;\"><h5>STKa8Xx-AA</h5>\n</td>\n<td><ul>\n<li>STKa8Xx (Eval Kit) with TQMa8Xx-AA, i.MX8X/typ 1.0 GHz/max 1.2 GHz, 1 GB DDR3L w ECC, 8 GB eMMC Flash, 64 kB EEPROM, 1x RS232, 2x CAN FD separated, 1x USB 3.0 OTG, 4x USB 2.0 HOST, 2x ETH 10/100/1000, 1x HDMI/DP, 2x LVDS/DSI, 1x PCIe, RTC, Temperature sensor, Reset-Button, SD interface, Power Supply, 4 GB SD card, Cables</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:151px;\"><h5>Starterkit STK8Xx set</h5>\n</td>\n<td><ul>\n<li>The core of the STKa8Xx set is the TQMa8Xx module with a i.MX8X Cortex®-A35 CPU. The components contained in the starter kit constitute a modular system enabling you to develop your own product ideas. Development of graphic interfaces can be started immediately using a TQ display kit which is adjusted for a starter kit. To develop your own hardware you can use the certified and qualified circuit components of the starter kit in your own designs.</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Tue Sep 01 2026 00:00:25 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  },
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:38:48 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "false"
+  },
+  "manufacturerlogo": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:38:48 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "false"
+  },
+  "pd_downloadAsset": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:38:48 GMT+0000"
+  },
+  "pd_productFamilyImage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:38:48 GMT+0000"
+  },
+  "pd_technologyImage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:38:48 GMT+0000"
+  }
+ }
+}
