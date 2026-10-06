@@ -1,6 +1,6 @@
 ---
 name: aem-components
-description: Reference for macnicaglobal2 components on the AEM author. Covers resourceTypes, every style ID (cq:styleIds) with its label and CSS class, component properties (title type, textwithimage imageRatio, embed, button, container backgroundColor, experiencefragment), the CTA experience fragments, page-level properties and templates. Use when reading a JCR tree, deciding which property or style produces an effect, writing a node, or explaining why something renders the way it does.
+description: Reference for macnicaglobal2 components on the AEM author. Covers resourceTypes, every style ID (cq:styleIds) with its label and CSS class, component properties (title type, textwithimage imageRatio, embed, button, container backgroundColor, experiencefragment, anchorlink vs stickytabs), the CTA experience fragments, page-level properties, templates, and the position:sticky headroom bug. Use when reading a JCR tree, deciding which property or style produces an effect, writing a node, or explaining why something renders the way it does.
 ---
 
 # macnicaglobal2 components: reference
@@ -122,6 +122,28 @@ without permission.
 
 **anchorlink** (the purple ▼ "jump menu"): `anchor/*` items with `text` + `linkId`. The target must be an `id` on a
 **title** component. It can't hold an external URL (it renders `#https://…`); use a button instead.
+
+**stickytabs** (fixed pill tabs that scroll with the page and jump to a section): items live in
+**`stickyTabs/itemN`** (capital T — a different property from `anchorlink`'s `anchor/itemN`; swapping the
+`sling:resourceType` alone is not enough). Same `linkId` + `text` shape, same target-`id`-on-a-content-component
+rule as `anchorlink`. CSS is `.stickytabs{position:sticky;top:75pt;z-index:1}` — no JS computes the offset, it's
+pure CSS.
+
+**`position:sticky` needs headroom in its own parent, not the page.** CSS sticky only "floats" while there is
+scroll room **inside the nearest container that has real height** — not the whole page, just that one ancestor.
+A `stickytabs` living alone in a container that has nothing else in it shrinks that container to the tab bar's own
+height (~27px), and the element scrolls off-screen with it instead of sticking. Found 29/09 in
+`solutions/smartcity-mobility`: same JCR shape and CSS as a working reference page
+(`eu/atd-europe/.../imaging-and-vision`, where the sticky tabs live inside the *same* container as the entire
+tab's content, ~4600px tall), yet it didn't stick — because after converting from `anchorlink` the tabs had been
+left in their own small container, sibling to the sections they link to, instead of wrapping them.
+**Fix:** the `stickytabs` node and every section it targets must share one parent container (move the sections in,
+don't just fix the tabs). No `overflow`/`transform`/`contain` rule on any ancestor was involved — reading CSS alone
+won't show this bug.
+**How to actually check it** (static HTML/CSS comparison is not enough — the markup and CSS can look identical on
+a broken and a working page): render with a real browser and measure, e.g. Puppeteer —
+`el.getBoundingClientRect().top` before and after `window.scrollBy(0, 1200)`. Sticking = `top` locks near the CSS
+`top` value (~100px at 1400px viewport). Broken = `top` goes negative (scrolled off past the viewport).
 
 **list / cardlist**: `listFrom=children` + `parentPage` lists soft-deleted children too. A cardlist only shows
 children with `showInLists=true`, and it renders text without logos.

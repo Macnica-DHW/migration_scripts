@@ -1,0 +1,113 @@
+{
+ "quando": "2026-10-02T18:24:20",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2019-08-22-macnica-accelerates-development-of-interoperable-smpte-st-2110",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2019-08-22-macnica-accelerates-development-of-interoperable-smpte-st-2110/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Macnica Accelerates Development of Interoperable SMPTE ST 2110 Solutions for IBC2019",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:50:44 GMT+0000",
+  "jcr:description": "Video over IP transport specialist will unveil new System on Module (SoM) innovation for broadcast alongside evolving VIPA family of network media switching cards",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2019-08-22-macnica-accelerates-development-of-interoperable-smpte-st-2110",
+  "hideInNav": "true",
+  "pageTitle": "Macnica Accelerates Development of Interoperable SMPTE ST 2110 Solutions for IBC2019",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Macnica Accelerates Development of Interoperable SMPTE ST 2110 Solutions for IBC2019",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica Accelerates Development of Interoperable SMPTE ST 2110 Solutions for IBC2019",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Video over IP transport specialist will unveil new System on Module (SoM) innovation for broadcast alongside evolving VIPA family of network media switching cards",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>SOLANO BEACH, CALIFORNIA, August 22, 2019 — Macnica, a leader in live video over IP transport technologies, will bring its latest innovations for broadcast and commercial AV interoperability to&nbsp;<a href=\"https://ibc19.mapyourshow.com/8_0/floorplan/?hallID=M&amp;selectedBooth=booth~A18\" target=\"_blank\">IBC2019</a>&nbsp;next month (September 13-17, RAI Amsterdam). Macnica continues to expand its SMPTE ST 2110 and NMOS OEM developer products, which includes the global debut of its first System on Module (SoM) solution specific to broadcast applications.<br>\nMacnica will also showcase its existing VIPA range of accelerated network interface cards, including its ultra-wideband 25Gb/s VIPA25 module introduced at the 2019 NAB Show in April. The demonstrations will also include Macnica’s MPA1000 module for 1Gb/s AV over IP transport applications.</p>\n<p>“Macnica aggressively investing in its portfolio of OEM and develop products, and active in the community effort to develop open standards for the AV over IP transport in the broadcast and AV markets,” said Andrew Starks, Director of Product Management at Macnica. “Our goal is to offer our customers a flexible range of 1Gb/s, 10 Gb/S and 25 Gb/s solutions to cover virtually any transport application and bitrate. We are building these solutions using an open standards, such as ST 2110, to ensure interoperability across the next generation of video products and systems, and the best possible long-term value proposition for our customers worldwide.”</p>\n<p><b>SoM Innovations</b></p>\n<p>IBC2019 marks the global unveiling of EASYSS10, a 10GbE ST 2110 to SDI gateway System on Module. Designed for hybrid routers, signal processing systems and gateway devices, the EASYSS10 and the available reference board make the transition to standards-based Broadcast IP products simple and efficient.<br>\nThe EASYSS10 includes six SDI inputs and six SDI outputs that are compatible with HD-SDI and 3G-SDI. On the networking side, dual SFP+ ports support redundant media networks.<br>\nAt its IBC2019 stand (2.A18), Macnica will exhibit the robust designs and resiliency of EASYSS10 in a live demonstration, showcasing its seamless protection switching over redundant networks. This ensures compliance with the SMPTE 2022-7 standard, which protects broadcasters against dropped packets by moving signals over two parallel networks.</p>\n<p>Macnica will also show MPA1000, a full-stack AV over IP module that brings low-latency IP video transport to OEM manufacturers and an array of professional AV products. Macnica’s MPA1000 transports compressed UHD 60P 4:4:4 video, audio and control over a standard 1GbE connection.<br>\nThe module is field-configurable to transmit or receive signals; once connected to the network, the media traffic is discoverable through the included NMOS IS-04/05 services – an open standard for publishing and discovery of content streams.<br>\nThe MPA1000’s innovation is enhanced through simple configuration and control – a core design principle of the module. The module features an integrated web server that will host a RESTful API along with a web application that is fully customizable for each user. Macnica additionally offers an MPA1000 Development Kit for testing and development purposes, with design files available on request.</p>\n<p><b>Network Interface Cards</b></p>\n<p>IBC marks the introduction of Macnica’s VIPA 25 PCI Express (PCIe) card, a wide-bandwidth solution for uncompressed 4K transport. The VIPA 25 is a full-stack ST 2110/NMOS solution that accelerates ST 2110 media flow network processing and timing workload from the CPU. It provides a straightforward, simple API that includes NMOS IS-04/05 and GStreamer filters (source and sync)—making it ready for developers to start creating next-generation, IP-networked broadcast applications on open standards. An optional 12G-SDI daughtercard adds SDI support with seamless API access alongside ST 2110.<br>\nMacnica will also show its recently introduced 10GbE card, the VIPA 10, at IBC, including. some of the new capabilities of its software development kit (SDK). Both VIPA solutions support all ratified standard subtypes to optimize flexibility for developers.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_botoes": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact Us for More Information",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_861351158": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Request a Quote",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

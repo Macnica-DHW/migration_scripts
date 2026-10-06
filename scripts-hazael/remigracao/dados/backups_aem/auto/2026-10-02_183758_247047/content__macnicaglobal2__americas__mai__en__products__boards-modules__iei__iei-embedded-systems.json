@@ -1,0 +1,323 @@
+{
+ "quando": "2026-10-02T18:39:24",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-embedded-systems",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-embedded-systems/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "Embedded Systems",
+  "manufacturer": "mai:manufacturers/iei",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Tue Sep 08 2026 15:37:27 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 20:47:30 GMT+0000",
+  "jcr:description": "iEi Embedded Systems are rugged, modular platforms designed for demanding industrial and commercial environments. These systems combine reliable hardware design with rich I/O options, scalable expansion, and flexible mounting, making them ideal for automation, transportation, surveillance, kiosks, and digital signage.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-embedded-systems",
+  "pageTitle": "Embedded Systems",
+  "cq:tags": "mai:business-categories/boards-modules",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "navTitle": "Embedded Systems",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_849791024": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>iEi Embedded Systems</b> are rugged, modular platforms designed for demanding industrial and commercial environments. These systems combine reliable hardware design with rich I/O options, scalable expansion, and flexible mounting, making them ideal for automation, transportation, surveillance, kiosks, and digital signage.</p>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_1052130662": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<h3>Products</h3>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "tabs_copy_39779571_c": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/tabs",
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 1",
+       "cq:panelTitle": "TANK and ECW Series",
+       "layout": "responsiveGrid",
+       "id": "view-transcend-memory-product-portfolio-id",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498056876",
+        "1717498055877"
+       ],
+       "container_180292821": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "macnicaglobal2/components/content/container",
+        "cq:styleIds": [
+         "1717498056876",
+         "1717498055877"
+        ],
+        "title_textwithimage": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:title": "TANK and ECW Series - Box PCs",
+         "type": "h1",
+         "sling:resourceType": "macnicaglobal2/components/content/title"
+        },
+        "textwithimage": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/TANK and ECW.png",
+         "imageRatio": "40",
+         "alt": "TANK Series TANK and ECW Series",
+         "text": "<ul>\r\n<li>Compact and rugged designs for automation, surveillance, and edge computing</li>\r\n<li>Expandable with PCI/PCIe slots for GPU, accelerator, or additional I/O cards</li>\r\n<li>Wide operating temperature support and fanless cooling options</li>\r\n<li>Rich I/O for LAN, COM, USB, and display interfaces</li>\r\n</ul>",
+         "displayPopupTitle": "true",
+         "linkTarget": "_self",
+         "titleValueFromDAM": "true",
+         "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+         "isDecorative": "false",
+         "textIsRich": "true",
+         "altValueFromDAM": "false",
+         "cq:styleIds": [
+          "1718154328384",
+          "",
+          "1783061491236"
+         ],
+         "spImage": {
+          "jcr:primaryType": "nt:unstructured",
+          "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/TANK and ECW.png",
+          "sling:resourceType": "macnicaglobal2/components/content/image"
+         },
+         "cq:responsive": {
+          "jcr:primaryType": "nt:unstructured",
+          "default": {
+           "jcr:primaryType": "nt:unstructured",
+           "offset": "1",
+           "width": "11"
+          }
+         }
+        }
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Tab 2",
+       "cq:panelTitle": "DRPC Series",
+       "layout": "responsiveGrid",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498056876",
+        "1717498055877"
+       ],
+       "title_textwithimage": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "DRPC Series - DIN-Rail Systems",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "textwithimage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/DRPC Series.png",
+        "imageRatio": "40",
+        "alt": "DRPC Series ",
+        "text": "<ul>\r\n<li>Fanless embedded systems for industrial control and automation</li>\r\n<li>Slim form factor with DIN-rail mounting for space-constrained environments</li>\r\n<li>Integrated I/O with LAN, serial, and USB ports</li>\r\n<li>Optional OLED status display and modular expansion options</li>\r\n</ul>",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+        "isDecorative": "false",
+        "textIsRich": "true",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1718154328384",
+         "",
+         "1783061491236"
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/DRPC Series.png",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        },
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "1",
+          "width": "11"
+         }
+        }
+       }
+      },
+      "item_1789082868625": {
+       "jcr:primaryType": "nt:unstructured",
+       "cq:panelTitle": "IDS Series",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498056876",
+        "1717498055877"
+       ],
+       "title_textwithimage": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "IDS Series - Digital Signage Players",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "textwithimage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/IDS Series.png",
+        "imageRatio": "40",
+        "alt": "IDS SERIES",
+        "text": "<ul>\r\n<li>Designed for multimedia and information display applications</li>\r\n<li>Support for multiple HDMI outputs for video walls or split-screen displays</li>\r\n<li>Compact chassis for easy installation in kiosks, transportation hubs, and retail environments</li>\r\n<li>Reliable operation with long lifecycle availability</li>\r\n</ul>",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+        "isDecorative": "false",
+        "textIsRich": "true",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1718154328384",
+         "",
+         "1783061491236"
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/IDS Series.png",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        },
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "1",
+          "width": "11"
+         }
+        }
+       }
+      }
+     },
+     "container": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "",
+       "1717498056876",
+       ""
+      ],
+      "title_table": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Specifications Snapshot",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "table": {
+       "jcr:primaryType": "nt:unstructured",
+       "text": "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n<tbody><tr><th>Product Line</th>\r\n<th>Form Factor/Mounting</th>\r\n<th>Key Features</th>\r\n</tr><tr><td width=\"25%\">TANK/ECW</td>\r\n<td width=\"25%\">Rugged box PCs</td>\r\n<td width=\"50%\">Wide I/O, PCI/PCIe expansion, fanless design</td>\r\n</tr><tr><td>DRPC</td>\r\n<td>DIN-rail mount</td>\r\n<td>Slim profile, integrated I/O, modular add-ons</td>\r\n</tr><tr><td>IDS</td>\r\n<td>Compact chassis</td>\r\n<td>Multi-HDMI outputs, digital signage-ready</td>\r\n</tr><tr><td>Modular Edge</td>\r\n<td>Box and rack formats</td>\r\n<td>GPU/accelerator support, AI-ready platforms</td>\r\n</tr></tbody></table>",
+       "sling:resourceType": "macnicaglobal2/components/content/table",
+       "textIsRich": "true",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        ""
+       ]
+      }
+     }
+    },
+    "container_686627371": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<h3>Use Case Highlights</h3>\r\n<ul>\r\n<li><b>Factory Automation</b>: Deploy DRPC systems for machine control and data acquisition</li>\r\n</ul>\r\n<ul>\r\n<li><b>Smart Surveillance</b>: Use TANK or ECW box PCs with multiple camera inputs for monitoring</li>\r\n</ul>\r\n<ul>\r\n<li><b>Retail and Transportation</b>: IDS signage players provide reliable multi-screen displays for menus, schedules, or advertisements</li>\r\n</ul>\r\n<ul>\r\n<li><b>AI at the Edge</b>: Modular edge platforms support vision analytics and predictive maintenance in real time</li>\r\n</ul>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2083508271": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer_copy_c": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact Us for More Information",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_861351158": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Request a Quote",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

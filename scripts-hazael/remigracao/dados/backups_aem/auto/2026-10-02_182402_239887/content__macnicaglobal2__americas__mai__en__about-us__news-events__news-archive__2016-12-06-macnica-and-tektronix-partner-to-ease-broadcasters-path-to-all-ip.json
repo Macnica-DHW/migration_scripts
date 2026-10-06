@@ -1,0 +1,65 @@
+{
+ "quando": "2026-10-02T18:24:34",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2016-12-06-macnica-and-tektronix-partner-to-ease-broadcasters-path-to-all-ip",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2016-12-06-macnica-and-tektronix-partner-to-ease-broadcasters-path-to-all-ip/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Macnica and Tektronix Partner to Ease Broadcasters’ Path to All-IP Operations",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:50:19 GMT+0000",
+  "jcr:description": "Macnica Provides Underlying Video-Over-IP Technology for Tektronix’s Prism, Industry’s First Hybrid SDI/IP Media Analysis Platform SOLANA BEACH, Calif. — Dec. 6, 2016 — Macnica today announced that it has forged a technology partnership with Tektronix. Through the global agreement, Tektronix has embedded Macnica’s industry-leading video-over-IP technology into Prism, a new media analysis platform designed to smooth broadcasters’ transition from SDI-based to IP-based infrastructures.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2016-12-06-macnica-and-tektronix-partner-to-ease-broadcasters-path-to-all-ip",
+  "hideInNav": "true",
+  "pageTitle": "Macnica and Tektronix Partner to Ease Broadcasters’ Path to All-IP Operations",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Macnica and Tektronix Partner to Ease Broadcasters’ Path to All-IP Operations",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica and Tektronix Partner to Ease Broadcasters’ Path to All-IP Operations",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica Provides Underlying Video-Over-IP Technology for Tektronix’s Prism, Industry’s First Hybrid SDI/IP Media Analysis Platform",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>SOLANA BEACH, Calif. — Dec. 6, 2016 — Macnica today announced that it has forged a technology partnership with Tektronix. Through the global agreement, Tektronix has embedded Macnica’s industry-leading video-over-IP technology into Prism, a new media analysis platform designed to smooth broadcasters’ transition from SDI-based to IP-based infrastructures.</p>\n<p>“As the broadcast industry begins a phased and gradual migration to an all IP-infrastructure, there’s strong demand for test and monitoring solutions that can help engineers manage hybrid facilities using both SDI and IP signals. That’s the strategy behind Prism, which offers the unique ability to diagnose and correlate both signal types,” said Charlie Dunn, general manager, video product line, Tektronix. “Our product strategy is driven by the ultimate desire to address customer requirements. We chose to partner with the industry leader in core technologies for video delivery over IP networks to enable us to bring the right solutions to our customers at the right time. Through our agreement with Macnica, we were able to use their interoperability-tested solution to bring our product to market much faster.”</p>\n<p>Prism is the industry’s first hybrid SDI/IP media analysis platform, ideal for environments such as master control rooms, production studios, OB vans, and signal contribution/distribution centers. Prism offers a diverse variety of IP statistics as well as video/audio quality and diagnostic information — helping engineers ensure the delivery of superior quality-of-service levels in an increasingly complex broadcast environment with both compressed and uncompressed SDI/IP video signals.</p>\n<p>Tektronix has licensed Macnica’s ST2022 intellectual property to enable Prism to receive streaming media over Real-time Transport Protocol (RTP) IP traffic. Macnica’s intellectual property is compliant with current and emerging standards for video transport over IP networks. Per the partnership, Macnica has supplied Tektronix with intellectual property, a simulation and test environment, and technical support.</p>\n<p>“Tektronix needs no introduction as a highly respected and industry-leading innovator of video quality testing and monitoring solutions, and we are delighted to partner with them on their IP media analysis platforms,” said John Burton, president, Macnica. “With Prism, Tektronix shares Macnica’s philosophy to provide standards-based, interoperable solutions for easing the transition from SDI-based to IP-based infrastructures.”</p>\n<p>More information on Macnica and its other products is available at <a href=\"https://macnicatech.com/\" target=\"_self\" rel=\"noopener noreferrer\">https://macnicatech.com/.</a></p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   }
+  }
+ }
+}

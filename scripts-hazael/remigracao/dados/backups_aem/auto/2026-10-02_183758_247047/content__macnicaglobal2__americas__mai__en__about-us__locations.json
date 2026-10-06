@@ -1,0 +1,289 @@
+{
+ "quando": "2026-10-02T18:38:31",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/locations",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/locations/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Our Global Solutions Company Office Locations",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:29:53 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:47:34 GMT+0000",
+  "jcr:description": "Macnica Americas office locations, including our San Diego headquarters. As a global tech solutions company we have offices in San Jose, Dallas, and more!",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/locations",
+  "pageTitle": "Our Major Offices in San Diego, Dallas, and More Locations",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Locations",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Our Global Solutions Company Office Locations",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "title_wrap_conteudo": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text_intro": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Macnica Americas office locations, including our San Diego headquarters. As a global tech solutions company we have offices in San Jose, Dallas, and more!</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Locations",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_escritorios_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "San Diego (HQ)",
+        "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+        "type": "h3",
+        "jcr:lastModified": "Tue Sep 22 2026 19:29:48 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "0",
+          "width": "12"
+         }
+        }
+       },
+       "text_endereco": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><a href=\"https://www.google.com/maps?q=380+Stevens+Ave.,+Suite+206,+Solana+Beach,+CA+92075&hl=en&sll=33.00143,-117.272315&sspn=0.027245,0.036006&vpsrc=0&hnear=380+Stevens+Ave+%23206,+Solana+Beach,+California+92075&t=m&z=17&layer=t\" target=\"_blank\" rel=\"noopener\">380 Stevens Ave. Suite 206,<br>Solana Beach, CA 92075</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "text_contato": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>Phone: <a href=\"tel:858-876-0852\">858-876-0852</a></p>\r\n<p>Email: <a href=\"mailto:info.mai@macnica.com\">info.mai@macnica.com</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Chicago (Automotive Division)",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_endereco": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><a href=\"https://www.google.com/maps/place/650+E+Algonquin+Rd,+Schaumburg,+IL+60173,+USA/@42.0749465,-88.0643214,17z/data=!3m1!4b1!4m5!3m4!1s0x880fa590f82953a1:0x47beae08828e50e8!8m2!3d42.0749465!4d-88.0621327\" target=\"_blank\" rel=\"noopener\">650 East Algonquin Road Suite 401,<br>Schaumburg IL, 60173</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "text_contato": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p>Phone: <a href=\"tel:1-847-701-8245\">1-847-701-8245</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Dallas",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_endereco": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><a href=\"https://www.google.com/maps/place/@33.0235606,-96.7945203,19.25z?hl=en&entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\" rel=\"noopener\">4975 Preston Park Blvd. Suite 600,<br>Plano TX 75093</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "1",
+        "width": "10"
+       }
+      }
+     }
+    },
+    "container_escritorios_2": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Detroit",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_endereco": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><a href=\"https://maps.app.goo.gl/3DnpvF1DbTadpTFJ9?g_st=ipc\" target=\"_blank\" rel=\"noopener\">27780 Novi Rd #270,<br>Novi, MI 48377</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Ottawa",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_endereco": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><a href=\"https://www.google.com/maps/place/1335+Carling+Ave+%23608,+Ottawa,+ON+K1Z+8N8,+Canada/@45.3857255,-75.7361542,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce069ee8d46af1:0x677d04dd814b0439!8m2!3d45.3857255!4d-75.7361542?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D\" target=\"_blank\" rel=\"noopener\">1335 Carling Ave Suite 608,<br>Ottawa, ON K1Z 8N8,<br>Canada</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "San Jose",
+        "type": "h3",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       },
+       "text_endereco": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p><a href=\"https://www.google.com/maps/place/303+Almaden+Blvd+%23140,+San+Jose,+CA+95110/@37.3287087,-121.8938028,17z/data=!3m1!4b1!4m5!3m4!1s0x808fccaff35f7f19:0x54135de3e3fedcec!8m2!3d37.3287087!4d-121.8916141\" target=\"_blank\" rel=\"noopener\">303 Almaden Blvd. Suite 140,<br>San Jose, CA 95110</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "1",
+        "width": "10"
+       }
+      }
+     }
+    },
+    "container_botoes": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact Us for More Information",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_861351158": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Request a Quote",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  },
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/banners/banner-image.jpeg",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ }
+}

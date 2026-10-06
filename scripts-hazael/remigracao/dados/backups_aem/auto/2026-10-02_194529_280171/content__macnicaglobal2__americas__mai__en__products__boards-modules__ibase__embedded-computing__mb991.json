@@ -1,0 +1,201 @@
+{
+ "quando": "2026-10-02T19:45:55",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/embedded-computing/mb991",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/embedded-computing/mb991/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "MB991",
+  "manufacturer": "mai:manufacturers/ibase",
+  "businessCategories": [
+   "mai:business-categories/boards-modules",
+   "mai:business-categories/boards-modules"
+  ],
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "MB991",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 13:45:42 GMT+0000",
+  "cq:lastModified": "Fri Oct 02 2026 22:03:19 GMT+0000",
+  "jcr:description": "The MB991 Micro ATX motherboard, designed based on the Intel® Q170 chipset, supports a range of processors including the Intel® Xeon® E3 family, 7th and 6th Generation Intel® Core™, Intel® Pentium®, and Celeron® QC/DC processors. Featuring Intel® Gen 9 HD Graphics, it delivers enhanced video perform",
+  "keywords": "MB991, Micro ATX motherboard, Intel® Q170 chipset, Intel® Xeon® E3, 7th/6th Gen Intel® Core™, Intel® Pentium®, Intel® Celeron®, Embedded Computing, iSMART, TPM (2.0), iAMT (11.6), Dual Gigabit Ethernet, RAID Support.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/embedded-computing/mb991",
+  "hideInNav": "true",
+  "pageTitle": "MB991",
+  "cq:tags": "mai:business-categories/boards-modules",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "navTitle": "MB991",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Mon Sep 21 2026 19:32:25 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498055877"
+     ],
+     "container_525028952": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Mon Sep 21 2026 19:32:28 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498053499",
+       "1717498056876"
+      ],
+      "title": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "MB991",
+       "type": "h1",
+       "sling:resourceType": "macnicaglobal2/components/content/title"
+      },
+      "textwithimage_1820921095": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "anil@anionmarketing.com",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/images/MB991.jpeg",
+       "imageRatio": "30",
+       "jcr:lastModifiedBy": "anil@anionmarketing.com",
+       "jcr:created": "Fri Oct 02 2026 14:36:45 GMT+0000",
+       "alt": "MB991",
+       "text": "<p><span class=\"paragraph--semilarge\">Versatile Micro ATX Motherboard for Embedded Computing Solutions</span></p>\r\n<p>The MB991 Micro ATX motherboard, designed based on the Intel® Q170 chipset, supports a range of processors including the Intel® Xeon® E3 family, 7th and 6th Generation Intel® Core™, Intel® Pentium®, and Celeron® QC/DC processors. Featuring Intel® Gen 9 HD Graphics, it delivers enhanced video performance for stunning visuals and 4K playback. With a rich set of I/O and flexible expansion options, including PCIe slots, SATA III ports, and USB interfaces, this motherboard caters to various applications such as medical equipment, industrial control, and gaming machines. Equipped with dual Gigabit Ethernet, RAID support, TPM (2.0), iAMT (11.6), and iSMART technology, it ensures reliability, security, and environmental efficiency.</p>\r\n",
+       "displayPopupTitle": "true",
+       "linkTarget": "_self",
+       "jcr:lastModified": "Fri Oct 02 2026 14:57:14 GMT+0000",
+       "titleValueFromDAM": "true",
+       "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+       "isDecorative": "false",
+       "textIsRich": "true",
+       "altValueFromDAM": "false",
+       "cq:styleIds": [
+        "",
+        "",
+        ""
+       ],
+       "spImage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/images/MB991.jpeg",
+        "jcr:lastModifiedBy": "anil@anionmarketing.com",
+        "jcr:lastModified": "Fri Oct 02 2026 14:57:14 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/image"
+       }
+      }
+     },
+     "container_1107099960": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:lastModified": "Mon Sep 21 2026 19:34:42 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "backgroundColor": "#f0f0f0",
+      "cq:styleIds": [
+       "",
+       "1717498052331",
+       "1717498053499"
+      ],
+      "title_textwithimage": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Features",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "type": "h2",
+       "jcr:lastModified": "Fri Oct 02 2026 14:26:10 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/title",
+       "cq:styleIds": [
+        "",
+        "",
+        "",
+        "1718280235888"
+       ]
+      },
+      "text": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:created": "Thu Sep 24 2026 18:10:15 GMT+0000",
+       "text": "<ul><li>Intel® Xeon E3/Core™ i7/i5/i3 / Pentium® / Celeron® QC/DC processors support</li><li>Intel® Gen 9 HD Graphics for enhanced video performance</li><li>Rich set of I/O and flexible expansion options</li><li>Dual Gigabit Ethernet and RAID support</li><li>iSMART technology for environmental efficiency</li></ul>\r\n",
+       "jcr:lastModified": "Fri Oct 02 2026 14:30:46 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/text",
+       "textIsRich": "true"
+      }
+     }
+    },
+    "heading_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Mon Sep 21 2026 19:34:12 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       "1718280235888"
+      ]
+     },
+     "table_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th>CPU Socket</th>\n<td>LGA1151</td>\n</tr><tr><th>CPU</th>\n<td>7th/6th Gen Intel® Xeon E3/Core™ i7/i5/i3/ Pentium® / Celeron® QC/ DC processors, up to 4.2GHz</td>\n</tr><tr><th>PCH</th>\n<td>MB991AF-C236: Intel® C236 PCH<br>\nMB991AF: Intel® Q170 PCH</td>\n</tr><tr><th>Memory</th>\n<td>4x DDR4 DIMM, Max. 64GB (supports ECC by CPU SKUs)</td>\n</tr><tr><th>BIOS</th>\n<td>AMI</td>\n</tr><tr><th>Watchdog Timer</th>\n<td>256 levels</td>\n</tr><tr><th>H/W Monitor</th>\n<td>Yes</td>\n</tr><tr><th>Storage Device Interface</th>\n<td>1x mSATA via Mini PCI-E (Thru SATA III)<br>\n1x M.2 slot [Thru PCI-E (x1) x4](NVMe)</td>\n</tr><tr><th>Expansion Slots</th>\n<td>1x PCI-E (x16), 1x PCI-E (x8), 1x PCI-E (x4) 1x M.2 (2280)</td>\n</tr><tr><th>Mini Type Slots</th>\n<td>1x Mini PCI-E</td>\n</tr><tr><th>Graphics Controller</th>\n<td>7th/6th Gen Intel® Core™ i7/i5/i3/ Pentium®/ Celeron® processor Integrated</td>\n</tr><tr><th>Video Output</th>\n<td>2x HDMI (1.4) and LVDS</td>\n</tr><tr><th>Ethernet</th>\n<td>Intel® I219LM Gigabit LAN PHY<br>\nIntel® I211AT or I210AT Gigabit LAN</td>\n</tr><tr><th>I/O Chip</th>\n<td>Fintek F81846AD-I + F81504D</td>\n</tr><tr><th>Serial Port</th>\n<td>6x RS232, 2x RS232/422/485 (jumper-less selection)</td>\n</tr><tr><th>USB 2.0</th>\n<td>4x USB 2.0 via pin-header</td>\n</tr><tr><th>USB 3.X</th>\n<td>6x USB 3.0 on board</td>\n</tr><tr><th>Serial ATA</th>\n<td>5x SATA III</td>\n</tr><tr><th>Audio</th>\n<td>Intel® C236 / Q170 PCH built-in HD audio + Realtek ALC888S codec</td>\n</tr><tr><th>TPM</th>\n<td>TPM (2.0)</td>\n</tr><tr><th>Others</th>\n<td>Digital I/O (4-in/4-out), RAID, iAMT (11.6), iSMART</td>\n</tr><tr><th>Dimensions (L x W)</th>\n<td>244 mm x 244 mm (9.6&quot; x 9.6&quot;)</td>\n</tr><tr><th>Power Consumption</th>\n<td>Intel® Core i7-6700, 3.4GHz, w/ 4x 8GB DDR4-2133<br>\n12V: 7.1A<br>\n+5V: 1.81A<br>\n+5VSB: 0.11A<br>\n+3.3V, 0.70A</td>\n</tr><tr><th>Operating Temperature</th>\n<td>0°C~60°C (32°F~140°F)</td>\n</tr><tr><th>Storage Temperature</th>\n<td>-20°C~80°C (-4°F~176°F)</td>\n</tr><tr><th>Relative Humidity</th>\n<td>90% (non-condensing @ 60°C)</td>\n</tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true"
+     },
+     "heading_4_ordering": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       "1718280237031"
+      ]
+     },
+     "table_2_ordering": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th>MB991AFS-236</th>\n<td width=\"80%\">LGA1151 C236 Micro ATX motherboard w/ 2x HDMI (1.4) and LVDS, dual Gigabit LAN, RAID, iAMT (11.6), TPM (2.0), iSMART</td>\n</tr><tr><th>MB991AFS</th>\n<td>LGA1151 Q170 Micro ATX motherboard w/ 2x HDMI (1.4) and LVDS, dual Gigabit LAN, RAID, iAMT (11.6), TPM (2.0), iSMART</td>\n</tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true"
+     }
+    },
+    "text_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<h3><b>About IBASE</b></h3>\n<ul>\n<li>IBASE offers a range of embedded computing solutions tailored for various applications.</li>\n<li>Their products feature advanced technologies such as iSMART for improved environmental performance.</li>\n<li>IBASE motherboards support a wide range of processors, including Intel® Xeon®, Core™, Pentium®, and Celeron® series.</li>\n<li>Security features like TPM and iAMT are integrated into IBASE motherboards to ensure data protection and manageability.</li>\n<li>IBASE products are designed with reliability, versatility, and performance in mind, making them suitable for diverse industrial applications.</li>\n</ul>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "experiencefragment": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/signup-and-contact-experience-fragment/master",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "quando": "2026-10-05T09:55:51",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "About Us | Technology Product Company",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-technical-article-page",
+  "jcr:created": "Wed Sep 23 2026 02:29:38 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:47:22 GMT+0000",
+  "jcr:description": "Learn about Macnica Americas, a leading technology product company. We commit to innovation and excellence as we provide solutions to meet your needs.",
+  "keywords": "Macnica Americas, technology solutions, distribution",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us",
+  "pageTitle": "About Us",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "About Us",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "About Us | Technology Product Company",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_cardlist": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "cardlist": {
+      "jcr:primaryType": "nt:unstructured",
+      "showTitle": "true",
+      "tagsMatch": "any",
+      "linkItems": "true",
+      "showArticleDate": "false",
+      "orderBy": "title",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "showFeaturedImage": "true",
+      "showTags": "false",
+      "parentPage": "/content/macnicaglobal2/americas/mai/en/about-us",
+      "sortOrder": "asc",
+      "showDescription": "false",
+      "isFreeTextSearchEnabled": "false",
+      "jcr:lastModified": "Tue Sep 22 2026 21:42:18 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/cardlist",
+      "childDepth": "1",
+      "listFrom": "children",
+      "cq:styleIds": [
+       "1776056736854"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

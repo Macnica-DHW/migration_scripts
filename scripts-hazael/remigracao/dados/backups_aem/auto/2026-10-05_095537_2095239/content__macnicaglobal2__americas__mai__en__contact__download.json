@@ -1,0 +1,1978 @@
+{
+ "quando": "2026-10-05T09:56:20",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/contact/download",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/contact/download/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Fill Out Our Online Contact Information Form",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-page-content",
+  "jcr:created": "Wed Sep 23 2026 10:38:02 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 10:33:50 GMT+0000",
+  "jcr:description": "Macnica Americas' contact information form allows you to quickly get in touch with our team. Simply fill out the form and we'll respond to your needs.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/contact/download",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Fill Out Our Online Contact Information Form",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_form": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "form": {
+      "jcr:primaryType": "nt:unstructured",
+      "default_subject": "Contact Form",
+      "subject": "Contact Form",
+      "downlaodAssetMailSubject": "Download Test",
+      "downlaodAssetMailBusinessMailTo": "pete.bunke@macnica.com",
+      "action": "/content/usergenerated/macnicaglobal2/americas/mai/en/contact/form/cq-gen1721030270130/",
+      "mailToBusiness": "false",
+      "mailto": [
+       "info.mai@macnica.com",
+       "marketing.mai@macnica.com"
+      ],
+      "mail_mailToCustomer": "false",
+      "redirect": "/content/macnicaglobal2/americas/mai/en/contact/download",
+      "includePageTitle": "false",
+      "watchVideoMailSubject": "Video Test",
+      "watchVideoMailToBusiness": "true",
+      "macnicadefault_subject": "Contact Form",
+      "watchVideoMailBusinessMailTo": "pete.bunke@macnica.com",
+      "errorFragmentPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/popups/form-error/master",
+      "macnicadefault_mailto": [
+       "info.mai@macnica.com",
+       "marketing.mai@macnica.com"
+      ],
+      "from": "cmsadmin@macnica.co.jp",
+      "rpc_mail_mailToBusiness": "false",
+      "downlaodAssetMailToBusiness": "true",
+      "autoGenerateId": "true",
+      "successFragmentPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/popups/form-success/master",
+      "watchVideoMailToCustomer": "true",
+      "sling:resourceType": "macnicaglobal2/components/form/container",
+      "mail_mailToBusiness": "false",
+      "focussend": "false",
+      "actionType": "macnicagwi/components/content/form/actions/watchVideo",
+      "default_mailto": [
+       "info.mai@macnica.com",
+       "marketing.mai@macnica.com"
+      ],
+      "rpc_mail_mailToCustomer": "false",
+      "downlaodAssetMailToCustomer": "true",
+      "options_copy_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Inquiry Type",
+       "source": "local",
+       "required": "true",
+       "name": "Inquiry Type",
+       "type": "drop-down",
+       "sling:resourceType": "macnicaglobal2/components/form/options",
+       "constraintmessagetype": "checkbox",
+       "items": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "- Select a value -",
+         "value": "- Select a value -",
+         "selected": "true"
+        },
+        "item1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": " Product / Technology Question",
+         "value": " Product / Technology Question",
+         "selected": "false"
+        },
+        "item2": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Product Pricing / Delivery",
+         "value": "Product Pricing / Delivery",
+         "selected": "false"
+        },
+        "item3": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Design Services Request",
+         "value": "Design Services Request",
+         "selected": "false"
+        },
+        "item4": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Technical Support Request",
+         "value": "Technical Support Request",
+         "selected": "false"
+        },
+        "item5": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Partnership Interest",
+         "value": "Partnership Interest",
+         "selected": "false"
+        },
+        "item6": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "General Question",
+         "value": "General Question",
+         "selected": "false"
+        }
+       }
+      },
+      "text_copy_1138177465": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "First/Given Name",
+       "constraintMessage": "Please Enter First Name",
+       "cq:isDelivered": "True",
+       "required": "true",
+       "usePlaceholder": "true",
+       "name": "fullName",
+       "rows": "2",
+       "type": "text",
+       "class": "cmp-form-focussend",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "First Name",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "cq:isDelivered": "True",
+        "phone": {
+         "jcr:primaryType": "nt:unstructured",
+         "cq:isDelivered": "True",
+         "offset": "0",
+         "width": "11"
+        }
+       }
+      },
+      "text_copy_1138177465_87812165": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Last/Family Name",
+       "constraintMessage": "Please Enter Last Name",
+       "cq:isDelivered": "True",
+       "required": "true",
+       "usePlaceholder": "true",
+       "name": "lastName",
+       "rows": "2",
+       "type": "text",
+       "class": "cmp-form-focussend",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Last Name",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "cq:isDelivered": "True",
+        "phone": {
+         "jcr:primaryType": "nt:unstructured",
+         "cq:isDelivered": "True",
+         "offset": "0",
+         "width": "11"
+        }
+       }
+      },
+      "text_copy_1138177465_1166550933": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Company",
+       "constraintMessage": "Please Enter Company Name",
+       "cq:isDelivered": "True",
+       "required": "true",
+       "usePlaceholder": "true",
+       "name": "company",
+       "rows": "2",
+       "type": "text",
+       "class": "cmp-form-focussend",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Company",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "cq:isDelivered": "True",
+        "phone": {
+         "jcr:primaryType": "nt:unstructured",
+         "cq:isDelivered": "True",
+         "offset": "0",
+         "width": "11"
+        }
+       }
+      },
+      "text_copy_1138177465_186870547": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Title",
+       "constraintMessage": "Please Enter Title",
+       "cq:isDelivered": "True",
+       "usePlaceholder": "true",
+       "name": "title",
+       "rows": "2",
+       "type": "text",
+       "class": "cmp-form-focussend",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Title",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "cq:isDelivered": "True",
+        "phone": {
+         "jcr:primaryType": "nt:unstructured",
+         "cq:isDelivered": "True",
+         "offset": "0",
+         "width": "11"
+        }
+       }
+      },
+      "text_copy_1369741073": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Email Address",
+       "constraintMessage": "Please Enter Valid Email",
+       "cq:isDelivered": "True",
+       "required": "true",
+       "usePlaceholder": "true",
+       "name": "email",
+       "rows": "2",
+       "type": "email",
+       "class": "cmp-form-focussend",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Email Address",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "cq:isDelivered": "True",
+        "phone": {
+         "jcr:primaryType": "nt:unstructured",
+         "cq:isDelivered": "True",
+         "offset": "0",
+         "width": "11"
+        }
+       }
+      },
+      "text_copy_1138177465_2013650767": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Phone Number",
+       "constraintMessage": "Please Enter Phone Number",
+       "cq:isDelivered": "True",
+       "required": "true",
+       "usePlaceholder": "true",
+       "name": "phoneNumber",
+       "rows": "2",
+       "type": "text",
+       "class": "cmp-form-focussend",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Phone Number",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "cq:isDelivered": "True",
+        "phone": {
+         "jcr:primaryType": "nt:unstructured",
+         "cq:isDelivered": "True",
+         "offset": "0",
+         "width": "11"
+        }
+       }
+      },
+      "text_copy_1369741073_1235360635": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "City",
+       "constraintMessage": "Please Enter City",
+       "cq:isDelivered": "True",
+       "required": "true",
+       "usePlaceholder": "true",
+       "name": "City",
+       "rows": "2",
+       "type": "text",
+       "class": "cmp-form-focussend",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "City",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "cq:isDelivered": "True",
+        "phone": {
+         "jcr:primaryType": "nt:unstructured",
+         "cq:isDelivered": "True",
+         "offset": "0",
+         "width": "11"
+        }
+       }
+      },
+      "text_copy_1369741073_723153985": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "State/Province",
+       "constraintMessage": "Please Enter State Province",
+       "cq:isDelivered": "True",
+       "required": "true",
+       "usePlaceholder": "true",
+       "name": "State/Province",
+       "rows": "2",
+       "type": "text",
+       "class": "cmp-form-focussend",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "State/Province",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "cq:isDelivered": "True",
+        "phone": {
+         "jcr:primaryType": "nt:unstructured",
+         "cq:isDelivered": "True",
+         "offset": "0",
+         "width": "11"
+        }
+       }
+      },
+      "options": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Country",
+       "source": "local",
+       "name": "country",
+       "type": "drop-down",
+       "sling:resourceType": "macnicaglobal2/components/form/options",
+       "items": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "-None-",
+         "value": "-None-",
+         "selected": "true"
+        },
+        "item1": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Afghanistan",
+         "value": "AF",
+         "selected": "false"
+        },
+        "item2": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Albania",
+         "value": "AL",
+         "selected": "false"
+        },
+        "item3": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Algeria",
+         "value": "DZ",
+         "selected": "false"
+        },
+        "item4": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "American Samoa",
+         "value": "AS",
+         "selected": "false"
+        },
+        "item5": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Andorra",
+         "value": "AD",
+         "selected": "false"
+        },
+        "item6": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Angola",
+         "value": "AO",
+         "selected": "false"
+        },
+        "item7": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Anguilla",
+         "value": "AI",
+         "selected": "false"
+        },
+        "item8": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Antarctica",
+         "value": "AQ",
+         "selected": "false"
+        },
+        "item9": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Antigua & Barbuda",
+         "value": "AG",
+         "selected": "false"
+        },
+        "item10": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Argentina",
+         "value": "AR",
+         "selected": "false"
+        },
+        "item11": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Armenia",
+         "value": "AM",
+         "selected": "false"
+        },
+        "item12": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Aruba",
+         "value": "AW",
+         "selected": "false"
+        },
+        "item13": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Ascension Island",
+         "value": "AC",
+         "selected": "false"
+        },
+        "item14": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Australia",
+         "value": "AU",
+         "selected": "false"
+        },
+        "item15": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Austria",
+         "value": "AT",
+         "selected": "false"
+        },
+        "item16": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Azerbaijan",
+         "value": "AZ",
+         "selected": "false"
+        },
+        "item17": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Bahamas",
+         "value": "BS",
+         "selected": "false"
+        },
+        "item18": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Bahrain",
+         "value": "BH",
+         "selected": "false"
+        },
+        "item19": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Bangladesh",
+         "value": "BD",
+         "selected": "false"
+        },
+        "item20": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Barbados",
+         "value": "BB",
+         "selected": "false"
+        },
+        "item21": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Belarus",
+         "value": "BY",
+         "selected": "false"
+        },
+        "item22": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Belgium",
+         "value": "BE",
+         "selected": "false"
+        },
+        "item23": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Belize",
+         "value": "BZ",
+         "selected": "false"
+        },
+        "item24": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Benin",
+         "value": "BJ",
+         "selected": "false"
+        },
+        "item25": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Bermuda",
+         "value": "BM",
+         "selected": "false"
+        },
+        "item26": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Bhutan",
+         "value": "BT",
+         "selected": "false"
+        },
+        "item27": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Bolivia",
+         "value": "BO",
+         "selected": "false"
+        },
+        "item28": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Bosnia & Herzegovina",
+         "value": "BA",
+         "selected": "false"
+        },
+        "item29": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Botswana",
+         "value": "BW",
+         "selected": "false"
+        },
+        "item30": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Bouvet Island",
+         "value": "BV",
+         "selected": "false"
+        },
+        "item31": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Brazil",
+         "value": "BR",
+         "selected": "false"
+        },
+        "item32": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "British Indian Ocean Territory",
+         "value": "IO",
+         "selected": "false"
+        },
+        "item33": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "British Virgin Islands",
+         "value": "VG",
+         "selected": "false"
+        },
+        "item34": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Brunei",
+         "value": "BN",
+         "selected": "false"
+        },
+        "item35": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Bulgaria",
+         "value": "BG",
+         "selected": "false"
+        },
+        "item36": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Burkina Faso",
+         "value": "BF",
+         "selected": "false"
+        },
+        "item37": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Burundi",
+         "value": "BI",
+         "selected": "false"
+        },
+        "item38": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Cambodia",
+         "value": "KH",
+         "selected": "false"
+        },
+        "item39": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Cameroon",
+         "value": "CM",
+         "selected": "false"
+        },
+        "item40": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Canada",
+         "value": "CA",
+         "selected": "false"
+        },
+        "item41": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Canary Islands",
+         "value": "IC",
+         "selected": "false"
+        },
+        "item42": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Cape Verde",
+         "value": "CV",
+         "selected": "false"
+        },
+        "item43": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Caribbean Netherlands",
+         "value": "BQ",
+         "selected": "false"
+        },
+        "item44": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Cayman Islands",
+         "value": "KY",
+         "selected": "false"
+        },
+        "item45": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Central African Republic",
+         "value": "CF",
+         "selected": "false"
+        },
+        "item46": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Ceuta & Melilla",
+         "value": "EA",
+         "selected": "false"
+        },
+        "item47": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Chad",
+         "value": "TD",
+         "selected": "false"
+        },
+        "item48": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Chile",
+         "value": "CL",
+         "selected": "false"
+        },
+        "item49": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "China",
+         "value": "CN",
+         "selected": "false"
+        },
+        "item50": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Christmas Island",
+         "value": "CX",
+         "selected": "false"
+        },
+        "item51": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Clipperton Island",
+         "value": "CP",
+         "selected": "false"
+        },
+        "item52": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Cocos (Keeling) Islands",
+         "value": "CC",
+         "selected": "false"
+        },
+        "item53": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Colombia",
+         "value": "CO",
+         "selected": "false"
+        },
+        "item54": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Comoros",
+         "value": "KM",
+         "selected": "false"
+        },
+        "item55": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Congo - Brazzaville",
+         "value": "CG",
+         "selected": "false"
+        },
+        "item56": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Congo - Kinshasa",
+         "value": "CD",
+         "selected": "false"
+        },
+        "item57": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Cook Islands",
+         "value": "CK",
+         "selected": "false"
+        },
+        "item58": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Costa Rica",
+         "value": "CR",
+         "selected": "false"
+        },
+        "item59": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Croatia",
+         "value": "HR",
+         "selected": "false"
+        },
+        "item60": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Cuba",
+         "value": "CU",
+         "selected": "false"
+        },
+        "item62": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Curaçao",
+         "value": "CW",
+         "selected": "false"
+        },
+        "item61": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Cyprus",
+         "value": "CY",
+         "selected": "false"
+        },
+        "item63": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Czechia",
+         "value": "CZ",
+         "selected": "false"
+        },
+        "item64": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Côte d’Ivoire",
+         "value": "CI",
+         "selected": "false"
+        },
+        "item65": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Denmark",
+         "value": "DK",
+         "selected": "false"
+        },
+        "item66": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Diego Garcia",
+         "value": "DG",
+         "selected": "false"
+        },
+        "item67": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Djibouti",
+         "value": "DJ",
+         "selected": "false"
+        },
+        "item68": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Dominica",
+         "value": "DM",
+         "selected": "false"
+        },
+        "item69": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Dominican Republic",
+         "value": "DO",
+         "selected": "false"
+        },
+        "item70": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Ecuador",
+         "value": "EC",
+         "selected": "false"
+        },
+        "item71": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Egypt",
+         "value": "EG",
+         "selected": "false"
+        },
+        "item72": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "El Salvador",
+         "value": "SV",
+         "selected": "false"
+        },
+        "item73": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Equatorial Guinea",
+         "value": "GQ",
+         "selected": "false"
+        },
+        "item74": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Eritrea",
+         "value": "ER",
+         "selected": "false"
+        },
+        "item75": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Estonia",
+         "value": "EE",
+         "selected": "false"
+        },
+        "item76": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Eswatini",
+         "value": "SZ",
+         "selected": "false"
+        },
+        "item77": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Ethiopia",
+         "value": "ET",
+         "selected": "false"
+        },
+        "item78": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Falkland Islands",
+         "value": "FK",
+         "selected": "false"
+        },
+        "item79": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Faroe Islands",
+         "value": "FO",
+         "selected": "false"
+        },
+        "item80": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Fiji",
+         "value": "FJ",
+         "selected": "false"
+        },
+        "item81": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Finland",
+         "value": "FI",
+         "selected": "false"
+        },
+        "item82": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "France",
+         "value": "FR",
+         "selected": "false"
+        },
+        "item83": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "French Guiana",
+         "value": "GF",
+         "selected": "false"
+        },
+        "item84": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "French Polynesia",
+         "value": "PF",
+         "selected": "false"
+        },
+        "item85": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "French Southern Territories",
+         "value": "TF",
+         "selected": "false"
+        },
+        "item86": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Gabon",
+         "value": "GA",
+         "selected": "false"
+        },
+        "item87": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Gambia",
+         "value": "GM",
+         "selected": "false"
+        },
+        "item88": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Georgia",
+         "value": "GE",
+         "selected": "false"
+        },
+        "item89": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Germany",
+         "value": "DE",
+         "selected": "false"
+        },
+        "item90": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Ghana",
+         "value": "GH",
+         "selected": "false"
+        },
+        "item91": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Gibraltar",
+         "value": "GI",
+         "selected": "false"
+        },
+        "item92": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Greece",
+         "value": "GR",
+         "selected": "false"
+        },
+        "item93": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Greenland",
+         "value": "GL",
+         "selected": "false"
+        },
+        "item94": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Grenada",
+         "value": "GD",
+         "selected": "false"
+        },
+        "item95": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Guadeloupe",
+         "value": "GP",
+         "selected": "false"
+        },
+        "item96": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Guam",
+         "value": "GU",
+         "selected": "false"
+        },
+        "item97": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Guatemala",
+         "value": "GT",
+         "selected": "false"
+        },
+        "item98": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Guernsey",
+         "value": "GG",
+         "selected": "false"
+        },
+        "item99": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Guinea",
+         "value": "GN",
+         "selected": "false"
+        },
+        "item100": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Guinea-Bissau",
+         "value": "GW",
+         "selected": "false"
+        },
+        "item101": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Guyana",
+         "value": "GY",
+         "selected": "false"
+        },
+        "item102": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Haiti",
+         "value": "HT",
+         "selected": "false"
+        },
+        "item103": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Heard & McDonald Islands",
+         "value": "HM",
+         "selected": "false"
+        },
+        "item104": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Honduras",
+         "value": "HN",
+         "selected": "false"
+        },
+        "item105": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Hong Kong SAR China",
+         "value": "HK",
+         "selected": "false"
+        },
+        "item106": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Hungary",
+         "value": "HU",
+         "selected": "false"
+        },
+        "item107": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Iceland",
+         "value": "IS",
+         "selected": "false"
+        },
+        "item108": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "India",
+         "value": "IN",
+         "selected": "false"
+        },
+        "item109": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Indonesia",
+         "value": "ID",
+         "selected": "false"
+        },
+        "item110": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Iran",
+         "value": "IR",
+         "selected": "false"
+        },
+        "item111": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Iraq",
+         "value": "IQ",
+         "selected": "false"
+        },
+        "item112": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Ireland",
+         "value": "IE",
+         "selected": "false"
+        },
+        "item113": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Isle of Man",
+         "value": "IM",
+         "selected": "false"
+        },
+        "item114": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Israel",
+         "value": "IL",
+         "selected": "false"
+        },
+        "item115": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Italy",
+         "value": "IT",
+         "selected": "false"
+        },
+        "item116": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Jamaica",
+         "value": "JM",
+         "selected": "false"
+        },
+        "item117": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Japan",
+         "value": "JP",
+         "selected": "false"
+        },
+        "item118": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Jersey",
+         "value": "JE",
+         "selected": "false"
+        },
+        "item119": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Jordan",
+         "value": "JO",
+         "selected": "false"
+        },
+        "item120": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Kazakhstan",
+         "value": "KZ",
+         "selected": "false"
+        },
+        "item121": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Kenya",
+         "value": "KE",
+         "selected": "false"
+        },
+        "item122": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Kiribati",
+         "value": "KI",
+         "selected": "false"
+        },
+        "item123": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Kosovo",
+         "value": "XK",
+         "selected": "false"
+        },
+        "item124": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Kuwait",
+         "value": "KW",
+         "selected": "false"
+        },
+        "item125": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Kyrgyzstan",
+         "value": "KG",
+         "selected": "false"
+        },
+        "item126": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Laos",
+         "value": "LA",
+         "selected": "false"
+        },
+        "item127": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Latvia",
+         "value": "LV",
+         "selected": "false"
+        },
+        "item128": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Lebanon",
+         "value": "LB",
+         "selected": "false"
+        },
+        "item129": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Lesotho",
+         "value": "LS",
+         "selected": "false"
+        },
+        "item130": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Liberia",
+         "value": "LR",
+         "selected": "false"
+        },
+        "item131": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Libya",
+         "value": "LY",
+         "selected": "false"
+        },
+        "item132": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Liechtenstein",
+         "value": "LI",
+         "selected": "false"
+        },
+        "item133": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Lithuania",
+         "value": "LT",
+         "selected": "false"
+        },
+        "item134": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Luxembourg",
+         "value": "LU",
+         "selected": "false"
+        },
+        "item135": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Macao SAR China",
+         "value": "MO",
+         "selected": "false"
+        },
+        "item136": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Madagascar",
+         "value": "MG",
+         "selected": "false"
+        },
+        "item137": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Malawi",
+         "value": "MW",
+         "selected": "false"
+        },
+        "item138": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Malaysia",
+         "value": "MY",
+         "selected": "false"
+        },
+        "item139": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Maldives",
+         "value": "MV",
+         "selected": "false"
+        },
+        "item140": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Mali",
+         "value": "ML",
+         "selected": "false"
+        },
+        "item141": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Malta",
+         "value": "MT",
+         "selected": "false"
+        },
+        "item142": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Marshall Islands",
+         "value": "MH",
+         "selected": "false"
+        },
+        "item143": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Martinique",
+         "value": "MQ",
+         "selected": "false"
+        },
+        "item144": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Mauritania",
+         "value": "MR",
+         "selected": "false"
+        },
+        "item145": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Mauritius",
+         "value": "MU",
+         "selected": "false"
+        },
+        "item146": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Mayotte",
+         "value": "YT",
+         "selected": "false"
+        },
+        "item147": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Mexico",
+         "value": "MX",
+         "selected": "false"
+        },
+        "item148": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Micronesia",
+         "value": "FM",
+         "selected": "false"
+        },
+        "item149": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Moldova",
+         "value": "MD",
+         "selected": "false"
+        },
+        "item150": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Monaco",
+         "value": "MC",
+         "selected": "false"
+        },
+        "item151": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Mongolia",
+         "value": "MN",
+         "selected": "false"
+        },
+        "item152": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Montenegro",
+         "value": "ME",
+         "selected": "false"
+        },
+        "item153": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Montserrat",
+         "value": "MS",
+         "selected": "false"
+        },
+        "item154": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Morocco",
+         "value": "MA",
+         "selected": "false"
+        },
+        "item155": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Mozambique",
+         "value": "MZ",
+         "selected": "false"
+        },
+        "item156": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Myanmar (Burma)",
+         "value": "MM",
+         "selected": "false"
+        },
+        "item157": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Namibia",
+         "value": "NA",
+         "selected": "false"
+        },
+        "item158": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Nauru",
+         "value": "NR",
+         "selected": "false"
+        },
+        "item159": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Nepal",
+         "value": "NP",
+         "selected": "false"
+        },
+        "item160": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Netherlands",
+         "value": "NL",
+         "selected": "false"
+        },
+        "item161": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Netherlands Antilles",
+         "value": "AN",
+         "selected": "false"
+        },
+        "item162": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "New Caledonia",
+         "value": "NC",
+         "selected": "false"
+        },
+        "item163": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "New Zealand",
+         "value": "NZ",
+         "selected": "false"
+        },
+        "item164": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Nicaragua",
+         "value": "NI",
+         "selected": "false"
+        },
+        "item165": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Niger",
+         "value": "NE",
+         "selected": "false"
+        },
+        "item166": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Nigeria",
+         "value": "NG",
+         "selected": "false"
+        },
+        "item167": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Niue",
+         "value": "NU",
+         "selected": "false"
+        },
+        "item168": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Norfolk Island",
+         "value": "NF",
+         "selected": "false"
+        },
+        "item169": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Northern Mariana Islands",
+         "value": "MP",
+         "selected": "false"
+        },
+        "item170": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "North Korea",
+         "value": "KP",
+         "selected": "false"
+        },
+        "item171": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "North Macedonia",
+         "value": "MK",
+         "selected": "false"
+        },
+        "item172": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Norway",
+         "value": "NO",
+         "selected": "false"
+        },
+        "item173": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Oman",
+         "value": "OM",
+         "selected": "false"
+        },
+        "item174": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Outlying Oceania",
+         "value": "QO",
+         "selected": "false"
+        },
+        "item175": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Pakistan",
+         "value": "PK",
+         "selected": "false"
+        },
+        "item176": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Palau",
+         "value": "PW",
+         "selected": "false"
+        },
+        "item177": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Palestinian Territories",
+         "value": "PS",
+         "selected": "false"
+        },
+        "item178": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Panama",
+         "value": "PA",
+         "selected": "false"
+        },
+        "item179": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Papua New Guinea",
+         "value": "PG",
+         "selected": "false"
+        },
+        "item180": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Paraguay",
+         "value": "PY",
+         "selected": "false"
+        },
+        "item181": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Peru",
+         "value": "PE",
+         "selected": "false"
+        },
+        "item182": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Philippines",
+         "value": "PH",
+         "selected": "false"
+        },
+        "item183": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Pitcairn Islands",
+         "value": "PN",
+         "selected": "false"
+        },
+        "item184": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Poland",
+         "value": "PL",
+         "selected": "false"
+        },
+        "item185": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Portugal",
+         "value": "PT",
+         "selected": "false"
+        },
+        "item186": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Puerto Rico",
+         "value": "PR",
+         "selected": "false"
+        },
+        "item187": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Qatar",
+         "value": "QA",
+         "selected": "false"
+        },
+        "item188": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Romania",
+         "value": "RO",
+         "selected": "false"
+        },
+        "item189": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Russia",
+         "value": "RU",
+         "selected": "false"
+        },
+        "item190": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Rwanda",
+         "value": "RW",
+         "selected": "false"
+        },
+        "item191": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Réunion",
+         "value": "RE",
+         "selected": "false"
+        },
+        "item192": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Samoa",
+         "value": "WS",
+         "selected": "false"
+        },
+        "item193": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "San Marino",
+         "value": "SM",
+         "selected": "false"
+        },
+        "item194": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Saudi Arabia",
+         "value": "SA",
+         "selected": "false"
+        },
+        "item195": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Senegal",
+         "value": "SN",
+         "selected": "false"
+        },
+        "item196": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Serbia",
+         "value": "RS",
+         "selected": "false"
+        },
+        "item197": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Seychelles",
+         "value": "SC",
+         "selected": "false"
+        },
+        "item198": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Sierra Leone",
+         "value": "SL",
+         "selected": "false"
+        },
+        "item199": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Singapore",
+         "value": "SG",
+         "selected": "false"
+        },
+        "item200": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Sint Maarten",
+         "value": "SX",
+         "selected": "false"
+        },
+        "item201": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Slovakia",
+         "value": "SK",
+         "selected": "false"
+        },
+        "item202": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Slovenia",
+         "value": "SI",
+         "selected": "false"
+        },
+        "item203": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Solomon Islands",
+         "value": "SB",
+         "selected": "false"
+        },
+        "item204": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Somalia",
+         "value": "SO",
+         "selected": "false"
+        },
+        "item205": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "South Africa",
+         "value": "ZA",
+         "selected": "false"
+        },
+        "item206": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "South Georgia & South Sandwich Islands",
+         "value": "GS",
+         "selected": "false"
+        },
+        "item207": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "South Korea",
+         "value": "KR",
+         "selected": "false"
+        },
+        "item208": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "South Sudan",
+         "value": "SS",
+         "selected": "false"
+        },
+        "item209": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Spain",
+         "value": "ES",
+         "selected": "false"
+        },
+        "item210": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Sri Lanka",
+         "value": "LK",
+         "selected": "false"
+        },
+        "item211": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "St. Barthélemy",
+         "value": "BL",
+         "selected": "false"
+        },
+        "item212": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "St. Helena",
+         "value": "SH",
+         "selected": "false"
+        },
+        "item213": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "St. Kitts & Nevis",
+         "value": "KN",
+         "selected": "false"
+        },
+        "item214": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "St. Lucia",
+         "value": "LC",
+         "selected": "false"
+        },
+        "item215": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "St. Martin",
+         "value": "MF",
+         "selected": "false"
+        },
+        "item216": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "St. Pierre & Miquelon",
+         "value": "PM",
+         "selected": "false"
+        },
+        "item217": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "St. Vincent & Grenadines",
+         "value": "VC",
+         "selected": "false"
+        },
+        "item218": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Sudan",
+         "value": "SD",
+         "selected": "false"
+        },
+        "item219": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Suriname",
+         "value": "SR",
+         "selected": "false"
+        },
+        "item220": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Svalbard & Jan Mayen",
+         "value": "SJ",
+         "selected": "false"
+        },
+        "item221": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Sweden",
+         "value": "SE",
+         "selected": "false"
+        },
+        "item222": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Switzerland",
+         "value": "CH",
+         "selected": "false"
+        },
+        "item223": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Syria",
+         "value": "SY",
+         "selected": "false"
+        },
+        "item224": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "São Tomé & Príncipe",
+         "value": "ST",
+         "selected": "false"
+        },
+        "item225": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Taiwan",
+         "value": "TW",
+         "selected": "false"
+        },
+        "item226": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Tajikistan",
+         "value": "TJ",
+         "selected": "false"
+        },
+        "item227": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Tanzania",
+         "value": "TZ",
+         "selected": "false"
+        },
+        "item228": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Thailand",
+         "value": "TH",
+         "selected": "false"
+        },
+        "item229": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Timor-Leste",
+         "value": "TL",
+         "selected": "false"
+        },
+        "item230": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Togo",
+         "value": "TG",
+         "selected": "false"
+        },
+        "item231": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Tokelau",
+         "value": "TK",
+         "selected": "false"
+        },
+        "item232": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Tonga",
+         "value": "TO",
+         "selected": "false"
+        },
+        "item233": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Trinidad & Tobago",
+         "value": "TT",
+         "selected": "false"
+        },
+        "item234": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Tristan da Cunha",
+         "value": "TA",
+         "selected": "false"
+        },
+        "item235": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Tunisia",
+         "value": "TN",
+         "selected": "false"
+        },
+        "item236": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Turkey",
+         "value": "TR",
+         "selected": "false"
+        },
+        "item237": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Turkmenistan",
+         "value": "TM",
+         "selected": "false"
+        },
+        "item238": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Turks & Caicos Islands",
+         "value": "TC",
+         "selected": "false"
+        },
+        "item239": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Tuvalu",
+         "value": "TV",
+         "selected": "false"
+        },
+        "item240": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "U.S. Outlying Islands",
+         "value": "UM",
+         "selected": "false"
+        },
+        "item241": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "U.S. Virgin Islands",
+         "value": "VI",
+         "selected": "false"
+        },
+        "item242": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Uganda",
+         "value": "UG",
+         "selected": "false"
+        },
+        "item243": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Ukraine",
+         "value": "UA",
+         "selected": "false"
+        },
+        "item244": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "United Arab Emirates",
+         "value": "AE",
+         "selected": "false"
+        },
+        "item245": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "United Kingdom",
+         "value": "GB",
+         "selected": "false"
+        },
+        "item246": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "United States",
+         "value": "US",
+         "selected": "false"
+        },
+        "item247": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Uruguay",
+         "value": "UY",
+         "selected": "false"
+        },
+        "item248": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Uzbekistan",
+         "value": "UZ",
+         "selected": "false"
+        },
+        "item249": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Vanuatu",
+         "value": "VU",
+         "selected": "false"
+        },
+        "item250": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Vatican City",
+         "value": "VA",
+         "selected": "false"
+        },
+        "item251": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Venezuela",
+         "value": "VE",
+         "selected": "false"
+        },
+        "item252": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Vietnam",
+         "value": "VN",
+         "selected": "false"
+        },
+        "item253": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Wallis & Futuna",
+         "value": "WF",
+         "selected": "false"
+        },
+        "item254": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Western Sahara",
+         "value": "EH",
+         "selected": "false"
+        },
+        "item255": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Yemen",
+         "value": "YE",
+         "selected": "false"
+        },
+        "item256": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Zambia",
+         "value": "ZM",
+         "selected": "false"
+        },
+        "item257": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Zimbabwe",
+         "value": "ZW",
+         "selected": "false"
+        },
+        "item258": {
+         "jcr:primaryType": "nt:unstructured",
+         "text": "Åland Islands",
+         "value": "AX",
+         "selected": "false"
+        }
+       }
+      },
+      "text_copy_1369741073_832659041": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Subject",
+       "constraintMessage": "Please Enter Subject",
+       "cq:isDelivered": "True",
+       "required": "true",
+       "usePlaceholder": "true",
+       "name": "Subject",
+       "rows": "2",
+       "type": "text",
+       "class": "cmp-form-focussend",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Subject",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "cq:isDelivered": "True",
+        "phone": {
+         "jcr:primaryType": "nt:unstructured",
+         "cq:isDelivered": "True",
+         "offset": "0",
+         "width": "11"
+        }
+       }
+      },
+      "text_copy_1369741073_830606779": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Message",
+       "constraintMessage": "Please Enter Valid Email",
+       "cq:isDelivered": "True",
+       "required": "true",
+       "usePlaceholder": "true",
+       "name": "Message",
+       "rows": "4",
+       "type": "textarea",
+       "class": "cmp-form-focussend",
+       "sling:resourceType": "macnicaglobal2/components/form/text",
+       "helpMessage": "Message",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "cq:isDelivered": "True",
+        "phone": {
+         "jcr:primaryType": "nt:unstructured",
+         "cq:isDelivered": "True",
+         "offset": "0",
+         "width": "11"
+        }
+       }
+      },
+      "button_copy": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:title": "Send message",
+       "type": "submit",
+       "sling:resourceType": "macnicaglobal2/components/form/button",
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "0",
+         "width": "12"
+        },
+        "phone": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "3",
+         "width": "6"
+        },
+        "tablet": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "1",
+         "width": "9"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/banners/contact-us.jpeg",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ }
+}

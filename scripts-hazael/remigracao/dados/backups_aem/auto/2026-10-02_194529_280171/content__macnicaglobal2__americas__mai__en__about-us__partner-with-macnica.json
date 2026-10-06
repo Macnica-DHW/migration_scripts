@@ -1,0 +1,1509 @@
+{
+ "quando": "2026-10-02T19:45:54",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Become a Product Supplier & Technology/Business Partner",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-technical-article-page",
+  "jcr:created": "Wed Sep 23 2026 02:30:01 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 04:47:18 GMT+0000",
+  "jcr:description": "Become a partner with us to extend your sales and service capabilities worldwide. Join us to leverage our experienced technical team and global network.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica",
+  "pageTitle": "Partner with Macnica",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "navTitle": "Partner with Macnica",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Become a Product Supplier & Technology/Business Partner",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_migrado_3": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Accelerate Your Growth with Macnica Americas",
+      "icon": "false",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "enableListing": "false",
+      "alignment": "left",
+      "cq:styleIds": [
+       "1688112945013"
+      ]
+     }
+    },
+    "container_migrado_4": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<p>Partner with Macnica Americas and tap into our highly skilled field team, proven logistics support, and deep technology expertise—all backed by a $5B global distribution network headquartered in Japan. Every day, we help customers solve complex engineering challenges and expand into new markets across Asia and beyond. We can do the same for you.</p>\r\n<p>Whether you’re a&nbsp;<b>Product Supplier</b>&nbsp;or a&nbsp;<b>Technology/Business Partner</b>, we invite you to join us in driving innovation and growth.&nbsp;<b><a href=\"/content/macnicaglobal2/americas/mai/en/contact/form.html\">Contact us today</a></b>&nbsp;to explore how partnering with Macnica Americas can help you reach more customers, extend your services, and achieve lasting success.</p>\r\n",
+      "jcr:lastModified": "Tue Sep 22 2026 20:41:25 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_migrado_5": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Tue Sep 22 2026 23:50:21 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498053499"
+     ],
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\">\r\n<tbody><tr><th>Product Suppliers</th>\r\n<th>Technology Partners</th>\r\n</tr><tr><td width=\"49%\"><ul>\r\n<li>Semiconductor Suppliers</li>\r\n<li>Board and Module Suppliers</li>\r\n<li>Software Suppliers</li>\r\n<li>Product Suppliers</li>\r\n</ul>\r\n</td>\r\n<td width=\"51%\"><ul>\r\n<li>Complementary&nbsp;Technology<ul>\r\n<li>IP,&nbsp;Algorithms,&nbsp;Software and&nbsp;Tools</li>\r\n</ul>\r\n</li>\r\n<li>Design Services&nbsp;</li>\r\n<li>Value-Added Service&nbsp;</li>\r\n</ul>\r\n</td>\r\n</tr></tbody></table>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true"
+     }
+    },
+    "container_migrado_7": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Tue Sep 22 2026 23:50:34 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Semiconductor Suppliers",
+      "icon": "false",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "enableListing": "false",
+      "alignment": "left",
+      "cq:styleIds": [
+       "1688112945013",
+       "1690913810338"
+      ]
+     }
+    },
+    "container_migrado_8": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Tue Sep 22 2026 23:50:45 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/4-helio-view-hardware.html\" target=\"_self\">4. Helio View Hardware</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/8-helio-view-software.html\" target=\"_self\">8. Helio View Software</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-altera-logo-tm-alterablue-3000.png",
+        "alt": "Altera",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/altera.html\" target=\"_self\">Altera</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontainer_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-ambarella-logo-transparent-300.png",
+        "alt": "Ambarella",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/ambarella.html\" target=\"_self\">Ambarella</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-adi-logo-cmyk-fullcolor-140x1001.png",
+        "alt": "Analog Devices",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/analog-devices.html\" target=\"_self\">Analog Devices</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-canonlogo-red-web.png",
+        "alt": "Canon",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/canon.html\" target=\"_self\">Canon</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "cq:responsive": {
+        "jcr:primaryType": "nt:unstructured",
+        "default": {
+         "jcr:primaryType": "nt:unstructured",
+         "offset": "8",
+         "width": "3"
+        }
+       }
+      }
+     },
+     "flexcontainer_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-deepx-logo.png",
+        "alt": "DEEPX",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/deepx",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/deepx.html\" target=\"_self\">DEEPX</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-cq5dam-thumbnail-319-319.png",
+        "alt": "Design Gateway",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+        "text": "<p style=\"text-align: center;\"><a rel=\"noopener noreferrer\" target=\"_self\" href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/design-gateway.html\">Design Gateway</a></p>\r\n",
+        "jcr:lastModified": "Wed Sep 23 2026 04:39:03 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-genesys-logic-logo2.png",
+        "alt": "Genesys Logic",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/genesys-logic",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/genesys-logic.html\" target=\"_self\">Genesys Logic</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontainer_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-i-chips1-e1407422256377.png",
+        "alt": "i-Chips",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/i-chips.html\" target=\"_self\">i-Chips</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-infineon.png",
+        "alt": "Infineon",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/infineon",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/infineon.html\" target=\"_self\">Infineon</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-microchip-logo.png",
+        "alt": "Microchip (Automotive Only)",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/microchip",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/microchip.html\" target=\"_self\">Microchip (Automotive Only)</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontainer_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-namuga-vision-connectivity-logo.png",
+        "alt": "NAMUGA | Advanced Camera and 3D Sensing Solutions for Intelligent Systems",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/namuga-advanced-camera-and-3d-sensing-solutions-for-intelligent-systems.html\" target=\"_self\">NAMUGA | Advanced Camera and 3D Sensing Solutions for Intelligent Systems</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-onsemi-logo.png",
+        "alt": "ON Semiconductor (Automotive only)",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/on-semiconductor",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/on-semiconductor.html\" target=\"_self\">ON Semiconductor (Automotive only)</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-renesas-180x50.png",
+        "alt": "Renesas (Automotive only)",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/renesas",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/renesas.html\" target=\"_self\">Renesas (Automotive only)</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontainer_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-sitime-logo-jpeg-large.png",
+        "alt": "SiTime",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sitime.html\" target=\"_self\">SiTime</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-sony-logo.png",
+        "alt": "Sony",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/sony.html\" target=\"_self\">Sony</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-toppan-logo.png",
+        "alt": "Toppan",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/toppan-3d-tof-sensing-solutions",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/semiconductors/toppan-3d-tof-sensing-solutions.html\" target=\"_self\">Toppan</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_migrado_9": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Board/Module Suppliers",
+      "icon": "false",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "enableListing": "false",
+      "alignment": "left",
+      "cq:styleIds": [
+       "1688112945013",
+       "1690913810338"
+      ]
+     }
+    },
+    "container_migrado_8_": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-connect-tech-logo.png",
+        "alt": "Connect Tech ",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/connect-tech",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/connect-tech.html\" target=\"_self\">Connect Tech </a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-hiteklogo-0.png",
+        "alt": "Hitek Systems",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/hitek-systems",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/hitek-systems.html\" target=\"_self\">Hitek Systems</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-ibas-logo.png",
+        "alt": "IBASE",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase.html\" target=\"_self\">IBASE</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontainer_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-iei.png",
+        "alt": "IEI",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei.html\" target=\"_self\">IEI</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-ienso-logo.png",
+        "alt": "iENSO",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ienso",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/ienso.html\" target=\"_self\">iENSO</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-mpression.png",
+        "alt": "Mpression",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/mpression",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/mpression.html\" target=\"_self\">Mpression</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontainer_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-reflexces-logo-horizontal-nobaseline.png",
+        "alt": "Reflex CES",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/reflex-ces.html\" target=\"_self\">Reflex CES</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-silex-logo.png",
+        "alt": "Silex Technology",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/silex",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/silex.html\" target=\"_self\">Silex Technology</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-terasic-technologies.png",
+        "alt": "Terasic",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic.html\" target=\"_self\">Terasic</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontainer_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-logo-tq-systems-svg.png",
+        "alt": "TQ Systems",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems.html\" target=\"_self\">TQ Systems</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-transcend-logo-trimmed.png",
+        "alt": "Transcend",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/boards-modules/transcend.html\" target=\"_self\">Transcend</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_migrado_11": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Tue Sep 22 2026 23:51:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Display Suppliers",
+      "icon": "false",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "enableListing": "false",
+      "alignment": "left",
+      "cq:styleIds": [
+       "1688112945013",
+       "1690913810338"
+      ]
+     }
+    },
+    "container_migrado_8__207564030": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Tue Sep 22 2026 23:51:11 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-macnica-brand-logo-rgb-1.png",
+        "alt": "High Brightness Displays",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/displays/high-brightness",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/displays/high-brightness.html\" target=\"_self\">High Brightness Displays</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-innolux-logo-svg.png",
+        "alt": "Innolux Display Corporation TFT-LCD Displays and Products",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/displays/innolux",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/displays/innolux.html\" target=\"_self\">Innolux Display Corporation TFT-LCD Displays and Products</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-lg.png",
+        "alt": "LG OLED Display Signage",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/displays/lg-oled-display-signage",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/displays/lg-oled-display-signage.html\" target=\"_self\">LG OLED Display Signage</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontainer_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-lilliput-logo-300x60.png",
+        "alt": "Lilliput Monitors",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/displays/lilliput-monitors",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/displays/lilliput-monitors.html\" target=\"_self\">Lilliput Monitors</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-macnica-brand-logo-rgb-1.png",
+        "alt": "Macnica Displays",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/displays/macnica-displays",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/displays/macnica-displays.html\" target=\"_self\">Macnica Displays</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-macnica-customization-banner.png",
+        "alt": "Macnica Value-add Services for Customized Display Solutions",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/products/displays/macnica-displays-customization",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/displays/macnica-displays-customization.html\" target=\"_self\">Macnica Value-add Services for Customized Display Solutions</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontainer_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/displays/ortustech.html\" target=\"_self\">OrtusTech</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_migrado_13": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Associations and Committees",
+      "icon": "false",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "enableListing": "false",
+      "alignment": "left",
+      "cq:styleIds": [
+       "1688112945013",
+       "1690913810338"
+      ]
+     }
+    },
+    "container_migrado_8__906545716": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/advanced-media-workflow-association-amwa.html\" target=\"_self\">Advanced Media Workflow Association (AMWA) </a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/alliance-for-ip-media-solutions-aims.html\" target=\"_self\">Alliance for IP Media Solutions (AIMS)</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-a3-logo.png",
+        "alt": "Association for Advancing Automation (A3)",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/association-for-advancing-automation-a3",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/association-for-advancing-automation-a3.html\" target=\"_self\">Association for Advancing Automation (A3)</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontainer_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-edge-ai-vision-logo.png",
+        "alt": "Edge AI and Vision Alliance",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/edge-ai-and-vision",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/edge-ai-and-vision.html\" target=\"_self\">Edge AI and Vision Alliance</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-ecia-logo.png",
+        "alt": "Electronic Components Industry Association (ECIA)",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/electronic-components-industry-association-ecia",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/electronic-components-industry-association-ecia.html\" target=\"_self\">Electronic Components Industry Association (ECIA)</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_3": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/cards/card-pittsburgh-robotics-network-logo.png",
+        "alt": "Pittsburgh Robotics Network",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/pittsburgh-robotics-network",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ]
+       },
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/pittsburgh-robotics-network.html\" target=\"_self\">Pittsburgh Robotics Network</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flexcontainer_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "",
+       "1719484596357"
+      ],
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<p style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/about-us/partner-with-macnica/video-services-forum-vsf.html\" target=\"_self\">Video Services Forum (VSF)</a></p>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_migrado_15": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Tue Sep 22 2026 23:51:30 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "What We Offer",
+      "icon": "false",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "enableListing": "false",
+      "alignment": "left",
+      "cq:styleIds": [
+       "1688112945013"
+      ]
+     }
+    },
+    "wwo_linha1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Tue Sep 22 2026 23:51:40 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "imageFromPageImage": "false",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/icons/eye-icon.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "cq:styleIds": [
+         "",
+         ""
+        ],
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "4",
+          "width": "4"
+         }
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h4 style=\"text-align: center;\">Demand Creation</h4>\n<ul>\n<li>Highly consultative approach</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_752223818": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "imageFromPageImage": "false",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/icons/life-buoy-icon.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "4",
+          "width": "4"
+         }
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h4 style=\"text-align: center;\">Technical Support</h4>\n<ul>\n<li>1:1 sales and FAE ratio</li>\n<li>Centralized Applications team</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_284248121": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "imageFromPageImage": "false",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/icons/3-gears-icon.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "4",
+          "width": "4"
+         }
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h4 style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/services/design-services.html\" target=\"_self\">Design Services</a></h4>\n<ul>\n<li>FPGA, software, board design</li>\n<li>Video related designs</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "wwo_linha2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Tue Sep 22 2026 23:51:48 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "imageFromPageImage": "false",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/icons/megaphone-icon.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "4",
+          "width": "4"
+         }
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h4 style=\"text-align: center;\">Marketing</h4>\n<ul>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/about-us/news-events/events-archive.html\" target=\"_self\">Trade Shows</a></li>\n<li>Product Content, Training, Webinar, etc. via Digital Channels</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "imageFromPageImage": "false",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/icons/truck-icon.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "4",
+          "width": "4"
+         }
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h4 style=\"text-align: center;\">Logistics</h4>\n<ul>\n<li>ISO9000 certified warehouses</li>\n<li>Directly through Macnica offices, globally</li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "flexcontaineritem_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "imageFromPageImage": "false",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/images/icons/plus-icon.png",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "cq:responsive": {
+         "jcr:primaryType": "nt:unstructured",
+         "default": {
+          "jcr:primaryType": "nt:unstructured",
+          "offset": "4",
+          "width": "4"
+         }
+        }
+       },
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h4 style=\"text-align: center;\"><a href=\"/content/macnicaglobal2/americas/mai/en/products/displays/macnica-displays-customization.html\" target=\"_self\">Value-Added Services</a></h4>\n<ul>\n<li>Programming</li>\n<li><a href=\"/content/macnicaglobal2/americas/mai/en/products/displays/macnica-displays-customization.html\" target=\"_self\">Display Optical Bonding and more</a></li>\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_migrado_43": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "experiencefragment": {
+      "jcr:primaryType": "nt:unstructured",
+      "fragmentVariationPath": "/content/experience-fragments/macnicaglobal2/americas/mai/en/site/products-contact-block/master",
+      "text": "Contact Us for More Information Request a Quote",
+      "sling:resourceType": "macnicaglobal2/components/content/experiencefragment"
+     }
+    }
+   }
+  },
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/banners/partner.jpg",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ }
+}

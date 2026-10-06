@@ -1,0 +1,577 @@
+{
+ "quando": "2026-10-05T13:49:21",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-kino-dh420",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-kino-dh420/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "IEI KINO-DH420 | Mini-ITX SBC",
+  "manufacturer": "mai:manufacturers/iei",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "KINO-DH420",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Tue Sep 08 2026 15:34:49 GMT+0000",
+  "cq:lastModified": "Mon Oct 05 2026 16:48:41 GMT+0000",
+  "jcr:description": "The IEI KINO-DH420 Mini-ITX SBC has a performance boost of up to 80% better than the previous generation i5 processor. Contact us for a quote today.",
+  "keywords": "KINO-DH420",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/iei/iei-kino-dh420",
+  "hideInNav": "true",
+  "pageTitle": "IEI KINO-DH420",
+  "cq:tags": "mai:business-categories/boards-modules",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "pd_description": "The IEI KINO-DH420 Mini-ITX SBC has a performance boost of up to 80% better than the previous generation i5 processor. Contact us for a quote today.",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "navTitle": "IEI KINO-DH420",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_titulo": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ]
+    },
+    "text_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/IEI_KINO-DH420-Mini-ITX-SBC-3-w600.png",
+      "imageRatio": "30",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Thu Sep 24 2026 13:23:41 GMT+0000",
+      "alt": "kino 420",
+      "text": "<h2>Mini-ITX SBC supports LGA1200 Intel® 10th Generation Core™ i9/i7/i5/i3/ Pentium®/Celeron® processor, DDR4, dual independent displays, triple 2.5 GbE LAN, M.2, SATA 6Gb/s & HD Audio</h2>\n<ul>\r\n<li>LGA1200 Intel® 10th Generation Core™ i9/i7/i5/i3, Celeron® and Pentium® processor</li>\r\n<li>Support triple Intel® 2.5Gb Ethernet controller</li>\r\n<li>Support HDMI, DP display output</li>\r\n<li>Support 1 x PCIe Gen3 x16, 1 x M.2 A key, 1 x M.2 B key expansion</li>\r\n</ul>\r\n",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Sep 24 2026 13:27:09 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "1783061491236"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/IEI_KINO-DH420-Mini-ITX-SBC-3-w600.png",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Thu Sep 24 2026 13:27:09 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "text_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "textwithimage_copy": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/IEI I-KINO-DH420-io.jpg",
+      "imageRatio": "18",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Thu Sep 24 2026 13:23:41 GMT+0000",
+      "alt": "kino 420",
+      "text": "<h2>Enhanced Performance</h2>\r\n<p>Performance boosts up to 80% better than previous generation on i5 processor. The 10th Gen Intel® Core platform supports up to 10 cores and improved performance over Coffee Lake-Refresh. With increased I/O capacity and the latest DDR4-2933 memory support, these processors deliver the performance required to consolidate industrial multiple workloads.</p>\r\n<h3>Let's take a closer look at the KINO-DH420</h3>\r\n",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Fri Oct 02 2026 13:47:48 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       "1783061491236"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/IEI I-KINO-DH420-io.jpg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Fri Oct 02 2026 13:47:48 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "image_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Sep 24 2026 13:49:51 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#e0e0e0",
+     "cq:styleIds": [
+      "",
+      "1717498052331",
+      "1717498053499"
+     ],
+     "image_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/P3-1.png",
+      "sling:resourceType": "macnicaglobal2/components/content/image",
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "3",
+        "width": "6"
+       }
+      }
+     }
+    },
+    "text_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title_text_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "High Speed Transmission",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "1718280235888",
+       "1717668061877"
+      ]
+     }
+    },
+    "heading_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage_copy": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/P4-2.png",
+      "imageRatio": "30",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Thu Sep 24 2026 13:23:41 GMT+0000",
+      "alt": "kino 420",
+      "text": "<h2>Delivers Triple Low-Latency 2.5G LAN Powered by Intel</h2>\n<p>The on-board triple 2.5GbE controllers enable the KINO-DH420 Mini-ITX SBC to meet the bandwidth-intensive requirements such as large file transfers and high-resolution video streaming.</p>\r\n",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Sep 24 2026 13:38:06 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       "1783061491236"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/P4-2.png",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Thu Sep 24 2026 13:38:06 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "heading_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage_copy_c": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/P4-4.png",
+      "imageRatio": "30",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Thu Sep 24 2026 13:23:41 GMT+0000",
+      "alt": "kino 420",
+      "text": "<h2>Multi-tasking</h2>\n<p>IEI KINO-DH420 features unprecedented network connectivity with three rear 2.5 Gigabit LAN ports, and it is small enough to fit into any space-confined situations.</p>\r\n",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Sep 24 2026 13:39:34 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       "1783061491236"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/P4-4.png",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Thu Sep 24 2026 13:39:34 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "image_7_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ]
+    },
+    "text_6_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "title_text_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Dual Independent Display and Touch-enabled BIOS",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h2",
+      "jcr:lastModified": "Mon Oct 05 2026 16:39:43 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "1717668061877",
+       "",
+       "",
+       "1718280235888"
+      ]
+     },
+     "textwithimage_copy_c": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/KINO-DH420-1.svg",
+      "imageRatio": "30",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Thu Sep 24 2026 13:23:41 GMT+0000",
+      "alt": "kino 420",
+      "text": "<h3>Delivers HDMI+DP 4K Resolution for Real-time Monitoring</h3>\r\n<p>Running with Intel® UHD Graphics of 11th Gen processor at 800 MHz allows the system to display videos and images in stunning 4K resolution via HDMI 1.4b and DP 1.4 dual independent display. The enhanced visual quality responses the demand of high precision display.<br>\r\n<br>\r\nIEI's tBIOS allows users to navigate with finger on a touch-enabled monitor to make BIOS configuration easily.</p>\r\n",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Sep 24 2026 13:45:05 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       "1783061491236"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/KINO-DH420-1.svg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Thu Sep 24 2026 13:45:05 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "text_9_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title_text_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Multiple Expansion Capabilities",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "1718280235888",
+       "1717668061877"
+      ]
+     }
+    },
+    "heading_6_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage_copy_c": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/P8-10.png",
+      "imageRatio": "30",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Thu Sep 24 2026 13:23:41 GMT+0000",
+      "alt": "kino 420",
+      "text": "<h2>M.2 2230 A Key for Wi-Fi / Bluetooth</h2>\n<p>The M.2 2230, a key slot with PCIe Gen3 x1 and USB 2.0, has adopted the latest Wi-Fi 6E technology. Wi-Fi 6E enhances low latency and supports service levels that are equivalent to 5G networks.</p>\r\n",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Sep 24 2026 13:48:32 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       "1783061491236"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/P8-10.png",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Thu Sep 24 2026 13:48:32 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "heading_7_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage_copy_c": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/P10-40.png",
+      "imageRatio": "30",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "jcr:created": "Thu Sep 24 2026 13:23:41 GMT+0000",
+      "alt": "kino 420",
+      "text": "<h2>Multi-functional M.2 B Key Slot</h2>\n<p>The KINO-DH420 also offers one M.2 3042/3052/2242/2280 B key socket supporting AI accelerator / NVMe SSD as well as SIM card slot for LTE deployment.</p>\r\n",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Sep 24 2026 13:47:24 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       "1783061491236"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/iei/P10-40.png",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Thu Sep 24 2026 13:47:24 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "heading_8_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "One PCIe Gen3 x16 Slot Easily Adds on GPGPU, AI Accelerator, Frame Grabber and More",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       "1718280235888"
+      ]
+     },
+     "text_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>The KINO-DH420 brings high-performance industrial Edge with one PCIe x16 slot. This provides a greater range of support for GPGPU, frame grabber card and AI accelerators. It is designed for the most intensive applications from Edge AI system to automated optical inspection (AOI).</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_9_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       "1718280235888"
+      ]
+     },
+     "table_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\"><tbody><tr><td width=\"167\" colspan=\"2\" style=\"\ttext-align: center;\n\"><b>Form Factor</b></td></tr><tr><td style=\"width:20%;text-align:left\"><b>Form Factor</b></td><td>Mini-ITX Motherboard</td></tr><tr><td colspan=\"2\" style=\"\ttext-align: center;\n\"><b>System</b></td></tr><tr><td style=\"width:20%;text-align:left\"><b>CPU</b></td><td>LGA1200 Intel® 10th Generation Core™ i9/i7/i5/i3, Celeron® and Pentium® processor</td></tr><tr><td style=\"width:20%;text-align:left\"><b>Chipset</b></td><td>Intel® H420E</td></tr><tr><td style=\"width:20%;text-align:left\"><b>Memory</b></td><td>Two 260-pin 2933 MHz Dual-Channel DDR4 SO-DIMMs supported up to 64GB</td></tr><tr><td style=\"width:20%;text-align:left\"><b>Memory Max</b>.</td><td>Up to 64GB</td></tr><tr><td style=\"width:20%;text-align:left\"><b>Cooling method / System Fan</b></td><td>1 x CPU fan connector (1x4 pin)<br />\n2 x System fan connector (1x4 pin)</td></tr><tr><td colspan=\"2\" style=\"\ttext-align: center;\n\"><b>Physical Characteristics</b></td></tr><tr><td style=\"width:20%;text-align:left\"><b>Dimensions (LxWxH) (mm)</b></td><td>170mm x 170mm</td></tr><tr><td style=\"width:20%;text-align:left\"><b>Net Weight</b></td><td>400g</td></tr><tr><td colspan=\"2\" style=\"\ttext-align: center;\n\"><b>Storage</b></td></tr><tr><td style=\"width:20%;text-align:left\"><b>Storage</b></td><td>2 x SATA : 6Gb/s (no RAID)</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td>1 x M.2 (NGFF) : B key (support NVME storage)</td></tr><tr><th colspan=\"2\" style=\"\ttext-align: center;\n\"><b>I/O Interface</b></th></tr><tr><td style=\"width:20%;text-align:left\"><b>Display Output</b></td><td>1 x HDMI up to 4096 x 2160 &#64;30Hz</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td>1 x Display Port up to 4096 x 2304 &#64;60Hz</td></tr><tr><td style=\"width:20%;text-align:left\"><b>Ethernet</b></td><td><p>3 x LAN -</p>\n<p>LAN1: Intel® i225LM GbE controller (colay i225v)</p>\n<p>LAN2: Intel® i225v GbE controller (colay i225LM)</p>\n<p>LAN3: Intel® i225v GbE controller (colay i225LM)</p>\n</td></tr><tr><td style=\"width:20%;text-align:left\"><b>Audio</b></td><td>1 x Line out</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td>1 x Mic</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td>1 x Front Audio : 2x5 pin</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td>1 x HD Audio : Realtek ALC888S HD codec</td></tr><tr><td style=\"width:20%;text-align:left\"><b>I/O Interface</b></td><td>2 x External RS-232</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td>1 x Internal RS-232 : 2x5 pin, P&#61;2.00</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td>1 x Internal RS-422/485 : RS-485 support AFC</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td>2 x External USB 2.0 : Type-A</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td>4 x External USB 3.2 Gen1x1 : 5Gb/s (Type-A)</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td>2 x Internal USB 2.0 : 2x4 pin, P&#61;2.00</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td>1 x DIO : 8-bit digital I/O (2x5 pin)</td></tr><tr><td style=\"width:20%;text-align:left\"><b>Expansion</b></td><td>1 x PCIe x 16</td></tr><tr><td style=\"width:20%;text-align:left\"> </td><td><p>2 x M.2 (NGFF) -<br />\n</p>\n<p>1 x M.2 A key (2230) (PCIe Gen 3 x1/USB 2.0)</p>\n<p>1 x M.2 B key (3042/3052/2242/2280) w/ SIM holder (PCIe Gen 3 x2/USB 2.0)</p>\n</td></tr><tr><td colspan=\"2\" style=\"\ttext-align: center;\n\"><b>Other Features</b></td></tr><tr><td style=\"width:20%;text-align:left\"><b>TPM</b></td><td>Intel® PTT (TPM 2.0)</td></tr><tr><th colspan=\"2\" style=\"\ttext-align: center;\n\"><b>Power</b></th></tr><tr><td style=\"width:20%;text-align:left\"><b>Power Consumption</b></td><td>12V&#64;12.408A (Intel® Core™ i9-10900E CPU with two 32 GB 2933 MHz DDR4 memory, EuP/ErP mode disabled)</td></tr><tr><td style=\"width:20%;text-align:left\"><b>Power Supply</b></td><td>DC 12V input<br />\n1 x ATX power connector (2x4 pin)<br />\n1 x DIN 4-pin DC Jack<br />\nSupport AT/ATX mode<br />\nErP/EuP Compliant</td></tr><tr><td colspan=\"2\" style=\"\ttext-align: center;\n\"><b>Environment</b></td></tr><tr><td style=\"width:20%;text-align:left\"><b>Operating Temperature</b></td><td>0°C – 60°C</td></tr><tr><td style=\"width:20%;text-align:left\"><b>Storage Temperature</b></td><td>-30°C – 70°C</td></tr><tr><td style=\"width:20%;text-align:left\"><b>Humidity</b></td><td>5% ~ 95%, non-condensing</td></tr><tr><td colspan=\"2\" style=\"\ttext-align: center;\n\"><b>Certifications</b></td></tr><tr><td style=\"width:20%;text-align:left\"><b>Safety and EMC</b></td><td>CE/FCC-compliant<br />\n</td></tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true"
+     },
+     "heading_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       "1718280237031"
+      ]
+     },
+     "table_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\"><tbody><tr><th style=\"width:20%;text-align:left\">KINO-DH420-R10</th><td>Mini-ITX SBC supports LGA1200 Intel® 10th Generation Core™ i9/i7/i5/i3, Celeron® and Pentium® processor, DDR4, dual independent displays, triple 2.5GbE LAN, M.2, SATA 6Gb/s, HD Audio and RoHS</td></tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true"
+     },
+     "heading_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Package Contents",
+      "type": "h3",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       "1718280237031"
+      ]
+     },
+     "table_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\"><tbody><tr><th style=\"width:20%;text-align:left\">Package Contents</th><td><ul><li><p>1 x KINO-DH420 single board computer</p>\n</li><li><p>1 x SATA cable</p>\n</li><li><p>1 x I/O shielding</p>\n</li><li><p>1 x QIG</p>\n</li></ul>\n</td></tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true"
+     }
+    },
+    "container_botoes": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800456497",
+       "1719484596357"
+      ],
+      "flexcontaineritem_vazio_a": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+      },
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact Us for More Information",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1723033446255",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_861351158": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Request a Quote",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1723033446255",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_vazio_b": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+      }
+     }
+    },
+    "text_intro_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text_intro": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>The IEI KINO-DH420 Mini-ITX SBC has a performance boost of up to 80% better than the previous generation i5 processor. Contact us for a quote today.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   }
+  }
+ }
+}

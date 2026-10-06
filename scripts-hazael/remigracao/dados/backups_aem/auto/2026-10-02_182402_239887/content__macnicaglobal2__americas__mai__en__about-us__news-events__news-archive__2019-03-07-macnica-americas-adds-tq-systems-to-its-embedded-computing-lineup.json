@@ -1,0 +1,122 @@
+{
+ "quando": "2026-10-02T18:24:24",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2019-03-07-macnica-americas-adds-tq-systems-to-its-embedded-computing-lineup",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2019-03-07-macnica-americas-adds-tq-systems-to-its-embedded-computing-lineup/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Macnica Americas Adds TQ Systems to Its Embedded Computing Lineup",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:50:38 GMT+0000",
+  "jcr:description": "German Engineering Quality for the North American Market",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2019-03-07-macnica-americas-adds-tq-systems-to-its-embedded-computing-lineup",
+  "hideInNav": "true",
+  "pageTitle": "Macnica Americas Adds TQ Systems to Its Embedded Computing Lineup",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Macnica Americas Adds TQ Systems to Its Embedded Computing Lineup",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#fff",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica Americas Adds TQ Systems to Its Embedded Computing Lineup",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#fff",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "German Engineering Quality for the North American Market ",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Solana Beach, Calif., March 6, 2019 - Macnica Americas, Inc., the North American subsidiary of Macnica, Inc., a $5B global leader in technology product distribution, is proud to announce that it now distributes high-quality embedded industrial modules from TQ Systems, including Computer On Modules (COM Express), SMARC Modules, System On Modules (SOMs), and Industrial IoT (IIOT) solutions. TQ Systems’ product portfolio is unique in that it supports three processor platforms: ARM, x86, and PowerPC solutions, and is targeted at industrial, medical, avionics, transportation, surveillance, video and IIOT applications.&nbsp;</p>\n<p>“TQ Systems embedded products offer high performance, quality, and long-term availability, &nbsp;said Akinobu Miyoshi, CEO of Macnica Americas, “which are highly valued by our customers.”</p>\n<p>“Macnica Americas’ value proposition of providing deep technical support for their customers along with their vertical market expertise is a perfect match for TQ Systems’ broad embedded product portfolio&quot; said Rob Judge, VP of North American Sales.</p>\n<p>TQ Systems’ product lineup includes the following:</p>\n<ul>\n<li><b>TQ Systems COM Express Solutions</b>: &nbsp;TQ Systems offers an array of COM Express solutions based entirely on Intel featuring the Whiskey-Lake, Skylake, Kaby Lake, Bay Trail, Apollo Lake, and Broadwell families of processors. TQ Systems supports Type 10 Mini, Type 6 Compact, and Type 6 Basic.</li>\n<li><b>TQ Systems SMARC</b>: The TQ Systems SMARC portfolio consists of both x86 and ARM processors including Intel's Atom and NXP's iMX8 processor families. SMARC 2.0 allows you to use same basic carrier board for Intel Apollo Lake and NXP i.MX8X processors.&nbsp;</li>\n<li><b>TQ Systems SOMs (System on Modules)</b>: TQ Systems’ SOM portfolio includes solutions for multiple derivative products based on Layerscape and the following ARM Cores: Cortex A7/8/9/15/53/72. TQ Systems modules give full access to all processor functions, so the customer has full design freedom.</li>\n</ul>\n<p>All of the above product families, as well as Embedded PC, Industrial Firewall and Security IIOT solutions are available now from Macnica Americas, Inc. &nbsp;For more information, contact:&nbsp;<a href=\"mailto:info.mai@macnica.com\" target=\"_top\">info.mai@macnica.com</a>.</p>\n<p><b>About Macnica Americas</b><br>\nMacnica Americas is the North American Division of Macnica, Inc. a $5B global leader in technology product distribution, high-touch support and complex design services, with global headquarters in Yokohama, Japan. Macnica Americas serves OEM companies, particularly those specializing in creating innovative video, imaging, networking and storage products. Macnica Americas’ headquarters are located in San Diego, with offices in San Jose, Dallas, Chicago, and Boston, and representatives throughout the United States and Canada.</p>\n<p><b>About TQ Systems</b><br>\nTQ Systems is part of the TQ Group with headquarters in Delling, Germany. &nbsp;TQ Group employs approx. 1,650 employees at their 14 sites. &nbsp;TQ Systems USA Inc. is located in Chesapeake, Virginia.&nbsp;<br>\nTQ Systems is a leading manufacturer and supplier of industrial computer modules using the standard form factors COM Express, SMARC, proprietary ARM-based System on Modules (SOM), and Industrial IIOT solutions. TQ Systems manufactures 100% of their product portfolio in their ISO9001 certified manufacturing facilities. &nbsp;TQ Systems also offer a complete design service and support portfolio including BSP and driver support, custom BIOS options, obsolescence management and vertical market expertise in Medical, Aerospace, Industrial Automation, Automotive, Energy, and Telecommunications.&nbsp;<br>\nWebsite:&nbsp;<a href=\"https://www.tqusa.com/\" target=\"_blank\">www.tqusa.com</a>&nbsp;&nbsp; | E-Mail:&nbsp;<a href=\"mailto:info@tqusa.com\" target=\"_top\">info@tqusa.com</a>&nbsp;|</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_botoes": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact Us for More Information",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_861351158": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Request a Quote",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

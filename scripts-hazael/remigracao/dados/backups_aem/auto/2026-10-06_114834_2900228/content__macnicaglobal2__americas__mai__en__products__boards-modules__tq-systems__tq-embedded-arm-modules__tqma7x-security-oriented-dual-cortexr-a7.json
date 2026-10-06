@@ -1,0 +1,258 @@
+{
+ "quando": "2026-10-06T11:52:49",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma7x-security-oriented-dual-cortexr-a7",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma7x-security-oriented-dual-cortexr-a7/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "TQMa7x Security oriented Dual Cortex®-A7 module",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": [
+   "mai:business-categories/boards-modules"
+  ],
+  "pwaOrientation": "any",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "TQMA7X-SECURITY-ORIENTED-DUAL-CORTEXR-A7",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:42 GMT+0000",
+  "pwaDisplay": "standalone",
+  "cq:lastModified": "Mon Sep 21 2026 19:34:27 GMT+0000",
+  "jcr:description": "The TQMa7x is a security-oriented Dual Cortex®-A7 module based on i.MX7, featuring an integrated Cortex M4 and Smart Card Interface. It offers graphics support",
+  "pwaCachestrategy": "staleWhileRevalidate",
+  "keywords": "Embedded Module, TQMa7x, Cortex-A7, i.MX7, Security-oriented, Graphics support, Low power consumption, High-speed communication, NXP Hardware Partner.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma7x-security-oriented-dual-cortexr-a7",
+  "hideInNav": "true",
+  "pageTitle": "TQMa7x Security oriented Dual Cortex®-A7 module",
+  "cq:tags": [
+   "mai:manufacturers/tq-systems"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "TQMa7x Security oriented Dual Cortex®-A7 module",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap_novo": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/TQMa7x Security oriented Dual Cortex®-A7 module%0A.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "TQMa7x board",
+      "text": "<h1>Based on i.MX7 with integrated Cortex M4 and Smart Card Interface.</h1>\n<p>The TQMa7x is a security-oriented Dual Cortex®-A7 module based on i.MX7, featuring an integrated Cortex M4 and Smart Card Interface. It offers graphics support with full HD capabilities and low power consumption (typ. 2 W), making it an efficient solution. The module also provides IEEE 1588 hardware support and high-speed communication through 2x Gigabit Ethernet and 1x PCIe interface, ensuring fast and secure data processing. This versatile module is suitable for applications in networking, industrial automation, and controls.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Tue Sep 01 2026 03:16:23 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/TQMa7x Security oriented Dual Cortex®-A7 module%0A.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Tue Sep 01 2026 03:16:23 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li>High-performance graphics with full HD support</li>\n<li>Integrated Cortex M4 for added processing power</li>\n<li>IEEE 1588 hardware support for precision timing</li>\n<li>High-speed communication with 2x Gigabit Ethernet and 1x PCIe interface</li>\n<li>Low power consumption, ensuring energy efficiency</li>\n</ul>",
+      "jcr:lastModified": "Tue Sep 01 2026 03:15:45 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>Cortex®-A7 - Up to 1GHz</li>\n<li>i.Mx7S Single Core</li>\n<li>i.Mx7D Dual Core</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>Quad SPI NOR - Up to 256 MB</li>\n</ul>\n<ul>\n<li>EEPROM - 0/64-kbit</li>\n<li>eMMC - Up to 32 GB</li>\n<li>DDR3L - Up to 2 GB</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>LCD Interface (24-bit RGB)</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>CAN - Up to 2x CAN 2.0 B</li>\n<li>USB - Up to 2x USB 2.0 high-speed OTG, 1x USB 2.0 high-speed HOST interface</li>\n<li>Ethernet - Up to 2x Ethernet 10/100/1000 Mbit</li>\n<li>Serial Ports - Up to 7x UART</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>I2S - Up to 3x I²S</li>\n<li>I2C - Up to 4x I²C</li>\n<li>SPI - Up to 4x SPI</li>\n<li>SD Card - 1x SD-Card, Up to 3x SDIO/MMC</li>\n<li>PCIe - Up to 1x PCIe</li>\n<li>MIPI - Up to 2 Camera Sensor Interfaces (24-bit/MIPI)</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Functions</b></td>\n<td><ul>\n<li>RTC - Teal Time Clock</li>\n<li>CPU/Processor - CPU JTAG interface</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li>Temperature Range - Standard temperature range: -25°C…+85°C</li>\n<li>Dimensions - 55 x 44 mm</li>\n<li>Plug-in System - Board-to-board plug-in system 320 pins</li>\n<li>Power Supply - 5V</li>\n</ul>\n</td>\n</tr><tr><td><b>OS</b></td>\n<td><ul>\n<li>Linux</li>\n<li>VxWorks on request</li>\n<li>QNX on request</li>\n<li>Windows Embedded Compact 2013 on request</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Tue Sep 01 2026 03:16:37 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td width=\"20%\" style=\"width:125px;\"><b>TQMa7S-AA</b></td>\n<td><ul>\n<li>i.MX7S, 800 MHz, 8 GB eMMC, Flash, 512 MB DDR3L, 64 kB EEPROM, RTC, -20°C…+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:125px;\"><p><b>TQMa7S-AB</b></p>\n</td>\n<td><ul>\n<li>i.MX7S, 800MHz, 8GB eMMC-Flash, 64 MB SPI NOR-Flash, 512MB DDR3L-SDRAM, 64kB EEPROM, RTC, -20°C…+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:125px;\"><b>TQMa7D-AA</b></td>\n<td><ul>\n<li>i.MX7D, 1,0 GHz, 8 GB eMMC Flash, 512 MB DDR3L, 64 kB EEPROM, RTC, -20°C…+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:125px;\"><b>TQMa7D-AB</b></td>\n<td><ul>\n<li>i.MX7D, 1 GHz, 8GB eMMC-Flash, 64 MB SPI NOR-Flash, 1GB DDR3L-SDRAM, 64kB EEPROM, RTC, -20°C…+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:125px;\"><b>STKa7x-AA</b></td>\n<td><ul>\n<li>STKa7x (Eval Kit) with TQMa7x-AA, Dual Cortex A7/1,0 GHz, 512 MB DDR3L, 8 GB eMMC Flash, 64 kB EEPROM, RTC, 1x RS232, 1x RS485, 2x CAN 2.0 B separated, 3x USB 2.0 HOST, 1x USB 2.0 OTG, 2x ETH 10/100/1000, LCD Port, 1x HDMI, LVDS, 1x Mini PCIe, RTC, Temperature sensor, Reset-Button, SD interface, Power supply, 4 GB SD card, Cables</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:125px;\"><b>Starterkit STKa7x set</b></td>\n<td><ul>\n<li>The core of the STKa7x set is the TQMa7x module with a Dual Cortex A7 CPU. The components contained in the starter kit constitute a modular system enabling you to develop your product ideas. Development of graphic interfaces can be started immediately using the prepared combination of a closed display unit and starter kit that are matched to each other. To develop your own hardware you can use the certified and qualified circuit components of the starter kit in your own designs.</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Tue Sep 01 2026 03:16:47 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  },
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:19:14 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "false"
+  },
+  "manufacturerlogo": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:19:14 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "false"
+  },
+  "pd_downloadAsset": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:19:14 GMT+0000"
+  },
+  "pd_productFamilyImage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:19:14 GMT+0000"
+  },
+  "pd_technologyImage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:19:14 GMT+0000"
+  }
+ }
+}

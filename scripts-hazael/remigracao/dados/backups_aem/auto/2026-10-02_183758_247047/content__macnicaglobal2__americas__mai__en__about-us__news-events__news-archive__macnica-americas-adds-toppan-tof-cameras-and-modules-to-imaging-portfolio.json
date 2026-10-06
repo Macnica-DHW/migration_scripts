@@ -1,0 +1,181 @@
+{
+ "quando": "2026-10-02T18:39:36",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-americas-adds-toppan-tof-cameras-and-modules-to-imaging-portfolio",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-americas-adds-toppan-tof-cameras-and-modules-to-imaging-portfolio/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Macnica Americas Adds Toppan ToF Cameras and Modules to Imaging Portfolio",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+  "cq:lastModified": "Fri Oct 02 2026 21:24:11 GMT+0000",
+  "jcr:description": "Macnica Americas, a global technology innovator in IP design, networking solutions and AI/IoT technologies, today announced it is expanding its imaging and vision portfolio with Toppan Holdings’ 3D Time-of-Flight (ToF) cameras and modules. The addition brings advanced depth-sensing technology to autonomous robot, AMR/AGV, industrial automation, medical devices and intrusion detection, while also strengthening Macnica’s role as the leading distributor of a wide range of image sensing technologies.",
+  "keywords": "macnica, macnica americas, ai, iot, toppan, time of flight, time-of-flight, autonomous robot, industrial automation, intrusion detection",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-americas-adds-toppan-tof-cameras-and-modules-to-imaging-portfolio",
+  "hideInNav": "true",
+  "pageTitle": "Macnica Americas Adds Toppan ToF Cameras and Modules to Imaging Portfolio",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "navTitle": "Macnica Americas Adds Toppan ToF Cameras and Modules to Imaging Portfolio",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica Americas Adds Toppan ToF Cameras and Modules to Imaging Portfolio",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>SOLANA BEACH, Calif., Sept. 22, 2025 -&nbsp;</b>Macnica Americas, a global technology innovator in IP design, networking solutions and AI/IoT technologies, today announced it is expanding its imaging and vision portfolio with Toppan Holdings’ 3D Time-of-Flight (ToF) cameras and modules.</p>\n<p>The addition brings advanced depth-sensing technology to autonomous robot, AMR/AGV, industrial automation, medical devices and intrusion detection, while also strengthening Macnica’s role as the leading distributor of a wide range of image sensing technologies.</p>\n<p>As the price of sensors becomes more competitive and U.S. industries race to onshore and modernize, ToF is set to become the depth-sensing technology that defines the next decade of innovation.</p>\n<p>“Demand for ToF sensors is exploding in the U.S. market as automation, AR/VR, automotive safety, and robotics require real-time 3D vision,” said Trevor Bingham, vice president of Macnica Americas. “With breakthroughs in miniaturization, power efficiency, and AI-driven sensor fusion, ToF has shifted from experimental to essential, enabling everything from smarter cars to safer and more efficient manufacturing.”</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Key customer benefits of the Macnica-Toppan partnership include:",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<ul>\n<li><b>High-performance depth sensing:&nbsp;</b>Toppan ToF devices have innovative design, which enables them to outperform the competition with their top-class tolerance to ambient light noise, high frame rate up to 120fps, no motion artifacts (blurring or distortion) with short pulse ToF method, multi-camera operation without interference, and high-precision patented hybrid ToF technology (best of both worlds of dToF and iToF).</li>\n</ul>\n<ul>\n<li><b>Robust imaging ecosystem:&nbsp;</b>Toppan products complement Macnica’s comprehensive imaging solution offerings, enabling customers to integrate both 2D and 3D vision into complete solutions.</li>\n</ul>\n<ul>\n<li><b>Industrial and medical applications:&nbsp;</b>The combination supports autonomous robots and vehicles, object detection, patient monitoring, gesture control and machine safety systems.</li>\n</ul>\n<ul>\n<li><b>Engineering partnership:&nbsp;</b>Macnica’s imaging and vision specialists provide reference designs, firmware and integration services to accelerate adoption.</li>\n</ul>\n<ul>\n<li><b>Supply chain confidence:&nbsp;</b>Macnica’s fulfillment network ensures dependable access to Toppan ToF cameras and modules for North American and European customers.</li>\n</ul>\n<p>“Toppan’s ToF cameras and modules are designed to deliver precision, high performance and reliability in mission-critical applications,” said Jin Endo, managing executive officer of R&amp;D strategy office and business development division, Toppan Holdings Inc. “Through Macnica’s distribution and engineering support, customers can more easily integrate our technology into robotics, medical devices and industrial automation systems.”</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "About Macnica Americas",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Macnica Americas is a global technology solutions partner and leader in engineering and fulfillment services. With expertise spanning imaging solutions, semiconductor distribution, and advanced supply chain management, Macnica Americas empowers businesses to streamline development cycles and accelerate time to market. By combining global reach with local expertise, Macnica Americas delivers products, services, and innovations that future-proof organizations and continually push the boundaries of what is possible.</p>\n<p><b>Macnica Americas, Inc.</b>, 380 Stevens Ave., Suite 206, Solana Beach, CA 92075</p>\n<p><b>Direct all Macnica media inquiries to:</b></p>\n<p><i>Carl Dahlberg, Director of Marketing,&nbsp;<a href=\"mailto:carl.dahlberg@macnica.com\">carl.dahlberg@macnica.com</a></i></p>\n<p><i>Bill Robbins,&nbsp;Macnica Communications,&nbsp;<a href=\"mailto:bill@nj2communications.com\">bill@nj2communications.com</a></i></p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "About the Toppan Group",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Established in Tokyo in 1900, <a href=\"https://www.holdings.toppan.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">the Toppan Group</a> is a leading and diversified global provider committed to delivering sustainable, integrated solutions in fields including printing, communications, security, packaging, décor materials, electronics, and digital transformation. The Toppan Group’s global team of more than 50,000 employees offers optimal solutions enabled by industry-leading expertise and technologies to address the diverse challenges of every business sector and society and contribute to the achievement of shared sustainability goals.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_4_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "New addition advances depth-sensing technology for autonomous robot, AMR/AGV, industrial automation, medical devices and intrusion detection",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_botoes": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact Us for More Information",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_861351158": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Request a Quote",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

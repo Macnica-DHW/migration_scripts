@@ -1,0 +1,51 @@
+{
+ "quando": "2026-10-02T19:45:58",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/4-helio-view-hardware",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/4-helio-view-hardware/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "4. Helio View Hardware",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Mon Sep 21 2026 17:27:42 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:14 GMT+0000",
+  "jcr:description": "Transform your approach to FPGA with our Helio View hardware vWorkshop. This training course guides you through setting up LCD controllers and more.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/4-helio-view-hardware",
+  "pageTitle": "4. Helio View Hardware",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "4. Helio View Hardware",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "table_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th style=\"white-space:nowrap\">Name</th>\n<td>&nbsp;Adding Support for Displays, Graphics, and Video</td>\n</tr><tr><th style=\"white-space:nowrap\">Summary</th>\n<td>In this Helio View vWorkshop for hardware, you will learn how to integrate an LCD display controller into the FPGA fabric to support graphical displays using an Altera SoC device. You will be introduced to other video image processing options and learn how to utilize the Altera VIP Suite to process live video with graphical overlay, scaling and transparency. FujiSoft's Graphics Acceleration IP for the Android OS will also be explored.</td>\n</tr><tr><th style=\"white-space:nowrap\">Prerequisites</th>\n<td><ul>\n<li>Completion of the Custom SoC Peripherals class and lab</li>\n</ul>\n</td>\n</tr><tr><th>What you'll be able to do after</th>\n<td><ul>\n<li>Integrate an LCD controller to your SOC system and recognize options of for additional video processing</li>\n</ul>\n</td>\n</tr><tr><th style=\"white-space:nowrap\">Lab</th>\n<td><ul>\n<li>Reference Designs and source code will be made available</li>\n</ul>\n</td>\n</tr><tr><th style=\"white-space:nowrap\">Contents</th>\n<td><ul>\n<li>Demonstrations</li>\n<li>Video Display Basics</li>\n<li>Macnica LCD Controller</li>\n<li>Altera's VIP Suite</li>\n<li>FujiSoft's Graphics Accelerator IP</li>\n<li>Potential Pitfalls</li>\n<li>Q&amp;A&nbsp;</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "1722939215525"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

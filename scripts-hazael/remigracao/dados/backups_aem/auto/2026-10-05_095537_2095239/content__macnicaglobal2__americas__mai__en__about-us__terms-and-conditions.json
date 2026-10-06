@@ -1,0 +1,338 @@
+{
+ "quando": "2026-10-05T09:56:04",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/terms-and-conditions",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/terms-and-conditions/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Terms & Conditions",
+  "showInLists": "false",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:30:09 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:53:43 GMT+0000",
+  "jcr:description": "These terms and conditions govern the sale of Products (“Product or Products”) and provisions of services (“Services”) by Macnica Americas Inc. (MAI) and its affiliates (“Seller”) as well as by third party vendors and/or service providers of Seller. These terms and conditions (“Agreement”) take precedence over Buyer’s supplemental or conflicting terms and conditions to which notice of objection is hereby given. Neither Seller’s commencement of performance or delivery shall be deemed or construed as acceptance of Buyer’s supplemental or conflicting terms and conditions. MAI’s failure to object to conflicting or additional terms will not change or add to the terms of this agreement. Buyer’s acceptance of the Products and/or Services from Seller shall be deemed to constitute acceptance of the terms and conditions contained herein.",
+  "keywords": "macnica, macnica americas, terms and conditions",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/terms-and-conditions",
+  "pageTitle": "Terms & Conditions",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Terms & Conditions",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Terms & Conditions",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Standard Terms and Conditions of Sale",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>These terms and conditions govern the sale of Products (“Product or Products”) and provisions of services&nbsp;(“Services”) by Macnica Americas Inc. (MAI) and its affiliates (“Seller”) as well as by third party&nbsp;vendors and/or service providers of Seller. These terms and conditions (“Agreement”) take precedence&nbsp;over Buyer’s supplemental or conflicting terms and conditions to which notice of objection is hereby&nbsp;given. Neither Seller’s commencement of performance or delivery shall be deemed or construed as&nbsp;acceptance of Buyer’s supplemental or conflicting terms and conditions. MAI’s failure to object to&nbsp;conflicting or additional terms will not change or add to the terms of this agreement. Buyer’s acceptance&nbsp;of the Products and/or Services from Seller shall be deemed to constitute acceptance of the terms and&nbsp;conditions contained herein.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "1. Orders",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>All orders placed by Buyer are subject to acceptance by Seller. Orders may not be&nbsp;cancelled or rescheduled without Seller’s written consent. All orders must identify the products, unit&nbsp;quantities, part numbers, applicable prices and requested delivery dates of the Products being&nbsp;purchased. Seller may in its sole discretion allocate Product among its Customers. Seller may&nbsp;designate certain Products and Services as non-cancelable, non-returnable (“NCNR”) and the sale of&nbsp;such Products shall be subject to the special terms and conditions contained in Seller’s Customer&nbsp;Acknowledgement or NCNR Product Form, which shall prevail and supersede any inconsistent terms&nbsp;and conditions contained herein or elsewhere.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "2. Prices",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>The prices of the Products are those prices specified on the front of the invoice. Pricing for&nbsp;undelivered Products may be increased accordingly in the event of an increase in Seller’s cost, change&nbsp;in market conditions, changes to tariffs or fees of any kind and nature imposed on the Products, or any&nbsp;other causes beyond the Seller’s reasonable control. Price quotations shall automatically expire in&nbsp;thirty (30) days from the date issued, or as otherwise stated in the quotation.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_4_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "3. Taxes",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Unless otherwise agreed to in writing by Seller, all prices quoted are exclusive of&nbsp;transportation and insurance costs, duties, any tariffs or fees, and all taxes including federal, state and&nbsp;local sales, excise and value added, goods and services taxes, and any other taxes. Buyer agrees to&nbsp;indemnify and hold Seller harmless for any liability for tax or tariffs in connection with the sale, as&nbsp;well as the collection or withholding thereof, including penalties and interest thereon. When&nbsp;applicable, transportation and taxes shall appear as separate items on Seller’s invoice.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_5_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "4. Payment",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Payment may be made by check, money order, credit card, or wire transfer (all fees are&nbsp;borne by the Buyer). Where Seller has extended credit to Buyer, terms of payment shall be net thirty&nbsp;(30) days from date of invoice, without offset or deduction. On any past due invoice, Seller may&nbsp;impose interest at the rate of one and a half percent [1.5%] per month. If Buyer fails to make each&nbsp;payment when it is due, Seller reserves the right to change or withdraw credit and thereby suspend or&nbsp;cancel performance under any or all purchase orders or agreements in which Seller has extended&nbsp;credit to Buyer. In the event of default by Buyer, Seller shall be entitled to costs, fees, and expenses,&nbsp;including but not limited to recovery of attorney fees, court costs and fees, and collections costs.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_6_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "5. Delivery and Title",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>All deliveries will be made “EXWORKS” place of shipment. Title and risk of&nbsp;loss pass to the Buyer upon delivery of the Product to the carrier. Seller’s delivery dates are estimates&nbsp;only and Seller is not liable for delays in delivery or for failure to perform due to causes beyond the&nbsp;reasonable control of the Seller, nor shall the carrier be deemed an agent of the Seller. A delayed&nbsp;delivery of any part of an Order does not entitle Buyer to cancel other deliveries.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_7_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "6. Acceptance/Returns",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Shipments will be deemed to have been accepted by Buyer upon delivery of&nbsp;the said shipments to Buyer unless rejected upon receipt. Buyer shall perform all inspections and tests&nbsp;Buyer deems necessary as promptly as possible but in no event later than 10 days after delivery&nbsp;of product, at which time Buyer will be deemed to have irrevocably accepted the Products.&nbsp;Any discrepancy in shipment quantity must be reported within 10 days after delivery. Buyer may not&nbsp;return Products without a return material authorization (“RMA”) number. RMA valid for 30 days&nbsp;from date issued. Buyer may not return NCNR Products. Any product returned by Buyer due to&nbsp;Buyer’s error may be subject to a restocking charge equivalent to 100% of the value of such Product&nbsp;as specified in Seller’s invoice to Buyer.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_8_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "7. Limited Warranty",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Seller will transfer to Buyer any Product warranties and indemnities authorized&nbsp;by the manufacturer, including any transferable warranties and indemnities for intellectual property&nbsp;infringement. Seller warrants to Buyer that Products purchased hereunder will conform to the&nbsp;applicable manufacturer’s specifications for such products and that any value-added work performed&nbsp;by Seller on such Products will conform to applicable Buyer’s specifications. If Seller breaches this&nbsp;warranty, Buyer’s remedy is limited to (at Seller’s election) (1) refund of Buyer’s purchase price for&nbsp;such Production (without interest), (2) repair of such Products, or (3) replacement of such Products;&nbsp;provided that such Products must be returned to Seller, along with acceptable evidence of purchase,&nbsp;within 20 days from date of delivery, transportation charges prepaid. No warranty will apply if the&nbsp;Product has been subject to misuse, static discharge, neglect, accident or modification, or has been&nbsp;soldered.</p>\n<p>SAVE AS EXPRESSLY PROVIDED IN THESE TERMS AND CONDITIONS, ALL IMPLIED&nbsp;WARRANTIES, TERMS AND CONDITIONS (WHETHER STATUTORY OR OTHERWISE)&nbsp;ARE EXCLUDED TO THE FULLEST EXTENT PERMITTED BY LAW. IN PARTICULAR,&nbsp;SELLER MAKES NO WARRANTY RESPECTING THE MERCHANTABILITY OF THE&nbsp;PRODUCTS OR THEIR SUITABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE,&nbsp;NON-INFRINGEMENT OF THIRD PARTY RIGHTS AND WARRANTIES AGAINST LATENT&nbsp;DEFECTS.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_9_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "8. Limitation of Liabilities",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>BUYER SHALL NOT BE ENTITLED TO, AND SELLER SHALL NOT&nbsp;BE LIABLE FOR, LOSS OF PROFITS OR REVENUE, PROMOTIONAL OR&nbsp;MANUFACTURING EXPENSES, OVERHEADS, BUSINESS INTERRUPTION COST, LOSS OF&nbsp;DATA, REMOVAL OR REINSTALLATION COSTS, INJURY TO REPUTATION OR LOSS OF&nbsp;BUYERS, PUNITIVE DAMAGES, IPR INFRINGEMENT, LOSS OF CONTRACTS OR ORDERS&nbsp;OR ANY INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES OF ANY&nbsp;NATURE. BUYER’S RECOVERY FROM SELLER FOR ANY CLAIM SHALL NOT EXCEED&nbsp;THE PURCHASE PRICE PAID FOR THE AFFECTED PRODUCTS IRRESPECTIVE OF THE&nbsp;NATURE OF THE CLAIM WHETHER IN CONTRACT, TORT, WARRANTY, OR OTHERWISE.&nbsp;BUYER WILL INDEMNIFY, DEFEND AND HOLD SELLER HARMLESS FROM ANY&nbsp;CLAIMS BASED ON (a) SELLER’S COMPLIANCE WITH BUYER’S DESIGNS,&nbsp;SPECIFICATIONS, OR INSTRUCTIONS, (b) MODIFICATION OF ANY PRODUCTS BY&nbsp;ANYONE OTHER THAN SELLER, or (c) USE IN COMBINATION WITH OTHER PRODUCTS.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_10_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "9. Export Control",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Buyer certifies that it will be the recipient of the Products to be delivered by&nbsp;Seller. Buyer acknowledges that the Products are subject to the export/import control laws and regulations of various countries, including the Export Administration Laws of the United States.&nbsp;Products sold by Seller cannot be transferred, sold or re-exported to any part on the Entity List or&nbsp;Restricted Person List of the U. S. Department of Commerce Bureau of Industry and Security, any&nbsp;party designated by the U.S. Treasury Department’s Office of Foreign Assets Control, and any party&nbsp;debarred or sanctioned for proliferation or terrorism reasons by the U.S. State Department.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_11_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "10. Use of Products",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Products sold by Seller are not designed, intended or authorized for use in life&nbsp;support, life sustaining, nuclear, or other applications in which the failure of such Products could&nbsp;reasonably be expected to result in personal injury, loss of life or catastrophic property damage. If&nbsp;Buyer uses or sells the Products for use in any such applications: (1) Buyer acknowledges that such&nbsp;use or sale is at Buyer’s sole risk; (2) Buyer agrees that Seller and the manufacturer of the Products&nbsp;are not liable, in whole or in part, for any claim or damage arising from such use; and (3) Buyer&nbsp;agrees to indemnify, defend and hold Seller and the manufacturer of the Products harmless from and&nbsp;against any and all claims, damages, losses, costs, expenses and liabilities arising out of or in&nbsp;connection with such use or sale.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_12_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "11. Force Majeure",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Seller is not liable for failure to fulfill its obligations for any accepted Order or for&nbsp;delays in delivery due to causes beyond Seller’s reasonable control including, but not limited to, acts&nbsp;of God, natural or artificial disaster, riot, war, strike, delay by carrier, shortage of Product, acts or&nbsp;omissions of other parties, acts or omissions of civil or military authority, Government priorities,&nbsp;changes in law, material shortages, fire, strikes, floods, epidemics, quarantine restrictions, acts of&nbsp;terrorism, delays in transportation or inability to obtain labor, materials or Products through its&nbsp;regular sources, which shall be considered as an event of force majeure excusing Seller from&nbsp;performance and barring remedies for non-performance. In an event of force majeure condition, the&nbsp;Seller’s time for performance shall be extended for a period equal to the time lost as a consequence of&nbsp;the force majeure condition without subjecting Seller to any liability or penalty. Seller may, at its&nbsp;option, cancel the remaining performance, without any liability or penalty, by giving notice of such&nbsp;cancellation to the Buyer.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_13_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_13": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "12. Technical Assistance or Advice",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_13": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>If technical assistance or advice are offered or given to Buyer,&nbsp;such assistance or advice is given free of charge and only as an accommodation to Buyer. Seller shall&nbsp;not be held liable for the content or Buyer’s use of such technical assistance or advice nor shall any&nbsp;statement made by any of Seller’s representatives in connection with the Products or Services&nbsp;constitute a representation or warranty, express or implied.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_14_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_14": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "13. General",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_14": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>(a) The laws of the State of Delaware will exclusively govern any dispute between Seller&nbsp;and Buyer, (b) Buyer may not assign this Agreement without the prior written consent of Seller.&nbsp;Seller or its affiliates may perform the obligations under this Agreement. This Agreement is binding&nbsp;on successor and assigns, (c) Products, including software or other intellectual property, are subject to&nbsp;any applicable rights of third parties, such as patents, copyrights and/or user licenses.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   }
+  }
+ }
+}

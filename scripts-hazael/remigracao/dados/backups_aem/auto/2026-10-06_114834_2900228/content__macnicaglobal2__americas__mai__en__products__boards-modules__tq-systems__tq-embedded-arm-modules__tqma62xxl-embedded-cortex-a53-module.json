@@ -1,0 +1,257 @@
+{
+ "quando": "2026-10-06T11:51:14",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma62xxl-embedded-cortex-a53-module",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma62xxl-embedded-cortex-a53-module/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "TQMa62xxL Embedded Cortex-A53 module",
+  "manufacturer": "mai:manufacturers/tq-systems",
+  "businessCategories": [
+   "mai:business-categories/boards-modules"
+  ],
+  "pwaOrientation": "any",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "pd_modelName": "TQMA62XXL-EMBEDDED-CORTEX-A53-MODULE",
+  "pd_isModelNameLinkToPage": "true",
+  "jcr:created": "Wed Sep 02 2026 08:25:40 GMT+0000",
+  "pwaDisplay": "standalone",
+  "cq:lastModified": "Mon Sep 21 2026 19:34:21 GMT+0000",
+  "jcr:description": "The TQMa62xxL Embedded Module, based on the Texas Instruments AM62xx processor family, delivers enhanced computing power and scalable graphics performance for",
+  "pwaCachestrategy": "staleWhileRevalidate",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/tq-embedded-arm-modules/tqma62xxl-embedded-cortex-a53-module",
+  "hideInNav": "true",
+  "pageTitle": "TQMa62xxL Embedded Cortex-A53 module",
+  "cq:tags": [
+   "mai:manufacturers/tq-systems"
+  ],
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "TQMa62xxL Embedded Cortex-A53 module",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap_novo": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_imagem": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/TQMa62xxL Embedded Cortex-A53 module%0A.jpeg",
+      "imageRatio": "40",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "TQMa62xxL Embedded Cortex-A53 module",
+      "text": "<h1>TI AM62xx for applications with enhanced computing &amp; scalable graphics performance</h1>\n<p>The TQMa62xxL Embedded Module, based on the Texas Instruments AM62xx processor family, delivers enhanced computing power and scalable graphics performance for a wide range of industrial applications. Featuring 4/2/1 Cortex A53 cores, this module provides flexible and scalable computing performance to meet diverse application requirements.</p>\n<p>With dual-display support for LVDS and RGB, as well as an optional 3D GPU, it offers versatile graphics capabilities. The LPDDR4 support with ECC ensures efficient and reliable memory performance, while integrated security functions enhance data protection.</p>\n<p>This module facilitates high-speed communication with 2x Gbit Ethernet switches with TSN support, 3 x CAN FD, and 2x USB 2.0 interfaces, making it suitable for demanding industrial applications. Despite its powerful performance, it maintains low power consumption, typically operating at just 2W.</p>\n<p>Designed with Texas Instruments' expertise, the TQMa62xxL module provides a seamless transition from the AM335x family, offering superior graphics, computing power, and industrial interfaces. It comes in a compact LGA form factor with various memory and storage options, making it an ideal choice for embedded systems in industrial automation, communication, and more.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Tue Sep 01 2026 01:32:50 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/tq-systems/arm-modules/TQMa62xxL Embedded Cortex-A53 module%0A.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Tue Sep 01 2026 01:32:50 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_features": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": "1717498053499",
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>Features</h3>\n<ul>\n<li><b>Scalable Cortex A53 Cores</b>: Offers 4/2/1 Cortex A53 cores for adaptable computing performance to meet various application needs.</li>\n<li><b>Dual-Display Support</b>: Provides LVDS and RGB support for dual-display configurations along with an optional 3D GPU for versatile graphics capabilities.</li>\n<li><b>Memory Efficiency</b>: Features LPDDR4 support with ECC, ensuring efficient and reliable memory performance.</li>\n<li><b>Robust Communication:</b> Facilitates high-speed communication through 2x Gbit Ethernet switches with TSN support, 3 x CAN FD, and 2x USB 2.0 interfaces.</li>\n<li><b>Integrated Security</b>: Enhances data protection with integrated security functions, making it suitable for secure industrial applications</li>\n</ul>",
+      "jcr:lastModified": "Tue Sep 01 2026 01:32:11 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_copy": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Thu Aug 27 2026 22:31:00 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Specifications",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:45:51 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td><b>CPU</b></td>\n<td><ul>\n<li>AM6254</li>\n<li>AM6252</li>\n<li>AM6251</li>\n<li>AM6234</li>\n<li>AM6232</li>\n<li>AM6231</li>\n</ul>\n</td>\n</tr><tr><td><b>Memory</b></td>\n<td><ul>\n<li>LPDDR4: Up to 2 GB</li>\n<li>EEPROM: 0/64-kbit</li>\n<li>eMMC: Up to 64 GB</li>\n<li>NOR Flash: Up to 256 MB</li>\n</ul>\n</td>\n</tr><tr><td><b>Graphics</b></td>\n<td><ul>\n<li>1x LVDS (4 lanes)</li>\n<li>1x RGB (24bit)</li>\n<li>3D GPU (8G FLOPFS)</li>\n</ul>\n</td>\n</tr><tr><td><b>Communications Interfaces</b></td>\n<td><ul>\n<li>Ethernet: Up to 2x Gbit-Ethernet (TSN)</li>\n<li>Serial Ports: Up to 9x UART</li>\n<li>CAN: Up to 3x CAN FD</li>\n<li>USB:Up to 2x USB 2.0 interface</li>\n</ul>\n</td>\n</tr><tr><td><b>Other Interfaces</b></td>\n<td><ul>\n<li>SD Card: Up to 3x SDIO</li>\n<li>I2C: Up to 6x I2C</li>\n<li>SPI: Up to 5x SPI |Up to 1x OSPI</li>\n<li>GPMC: Up to 1x GPMC</li>\n<li>PWM frequency: Up to 3x PWM</li>\n<li>Audio: 3x McASP</li>\n</ul>\n</td>\n</tr><tr><td><b>General</b></td>\n<td><ul>\n<li><p>Power supply: 3,3V</p>\n</li>\n<li><p>Plug-in System: LGA (Land Grid Array) 366 pins</p>\n</li>\n<li><p>Dimensions: 38 x 38 mm</p>\n</li>\n<li><p>Temperature range: Standard temperature range: -25°C…+85°C |Extended temperature: -40°C…+85°C</p>\n</li>\n</ul>\n</td>\n</tr><tr><td><b>OS</b></td>\n<td><ul>\n<li>Linux</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Tue Sep 01 2026 01:33:13 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "title_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Ordering Information",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "type": "h3",
+      "jcr:lastModified": "Fri Aug 28 2026 22:46:49 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "table_container_copy_558282354": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><td style=\"width:154px;\"><p><b>TQMa6231L-AA</b></p>\n</td>\n<td><ul>\n<li>TQMa6231L-AA, Quad Cortex®- A53 / 1,4GHz, Cortex®- M4 / 400MHz, 1GB LPDDR4, 8GB eMMC, 64 kB EEPROM, RTC, -40°C...+85°C</li>\n</ul>\n</td>\n</tr><tr><td style=\"width:154px;\"><p><b>TQMa6254L-AA</b></p>\n</td>\n<td><ul>\n<li>TQMa6254L-AA, Quad Cortex®- A53 / 1,4GHz, Cortex®- M4 / 400MHz, 1GB LPDDR4, 8GB eMMC, 64 kB EEPROM, RTC, with 3D GPU support, -40°C...+85°C</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "jcr:lastModified": "Tue Sep 01 2026 01:33:23 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    },
+    "container_234986065": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+     "jcr:lastModified": "Fri Aug 28 2026 22:48:32 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498052331"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<h3>TQ Embedded is known for:</h3>\n<ul>\n<li>Precision German engineering, now with a North America presence<ul>\n<li>Robust industrial products with support</li>\n</ul>\n</li>\n<li>Widest portfolio of embedded processing architectures: ARM, x86, PowerPC&nbsp;</li>\n<li>Comprehensive in-house process and facilities for true long-life availability</li>\n<li>Modules with full signal availability (ALL signals available, not just selective groups)</li>\n<li>In-house full control: design, manufacturing, specialized adaptations</li>\n<li>Robust baseboard options, production-ready for mounting their SOM products</li>\n</ul>",
+      "jcr:lastModified": "Fri Aug 28 2026 22:48:52 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     },
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Sign up",
+        "linkURL": "https://visitor.r20.constantcontact.com/manage/optin?v=001dwtC1_5l2X95pEGF-tfajTnjuco352BxLxaAjPBvxZ5ajvboL3j82hAC5eShsFYX4Y8c7eb7Psk1Wt0lNdmFTyykwvu3nROM6dYUzZFUXPCW1dI_Zl0xB0K2b9h3AzAVkJ9SdocYJEjotB7mFAE2Sbv_nGmDoHTm2i-E6X2JCP8ki47J_MKW8AXLzNumSzfSYiLtqpHza8sJthaI2rGXod-2XdCthogWDb8BRgH4ZI1or8ZkCRV81nlRPueUwIlPyqAHAf_SvzE%3D",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_novo": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact us",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_blank",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  },
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:05:43 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "false"
+  },
+  "manufacturerlogo": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:05:43 GMT+0000",
+   "sling:resourceType": "core/wcm/components/image/v3/image",
+   "altValueFromDAM": "false"
+  },
+  "pd_downloadAsset": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:05:43 GMT+0000"
+  },
+  "pd_productFamilyImage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:05:43 GMT+0000"
+  },
+  "pd_technologyImage": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+   "jcr:lastModified": "Fri Sep 18 2026 00:05:43 GMT+0000"
+  }
+ }
+}

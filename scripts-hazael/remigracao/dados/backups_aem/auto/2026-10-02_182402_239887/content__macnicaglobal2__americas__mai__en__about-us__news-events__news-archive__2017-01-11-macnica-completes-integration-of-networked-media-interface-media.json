@@ -1,0 +1,65 @@
+{
+ "quando": "2026-10-02T18:24:32",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2017-01-11-macnica-completes-integration-of-networked-media-interface-media",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2017-01-11-macnica-completes-integration-of-networked-media-interface-media/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Macnica Completes Integration of Networked Media Interface Media Transport",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:50:21 GMT+0000",
+  "jcr:description": "Macnica’s Intellectual Property Ensures That Standards-Compliant, IP-Based Broadcast Equipment Can Work Seamlessly in Sony’s IP Live Production System SOLANA BEACH, Calif. — Jan. 11, 2017 — Through its ongoing partnership with Sony, Macnica has implemented an intellectual property core that is fully compliant to the Networked Media Interface (NMI) media transport (SMPTE RDD40: Essence-independent IP Live Networked Media Transport) specification. Its interoperability has been validated by Sony and is now available.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2017-01-11-macnica-completes-integration-of-networked-media-interface-media",
+  "hideInNav": "true",
+  "pageTitle": "Macnica Completes Integration of Networked Media Interface Media Transport",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Macnica Completes Integration of Networked Media Interface Media Transport",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica Completes Integration of Networked Media Interface Media Transport",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica’s Intellectual Property Ensures That Standards-Compliant, IP-Based Broadcast Equipment Can Work Seamlessly in Sony’s IP Live Production System",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>SOLANA BEACH, Calif. — Jan. 11, 2017 — Through its ongoing partnership with Sony, Macnica has implemented an intellectual property core that is fully compliant to the Networked Media Interface (NMI) media transport (SMPTE RDD40: Essence-independent IP Live Networked Media Transport) specification. Its interoperability has been validated by Sony and is now available.<br>\nMacnica can offer the NMI solution alongside its existing ST2022-1/2/5/6/7 and TR-03 (draft ST2110) solutions. Third-party manufacturers of broadcast equipment can now license Macnica’s intellectual property to enable their standards-based IP products to integrate seamlessly with NMI solutions.<br>\nMacnica is a member of the IP Live Alliance, a group of hardware and software vendors supporting Sony’s IP Live promotion initiatives. Macnica has become one of Sony’s initial partners for implementing intellectual property for NMI.<br>\n“Today’s broadcast and media organizations need to leverage the latest technologies to create efficient and sustainable production environments. AV-over-IP solutions offer the flexibility and scalability required to meet these current and future needs,” said Ryosuke Hayashi, deputy senior general manager, Sony Corporation. “As one of our key partners for IP Live Alliance,&nbsp;Macnica is playing a critical role in ensuring that IP-based equipment providers can deliver solutions that work seamlessly in Sony’s IP Live production system.”<br>\n“Sony plays a major role in the broadcast video equipment market and is leading the industry in offering truly interoperable solutions for IP-based infrastructures,” said John Burton, president, Macnica. “We are proud to be Sony’s go-to partner for enabling third-party broadcast equipment for use with growing IP Live solutions.”</p>\n<p><br>\nMore information on Macnica and its other products is available at&nbsp;<a href=\"https://macnicatech.com/en/\" target=\"_self\" rel=\"noopener noreferrer\">macnicatech.com</a></p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   }
+  }
+ }
+}

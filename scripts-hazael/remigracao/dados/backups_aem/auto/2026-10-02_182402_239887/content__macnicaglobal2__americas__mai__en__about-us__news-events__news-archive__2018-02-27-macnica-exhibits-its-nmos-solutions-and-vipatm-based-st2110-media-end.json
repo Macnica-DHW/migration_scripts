@@ -1,0 +1,65 @@
+{
+ "quando": "2026-10-02T18:24:30",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2018-02-27-macnica-exhibits-its-nmos-solutions-and-vipatm-based-st2110-media-end",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2018-02-27-macnica-exhibits-its-nmos-solutions-and-vipatm-based-st2110-media-end/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Macnica Exhibits Its NMOS Solutions and VIPA™-based ST2110 Media End Point at VidTrans18",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:50:28 GMT+0000",
+  "jcr:description": "Comprehensive support for Live Video Transport and Media Switching Protocols SOLANA BEACH, California – February 27, 2018 – Macnica Technology, a leader in video over IP transport technologies, today announced it is participating in the IS-06 Network Control API Interop at VidTrans18 in Los Angeles.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2018-02-27-macnica-exhibits-its-nmos-solutions-and-vipatm-based-st2110-media-end",
+  "hideInNav": "true",
+  "pageTitle": "Macnica Exhibits Its NMOS Solutions and VIPA™-based ST2110 Media End Point at VidTrans18",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Macnica Exhibits Its NMOS Solutions and VIPA™-based ST2110 Media End Point at VidTrans18",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica Exhibits Its NMOS Solutions and VIPA™-based ST2110 Media End Point at VidTrans18",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Comprehensive support for Live Video Transport and Media Switching Protocols",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>SOLANA BEACH, California – February 27, 2018 – Macnica Technology, a leader in video over IP transport technologies, today announced it is participating in the IS-06 Network Control API Interop at&nbsp;VidTrans18&nbsp;in Los Angeles.</p>\n<p>Macnica is a key participant in the VidTrans18 Interop as the only vendor providing a broadcast controller and ST2110 sources and sinks, in addition to its IS-06 Network Controller.</p>\n<p>Macnica’s full NMOS (Network Media Open Specifications) portfolio includes the following:</p>\n<ul>\n<li>IS-06 Network Controller</li>\n<li>IS-05 Device connection management&nbsp;</li>\n<li>IS-04 Registration and Discovery Protocol</li>\n</ul>\n<p>Macnica will also showcase a demo using its VIPA™ PCI Express cards functioning as ST2110 end points operating in SDI Gateway mode together with its SDI Extender option boxes at booth #35. This demo proves its capabilities to manage media flow switching over IP network.</p>\n<p>Please visit Macnica booth at booth #35 at VidTrans18 held in Los Angeles for more details.</p>\n<p>About Macnica<br>\nMacnica Technology, a division of the $4B Macnica Group, offers products that implement the ST2022, Sony IP Live and ST2110 standards for moving live, high-definition and 4K video over standard IP (Ethernet) networks. Macnica leverages its video and high-speed networking expertise to develop superior products and intellectual property for the broadcast, pro-AV, and high-speed networking industries. Find out more about the new VIPA card and Macnica’s video over IP transport technology at&nbsp;<a href=\"https://macnicatech.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">macnicatech.com</a>.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   }
+  }
+ }
+}

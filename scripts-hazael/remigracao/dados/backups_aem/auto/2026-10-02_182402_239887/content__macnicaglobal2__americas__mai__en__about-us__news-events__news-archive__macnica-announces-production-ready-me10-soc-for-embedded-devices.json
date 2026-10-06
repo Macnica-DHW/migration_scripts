@@ -1,0 +1,81 @@
+{
+ "quando": "2026-10-02T18:24:07",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-announces-production-ready-me10-soc-for-embedded-devices",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-announces-production-ready-me10-soc-for-embedded-devices/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Macnica Announces Production-Ready ME10 SoC for Embedded Devices",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:51:38 GMT+0000",
+  "jcr:description": "At ISE 2026, Macnica will show a production-ready version of its ME10 System-On-Chip (SoC) for product developers ready to build IPMX-compliant products at scale and without complication. With higher performance enabled through a new Machine-to-Machine (M2M) interface, the ME10 offers a complete, interoperable and standards-based AV over IP solution for integration into low-power, high-efficiency embedded devices.",
+  "keywords": "macnica, macnica americas, ise 2026, me10, soc, system on chip, system-on-chip, machine-to-machine, m2m",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-announces-production-ready-me10-soc-for-embedded-devices",
+  "hideInNav": "true",
+  "pageTitle": "Macnica Announces Production-Ready ME10 SoC for Embedded Devices",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Macnica Announces Production-Ready ME10 SoC for Embedded Devices",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica Announces Production-Ready ME10 SoC for Embedded Devices",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>SOLANA BEACH, CALIFORNIA, January 29, 2026 -</b>&nbsp;At ISE 2026, Macnica will show a production-ready version of its ME10 System-On-Chip (SoC) for product developers ready to build IPMX-compliant products at scale and without complication. With higher performance enabled through a new Machine-to-Machine (M2M) interface, the ME10 offers a complete, interoperable and standards-based AV over IP solution for integration into low-power, high-efficiency embedded devices.</p>\n<p>The ME10 SoC is a 4K AV over 1GbE integrated SoC that is purpose-built for high-volume IP product developers building lower-cost, drop-in replacements for existing proprietary solutions. The SoC’s compact form factor is also ideal for OEM designs requiring tight dimensional constraints. The ME10 enables transport of HDMI 2.0 4K 4:4:4 video, audio, and control over standard 1GbE networks within its compact 23x23 mm package.</p>\n<p>The ME10’s new M2M (Machine-to-Machine) interface reduces time to market by providing a simple REST API that streamlines integration with host processors.&nbsp;For product developers, the M2M interface eliminates the need to work directly with complex FPGAs that by design extend time to market due to lengthy development cycles.</p>\n<p>Macnica will share the value proposition of the ME10 at ISE 2026 (Stand 4J530) next week, emphasizing key business and technology benefits for product developers:</p>\n<ul>\n<li><b>Faster integration:</b> Control over HTTP with a simple REST API, no FPGA toolchain required.</li>\n<li><b>Standards first:</b> Designed for IPMX and interoperable ST 2110/IPMX workflows.</li>\n<li><b>Small footprint:</b> 23×23 mm package for tight industrial and OEM designs.</li>\n<li><b>4K over 1 GbE:</b> Transport of HDMI 2.0 4K 4:4:4 video, audio, and control on standard networks.</li>\n<li><b>Built for scale:</b> Low power operation and high-volume manufacturing readiness.</li>\n</ul>\n<p>“Macnica has developed the ME10 as an all-in-one SoC solution that gets you to market very quickly with your IPMX products,” said Andrew Starks, Director of Product Management, Macnica Americas. “The ME10 addresses all the challenges of making AV over IP work in an open-standards manner that supports immediate interoperability with other vendors and implementations.”</p>\n<p>Macnica will demonstrate the ME10’s performance within an IPMX stack, including subframe latency, resilient network performance, and device discovery and registration. The ME10 will soon be available as part of an updated, dedicated development kit that simplifies evaluation and integration for product designers.</p>\n<p>“IPMX represents a major milestone for the AV industry, and it’s the result of years of collaboration across manufacturers, standards bodies, and end users,” said Sebastien Dignard, Chief Executive Officer, Macnica Atlantic Region. “Macnica is proud to have been an early and active contributor to that effort, and with the ME10 we’re excited to help move the industry forward with practical, production-ready silicon that supports open, interoperable standards.”</p>\n<p>ISE 2026 takes place February 3-6 at the Fira Gran Via in Barcelona. Macnica will demonstrate the ME10 and other hardware and software solutions for open-standards AV. <a href=\"https://macnica.box.com/s/rjguycq2m62kku697inptz4di1608u0y\" target=\"_blank\">Read the complete ME10 FAQ</a> for more information.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "About Macnica Americas",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Macnica Technology, a leader in live video over IP transport technologies and creator of hardware and software APIs that implement ST 2110, is based in Solana Beach, Calif. Macnica focuses on the specialized technology areas of video/imaging and networking/storage to better support customers trying to develop products and services using these technologies. We offer products at various levels of integration: component-level semiconductor devices, FPGA IP, boards and modules, software and total solutions. Visit the Macnica Technology website for more information about video transport technologies at <a href=\"http://www.macnicatech.com\" target=\"_blank\">www.macnicatech.com</a>.</p>\n<p><b>Macnica Americas, Inc.</b>, 380 Stevens Ave., Suite 206, Solana Beach, CA 92075</p>\n<p><b>Direct all Macnica media inquiries to:</b></p>\n<p><i>Brian Galante,&nbsp;Copper Leaf Media,&nbsp;brian@copperleaf.media,&nbsp;570-898-2224</i></p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   }
+  }
+ }
+}

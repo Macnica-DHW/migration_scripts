@@ -1,0 +1,65 @@
+{
+ "quando": "2026-10-02T18:24:28",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2018-04-09-macnicas-st2110-ip-core-successfully-adopted-by-sencore-for-its-new",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2018-04-09-macnicas-st2110-ip-core-successfully-adopted-by-sencore-for-its-new/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Macnica’s ST2110 IP Core Successfully Adopted by Sencore for its New SDI over IP Converter",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:50:33 GMT+0000",
+  "jcr:description": "Macnica’s ST2110 IP enables the key feature of Sencore’s SDI2X product Macnica Technology, a leader in video over IP transport technologies, today announced that its IP core supporting the SMPTE ST2110 standard is successfully adopted by Sencore, Inc. for its new SDI to IP converter product, SDI2X.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2018-04-09-macnicas-st2110-ip-core-successfully-adopted-by-sencore-for-its-new",
+  "hideInNav": "true",
+  "pageTitle": "Macnica’s ST2110 IP Core Successfully Adopted by Sencore for its New SDI over IP Converter",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Macnica’s ST2110 IP Core Successfully Adopted by Sencore for its New SDI over IP Converter",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica’s ST2110 IP Core Successfully Adopted by Sencore for its New SDI over IP Converter",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica’s ST2110 IP enables the key feature of Sencore’s SDI2X product",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Macnica Technology, a leader in video over IP transport technologies, today announced that its IP core supporting the SMPTE ST2110 standard is successfully adopted by Sencore, Inc. for its new SDI to IP converter product, SDI2X.</p>\n<p>Sencore, a leading developer of high-quality signal transmission solutions, provides SDI2X, a simple solution to bridge the gap between traditional SDI and IP infrastructures. SDI2X is newly released with the support for multiple standards such as ST2022-6, ST2110, JPEG2000, and variety of other standards. Macnica‘s ST2022-6 and ST2110 IP cores are successfully adopted by Sencore for SDI2X to support the latest set of standards for live video over IP networks.</p>\n<p>“Macnica was an obvious choice for Sencore” said Tyler DeNeui, Director of Marketing at Sencore.“ When Sencore chooses an engineering and product partner, we choose the industry and technology leaders. Macnica is certainly at the front of development for 2110 which makes them a fantastic choice for our SDI2X product.”</p>\n<p>“Sencore is providing top-notch products for evolving SDI to IP infrastructures.” said Marc Levy, CTO at Macnica. “Their ability to rapidly integrate ST2110 and release a full-featured product speaks volumes about their engineering capabilities and their ability to rapidly meet market demands.”</p>\n<p>For more information about Macnica’s ST2110 IP core, please visit&nbsp;<a href=\"https://macnicatech.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">https://macnicatech.com</a>, and for a live demo of ST2110, please visit the Macnica booth SU12018 at NAB 2018.</p>\n<p>About Macnica Technology&nbsp;<br>\nMacnica Technology, a division of the $4B Macnica Group, offers products that implement the ST2022, Sony IP Live and ST2110 standards for moving live, high-definition and 4K video over standard IP (Ethernet) networks. Macnica leverages its video and high-speed networking expertise to develop superior products and intellectual property for the broadcast, pro-AV, and high-speed networking industries. Find out more about the new VIPA card and Macnica’s video over IP transport technology at&nbsp;<a href=\"https://macnicatech.com/en/\" title=\"Macnica Technology\" target=\"_blank\" rel=\"noopener noreferrer\">https://macnicatech.com</a>.</p>\n<p>About Sencore&nbsp;<br>\nSencore is an engineering leader in the development of reliable, cost-effective signal transmission and content monitoring solutions for the broadcast, cable, satellite, and IPTV markets. Backed by world-class customer service and support, Sencore's portfolio includes video contribution and distribution equipment, system monitoring and analysis solutions, and test and measurement instruments. Designed to meet the needs of an ever-changing industry, Whether IP based, multiscreen OTT or readying for HEVC and 4k Sencore solutions leverage the latest technology to ensure efficient delivery of high-quality video from the source to the home. More information about Sencore can be found at&nbsp;<a href=\"http://www.sencore.com/\" title=\"Sencore\" target=\"_blank\" rel=\"noopener noreferrer\">http://www.sencore.com</a>.</p>\n<p>MACNICA PRODUCT CONTACT:&nbsp;<br>\nLaura Richardson&nbsp;<br>\n858-914-2649&nbsp;<br>\nLaura.Richardson(at)macnica.com</p>\n<p>SENCORE PRODUCT CONTACT:&nbsp;<br>\nChris Nielsen&nbsp;<br>\n+1 (605) 978-4785&nbsp;<br>\nChris.Nielsen(at)sencore.com</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   }
+  }
+ }
+}

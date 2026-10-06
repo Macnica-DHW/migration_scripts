@@ -1,0 +1,65 @@
+{
+ "quando": "2026-10-02T18:24:22",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2019-03-25-macnica-technology-to-demonstrate-smpte-st-2110-and-nmos-network-media",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2019-03-25-macnica-technology-to-demonstrate-smpte-st-2110-and-nmos-network-media/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Macnica Technology to Demonstrate SMPTE ST 2110 and NMOS Network Media Switching Solutions at 2019 NAB Show",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:50:40 GMT+0000",
+  "jcr:description": "Company continues to grow its VIPA family of video over IP products built on the SMPTE ST 2110 standard to strengthen interoperability and simplify integration SOLANO BEACH, CALIFORNIA, March 25, 2019 — Macnica Technology, a leader in live video over IP transport technologies, will showcase its expanding VIPA product line and offer live demos of its SMPTE ST 2110 and NMOS network media switching solutions at the 2019 NAB Show. Macnica will exhibit at Booth SU13013, April 8-11 in the Las Vegas Convention Center.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2019-03-25-macnica-technology-to-demonstrate-smpte-st-2110-and-nmos-network-media",
+  "hideInNav": "true",
+  "pageTitle": "Macnica Technology to Demonstrate SMPTE ST 2110 and NMOS Network Media Switching Solutions at 2019 NAB Show",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Macnica Technology to Demonstrate SMPTE ST 2110 and NMOS Network Media Switching Solutions at 2019 NAB Show",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica Technology to Demonstrate SMPTE ST 2110 and NMOS Network Media Switching Solutions at 2019 NAB Show",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Company continues to grow its VIPA family of video over IP products built on the SMPTE ST 2110 standard to strengthen interoperability and simplify integration",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>SOLANO BEACH, CALIFORNIA, March 25, 2019 — Macnica Technology, a leader in live video over IP transport technologies, will showcase its expanding VIPA product line and offer live demos of its SMPTE ST 2110 and NMOS network media switching solutions at the 2019 NAB Show. Macnica will exhibit at Booth SU13013, April 8-11 in the Las Vegas Convention Center.</p>\n<p>Macnica is a creator of hardware and software APIs that implement the SMPTE ST 2110 suite of standards. SMPTE ST 2110 is a widely followed open standard for professional broadcast and AV that fosters interoperability, scalability and flexibility in IP applications. At NAB, Macnica will demonstrate its growing VIPA range, which offers video transport interface functionality for video processing of ST 2110 streams.</p>\n<p>NAB marks the introduction of Macnica’s VIPA 25 PCI Express (PCIe) card. The VIPA 25 is an ST 2110 accelerated network interface card that completely offloads the network processing and timing workload from the CPU. It provides a straightforward, simple API that includes NMOS IS-04/05 and GStreamer filters (source and sync)—making it ready for developers to start creating next-generation, IP-networked broadcast applications on open standards. An optional 12G-SDI daughtercard adds SDI support with seamless API access alongside ST 2110.</p>\n<p>Macnica will also show its recently introduced 10GbE card, the VIPA 10, at NAB. Macnica will demonstrate some of the new capabilities of its software development kit (SDK) with the VIPA 10 card.</p>\n<p>Macnica continues to be involved in the NMOS standards and VIPA 25 is a full-stack ST 2110/NMOS solution, supporting all ratified standard subtypes. In addition to live demonstrations at its booth, Macnica will participate in the IP Showcase at booth C12634 to exhibit the interoperability of its NMOS solutions.</p>\n<p>“We’re building a flexible, accessible ST 2110 platform that will be at the heart of a new wave of products in the broadcast and professional video industries. We can’t wait to show off some of the things we are doing with our technology at NAB,” said Andrew Starks, Director of Product Management at Macnica. “The VIPA 25 will be perfect for broadcast equipment manufacturers who need the kind of reliability they’ve come to expect from SDI in a standards-compliant ST 2110 solution.”</p>\n<p>Technical and business meetings with Macnica’s experts during NAB can be scheduled by emailing&nbsp;<a href=\"mailto:videotransport@macnica.com\" target=\"_top\">videotransport@macnica.com</a>.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   }
+  }
+ }
+}

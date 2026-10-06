@@ -1,0 +1,307 @@
+{
+ "quando": "2026-10-05T11:31:02",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/embedded-computing/ibase-ib836",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/embedded-computing/ibase-ib836/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "IBASE IB836 Intel Atom x6000E-Based SBC",
+  "manufacturer": "mai:manufacturers/ibase",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 02 2026 13:46:32 GMT+0000",
+  "cq:lastModified": "Mon Oct 05 2026 14:16:05 GMT+0000",
+  "jcr:description": "Explore the IBASE IB836, a high-performance Intel Atom x6000E-Based SBC. This is ideal for industrial and IoT applications requiring reliability and efficiency.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/embedded-computing/ibase-ib836",
+  "pageTitle": "IBASE IB836 Intel Atom x6000E-Based SBC",
+  "cq:tags": "mai:business-categories/boards-modules",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "navTitle": "IBASE IB836 Intel Atom x6000E-Based SBC",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+     "jcr:lastModified": "Sun Sep 06 2026 14:54:10 GMT+0000",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498055877"
+     ],
+     "container_copy_copy_": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+      "jcr:lastModified": "Sun Sep 06 2026 13:17:44 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/container",
+      "cq:styleIds": [
+       "1717498056876",
+       "1717498055877"
+      ],
+      "container": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+       "jcr:lastModified": "Sun Sep 06 2026 13:17:53 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498056876",
+        "1717498053499"
+       ],
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "IBASE IB836",
+        "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+        "jcr:lastModified": "Sun Sep 06 2026 13:18:01 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/title"
+       }
+      },
+      "container_886256650": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+       "jcr:lastModified": "Sun Sep 06 2026 13:19:27 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498056876"
+       ],
+       "textwithimage": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/images/IBASE IB836 (1).jpeg",
+        "imageRatio": "30",
+        "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+        "alt": "IBASE IB836 BOARD",
+        "text": "<h3>IBASE Atom x6000E-based modules offer industrial desktop performance, blazing fast graphics and IO - compact, mighty and efficient</h3>\r\n<p>The IBASE IB836 Intel Atom x6000E-based SBC’s include a rich portfolio of Intel® Atom™ based modules. The Atom™ x6000E family SBC’s take real-time compute performance and control flexibility to the next level while maintaining a small footprint and lower power:</p>\r\n",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "jcr:lastModified": "Mon Oct 05 2026 12:29:42 GMT+0000",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+        "isDecorative": "false",
+        "textIsRich": "true",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1718154328384",
+         "",
+         "1783061491236"
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/images/IBASE IB836 (1).jpeg",
+         "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+         "jcr:lastModified": "Mon Oct 05 2026 12:29:42 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       }
+      },
+      "container_1633965901": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Mon Sep 21 2026 19:40:36 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498056876"
+       ],
+       "textwithimage_copy": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/images/IBASE IB836 6000.png",
+        "imageRatio": "30",
+        "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+        "alt": "IBASE IB836 BOARD",
+        "text": "<p>IBASE IB836 x6000E Single Board Computer - 3.5”</p>\r\n<p>They count with:</p>\r\n<ul>\r\n<li>Compute performance: +50% to 70%</li>\r\n<li>GPU performance: +100% with 3x 4K/60p interfaces, Integrated Gen 11 graphics</li>\r\n<li>High-end memory: DDR4-3200, up to 32GB (with IBECC)</li>\r\n<li>Comprehensive IO: M.2 E-key/2230, 3x USB 3.1, USB C, 2x USB 2.0, GPIO, HD Audio</li>\r\n<li>Triple network: 3x GbE</li>\r\n<li>Wide power input range: 9 to 36 VDC</li>\r\n<li>Low power: 6 to 12W typical depending on CPU selected</li>\r\n<li>TPM 2.0 and Watchdog timer</li>\r\n</ul>\r\n<p>Need special configurations or customized hardware or BIOS? Just ask!&nbsp;</p>\r\n<p>These are just part of what separates the IBASE IB836 Intel Atom x6000E-based SBC and Macnica from the competition.</p>\r\n",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "jcr:lastModified": "Thu Oct 01 2026 15:31:22 GMT+0000",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+        "isDecorative": "false",
+        "textIsRich": "true",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1718154328384",
+         "",
+         "1783061491236"
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/ibase/images/IBASE IB836 6000.png",
+         "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+         "jcr:lastModified": "Thu Oct 01 2026 15:31:22 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       }
+      },
+      "container_1505293645": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Mon Sep 21 2026 19:40:54 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "backgroundColor": "#f7f7f7",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498056876"
+       ],
+       "title_table": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Specifications",
+        "type": "h2",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         "1718280235888"
+        ]
+       },
+       "table": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+        "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\"><tbody><tr><th style=\"text-align: left;width:20%;text-align:left\">CPU</th><td><p>Intel® Atom™ QC x6425E (1.8GHz/3.0GHz, 1.5MB cache, 12W TDP)</p>\r\n<p>Intel® Atom™ QC x6413E (1.5GHz/3.0GHz, 1.5MB cache, 9W TDP)</p>\r\n<p>Intel® Atom™ DC x6211E (1.2GHz/3.0GHz, 1.5MB cache, 6W TDP)</p>\r\n</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">PCH</th><td>Integrated in Intel® SoC</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Memory Types</th><td>DDR4-3200 SO-DIMM, Max. 32GB, supports IBECC</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">BIOS</th><td>AMI</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Watchdog Timer</th><td>256 levels</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">H/W Monitor</th><td>Yes</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Storage Device Interface</th><td>1x mSATA (Share with SATA port)</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Mini Type Slots</th><td>1x M.2 (E-Key, type:2230)</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Graphics Controller</th><td>Intel® SoC integrated Gen11 Graphics</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Video Output</th><td>2x DisplayPort (DP connector and Type-C), eDP or 24-bit dual-channel LVDS</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Ethernet</th><td>3x Intel® I210IT PCI-E Gigabit LAN</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">I/O Chip</th><td>Fintek F81964D-I</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Serial Port</th><td>1x RS232/422/485 (Jumperless selection)<br />\r\n3x RS232</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">USB 2.0</th><td>2x USB 2.0 (Pin-header)</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">USB 3.0/ 3.1</th><td>3x USB3.1 (Type-A)<br />\r\n1x USB Type-C</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Serial ATA</th><td>2x SATA III</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Audio</th><td>Built-in HD with Realtek ALC269 w/ class-D amplifier</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">TPM</th><td>TPM (2.0)</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Others</th><td>Digital I/O (4-in/4-out), EuP/ErP, &#43;9V~&#43;36V DC-in</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Dimensions (L x W)</th><td>102 mm x 147 mm (4&#34; x 5.8&#34;)</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Power Consumption</th><td>TBD</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Operating Temperature</th><td>-40°C~85°C (-40°F ~185°F)</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Storage Temperature</th><td>-40°C~90°C (-40°F ~194°F)</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">Relative Humidity</th><td>90% (non-condensing &#64; 60°C)</td></tr></tbody></table>",
+        "jcr:lastModified": "Sun Sep 06 2026 15:05:23 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       },
+       "title_table_923468146": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Ordering Information",
+        "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+        "type": "h2",
+        "jcr:lastModified": "Mon Oct 05 2026 14:16:05 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         "1718280237031"
+        ]
+       },
+       "table_787459565": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+        "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\"><tbody><tr><th style=\"text-align: left;width:20%;text-align:left\">IB836F-6425E</th><td>Intel® Atom™ x6425E, 3.5-inch Disk Size SBC w/ 3x GbE LAN, 2x DisplayPort (DP connector and Type-C), LVDS,mSATA, M.2, EuP/ErP, 9V~36V DC-in, wide temp support</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">IB836FE-6425E</th><td>Intel® Atom™ x6425E, 3.5-inch Disk Size SBC w/ 3x GbE LAN, 2x DisplayPort (DP connector and Type-C), eDP,mSATA, M.2, EuP/ErP, 9V~36V DC-in, wide temp support</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">IB836F-6413E</th><td>Intel® Atom™ x6413E, 3.5-inch Disk Size SBC w/ 3x GbE LAN, 2x DisplayPort (DP connector and Type-C), LVDS(24-bit LVDS Dual-channel), mSATA, M.2, EuP/ErP,9V~36V DC-in, wide temp support</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">IB836FE-6413E</th><td>Intel® Atom™ x6413E, 3.5-inch Disk Size SBC w/ 3x GbE LAN, 2x DisplayPort (DP connector and Type-C), eDP,mSATA, M.2, EuP/ErP, 9V~36V DC-in, wide temp support</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">IB836F-6211E</th><td>Intel® Atom™ x6211E, 3.5-inch Disk Size SBC w/ 3x GbE LAN, 2x DisplayPort (DP connector and Type-C), LVDS,mSATA, M.2, EuP/ErP, 9V~36V DC-in, wide temp support</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">IB836FE-6211E</th><td>Intel® Atom™ x6211E, 3.5-inch Disk Size SBC w/ 3x GbE LAN, 2x DisplayPort (DP connector and Type-C), eDP,mSATA, M.2, EuP/ErP, 9V~36V DC-in, wide temp support</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">HSIB836-X-A</th><td>Heatsink for IB836</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">HSIB836-A</th><td>Heat spreader for IB836</td></tr><tr><th style=\"text-align: left;width:20%;text-align:left\">IB76A-2</th><td>Cable kit w/ USB, COM, Power, SATA &#43; Power</td></tr></tbody></table>\r\n<h3> </h3>",
+        "jcr:lastModified": "Sun Sep 06 2026 15:05:39 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/table",
+        "textIsRich": "true",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       }
+      },
+      "container_1205912405": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+       "jcr:lastModified": "Sun Sep 06 2026 15:06:53 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498053499",
+        "1717498052331"
+       ],
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+        "text": "<h3>Applications</h3>\r\n<ul>\r\n<li><b>Aviation: </b>Data loggers, aircraft cabin systems</li>\r\n<li><b>Industrial Automation:</b> AI/vision applications, PLC, industrial control and automation.</li>\r\n<li><b>Robotics:</b> Robots for welding, painting, assistance</li>\r\n<li><b>Energy:</b> Smart grid and solar, wind equipment</li>\r\n<li><b>Transportation and Signage:</b> Information/ticketing systems,</li>\r\n<li><b>Digital signage, outdoor kiosks, etc:</b>&nbsp; IBASE is an industry leader in this space</li>\r\n<li><b>Real-time control in general</b></li>\r\n</ul>\r\n",
+        "jcr:lastModified": "Sun Sep 06 2026 15:07:43 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "container_839057365": {
+       "jcr:primaryType": "nt:unstructured",
+       "jcr:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+       "jcr:lastModified": "Sun Sep 06 2026 13:23:41 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/container",
+       "cq:styleIds": [
+        "1717498052331",
+        "1717498053499"
+       ],
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+        "text": "<h3>About IBASE</h3>\r\n<ul>\r\n<li>20-year history of producing a wide portfolio of robust industrial embedded computing solutions</li>\r\n<li>SBC’s, industry standard modules, packaged solutions, ISO certified quality offerings</li>\r\n<li>Wide variety of platform performance, cost, features and partners: Intel, AMD, NXP (ARM)</li>\r\n<li>High performance edge computing solutions</li>\r\n<li>Digital signage industry leadership (multi-displays)</li>\r\n<li>Flexibility with cost effective customization option</li>\r\n</ul>\r\n",
+        "jcr:lastModified": "Tue Sep 29 2026 19:06:09 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "flexcontainer_copy": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+        "jcr:lastModified": "Wed Aug 26 2026 14:32:11 GMT+0000",
+        "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+        "cq:styleIds": [
+         "1718800456497",
+         "1719484596357"
+        ],
+        "flexcontaineritem_vazio_a": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+        },
+        "flexcontaineritem": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+         "jcr:lastModified": "Wed Aug 26 2026 14:32:16 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "button": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:title": "Contact Us for More Information",
+          "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+          "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+          "linkTarget": "_self",
+          "jcr:lastModified": "Wed Aug 26 2026 14:33:14 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/button",
+          "cq:styleIds": [
+           "",
+           "1723033446255",
+           "1717669229626"
+          ]
+         }
+        },
+        "flexcontaineritem_861351158": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+         "jcr:lastModified": "Wed Aug 26 2026 14:32:23 GMT+0000",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+         "button": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:title": "Request a Quote",
+          "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+          "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+          "linkTarget": "_self",
+          "jcr:lastModified": "Wed Aug 26 2026 14:33:37 GMT+0000",
+          "sling:resourceType": "macnicaglobal2/components/content/button",
+          "cq:styleIds": [
+           "",
+           "1723033446255",
+           "1717669229626"
+          ]
+         }
+        },
+        "flexcontaineritem_vazio_b": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

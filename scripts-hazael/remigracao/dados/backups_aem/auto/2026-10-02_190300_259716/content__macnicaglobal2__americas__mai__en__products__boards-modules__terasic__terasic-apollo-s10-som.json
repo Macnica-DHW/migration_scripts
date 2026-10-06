@@ -1,0 +1,481 @@
+{
+ "quando": "2026-10-02T19:03:55",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/terasic-apollo-s10-som",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/terasic-apollo-s10-som/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "Terasic Apollo S10 SOM - Stratix 10 SoC",
+  "manufacturer": "mai:manufacturers/terasic",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Tue Sep 08 2026 20:12:58 GMT+0000",
+  "cq:lastModified": "Fri Oct 02 2026 21:39:14 GMT+0000",
+  "jcr:description": "Discover unparalleled performance with the Terasic Apollo S10 SOM. Powered by Stratix 10 SoC, it's the future of board modules at Macnica Americas.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/terasic-apollo-s10-som",
+  "pageTitle": "Terasic Apollo S10 SOM - Stratix 10 SoC",
+  "cq:tags": "mai:business-categories/boards-modules",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "navTitle": "Terasic Apollo S10 SOM - Stratix 10 SoC",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_930892": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/images/Terasic Apollo S10 SOM%0A.jpeg",
+      "imageRatio": "30",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "Terasic Apollo S10 SOM",
+      "text": "<p>Terasic Apollo S10 System-on-Module (SOM), is a cutting-edge solution designed for highly adaptable and scalable FPGA prototyping and HPC applications. Despite its compact size, the Apollo S10 SOM delivers unparalleled performance and energy efficiency. In fact, it offers an astounding 90X increase in performance compared to CPUs when handling critical workloads like simulation acceleration, molecular dynamics, and machine learning.</p>\r\n<p>The secret behind the Terasic Apollo S10 SOM lies in its utilization of the latest Altera Stratix® 10 SoC, boasting an impressive 2800K logic elements, which enables remarkable speed and power advancements with up to 70% lower energy consumption. Additionally, the Apollo S10 SOM incorporates a range of high-end hardware interfaces, including high-capacity and high-bandwidth DDR4 SDRAM (up to 64GB), an on-board USB-Blaster II, and FMC/FMC+ connectors for I/O expansion. As a result, this board delivers over 2X the performance of previous-generation development kits.</p>\r\n<p>The Terasic Apollo S10 SOM is designed to be highly extensible. To facilitate our client's development process, we offer the Apollo Carrier board, which is tailor-made for the Apollo S10 SOM. This carrier board provides essential features for evaluating and integrating the Apollo S10 SOM into custom systems. Notably, it includes two ultra-low-latency 40Gbps QSFP+ modules and Thunderbolt™ 3 connectivity. This enables clients to assess their desired I/O configuration and seamlessly build their own tailored systems around the Apollo S10 SOM.</p>\r\n",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Sep 24 2026 15:13:04 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/images/Terasic Apollo S10 SOM%0A.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Thu Sep 24 2026 15:13:04 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_755057991": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flex_specs_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800525141",
+       "1719484596357"
+      ],
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>FPGA</h3>\r\n<ul>\r\n<li>Altera Stratix 10 Soc FPGA 1SX280HU2F50E1VG</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>FPGA Configuration</h3>\r\n<ul>\r\n<li>Key Features</li>\r\n<li>Agilex® 1.4MLE FPGA with an integrated 1.4GHz quad-core ARM Cortex-A53 processor system</li>\r\n<li>Two 72-bit DDR4 ECC SODIMM sockets, microSD card socket, 1Gbits of QSPI configuration flash</li>\r\n<li>On-board power regulators and board management system</li>\r\n<li>On-board high-speed Interfaces:&nbsp; FMC/FMC+, QSFP28, GigE, USB2, USB-UART, USB Blaster II</li>\r\n<li>PCIe Gen4 x16 interface via the FMC+ connectorOn-Board USB Blaster II for FPGA programming and Debug</li>\r\n<li>AS Mode configuration from QSPI Flash</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flex_specs_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800525141",
+       "1719484596357"
+      ],
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Clock and User Interface</h3>\r\n<ul>\r\n<li>Four 50Mhz Single-ended Clock Source</li>\r\n<li>One 100Mhz Single-ended Clock Source</li>\r\n<li>Clock Generator Si5341</li>\r\n<li>LED x2, Button x2, Dip Switch x2, CPU Reset</li>\r\n<li>Power Switch</li>\r\n<li>FMC Adjustable Voltage 1.8V/1.5V/1.2V&nbsp;</li>\r\n<li>FMC+ Adjustable Voltage 1.8V/1.5V/1.2V&nbsp;</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Memory</h3>\r\n<ul>\r\n<li>1024Mbit QSPI Flash (EPCQL1024 Compliant)</li>\r\n<li>Total of 64GB DDR4 x72 2133MT/s with ECC<ul>\r\n<li>Two independent DDR4 banks</li>\r\n<li>One bank is shared with FPGA and HPS</li>\r\n</ul>\r\n</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     },
+     "flex_specs_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800525141",
+       "1719484596357"
+      ],
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Communication and Expansion</h3>\r\n<ul>\r\n<li>FMC (Vita57.1) connector with 10 transceivers</li>\r\n<li>FMC+ (Vita57.4) connector with 24 transceivers</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>HPS</h3>\r\n<ul>\r\n<li>MicroSD Socket</li>\r\n<li>Gigabit Ethernet with RJ45</li>\r\n<li>USB OTG with Micro USB Connector</li>\r\n<li>UART to USB with Mini USB Connector</li>\r\n<li>RTC</li>\r\n<li>LED x1, Button x1, Cold Reset Button</li>\r\n<li>1x6 GPIO Header</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_1055869499": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "SOM Block Diagram",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "flex_diagrama": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800525141",
+       "1719484596357"
+      ],
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/images/Terasic Apollo S10 SOM%0Aboard.jpeg",
+        "alt": "SOM block diagram",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "1726800547211"
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "text_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Dashboard System</h3>\r\n<ul>\r\n<li>Input Power Monitor</li>\r\n<li>FPGA and Board Temperature Monitor</li>\r\n<li>Fan Control and Monitor</li>\r\n<li>Auto Fan Speed</li>\r\n<li>Auto Shutdown</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       },
+       "text_2": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "<h3>Power Source</h3>\r\n<ul>\r\n<li>12V from 2x4 PCIe connector</li>\r\n<li>12V from Samtec connector (reserved for carrier board)</li>\r\n</ul>",
+        "sling:resourceType": "macnicaglobal2/components/content/text",
+        "textIsRich": "true"
+       }
+      }
+     }
+    },
+    "container_1055869499_2072710828": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Developer Kit",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/images/Terasic Apollo S10 SOM%0A2.jpeg",
+      "imageRatio": "30",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "alt": "Terasic Apollo 10 Developer Kit",
+      "text": "<ul>\r\n<li>The Kit is composed by<ul>\r\n<li>Apollo S10 Module (heatsink installed)</li>\r\n<li>Apollo Carrier Board</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>The Apollo Carrier Board features include:<ul>\r\n<li>PCIe Gen3 x4 via Thunderbolt 3 (Type-C Connector)</li>\r\n<li>USB Downstream port via Thunderbolt 3 (Type-A Connector)</li>\r\n<li>Two QSFP connectors (40G Ethernet)</li>\r\n<li>Clock Generator to provide reference clock for transceiver IP</li>\r\n<li>LED x4, Button x2, Switch x2</li>\r\n<li>2x20 GPIO Expansion Header. Adjustable IO Standard 3.3V/2.5V/1.8V.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "jcr:lastModified": "Thu Sep 24 2026 15:21:11 GMT+0000",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       "1783061491236"
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/images/Terasic Apollo S10 SOM%0A2.jpeg",
+       "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+       "jcr:lastModified": "Thu Sep 24 2026 15:21:11 GMT+0000",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_1055869499_1925494502": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flex_diagramas": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800525141",
+       "1719484596357"
+      ],
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "12"
+       }
+      },
+      "item_1": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Block Diagram of Apollo Carrier Board",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       },
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/images/Terasic Apollo S10 SOM%0Aboard2.jpeg",
+        "alt": "Block Diagram of Apollo Carrier Board",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       }
+      },
+      "item_2": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "title": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Apollo S10 Module",
+        "type": "h1",
+        "sling:resourceType": "macnicaglobal2/components/content/title",
+        "cq:styleIds": [
+         "",
+         "",
+         "",
+         ""
+        ]
+       },
+       "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/images/Terasic Apollo S10 SOM%0A3.jpeg",
+        "alt": "Apollo S10 Module",
+        "displayPopupTitle": "true",
+        "linkTarget": "_self",
+        "titleValueFromDAM": "true",
+        "sling:resourceType": "macnicaglobal2/components/content/image",
+        "isDecorative": "false",
+        "altValueFromDAM": "false",
+        "cq:styleIds": [
+         "",
+         ""
+        ],
+        "spImage": {
+         "jcr:primaryType": "nt:unstructured",
+         "sling:resourceType": "macnicaglobal2/components/content/image"
+        }
+       }
+      }
+     }
+    },
+    "container_755057991_": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title_table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Connection to FMC Daughter Card",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "table": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+      "text": "<table>\r\n<tbody><tr><td height=\"150\">Connect to 12G SDI-FMC Daughter Card</td>\r\n<td><img alt=\"Connect to 12G SDI-FMC Daughter Card\" src=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/12gsd.jpg\"></td>\r\n</tr><tr><td>Connect to D8M-FMC Daughter Card</td>\r\n<td><img alt=\"Connect to D8M-FMC Daughter Card\" src=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/d8mfmc.jpg\"></td>\r\n</tr><tr><td>Connect to ADC-FMC Daughter Card</td>\r\n<td><img alt=\"Connect to ADC-FMC Daughter Card\" src=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/adcfmc.jpg\"></td>\r\n</tr><tr><td>Connect to HDMI-FMC Daughter Card</td>\r\n<td><img alt=\"Connect to HDMI-FMC Daughter Card\" src=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/hdmifmc.jpg\"></td>\r\n</tr><tr><td>Connect to XTS-FMC Daughter Card</td>\r\n<td><img alt=\"Connect to XTS-FMC Daughter Card\" src=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/xtsfmc.jpg\"></td>\r\n</tr><tr><td>Connect to P16E-FMCP Daughter Card</td>\r\n<td><img alt=\"Connect to P16E-FMCP Daughter Card\" src=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/apollo-s1-module-P16E.jpg\"></td>\r\n</tr><tr><td>Connect to F2G-FMC Daughter Card</td>\r\n<td><img alt=\"Connect to F2G-FMC Daughter Card\" src=\"/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/terasic/apollo-s10-module-f2G.jpg\"></td>\r\n</tr></tbody></table>\r\n",
+      "jcr:lastModified": "Thu Sep 24 2026 15:43:41 GMT+0000",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "",
+       ""
+      ],
+      "cq:responsive": {
+       "jcr:primaryType": "nt:unstructured",
+       "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "2",
+        "width": "8"
+       }
+      }
+     }
+    },
+    "container_746606129_": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800456497",
+       "1719484596357"
+      ],
+      "flexcontaineritem_vazio_a": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+      },
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact Us for More Information",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1723033446255",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_861351158": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Request a Quote",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1723033446255",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_vazio_b": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+      }
+     }
+    }
+   }
+  }
+ }
+}

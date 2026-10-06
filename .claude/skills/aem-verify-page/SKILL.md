@@ -84,6 +84,10 @@ Plus `aem_screenshot.py`, `remigracao/ferramentas/clicar_ancoras.py` and `remigr
   wrap, recommended ratio). The criteria are in `page-standards`.
 - FAQ: every answer directly under its question (the migrator applied `margin-top:0` to only some answers).
 - Anchors: every `href="#x"` has a matching `id` (ignore `#page-top`) **and** clicking scrolls to it.
+- Sticky tabs (`stickytabs`, not `anchorlink`): scrolling to it working is not proof it *sticks*. Check that the bar
+  actually stays fixed at the top while you scroll past it — `.stickytabs.getBoundingClientRect().top` should lock
+  near the CSS `top` (~100px at 1400px), not go negative. See `aem-components` for the "parent has no headroom"
+  failure mode this catches; a link matching an `id` can be perfectly correct and the bar still not float.
 - Tables: judge against GWI's render (GWI's own overflow isn't a defect). Buttons: a download button is never paired
   side by side with a normal one.
 - **Look at the before/after side-by-side PNG yourself.** On 25/09 an automated pass accepted a button pair 13px out

@@ -1,0 +1,51 @@
+{
+ "quando": "2026-10-02T19:46:01",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/8-helio-view-software",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/semiconductors/8-helio-view-software/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "8. Helio View Software",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Mon Sep 21 2026 17:27:44 GMT+0000",
+  "cq:lastModified": "Mon Sep 21 2026 18:21:15 GMT+0000",
+  "jcr:description": "Advance your career with the Helio View software vWorkshop. This course offers practical training in implementing graphics engines on SoC systems.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/semiconductors/8-helio-view-software",
+  "pageTitle": "8. Helio View Software",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "8. Helio View Software",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "",
+      "1717498052331"
+     ],
+     "title_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "table_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\" width=\"100%\" height=\"100%\">\n<tbody><tr><th style=\"white-space:nowrap\">Name</th>\n<td>SoC Graphics and Video using Linux or Android</td>\n</tr><tr><th style=\"white-space:nowrap\">Summary</th>\n<td>In this software vWorkshop, you will learn how to control Altera video IP components and about the Linux DirectFB graphics thin library. You will also explore the Android environment and the advantages of the FujiSoft 2D graphics engine. This vWorkshop is taught with the software designer in mind.</td>\n</tr><tr><th style=\"white-space:nowrap\">Prerequisites</th>\n<td><ul>\n<li>Completion of the Altera SoC Embedded Design Suite class and labs and a basic understanding of embedded displays and graphics processing.</li>\n</ul>\n</td>\n</tr><tr><th>What you'll be able to do after</th>\n<td><ul>\n<li>Understand how DirectFB is implemented to interface with the SoC LCD controller.</li>\n<li>Understand the advantages of using Android and the Fujisoft 2D graphics engine.</li>\n<li>Control video streams and layers that use the Altera VIP suite.</li>\n</ul>\n</td>\n</tr><tr><th style=\"white-space:nowrap\">Lab</th>\n<td><ul>\n<li>Demonstrate DirectFB libraries and the SoC FPGA LCD controller</li>\n<li>Demonstrate the Fujisoft 2D graphics engine within an Android system</li>\n<li>Create a video overlay on top of streaming video</li>\n</ul>\n</td>\n</tr><tr><th style=\"white-space:nowrap\">Contents</th>\n<td><ul>\n<li>Demonstrations</li>\n<li>Altera Video IP Suite</li>\n<li>DirectFB graphics</li>\n<li>FujiSoft's Android and Graphics Acceleration</li>\n<li>Q&amp;A</li>\n</ul>\n</td>\n</tr></tbody></table>",
+      "sling:resourceType": "macnicaglobal2/components/content/table",
+      "textIsRich": "true",
+      "cq:styleIds": [
+       "",
+       "",
+       "1722939215525"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

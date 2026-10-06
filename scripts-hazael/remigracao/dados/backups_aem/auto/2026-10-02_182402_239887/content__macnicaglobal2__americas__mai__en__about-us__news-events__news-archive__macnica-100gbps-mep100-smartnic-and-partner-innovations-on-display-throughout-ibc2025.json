@@ -1,0 +1,324 @@
+{
+ "quando": "2026-10-02T18:24:13",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-100gbps-mep100-smartnic-and-partner-innovations-on-display-throughout-ibc2025",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-100gbps-mep100-smartnic-and-partner-innovations-on-display-throughout-ibc2025/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Macnica 100Gbps MEP100 SmartNIC and Partner Innovations on Display Throughout IBC2025 ",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:51:03 GMT+0000",
+  "jcr:description": "At this year’s IBC2025 conference, the 100Gbps Macnica MEP100 SmartNIC will be featured across multiple vendor showcases. Demonstrations highlight its latest achievements, including enabling Apple ProRes over the ST 2110 framework with Softron Media Services, solving complex broadcast engineering challenges with L2Tek, and accelerating AI capabilities with Altera.",
+  "keywords": "macnica, macnica americas, mep100, ibc, ibc2025, apple prores, st 2220, softron media services",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/macnica-100gbps-mep100-smartnic-and-partner-innovations-on-display-throughout-ibc2025",
+  "hideInNav": "true",
+  "pageTitle": "Macnica 100Gbps MEP100 SmartNIC and Partner Innovations on Display Throughout IBC2025 ",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Macnica 100Gbps MEP100 SmartNIC and Partner Innovations on Display Throughout IBC2025 ",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica 100Gbps MEP100 SmartNIC and Partner Innovations on Display Throughout IBC2025 ",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "text_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p><b>SOLANA BEACH, Calif., Sept. 5, 2025 -&nbsp;</b>At this year’s IBC2025 conference, the 100Gbps Macnica MEP100 SmartNIC will be featured across multiple vendor showcases. Demonstrations highlight its latest achievements, including enabling Apple ProRes over the ST 2110 framework with Softron Media Services, solving complex broadcast engineering challenges with L2Tek, and accelerating AI capabilities with Altera.</p>\n<p>Macnica is a global technology innovator in IP design, networking solutions and AI/IoT technologies. Media and attendees can experience the power of the Macnica 100Gbps SmartNIC and learn about tools that help developers build real-time ST 2110 applications with confidence. The MEP100 and its cross-platform SDK allow media professionals to move uncompressed and compressed video with ultra-low latency, high reliability and minimal code.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "See Macnica in action at these booths:",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_2_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "heading_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica ",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_3_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Hall 2, Booth 2.A46",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_2": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>&nbsp;At IBC 2025, Macnica will premiere the first demonstration of Apple ProRes over SMPTE ST 2110-22 on macOS, powered by the 100 Gbps MEP100 SmartNIC and unified M2S SDK.&nbsp;</p>\n<ul>\n<li>Apple ProRes compressed video over ST 2110-22, combined with macOS Sequoia (15+) and the Macnica 100Gbps MEP100 SmartNIC&nbsp;</li>\n</ul>\n<ul>\n<li>Real-world pipelines built with popular media frameworks for Mac, Windows and Linux&nbsp;</li>\n</ul>\n<ul>\n<li>A growing ecosystem of platform partners</li>\n</ul>\n<hr>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_4_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "heading_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Softron Media Services ",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_5_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "heading_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Hall 7, Booth 7.C37 ",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_3": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>See breakthrough broadcast and video solutions with the Macnica MEP100 SmartNIC that include:</p>\n<ul>\n<li>Immersive workflows for live sports capture and replay in 8K100 with M|Replay</li>\n</ul>\n<ul>\n<li>SRT streaming support in OnTheAir Video and MovieRecorder software</li>\n</ul>\n<ul>\n<li>OnTheAir MOS Gateway support for Octopus and SAGA (by Fonn) newsroom workflows</li>\n</ul>\n<hr>\n&nbsp;",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_6_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "heading_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "L2Tek ",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_7_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "heading_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Hall 10, Booth 10.B10 ",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_4": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>L2Tek customers rely on the company’s ability to respond quickly to their needs. Learn how L2Tek used the MEP100 SmartNIC to meet demand for high-channel-count ST 2110 signal generation. Discover how the MEP100 helps innovators like L2Tek deliver scalable, high-performance ST 2110 solutions.</p>\n<hr>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_8_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498053499",
+      "1717498056876"
+     ],
+     "heading_8": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Altera ",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_9_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_9": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "AIBM Suite, Hall 3 (by appointment)  ",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_5": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Altera will provide demonstrations by appointment of its Agilex 7 devices, the industry’s highest performance FPGAs providing a range of premium features for the most demanding applications. Macnica and Altera will showcase how the MEP100 SmartNIC leverages Agilex 7 FPGAs to accelerate real-time video transport, networking and AI workloads over ST 2110.</p>\n<hr>\n&nbsp;",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_10_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_10": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "About Macnica Americas",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_6": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Macnica Americas is a leader in engineering and fulfillment services, specializing in imaging solutions, semiconductor distribution, and advanced supply chain management. With a commitment to global reach and local expertise, Macnica enables businesses to streamline development cycles and achieve faster, more efficient paths to market.</p>\n<p><b>Macnica Americas, Inc.</b>, 380 Stevens Ave., Suite 206, Solana Beach, CA 92075</p>\n<p><b>Direct all Macnica media inquiries to:</b></p>\n<p><i>Carl Dahlberg, Director of Marketing,&nbsp;<a href=\"mailto:carl.dahlberg@macnica.com\">carl.dahlberg@macnica.com</a></i></p>\n<p><i>Bill Robbins,&nbsp;Macnica Communications,&nbsp;<a href=\"mailto:bill@nj2communications.com\">bill@nj2communications.com</a></i></p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_11_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_11": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "About Softron Media Services",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_7": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Softron Media Services has been providing innovative, high-performance video solutions for broadcasters, post-production facilities, and live event professionals for over 40 years. Headquartered in Belgium with a global presence, Softron is known for its reliable, Mac-based software and hardware solutions for ingest, playout, streaming, and automation. Trusted by major media organizations around the world, Softron combines cutting-edge technology with intuitive design to streamline complex video workflows and empower creative professionals. For more information, visit <a href=\"http://www.softron.tv\" target=\"_blank\">www.softron.tv</a>.&nbsp;&nbsp;</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "heading_12_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_12": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Demonstrations include real-time IP video workflows using compressed and uncompressed video over ST 2110, in collaboration with Softron Media Services, L2Tek and Altera ",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_botoes": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800458698",
+       "1719484596357"
+      ],
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact Us for More Information",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_861351158": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Request a Quote",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1722936853890",
+         "1717669229626"
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

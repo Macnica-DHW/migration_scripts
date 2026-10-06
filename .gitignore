@@ -1,6 +1,7 @@
 # Segredo de sessão — NUNCA versionar
 .env
 .env.local
+.env.bak-*
 *.cookies
 
 # Relatórios gerados pelos scripts

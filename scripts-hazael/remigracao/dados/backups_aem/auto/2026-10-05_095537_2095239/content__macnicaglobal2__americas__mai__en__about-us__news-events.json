@@ -1,0 +1,79 @@
+{
+ "quando": "2026-10-05T09:55:46",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "News & Events | Explore Current Technology Updates & More",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-technical-article-page",
+  "jcr:created": "Wed Sep 23 2026 02:29:56 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:47:35 GMT+0000",
+  "jcr:description": "Explore Macnica Americas' News & Events hub for current technology updates. Learn about the latest innovations, company milestones, & industry happenings.",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events",
+  "pageTitle": "News & Events",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "News & Events",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "News & Events | Explore Current Technology Updates & More",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_migrado_1": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "cardlist": {
+      "jcr:primaryType": "nt:unstructured",
+      "showTitle": "true",
+      "linkItems": "true",
+      "showArticleDate": "false",
+      "orderBy": "title",
+      "showFeaturedImage": "true",
+      "showTags": "false",
+      "parentPage": "/content/macnicaglobal2/americas/mai/en/about-us/news-events",
+      "hideBannerMobile": "false",
+      "sortOrder": "asc",
+      "hideBannerTablet": "false",
+      "showDescription": "true",
+      "showManufacturerLogo": "false",
+      "isFreeTextSearchEnabled": "false",
+      "sling:resourceType": "macnicaglobal2/components/content/cardlist",
+      "childDepth": "1",
+      "listFrom": "children",
+      "hideBannerDesktop": "false",
+      "cq:styleIds": [
+       "1776056736854"
+      ]
+     }
+    }
+   }
+  },
+  "cq:featuredimage": {
+   "jcr:primaryType": "nt:unstructured",
+   "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/banners/--banner-for-macnica------1----9.jpeg",
+   "sling:resourceType": "macnicaglobal2/components/content/image"
+  }
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "quando": "2026-10-02T19:03:00",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/hitek-systems/hitek-systems-fpga-boards/agilex-esom7-2f-module",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/products/boards-modules/hitek-systems/hitek-systems-fpga-boards/agilex-esom7-2f-module/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "bruno.jaques@macnicadhw.com.br",
+  "jcr:title": "Agilex eSOM7-2F Module | Agilex 7 FPGA Based eSOM Module",
+  "manufacturer": "mai:manufacturers/hitek-systems",
+  "businessCategories": "mai:business-categories/boards-modules",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Tue Sep 08 2026 16:01:24 GMT+0000",
+  "cq:lastModified": "Fri Oct 02 2026 21:38:59 GMT+0000",
+  "jcr:description": "Elevate your projects with the Agilex eSOM7-2F module at Macnica Americas. The Agilex 7 FPGA based eSOM module is a game-changer in FPGA products!",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/products/boards-modules/hitek-systems/hitek-systems-fpga-boards/agilex-esom7-2f-module",
+  "pageTitle": "Agilex eSOM7-2F Module | Agilex 7 FPGA Based eSOM Module",
+  "cq:tags": "mai:business-categories/boards-modules",
+  "sling:resourceType": "macnicaglobal2/components/maeproductpage",
+  "cq:lastModifiedBy": "bruno.jaques@macnicadhw.com.br",
+  "navTitle": "Agilex eSOM7-2F Module | Agilex 7 FPGA Based eSOM Module",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "jcr:lastModifiedBy": "admin",
+   "jcr:lastModified": "Thu Jan 08 2026 18:23:07 GMT+0900",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Thu Jan 08 2026 18:32:46 GMT+0900",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "container": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "container_2106555839": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "title_textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Hitek Systems",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "textwithimage": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/hitek-systems/Agilex eSOM7-2F.jpg",
+      "imageRatio": "40",
+      "alt": "Agilex eSOM7-2F",
+      "text": "<p>Altera 10nm Agilex 7 Series FPGA based embedded SOM (eSOM™) module for embedded, edge processing, wireless communication and networking-centric designs. Up to 1.2Tbps high speed transceivers bandwidth supporting up to 58Gbps PAM4 and x16 PCIe Gen 4 interfaces. Integrated quad-core 64-bit A53 ARM processor complex with network, control and storage peripherals.</p>",
+      "displayPopupTitle": "true",
+      "linkTarget": "_self",
+      "titleValueFromDAM": "true",
+      "sling:resourceType": "macnicaglobal2/components/content/textwithimage",
+      "isDecorative": "false",
+      "textIsRich": "true",
+      "altValueFromDAM": "false",
+      "cq:styleIds": [
+       "1718154328384",
+       "",
+       ""
+      ],
+      "spImage": {
+       "jcr:primaryType": "nt:unstructured",
+       "fileReference": "/content/dam/macnicaglobal2/americas/mai/en/products/boards-modules/hitek-systems/Agilex eSOM7-2F.jpg",
+       "sling:resourceType": "macnicaglobal2/components/content/image"
+      }
+     }
+    },
+    "container_747566298": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<h3>Features of the Agilex 7 FPGA based eSOM</h3>\r\n<ul>\r\n<li>Aglilex 7 F-series 24C package FPGA with 2x F-tiles</li>\r\n<li>Supported FPGAs: 027/022 and 014/012</li>\r\n<li>Onboard FPGA fabric memory: 2banks of 72-bit 4/8GB DDR4 memories, 2GB SDM QSPI for FPGA image</li>\r\n<li>On board HPS memory: 72-bit 4/8GB component DDR4 memory, 16/32GB eMMC and μSD card debug slot</li>\r\n<li>Two 400-pin connectors<ul>\r\n<li>Primary Connector (J1)<ul>\r\n<li>F-Tile based Serdes interface; 16 NRZ (32Gbps) or 12 PAM4 (58.125Gbps) transceivers</li>\r\n<li>HPS Interfaces: Ethernet (1000Base-T/MDI), USB 2.0 host, UART, I2C and SPI</li>\r\n<li>BMC Interfaces: UART, I2C, board control I/O</li>\r\n<li>Single +12V power input the module</li>\r\n</ul>\r\n</li>\r\n<li>Secondary Connector (J2)<ul>\r\n<li>F-Tile based Serdes interface; 16 NRZ (32Gbps) or 12 PAM4 (58.125Gbps) transceivers</li>\r\n<li>Fabric side true-differential (LVDS), 1.2V differential, 1.2V single-ended GPIO for control, interface and clock management</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li>Debug support: FPGA JTAG access, console access to HPS, UART and I2C interfaces to BMC FPGA, extensive temperature and voltage sensors for board telemetry</li>\r\n<li>Up to 120A core rail supply using multi-phase controller and DrMOS power stages</li>\r\n</ul>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2142884278": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f7f7f7",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "text": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<h3>BSP and Design Support</h3>\r\n<ul>\r\n<li>Complete Linux BSP support package</li>\r\n<li>Comprehensive APIs for board management</li>\r\n<li>Quartus reference projects</li>\r\n<li>Carrier boards design guide for custom carrier designs</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<h3>Target Markets</h3>\r\n<ul>\r\n<li>5G/ORAN and SATCOM wireless systems</li>\r\n<li>Embedded high performance edge AI/ML systems</li>\r\n<li>Signal processing and image processing</li>\r\n<li>400/200G/100G/50G/40G/25G/10G networked signal processing devices and platforms</li>\r\n</ul>\r\n",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    },
+    "container_2083508271": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "flexcontainer_copy_c": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "macnicaglobal2/components/content/flexcontainer",
+      "cq:styleIds": [
+       "1718800456497",
+       "1719484596357"
+      ],
+      "flexcontaineritem_vazio_a": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+      },
+      "flexcontaineritem": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Contact Us for More Information",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/contact/form.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1723033446255",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_861351158": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem",
+       "button": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Request a Quote",
+        "linkURL": "/content/macnicaglobal2/americas/mai/en/request-a-quote.html",
+        "linkTarget": "_self",
+        "sling:resourceType": "macnicaglobal2/components/content/button",
+        "cq:styleIds": [
+         "",
+         "1723033446255",
+         "1717669229626"
+        ]
+       }
+      },
+      "flexcontaineritem_vazio_b": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "macnicaglobal2/components/content/flexcontaineritem"
+      }
+     }
+    }
+   }
+  }
+ }
+}

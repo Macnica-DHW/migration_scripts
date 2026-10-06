@@ -1,0 +1,65 @@
+{
+ "quando": "2026-10-02T18:24:26",
+ "pagina": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2018-08-23-macnica-to-exhibit-at-ibc-2018-with-st2110-and-nmos-solutions",
+ "url": "https://author-p53812-e590634.adobeaemcloud.com/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2018-08-23-macnica-to-exhibit-at-ibc-2018-with-st2110-and-nmos-solutions/jcr:content.infinity.json",
+ "http": 200,
+ "jcr_content": {
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "valter.toffolo@macnicadhw.com.br",
+  "jcr:title": "Macnica to Exhibit at IBC 2018 with ST2110 and NMOS Solutions",
+  "showInLists": "true",
+  "cq:template": "/conf/macnicaglobal2/settings/wcm/templates/mai-mae-product-page",
+  "jcr:created": "Wed Sep 23 2026 02:27:32 GMT+0000",
+  "cq:lastModified": "Wed Sep 23 2026 01:50:36 GMT+0000",
+  "jcr:description": "Live Demo with VIPA™ Card to Support Latest Video over IP Standards Solana Beach, California – August 23, 2018 – Macnica Technology, a leader in live video over IP transport technologies, today announced it is exhibiting at IBC 2018 in Amsterdam on September 14-18 showcasing live demos for its ST2110 and NMOS solutions on its VIPA™ 10G PCI Express card at Booth 2.A18. Macnica’s IBC2018 ST2110 video transport demos include:",
+  "cq:canonicalUrl": "/content/macnicaglobal2/americas/mai/en/about-us/news-events/news-archive/2018-08-23-macnica-to-exhibit-at-ibc-2018-with-st2110-and-nmos-solutions",
+  "hideInNav": "true",
+  "pageTitle": "Macnica to Exhibit at IBC 2018 with ST2110 and NMOS Solutions",
+  "sling:resourceType": "macnicaglobal2/components/technicalarticlepage",
+  "cq:lastModifiedBy": "valter.toffolo@macnicadhw.com.br",
+  "navTitle": "Macnica to Exhibit at IBC 2018 with ST2110 and NMOS Solutions",
+  "root": {
+   "jcr:primaryType": "nt:unstructured",
+   "sling:resourceType": "wcm/foundation/components/responsivegrid",
+   "container": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "macnicaglobal2/components/content/container",
+    "title_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "cq:styleIds": [
+      "1717498056876",
+      "1717498053499"
+     ],
+     "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Macnica to Exhibit at IBC 2018 with ST2110 and NMOS Solutions",
+      "type": "h1",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     }
+    },
+    "heading_1_wrap": {
+     "jcr:primaryType": "nt:unstructured",
+     "sling:resourceType": "macnicaglobal2/components/content/container",
+     "backgroundColor": "#f0f0f0",
+     "cq:styleIds": [
+      "1717498052331",
+      "1717498053499"
+     ],
+     "heading_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:title": "Live Demo with VIPA™ Card to Support Latest Video over IP Standards",
+      "type": "h2",
+      "sling:resourceType": "macnicaglobal2/components/content/title"
+     },
+     "text_1": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "<p>Solana Beach, California – August 23, 2018 – Macnica Technology, a leader in live video over IP transport technologies, today announced it is exhibiting at IBC 2018 in Amsterdam on September 14-18 showcasing live demos for its ST2110 and NMOS solutions on its VIPA™ 10G PCI Express card at Booth 2.A18.</p>\n<p>Macnica’s IBC2018 ST2110 video transport demos include:</p>\n<ul>\n<li>VIPA™ PCI Express card in processor mode performing video transport interface function for video processing of ST2110 IP streams</li>\n<li>New – SDI to IP Gateway Module (with an IP core for FPGA) in development to convert SDI media (video, audio, and data) to ST2110 video over IP networks</li>\n<li>Macnica’s full NMOS (Network Media Open Specifications) portfolio<ul>\n<li>Node Side: IS-04 Discovery and Registration, IS-05 Device Connection Management</li>\n<li>Switch Side: IS-06 Network Control</li>\n</ul>\n</li>\n</ul>\n<p>Please visit the Macnica booth 2.A18 at IBC 2018 in Amsterdam for more details.<br>\nA meeting room is also available at the meeting suite 15.MS10 and a technical/business meeting with Macnica’s experts can be scheduled by sending an email to&nbsp;<a href=\"mailto:videotransport@macnica.com\" target=\"_top\">videotransport@macnica.com</a>.</p>\n<p>Macnica is also showcasing its VIPA card and NMOS based demos at the IP Showcase, located at Room E106/107 at IBC 2018.</p>",
+      "sling:resourceType": "macnicaglobal2/components/content/text",
+      "textIsRich": "true"
+     }
+    }
+   }
+  }
+ }
+}

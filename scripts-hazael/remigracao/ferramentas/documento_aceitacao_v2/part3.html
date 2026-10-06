@@ -1,0 +1,185 @@
+<h2 id="s5" class="pb">5. Decisions and open points</h2>
+<p>The points below were questions for Anion in version 1.0 of this document. Anion is not expected to answer them, so each one is now settled: <b>Decided</b> marks the rule we have agreed internally and already applied to pages; <b>Open</b> marks what is still undecided. A Decided point is a criterion pages are accepted against, the same way as the guidelines in Section 4; an Open point still needs a decision before the pages it affects can be finished.</p>
+
+<h3 id="s5a">5.1 Layout</h3>
+
+<div class="q" id="qA1">
+  <h4><span class="qid">A1</span> Side padding (G7) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">Review of 27 Sep: <q>Need to give Padding Left/Right for all Altera, Anlog, microchip, on-semiconductor, sitime pages</q>. Review of 28 Sep: <q>L/R Padding - should be large</q>. The pictures are in Figure <span class="figref" data-fig="fig-side-padding"></span>.</p>
+  <p><q>Padding - Left/Right: Large</q> (50px each side) on every top-level section of every page. It gives every page the same margins, and it keeps the full-width layout.</p>
+</div>
+
+<div class="q" id="qA2">
+  <h4><span class="qid">A2</span> Heading levels and sizes (G5) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">Review of 28 Sep: <q>only main title should be h1/h2, remaining titles should not be h1</q>.</p>
+  <p><b>A2.1 Levels.</b> The page title is the only H1; section titles are H2; titles inside a section are H3; a title inside that subsection (for example, a title that follows an H3 and introduces part of its content) is H4. No level is skipped going down.</p>
+  <p><b>A2.2 Sizes.</b> The theme sizes apply on every heading: H1 25px, H2 29px, H3 22px, H4 18px. A heading level always looks the same, including headings typed inside Text or Text with Image.</p>
+  {{fig:fig-heading-size}}
+</div>
+
+<div class="q" id="qA3">
+  <h4><span class="qid">A3</span> A section title next to an image (G5, G10) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">Many GWI sections open with a title, an image and a paragraph. Review comments: <q>Titles are kept as para</q> (IBASE IB836, 28 Sep); <q>there’s gap between title and description. Press Shift+Enter after Title to avoid space.</q> (MB991, 27 Sep).</p>
+  <p>The section title is the first line of the Text with Image text, formatted as a heading at the level A2 gives it (H2 for a section title, H3 or H4 when the title sits deeper), so that it sits beside the image without an extra gap. Where a Title component and a Text with Image already sit side by side as separate components, the Title's text moves into the Text with Image as its first line, and the separate Title component is removed. This also applies where a title needs to move into a Text with Image that currently holds an unrelated image: the image moves into the same Text with Image as the title's text, and the title that introduced the image (if any) is kept as a separate heading above it.</p>
+  {{fig:fig-heading-in-twi}}
+</div>
+
+<div class="q" id="qA4">
+  <h4><span class="qid">A4</span> Table format (G13) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">Review of 28 Sep: <q>Tables are not formatted</q>, <q>table headers issue</q>, <q>table formatting</q>. The pictures are in Figure <span class="figref" data-fig="fig-tables"></span>.</p>
+  <p>On a two-column table, the first column (the row's label) is set to a fixed width, left-aligned: 20% by default, or 30% on pages where the label text needs more room. The second column takes the rest of the width, with no width style of its own. A row that spans both columns (a group heading inside the table, such as <q>Communication</q> or <q>I/O Interface</q>) is a centred header cell with a light grey background (<code>rgb(247,247,247)</code>, the same grey as the page's background bands); the normal label cells of the first column keep no background colour. Where a page's reviewer asks for every cell centred instead of left-aligned, that page's tables are centred throughout, overriding the default left alignment of the first column.</p>
+</div>
+
+<div class="q" id="qA5">
+  <h4><span class="qid">A5</span> Images without text beside them (G11) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">Review of 28 Sep: <q>make image to full width to avoid space left and right</q> (Japan Innovation Showcase). An image enlarged far beyond its file looks blurred, so the choice depends on the file's width. The pictures are in Figure <span class="figref" data-fig="fig-standalone-image"></span>.</p>
+  <p><b>A5.1 Placement.</b> As in G11: a diagram, chart or screenshot is shown at its file width (content width if wider); a file at least 900px wide fills the content width (enlarged at most 1.5 times); an image next to a paragraph on GWI goes beside it in a Text with Image; any other image is shown at its file width, aligned left with the text. No blurred images and no image left alone in the middle of the page.</p>
+  <p><b>A5.2 Full width.</b> Means the content width (1,300px with the side padding of A1): the image has the same left and right edges as the text.</p>
+</div>
+
+<div class="q" id="qA6">
+  <h4><span class="qid">A6</span> Grey bands (G9) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">Review of 27 Sep: <q>No need of BG color</q> on Tariff Pass-Through Policy Notification and Glossary, and <q>Adjust BG color</q> on eight news items. We read <q>Adjust BG color</q> on those news items as <q>remove the grey band</q>. The pictures are in Figure <span class="figref" data-fig="fig-bands"></span>.</p>
+  <p>As written in G9: bands group the main sections of a page; no band on pages without images, videos or tables, or on news, press and event items. It follows both comments of 27 Sep and gives every page type one rule.</p>
+</div>
+
+<div class="q" id="qA7">
+  <h4><span class="qid">A7</span> Pages that get Sticky Tabs (G15) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">Review of 28 Sep: <q>Tabs are not visible, tabs should be sticky like in below page.</q> (Smart City &amp; Mobility, pointing to the Europe Imaging and Vision page); <q>Tabs are not visible once clicked they should be sticky.</q> (Medical &amp; Healthcare Solutions). This covers menus of links to sections of the same page; pages that use Tabs (panels) keep Tabs.</p>
+  <p>Every page whose GWI version has a menu of links to its own sections uses Sticky Tabs. Pages of the same kind get the same navigation.</p>
+</div>
+
+<div class="q" id="qA8">
+  <h4><span class="qid">A8</span> Lists of child pages (G16, G18) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">Review of 28 Sep: <q>select appropriate options which needs to display for the child pages under &quot;item settings&quot;</q>; 27 Sep: <q>Tags were missed in al news pages. Like “Year”. “ Article date”</q>. A card's image is the child page's featured image, cropped to a 2:1 frame.</p>
+  <p><b>A8.1 Card fields.</b> News, events and newsletters: title and date. About Us: title and description. An image only where GWI's list shows one. The cards show what GWI's lists show.</p>
+  <p><b>A8.2 Dates on news items.</b> Yes: every news item gets the <q>Year</q> tag and the article date, both taken from the GWI article, so that the lists can show dates.</p>
+  <p><b>A8.3 Partner with Macnica.</b> Keep GWI's grid of partner logos, built with global2 components (four per row, logos the same width, each linked to its page). Visitors keep the logo wall they know.</p>
+</div>
+
+<div class="q" id="qA9">
+  <h4><span class="qid">A9</span> Phone view in acceptance (G19) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">Review of 21 Sep, on the phone view.</p>
+  <p>Pages are accepted at 1,400px. The phone view is checked against G19 in a separate pass once a page is accepted on desktop. The layout decisions in this document are made and measured on desktop; the phone pass then applies one rule (G19) to every accepted page.</p>
+</div>
+
+<h3 id="s5b">5.2 Open points — layout</h3>
+<p class="small">These are the same kind of decision as 5.1, but we have not yet settled a position on them. Pages whose remaining issues depend on one of these stay pending until it is resolved.</p>
+
+<div class="q" id="qO1">
+  <h4><span class="qid">O1</span> Image + text layout with a tall image and little text (G8, G10) <span class="status st-prop">Open</span></h4>
+  <p class="ctx">IEI KINO-DH420: a tall image paired with a short text leaves empty space above or below the text inside the Text with Image, when the image alone would also break the rule against large standalone images.</p>
+  <p>Not yet decided: whether to shrink the image below its usual width in this situation, pull in more GWI text to fill the height, accept the empty space as unavoidable, or some other rule for this case.</p>
+</div>
+
+<div class="q" id="qO2">
+  <h4><span class="qid">O2</span> Card List layout for About Us and News &amp; Events (G16) <span class="status st-prop">Open</span></h4>
+  <p class="ctx">Validated so far: title and description placed below each card's image; cards arranged two per row (the Card List component's own layout, see A8).</p>
+  <p>Not yet decided: whether this two-column arrangement is the final word for every page that uses a Card List, or whether a different column count is needed on some page to avoid oversized images.</p>
+</div>
+
+<div class="q" id="qO3">
+  <h4><span class="qid">O3</span> Terms &amp; Conditions: section spacing and font consistency (G6, G8) <span class="status st-prop">Open</span></h4>
+  <p class="ctx">Review of 27 Sep: <q>Fonts are not consistent</q>.</p>
+  <p>Not yet decided: which sections of this page need a spacing adjustment, and which font should be the standard where the page currently diverges.</p>
+</div>
+
+<h3 id="s5c">5.3 Content</h3>
+
+<div class="q" id="qM1">
+  <h4><span class="qid">M1</span> Content from GWI (G1) <span class="status st-conf">Decided</span></h4>
+  <p>Confirmed: text, images, links, tables, videos, downloads, page titles and descriptions are migrated as on GWI, with only the differences listed in G1. Content changes are requested separately and are not part of page acceptance.</p>
+</div>
+
+<div class="q" id="qM2">
+  <h4><span class="qid">M2</span> Which pages end with contact buttons, and how they are built (G14) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">Review of 23 Sep: <q>CTAs are missing</q> (IBASE); review of 27 Sep: <q>CTAs at bottom not required</q> (news items). On GWI, news, press and event pages end without a Contact / Request a Quote pair; most newsletter issues end with a single Request a Quote button, and the others end as their GWI pages do.</p>
+  <p>Every page ends as its GWI page does: the contact pair only where GWI shows it, a single Request a Quote only where GWI shows one, and no end buttons where GWI has none (news, press and event items included). It matches GWI and the review of 27 Sep.</p>
+  <p>Any title placed above a pair of end-of-page buttons (for example a <q>Stay up to date…</q> / <q>For more information:</q> pair) is removed; the buttons stand alone. The pair sits in a four-item Flex Container: an empty item first, the two button items in the middle, an empty item last, which centres the pair more than two items alone would. <q>Fit to Text</q> is applied to every such button so a long label does not wrap or force the button wider than it needs to be.</p>
+</div>
+
+<div class="q" id="qM3">
+  <h4><span class="qid">M3</span> Alternative text where GWI has none (G3) <span class="status st-conf">Decided</span></h4>
+  <p>A short alternative text taken from words already on the page: the heading of the block the image belongs to, else the nearest title above it, else the page title. Every image then has a text alternative, using only words that are already on the page.</p>
+</div>
+
+<div class="q" id="qM4">
+  <h4><span class="qid">M4</span> Links whose destination needed confirmation (G2) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">On these pages, a GWI link had a different destination, or no link, on global2 (compared 25 Sep). For each row: <b>B</b> use the proposed destination (what global2 opens today); <b>C</b> no link, keep the text or image.</p>
+  <div class="tw"><table>
+    <tr><th>Page</th><th>Link</th><th>On GWI it opens</th><th>global2 (decided)</th><th class="c">Answer</th></tr>
+    <tr><td>Macnica Demonstrates Video Transport Over IP Interoperability at VidTrans16 (news, Feb 2016)</td><td><q>www.macnica-na.com</q></td><td>The Macnica Asia-Pacific site, in Chinese</td><td>The Macnica Americas home page</td><td class="c">B</td></tr>
+    <tr><td>Macnica Americas Expands Value-added Services for Displays (news, Feb 2018)</td><td>The value-added services address</td><td>A page that does not exist on GWI</td><td>The Displays page</td><td class="c">B</td></tr>
+    <tr><td>iENSO to Showcase Generative AI at the Edge, CES 2025 (news)</td><td><q>submit your request here</q></td><td>A page in a test folder (<code>/test-folder/CES-2025</code>)</td><td>The Contact Us form</td><td class="c">B</td></tr>
+    <tr><td>Macnica Americas Introduces 100 Gbps MEP100 SmartNIC with Mac Compatibility (news)</td><td>The MEP100 address</td><td>An address that returns an error</td><td>The MEP100 page on global2</td><td class="c">B</td></tr>
+    <tr><td>Terasic Apollo S10 SOM</td><td>Five product images, each a link</td><td>Image files on the retired site www2.macnica.com</td><td>The images, without a link</td><td class="c">C</td></tr>
+    <tr><td>Error page</td><td>A second <q>RETURN TO HOMEPAGE</q> link</td><td>A Macnica Asia-Pacific site</td><td>Not shown; the page's own return link opens the Americas home page</td><td class="c">C</td></tr>
+  </table></div>
+  <p class="small">B where global2 opens a current Macnica Americas page, C where the GWI destination is on a retired site or on another region's site. Visitors never reach a dead address.</p>
+</div>
+
+<div class="q" id="qM5">
+  <h4><span class="qid">M5</span> Which pages appear in the site menus (G18) <span class="status st-conf">Decided</span></h4>
+  <p>The setting of the GWI page, except individual news, newsletter and event items, which are hidden. The menus follow GWI's settings; individual news, newsletter and event items are not listed.</p>
+</div>
+
+<div class="q" id="qM6">
+  <h4><span class="qid">M6</span> Two GWI event pages not yet on global2 (G1) <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">GWI publishes two event pages that are not on global2: <q>Altera Sales Conference - 2026</q>, and an <q>Infocomm 2019</q> page dated 13 June 2019 (the <q>Infocomm 2019</q> page dated 12 June 2019 is migrated).</p>
+  <p>Migrate both, as on GWI. The events archive then lists the same pages as on GWI (G16).</p>
+</div>
+
+<h2 id="s6">6. How review works</h2>
+
+<div class="q" id="qJ1">
+  <h4><span class="qid">J1</span> Format of review comments <span class="status st-conf">Decided</span></h4>
+  <p>Each comment names the page, the block (title or first words), the guideline it does not meet (G1 to G19), and the expected result. A comment that no guideline covers is marked <q>new guideline</q>; once agreed, it is added to this document and applies to the pages not yet accepted (J2).</p>
+</div>
+
+<div class="q" id="qJ2">
+  <h4><span class="qid">J2</span> Accepted pages and later changes <span class="status st-conf">Decided</span></h4>
+  <p>A page that meets every guideline is ready for acceptance. Once it is accepted, a guideline added or changed later applies only to pages not yet accepted; accepted pages are changed only on request.</p>
+</div>
+
+<div class="q" id="qJ3">
+  <h4><span class="qid">J3</span> Who accepts each page <span class="status st-conf">Decided</span></h4>
+  <p>Anion reviews each page against this document; Macnica Americas gives the final acceptance. Anion checks each page against the agreed guidelines, and the site owner makes the final decision.</p>
+</div>
+
+<div class="q" id="qJ4">
+  <h4><span class="qid">J4</span> The reference for a page's layout <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">Review of 23 Sep: <q>Compare both MAI and MAE</q> (the Americas and the Europe pages).</p>
+  <p>The reference is the page's GWI arrangement, adapted to global2 as described in Section 2 and the guidelines of this document. A Europe page is an example only where a guideline or a decision in Section 5 names it. Each Americas page has one reference, its own GWI page, so reviewers judge it the same way.</p>
+</div>
+
+<div class="q" id="qJ5">
+  <h4><span class="qid">J5</span> Pages whose last review raised only headings <span class="status st-conf">Decided</span></h4>
+  <p class="ctx">On 28 Sep the review of these pages raised only the heading rule: the three Hitek pages, IEI Embedded Systems, IBASE MB995, SiTime Clock Buffers, the Contact download page, the error page, and Japan Innovation Showcase (headings and the full-width image).</p>
+  <p>Once they meet G5 (and G11 for Japan Innovation Showcase), they are ready for acceptance without a new full review.</p>
+</div>
+
+<h3>Guidelines to confirm</h3>
+<p>Mark each item as confirmed, or note what should change. Numbers in a guideline (for example 45px, 125px, 60px) are part of what is being confirmed.</p>
+<div class="tw"><table>
+  <tr><th>Item</th><th class="c">Confirmed</th><th>Change requested</th></tr>
+  <tr><td>Section 2: How a migrated page is built (P1 to P3)</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>Section 3: How a page is reviewed (R1 to R7)</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G1 Content matches the original GWI page</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G2 Links</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G3 Images</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G4 Downloads</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G5 Headings</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G7 Page width and side padding</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G8 Vertical spacing</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G9 Background bands</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G10 Image beside its text</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G11 Where each image goes</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G12 Videos</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G13 Tables</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G14 Buttons</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G15 Tabs and in-page menus</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G16 Lists of child pages</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G17 Alignment</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G18 Page properties</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+  <tr><td>G19 Phone view</td><td class="c"><span class="checkbox"></span></td><td class="fill"></td></tr>
+</table></div>
