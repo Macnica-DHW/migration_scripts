@@ -16,11 +16,8 @@ git log --oneline -15; git status --short                   # unknown commits or
 ps -eo pid,lstart,args | grep -E "[p]ython3 .*(ferramentas|golive|aem_)"   # someone writing right now? (bracket trick)
 ls -t scripts-hazael/remigracao/notas/ | head               # latest HANDOFF-*, ONDE-PAREI*, PLANO-*
 ls -la --time-style=+%F_%H:%M .env                          # cookie age (~8h life), then one GET: see aem-operate
-cd scripts-hazael && python3 remigracao/ferramentas/tracker.py resumo    # fresh blacklist/whitelist counts (MAI tracker)
+cd scripts-hazael && python3 remigracao/ferramentas/tracker.py resumo    # fresh blacklist/whitelist counts, both trackers (MAI, DHW)
 ```
-
-`tracker.py` reads only the MAI tracker. If the work touches `americas/dhw`, also read the DHW tracker's lists
-(`tracker-lists` has the snippet).
 
 Then read the newest handoff or plan for the topic. Check that its "pending" items are still pending, using fresh
 data (re-collect rather than trust a snapshot). Pages get approved, and people edit by hand.

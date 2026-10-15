@@ -47,30 +47,22 @@ Auth header: `Authorization: Bearer $MIGRATION_TRACKER_TOKEN`, with the token fr
 both trackers). Send the token **only** to the trackers and the AEM cookie **only** to the author. Never print either
 one.
 
-CLI, **MAI tracker only** (read-only; importing `aem_lib` loads `.env` on its own):
+CLI, both trackers (read-only; importing `aem_lib` loads `.env` on its own):
 
 ```bash
 cd scripts-hazael
-python3 remigracao/ferramentas/tracker.py resumo                       # counts per section + approvals per person
-python3 remigracao/ferramentas/tracker.py status /products/boards-modules/iei /about-us/company-profile
-python3 remigracao/ferramentas/tracker.py listar whitelist --prefixo /products/boards-modules
+python3 remigracao/ferramentas/tracker.py resumo                       # both trackers: counts per section + approvals per person
+python3 remigracao/ferramentas/tracker.py resumo --site dhw            # just one (mai | dhw)
+python3 remigracao/ferramentas/tracker.py status /products/boards-modules/iei /dhw/pt/quem-somos   # each page's own tracker
+python3 remigracao/ferramentas/tracker.py listar whitelist --prefixo /products/boards-modules      # --site mai is the default
+python3 remigracao/ferramentas/tracker.py listar whitelist --site dhw --prefixo /dhw/tq-systems
 python3 remigracao/ferramentas/tracker.py listar blacklist --json /tmp/bl.json
 ```
 
-`tracker.py` knows only the MAI tracker: its API URL and its relative paths are MAI's, so it reports every DHW page as
-on neither list. For DHW, read the DHW tracker directly (read-only):
-
-```bash
-python3 - <<'EOF'
-import os, sys, requests
-sys.path.insert(0, "scripts-bruno"); import aem_lib              # loads .env
-h = {"Authorization": f"Bearer {os.environ['MIGRATION_TRACKER_TOKEN'].strip()}"}
-for lista in ("blacklist", "whitelist"):
-    d = requests.get(f"https://dhw-site-migration-tracker.mdhw.dev/api/{lista}", headers=h, timeout=30).json()
-    assert d["count"] == len(d["pages"]), "inconsistent reply: treat as no list"
-    print(lista, d["count"], *(p["aem_path"] for p in d["pages"][:5]), sep="\n  ")
-EOF
-```
+`status` takes absolute paths, author URLs or the tracker's relative paths. A path under
+`/content/macnicaglobal2/americas/dhw`, or a relative one starting with `/dhw`, is checked on the DHW tracker;
+anything else on the MAI tracker, as before. It fetches only the trackers it needs. `--prefixo` filters on the
+chosen tracker's relative `path`.
 
 In Python, writes go through the locked Session, which fetches both blacklists by itself:
 
@@ -83,7 +75,8 @@ s.blacklist.atual()   # tuple of protected aem_paths from BOTH trackers (empty =
 `aem_lib.BLACKLIST_URLS` lists the trackers. `MIGRATION_TRACKER_BLACKLIST_URLS` (separated by `;`) replaces the
 list for one run. The old single-URL `MIGRATION_TRACKER_BLACKLIST_URL` is refused: while it is set, nothing writes.
 
-For the MAI whitelist in code, reuse `baixar("whitelist")` from `ferramentas/tracker.py`. For DHW, GET it as above.
+For a whitelist in code, reuse `baixar("whitelist", site)` from `ferramentas/tracker.py` (`site` is `"mai"`, the
+default, or `"dhw"`); `tracker.site_de(aem_path)` tells which tracker a page belongs to.
 
 ## Response format
 
