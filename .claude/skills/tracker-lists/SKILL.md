@@ -22,8 +22,8 @@ Both answer the same endpoints, with the same token:
 
 A tracker's two lists together are its site map. MAI: 533 pages on 28/09 (110 + 423). On 02/10 the MAI tracker was
 reset after talks with Anion and review restarted from scratch (0 + 533). DHW opened on 15/10 with 0 + 321. A page
-on neither list of its site's tracker is outside the scope: ask before touching it. CLAUDE.md rule 10 still defines
-the scope as MAI's 533 pages, so **ask before DHW work** until the rules say otherwise.
+on neither list of its site's tracker is outside the scope: ask before touching it. Both trackers' site maps are the
+scope (CLAUDE.md rule 10), and DHW pages follow GWI too: see "How a DHW page maps to GWI" in CLAUDE.md.
 
 The trackers are the **only** lists. `paginas_protegidas.txt`, a local list the write lock used to add on top of the
 tracker, was retired on 02/10: ignore it in old notes and git history.

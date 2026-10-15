@@ -81,5 +81,5 @@ data (re-collect rather than trust a snapshot). Pages get approved, and people e
 | Session docs (not in git) | `scripts-hazael/remigracao/notas/` |
 | Tool outputs, reports (not in git) | `scripts-hazael/remigracao/dados/` (`mapas/`, `auditoria_<ddmm>/`, `paginas/`) |
 | AEM backups (in git) | `scripts-hazael/remigracao/dados/backups_aem/`, `dados/golive/backup_*` |
-| Final link map (the scope) | `dados/mapas/global2_link_map_complete_<date>.html` (533 pages = MAI tracker blacklist + whitelist) |
-| DHW site map (own tracker since 15/10) | `https://dhw-site-migration-tracker.mdhw.dev` blacklist + whitelist (321 pages on 15/10: every page under `americas/dhw`) |
+| Final link map, MAI (the scope) | `dados/mapas/global2_link_map_complete_<date>.html` (533 pages = MAI tracker blacklist + whitelist) |
+| DHW site map (the scope too, since 15/10) | `https://dhw-site-migration-tracker.mdhw.dev` blacklist + whitelist (321 pages on 15/10: every page under `americas/dhw`) |

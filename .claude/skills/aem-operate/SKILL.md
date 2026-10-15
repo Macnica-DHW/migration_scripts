@@ -13,8 +13,9 @@ Read the RULES in `CLAUDE.md` first. This skill covers *how*; the rules cover *w
 |---|---|
 | Author (the only AEM host) | `https://author-p53812-e590634.adobeaemcloud.com` (`CONFIG["base_url"]` in `aem_lib`) |
 | global2 Americas (where we work) | `/content/macnicaglobal2/americas/mai/en` |
-| global2 DHW (own tracker since 15/10) | `/content/macnicaglobal2/americas/dhw` (`/pt/...`, `/tq-systems/...`, vendor pages). See `tracker-lists` |
+| global2 DHW (where we work too, own tracker since 15/10) | `/content/macnicaglobal2/americas/dhw` (`/pt/...`, `/tq-systems/...`, vendor pages). See `tracker-lists` |
 | GWI (read only) | `/content/macnicagwi/americas/mai/en`; DAM `/content/dam/macnicagwi/americas/mai/public/en` |
+| GWI DHW (read only) | `/content/macnicagwi/americas/dhw/pt` (only `pt`; 532 pages, most of them not in global2) |
 | global2 DAM | `/content/dam/macnicaglobal2/americas/mai/en/...` (file names lower-cased/renamed) |
 | XFs (shared) | `/content/experience-fragments/macnicaglobal2/americas/mai/en/site/<name>/master` |
 | Europe (Anion's, read only for us) | `/content/macnicaglobal2/eu/atd-europe/en` |
@@ -23,6 +24,13 @@ Read the RULES in `CLAUDE.md` first. This skill covers *how*; the rules cover *w
 Renamed pairs you'll meet: GWI `/technology/...` is global2 `/solutions/...`; GWI names can have capitals
 (`iENSO-to-Showcase-…`), which global2 lower-cases; `europe` becomes `eu`; Sony is nested under the Anion's tree;
 `/contact-us` redirects to `/contact/form`.
+
+DHW pairs (CLAUDE.md, "How a DHW page maps to GWI"): global2 `/dhw/pt/...` is GWI `/content/macnicagwi/americas/dhw/pt/...`,
+often with capitals in global2 only (`Kit-FPGA-DE0-CV` ↔ `kit-fpga-de0-cv`; don't rename, rule 11). global2
+`/dhw/tq-systems/...` and the vendor pages directly under `/dhw` are copies of MAI pages: GWI
+`/content/macnicagwi/americas/mai/en/products/boards-modules/<same tail>`. One is renamed:
+`MBLSA1028A-IND-single-board-computer` ↔ `mbls1028a-ind-single-board-computer`. 17 DHW pages (15/10) have no GWI
+counterpart: ask.
 
 ## Authentication: the cookie
 

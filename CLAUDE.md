@@ -3,16 +3,25 @@
 This repo migrates and fixes Macnica Americas pages in Adobe Experience Manager (AEM Cloud, author
 `author-p53812-e590634.adobeaemcloud.com`):
 
-- **GWI** `/content/macnicagwi/americas/mai/en/...`: the original site, where the production pages live today.
-  **Read-only: it is NEVER written to.** It is the reference for every migrated page.
-- **global2** `/content/macnicaglobal2/americas/mai/en/...`: where the migrated pages live, and where we work. It
-  becomes production once all pages are done **and** each one has been individually approved by external verifiers.
+- **GWI** `/content/macnicagwi/americas/mai/en/...` and `/content/macnicagwi/americas/dhw/pt/...`: the original
+  sites, where the production pages live today. **Read-only: it is NEVER written to.** It is the reference for every
+  migrated page, MAI and DHW alike.
+- **global2** `/content/macnicaglobal2/americas/mai/en/...` and `/content/macnicaglobal2/americas/dhw/...`: where the
+  migrated pages live, and where we work. It becomes production once all pages are done **and** each one has been
+  individually approved by external verifiers.
 - **copia-teste** `/content/copia-teste/...`: a staging copy from the remigration era (17–23/09). Its DAM is shared.
 
 **How a migrated page relates to GWI.** Its content (text, images, links, tables, videos) matches GWI. Its layout
 follows GWI's overall arrangement and ideas, adapted to global2's components wherever GWI's layout doesn't translate
 directly, which happens a lot. It goes further than GWI only where a page standard requires it or the page clearly
 looks better (e.g. images on the left of their text), and the report says so.
+
+**How a DHW page maps to GWI.** A page under global2 `americas/dhw` has its GWI counterpart at the same path under
+`/content/macnicagwi/americas/dhw`. global2 often has capitals where GWI is lower-case (`Kit-FPGA-DE0-CV` ↔
+`kit-fpga-de0-cv`): don't rename them (rule 11). The exceptions are `/dhw/tq-systems/...` and the vendor pages
+directly under `/dhw` (`/dhw/iei`, `/dhw/terasic`…), which are copies of MAI pages: their counterpart is the same tail
+under `/content/macnicagwi/americas/mai/en/products/boards-modules/`. Pages with no counterpart (17 on 15/10, such as
+`test-260305-takahashi-dhw` and the `…1` copies under `/dhw/pt/cursos`) are asked about, never guessed.
 
 The rules below were agreed by the team, and several people run Claude in this repo. The rules apply to every
 session, every subagent and every script. When you write a prompt for a subagent or a
@@ -46,13 +55,16 @@ sign: never work around it.
 1. **Never write to GWI.** No non-GET request against any URL containing `macnicagwi` (pages, DAM, XFs). Sling
    `:operation=copy` with a GWI source is a POST *on GWI*, so never use it. To copy a GWI asset, POST into the
    global2 folder with `<name>@CopyFrom=<GWI path>`. Reading GWI is fine.
-2. **Never write to a blacklisted page.** The blacklist is the tracker's list of approved pages
-   (`https://site-migration-tracker.mdhw.dev/api/blacklist`). No write, modify, move or delete on the page or its
-   `jcr:content`. Reading is fine. Child pages are not protected unless they are on the list themselves.
-3. **Fetch a FRESH blacklist before every AEM work pass**, and again right before each page in a long run: people
-   approve pages while you work (37 → 86 in three days). Never use an old copy. If the GET fails, write nothing.
-   An empty blacklist is a valid answer: no page is protected (on 02/10 the tracker was reset and review restarted
-   from scratch). The tracker is the only list: `paginas_protegidas.txt` was retired on 02/10.
+2. **Never write to a blacklisted page.** Each site has its own tracker, and a page is blacklisted when its site's
+   tracker lists it as approved: MAI (`americas/mai/en`) at `https://site-migration-tracker.mdhw.dev/api/blacklist`,
+   DHW (`americas/dhw`) at `https://dhw-site-migration-tracker.mdhw.dev/api/blacklist`. No write, modify, move or
+   delete on the page or its `jcr:content`. Reading is fine. Child pages are not protected unless they are on the
+   list themselves.
+3. **Fetch FRESH blacklists from both trackers before every AEM work pass**, and again right before each page in a
+   long run: people approve pages while you work (37 → 86 in three days). Never use an old copy. If either GET fails,
+   write nothing, on either site. An empty blacklist is a valid answer: no page is protected (on 02/10 the MAI
+   tracker was reset and review restarted from scratch; DHW opened on 15/10 with nothing approved). The trackers are
+   the only lists: `paginas_protegidas.txt` was retired on 02/10.
 4. **Shared resources need explicit permission for each path.** Experience fragments, templates and policies
    (`/conf`), components (`/apps`), and anything else a protected page uses count as shared. The header and footer
    XFs reach every page. The only valid approval is *"You can edit \<exact path\>"*. "Go ahead", "you can proceed",
@@ -76,14 +88,15 @@ sign: never work around it.
    - **No width limit:** pages use the full window width. Don't copy Europe's 1000px column.
 8. **Credentials stay in their lane.** The AEM cookie (`AEM_COOKIES` in `.env`) is personal: it goes only to the author
    host, and is never printed, logged or committed. The tracker token (`MIGRATION_TRACKER_TOKEN`) is the team's shared
-   API bot token. It may be shared inside this private repository, but it goes only to the tracker, and you never
+   API bot token. It may be shared inside this private repository, but it goes only to the trackers, and you never
    print it in replies, logs or reports.
 9. **"Read-only" means GET only.** When a task says read-only, send no non-GET anywhere and change no page. End the
    reply by saying that nothing was written to AEM.
-10. **Scope:** "in macnicaglobal2" means the pages of the final link map, about 533 = tracker blacklist +
-    whitelist. It does not mean the whole tree (5,096 pages). Sony, deepx, canon, design-gateway, the blog and
-    Europe (`eu/atd-europe`) belong to the Anion agency: don't fix, create or migrate them. Leave links to their
-    missing pages as they are.
+10. **Scope:** "in macnicaglobal2" means the pages on the two trackers' site maps (blacklist + whitelist of each):
+    MAI's final link map (533 pages, `americas/mai/en`) and every DHW page (321 on 15/10, `americas/dhw`). It does
+    not mean the whole tree (5,096 pages). On MAI, Sony, deepx, canon, design-gateway, the blog and Europe
+    (`eu/atd-europe`) belong to the Anion agency: don't fix, create or migrate them. Leave links to their missing
+    pages as they are. None of the DHW pages are Anion's.
 11. **Node names are normalized** (`normalize_name()`: lower-case, collapsed hyphens), even when someone else's
     shell page uses GWI's capitals. Don't touch the other page: list the pair and ask.
 
