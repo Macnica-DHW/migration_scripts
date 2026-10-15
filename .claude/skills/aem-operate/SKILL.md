@@ -13,6 +13,7 @@ Read the RULES in `CLAUDE.md` first. This skill covers *how*; the rules cover *w
 |---|---|
 | Author (the only AEM host) | `https://author-p53812-e590634.adobeaemcloud.com` (`CONFIG["base_url"]` in `aem_lib`) |
 | global2 Americas (where we work) | `/content/macnicaglobal2/americas/mai/en` |
+| global2 DHW (own tracker since 15/10) | `/content/macnicaglobal2/americas/dhw` (`/pt/...`, `/tq-systems/...`, vendor pages). See `tracker-lists` |
 | GWI (read only) | `/content/macnicagwi/americas/mai/en`; DAM `/content/dam/macnicagwi/americas/mai/public/en` |
 | global2 DAM | `/content/dam/macnicaglobal2/americas/mai/en/...` (file names lower-cased/renamed) |
 | XFs (shared) | `/content/experience-fragments/macnicaglobal2/americas/mai/en/site/<name>/master` |
@@ -82,9 +83,10 @@ Read these gotchas before trusting what you read:
 
 1. **GWI:** any non-GET to a URL containing `macnicagwi` raises `EscritaProibida`. So do `@MoveFrom` out of GWI and
    `:operation=copy` with a GWI source.
-2. **Protected pages:** the fresh tracker blacklist (re-fetched when older than 300 s), the only list; an empty
-   blacklist protects nothing. Blocked: writes to the page or its `jcr:content`, delete/move of the page or an ancestor, `:dest` into it, and
-   `@MoveFrom` out of it. If the tracker fails, **every** write is refused (it fails closed).
+2. **Protected pages:** the union of the fresh blacklists of **both** trackers, MAI and DHW (`BLACKLIST_URLS`,
+   re-fetched when older than 300 s), the only lists; an empty blacklist protects nothing. Blocked: writes to the
+   page or its `jcr:content`, delete/move of the page or an ancestor, `:dest` into it, and `@MoveFrom` out of it. If
+   either tracker fails, **every** write is refused, on both sites (it fails closed).
 3. **Shared structures:** everything under `/content/experience-fragments`, `/conf` and `/apps` is blocked, unless the
    user said "You can edit \<exact path\>" and you pass it for that single run:
    `AEM_COMPARTILHADO_AUTORIZADO=<exact path> python3 ...` (paths separated by `;`, at least 6 levels deep; refused

@@ -16,8 +16,11 @@ git log --oneline -15; git status --short                   # unknown commits or
 ps -eo pid,lstart,args | grep -E "[p]ython3 .*(ferramentas|golive|aem_)"   # someone writing right now? (bracket trick)
 ls -t scripts-hazael/remigracao/notas/ | head               # latest HANDOFF-*, ONDE-PAREI*, PLANO-*
 ls -la --time-style=+%F_%H:%M .env                          # cookie age (~8h life), then one GET: see aem-operate
-cd scripts-hazael && python3 remigracao/ferramentas/tracker.py resumo    # fresh blacklist/whitelist counts
+cd scripts-hazael && python3 remigracao/ferramentas/tracker.py resumo    # fresh blacklist/whitelist counts (MAI tracker)
 ```
+
+`tracker.py` reads only the MAI tracker. If the work touches `americas/dhw`, also read the DHW tracker's lists
+(`tracker-lists` has the snippet).
 
 Then read the newest handoff or plan for the topic. Check that its "pending" items are still pending, using fresh
 data (re-collect rather than trust a snapshot). Pages get approved, and people edit by hand.
@@ -81,4 +84,5 @@ data (re-collect rather than trust a snapshot). Pages get approved, and people e
 | Session docs (not in git) | `scripts-hazael/remigracao/notas/` |
 | Tool outputs, reports (not in git) | `scripts-hazael/remigracao/dados/` (`mapas/`, `auditoria_<ddmm>/`, `paginas/`) |
 | AEM backups (in git) | `scripts-hazael/remigracao/dados/backups_aem/`, `dados/golive/backup_*` |
-| Final link map (the scope) | `dados/mapas/global2_link_map_complete_<date>.html` (533 pages = tracker blacklist + whitelist) |
+| Final link map (the scope) | `dados/mapas/global2_link_map_complete_<date>.html` (533 pages = MAI tracker blacklist + whitelist) |
+| DHW site map (own tracker since 15/10) | `https://dhw-site-migration-tracker.mdhw.dev` blacklist + whitelist (321 pages on 15/10: every page under `americas/dhw`) |

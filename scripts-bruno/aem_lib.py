@@ -19,7 +19,9 @@ macnicaglobal2 são SOMENTE LEITURA.
 
 REGRAS DO HAZAEL (25/09/2026), na trava da Session de build_session():
 nunca gravar no GWI; nunca gravar em página da blacklist do
-site-migration-tracker (GET fresco em toda Session; sem ela, nada grava);
+site-migration-tracker (desde 15/10/2026, a união das blacklists dos dois
+trackers, MAI e DHW; GET fresco de cada uma em toda Session; sem qualquer
+uma delas, nada grava);
 XF/template/componente só com permissão explícita, caminho a caminho;
 backup automático do jcr:content de cada página antes da 1ª escrita nela
 (dados/backups_aem/auto/); sem backup, nada grava.
@@ -283,7 +285,7 @@ def build_session(prompt_if_missing=True, verbose=True, bloquear_editadas_min=No
             print(f"[aviso] blacklist do tracker indisponível ({session.blacklist.erro}):\n"
                   f"  esta Session NÃO grava nada — só leitura.\n", file=sys.stderr)
         else:
-            print(f"blacklist do tracker: {len(bl)} páginas protegidas "
+            print(f"blacklist dos {len(BLACKLIST_URLS)} trackers: {len(bl)} páginas protegidas "
                   f"(GET às {time.strftime('%H:%M:%S')})\n")
         if session.bloquear_editadas_min:
             print(f"trava de edição recente: não grava em página editada nos últimos "
@@ -300,7 +302,9 @@ def build_session(prompt_if_missing=True, verbose=True, bloquear_editadas_min=No
 #   - GWI: nada que não seja leitura em URL com `macnicagwi` (REGRA MESTRA do Hazael, 21/09/2026).
 #   - Protegidas = blacklist do site-migration-tracker (REGRAS do Hazael, 25/09/2026: GET fresco antes da
 #     rodada e de novo antes de gravar, se a cópia tiver mais de BLACKLIST_TTL s; sem resposta = nenhuma
-#     escrita). É a ÚNICA fonte: o paginas_protegidas.txt foi aposentado em 02/10/2026. A página e o
+#     escrita). Desde 15/10/2026 são dois trackers, americas/mai/en e americas/dhw (BLACKLIST_URLS): vale a
+#     união, e sem resposta de qualquer um nada grava. É a ÚNICA fonte: o paginas_protegidas.txt foi
+#     aposentado em 02/10/2026. A página e o
 #     jcr:content dela não recebem escrita; a página e os ancestrais não podem ser apagados/movidos; nada é copiado/movido para
 #     dentro nem para fora dela. Páginas-filhas de uma protegida NÃO estão protegidas (têm de estar na lista).
 #   - Estruturas compartilhadas (XF, template/policy em /conf, componente em /apps): o header/footer chega a
@@ -308,7 +312,12 @@ def build_session(prompt_if_missing=True, verbose=True, bloquear_editadas_min=No
 #     edit <caminho>"; "you can proceed" / "all of them" NÃO valem), passada na linha de comando em
 #     AEM_COMPARTILHADO_AUTORIZADO (caminhos exatos separados por ';'; vale para o caminho e o que há dentro).
 LEITURA = {"GET", "HEAD", "OPTIONS"}
-BLACKLIST_URL = _env("MIGRATION_TRACKER_BLACKLIST_URL", "https://site-migration-tracker.mdhw.dev/api/blacklist")
+# Um tracker por site, cada um com a sua blacklist (15/10/2026: o americas/dhw ganhou o seu). A trava junta as
+# duas, e basta UMA falhar para nada gravar. MIGRATION_TRACKER_BLACKLIST_URLS (separadas por ';') troca a lista.
+BLACKLIST_URLS = tuple(_env_list("MIGRATION_TRACKER_BLACKLIST_URLS")) or (
+    "https://site-migration-tracker.mdhw.dev/api/blacklist",          # americas/mai/en
+    "https://dhw-site-migration-tracker.mdhw.dev/api/blacklist",      # americas/dhw
+)
 BLACKLIST_TTL = _env_float("MIGRATION_TRACKER_TTL", 300)
 COMPARTILHADO = ("/content/experience-fragments", "/conf", "/apps")
 
@@ -322,26 +331,35 @@ class BlacklistIndisponivel(RuntimeError):
 
 
 def baixar_blacklist(timeout=30):
-    """GET fresco da blacklist do tracker; devolve os aem_path. Vai só o token do tracker, NUNCA o cookie do AEM."""
+    """GET fresco da blacklist de CADA tracker (BLACKLIST_URLS); devolve a união dos aem_path. Vai só o token do
+    tracker (o mesmo nos dois), NUNCA o cookie do AEM. Um tracker que falhe faz falhar tudo: nada grava."""
     token = _env("MIGRATION_TRACKER_TOKEN").strip()
     if not token:
         raise BlacklistIndisponivel("MIGRATION_TRACKER_TOKEN vazio no .env")
-    try:
-        r = requests.get(BLACKLIST_URL, timeout=timeout,
-                         headers={"Authorization": f"Bearer {token}", "Accept": "application/json"})
-        r.raise_for_status()
-        d = r.json()
-        paginas = d["pages"]
-        caminhos = tuple(sorted({re.sub(r"\.html$", "", p["aem_path"].strip().rstrip("/")) for p in paginas}))
-    except Exception as e:                                     # noqa: BLE001
-        raise BlacklistIndisponivel(f"GET {BLACKLIST_URL}: {e}") from e
-    # Lista VAZIA é válida (02/10/2026: tracker zerado, revisão do zero = toda página aberta); o que barra é
-    # não obter a lista — GET falhou ou resposta incoerente.
-    if not isinstance(paginas, list) or d.get("count") != len(paginas) \
-            or any(not c.startswith("/content/") for c in caminhos):
-        raise BlacklistIndisponivel(f"resposta suspeita de {BLACKLIST_URL}: count={d.get('count')}, "
-                                    f"{len(caminhos)} caminhos")
-    return caminhos
+    if _env("MIGRATION_TRACKER_BLACKLIST_URL").strip():
+        # A variável antiga apontava UM tracker; segui-la deixaria o outro site sem proteção.
+        raise BlacklistIndisponivel("MIGRATION_TRACKER_BLACKLIST_URL (uma URL só) não vale mais desde 15/10/2026, "
+                                    "quando passaram a ser dois trackers: tirar, ou usar "
+                                    "MIGRATION_TRACKER_BLACKLIST_URLS (separadas por ';')")
+    todos = set()
+    for url in BLACKLIST_URLS:
+        try:
+            r = requests.get(url, timeout=timeout,
+                             headers={"Authorization": f"Bearer {token}", "Accept": "application/json"})
+            r.raise_for_status()
+            d = r.json()
+            paginas = d["pages"]
+            caminhos = {re.sub(r"\.html$", "", p["aem_path"].strip().rstrip("/")) for p in paginas}
+        except Exception as e:                                 # noqa: BLE001
+            raise BlacklistIndisponivel(f"GET {url}: {e}") from e
+        # Lista VAZIA é válida (02/10/2026: tracker zerado, revisão do zero = toda página aberta); o que barra é
+        # não obter a lista — GET falhou ou resposta incoerente.
+        if not isinstance(paginas, list) or d.get("count") != len(paginas) \
+                or any(not c.startswith("/content/") for c in caminhos):
+            raise BlacklistIndisponivel(f"resposta suspeita de {url}: count={d.get('count')}, "
+                                        f"{len(caminhos)} caminhos")
+        todos |= caminhos
+    return tuple(sorted(todos))
 
 
 class Blacklist:
@@ -424,7 +442,7 @@ def _tocados(caminho, alvos, pares):
 
 def motivo_bloqueio(metodo, url, data=None, protegidas=None, autorizados=()):
     """None se a requisição pode sair; senão, o motivo. Não faz rede — testável offline.
-    `protegidas` = a blacklist do tracker (session.blacklist.atual()); sem ela (None), barra toda escrita."""
+    `protegidas` = a blacklist dos trackers (session.blacklist.atual()); sem ela (None), barra toda escrita."""
     if metodo.upper() in LEITURA:
         return None
     if "macnicagwi" in unquote(url):
